@@ -15,13 +15,13 @@ Imagine you go to the store twice and buy different amounts of apples and banana
 
 Linear Algebra provides the tools to solve these equations quickly and efficiently, even if you have hundreds of items and shopping trips. It uses special mathematical objects called *vectors* (think of them as ordered lists of numbers, like [a, b] representing the prices) and *matrices* (think of them as grids of numbers). These tools help organize the information and make the calculations much easier, especially for computers.
 
-**2. Data Fitting (Finding the Hidden Pattern)**
+#### 2. Data Fitting (Finding the Hidden Pattern)
 
 Let's say you have a bunch of data points, like a histogram showing population data. It looks messy, but you suspect there's a pattern. You want to find an equation that best describes this data. This is called "fitting" an equation to the data. Linear Algebra helps you find the best values for the *parameters* in that equation. Think of parameters as knobs you can tweak to make the equation fit the data better.
 
 Why is this useful? Because once you have the equation, you can easily describe the data without needing to store all the individual data points. It's like finding a simple formula that captures the essence of the data. This is especially important for things like privacy concerns or when dealing with huge datasets. Instead of sharing all the individual data points, you can just share the equation.
 
-**Key Concepts:**
+#### Key Concepts:
 
 *   **Simultaneous Equations:** A set of equations with multiple unknowns that you solve together (like our apple and banana example).
 *   **Linear Coefficients:** The numbers you multiply your unknowns by (like the 2, 3, 10, and 1 in the apple and banana example). They determine how much each unknown contributes to the final result.
