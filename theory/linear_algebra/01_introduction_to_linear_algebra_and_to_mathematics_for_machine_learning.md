@@ -6,7 +6,7 @@
 
 Linear Algebra is a powerful set of mathematical tools used to solve a wide range of problems, especially those involving data.  Let's look at two motivating examples:
 
-**1. Price Discovery (The Apple and Banana Mystery)**
+#### 1. Price Discovery (The Apple and Banana Mystery)
 
 Imagine you go to the store twice and buy different amounts of apples and bananas. Each time, you get a total cost. Your challenge? Figure out the individual price of an apple and a banana.  We can represent this using a system of equations. Let 'a' be the price of an apple and 'b' be the price of a banana. Your shopping trips might look like this:
 
