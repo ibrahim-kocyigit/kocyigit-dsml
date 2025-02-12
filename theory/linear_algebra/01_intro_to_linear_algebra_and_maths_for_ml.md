@@ -11,7 +11,7 @@ A common problem in data science involves finding unknown values that satisfy mu
 * **Scenario:** You go shopping on two separate occasions.
     * **Trip 1:** You buy 2 apples and 3 bananas, and the total cost is 8 euros.
     * **Trip 2:** You buy 10 apples and 1 banana, and the total cost is 13 euros.
-* **Goal:** Determine the price of a single apple (_a_) and (_b_).
+* **Goal:** Determine the price of a single apple (`a`) and (`b`).
 * **Mathematical Representation:** We can represent this situation with a system of linear equations:
 ```
 2a + 3b = 8
@@ -24,14 +24,14 @@ A common problem in data science involves finding unknown values that satisfy mu
 [10 1] [b] = [13]
 ```
 Where:
-* The matrix `[2, 3 ; 10 1]` represents the coefficients of the variables (quantities of apples and bananas). We can call this matrix _M_.
-* The vector `[a ; b]` represents the unknown variables (prices of apples and bananas). We can call this vector _v_.
-* The vector `[8 ; 13]` represents the constants (total costs). We can call this vector _c_.
+* The matrix `[2, 3 ; 10 1]` represents the coefficients of the variables (quantities of apples and bananas). We can call this matrix `M`.
+* The vector `[a ; b]` represents the unknown variables (prices of apples and bananas). We can call this vector `v`.
+* The vector `[8 ; 13]` represents the constants (total costs). We can call this vector `c`.
 This can be written more abstractly as:
 ```
 M v = c
 ```
-Where _M_ is the matrix of coefficients, _v_ is the vector of unknowns, and _c_ is the vector of constants. One of the core goals of linear algebra is to develop techniques to solve for _v_ in equations of this form.
+Where `M` is the matrix of coefficients, `v` is the vector of unknowns, and `c` is the vector of constants. One of the core goals of linear algebra is to develop techniques to solve for `v` in equations of this form.
 
 #### Curve Fitting and optimization
 
