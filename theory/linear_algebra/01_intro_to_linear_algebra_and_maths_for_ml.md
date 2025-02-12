@@ -84,6 +84,5 @@ The important point is that this function is defined by two parameters: `μ` and
 * **Contour Plot of Goodness:** Imagine a plot where:
     * The x-axis represents different values of `μ`.
     * The y-axis represents different values of `σ`.
-    * The z-axis (coming out of the screen/page) represents the "goodness of fit" (or, conversely, the "badness of fit", like the sum of squared differences). Lower values on the z-axis are better.<br>
-
-This creates a 3D surface. We can visualize
+    * The z-axis (coming out of the screen/page) represents the "goodness of fit" (or, conversely, the "badness of fit", like the sum of squared differences). Lower values on the z-axis are better.  
+    This creates a 3D surface. We can visualize
