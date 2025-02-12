@@ -39,4 +39,50 @@ Another crucial application of linear algebra is in fitting equations to data, a
 * **Scenario:** Imagine you have a dataset represented as a histogram. The data points appear to follow a certain pattern (e.g., a bell-shaped curve or Gaussian distribution).
 * **Goal:** Find an equation (a mathematical function) that best describes the relationship between the variables in the data. For instance, you might want to fit a Gaussian curve to the histogram. This Gaussian will have parameters that needs to be fitted.
 * **Example:** The equation is going to look like a function, and the parameters of the function might describe, for instance, the average and standard deviation of a gaussian curve.
-* **Optimization:** The process of finding the "best" equation involves adjusting the parameters of the function (e.g., the mean, `μ`, and standard deviation, `σ`, of a Gaussian curve)
+* **Optimization:** The process of finding the "best" equation involves adjusting the parameters of the function (e.g., the mean, `μ`, and standard deviation, `σ`, of a Gaussian curve) to minimize the difference between the curve's predictions and the actual data points. This is an optimization problem. Linear algebra provides tools to find the optimal values of these parameters efficiently.
+* **Benefits:** Having a compact equation that represents the data offers several advantages:
+    * **Concise Representation:** The equation is a much smaller and more manageable representation of the data.
+    * **Predictive Power:** The equation can be used to make predictions.
+    * **Privacy:** You can share parameters without revealing the raw data.
+
+#### Connection to Data Science
+
+These two examples, solving systems of equations and optimization, are cornerstones of many data science techniques:
+* **Linear Regression:** A machine learning algorithm that relies on linear algebra to find the best-fitting line (or hyperplane) through data points.
+* **Principal Component Analysis (PCA):** A dimensionality reduction technique using linear algebra to find directions of greatest variance.
+* **Support Vector Machines (SVMs):** A classification algorithm using linear algebra to find the optimal hyperplane to separate data.
+* **Neural Networks:** Operations within neural networks involve matrix multiplications and linear transformations.
+
+**In summary**, linear algebra provides the mathematical foundation for many data science algorithms. The ability to manipulate vectors and matrices, solve systems of equations, and perform optimization is essential for working with data.
+
+### 1.1.2. Getting a Handle on Vectors
+
+In this section, we'll introduce vectors in the context of data science, building upon the familiar concept of vectors from physics, but expanding their application to broader parameter spaces. The primary motivation is to prepare for optimization problems, particularly fitting functions to data.
+
+
+#### Revisiting Curve Fitting
+Let's visit the example from the previous section: fitting a curve to a histogram representing the distribution of heights in a population.
+* **Data:** A histogram showing the frequency of different heights. It's observed that few people are above 2 meters or below 1.5 meters.
+* **Goal:** Find a mathematical function that closely matches the shape of the histogram. 
+* **Gaussian (Normal) Distribution:** A common choice for modeling such distribution is the Gaussian (or normal) distribution. This function has a bell-curve shape. The specific equation, while provided, isn't the primary focus here:
+```
+f(x) = (1 / (σ * sqrt(2π))) * exp(- (x - μ)^2 / (2σ^2))
+```
+Where:
+* `x` represents the height (the independent variable).
+* `f(x)` represents the frequency or probability density of a given height (the dependent variable).
+* `μ` (mu) represents the mean or average height, the center of the distribution.
+* `σ` (sigma) represents the standard deviation, a measure of the spread or width of the distribution.
+* `exp()` is the exponential function
+
+The important point is that this function is defined by two parameters: `μ` and `σ`.
+
+#### Goodness of Fit and Parameter Space
+* **Fitting Process:** To fit the Gaussian curve to the histogram, we need to find the values of `μ` and `σ` that make the curve best match the data.
+* **Incorrect Guesses:** If we guess a `σ` that's too wide, the curve will be too flat and wide; it will overestimate the frequencies at the extremes and underestimate them in the middle.
+* **Quantifying 'Goodness':** We need a way to measure how well the curve fits the data. A common approach is to calculate the _sum of squared differences_. For each data point in the histogram, we find the difference between the actual frequency and the frequency predicted by the curve, square that difference, and then add up all those squared differences. A smaller sum of squares indicates a better fit.
+* **Contour Plot of Goodness:** Imagine a plot where:
+    * The x-axis represents different values of `μ`.
+    * The y-axis represents different values of `σ`.
+    * The z-axis (coming out of the screen/page) represents the "goodness of fit" (or, conversely, the "badness of fit", like the sum of squared differences). Lower values on the z-axis are better.
+    This creates a 3D surface. We can visualize
