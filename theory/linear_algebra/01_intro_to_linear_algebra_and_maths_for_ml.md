@@ -8,5 +8,5 @@ Linear Algebra is a fundamental branch of mathematics that is extremely useful i
 
 #### Price Discovery: Solving Simultaneous Equations
 A common problem in data science involves finding unknown values that satisfy multiple linear relationships. Consider a simplified example of price discovery:
-    * **Scenario:** You go shopping on two separate occasions.
-        * **Trip
+* **Scenario:** You go shopping on two separate occasions.
+    * **Trip
