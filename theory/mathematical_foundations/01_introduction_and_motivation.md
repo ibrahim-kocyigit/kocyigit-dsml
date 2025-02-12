@@ -1,7 +1,5 @@
 # Introduction and Motivation
 
-Machine learning (ML) is all about creating computer programs that can automatically learn useful things from data, without needing a human to explicitly program every step.
-
 #### What is Machine Learning?
 * Machine learning is about building algorithms (sets of instructions for computers) that can find patterns and insights in data.
 * The key word is "automatically". We want general methods that work on many different datasets, not specific solutions for just one problem.
