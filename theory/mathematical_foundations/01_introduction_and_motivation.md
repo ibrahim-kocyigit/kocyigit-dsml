@@ -29,3 +29,26 @@ Imagine you're working for an online store, and you have data on customer purcha
 
 ## 1.1 Finding Words for Intuitions
 
+A key challenge in ML is the ambiguity of language. The same terms can have different meanings depending on the context. We'll highlight this and introduce core ML concepts in this section.
+
+### Ambiguity in Machine Learning Terminology
+It's important to be mindful of context to understand the intended meaning.
+
+* **Example: "Algorithm":**
+    * **Sense 1 (Predictor):** A system that makes predictions based on input data. Think of this as the _trained_ model you use to make predictions.
+    * **Sense 2 (Training):** A system that _adjusts_ the internal parameters of a predictor (Sense 1) to improve its performance on future, unseen data. This is the process of _creating_ the trained model.  
+
+### Core Components of a Machine Learning System (Revisited)
+1. **Data as Vectors:**
+    * While data can take many forms, in ML, we often represent data numerically. 
+    * We treat data as _vectors_. In data science, a vector is usually an array of numbers representing features.
+    * Example: If a vector which represents a house has elements `[120, 3, 2015]`, that might mean that the house has 120 square meter area, 3 rooms, and built in 2015.
+2. **Model:**
+    * A simplified representation of the (unknown) process that generated the data.
+    * Captures relevant patterns and allows for prediction.
+    * A good model acts like a stand-in for the real-world process, allowing us to make predictions without running real-world experiments.
+3. **Learning:**
+    * The process of optimizing a model's parameters using a dataset.
+    * We use a _utility function_ (or _loss function_ or _objective function_) to evaluate how well the model fits the training data.
+    * An analogy: Think of training as hill climbing. The peak represents the best possible model performance.
+    * Crucial point: The goal isn't just to fit the _training_ data perfectly (memorization). We want the model to _generalize_ well to new, _unseen_ data. This is what makes the model useful in real-world applications. 
