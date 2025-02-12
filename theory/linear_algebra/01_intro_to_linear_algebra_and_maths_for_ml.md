@@ -53,8 +53,6 @@ These two examples, solving systems of equations and optimization, are cornersto
 * **Support Vector Machines (SVMs):** A classification algorithm using linear algebra to find the optimal hyperplane to separate data.
 * **Neural Networks:** Operations within neural networks involve matrix multiplications and linear transformations.
 
-**In summary**, linear algebra provides the mathematical foundation for many data science algorithms. The ability to manipulate vectors and matrices, solve systems of equations, and perform optimization is essential for working with data.
-
 ### 1.1.2. Getting a Handle on Vectors
 
 In this section, we'll introduce vectors in the context of data science, building upon the familiar concept of vectors from physics, but expanding their application to broader parameter spaces. The primary motivation is to prepare for optimization problems, particularly fitting functions to data.
@@ -85,4 +83,22 @@ The important point is that this function is defined by two parameters: `μ` and
     * The x-axis represents different values of `μ`.
     * The y-axis represents different values of `σ`.
     * The z-axis (coming out of the screen/page) represents the "goodness of fit" (or, conversely, the "badness of fit", like the sum of squared differences). Lower values on the z-axis are better.  
-    This creates a 3D surface. We can visualize
+    This creates a 3D surface. We can visualize this surface using _contour lines_, similar to a topographical map. Each contour line connects points with the same "goodness fit" value. The goal is to find the lowers point on this surface, representing the best combination of `μ` and `σ`.
+
+#### Vectors in Parameter Space
+* **Incremental Changes:** Instead of calculating the goodness of fit for every possible combination of `μ` and `σ`, we can take a more iterative approach. We start with an initial guess for `μ` and `σ`, and then make small adjustments.
+* **Vector as Changes:** A vector can represent these adjustments. A vector in this context is simply a list of changes to the parameters. For example, the vector `[Δμ, Δσ]` represents i change of `Δμ` in the mean and `Δσ` in the standard deviation.
+* **Example:**
+    * Start with initial guess: `[μ, σ]`
+    * Create a change vector: `[Δμ, Δσ]`
+    * New guess: `[μ + Δμ, σ + Δσ] = [μ', σ']`  
+    We then evaluate the goodness of fit at this new point `[μ', σ']`.
+* **Finding the Steepest Descent:** Ideally, we want to find the direction in the parameters space `(μ, σ)` that leads to the _steepest decrease_ in the badness of fit (or the _steepest increase_ in the goodness of fit). This analogous to finding the steepest way down a hill on a topographical map. Calculus provides tools (gradients) to determine this direction. 
+
+#### Beyond Geometric Vectors
+* **Generalized Definition:** This example demonstrates that vectors are not limited to representing physical displacements in space (as often taught in introductory physics). A vector can represent a list of _any_ quantities.
+* **Examples:**
+    * **Car Attributes:** A vector could represent characteristics of a car: `[cost, emissions, safety_rating, top_speed]`.
+    * **Alloy Composition:** In metallurgy, a vector could represent the proportions of different elements in an alloy.
+    * **Spacetime:** In relativity, a vector can represent a point in spacetime: `[x, y, z, t]` (three spatial coordinates and one time coordinate).
+* **Data Science Perspective:** From a data science (and computer science) perspective, a vector is essentially an ordered list of numbers. The key is that these numbers represent _quantities_ that are related in some way, and we can perform mathematical operations on them. 
