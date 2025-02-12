@@ -1,4 +1,4 @@
-# Introduction and Motivation
+# 1. Introduction and Motivation
 
 ### What is Machine Learning?
 * Machine learning is about building algorithms (sets of instructions for computers) that can find patterns and insights in data.
