@@ -33,3 +33,10 @@ M v = c
 ```
 Where _M_ is the matrix of coefficients, _v_ is the vector of unknowns, and _c_ is the vector of constants. One of the core goals of linear algebra is to develop techniques to solve for _v_ in equations of this form.
 
+#### Curve Fitting and optimization
+
+Another crucial application of linear algebra is in fitting equations to data, a fundamental task in machine learning and statistical modeling.
+* **Scenario:** Imagine you have a dataset represented as a histogram. The data points appear to follow a certain pattern (e.g., a bell-shaped curve or Gaussian distribution).
+* **Goal:** Find an equation (a mathematical function) that best describes the relationship between the variables in the data. For instance, you might want to fit a Gaussian curve to the histogram. This Gaussian will have parameters that needs to be fitted.
+* **Example:** The equation is going to look like a function, and the parameters of the function might describe, for instance, the average and standard deviation of a gaussian curve.
+* **Optimization:** The process of finding the "best" equation involves adjusting the parameters of the function (e.g., the mean, `μ`, and standard deviation, `σ`, of a Gaussian curve)
