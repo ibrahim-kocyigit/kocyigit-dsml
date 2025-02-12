@@ -9,4 +9,27 @@ Linear Algebra is a fundamental branch of mathematics that is extremely useful i
 #### Price Discovery: Solving Simultaneous Equations
 A common problem in data science involves finding unknown values that satisfy multiple linear relationships. Consider a simplified example of price discovery:
 * **Scenario:** You go shopping on two separate occasions.
-    * **Trip
+    * **Trip 1:** You buy 2 apples and 3 bananas, and the total cost is 8 euros.
+    * **Trip 2:** You buy 10 apples and 1 banana, and the total cost is 13 euros.
+* **Goal:** Determine the price of a single apple (_a_) and (_b_).
+* **Mathematical Representation:** We can represent this situation with a system of linear equations:
+```
+2a + 3b = 8
+10a + b = 13
+```
+* **Generalization:** In a real-world scenario, you might have many items (products) and many shopping trips (observations). Manually solving such a large system of equation is impractical. Linear algebra provides methods for efficiently solving these systems, even with a very large number of variables and equations, using computer algorithms.
+* **Matrix Representation:** The system of equations can be written in a compact matrix form:
+```
+[2  3] [a] = [8 ]
+[10 1] [b] = [13]
+```
+Where:
+* The matrix `[2, 3 ; 10 1]` represents the coefficients of the variables (quantities of apples and bananas). We can call this matrix _M_.
+* The vector `[a ; b]` represents the unknown variables (prices of apples and bananas). We can call this vector _v_.
+* The vector `[8 ; 13]` represents the constants (total costs). We can call this vector _c_.
+This can be written more abstractly as:
+```
+M v = c
+```
+Where _M_ is the matrix of coefficients, _v_ is the vector of unknowns, and _c_ is the vector of constants. One of the core goals of linear algebra is to develop techniques to solve for _v_ in equations of this form.
+
