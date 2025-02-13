@@ -1,2 +1,2 @@
-Notes from [Statistics - A Full Lecture to learn Data Science](https://www.youtube.com/watch?v=Ym1iH8-GQOE)
+Notes from [Statistics for Data Science with Python](https://www.coursera.org/learn/statistics-for-data-science-python/)
 
