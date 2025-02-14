@@ -1,22 +1,24 @@
 import pandas as pd
-import os
+from pathlib import Path
 
-current_dir = os.getcwd()
-file_path = os.path.join(current_dir, "data", "external", "Canada.xlsx")
+script_dir = Path(__file__).resolve().parent
+data_path = script_dir / "data" / "external" / "Canada.xlsx"
 
-try:
-    df = pd.read_excel(
-        file_path,
-        sheet_name="Canada by Citizenship",
-        skiprows=range(20),
-        skipfooter=2,
-    )
-    print("Data read successfully.")
-except FileNotFoundError:
-    print(
-        "Error: 'your_file.xlsx' not found. Make sure the file exists and the path is correct."
-    )
-except ValueError as e:
-    print(f"ValueError: {e}. Check the sheet name and skiprows arguments.")
-except Exception as e:
-    print(f"An unexpected error occurred: {e}")
+df = pd.read_excel(
+    data_path,
+    sheet_name="Canada by Citizenship",
+    skiprows=range(20),
+    skipfooter=2,
+)
+
+df = df.drop(columns=["Type", "DEV", "Coverage", "AREA", "REG", "DevName"], axis=1)
+
+df = df.rename(
+    columns={"OdName": "country", "AreaName": "continent", "RegName": "region"}
+)
+
+df["total"] = df.loc[:, 1980:2013].sum(axis=1)
+
+df.set_index("country")
+
+df.to_pickle(script_dir / "data" / "interim" / "immigration_to_canada_01.pkl")
