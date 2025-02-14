@@ -24,3 +24,6 @@ df.set_index("country")
 df.to_pickle(
     script_dir.parent.parent / "data" / "interim" / "immigration_to_canada_01.pkl"
 )
+df.to_csv(
+    script_dir.parent.parent / "data" / "interim" / "immigration_to_canada_01.csv",
+)
