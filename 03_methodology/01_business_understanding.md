@@ -16,6 +16,8 @@ Outline the high-level requirements for the analytic solution from a business pe
 ## Step 5: Document and Get Feedback
 Get your information from the meetings, and put them into documents. Share your understandings and documentation with the business sponsors to ensure alignment and get their feedback. Iterate on the problem statement, objectives, and requirements until they are clear and agreed upon.
 
+--- 
+
 ### Files to Create
 1. `reports/01_business_understanding.md`: This Markdown file will contain the detailed notes from meetings, the refined problem statement, project objectives, and solution requirements. We'll use Markdown for easy readability and version control.
 2. `references/`: Any initial documents, presentations, or materials provided by the business sponsors should be placed here, in their original format. Do not modify these files.
