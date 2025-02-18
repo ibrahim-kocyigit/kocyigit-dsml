@@ -26,13 +26,9 @@ Create and use a `.env` file to store sensitive information (API keys, database 
 ### Files to Create
 
 1.  `reports/04_data_collection.md`: This Markdown file will document the data collection process.
-2.  `data/raw/`: This directory will contain the raw data files.
+2.  `data/raw/` and/or `data/external`: This directories will contain the raw data files.
 3.  `{{ cookiecutter.module_name }}/dataset.py`: Python file with reusable data extraction functions.
-4.  `notebooks/4.0-yourinitials-data_retrieval.ipynb`: Jupyter notebook with the specific data collection code.
-5.  `.env`: (In the project root) This file stores secrets and configuration variables.  **This file should *never* be committed to version control (it should be in `.gitignore`).** Example contents:
-    ```
-    DATABASE_URL=postgres://user:password@host:port/database
-    API_KEY=your_secret_api_key
-    ```
+4.  `notebooks/04_data_collection.ipynb`: Jupyter notebook with the specific data collection code.
+5.  `.env`: (In the project root) This file stores secrets and configuration variables. This file should *never* be committed to version control (it should be in `.gitignore`). 
 6. `{{ cookiecutter.module_name }}/config.py`: This file can be used to store configuration that affects the project in other ways. For example, constants, or file paths that might change between development and production. This is *not* for secrets.
 7.  `references/`: Place here the document about data collection authorization.
