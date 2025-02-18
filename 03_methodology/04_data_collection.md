@@ -13,7 +13,7 @@ Extract the required data elements from each source. This may involve writing SQ
 Address any issues encountered during data retrieval, such as authentication problems, network errors, or data access restrictions. This may require collaboration with IT or data owners.
 
 ## Step 4: Store Raw Data
-Store the extracted data in the `data/raw` directory. Maintain the original format and structure of the data as received from the source. *Do not modify the raw data.* Use descriptive file names that clearly indicate the source and content.
+Store the extracted data in the `data/raw` (for internal data) or `data/external` (for external data) directory. Maintain the original format and structure of the data as received from the source. *Do not modify the raw data.* Use descriptive file names that clearly indicate the source and content.
 
 ## Step 5: Document the Collection Process
 Document the data collection process, including the sources accessed, extraction methods used, any issues encountered, and the location of the raw data files. This documentation should be sufficient for someone else to reproduce the data collection process. Also, document any *failed* attempts to retrieve data, including the reasons for failure.
