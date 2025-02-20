@@ -30,4 +30,4 @@ Document all findings, including descriptive statistics, visualizations, data qu
 1.  `reports/05_data_understanding.md`: This Markdown file will contain the documentation of the data understanding process, including descriptive statistics, data quality assessment, and initial insights. Include links to any generated figures (see below).
 2.  `reports/figures/`: Store any generated visualizations (histograms, scatter plots, etc.) in this directory. Use descriptive filenames (e.g., `histogram_feature_x.png`, `scatterplot_feature_x_vs_y.png`).
 3.  `notebooks/2.0-yourinitials-data_exploration.ipynb`: Create one or more Jupyter notebooks to perform the data loading, exploration, descriptive statistics, visualization, and data quality assessment. This is where the *code* for this stage will reside. The notebook should be well-commented, explaining steps, and referencing functions from `{{cookiecutter.module_name}}.dataset` where applicable.
-4. `{{ cookiecutter.module_name }}/plots.py`: Create functions for visualization.
+4. `src/plots.py`: Create functions for visualization.
