@@ -18,7 +18,7 @@ Evaluate the model's performance on the test data using the same evaluation metr
 ## Step 5: Assess Business Objectives
 Evaluate whether the model's performance on the test set meets the business objectives and solution requirements defined in Stage 1. Is the model "good enough" to be deployed?
 
-### Step 6: Build User Documentation
+## Step 6: Build User Documentation
 Use MkDocs (or Sphinx) to build the user-facing documentation in the docs/ directory. 
 
 ## Step 7: Document Results
