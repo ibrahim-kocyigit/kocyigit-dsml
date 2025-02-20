@@ -16,19 +16,7 @@ Address any issues encountered during data retrieval, such as authentication pro
 Store the extracted data in the `data/raw` (for internal data) or `data/external` (for external data) directory. Maintain the original format and structure of the data as received from the source. *Do not modify the raw data.* Use descriptive file names that clearly indicate the source and content.
 
 ## Step 5: Document the Collection Process
-Document the data collection process, including the sources accessed, extraction methods used, any issues encountered, and the location of the raw data files. This documentation should be sufficient for someone else to reproduce the data collection process. Also, document any *failed* attempts to retrieve data, including the reasons for failure.
+Document the [data collection](./stage_report_templates/04_data_collection_report.md) process, including the sources accessed, extraction methods used, any issues encountered, and the location of the raw data files. This documentation should be sufficient for someone else to reproduce the data collection process. Also, document any *failed* attempts to retrieve data, including the reasons for failure.
 
 ## Step 6: Manage Configuration and Secrets
 Create and use a `.env` file to store sensitive information (API keys, database credentials, etc.) and configuration variables (e.g., database connection strings, API endpoints).  Use the `python-dotenv` package to load these variables into your code.
-
----
-
-### Files to Create
-
-1.  `reports/04_data_collection.md`: This Markdown file will document the data collection process.
-2.  `data/raw/` and/or `data/external`: This directories will contain the raw data files.
-3.  `src/dataset.py`: Python file with reusable data extraction functions.
-4.  `notebooks/1.0-yourinitials-data_retrieval.ipynb`: Jupyter notebook with the specific data collection code.
-5.  `.env`: (In the project root) This file stores secrets and configuration variables. This file should *never* be committed to version control (it should be in `.gitignore`). 
-6. `src/config.py`: This file can be used to store configuration that affects the project in other ways. For example, constants, or file paths that might change between development and production. This is *not* for secrets.
-7.  `references/`: Place here the document about data collection authorization.

@@ -14,11 +14,4 @@ Identify the potential sources for each required data element. Where does this d
 For each data source, assess its availability and accessibility. Is the data readily available, or will it require special requests or approvals? Are there any known limitations or restrictions on accessing the data?
 
 ## Step 5: Document Data Requirements and Gaps
-Document the data requirements, including content, formats, sources, and availability. Identify any potential gaps between the required data and the available data.
-
----
-
-### Files to Create
-
-1.  `reports/03_data_requirements.md`: This Markdown file will contain the detailed data requirements, including the list of required data elements, their formats and representations, potential sources, availability assessment, and identified data gaps.
-2.  `references/`: If there are any existing data dictionaries, schemas, or documentation related to the identified data sources, place them here.
+Document the [data requirements](./stage_report_templates/03_data_requirements_report.md), including content, formats, sources, and availability. Identify any potential gaps between the required data and the available data.

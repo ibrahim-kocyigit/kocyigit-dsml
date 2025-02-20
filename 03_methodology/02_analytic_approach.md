@@ -15,11 +15,5 @@ Briefly consider (at a high level) whether the data *likely* to be available (we
 Choose the *primary* analytic approach that you will pursue. This doesn't mean you can't explore other approaches later, but it's important to have a primary focus. Document the rationale for your choice.
 
 ## Step 5: Document and Justify
-Document the chosen approach, the alternative approaches considered, and the justification for your selection. Explain why the chosen approach is the most promising way to address the business problem and meet the project objectives.
-
----
-
-### Files to Create
-
-1.  `reports/02_analytic_approach.md`: This Markdown file will contain the problem framing, potential models/techniques considered, the chosen approach, and the justification for the selection. It will also include the preliminary data suitability assessment.
-2.  `references/`: If you find any research papers, articles, or documentation related to the chosen approach or alternative approaches, place them here.
+* Detail the selected analytical methodology, alternative options evaluated, and the rationale behind your choice in the [Analytic Approach Report](./stage_report_templates/02_analytic_approach_report.md). Clearly articulate why the chosen method best addresses the business problem and aligns with project objectives.
+* Store any relevant research papers, articles, or documentation supporting your methodology or alternatives in the `references` folder.
