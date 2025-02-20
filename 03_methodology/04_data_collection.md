@@ -16,7 +16,7 @@ Address any issues encountered during data retrieval, such as authentication pro
 Store the extracted data in the `data/raw` (for internal data) or `data/external` (for external data) directory. Maintain the original format and structure of the data as received from the source. *Do not modify the raw data.* Use descriptive file names that clearly indicate the source and content.
 
 ## Step 5: Document the Collection Process
-Document the [data collection](./stage_report_templates/04_data_collection_report.md) process, including the sources accessed, extraction methods used, any issues encountered, and the location of the raw data files. This documentation should be sufficient for someone else to reproduce the data collection process. Also, document any *failed* attempts to retrieve data, including the reasons for failure.
+Document the [data collection](./stage-report-templates/04_data_collection_report.md) process, including the sources accessed, extraction methods used, any issues encountered, and the location of the raw data files. This documentation should be sufficient for someone else to reproduce the data collection process. Also, document any *failed* attempts to retrieve data, including the reasons for failure.
 
 ## Step 6: Manage Configuration and Secrets
 Create and use a `.env` file to store sensitive information (API keys, database credentials, etc.) and configuration variables (e.g., database connection strings, API endpoints).  Use the `python-dotenv` package to load these variables into your code.

@@ -15,5 +15,5 @@ Briefly consider (at a high level) whether the data *likely* to be available (we
 Choose the *primary* analytic approach that you will pursue. This doesn't mean you can't explore other approaches later, but it's important to have a primary focus. Document the rationale for your choice.
 
 ## Step 5: Document and Justify
-* Detail the selected analytical methodology, alternative options evaluated, and the rationale behind your choice in the [Analytic Approach Report](./stage_report_templates/02_analytic_approach_report.md). Clearly articulate why the chosen method best addresses the business problem and aligns with project objectives.
+* Detail the selected analytical methodology, alternative options evaluated, and the rationale behind your choice in the [Analytic Approach Report](./stage-report-templates/02_analytic_approach_report.md). Clearly articulate why the chosen method best addresses the business problem and aligns with project objectives.
 * Store any relevant research papers, articles, or documentation supporting your methodology or alternatives in the `references` folder.

@@ -14,6 +14,6 @@ Translate the business problem into specific, measurable, achievable, relevant, 
 Outline the high-level requirements for the analytic solution from a business perspective. What are the essential functionalities, constraints, and performance expectations (e.g., accuracy, speed, interpretability)? This doesn't need to be deeply technical at this stage, but it should guide the analytic approach.
 
 ## Step 5: Document and Get Feedback
-* Synthesize key insights and requirements gathered from meetings into the [Business Understanding Report](./stage_report_templates/01_business_understanding_report.md). 
+* Synthesize key insights and requirements gathered from meetings into the [Business Understanding Report](./stage-report-templates/01_business_understanding_report.md). 
 * Distribute the report to business sponsors for review and validation, actively seeking their feedback to ensure alignment on the problem statement, objectives, and requirements.
 * Iterate on these elements based on the received feedback, facilitating collaborative refinement until a clear and mutually agreed-upon understanding is achieved.
