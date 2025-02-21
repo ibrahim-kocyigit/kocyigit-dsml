@@ -36,72 +36,72 @@ F_Name = "John"  # String Value
 ```python
 x = 9
 y = 4
-result_add = x + y  # Addition
-result_sub = x - y  # Subtraction
-result_mul = x * y  # Multiplication
-result_div = x / y  # Division
-result_fdiv = x // y  # Floor Division
-result_mod = x % y  # Modulo
+result_add = x + y  # Addition (13)
+result_sub = x - y  # Subtraction (5)
+result_mul = x * y  # Multiplication (36)
+result_div = x / y  # Division (2.25)
+result_fdiv = x // y  # Floor Division (2)
+result_mod = x % y  # Modulo (1)
 ```
 
 ## String Manipulation
 
 **1. Concatenation**
 ```python
-result = "Hello" + " John"
+result = "Hello" + " John" # "Hello John"
 ```
 **2. Indexing**
 ```python
 my_string = "Hello"
-char = my_string[0]
+char = my_string[0] # 'H'
 ```
 **3. Slicing**
 ```python
 my_string = "Hello"
-substring = my_string[0:5]
+substring = my_string[0:5] # "Hello"
 ```
 **4. Length**
 ```python
 my_string = "Hello"
-length = len(my_string)
+length = len(my_string) # 5
 ```
 
 **5. To Lowercase**
 ```python
 my_string = "Hello"
-lowercase_text = my_string.lower()
+lowercase_text = my_string.lower() # "hello"
 ```
 
 **6. To Uppercase**
 ```python
 my_string = "Hello"
-uppercase_text = my_string.upper()
+uppercase_text = my_string.upper() # "HELLO"
 ```
 
 **7. Removing leading/trailing whitespace**
 ```python
 my_string = " Hello "
-trimmed = my_string.strip()
+trimmed = my_string.strip() # "Hello"
 ```
 
 **8. Replacing substrings**
 ```python
 my_string = "Hello"
-new_text = my_string.replace("Hello", "Hi")
+new_text = my_string.replace("Hello", "Hi") # "Hi"
 ```
 
 **9. Splitting a string into a list based on a delimiter**
 ```python
 my_string = "apple,banana,orange"
-split_text = my_string.split(",")
+split_text = my_string.split(",") # ['apple', 'banana', 'orange']
 ```
 
 ## Output
 
 **1. Printing to the console**
 ```python
-print("Hello, world")
+print("Hello, world") # prints "Hello, world"
 a = 1
 b = 2
-print(a + b)
+print(a + b) # prints 3
 ```
