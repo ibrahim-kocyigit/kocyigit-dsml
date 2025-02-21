@@ -54,12 +54,12 @@ df.rank() # Assign ranks to entries
 ```
 
 ## 6. Input/Output
-Read and Write to CSV:
+**Read and Write to CSV**
 ```python
 pd.read_csv('file.csv', header=None, nrows=5)
 df.to_csv('myDataFrame.csv')
 ```
-Read and Write to Excel:
+**Read and Write to Excel**
 ```python
 pd.read_excel('file.xlsx')
 df.to_excel('dir/myDataFrame.xlsx',  sheet_name='Sheet1')
@@ -68,7 +68,7 @@ df.to_excel('dir/myDataFrame.xlsx',  sheet_name='Sheet1')
 xlsx = pd.ExcelFile('file.xls')
 df = pd.read_excel(xlsx,  'Sheet1')
 ```
-Read and Write to SQL Query or Database Table:
+**Read and Write to SQL Query or Database Table**
 ```python
 from sqlalchemy import create_engine
 
@@ -82,12 +82,12 @@ df.to_sql('myDf', engine)
 ```
 
 ## 7. Selection
-Getting:
+**Getting**
 ```python
 s['b'] # Get one element
 df[1:] # Get subset of a DataFrame
 ```
-Selecting, Boolean Indexing & Setting.
+**Selecting, Boolean Indexing & Setting**
 ```python
 # ---- By Position ----
 df.iloc[[0], [0]] # Select single value 
@@ -112,7 +112,7 @@ s['a'] = 6 # Set index a of Series s to 6
 ```
 
 ## 8. Retrieving Series/DataFrame Information
-Basic Information:
+**Basic Information**
 ```python
 df.shape # (rows, columns)
 df.index # Describe index
@@ -120,7 +120,7 @@ df.columns # Describe columns
 df.info() # Info on DataFrame
 df.count() # Number of non-NA values
 ```
-Summary:
+**Summary**
 ```python
 df.sum() # Sum of values
 df.cumsum() # Cumulative sum of values
@@ -138,7 +138,7 @@ df.applymap(f) # Apply function element-wise
 ```
 
 ## 10. Data Alignment
-Internal Data Alignment:
+**Internal Data Alignment**
 ```python
 # NA values are introduced in the indices that don't overlap
 s3 = pd.Series([7, -2, 3], index=['a', 'c', 'd'])
@@ -148,7 +148,7 @@ s + s3
 # c     5.0
 # d     7.0
 ```
-Arithmetic Operations with Fill Methods
+**Arithmetic Operations with Fill Methods**
 ```python
 # You can also do the internal data alignment yourself with the help of the fill methods:
 s.add(s3, fill_value=0)
