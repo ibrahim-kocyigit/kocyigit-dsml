@@ -4,7 +4,7 @@
 * [2. Importing Packages](#2-importing-packages)
 * [3. The Working Directory](#3-the-working-directory)
 * [4. Operators](#4-operators)
-* []()
+* [5. Getting Started With Lists](#5-getting-started-with-lists)
 * []()
 * []()
 * []()
@@ -40,8 +40,8 @@ current_dir = Path.cwd() # Get the current directory
 ```
 
 ## 4. Operators
-### 4.1. Arithemtic Operators
 ```python
+# ---- Arithmetic Operators ----
 102 + 37 # Add two numbers with +
 102 - 37 # Subtract a number with -
 4 * 6 # Multiply two numbers with *
@@ -49,32 +49,36 @@ current_dir = Path.cwd() # Get the current directory
 22 // 7 # Integer divide a number with //
 3 ** 4 # Raise to the power of with //
 22 % 7 # Get the remainder after division with %
-```
 
-### 4.2. Assignment Operator
-```python
+# ---- Assignment Operator
 a = 5    # Assign a value to a
 x[0] = 1 # Change the value of an item in a list
-```
 
-### 4.3. Numeric Comparison Operators
-```python
+# ---- Numeric Comparison Operators ----
 3 == 3 # Test for equality with ==
 3 != 3 # Test for inequality with !=
 3 > 1 # Test greater than with >
 3 >= 3 # Test greater than or equal to with >=
 3 < 4 # Test less than with <
 3 <= 4 # Test less than or equal to with <=
-```
 
-### 4.1. Logical Operators
-```python
+# ---- Logical Operators ----
 ~(2 == 2) # Logical NOT with ~
 (1 != 1) & (1 < 1) # Logical AND with &
 (1 != 1) | (1 < 1) # Logical OR with |
 (1 != 1) ^ (1 < 1) # Logical XOR with ^
 ```
 
+## 5. Getting Started With Lists
+A list is an ordered and changeable sequence of elements. It can hold integers, characters, floats, strings, and even objects.
+```python
+# --- Creating Lists
+x = [1, 2, 3]
+
+# --- List Functions and Methods
+x.sorted(x) # Return a sorted copy of the list e.g., [1, 2, 3]
+
+```
 
 
 ---
