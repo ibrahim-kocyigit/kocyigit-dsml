@@ -1,4 +1,4 @@
-# Plotly Cheat Sheet
+# Plotly and Dash Cheat Sheet
 
 ## Plotly Express
 ```python
