@@ -1,4 +1,4 @@
-# Python Cheat Sheet for Beginners
+# Python for Beginners
 
 * [1. Accessing Help and Getting Object Types](#1-accessing-help-and-getting-object-types)
 * [2. Importing Packages](#2-importing-packages)
