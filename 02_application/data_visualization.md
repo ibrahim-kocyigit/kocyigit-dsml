@@ -294,6 +294,12 @@ plt.show()
 DataFrame.plot.box()
 plt.show()
 ```
+**Multiple Plot by Category**
+```python
+# Create one plot per category
+DataFrame.plot.line(x='col_x', y='col_y', by='col_category') # Works with .hist() and .box() too
+plt.show()
+```
 
 ## 7. Seaborn Visualizations
 **Relational Plot**
