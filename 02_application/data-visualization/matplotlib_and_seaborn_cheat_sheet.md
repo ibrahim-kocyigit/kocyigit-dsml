@@ -1,4 +1,4 @@
-# Data Visualization
+# Matplotlib and Seaborn Cheat Sheet
 
 * [1. Importing Libraries](#1-importing-libraries)
 * [2. Basic Plotting with Matplotlib](#2-basic-plotting-with-matplotlib)
