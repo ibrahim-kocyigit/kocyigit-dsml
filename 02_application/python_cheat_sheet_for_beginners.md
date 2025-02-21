@@ -149,6 +149,7 @@ np.std(x) # Calculate standard deviation
 ```
 
 ## 9. Getting Started with Characters and Strings
+For more details, see [Working with Text Data in Python](./working_with_text_data_in_python.md)
 ```python
 # Create a string with double or single quotes
 string = "DataCamp"

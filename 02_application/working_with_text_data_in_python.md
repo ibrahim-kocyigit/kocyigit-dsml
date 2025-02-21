@@ -33,39 +33,18 @@ suits.str[2:5] # Returns "ubs" "amo" "art" "ade"
 # Get substrings by negative position with .str[]
 suits.str[:-3] # "cl" "Diamo" "hea" "Spa
 
-# Remove whitespace from the start/end with .str.strip()
-rock_paper_scissors.str.strip() # "rock" "paper" "scissors"
 
-# Pad strings to a given length with .str.pad()
-suits.str.pad(8, fillchar="_") # "___clubs" "Diamonds" "__hearts" "__Spades"
+
 ```
 
 ## 3. Changing Case
 ```python
-# Convert to lowercase with .str.lower()
-suits.str.lower() # "clubs" "diamonds" "hearts" "spades"
 
-# Convert to uppercase with .str.upper()
-suits.str.upper() # "CLUBS" "DIAMONDS" "HEARTS" "SPADES"
-
-# Convert to title case with .str.title()
-pd.Series("hello, world!").str.title() # "Hello, World!"
-
-# Convert to sentence case with .str.capitalize()
-pd.Series("hello, world!").str.capitalize() # "Hello, world!"
 ```
 
 ## 4. Formatting Settings
 ```python
-# Generate an example DataFramed named df
-df = pd.DataFrame({"x": [0.123, 4.567, 8.901]})
-#    x
-#  0 0.123
-#  1 4.567
-#  2 8.901
 
-# Visualize and format table output
-df.style.format(precision = 1)
 ```
 
 ## 5. Section
