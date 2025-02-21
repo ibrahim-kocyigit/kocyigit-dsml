@@ -23,7 +23,7 @@ x = 7  # Integer Value
 y = 12.4  # Float Value
 is_valid = True  # Boolean Value
 is_valid = False  # Boolean Value
-F_Name = "John"  # String Value
+first_name = "John"  # String Value
 ```
 
 **4. Python Operators**
