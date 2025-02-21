@@ -2,8 +2,8 @@
 
 * [1. Importing Libraries](#1-importing-libraries)
 * [2. Basic Plotting with Matplotlib](#2-basic-plotting-with-matplotlib)
-* []()
-* []()
+* [3. Customization](#3-customization)
+* [4. Grid Charts](#4-grid-charts)
 * []()
 * []()
 * []()
@@ -100,25 +100,142 @@ plt.show()
 plt.pie(sizes, labels=labels, autopct='%1.1f%%')
 ```
 
-## Section
+## 3. Customization
+**Title**
+```python
+# Add a title to the plot
+plt.title('Title')
+
+# Customize title size and color
+plt.title('Custom Title', fontsize=16, color='green')
+```
+**X and Y Labes**
+```python
+# Add a label to the x-axis
+plt.xlabel('X-axis Label')
+
+# Add a label to the y-axis
+plt.ylabel('Y-axis Label')
+```
+**Legend**
+```python
+# Add a legend to the plot
+plt.plot(x_values1, y_values1, label='Label 1') # Label will be showed in the legend
+plt.plot(x_values2, y_values2, label='Label 2') # Label will be showed in the legend
+plt.legend()
+plt.show()
+
+# Customize legend position and font size
+plt.legend(loc='upper right', fontsize=10) 
+plt.show()
+```
+**Grid**
+```python
+# Add gridlines to the plot
+plt.grid(True)
+```
+**Set Ticks**
+```python
+# Customize the tick labels on the x-axis
+plt.xticks(ticks=x_values, labels=labels)
+
+# Rotate the x-axis tick labels
+plt.xticks(rotation=45)
+
+# Customize the tick labels on the y-axis
+plt.yticks(ticks=y_values, labels=labels)
+
+# Rotate the y-axis tick labels
+plt.yticks(rotation=30)
+```
+**Tick Label Format**
+```python
+# Change scientific notation to plain text
+plt.ticklabel_format(axis='both', style='plain')
+```
+**Colorbar**
+```python
+# Use a colormap in the scatter plot
+plt.scatter(x, y, c=values, cmap='viridis')
+plt.colorbar()
+
+# Use a different colormap
+plt.scatter(x, y, c=values, cmap='coolwarm')
+plt.colorbar()
+```
+**Annotate**
+```python
+# Add text and an arrow annotation on the plot
+plt.annotate(
+    'Text', xy=(x, y),
+     xytext=(x_offset, y_offset),
+     arrowprops=dict(facecolor='black', shrink=0.05))
+plt.show()
+```
+
+## 4. Grid Charts
+**Figure**
+```python
+# Create two subplots in a 1-row, 2-column grid
+plt.figure(figsize=(8, 3))
+plt.subplot(1, 2, 1)
+plt.subplot(1, 2, 2)
+plt.show()
+```
+**Subplot**
+```python
+# Create a 3-row, 2-column grid of subplots
+plt.figure(figsize=(10, 12))
+for i in range(1, 7):
+    plt.subplot(3, 2, i)
+    plt.plot(x_values, y_values)
+plt.show()
+```
+**Subplots**
+```python
+# Create a grid of 4 vertically stacked subplots
+fig, axes = plt.subplots(nrows=4, ncols=1)
+
+# Create a 2x2 grid of subplots and assign plots to specific axes
+fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(10, 8))
+axes[0, 0].plot(x_values1, y_values1)
+axes[1, 1].plot(x_values2, y_values2)
+plt.show()
+```
+
+## 5. Advanced Plot Customization
 ****
 ```python
 
 ```
-
-## Section
 ****
 ```python
 
 ```
-
-## Section
 ****
 ```python
 
 ```
+****
+```python
 
-## Section
+```
+****
+```python
+
+```
+****
+```python
+
+```
+****
+```python
+
+```
+****
+```python
+
+```
 ****
 ```python
 
