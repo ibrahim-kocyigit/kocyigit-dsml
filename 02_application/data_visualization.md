@@ -1,10 +1,10 @@
-# Data Visualization Cheat Sheet
+# Data Visualization
 
 * [1. Importing Libraries](#1-importing-libraries)
 * [2. Basic Plotting with Matplotlib](#2-basic-plotting-with-matplotlib)
 * [3. Customization](#3-customization)
 * [4. Grid Charts](#4-grid-charts)
-* []()
+* [5. Advanced Plot Customization](#5-advanced-plot-customization)
 * []()
 * []()
 * []()
@@ -204,41 +204,46 @@ plt.show()
 ```
 
 ## 5. Advanced Plot Customization
-****
+**Subplots**
 ```python
-
+# Create a bar chart using the object-oriented approach
+fig, ax = plt.subplots(figsize=(10, 8))
+ax.bar(x, height)
+plt.show()
 ```
-****
+**Spines**
 ```python
-
+# Remove all borders (spines) from the plot
+for location in ['left', 'right', 'bottom', 'top']:
+    ax.spines[location].set_visible(False)
 ```
-****
+**Tick Customizations**
 ```python
+# Hide specific ticks and change tick colors
+ax.tick_params(top=False, left=False)
+ax.tick_params(axis='x', colors='grey')
 
+# Move x-tick labels to the top of the plot
+ax.xaxis.tick_top()
+
+# Set custom tick locations on the x-axis
+ax.set_xticks([0, 150, 300])
+
+# Set custom tick labels on the x-axis
+ax.set_xticklabels(['0', '150', '300'])
 ```
-****
+**Text**
 ```python
-
+# Add custom text to a specific position on the plot
+ax.text(x, y, 'Sample Text', fontsize=12, color='blue')
 ```
-****
+**Vertical and Horizontal Lines to Axes**
 ```python
+# Add a vertical line at a specified x-position with customization
+ax.axvline(x=5, color='red', linewidth=2)
 
-```
-****
-```python
-
-```
-****
-```python
-
-```
-****
-```python
-
-```
-****
-```python
-
+# Add a horizontal line at a specified y-position with customization
+ax.axhline(y=3, color='green', linestyle='--')
 ```
 
 ## Section
