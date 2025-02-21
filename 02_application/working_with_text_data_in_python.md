@@ -8,8 +8,7 @@
 * [6. Joining or Concatenating Strings](#6-joining-or-concatenating-strings)
 * [7. Detecting Matches](#7-detecting-matches)
 * [8. Extracting Matches](#8-extracting-matches)
-* []()
-* []()
+* [9. Replacing Matches](#9-replacing-matches)
 
 ---
 
