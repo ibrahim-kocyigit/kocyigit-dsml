@@ -55,21 +55,20 @@ df.rank() # Assign ranks to entries
 ## 6. Input/Output
 Read and Write to CSV:
 ```python
-# ---- READ AND WRITE TO CSV ----
 pd.read_csv('file.csv', header=None, nrows=5)
 df.to_csv('myDataFrame.csv')
 ```
 Read and Write to Excel:
 ```python
-# ---- READ AND WRITE TO EXCEL ----
 pd.read_excel('file.xlsx')
 df.to_excel('dir/myDataFrame.xlsx',  sheet_name='Sheet1')
 
 # Read multiple sheets from the same file
 xlsx = pd.ExcelFile('file.xls')
 df = pd.read_excel(xlsx,  'Sheet1')
-
-# ---- READ AND WRITE TO SQL QUERY OR DATABASE TABLE ----
+```
+Read and Write to SQL Query or Database Table:
+```python
 from sqlalchemy import create_engine
 
 engine = create_engine('sqlite:///:memory:')
