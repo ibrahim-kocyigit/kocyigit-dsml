@@ -1,4 +1,4 @@
-# Python for Beginners
+# Python Basics
 
 * [1. Accessing Help and Getting Object Types](#1-accessing-help-and-getting-object-types)
 * [2. Importing Packages](#2-importing-packages)
@@ -6,10 +6,7 @@
 * [4. Operators](#4-operators)
 * [5. Getting Started With Lists](#5-getting-started-with-lists)
 * [6. Getting Started With Dictionaries](#6-getting-started-with-dictionaries)
-* [7. NumPy Arrays](#7-numpy-arrays)
-* [8. Math Functions and Methods](#8-math-functions-and-methods)
-* [9. Getting Started with Characters and Strings](#9-getting-started-with-characters-and-strings)
-* [10. Getting Started with DataFrames](#10-getting-started-with-dataframes)
+* [7. Getting Started with Characters and Strings](#7-getting-started-with-characters-and-strings)
 
 ---
 
@@ -124,41 +121,7 @@ x.values() # Get the values of a dictionary, returns dict_values([1, 'Hello', Tr
 x['a'] # Get a value from a dictionary by specifying the key
 ```
 
-## 7. NumPy Arrays
-NumPy is a python package for scientific computing. It provides multidimensional array objects and efficient operations on them. To import NumPy, you can run this Python code: `import numpy as np`
-```python
-# Convert a python list to a NumPy array:
-np.array([1, 2, 3]) # Returns array([1, 2, 3])
-
-# Return a sequence from start (inclusive) to end (exclusive)
-np.arange(1, 5) # Returns array([1, 2, 3, 4])
-
-# Return a stepped sequence from start (inclusive) to end (exclusive)
-np.arange(1, 5, 2) # Returns array([1, 3])
-
-# Repeat values n times
-np.repeat([1, 3, 6], 3) # Returns array([1, 1, 1, 3, 3, 3, 6, 6, 6])
-
-# Repeat values n times
-np.tile([1, 3, 6], 3) # Returns array([1, 3, 6, 1, 3, 6, 1, 3, 6])
-```
-
-## 8. Math Functions and Methods
-All functions take an array as the input.
-```python
-np.log(x) # Calculate logarithm
-np.exp(x) # Calculate exponential
-np.max(x) # Get maximum value
-np.min(x) # Get minimum value
-np.sum(x) # Calculate sum
-np.mean(x) # Calculate mean
-np.quantile(x, q) # Calculate q-th quantile
-np.round(x, n) # Round to n decimal places
-np.var(x) # Calculate variance
-np.std(x) # Calculate standard deviation
-```
-
-## 9. Getting Started with Characters and Strings
+## 7. Getting Started with Characters and Strings
 ```python
 # Create a string with double or single quotes
 string = "DataCamp"
@@ -190,54 +153,6 @@ string.upper() # Convert a string to uppercase, returns "JACK AND JILL"
 string.lower() # Convert a string to lowercase, returns "jack and jill"
 string.title() # Convert a string to title case, returns "Jack And Jill"
 string.replace('J', 'P') # Replaces matches of a substring with another, returns "Pack and Pill"
-```
-
-## 10. Getting Started with DataFrames
-Pandas is a fast and powerful package for data analysis and manipulation in python. To import the package, you can use `import pandas as pd`. 
-* A pandas DataFrame is a structure that contains two-dimensional data stored as rows and columns. 
-* A pandas series is a structure that contains one-dimensional data
-
-**Creating DataFrames**
-```python
-# Create a DataFrame from a dictionary
-pd.DataFrame({
-    'a': [1, 2, 3],
-    'b': np.array[4, 4, 6],
-    'c': ['x', 'x', 'y']
-})
-
-# Create a DataFrame from a list of dictionaries
-pd.DataFrame([
-    {'a': 1, 'b': 4, 'c': 'x'},
-    {'a': 2, 'b': 4, 'c': 'x'},
-    {'a': 3, 'b': 6, 'c': 'y'},
-])
-```
-**Selecting DataFrame Elements**
-```python
-# Select a row, column or element from a dataframe. Remember: all positions are counted from zero, not one.
-
-df.iloc[3] # Select the 3rd row
-df.['col_name'] # Select one column by name
-df[['col_1', 'col_2']] # Select multiple columns by name
-df.iloc[:, 2] # Select all rows, 2nd column
-df.iloc[3, 2] # Select the element in the 3rd row, 2nd column
-df.iloc[::2,:] # Select all the columns for every other row
-```
-**Manipulating DataFrames**
-```python
-pd.concat([df1, df2]) # Concatenate DataFrames vertically
-pd.concat([df1, df2], axis="columns") # Concatenate DataFrames horizontally
-df.query('logical_condition') # Get rows matching a condition
-df.drop(columns=['col_1', 'col_2']) # Drop columns by name
-df.rename(columns={'old_name':'new_name'}) # Rename columns
-df['new_column'] = df['existing_column'] * 2 # Add a new column
-df.assign(temp_f = 9/5 * df['temp_c'] + 32) # Add a new column
-df.mean() # Calculate the mean of each column
-df.agg(aggregation_function) # Apply an aggregation function to all columns
-df.drop_duplicates() # Get unique rows
-df.sort_values(by='col_name') # Sort by values in a column (ascending=True by default)
-df.nlargest(n, 'col_name') # Get rows with largest values in a column.
 ```
 
 ---
