@@ -1,12 +1,10 @@
 # Matplotlib and Seaborn Cheat Sheet
 
 * [1. Importing Libraries](#1-imports-and-settings)
-* [2. Basic Plotting with Matplotlib](#2-basic-plotting-with-matplotlib)
+* [2. Basic Plotting with Matplotlib](#2-basic-plotting)
 * [3. Customization](#3-customization)
 * [4. Grid Charts](#4-grid-charts)
 * [5. Advanced Plot Customization](#5-advanced-plot-customization)
-* [6. Pandas Visualization](#6-pandas-visualization)
-* [7. Seaborn Visualizations](#7-seaborn-visualizations)
 
 
 ## 1. Imports and Settings
@@ -17,16 +15,9 @@ import matplotlib.pyplot as plt
 # Apply the fivethirtyeight predefined style
 import matplotlib.style as style
 style.use('fivethirtyeight')
-
-# Import seaborn and set the default theme
-import seaborn as sns
-sns.set_theme()
-
-# Import pandas using its common alias
-import pandas as pd
 ```
 
-## 2. Basic Plotting with Matplotlib
+## 2. Basic Plotting
 **Line Plot**
 ```python
 # Plot a basic line graph
@@ -242,96 +233,6 @@ ax.axvline(x=5, color='red', linewidth=2)
 
 # Add a horizontal line at a specified y-position with customization
 ax.axhline(y=3, color='green', linestyle='--')
-```
-
-## 6. Pandas Visualization
-**Line Plot (Series)**
-```python
-# Create a line plot from a Series
-Series.plot.line(color='green', linestyle='--')
-plt.show()
-```
-**Line Plot (DataFrame)**
-```python
-# Create a line plot from a DataFrame
-DataFrame.plot.line(x='column_1', y='column_2')
-plt.show()
-```
-**Scatter Plot (DataFrame)**
-```python
-# Create a scatter plot from a DataFrame
-DataFrame.plot.scatter(x='column_1', y='column_2', color='red', s=50)
-plt.show()
-```
-**Histogram (Series)**
-```python
-# Create a histogram from a Series
-Series.plot.hist(bins=20)
-plt.show()
-
-# Create a cumulative histogram
-Series.plot.hist(cumulative=True, bins=30)
-plt.show()
-```
-**Bar Plot (Series)**
-```python
-# Create a vertical bar chart from a Series
-Series.plot.bar()
-plt.show()
-
-# Create a horizontal bar chart from a Series
-Series.plot.barh()
-plt.show()
-
-# Customize bar colors and borders
-Series.plot.bar(color='orange', edgecolor='black')
-plt.show()
-```
-**Box Plot**
-```python
-# Create a boxplot to visualize data distributions
-DataFrame.plot.box()
-plt.show()
-```
-**Multiple Plot by Category**
-```python
-# Create one plot per category
-DataFrame.plot.line(x='col_x', y='col_y', by='col_category') # Works with .hist() and .box() too
-plt.show()
-```
-
-## 7. Seaborn Visualizations
-**Relational Plot**
-```python
-# Create a relational plot with multiple attributes
-sns.relplot(data=data, x='column_x', y='column_y', hue='column_hue', size='column_size', style='column_style')
-
-# Create subplots for relational plots based on a column
-sns.relplot(data=data, x='column_x', y='column_y', hue='column_hue', col='col_var')
-plt.show()
-```
-**Heatmap**
-```python
-# Create a heatmap with annotations
-sns.heatmap(data, annot=True, cmap='coolwarm')
-
-# Create a heatmap with line spacing and custom colors
-sns.heatmap(data, annot=True, linewidths=0.5, cmap='Blues')
-```
-**Pair Plots**
-```python
-# Create pair plots for all combinations of features
-sns.pairplot(data)
-
-```
-**Violin Plot**
-```python
-# Create a violin plot to visualize data distribution
-sns.violinplot(x='x_var', y='y_var', data=data)
-```
-**Joint Plot**
-```python
-sns.jointplot(x='x_var', y='y_var', data=data, kind='reg')
 ```
 
 ---
