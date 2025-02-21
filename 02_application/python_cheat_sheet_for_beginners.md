@@ -73,7 +73,7 @@ x[0] = 1 # Change the value of an item in a list
 ## 5. Getting Started With Lists
 A list is an ordered and changeable sequence of elements. It can hold integers, characters, floats, strings, and even objects.
 ```python
-# ---- Creating Lists ----
+# ---- CREATING LISTS ----
 x = [1, 3, 2]
 
 # --- LIST FUNCTIONS AND METHODS ----
