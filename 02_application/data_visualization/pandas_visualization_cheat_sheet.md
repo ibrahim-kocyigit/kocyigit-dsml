@@ -64,8 +64,8 @@ DataFrame.plot.line(x='col_x', y='col_y', by='col_category') # Works with .hist(
 plt.show()
 ```
 
-**Customization**
-See [here](matplotlib_cheat_sheet.md#3-customization).
+**Customization**  
+* See [here](matplotlib_cheat_sheet.md#3-customization).
 
 ---
 
