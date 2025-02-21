@@ -18,6 +18,18 @@ import pandas as pd # Import a package with an alias
 from pandas import DataFrame # Import an object from a package
 ```
 
+## 3. The Working Directory
+The working directory is the default file path that python reads or saves files into. An example of the working directory is C://file/path . The os library or the pathlib library (more modern, and more Pythonic than os) is needed to set and get the working directory.
+```python
+import os # Import the operating system package
+from pathlib import Path # Import the pathlib package
+
+os.getcwd() # Get the current directory
+os.setcwd("new/working/directory") # Set the working directory to a new file path
+
+current_dir = Path.cwd() # Get the current directory
+```
+
 ---
 
 ## Title
