@@ -42,6 +42,7 @@ current_dir = Path.cwd() # Get the current directory
 ## 4. Operators
 ```python
 # ---- Arithmetic Operators ----
+#-------------------------------
 102 + 37 # Add two numbers with +
 102 - 37 # Subtract a number with -
 4 * 6 # Multiply two numbers with *
@@ -50,7 +51,7 @@ current_dir = Path.cwd() # Get the current directory
 3 ** 4 # Raise to the power of with //
 22 % 7 # Get the remainder after division with %
 
-# ---- Assignment Operator
+# ---- Assignment Operator ----
 a = 5    # Assign a value to a
 x[0] = 1 # Change the value of an item in a list
 
