@@ -1,6 +1,6 @@
 # Matplotlib and Seaborn Cheat Sheet
 
-* [1. Importing Libraries](#1-importing-libraries)
+* [1. Importing Libraries](#1-imports-and-settings)
 * [2. Basic Plotting with Matplotlib](#2-basic-plotting-with-matplotlib)
 * [3. Customization](#3-customization)
 * [4. Grid Charts](#4-grid-charts)
@@ -9,10 +9,14 @@
 * [7. Seaborn Visualizations](#7-seaborn-visualizations)
 
 
-## 1. Importing Libraries
+## 1. Imports and Settings
 ```python
 # Import pyplot module using an alias
 import matplotlib.pyplot as plt
+
+# Apply the fivethirtyeight predefined style
+import matplotlib.style as style
+style.use('fivethirtyeight')
 
 # Import seaborn and set the default theme
 import seaborn as sns
@@ -20,12 +24,7 @@ sns.set_theme()
 
 # Import pandas using its common alias
 import pandas as pd
-
-# Apply the fivethirtyeight predefined style
-import matplotlib.style as style
-style.use('fivethirtyeight')
 ```
-
 
 ## 2. Basic Plotting with Matplotlib
 **Line Plot**
