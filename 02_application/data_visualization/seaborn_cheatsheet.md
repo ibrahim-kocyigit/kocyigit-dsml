@@ -39,6 +39,9 @@ sns.violinplot(x='x_var', y='y_var', data=data)
 sns.jointplot(x='x_var', y='y_var', data=data, kind='reg')
 ```
 
+**Customization**  
+* See [here](matplotlib_cheat_sheet.md#3-customization).
+
 ---
 
 ##### __Source: [Dataquest](https://www.dataquest.io/cheat-sheet/matplotlib-cheat-sheet/)__
