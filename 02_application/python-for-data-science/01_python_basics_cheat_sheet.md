@@ -1,7 +1,8 @@
 # Python Basics Cheat Sheet
 _Source: [Datacamp](https://media.datacamp.com/legacy/image/upload/v1694526244/Marketing/Blog/Python_Basics_Cheat_Sheet-updated.pdf)_
 
-
+* [Accessing Help and Getting Object Types](#accessing-help-and-getting-object-types)
+* []()
 
 ## Accessing Help and Getting Object Types
 ```python
