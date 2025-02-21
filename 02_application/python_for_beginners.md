@@ -41,8 +41,8 @@ current_dir = Path.cwd() # Get the current directory
 ```
 
 ## 4. Operators
+Arithmetic Operators:
 ```python
-# ---- ARITHMETIC OPERATORS ----
 102 + 37 # Add two numbers with +
 102 - 37 # Subtract a number with -
 4 * 6 # Multiply two numbers with *
@@ -50,20 +50,23 @@ current_dir = Path.cwd() # Get the current directory
 22 // 7 # Integer divide a number with //
 3 ** 4 # Raise to the power of with //
 22 % 7 # Get the remainder after division with %
-
-# ---- ASSIGNMENT OPERATOR ----
+```
+Assignment Operator:
+```python
 a = 5    # Assign a value to a
 x[0] = 1 # Change the value of an item in a list
-
-# ---- NUMERIC COMPARISON OPERATORS ----
+```
+Numeric Comparison Operators:
+```python
 3 == 3 # Test for equality with ==
 3 != 3 # Test for inequality with !=
 3 > 1 # Test greater than with >
 3 >= 3 # Test greater than or equal to with >=
 3 < 4 # Test less than with <
 3 <= 4 # Test less than or equal to with <=
-
-# ---- LOGICAL OPERATORS ----
+```
+Logical Operators:
+```python
 ~(2 == 2) # Logical NOT with ~
 (1 != 1) & (1 < 1) # Logical AND with &
 (1 != 1) | (1 < 1) # Logical OR with |
@@ -72,18 +75,21 @@ x[0] = 1 # Change the value of an item in a list
 
 ## 5. Getting Started With Lists
 A list is an ordered and changeable sequence of elements. It can hold integers, characters, floats, strings, and even objects.
-```python
-# ---- CREATING LISTS ----
-x = [1, 3, 2]
 
-# --- LIST FUNCTIONS AND METHODS ----
+Creating Lists:
+```python
+x = [1, 3, 2]
+```
+List Functions and Methods:
+```python
 x.sorted(x) # Return a sorted copy of the list e.g., [1, 2, 3]
 x.sort() # Sorts the list in-place (replaces x)
 reversed(x) # Reverse the order of elements in x e.g., [3, 2, 1]
 x.reversed() # Reverse the list in-place
 x.count(2) # Count the number of element 2 in the list
-
-# ---- SELECTING LIST ELEMENTS ----
+```
+Selecting List Elements:
+```python
 x = ['a', 'b', 'c', 'd', 'e'] # Defining the list
 x[0] # Select the 0th element in the list
 x[-1] # Select the last element in the list
@@ -91,8 +97,9 @@ x[1:3] # Select 1st (inclusive) to 3rd (exclusive)
 x[2:] # Select the 2nd to the end
 x[:3] # Select 0th to 3rd (exclusive)
 x[0:5:2] # Select every other element from the 0th to the 5th (exclusive)
-
-# ---- CONCATENATING LISTS ----
+```
+Concatenate Lists:
+```python
 x = [1, 3, 6] # Define the x list
 y = [10, 15, 21] # Define the y list
 x + y # Returns [1, 3, 6, 10, 15, 21]
@@ -102,15 +109,18 @@ x + y # Returns [1, 3, 6, 10, 15, 21]
 
 ## 6. Getting Started With Dictionaries
 A dictionary stores data values in key-value pairs. That is, unlike lists which are indexed by position, dictionaries are indexed by their keys, the names of which must be unique.
-```python
-# ---- CREATING DICTIONARIES ----
-x = {'a': 1, 'b': 'Hello', 'c': True}
 
-# ---- DICTIONARY FUNCTIONS AND METHODS ----
+Creating Dictionaries:
+```python
+x = {'a': 1, 'b': 'Hello', 'c': True}
+```
+Dictionary Functions and Methods:
+```python
 x.keys() # Get the keys of a dictionary, returns dict_keys(['a', 'b', 'c'])
 x.values() # Get the values of a dictionary, returns dict_values([1, 'Hello', True])
-
-# ---- SELECTING DICTIONARY ELEMENTS ----
+```
+Selecting Dictionary Elements:
+```python
 x['a'] # Get a value from a dictionary by specifying the key
 ```
 
