@@ -7,4 +7,4 @@ Based on the business problem and objectives (from Stage 1), translate the probl
 
 <br>
 
-[^1]: [Data Science Problem Type Cheat Sheet]('./references/data_science_problem_type_cheat_sheet.md')
+[^1]: [Data Science Problem Type Cheat Sheet]('/references/data_science_problem_type_cheat_sheet.md')
