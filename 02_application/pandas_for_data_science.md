@@ -23,11 +23,11 @@ import pandas as pd
 ```
 
 ## 2. Pandas Data Structures
-* **Series:** A one-dimensional labeled array capable of holding any data type.
+**Series:** A one-dimensional labeled array capable of holding any data type.
 ```python
 s = pd.Series([3, -5, 7, 4], index=['a', 'b', 'c', 'd'])
 ```
-* **DataFrame:** A two-dimensional labeled data structure with columns of potentially different types.
+**DataFrame:** A two-dimensional labeled data structure with columns of potentially different types.
 ```python
 df = pd.DataFrame({
     'Country': ['Belgium', 'India', 'Brazil'],
