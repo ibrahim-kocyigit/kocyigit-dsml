@@ -1,5 +1,4 @@
 # Python Basics Cheat Sheet
-_Source: [Datacamp](https://media.datacamp.com/legacy/image/upload/v1694526244/Marketing/Blog/Python_Basics_Cheat_Sheet-updated.pdf)_
 
 * [1. Accessing Help and Getting Object Types](#1-accessing-help-and-getting-object-types)
 * [2. Importing Packages](#2-importing-packages)
@@ -26,3 +25,7 @@ Exp
 ```python
 
 ```
+
+---
+
+_Source: [Datacamp](https://media.datacamp.com/legacy/image/upload/v1694526244/Marketing/Blog/Python_Basics_Cheat_Sheet-updated.pdf)_
