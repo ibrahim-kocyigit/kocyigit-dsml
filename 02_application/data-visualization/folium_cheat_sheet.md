@@ -1,0 +1,3 @@
+# Folium Cheat Sheet
+
+**Map**
