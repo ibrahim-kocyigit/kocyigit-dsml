@@ -41,7 +41,7 @@ current_dir = Path.cwd() # Get the current directory
 ```
 
 ## 4. Operators
-**Arithmetic Operators:**
+**Arithmetic Operators**
 ```python
 102 + 37 # Add two numbers with +
 102 - 37 # Subtract a number with -
@@ -51,12 +51,12 @@ current_dir = Path.cwd() # Get the current directory
 3 ** 4 # Raise to the power of with //
 22 % 7 # Get the remainder after division with %
 ```
-**Assignment Operator:**
+**Assignment Operator**
 ```python
 a = 5    # Assign a value to a
 x[0] = 1 # Change the value of an item in a list
 ```
-**Numeric Comparison Operators:**
+**Numeric Comparison Operators**
 ```python
 3 == 3 # Test for equality with ==
 3 != 3 # Test for inequality with !=
@@ -65,7 +65,7 @@ x[0] = 1 # Change the value of an item in a list
 3 < 4 # Test less than with <
 3 <= 4 # Test less than or equal to with <=
 ```
-**Logical Operators:**
+**Logical Operators**
 ```python
 ~(2 == 2) # Logical NOT with ~
 (1 != 1) & (1 < 1) # Logical AND with &
@@ -76,11 +76,11 @@ x[0] = 1 # Change the value of an item in a list
 ## 5. Getting Started With Lists
 A list is an ordered and changeable sequence of elements. It can hold integers, characters, floats, strings, and even objects.
 
-**Creating Lists:**
+**Creating Lists**
 ```python
 x = [1, 3, 2]
 ```
-**List Functions and Methods:**
+**List Functions and Methods**
 ```python
 x.sorted(x) # Return a sorted copy of the list e.g., [1, 2, 3]
 x.sort() # Sorts the list in-place (replaces x)
@@ -88,7 +88,7 @@ reversed(x) # Reverse the order of elements in x e.g., [3, 2, 1]
 x.reversed() # Reverse the list in-place
 x.count(2) # Count the number of element 2 in the list
 ```
-**Selecting List Elements:**
+**Selecting List Elements**
 ```python
 x = ['a', 'b', 'c', 'd', 'e'] # Defining the list
 x[0] # Select the 0th element in the list
@@ -98,7 +98,7 @@ x[2:] # Select the 2nd to the end
 x[:3] # Select 0th to 3rd (exclusive)
 x[0:5:2] # Select every other element from the 0th to the 5th (exclusive)
 ```
-**Concatenate Lists:**
+**Concatenate Lists**
 ```python
 x = [1, 3, 6] # Define the x list
 y = [10, 15, 21] # Define the y list
@@ -110,16 +110,16 @@ x + y # Returns [1, 3, 6, 10, 15, 21]
 ## 6. Getting Started With Dictionaries
 A dictionary stores data values in key-value pairs. That is, unlike lists which are indexed by position, dictionaries are indexed by their keys, the names of which must be unique.
 
-**Creating Dictionaries:**
+**Creating Dictionaries**
 ```python
 x = {'a': 1, 'b': 'Hello', 'c': True}
 ```
-**Dictionary Functions and Methods:**
+**Dictionary Functions and Methods**
 ```python
 x.keys() # Get the keys of a dictionary, returns dict_keys(['a', 'b', 'c'])
 x.values() # Get the values of a dictionary, returns dict_values([1, 'Hello', True])
 ```
-**Selecting Dictionary Elements:**
+**Selecting Dictionary Elements**
 ```python
 x['a'] # Get a value from a dictionary by specifying the key
 ```
@@ -177,13 +177,13 @@ Citation: https://mds-book.github.io/haikus.html
 string[0] # Get the character at a specific position
 string[0:2] # Get a substring from starting position (inclusive) to ending index (exclusive)
 ```
-**Combining and Splitting Strings:**
+**Combining and Splitting Strings**
 ```python
 "Data" + "Framed" # Concatenate strings with +, this returns "DataFramed"
 3 * "data " # Repeat strings with *, this returns "data data data "
 "beekepers".split("e") # Split a string on a delimiter, returns ['b', '', 'k', '', 'p', 'rs']
 ```
-**Mutate Strings:**
+**Mutate Strings**
 ```python
 string = "Jack and Jill" # Define string
 string.upper() # Convert a string to uppercase, returns "JACK AND JILL"
@@ -197,7 +197,7 @@ Pandas is a fast and powerful package for data analysis and manipulation in pyth
 * A pandas DataFrame is a structure that contains two-dimensional data stored as rows and columns. 
 * A pandas series is a structure that contains one-dimensional data
 
-**Creating DataFrames:**
+**Creating DataFrames**
 ```python
 # Create a DataFrame from a dictionary
 pd.DataFrame({
@@ -213,7 +213,7 @@ pd.DataFrame([
     {'a': 3, 'b': 6, 'c': 'y'},
 ])
 ```
-**Selecting DataFrame Elements:**
+**Selecting DataFrame Elements**
 ```python
 # Select a row, column or element from a dataframe. Remember: all positions are counted from zero, not one.
 
@@ -224,7 +224,7 @@ df.iloc[:, 2] # Select all rows, 2nd column
 df.iloc[3, 2] # Select the element in the 3rd row, 2nd column
 df.iloc[::2,:] # Select all the columns for every other row
 ```
-**Manipulating DataFrames:**
+**Manipulating DataFrames**
 ```python
 pd.concat([df1, df2]) # Concatenate DataFrames vertically
 pd.concat([df1, df2], axis="columns") # Concatenate DataFrames horizontally
