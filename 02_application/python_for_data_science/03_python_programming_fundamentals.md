@@ -1,6 +1,13 @@
 # Python Programming Fundamentals
 
-## Control Flow
+* [1. Control Flow](#1-control-flow)
+* [2. Functions](#2-functions)
+* [3. Classes and Objects](#3-classes-and-objects)
+* [4. Comparison Operators](#4-comparison-operators)
+* [5. Logical Operators](#5-logical-operators)
+* [6. Built-in Functions](#6-built-in-functions)
+
+## 1. Control Flow
 
 **1. If Statement**  
 Executes code block `if` the condition is `True`.
@@ -97,7 +104,7 @@ finally:
     file.close()
 ```
 
-## Functions
+## 2. Functions
 
 **1. Define Function**  
 A `function` is a reusable block of code that performs a specific task or set of tasks when called.
@@ -120,7 +127,7 @@ def add(a, b):
 result = add(3, 5)
 ```
 
-## Classes and Objects
+## 3. Classes and Objects
 
 **1. Class Definition**  
 Defines a blueprint for creating objects and defining their attributes and behaviors.
@@ -137,7 +144,7 @@ Creates an instance of a class (object) using the class constructor.
 person1 = Person("Alice", 25)
 ```
 
-## Operators
+## 4. Comparison Operators
 
 **1. Equal (==)**  
 Checks if two values are equal.
@@ -193,7 +200,7 @@ max_size = 40
 size <= max_size # True
 ```
 
-## Logical Operators
+## 5. Logical Operators
 
 **1. AND**  
 Returns `True` if both statement1 and statement2 are `True`. Otherwise, returns `False`.
@@ -218,4 +225,37 @@ grade == 11 or grade == 12 # True
 Returns `True` if variable is `False`, and vice versa.
 ```python
 isLocked = False!isLocked # True
+```
+
+## 6. Built-in Functions
+
+Python offers a variety of built-in functions to perform common tasks. Here are a few examples:
+
+* **`print()`:** Displays output to the console.
+```python
+print("Hello, world!")
+```
+
+* **`len()`:** Returns the length of a sequence (e.g., string, list, tuple).
+```python
+my_list =
+print(len(my_list))  # Output: 3
+```
+
+* **`type()`:** Returns the data type of a variable.
+```python
+x = 10
+print(type(x))  # Output: <class 'int'>
+```
+
+* **`range()`:** Generates a sequence of numbers.
+```python
+for i in range(5):
+    print(i)  # Output: 0, 1, 2, 3, 4
+```
+
+* **`input()`:** Accepts user input from the console.
+```python
+name = input("Enter your name: ")
+print("Hello,", name)
 ```
