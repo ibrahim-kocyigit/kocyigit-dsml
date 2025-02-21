@@ -1,6 +1,5 @@
 # Folium Cheat Sheet
 
-**Import**
 ```python
 import folium
 ```
