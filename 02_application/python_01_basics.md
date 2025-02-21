@@ -9,13 +9,9 @@
 * [7. NumPy Arrays](#7-numpy-arrays)
 * [8. Math Functions and Methods](#8-math-functions-and-methods)
 * [9. Getting Started with Characters and Strings](#9-getting-started-with-characters-and-strings)
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
+* [10. Getting Started with DataFrames](#10-getting-started-with-dataframes)
 
+---
 
 ## 1. Accessing Help and Getting Object Types
 ```python
@@ -231,4 +227,4 @@ df.nlargest(n, 'col_name') # Get rows with largest values in a column.
 
 ---
 
-_Source: [Datacamp](https://media.datacamp.com/legacy/image/upload/v1694526244/Marketing/Blog/Python_Basics_Cheat_Sheet-updated.pdf)_
+##### _Source: [Datacamp](https://media.datacamp.com/legacy/image/upload/v1694526244/Marketing/Blog/Python_Basics_Cheat_Sheet-updated.pdf)_
