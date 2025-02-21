@@ -7,10 +7,9 @@
 * [5. Sort and Rank](#5-sort-and-rank)
 * [6. Input/Output](#6-inputoutput)
 * [7. Selection](#7-selection)
-* []()
-* []()
-* []()
-* []()
+* [8. Retrieving Series/DataFrame Information](#8-retrieving-seriesdataframe-information)
+* [9. Applying Functions](#9-applying-functions)
+* [10. Data Alignment](#10-data-alignment)
 
 ---
 
@@ -91,26 +90,75 @@ df[1:] # Get subset of a DataFrame
 Selecting, Boolean Indexing & Setting.
 ```python
 # ---- By Position ----
-df.iloc[[0], [0]] # Select single value by row & column 
-df.iat([0], [0])
+df.iloc[[0], [0]] # Select single value 
+df.iat([0], [0]) # Select single value 
 
-# --- By Label ----
-df.loc[]
+# ---- By Label -----
+df.loc[[0], ['Country']] # Select single value 
+df.at([0], ['Country']) # Select single value 
+
+# ---- By Label/Position -----
+df.ix[2] # Select single row of subset of rows
+df.ix[:, 'Capital'] # Select a single column of subset of columns
+df.ix[1, 'Capital'] # Select rows and columns
+
+# ---- Boolean Indexing -----
+s[~(s > 1)] # Series s where value is not > 1
+s[(s < -1) | (s > 2)] # s where value is < -1 OR > 2
+df[df['Population'] < 1_200_000_000] # Use filter to adjust DataFrame
+
+# ---- Setting -----
+s['a'] = 6 # Set index a of Series s to 6
 ```
 
-## 8. Section
+## 8. Retrieving Series/DataFrame Information
+Basic Information:
 ```python
-
+df.shape # (rows, columns)
+df.index # Describe index
+df.columns # Describe columns
+df.info() # Info on DataFrame
+df.count() # Number of non-NA values
+```
+Summary:
+```python
+df.sum() # Sum of values
+df.cumsum() # Cumulative sum of values
+df.min() # Minimum value
+df.max() # Maximum value
+df.idxmin() # Index of the minimum value
+df.idxmax() # Index of the maximum value
 ```
 
-## 9. Section
+## 9. Applying Functions
 ```python
-
+f = lambda x: x*2
+df.apply(f) # Apply function
+df.applymap(f) # Apply function element-wise
 ```
 
-## 10. Section
+## 10. Data Alignment
+Internal Data Alignment:
 ```python
-
+# NA values are introduced in the indices that don't overlap
+s3 = pd.Series([7, -2, 3], index=['a', 'c', 'd'])
+s + s3
+# a     10.0
+# b     NaN
+# c     5.0
+# d     7.0
+```
+Arithmetic Operations with Fill Methods
+```python
+# You can also do the internal data alignment yourself with the help of the fill methods:
+s.add(s3, fill_value=0)
+# a    10.0
+# b    -5.0
+# c    5.0
+# d    7.0
+s.sub(s3, fill_value=2)
+s.div(s3, fill_value=4)
+s.mul(s3, fill_value=3)
 ```
 
 ---
