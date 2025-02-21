@@ -23,11 +23,11 @@ import pandas as pd
 ```
 
 ## 2. Pandas Data Structures
-**Series:** A one-dimensional labeled array capable of holding any data type.
+**Series:** A one-dimensional labeled array capable of holding any data type:
 ```python
 s = pd.Series([3, -5, 7, 4], index=['a', 'b', 'c', 'd'])
 ```
-**DataFrame:** A two-dimensional labeled data structure with columns of potentially different types.
+**DataFrame:** A two-dimensional labeled data structure with columns of potentially different types:
 ```python
 df = pd.DataFrame({
     'Country': ['Belgium', 'India', 'Brazil'],
@@ -83,17 +83,18 @@ df.to_sql('myDf', engine)
 ```
 
 ## 7. Selection
+Getting:
 ```python
-# ---- GETTING ----
 s['b'] # Get one element
 df[1:] # Get subset of a DataFrame
-
-# ---- SELECTING, BOOLEAN INDEXING, AND SETTING ----
-# --- By Position
+```
+Selecting, Boolean Indexing & Setting.
+```python
+# ---- By Position ----
 df.iloc[[0], [0]] # Select single value by row & column 
 df.iat([0], [0])
 
-# --- By Label
+# --- By Label ----
 df.loc[]
 ```
 
