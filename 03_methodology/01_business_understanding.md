@@ -17,3 +17,8 @@ Outline the high-level requirements for the analytic solution from a business pe
 * Prepare the final draft of the Business Understanding Report.
 * Distribute the report to business sponsors for thorough review and validation, specifically requesting feedback on the problem statement, objectives, and requirements.
 * Implement feedback through iterative revisions, facilitating a collaborative process to achieve a clear, validated, and mutually agreed-upon understanding.
+
+---
+
+### References
+* [How to structure business problems for data science solutions](https://towardsdatascience.com/how-to-structure-business-problems-for-data-science-solutions-d7d8a645fb75/)
