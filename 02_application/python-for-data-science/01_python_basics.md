@@ -44,11 +44,11 @@ current_dir = Path.cwd() # Get the current directory
 ```python
 102 + 37 # Add two numbers with +
 102 - 37 # Subtract a number with -
-4 * 6    # Multiply two numbers with *
-22 / 7   # Divide a number by another with /
-22 // 7  # Integer divide a number with //
-3 ** 4   # Raise to the power of with //
-22 % 7   # Get the remainder after division with %
+4 * 6 # Multiply two numbers with *
+22 / 7 # Divide a number by another with /
+22 // 7 # Integer divide a number with //
+3 ** 4 # Raise to the power of with //
+22 % 7 # Get the remainder after division with %
 ```
 
 ### 4.2. Assignment Operator
@@ -59,17 +59,17 @@ x[0] = 1 # Change the value of an item in a list
 
 ### 4.3. Numeric Comparison Operators
 ```python
-3 == 3  # Test for equality with ==
-3 != 3  # Test for inequality with !=
-3 > 1   # Test greater than with >
-3 >= 3  # Test greater than or equal to with >=
-3 < 4   # Test less than with <
-3 <= 4  # Test less than or equal to with <=
+3 == 3 # Test for equality with ==
+3 != 3 # Test for inequality with !=
+3 > 1 # Test greater than with >
+3 >= 3 # Test greater than or equal to with >=
+3 < 4 # Test less than with <
+3 <= 4 # Test less than or equal to with <=
 ```
 
 ### 4.1. Logical Operators
 ```python
-~(2 == 2)          # Logical NOT with ~
+~(2 == 2) # Logical NOT with ~
 (1 != 1) & (1 < 1) # Logical AND with &
 (1 != 1) | (1 < 1) # Logical OR with |
 (1 != 1) ^ (1 < 1) # Logical XOR with ^
