@@ -9,7 +9,7 @@
 ## 1. Lists
 
 **1. Creating a List**  
-A list is a built-in data type that represents an ordered and mutable collection of elements. Lists are enclosed in square brackets `` and elements are separated by commas.
+A list is a built-in data type that represents an ordered and mutable collection of elements. Lists are enclosed in square brackets and elements are separated by commas.
 ```python
 fruits = ["apple", "banana", "orange", "mango"] 
 ```
