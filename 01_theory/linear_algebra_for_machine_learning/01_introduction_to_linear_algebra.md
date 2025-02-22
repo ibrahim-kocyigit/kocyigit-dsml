@@ -14,19 +14,31 @@ Linear algebra is the branch of mathematics that deals with **vectors**, **matri
 ### Scalars
 A **scalar** is a single number (e.g., 5, -3.2, π). Scalars are used to represent quantities like weights, biases, and learning rates in machine learning.
 
+---
+
 ### Vectors
 A **vector** is an ordered list of numbers. For example:
 
-```
+$$
+\mathbf{v} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}
+$$
+
+```python
 v = [1, 2, 3]
 ```
 
 Vectors are used to represent data points, features, or model parameters. They are often denoted with lowercase bold letters (e.g., **v**).
 
+---
+
 ### Matrices
 A **matrix** is a 2D array of numbers. For example:
 
-```
+$$
+\mathbf{A} = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}
+$$
+
+```python
 A = [[1, 2],
      [3, 4]]
 ```
@@ -40,31 +52,63 @@ Matrices are used to represent datasets, transformations, and weights in neural 
 ### Vector Addition and Subtraction
 Vectors of the same size can be added or subtracted element-wise:
 
+$$
+\mathbf{u} + \mathbf{v} = \begin{bmatrix} u_1 + v_1 \\ u_2 + v_2 \\ \vdots \\ u_n + v_n \end{bmatrix}
+$$
+
+```python
+u = [1, 2, 3]
+v = [4, 5, 6]
+vector_sum = [u[i] + v[i] for i in range(len(u))]
+print("Vector Addition:", vector_sum)
 ```
-u + v = [u₁ + v₁, u₂ + v₂, ..., uₙ + vₙ]
-```
+
+---
 
 ### Scalar Multiplication
 A vector can be multiplied by a scalar, scaling each element:
 
+$$
+c \cdot \mathbf{v} = \begin{bmatrix} c \cdot v_1 \\ c \cdot v_2 \\ \vdots \\ c \cdot v_n \end{bmatrix}
+$$
+
+```python
+c = 2
+v = [1, 2, 3]
+scalar_mult = [c * v_i for v_i in v]
+print("Scalar Multiplication:", scalar_mult)
 ```
-c · v = [c · v₁, c · v₂, ..., c · vₙ]
-```
+
+---
 
 ### Matrix Addition and Subtraction
 Matrices of the same size can be added or subtracted element-wise:
 
+$$
+\mathbf{A} + \mathbf{B} = \begin{bmatrix} a_{11} + b_{11} & a_{12} + b_{12} \\ a_{21} + b_{21} & a_{22} + b_{22} \end{bmatrix}
+$$
+
+```python
+A = [[1, 2], [3, 4]]
+B = [[5, 6], [7, 8]]
+matrix_sum = [[A[i][j] + B[i][j] for j in range(len(A[0]))] for i in range(len(A))]
+print("Matrix Addition:", matrix_sum)
 ```
-A + B = [[a₁₁ + b₁₁, a₁₂ + b₁₂],
-         [a₂₁ + b₂₁, a₂₂ + b₂₂]]
-```
+
+---
 
 ### Scalar Multiplication of Matrices
 A matrix can be multiplied by a scalar, scaling each element:
 
-```
-c · A = [[c · a₁₁, c · a₁₂],
-         [c · a₂₁, c · a₂₂]]
+$$
+c \cdot \mathbf{A} = \begin{bmatrix} c \cdot a_{11} & c \cdot a_{12} \\ c \cdot a_{21} & c \cdot a_{22} \end{bmatrix}
+$$
+
+```python
+c = 2
+A = [[1, 2], [3, 4]]
+scalar_mult = [[c * A[i][j] for j in range(len(A[0]))] for i in range(len(A))]
+print("Scalar Multiplication of Matrix:", scalar_mult)
 ```
 
 ---
