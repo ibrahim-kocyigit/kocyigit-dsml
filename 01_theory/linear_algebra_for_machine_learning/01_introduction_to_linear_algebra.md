@@ -19,9 +19,9 @@ A **scalar** is a single number (e.g., 5, -3.2, π). Scalars are used to represe
 ### Vectors
 A **vector** is an ordered list of numbers. For example:
 
-$$
+$$ 
 \mathbf{v} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}
-$$
+$$ 
 
 ```python
 v = [1, 2, 3]
