@@ -32,22 +32,22 @@ Descriptive statistics helps us to:
 ## Example: Exam Scores Analysis
 Let's say we have a dataset of exam scores for a class. We can use descriptive statistics to summarize the data.
 
-### Mean: 79.5
+### Mean
 The average score is 79.5, which is relatively high. This indicates that, on average, the class performed well. 
 * If the mean were significantly lower, this would have indicated that the class, on average, struggled with the exam. We would assume that the exam might have been too difficult, or the students were underprepared.
 * If the mean were significantly higher, this would have indicated that the class, on average, performed exceptionally well. We would assume that the exam might have been too easy, or the students were exceptionally well-prepared.
 
-### Median: 80.5
+### Median
 The middle score is 80.5, which is very close to the average (79.5). This suggests that the distribution is relatively symmetrical and not heavily skewed. 
 * If the median were significantly higher than the mean, the distribution would be negatively skewed (left-skewed), meaning there are more lower scores.
 * If the median were significantly lower the median, the distribution would be positively skewed (right-skewed), meaning there are more higher scores.
 
-### Mode: None
+### Mode
 There is no mode, all scores are unique. Because there is no mode, this means that there is not a score that is heavily repeated. This indicates a diverse spread of scores. If there were a distinct mode, this would indicate that a significant number of students achieved that particular score. In that case, we would have assumed that:
 * A common understanding or misunderstanding of a specific topic might have led to that common score
 * The exam could have had a question that was very easy or very difficult for many students.
 
-### Standard Deviation: 12.5
+### Standard Deviation
 The standard deviation is 12.5, indicating a moderate spread of scores around the mean. This means that, on average, scores deviate from the mean by 12.5 points. 
 * If the standard deviation were very low, this would indicate that most scores were very close to the mean. In that case, we would have assumed that:
     * The class performed very consistently
@@ -56,7 +56,7 @@ The standard deviation is 12.5, indicating a moderate spread of scores around th
     * There is a significant disparity in student abilities within the class
     * The exam might have been too broad, testing a wide range of knowledge levels
 
-### Interquartile Range (IQR): 18
+### Interquartile Range (IQR)
 The range is very sensitive to outliers, so we'll use Interquartile Range. The IQR of 18 points indicates that the middle 50% of the scores fall in a 18-point range.
 * If the IQR were very small, this would indicate that the middle 50% of the scores are very tightly clustered. In that case, we would have assumed that:
     * The majority of the class performed very consistently within a narrow range.
