@@ -79,12 +79,21 @@ print(X)
 # Bonus: Write a function for scaling
 
 
-def scale_feature(X, column):
+def scale_feature(X: np.ndarray, column: int) -> np.ndarray:
+    """
+    Scales the specified column of the dataset X to the range [0, 1].
+
+    Parameters:
+    X (numpy.ndarray): The dataset.
+    column (int): The index of the column to scale.
+
+    Returns:
+    numpy.ndarray: The dataset with the scaled column.
+    """
+
     x_min = X[:, column].min()
     x_max = X[:, column].max()
-
-    x_scaled = (X[:, column] - x_min) / (x_max - x_min)
-    X[:, column] = x_scaled
+    X[:, column] = (X[:, column] - x_min) / (x_max - x_min)
 
     return X
 
