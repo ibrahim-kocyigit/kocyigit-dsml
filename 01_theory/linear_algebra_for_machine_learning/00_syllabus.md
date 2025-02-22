@@ -110,3 +110,7 @@ By the end of this course, you will:
 3. Apply linear transformations to data.
 4. Use eigenvalues, eigenvectors, and matrix decompositions for dimensionality reduction.
 5. Understand how linear algebra is used in machine learning algorithms.
+
+\[
+\mathbf{v} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}
+\]
