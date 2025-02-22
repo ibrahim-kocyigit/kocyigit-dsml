@@ -1,0 +1,17 @@
+# Lineer Cebire Giriş
+
+## 1. Lineer Cebir Nedir? 
+
+**Lineer cebir** (_linear algebra_), **vektörler** (_vectors_), **matrisler** (_matrices_) ve **lineer dönüşümler** (_linear transformations_) gibi matematiksel yapıları inceleyen bir matematik dalıdır. Temelde, doğrusal denklemlerin çözümü (_add english_) ve bu denklemlerle ifade edilebilen sistemlerin (_system of linear equations_) analizi ile ilgilenir.
+
+### Lineer Cebir Neden Önemli?
+
+Lineer cebir **veri bilimi** (_data science_) ve **makine öğrenmesi** (_machine learning_) alanlarında şu işlevlere sahiptir: 
+
+1. **Veri Temsili (_Data Representation_):** Veri bilimi projelerinde elimizdeki veriler genellikle sayılardan oluşur. Bu sayıları düzenli bir şekilde ifade etmek için **vektörler** ve **matrisler** kullanılır. Örneğin, bir evin büyüklüğü, oda sayısı, konumu gibi özellikleri bir vektör ile, birden fazla evin özelliklerini ise bir matris ile gösterebiliriz.
+
+2. **Model Oluşturma (_Model Building_):** Makine öğrenmesi algoritmaları, veriler arasındaki ilişkileri modellemek için lineer cebir kavramlarını kullanır. Örneğin, **lineer regresyon** (_linear regression_), **lojistik regresyon** (_logistic regression_), **destek vektör makineleri** (_support vector machines_) gibi birçok algoritmanın temelinde lineer cebir yatar.
+
+3. **Boyut Azaltma (_Dimensionality Reduction_):** Veri setlerimiz bazen çok sayıda özellik içerebilir. Bu durum, hem hesaplama maliyetini artırır hem de modelin performansını düşürebilir. **Temel Bileşen Analizi** (_Principal Component Analysis, PCA_) gibi boyut azaltma teknikleri, lineer cebir sayesinde veriyi daha az sayıda, ama daha anlamlı özelliklerle ifade etmemizi sağlar.
+
+4.  **Derin Öğrenme (_Deep Learning_):** Günümüzde popüler olan **derin öğrenme** algoritmaları, yapay sinir ağlarından (_neural networks_) oluşur. Bu ağlardaki işlemler, aslında matris çarpımları ve lineer dönüşümlerden başka bir şey değildir.
