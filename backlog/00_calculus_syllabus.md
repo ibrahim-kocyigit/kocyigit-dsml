@@ -5,9 +5,10 @@ This 8-lesson course provides a comprehensive introduction to calculus, focusing
 ---
 
 ## Lesson 1: Introduction to Calculus
+
 - **Topics Covered:**
   - What is calculus? Why is it important for machine learning?
-  - Limits and continuity.
+  - Limits and continuity. *Brief mention of types of discontinuities (removable, jump, infinite).*
   - Derivatives: definition and geometric interpretation.
 - **Hands-On Project:** Compute limits and derivatives using SymPy.
 - **Real-World Example:** Understanding the slope of a curve.
@@ -15,45 +16,53 @@ This 8-lesson course provides a comprehensive introduction to calculus, focusing
 ---
 
 ## Lesson 2: Differentiation Rules
+
 - **Topics Covered:**
   - Power rule, product rule, quotient rule, chain rule.
   - Derivatives of common functions (e.g., exponential, logarithmic, trigonometric).
+  - *Brief Mention:* Implicit differentiation.
 - **Hands-On Project:** Compute derivatives of various functions.
 - **Real-World Example:** Derivatives in optimization problems.
 
 ---
 
 ## Lesson 3: Partial Derivatives and Gradients
+
 - **Topics Covered:**
   - Partial derivatives and their geometric interpretation.
-  - Gradient vectors and directional derivatives.
+  - Gradient vectors and directional derivatives. *More detailed explanation and a simple example of directional derivatives.*
   - Applications in optimization.
+    - *Related Concept:* Jacobian Matrix (brief mention)
 - **Hands-On Project:** Compute gradients for multivariable functions.
 - **Real-World Example:** Gradient descent in machine learning.
 
 ---
 
 ## Lesson 4: Optimization
+
 - **Topics Covered:**
   - Local and global minima/maxima.
   - Critical points and saddle points.
   - Gradient descent algorithm.
+  - *Importance of Convexity:* Briefly explain convex and non-convex functions and the implications for gradient descent.
 - **Hands-On Project:** Implement gradient descent for a simple function.
 - **Real-World Example:** Optimizing a loss function.
 
 ---
 
 ## Lesson 5: Integrals
+
 - **Topics Covered:**
   - Definite and indefinite integrals.
   - Fundamental Theorem of Calculus.
-  - Applications in probability (e.g., calculating expected values).
+  - Applications in probability: *Specifically mention probability density functions (PDFs) and cumulative distribution functions (CDFs)*.
 - **Hands-On Project:** Compute integrals using SymPy.
-- **Real-World Example:** Calculating areas under curves.
+- **Real-World Example:** Calculating areas under curves; calculating probabilities from PDFs.
 
 ---
 
 ## Lesson 6: Multivariable Calculus
+
 - **Topics Covered:**
   - Functions of multiple variables.
   - Hessian matrix and second-order derivatives.
@@ -64,6 +73,7 @@ This 8-lesson course provides a comprehensive introduction to calculus, focusing
 ---
 
 ## Lesson 7: Backpropagation and Neural Networks
+
 - **Topics Covered:**
   - Chain rule in neural networks.
   - Computing gradients for backpropagation.
@@ -74,16 +84,20 @@ This 8-lesson course provides a comprehensive introduction to calculus, focusing
 ---
 
 ## Lesson 8: Applications in Machine Learning
+
 - **Topics Covered:**
   - Gradient descent in linear regression.
   - Optimization in deep learning.
   - Regularization and its mathematical foundations.
+    - *More Variety:* Briefly mention other ML algorithms and how they are related to optimization, and/or how calculus concepts show. (E.g., Support Vector Machines (SVMs) are related to Convex Optimization)
+
 - **Hands-On Project:** Optimize a logistic regression model using gradient descent.
 - **Real-World Example:** Regularization in machine learning models.
 
 ---
 
 ## Course Features
+
 - **Hands-On Projects:** Each lesson includes a practical project to apply the concepts learned.
 - **Real-World Examples:** Concepts are illustrated using datasets and scenarios from machine learning.
 - **Integration with Machine Learning:** Explicit connections are made between calculus concepts and their applications in machine learning.
@@ -91,22 +105,36 @@ This 8-lesson course provides a comprehensive introduction to calculus, focusing
 ---
 
 ## Prerequisites
+
 - Basic knowledge of Python programming.
 - Familiarity with high school-level calculus (optional but helpful).
 
 ---
 
 ## Tools and Libraries
+
 - Python libraries: NumPy, SymPy, Matplotlib.
 - Jupyter Notebook for hands-on coding.
 
 ---
 
 ## Learning Outcomes
-By the end of this course, you will:
-1. Understand foundational calculus concepts and their importance in machine learning.
-2. Be able to compute derivatives and integrals.
-3. Apply optimization techniques like gradient descent.
-4. Understand how calculus is used in training machine learning models.
-5. Use calculus to analyze and improve machine learning algorithms.
 
+By the end of this course, you will:
+
+1.  Understand foundational calculus concepts and their importance in machine learning.
+2.  Be able to compute derivatives and integrals.
+3.  Apply optimization techniques like gradient descent.
+4.  Understand how calculus is used in training machine learning models.
+5.  Use calculus to analyze and improve machine learning algorithms.
+
+---
+
+## Recommended Resources
+
+*   **Textbooks:**
+    *   *Calculus* by James Stewart (a classic, comprehensive textbook)
+    *   *Calculus: Early Transcendentals* by Jon Rogawski and Colin Adams
+*   **Online Courses:**
+    *   Khan Academy's Calculus course (excellent for visual explanations and practice)
+    *   3Blue1Brown's "Essence of Calculus" series on YouTube (highly recommended for building intuition)
