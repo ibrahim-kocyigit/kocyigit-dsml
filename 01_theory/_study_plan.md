@@ -2,6 +2,7 @@
 
 - **Step 1:** Introduction to Linear Algebra, from Linear Algebra for Machine Learning
 - **Step 2:** Introduction to Statistics and Descriptive Statistics, from Statistics for Machine Learning
+
 - **Step 3:** Vector Operations, from Linear Algebra for Machine Learning
 - **Step 4:** Introduction to Probability, from Statistics for Machine Learning
 - **Step 5:** Introduction to Calculus, from Calculus for Machine Learning
