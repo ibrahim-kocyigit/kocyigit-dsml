@@ -29,15 +29,28 @@ In contrast, unlabeled examples contain features, but no label. After you create
 
 ### Dataset Characteristics
 
-#### Characterization by size and diversity:**  
+#### Characterization by size and diversity
 A dataset is characterized by its size and diversity. Size indicates the number of examples. Diversity indicates the range those examples cover. Good datasets are both large and highly diverse.
 
 Some datasets are both large and diverse. However, some datasets are large but have low diversity, and some are small but highly diverse. In other words, a large dataset doesn't guarantee sufficient diversity, and a dataset that is highly diverse doesn't guarantee sufficient examples.
 
 For instance, a dataset might contain 100 years worth of data, but only for the month of July. Using this dataset to predict rainfall in January would produce poor predictions. Conversely, a dataset might cover only a few years but contain every month. This dataset might produce poor predictions because it doesn't contain enough years to account for variability.
 
-#### Characterization by number of features:**  
-A dataset can also be characterized by the number of its features.
-
+#### Characterization by number of features
+A dataset can also be characterized by the number of its features. For example, some weather datasets might contain hundreds of features, ranging from satellite imagery to cloud coverage features. Other datasets might contain only three or four features, like humidity, atmospheric pressure, and temperature. Datasets with more features can help a model discover additional patterns and make better predictions. However, datasets with more features don't _always_ produce models that make better predictions because some features might have no casual relationship to the label.
 
 ## 2. Model
+In supervised learning, a model is the complex collection of numbers that define the mathematical relationship from specific input feature patterns to specific output label values. The model discovers these patterns through training.
+
+## 3. Training
+Before a supervised model can make predictions, it must be trained. To train a model, we give the model a dataset with labeled examples. The model's goal is to work out the best solution for predicting the labels from the features. The model finds the best solution by comparing its predicted value to the label's actual value. Based on the difference between the predicted and actual values -defined as [loss](https://developers.google.com/machine-learning/glossary#loss)- the model gradually updates its solution. In other words, the model learns the mathematical relationship between the features and the label so that it can make the best predictions on unseen data.
+
+For example, if the model predicted `1.15 inches` of rain, but the actual value was `.75` inches, the model modifies its solution so its prediction is closer to `.75 inches`. After the model has looked at each example in the dataset -in some cases, multiple times- it arrives at a solution that makes the best predictions, on average, for each of the examples.
+
+The following demonstrates training a model:
+
+1. The model takes in a single labeled example and provides a prediction.
+
+![](https://developers.google.com/static/machine-learning/intro-to-ml/images/training-a-model-01.png)
+
+2. The model compares its predicted value with the actual value and updates its solution.
