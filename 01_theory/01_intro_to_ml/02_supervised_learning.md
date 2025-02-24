@@ -1,8 +1,6 @@
 # Supervised Learning
 
-Supervised learning's tasks are well-defined and can be applied to a multitude of scenarios -like identifying spam or predicting precipitation.
-
-Supervised machine learning is based on the following core concepts:
+Supervised learning's tasks are well-defined and can be applied to a multitude of scenarios -like identifying spam or predicting precipitation. Supervised machine learning is based on the following core concepts:
 
 1. Data
 2. Model
