@@ -20,12 +20,12 @@ Examples that contain both features and a label are called [labeled examples](ht
 
 **Two labeled examples:**  
 
-![](https://developers.google.com/static/machine-learning/intro-to-ml/images/labeled_example.png)
+<img src="https://developers.google.com/static/machine-learning/intro-to-ml/images/labeled_example.png" alt="" style="width:800px;" align='center'/>
 
 In contrast, unlabeled examples contain features, but no label. After you create the model, the model predicts the label from the features.
 
 **Two unlabeled examples:** 
-![](https://developers.google.com/static/machine-learning/intro-to-ml/images/unlabeled_example.png)
+<img src="https://developers.google.com/static/machine-learning/intro-to-ml/images/unlabeled_example.png" alt="" style="width:800px;"/>
 
 ### Dataset Characteristics
 
@@ -52,9 +52,9 @@ The following demonstrates training a model:
 1. The model takes in a single labeled example and provides a prediction.
 
 
-<center><img src="https://developers.google.com/static/machine-learning/intro-to-ml/images/training-a-model-01.png" alt="" style="width:800px;"/></center>
+<img src="https://developers.google.com/static/machine-learning/intro-to-ml/images/training-a-model-01.png" alt="" style="width:800px;"/>
 
 2. The model compares its predicted value with the actual value and updates its solution.
 
-<center><img src="https://developers.google.com/static/machine-learning/intro-to-ml/images/training-a-model-02.png" alt="" style="width:400px;"/></center>
+<img src="https://developers.google.com/static/machine-learning/intro-to-ml/images/training-a-model-02.png" alt="" style="width:400px;"/>
 
