@@ -59,3 +59,21 @@ The following demonstrates training a model:
 
 <img src="https://developers.google.com/static/machine-learning/intro-to-ml/images/training-a-model-02.png" alt="" style="width:400px;"/>
 
+
+3. The model repeats this process for each labeled example in the dataset.
+
+<img src="https://developers.google.com/static/machine-learning/intro-to-ml/images/training-a-model-03.png" alt="" style="width:600px;"/>
+
+In this way, the model gradually learns the correct relationship between the features and the label. This gradual understanding is also why large and diverse datasets produce a better model. The model has seen more data with a wider range of values and has refined its understanding of the relationship between the features and the label. 
+
+During training, ML practitioners can make subtle adjustments to the configurations and features the model uses to make predictions. For example, certain features have more predictive power than others. Therefore, ML practitioners can select which features the model uses during training. For example, suppose a weather dataset contains `time_of_day` as a feature. In this case, an ML practitioner can add or remove `time_of_day` during training to see whether the model makes better predictions with or without it.
+
+## 4. Evaluating
+We evaluate a trained model to determine how well it learned. When we evaluate a model, we use a labeled dataset, but we only give the model the dataset's features. We then compare the model's predictions to the label's true values.
+
+<img src="https://developers.google.com/static/machine-learning/intro-to-ml/images/evaluating-a-model.png" alt="" style="width:400px;"/>
+
+Depending on the model's predictions, we might do more training and evaluating before deploying the model in a real-world application.
+
+## 5. Inference
+Once we're satisfied with the results from evaluating the model, we can use the model to make predictions, called [inferences](https://developers.google.com/machine-learning/glossary#inference), on unlabeled examples. In the weather app example, we would give the model the current weather conditions -like temperature, atmospheric pressure, and relative humidity, and it would predict the amount of rainfall.
