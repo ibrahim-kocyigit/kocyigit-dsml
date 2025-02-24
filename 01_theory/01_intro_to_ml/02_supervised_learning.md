@@ -54,3 +54,5 @@ The following demonstrates training a model:
 ![](https://developers.google.com/static/machine-learning/intro-to-ml/images/training-a-model-01.png)
 
 2. The model compares its predicted value with the actual value and updates its solution.
+
+![](https://developers.google.com/static/machine-learning/intro-to-ml/images/training-a-model-02.png)
