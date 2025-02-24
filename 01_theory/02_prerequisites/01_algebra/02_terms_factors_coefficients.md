@@ -24,7 +24,7 @@ A coefficient is the numerical factor that multiplies a variable in a term. In t
 * If a term has only a variable (like `x`), its coefficient is understood to be `1`.
 * It is important to remember that the sign of the coefficient is taken from the sign of the term.  For Example, in the expression `3x -5y`, the coefficient of `y` is `-5`.
 
-### Why These Concepts Matter in Data Science**
+### Why These Concepts Matter in Data Science
 * In machine learning, many models, especially linear ones, rely heavily on coefficients to determine the importance of different features (variables). For example, in linear regression, you'll work with equations like: `y = mx + b`. Here, `m` (the slope) is a coefficient that determines the relationship between the input variable `x` and the output variable `y`.
 * In data analysis, understanding terms, factors, and coefficients helps you interpret the results of statistical analyses and models.
 
