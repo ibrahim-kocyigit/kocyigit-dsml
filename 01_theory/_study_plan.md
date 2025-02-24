@@ -1,27 +1,40 @@
 # Study Plan
 
-- **Step 1:** [Introduction to Linear Algebra](./linear_algebra_for_machine_learning/01_introduction_to_linear_algebra.ipynb), from *Linear Algebra for Machine Learning*
-- **Step 2:** [Introduction to Statistics and Descriptive Statistics](./statistics_for_machine_learning/01_introduction_to_statistics_and_descriptive_statistics.ipynb), from *Statistics for Machine Learning*
-- **Step 3:** [Introduction to Probability](./statistics_for_machine_learning/02_introduction_to_probability.ipynb), from *Statistics for Machine Learning*
-- **Step 4:** Introduction to Calculus, from *Calculus for Machine Learning*
-- **Step 5:** Differentiation Rules, from *Calculus for Machine Learning*
-- **Step 6:** Vector Operations, from *Linear Algebra for Machine Learning*
-- **Step 7:** Matrix Operations, from *Linear Algebra for Machine Learning*
-- **Step 8:** Partial Derivatives and Gradients, from *Calculus for Machine Learning*
-- **Step 9:** Optimization, from *Calculus for Machine Learning*
-- **Step 10:** Linear Transformations, from *Linear Algebra for Machine Learning*
-- **Step 11:** Systems of Linear Equations, from *Linear Algebra for Machine Learning*
-- **Step 12:** Probability Distributions, from *Statistics for Machine Learning*
-- **Step 13:** Sampling and Estimation, from *Statistics for Machine Learning*
-- **Step 14:** Integrals, from *Calculus for Machine Learning*
-- **Step 15:** Eigenvalues and Eigenvectors, from *Linear Algebra for Machine Learning*
-- **Step 16:** Correlation and Covariance, from *Statistics for Machine Learning*
-- **Step 17:** Matrix Decomposition, from *Linear Algebra for Machine Learning*
-- **Step 18:** Multivariable Calculus, from *Calculus for Machine Learning*
-- **Step 19:** Normality and Normal Distribution, from *Statistics for Machine Learning*
-- **Step 20:** Hypothesis Testing, from *Statistics for Machine Learning*
-- **Step 21:** Applications in Machine Learning, from *Linear Algebra for Machine Learning*
-- **Step 22:** Backpropagation and Neural Networks, from *Calculus for Machine Learning*
-- **Step 23:** Advanced Topics in Statistics for Machine Learning, from *Statistics for Machine Learning*
-- **Step 24:** Applications in Machine Learning, from *Calculus for Machine Learning*
+## Phase 1: Foundations
 
+1. **Introduction to Linear Algebra** (Linear Algebra for Machine Learning)  
+2. **Introduction to Statistics and Descriptive Statistics** (Statistics for Machine Learning)  
+3. **Introduction to Probability** (Statistics for Machine Learning)  
+4. **Introduction to Calculus** (Calculus for Machine Learning)  
+
+---
+
+## Phase 2: Core Concepts
+5. **Vector Operations** (Linear Algebra for Machine Learning)  
+6. **Matrix Operations** (Linear Algebra for Machine Learning)  
+7. **Differentiation Rules** (Calculus for Machine Learning)  
+8. **Probability Distributions** (Statistics for Machine Learning)  
+9. **Partial Derivatives and Gradients** (Calculus for Machine Learning)  
+10. **Optimization** (Calculus for Machine Learning)  
+
+---
+
+## Phase 3: Intermediate Topics
+11. **Linear Transformations** (Linear Algebra for Machine Learning)  
+12. **Systems of Linear Equations** (Linear Algebra for Machine Learning)  
+13. **Sampling and Estimation** (Statistics for Machine Learning)  
+14. **Correlation and Covariance** (Statistics for Machine Learning)  
+15. **Eigenvalues and Eigenvectors** (Linear Algebra for Machine Learning)  
+16. **Matrix Decomposition** (Linear Algebra for Machine Learning)  
+
+---
+
+## Phase 4: Advanced Topics
+17. **Integrals** (Calculus for Machine Learning)  
+18. **Multivariable Calculus** (Calculus for Machine Learning)  
+19. **Normality and Normal Distribution** (Statistics for Machine Learning)  
+20. **Hypothesis Testing** (Statistics for Machine Learning)  
+21. **Applications in Machine Learning** (Linear Algebra for Machine Learning)  
+22. **Backpropagation and Neural Networks** (Calculus for Machine Learning)  
+23. **Advanced Topics in Statistics for Machine Learning** (Statistics for Machine Learning)  
+24. **Applications in Machine Learning** (Calculus for Machine Learning)  
