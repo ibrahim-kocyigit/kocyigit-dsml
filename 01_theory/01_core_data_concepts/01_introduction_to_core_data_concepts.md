@@ -21,7 +21,7 @@ These terms apply to _categorical_ (discrete) data:
 
 **Nominal data** is categories with _no inherent order_ or ranking. Examples: colors (red, blue, green), types of animals (dog, cat, bird). You can't sort nominal data in a meaningful way. 
 
-**Ordinal data** is categories with a _meaningful order_ or ranking. Examples: education levels (high school, bachelor's, master's, PhD), customer satisfaction ratings (very dissatisfied, dissatisfied, neutral, satisfied, very satisfied), airline passenger classes (business, first, economy).
+**Ordinal data** is categories with a _meaningful order_ or ranking. Examples: education levels (high school, bachelor's, master's, PhD), customer satisfaction ratings (very dissatisfied, dissatisfied, neutral, satisfied, very satisfied), airline passenger classes (first, second, third).
 
 ### Structured vs Unstructured Data
 **Structured data** is organized in a predefined format, typically rows and columns (like a table or spreadsheet). It is easy to search and analyze. Examples: data in a relational database, CSV files, Excel spreadsheets.
