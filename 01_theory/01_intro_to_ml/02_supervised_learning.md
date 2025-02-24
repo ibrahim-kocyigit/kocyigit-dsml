@@ -24,7 +24,8 @@ Examples that contain both features and a label are called [labeled examples](ht
 
 In contrast, unlabeled examples contain features, but no label. After you create the model, the model predicts the label from the features.
 
-**Two unlabeled examples:** 
+**Two unlabeled examples:**  
+
 <img src="https://developers.google.com/static/machine-learning/intro-to-ml/images/unlabeled_example.png" alt="" style="width:800px;"/>
 
 ### Dataset Characteristics
