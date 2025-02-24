@@ -20,7 +20,7 @@ Examples that contain both features and a label are called [labeled examples](ht
 
 **Two labeled examples:**  
 
-<img src="https://developers.google.com/static/machine-learning/intro-to-ml/images/labeled_example.png" alt="" style="width:800px;" align='center'/>
+<img src="https://developers.google.com/static/machine-learning/intro-to-ml/images/labeled_example.png" alt="" style="width:800px;"/>
 
 In contrast, unlabeled examples contain features, but no label. After you create the model, the model predicts the label from the features.
 
