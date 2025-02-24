@@ -30,6 +30,7 @@ These terms apply to _categorical_ (discrete) data:
 
 ### Population vs Sample Data
 **Population data** is the data of the _entire_ group of individuals or items that you are interested in studying. Example: The exam scores of _all_ students in a school.
+
 **Sample data** is the data of a _subset_ of the population that is selected for study. Example: A survey of 100 students school of 1.000 students. Samples are used when it's impractical or impossible to collect data on the entire population. A good sample should be _representative_ of the population.
 
 
