@@ -2,9 +2,9 @@
 
 ## Phase 1: Foundations
 
-1. **Introduction to Linear Algebra** (Linear Algebra for Machine Learning)  
-2. **Introduction to Statistics and Descriptive Statistics** (Statistics for Machine Learning)  
-3. **Introduction to Probability** (Statistics for Machine Learning)  
+1. [Introduction to Linear Algebra](./linear_algebra_for_machine_learning/01_introduction_to_linear_algebra.ipynb) (Linear Algebra for Machine Learning)  
+2. [Introduction to Statistics and Descriptive Statistics](./statistics_for_machine_learning/01_introduction_to_statistics_and_descriptive_statistics.ipynb) (Statistics for Machine Learning)  
+3. [Introduction to Probability](./statistics_for_machine_learning/02_introduction_to_probability.ipynb) (Statistics for Machine Learning)  
 4. **Introduction to Calculus** (Calculus for Machine Learning)  
 
 ---
