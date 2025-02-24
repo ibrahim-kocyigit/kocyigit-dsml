@@ -1,6 +1,6 @@
 # Understanding Variables in Data Science
 
-A variable is a symbolic name of placeholder that represents a value which can change. In data science, variables are used to store data, such as numbers, strings, or even complex data structures like lists or dataframes. 
+A variable is a symbolic name of placeholder that represents a value which can change. In data science, variables are used to store data, such as numbers, strings, or even complex data structures like lists or dataframes:
 
 ```python
 # Example: Storing numerical data in a variable
@@ -14,7 +14,7 @@ print(total_earnings) # Output: 40
 
 The value of a variable can change over time or across different scenarios. This is a key feature of variables.
 
-In data science, variables are often updated as new data comes in or as calculations are performed. 
+In data science, variables are often updated as new data comes in or as calculations are performed: 
 
 ```python
 # Example: Updating the value of a variable
@@ -25,7 +25,7 @@ tips = 5  # Updated value
 print("Updated tips:", tips)  # Output: Updated tips: 5
 ```
 
-In algebra, we often use symbols (like **t**) instead of words (like **tips**) to represent variables. This is also common in programming.
+In algebra, we often use symbols (like **t**) instead of words (like **tips**) to represent variables. This is also common in programming:
 
 ```python
 # Example: Using a symbol (t) to represent tips
@@ -35,7 +35,7 @@ total_earnings = hourly_wage + t
 print(total_earnings)  # Output: 40
 ```
 
-Variables can be used in mathematical expressions to calculate results dynamically.
+Variables can be used in mathematical expressions to calculate results dynamically:
 
 ```python
 # Example: Using variables in an expression
@@ -45,7 +45,7 @@ total_earnings = [hourly_wage + t for t in tips]  # Calculate earnings for each 
 print(total_earnings)  # Output: [40, 15, 30, 25]
 ```
 
-Variables can represent not just numbers, but also other data types like strings, lists, or even dataframes.
+Variables can represent not just numbers, but also other data types like strings, lists, or even dataframes:
 
 ```python
 # Example: Variables with different data types
@@ -56,7 +56,7 @@ is_student = True  # Boolean
 favorite_colors = ["blue", "green"]  # List
 ```
 
-In data science, variables are often columns in a dataset. For example, in a dataset of restaurant earnings, **tips** could be a column.
+In data science, variables are often columns in a dataset. For example, in a dataset of restaurant earnings, **tips** could be a column:
 
 ```python
 import pandas as pd
@@ -95,7 +95,7 @@ Specific to data science, variables are essential for:
 * Visualizing data.
 
 
-### Python Code Example: Putting It All Together
+## Python Code Example: Putting It All Together
 ```python
 # Example: Using variables in a data science context
 import pandas as pd
