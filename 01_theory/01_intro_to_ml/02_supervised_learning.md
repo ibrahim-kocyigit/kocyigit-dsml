@@ -51,9 +51,10 @@ The following demonstrates training a model:
 
 1. The model takes in a single labeled example and provides a prediction.
 
-![](https://developers.google.com/static/machine-learning/intro-to-ml/images/training-a-model-01.png)
+
+<center><img src="https://developers.google.com/static/machine-learning/intro-to-ml/images/training-a-model-01.png" alt="" style="width:800px;"/></center>
 
 2. The model compares its predicted value with the actual value and updates its solution.
 
-<img src="https://developers.google.com/static/machine-learning/intro-to-ml/images/training-a-model-02.png" alt="" style="width:400px;"/>
+<center><img src="https://developers.google.com/static/machine-learning/intro-to-ml/images/training-a-model-02.png" alt="" style="width:400px;"/></center>
 
