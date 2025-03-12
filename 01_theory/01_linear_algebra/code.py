@@ -40,7 +40,7 @@ matrix_2 = np.array([[2, 2], [5, 7], [4, 4]])
 matrix_multiplication = np.dot(matrix_1, matrix_2)
 
 
-# -------- Systems of Equations -------- #
+# -------- SYSTEMS OF EQUATIONS -------- #
 A = np.array([[-1, 3], [3, 2]], dtype=np.dtype(float))
 b = np.array([7, 1], dtype=np.dtype(float))
 
@@ -51,7 +51,7 @@ determinant_A = np.linalg.det(A)
 x = np.linalg.solve(A, b)
 
 
-# -------- Linear Transformation As Matrices -------- #
+# -------- LINEAR TRANSFORMATION AS MATRICES -------- #
 
 # A is the transformation matrix, v is the input vector, w is the result of the transformation
 
@@ -65,7 +65,7 @@ def L(v):
 v = np.array([[3], [5]])
 w = L(v)
 
-# -------- Common Transformation Matrices (2D) -------- #
+# -------- COMMON TRANSFORMATION MATRICES (2D) -------- #
 # For 3D transformations, use 3x3 matrices. For higher dimensions, extend the matrices accordingly.
 
 ### Scaling:
