@@ -53,7 +53,7 @@ x = np.linalg.solve(A, b)
 
 # -------- LINEAR TRANSFORMATION AS MATRICES -------- #
 
-# A is the transformation matrix, v is the input vector, w is the result of the transformation
+# A is the transformation matrix, v the input vector, w the result of the transformation:
 
 
 def L(v):
