@@ -307,7 +307,7 @@ def gaussian_elimination(A, B):
 
 equations = """
 2*x + 6*y + 8*z = 1
-2*x + 6*y + + 3*z = 1
+2*x + 6*y + 3*z = 1
 4*y - 5*y + 8*z = 8
 """
 
