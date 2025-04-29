@@ -58,7 +58,7 @@ print(x.T @ x)  # Out: 654 // @ is dot product. same as: np.dot(x.T, x)
 # Max Norm
 max_norm_x = np.max([np.abs(25), np.abs(2), np.abs(5)])  # Out: 25
 
-### WHAT ARE ORTHONORMAL VECTORS
+### WHAT ARE ORTHONORMAL VECTORS?
 i = np.array([1, 0])  # Standard basis vector i
 j = np.array([0, 1])  # Standard basis vector j
 
