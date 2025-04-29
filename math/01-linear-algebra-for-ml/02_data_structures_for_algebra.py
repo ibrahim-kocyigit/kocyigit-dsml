@@ -62,9 +62,9 @@ max_norm_x = np.max([np.abs(25), np.abs(2), np.abs(5)])  # Out: 25
 i = np.array([1, 0])  # Standard basis vector i
 j = np.array([0, 1])  # Standard basis vector j
 
-i @ j  # Out: 0 // Therefore i and j are orthonormal
+print(i @ j)  # Out: 0 // Therefore i and j are orthonormal
 
-### WHAT ARE MATRICES
+### WHAT ARE MATRICES?
 
 # In NumPy:
 X = np.array([[25, 2], [5, 26], [3, 7]])
@@ -79,3 +79,10 @@ X.shape  # (3, 2) // 3 rows, 2 columns
 X.size  # 6 // 3x2=6 elements in total
 X[:, 0]  # Left column
 X[0:2, 0:1]  # First column of the first 2 rows
+
+# In PyTorch
+X_pt = torch.tensor([[25, 2], [5, 26], [3, 7]])
+X_pt[0:2, 0:1]
+
+# WHAT ARE N-TENSORS?
+images_pt = torch.zeros([32, 28, 28, 3])
