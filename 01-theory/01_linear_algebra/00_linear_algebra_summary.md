@@ -1,5 +1,3 @@
-Here's the summary using alternative LaTeX syntax (using `\[ \]` for display math and `\( \)` for inline math):
-
 ### **Summary: Week 1 - Introduction to Linear Algebra & Systems of Linear Equations**
 
 #### **Key Concepts:**
@@ -8,20 +6,20 @@ Here's the summary using alternative LaTeX syntax (using `\[ \]` for display mat
    - Deals with systems of linear equations, matrices, and vector spaces
 
 2. **Linear Regression Example:**
-   - Single feature: Modeled as \[ y = wx + b \] (a line in 2D)
-   - Multiple features: \[ y = w_1x_1 + w_2x_2 + \cdots + w_nx_n + b \] (a hyperplane in \( n \)-D)
-   - Goal: Find optimal weights \( (w) \) and bias \( (b) \) to minimize prediction error
+   - Single feature: Modeled as $$ y = wx + b $$ (a line in 2D)
+   - Multiple features: $$ y = w_1x_1 + w_2x_2 + \cdots + w_nx_n + b $$ (a hyperplane in $n$-D)
+   - Goal: Find optimal weights $(w)$ and bias $(b)$ to minimize prediction error
 
 3. **Systems of Linear Equations:**
    - Represented as:
-     \[
+     $$
      \begin{cases}
      y^{(1)} = w_1x_1^{(1)} + \cdots + w_nx_n^{(1)} + b \\
      \vdots \\
      y^{(m)} = w_1x_1^{(m)} + \cdots + w_nx_n^{(m)} + b
      \end{cases}
-     \]
-   - Objective: Solve for \( w \) and \( b \) that best fit all equations
+     $$
+   - Objective: Solve for $w$ and $b$ that best fit all equations
 
 4. **Geometric Interpretations:**
    - 2D (1 feature): Line fitting data points
@@ -43,7 +41,17 @@ Here's the summary using alternative LaTeX syntax (using `\[ \]` for display mat
 
 ---
 
-**LaTeX Examples:**
-- Inline: \( y = wx + b \)
-- Display: \[ \begin{cases} x + y = 2 \\ 2x - y = 1 \end{cases} \]
-- Series: \( w_1x_1 + \cdots + w_nx_n \)
+**Markdown LaTeX Cheat Sheet:**
+- Inline math: `$y = mx + b$` → $y = mx + b$
+- Display math:  
+  ```  
+  $$
+  \begin{cases}
+  x + y = 2 \\
+  2x - y = 1
+  \end{cases}
+  $$
+  ```
+- Series: `$w_1x_1 + \cdots + w_nx_n$` → $w_1x_1 + \cdots + w_nx_n$
+
+This syntax works in most Markdown parsers (GitHub, VS Code, etc.) and with MathJax/Katex rendering.
