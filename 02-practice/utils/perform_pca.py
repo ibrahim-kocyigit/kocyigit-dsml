@@ -64,8 +64,8 @@ def plot_cumulative_variance(cumulative_explained_variance):
 def main():
     # Load the Iris dataset
     iris = load_iris()
-    data = iris.data  # 150 samples with 4 features
-    target = iris.target  # Target labels (species)
+    data = iris.data  # 150 samples with 4 features # type: ignore
+    target = iris.target  # Target labels (species) # type: ignore
 
     # Perform PCA with all components to analyze explained variance
     transformed_data, explained_variance_ratio, cumulative_explained_variance = (
