@@ -7,3 +7,7 @@ X_pt = torch.tensor([[25, 2], [5, 26], [3, 7]])
 ### WHAT IS A TENSOR TRANSPOSITION?
 X.T
 X_pt.T
+"""
+[[25,  5,  3],
+ 2, 26,  7]]
+"""
