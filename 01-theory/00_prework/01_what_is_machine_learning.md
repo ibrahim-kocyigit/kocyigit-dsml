@@ -1,6 +1,8 @@
 # What is Machine Learning?
 _Source: https://developers.google.com/machine-learning/intro-to-ml/what-is-ml_
 
+---
+
 In basic terms, Machine Learning (ML) is the process of [training](https://developers.google.com/machine-learning/glossary#training) a piece of software, called a [model](https://developers.google.com/machine-learning/glossary#model), to make useful [predictions](https://developers.google.com/machine-learning/glossary#prediction) or generate content from data.
 
 For example, suppose we wanted to create an app to predict rainfall. We could use either a traditional approach or an ML approach. Using a traditional approach, we'd create a physics-based representation of the Earth's atmosphere and surface, computing massive amounts of fluid dynamics equations. This is incredibly difficult.
