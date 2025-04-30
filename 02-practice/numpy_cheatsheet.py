@@ -1,6 +1,6 @@
 import numpy as np
 
-# ----------------------- Creating Arrays ----------------------- #
+# ----------------------- CREATING ARRAYS ----------------------- #
 a = np.array([1, 2, 3])
 b = np.array([(1.5, 2, 3), (4, 5, 6)], dtype=float)
 c = np.array([[(1.5, 2, 3), (4, 5, 6)], [(3, 2, 1), (4, 5, 6)]], dtype=float)
