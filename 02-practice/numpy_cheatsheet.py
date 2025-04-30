@@ -1,6 +1,6 @@
 import numpy as np
 
-# ----------------- Creating Arrays ----------------- #
+# ----------------------- Creating Arrays ----------------------- #
 a = np.array([1, 2, 3])
 b = np.array([(1.5, 2, 3), (4, 5, 6)], dtype=float)
 c = np.array([[(1.5, 2, 3), (4, 5, 6)], [(3, 2, 1), (4, 5, 6)]], dtype=float)
@@ -14,7 +14,7 @@ f = np.eye(2)  # Create a 2x2 identity matrix
 np.random.random((2, 2))  # Create a 2x2 array with random values
 np.empty((3, 2))  # Create a 3x2 empty array
 
-# ----------------- I/O ----------------- #
+# ----------------------------- I/O ----------------------------- #
 # Saving & Loading on Disk
 np.save("my_array", a)  # Save an array to a binary file in NumPy .npy format.
 np.savez(
