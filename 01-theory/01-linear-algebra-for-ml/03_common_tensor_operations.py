@@ -11,3 +11,12 @@ X_pt.T
 [[25,  5,  3],
  2, 26,  7]]
 """
+
+### BASIC TENSOR ARITHMETIC
+X * 2  # type: ignore
+X + 2  # type: ignore
+X * 2 + 2  # type: ignore
+
+# with PyTorch:
+X_pt * 2 + 2  # type: ignore
+torch.add(torch.mul(X_pt, 2), 2)
