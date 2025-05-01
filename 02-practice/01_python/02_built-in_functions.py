@@ -42,3 +42,46 @@ def is_even(num):
 numbers = [1, 2, 3, 4, 5, 6]
 even_numbers = list(filter(is_even, numbers))
 print(even_numbers)  # -> [2, 4, 6]
+
+
+# Invoke the built-in help system
+help(type)  # Prints info about the type object
+
+
+# Return True if the object argument is an instance of an object.
+isinstance(1, int)  # -> True
+isinstance(1, str)  # -> False
+
+
+# Return an iterator that applies function to every item of iterable. The type of element stored to the map object will be identical to the type returned from the function.
+def double(x):
+    return x * 2
+
+
+nums = [1, 2, 3, 4, 5]
+list(map(double, nums))  # [2, 4, 6, 8, 10]
+
+original_dict = {"a": 2, "b": 3}
+dict(map(lambda item: (item[0], item[1] * 2), original_dict.items()))
+
+
+# Return the largest or smallest item in an iterable.
+nums = [1, 2, 3, 4, 5]
+max(nums)  # -> 5
+min(nums)  # -> 1
+
+
+# Return number rounded to ndigits precision after the decimal point.
+round(1.45)  # -> 1
+round(1.5)  # -> 2
+round(1.65)  # -> 2
+round(1.45, ndigits=1)  # 1.4
+round(2 / 3, ndigits=3)  # 0.667
+
+
+# Return a new sorted list from the items in iterable.
+sorted([1, 2, 3, 7, 4])  # [1, 2, 3, 4, 7]
+
+
+# Sums start and the items of an iterable from left to right and returns the total.
+sum([2, 4, 6])  # -> 12
