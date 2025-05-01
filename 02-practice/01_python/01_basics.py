@@ -21,6 +21,7 @@ var %= 1  # var = var % 1
 
 
 # --------------------- Test of Emptiness ---------------------- #
+
 a = [1, 2, 3]
 
 # Bad way:
@@ -30,3 +31,10 @@ if len(a) > 0:
 # Good way:
 if a:  # If a were empty, this was going to evaluate to "False"
     print("The list is not empty!")
+
+
+# ----------------- str(), int(), and float() ------------------ #
+
+str(20)  # -> '29'
+int("11")  # -> 11
+float("3.14")  # -> 3.14
