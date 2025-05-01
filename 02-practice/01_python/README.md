@@ -1,3 +1,7 @@
+**Sources:**
+- https://www.pythoncheatsheet.org/_
+- Datacamp (Cheat sheets)
+
 **Note:** The practice section of `kocyigit-ds` does not cover all content from the source. Deciding what to include is subjective — I primarily focus on:
 
 1. **Frequently used code** – Patterns and snippets I rely on regularly.

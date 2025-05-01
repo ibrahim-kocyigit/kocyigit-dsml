@@ -1,12 +1,12 @@
 # ----- Math Operators (From highest to lowers precedence) ----- #
 
-2**3  # Exponent -> 8
-22 % 8  # Modulus/Remainder -> 6
-22 // 8  # Integer division -> 2
-8 / 2  # Division -> 4.0
-3 * 3  # Multiplication -> 9
-5 - 2  # Subtraction -> 3
-5 + 2  # Addition -> 7
+print(2**3)  # Exponent -> 8
+print(22 % 8)  # Modulus/Remainder -> 6
+print(22 // 8)  # Integer division -> 2
+print(8 / 2)  # Division -> 4.0
+print(3 * 3)  # Multiplication -> 9
+print(5 - 2)  # Subtraction -> 3
+print(5 + 2)  # Addition -> 7
 
 
 # --------------- Augmented Assignment Operators --------------- #
