@@ -1,1 +1,0 @@
-Practice section is going to be created based on the draft documents and the knowledge gained after finishing different types of ML, which determines the workflow. 
