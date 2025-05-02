@@ -31,6 +31,7 @@ print(not False)  # -> True
 
 
 # --------------------- Mixing Operators ---------------------- #
+
 print((4 < 5) and (5 < 6))  # -> True
 print(2 + 2 == 4 and not 2 + 2 == 5 and 2 * 2 == 2 + 2)  # -> True
 print((5 > 4 or 3 < 4) and 5 > 5)  # -> False
@@ -104,3 +105,73 @@ spam = 0
 while spam < 5:
     print("Hello world!")
     spam += 1
+
+# `break` exits the while loop immediately
+while True:
+    name = input("Please enter your name")
+    if name == "your name":
+        break
+print("Thank you!")
+
+# `continue` jumps back to the start of the loop
+while True:
+    name = input("What's your name? ")
+    if name != "ibrahim":
+        continue
+    password = input("What's your password? (Your favorite number) ")
+    if password == "8":  # or if int(password) == 8:
+        break
+print("Access Granted")
+
+
+# ------------------------- For Loop -------------------------- #
+
+pets = ["Dog", "Cat", "Bird"]
+for pet in pets:
+    print(pet)
+
+# `range` returns a sequence of numbers starting from 0, increments by 1, and stops before a specified number
+for i in range(5):
+    print(i)
+"""
+0
+1
+2
+3
+4
+"""
+
+# arguments can be modified: range(start, stop, step)
+for i in range(0, 10, 2):
+    print(i)
+"""
+0
+2
+4
+6
+8
+"""
+
+for i in range(5, -1, -1):
+    print(f"{i} seconds to the clash!")
+"""
+5 seconds to the clash!
+4 seconds to the clash!
+3 seconds to the clash!
+2 seconds to the clash!
+1 seconds to the clash!
+0 seconds to the clash!
+"""
+
+# `For Else` Statement
+
+for x in range(3):
+    print(x)
+else:
+    print("Finished!")
+"""
+0
+1
+2
+Finished!
+"""
