@@ -1,4 +1,4 @@
-# -------------------- Assignment Operators -------------------- #
+# ---------------------------- Assignment Operators ---------------------------- #
 var = 10
 var += 1  # var = var + 1
 var -= 1  # var = var - 1
@@ -8,7 +8,7 @@ var //= 1  # var = var // 1
 var %= 1  # var = var % 1
 
 
-# -------------------- Arithmetic Operators -------------------- #
+# ---------------------------- Arithmetic Operators ---------------------------- #
 # From highest to lowers precedence:
 print(2**3)  # Exponent -> 8
 print(22 % 8)  # Modulus/Remainder -> 6
@@ -19,7 +19,7 @@ print(5 - 2)  # Subtraction -> 3
 print(5 + 2)  # Addition -> 7
 
 
-# -------------------- Comparison Operators -------------------- #
+# ---------------------------- Comparison Operators ---------------------------- #
 """
 ==	Equal to
 !=	Not equal to
@@ -34,7 +34,7 @@ print(42 == 42.0)  # -> True
 print(42 == "42")  # -> False
 
 
-# --------------------- Boolean Operators --------------------- #
+# ----------------------------- Boolean Operators ----------------------------- #
 print(True and True)  # -> True
 print(True and False)  # -> False
 print(False and True)  # -> False
@@ -57,7 +57,7 @@ print(0 != 3 and "Hi there!")  # -> "Hi there!"
 print("Hello everyone!" or "What's up?")  # -> "Hello everyone!"
 
 
-# -------------------- is & in Operators --------------------- #
+# ----------------------------- is & in Operators ------------------------------ #
 # `is` is the identity operator. returns 'True' if both are the same objects
 print(dict is dict)  # -> True
 
@@ -66,7 +66,7 @@ exam_scores = [34, 46, 67]
 print(34 in exam_scores)  # -> True
 
 
-# -------------------- Ternary Operator ---------------------- #
+# ------------------------------ Ternary Operator ------------------------------ #
 # Allows us to quickly define a conditional
 def is_adult(age):
     return True if age >= 18 else False

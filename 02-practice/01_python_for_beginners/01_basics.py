@@ -1,4 +1,4 @@
-# ------------------------- Variables ------------------------- #
+# --------------------------------- Variables ---------------------------------- #
 name = "Beau"
 age = 39
 pi = 3.14
@@ -13,7 +13,7 @@ NAME = "Constant"
 if = "ibrahim" # -> SyntaxError: invalid syntax 
 
 
-# ----------------- Expressions and Statements ----------------- #
+# ------------------------- Expressions and Statements ------------------------- #
 # Expression returns a value
 "Ibrahim" # is an expression, returns "Ibrahim"
 
@@ -27,7 +27,7 @@ name = input("Please enter your name: ")
 print(f"Hell0 {name}")
 
 
-# -------------------------- Comments -------------------------- #
+# ---------------------------------- Comments ---------------------------------- #
 # This is a comment line.
 name = "Ibrahim" # This is an inline comment. 
 '''
@@ -36,7 +36,7 @@ written in
 more than just one line
 '''
 
-# ------------------------- Data Types ------------------------- #
+# --------------------------------- Data Types --------------------------------- #
 name = "Ibrahim"
 lucky_number = 8
 pi = 3.14
