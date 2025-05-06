@@ -23,8 +23,8 @@ old.
 my_str = "name@mail.com"
 
 my_str.isalpha()  # check if a string contains only characters # -> False
-my_str.isalnum()  # check if a string contains characters or digits # -> False
-my_str.isdecimal()  # check if a string contains digits # -> False
+my_str.isalnum()  # check if a string contains only characters or digits # -> False
+my_str.isdecimal()  # check if a string contains only digits # -> False
 
 my_str.lower()  # get a lowercase version of a string # -> 'name@mail.com'
 my_str.islower()  # check if a string is lowercase # -> True
