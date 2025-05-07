@@ -10,8 +10,13 @@ random_values = ["String", 1, True]
 # Check if a specific element is in the list
 print("Roger" in dogs)  # -> True
 
+# Check the frequency of an element
+dogs.count("Dog")  # -> 0
+dogs.count("Roger")  # -> 1
+
 # Lists are 0-index as well
 print(dogs[0])  # -> "Roger"
+print(dogs.index("Syd"))  # -> 1
 
 # Updating an element in the list
 dogs[1] = "Beau"
@@ -19,6 +24,7 @@ print(dogs)  # -> ['Roger', 'Beau']
 
 # Copying a list
 dogs_copy = dogs.copy()
+
 
 # ---------------------------- Adding New Elements ----------------------------- #
 dogs.append("Mika")  # Provide an element to add
@@ -79,3 +85,16 @@ print(students)  # -> ['Adam', 'Eve', 'Jack', 'Jill', 'bill'] # Capital letters 
 students = ["Jack", "Jill", "Adam", "Eve", "bill"]
 students.sort(key=str.lower)
 print(students)  # -> ['Adam', 'bill', 'Eve', 'Jack', 'Jill']
+
+
+# ----------------------------------- Tuples ----------------------------------- #
+# Tuples are like lists, but immutable
+
+names = ("Ibrahim", "Aykut")
+type(names)  # -> tuple
+
+print(names)  # -> ('Ibrahim', 'Aykut')
+
+# Any method/built-in function that works with lists without modifying them works with tuples too
+print(sorted(names))  # -> ['Aykut', 'Ibrahim']
+names.sort()  # Won't work
