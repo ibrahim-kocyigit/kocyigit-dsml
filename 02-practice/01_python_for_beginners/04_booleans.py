@@ -1,11 +1,13 @@
-done = True
-postponed = False
+delegated = False
+postponed = True
 
-# Most commonly use in control flows
-if done:
-    print("Yes")
+# Most commonly used in control flows
+if delegated:
+    print("Delegated")
+elif postponed:
+    print("Postponed")
 else:
-    print("No")
+    print("Status unknown")  # -> "Postponed"
 
 # Numbers are always True, except for number zero
 print("True") if 1 else print("False")  # -> "True"
