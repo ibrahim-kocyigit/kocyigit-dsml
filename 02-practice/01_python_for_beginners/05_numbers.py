@@ -3,6 +3,8 @@
 # z = x + iy (all complex number can be written like this)
 
 num = 2 + 3j
+num2 = complex(2, 3)  # same as above
+
 type(num)  # -> complex
 
 print(num.real)  # -> 2.0
@@ -15,7 +17,7 @@ round(5.49)  # -> 5
 round(5.49, 1)  # 5.5
 
 
-# -------------------------------- Enumarations -------------------------------- #
+# -------------------------------- Enumerations -------------------------------- #
 # Enum is a set of symbolic names (members) bound to unique values
 from enum import Enum
 
