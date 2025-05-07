@@ -63,6 +63,10 @@ last_dog = dogs.pop()  # Removes and returns the last element
 print(last_dog)  # -> "Dali"
 print(dogs)  # -> ['Beau', 'Mika', 'Judah', 'Masha']
 
+first_dog = dogs.pop(0)  # Removes and returns the element at index 0
+print(first_dog)  # -> "Beau"
+print(dogs)  # ['Mika', 'Judah', 'Masha']
+
 
 # ------------------------------- Sorting Lists -------------------------------- #
 exam_scores = [45, 33, 66, 89, 43, 90, 74]
