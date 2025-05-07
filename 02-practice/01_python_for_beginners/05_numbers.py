@@ -1,7 +1,4 @@
 # ------------------------------- Complex Numbers ------------------------------- #
-# i^2 = -1 (i is the imaginary unit)
-# z = x + iy (all complex number can be written like this)
-
 num = 2 + 3j
 num2 = complex(2, 3)  # same as above
 
