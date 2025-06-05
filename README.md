@@ -1,11 +1,11 @@
 # Kocyigit-ML 🤖 
 #### A structured learning repository for mastering Machine Learning fundamentals!
 
-This project consolidates my curated learning resources, organized into three core pillars: **Theory**, **Practice**, and **Methodology**.  
+This project consolidates my curated learning resources, organized into three core pillars: 
 
-- **[Theory](./01_theory/)**: Mathematical foundations (Calculus, Linear algebra, Statistics and probability)  
-- **[Practice](./02_practice/)**: Applied skills (Python, SQL, Libraries for Data Science and Machine Learning)  
-- **[Methodology](./03_methodology/)**: Implementation framework
+1. **[Theory](./01_theory/)**: Mathematical foundations (Calculus, Linear algebra, Statistics and probability)  
+2. **[Practice](./02_practice/)**: Applied skills (Python, SQL, Libraries for Data Science and Machine Learning)  
+3. **[Methodology](./03_methodology/)**: Implementation framework
 
 The Theory and Practice sections align with **AssemblyAI**'s [recommended roadmap](https://www.youtube.com/watch?v=wtolixa9XTg), while the Methodology section implements **John B. Rollins**'s [Foundational Methodology for Data Science](./03_methodology/references/IBMOpenSource_FoundationalMethologyforDataScience.PDF) as a systematic framework for real-world ML projects.
 
