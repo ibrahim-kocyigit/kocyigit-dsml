@@ -12,7 +12,7 @@ The Theory and Practice sections align with **AssemblyAI**'s [recommended roadma
 ## Content Status  
 
 ### 1. Theory
-1. 🟠 [Calculus](./01_theory/01_calculus/) by [Khan Academy](https://www.khanacademy.org/) (🟢 [Precalculus](./01_theory/01_calculus/00_precalculus/), 🟠 [AP Calculus BC](./01_theory/01_calculus/01_ap_calculus_bc/), 🔴 _Multivariable Calculus_, 🔴 _Differential Equations_)
+1. 🟠 [Calculus](./01_theory/01_calculus/) by [Khan Academy](https://www.khanacademy.org/) (🟢 [Precalculus](./01_theory/01_calculus/00_precalculus/), 🟠 [AP Calculus BC](./01_theory/01_calculus/01_ap_calculus_bc/), 🔴 Multivariable Calculus, 🔴 Differential Equations)
 2. 🟢 [Linear Algebra](./01_theory/02_linear_algebra/) by [Krista King](https://www.udemy.com/course/linear-algebra-course/)
 3. 🟠 [Statistics and Probability](./01_theory/03_statistics_and_probability/) by [Khan Academy](https://www.khanacademy.org/)
 
