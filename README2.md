@@ -29,6 +29,15 @@ The Theory and Practice sections align with **AssemblyAI**'s [recommended roadma
 9. 🔴 Intro to Machine Learning from Kaggle 
 10. 🔴 Intermediate Machine Learning from Kaggle 
 
-### 3. Methodology (☐)  
+### 3. Methodology
 *Implementation guide for John B. Rollins' 10-Stage Foundational Methodology for Data Science*  
-
+1. 🔴 Business Understanding
+2. 🔴 Analytic Approach
+3. 🔴 Data Requirements
+4. 🔴 Data Collection
+5. 🔴 Data Understanding
+6. 🔴 Data Preparation
+7. 🔴 Modeling
+8. 🔴 Evaluation
+9. 🔴 Deployment
+10. 🔴 Feedback
