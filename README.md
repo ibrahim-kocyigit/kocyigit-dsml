@@ -4,8 +4,8 @@ Kocyigit-ML is an evolving project that consolidates the learning resources I us
 ## 1. Theory:
 Comprehensive notes on the mathematical foundations of machine learning, covering calculus, linear algebra, statistics, and probability.
 
-### [Calculus](./01_theory//01_calculus/) (__Ongoing__)
-- A structured compilation of my notes from **Khan Academy**’s [Precalculus](https://www.khanacademy.org/math/precalculus) (__Completed__), [AP Calculus BC](https://www.khanacademy.org/math/ap-calculus-bc) (__Ongoing__), [Multivariable Calculus](https://www.khanacademy.org/math/multivariable-calculus) (__Not Started__), and [Differential Equations](https://www.khanacademy.org/math/differential-equations) (__Not Started__) courses.
+### [Calculus](./01_theory//01_calculus/) (_Ongoing_)
+- A structured compilation of my notes from **Khan Academy**’s [Precalculus](https://www.khanacademy.org/math/precalculus) (_Completed_), [AP Calculus BC](https://www.khanacademy.org/math/ap-calculus-bc) (_Ongoing_), [Multivariable Calculus](https://www.khanacademy.org/math/multivariable-calculus) (_Not Started_), and [Differential Equations](https://www.khanacademy.org/math/differential-equations) (_Not Started_) courses.
 
 
 
