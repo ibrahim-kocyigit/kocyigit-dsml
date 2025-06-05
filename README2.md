@@ -3,7 +3,7 @@
 
 This project consolidates my curated learning resources, organized into three core pillars: **Theory**, **Practice**, and **Methodology**.  
 
-- **Theory**: Mathematical foundations (calculus, linear algebra, statistics)  
+- **Theory**: Mathematical foundations (calculus, linear algebra, statistics and probability)  
 - **Practice**: Applied skills (Python, SQL, ML libraries)  
 - **Methodology**: Implementation framework (Rollins' 10-Stage DS Methodology)  
 
@@ -49,13 +49,3 @@ The Theory and Practice sections follow [AssemblyAI's recommended roadmap](https
 
 **Contributions welcome!**  
 This repository serves as both my personal knowledge base and a public resource for ML learners.  
-
----
-
-### Key Improvements:  
-1. **Visual Status Indicators**: (✓/↻/☐) replace text labels for better scanning  
-2. **Consistent Formatting**: Standardized course listing style  
-3. **Stronger Header**: Added tagline under project name  
-4. **More Scannable**: Better section spacing and bullet points  
-5. **Polished Language**: More concise phrasing while preserving all original info  
-
