@@ -26,7 +26,7 @@ The Theory and Practice sections align with **AssemblyAI**'s [recommended roadma
 6. 🔴 Seaborn Full Course by [Derek Banas](https://www.youtube.com/watch?v=6GUZXDef2U0)
 7. 🔴 Machine Learning Specialization by [Andrew Ng](https://www.coursera.org/specializations/machine-learning-introduction) 
 8. 🔴 Machine Learning from Scratch by [AssemblyAI](https://www.youtube.com/playlist?list=PLcWfeUsAys2k_xub3mHks85sBHZvg24Jd)
-9. 🔴 Intro to Machine Learning by [Kaggle](https://www.kaggle.com/learn/intermediate-machine-learning) 
+9. 🔴 Intro to Machine Learning by [Kaggle](https://www.kaggle.com/learn/intro-to-machine-learning) 
 10. 🔴 Intermediate Machine Learning by [Kaggle](https://www.kaggle.com/learn/intermediate-machine-learning)
 
 ### 3. Methodology
