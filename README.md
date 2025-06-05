@@ -10,7 +10,7 @@ This project consolidates my curated learning resources, organized into three co
 The Theory and Practice sections align with **AssemblyAI**'s [recommended roadmap](https://www.youtube.com/watch?v=wtolixa9XTg), while the Methodology section implements **John B. Rollins**'s [Foundational Methodology for Data Science](./03_methodology/references/IBMOpenSource_FoundationalMethologyforDataScience.PDF) as a systematic framework for real-world ML projects.
 
 ## Content Status  
-🟢 Complete | 🟠 In Progress | 🔴 Not Started
+🟢 Complete | 🟠 In Progress | 🔴 Not Started  <br>
 _Clicking the course name will open my personal notes for that course, while clicking the creator's name will redirect you to the official course page."_
 
 ### 1. Theory
