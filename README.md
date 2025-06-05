@@ -1,10 +1,10 @@
 # Kocyigit-ML
 Kocyigit-ML is an evolving project that consolidates the learning resources I use on my journey to becoming a Machine Learning Engineer. This repository is structured into three key sections:
 
-## 1. Theory:
+### 1. Theory:
 Comprehensive notes on the mathematical foundations of machine learning, covering calculus, linear algebra, statistics, and probability.
 
-### 01_calculus
+#### 01_calculus
 - **00_precalculus(Complete):** A structured compilation of my notes from **Khan Academy**’s [Precalculus](https://www.khanacademy.org/math/precalculus) course, covering key concepts, problem-solving techniques, and essential formulas.
 
 2. **Practice:** Hands-on training materials for applied ML, including Python, SQL, and essential ML libraries.
