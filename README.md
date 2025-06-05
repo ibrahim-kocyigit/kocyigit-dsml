@@ -18,7 +18,7 @@ The Theory and Practice sections align with **AssemblyAI**'s [recommended roadma
 
 ### 2. Practice  
 1. 🔴 [Python for Beginners](./02_practice/01_python_for_beginners/) by [freeCodeCamp](https://www.youtube.com/watch?v=eWRfhZUzrAc) and [pythoncheatsheet.org](https://www.pythoncheatsheet.org/)  
-2. 🔴 Intermediate Python by 
+2. 🔴 Intermediate Python
 3. 🔴 NumPy Crash Course 
 4. 🔴 Pandas Crash Course 
 5. 🔴 Matplotlib Course 
