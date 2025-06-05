@@ -14,8 +14,8 @@ The Theory and Practice sections align with **AssemblyAI**'s [recommended roadma
 
 ### 1. Theory
 
-1. 🟠 [Calculus](./01_theory//01_calculus/) by **Khan Academy** (🟢 [Precalculus](https://www.khanacademy.org/math/precalculus), 🟠 [AP Calculus BC](https://www.khanacademy.org/math/ap-calculus-bc), 🔴 [Multivariable Calculus](https://www.khanacademy.org/math/multivariable-calculus), 🔴 [Differential Equations](https://www.khanacademy.org/math/differential-equations)
-2. 🟢 [Linear Algebra](./01_theory/02_linear_algebra/) by **Krista King**'s [Become a Linear Algebra Master](https://www.udemy.com/course/linear-algebra-course/) course.
+1. 🟠 [Calculus](./01_theory/01_calculus/) from [Khan Academy](https://www.khanacademy.org/) (🟢 [Precalculus](./01_theory/01_calculus/00_precalculus/), 🟠 [AP Calculus BC](./01_theory/01_calculus/01_ap_calculus_bc/), 🔴 Multivariable Calculus, 🔴 Differential Equations
+2. 🟢 [Linear Algebra](./01_theory/02_linear_algebra/) by **[Krista King]**(https://www.udemy.com/course/linear-algebra-course/)
 
 #### [Statistics and Probability](./01_theory/03_statistics_and_probability/) (_Ongoing_)
 A structured compilation of my notes from **Khan Academy**’s [Statistics and Probability](https://www.khanacademy.org/math/statistics-probability) course.
