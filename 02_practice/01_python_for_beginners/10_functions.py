@@ -107,4 +107,4 @@ print(increment())  # -> 2
 print(increment())  # -> 3
 
 # ------------------------------ Lambda Functions ------------------------------ #
-# Lambda functions are useful when combined with other functions such as map, filter, and reduce. Check that section for more information.
+# Lambda functions are useful when combined with other functions such as map, filter, and reduce. Check 13_map_filter_reduce.py for more information

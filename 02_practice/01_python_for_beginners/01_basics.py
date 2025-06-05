@@ -68,3 +68,18 @@ tuple # for tuples
 range # for ranges
 dict # for dictionaries
 set # for sets
+
+# ----------------------------------- Objects ---------------------------------- #
+# Everything in Python are objects!
+
+age = 8
+print(type(8))
+
+# age is now an 'int' object, therefore has access to all attributes and methods of it
+age.is_integer()  # True
+age.real  # 8
+age.imag  # 0
+age.bit_length()  # 4
+
+items = [1, 2]  # now has access to all attributes and methods of list object
+items.append(3)
