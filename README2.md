@@ -13,25 +13,22 @@ The Theory and Practice sections align with **AssemblyAI**'s [recommended roadma
 🟢 Completed | 🟠 Ongoing | 🔴 Not Started
 
 ### 1. Theory
-1. 🟠 [Calculus](./01_theory/01_calculus/) from [Khan Academy](https://www.khanacademy.org/) (🟢 [Precalculus](./01_theory/01_calculus/00_precalculus/), 🟠 [AP Calculus BC](./01_theory/01_calculus/01_ap_calculus_bc/), 🔴 _Multivariable Calculus_, 🔴 _Differential Equations_)
-2. 🟢 [Linear Algebra](./01_theory/02_linear_algebra/) from [Krista King](https://www.udemy.com/course/linear-algebra-course/)
-3. 🟠 [Statistics and Probability](./01_theory/03_statistics_and_probability/) from [Khan Academy](https://www.khanacademy.org/)
+1. 🟠 [Calculus](./01_theory/01_calculus/) by [Khan Academy](https://www.khanacademy.org/) (🟢 [Precalculus](./01_theory/01_calculus/00_precalculus/), 🟠 [AP Calculus BC](./01_theory/01_calculus/01_ap_calculus_bc/), 🔴 _Multivariable Calculus_, 🔴 _Differential Equations_)
+2. 🟢 [Linear Algebra](./01_theory/02_linear_algebra/) by [Krista King](https://www.udemy.com/course/linear-algebra-course/)
+3. 🟠 [Statistics and Probability](./01_theory/03_statistics_and_probability/) by [Khan Academy](https://www.khanacademy.org/)
 
 ### 2. Practice  
-1. 🟠 [Python for Beginners](./02_practice/01_python_for_beginners/) from [freeCodeCamp](https://www.youtube.com/watch?v=eWRfhZUzrAc) and [pythoncheatsheet.org](https://www.pythoncheatsheet.org/)  
-
-**Pending:**  
-☐ Intermediate Python  
-☐ NumPy/Pandas/Matplotlib/Seaborn  
-☐ Andrew Ng's ML Specialization  
-☐ Kaggle Courses (Intro & Intermediate)  
-
----
+1. 🔴 [Python for Beginners](./02_practice/01_python_for_beginners/) by [freeCodeCamp](https://www.youtube.com/watch?v=eWRfhZUzrAc) and [pythoncheatsheet.org](https://www.pythoncheatsheet.org/)  
+2. 🔴 Intermediate Python by 
+3. 🔴 NumPy Crash Course 
+4. 🔴 Pandas Crash Course 
+5. 🔴 Matplotlib Course 
+6. 🔴 Seaborn Course
+7. 🔴 Machine Learning Specialization by Andrew Ng 
+8. 🔴 Machine Learning from Scratch
+9. 🔴 Intro to Machine Learning from Kaggle 
+10. 🔴 Intermediate Machine Learning from Kaggle 
 
 ### 3. Methodology (☐)  
 *Implementation guide for John B. Rollins' 10-Stage Foundational Methodology for Data Science*  
 
----
-
-**Contributions welcome!**  
-This repository serves as both my personal knowledge base and a public resource for ML learners.  
