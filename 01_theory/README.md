@@ -1,0 +1,1 @@
+This section consists of comprehensive notes on the mathematical foundations of machine learning, covering calculus, linear algebra, statistics, and probability.
