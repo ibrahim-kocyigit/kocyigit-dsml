@@ -1,1 +1,0 @@
-A structured compilation of my notes from **Krista King**'s [Become a Linear Algebra Master](https://www.udemy.com/course/linear-algebra-course/) course, covering key concepts, problem-solving techniques, and essential formulas.

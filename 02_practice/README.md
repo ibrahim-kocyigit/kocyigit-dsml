@@ -1,1 +1,0 @@
-Hands-on training materials for applied ML, including Python, SQL, and essential ML libraries.

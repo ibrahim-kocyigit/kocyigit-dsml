@@ -16,6 +16,9 @@ A structured compilation of my notes from **Khan Academy**’s [Statistics and P
 ## 2. Practice
 Hands-on training materials for applied ML, including Python, SQL, and essential ML libraries.
 
+### [Python for Beginners](./02_practice/01_python_for_beginners/)(_Ongoing_)
+A structured compilation of my notes from **freeCodeCamp.org**’s [Python for Beginners](https://www.youtube.com/watch?v=eWRfhZUzrAc) course and [pythoncheatsheet.org](https://www.pythoncheatsheet.org/), covering key concepts.
+
 ## 3. Methodology:
 A structured walkthrough of *John B. Rollins’s 10-Stage Foundational Methodology for Data Science*, providing a systematic approach to real-world ML projects.
 
