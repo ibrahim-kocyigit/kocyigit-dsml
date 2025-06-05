@@ -1,42 +1,41 @@
-# Kocyigit-ML
-Kocyigit-ML is an evolving project that consolidates the learning resources I use on my journey to becoming a Machine Learning Engineer. The project is structured into three key sections: Theory, practice, and methodology.
+# Kocyigit-ML 🤖 
+#### A structured learning repository for mastering Machine Engineering fundamentals!
 
-The roadmap for the theory and practice sections is heavily inspired by AssemblyAI's [recommendations](https://www.youtube.com/watch?v=wtolixa9XTg).
+This project consolidates my curated learning resources, organized into three core pillars: **Theory**, **Practice**, and **Methodology**.  
 
-The methodology section is an attempt to turn *John B. Rollins’s 10-Stage Foundational Methodology for Data Science* into a a systematic approach to real-world ML projects.
+- **[Theory](./01_theory/)**: Mathematical foundations (calculus, linear algebra, statistics and probability)  
+- **[Practice](./02_practice/)**: Applied skills (Python, SQL, ML libraries)  
+- **[Methodology](./03_methodology/)**: Implementation framework
 
-This project serves as both a personal knowledge base and a resource for others navigating the ML landscape. Contributions and feedback are welcome!
+The Theory and Practice sections align with **AssemblyAI**'s [recommended roadmap](https://www.youtube.com/watch?v=wtolxa9XTg), while the Methodology section implements **John B. Rollins**'s [Foundational Methodology for Data Science](./03_methodology/references/IBMOpenSource_FoundationalMethologyforDataScience.PDF) as a systematic framework for real-world ML projects.
 
-## Content and Status
-Here's the content of the project, and their completeness status:
+## Content Status  
 
 ### 1. Theory
-Comprehensive notes on the mathematical foundations of machine learning, covering calculus, linear algebra, statistics, and probability.
+1. 🟠 [Calculus](./01_theory/01_calculus/) by [Khan Academy](https://www.khanacademy.org/) (🟢 [Precalculus](./01_theory/01_calculus/00_precalculus/), 🟠 [AP Calculus BC](./01_theory/01_calculus/01_ap_calculus_bc/), 🔴 _Multivariable Calculus_, 🔴 _Differential Equations_)
+2. 🟢 [Linear Algebra](./01_theory/02_linear_algebra/) by [Krista King](https://www.udemy.com/course/linear-algebra-course/)
+3. 🟠 [Statistics and Probability](./01_theory/03_statistics_and_probability/) by [Khan Academy](https://www.khanacademy.org/)
 
-#### [Calculus](./01_theory//01_calculus/) (_Ongoing_)
-A structured compilation of my notes from **Khan Academy**’s [Precalculus](https://www.khanacademy.org/math/precalculus) (_Completed_), [AP Calculus BC](https://www.khanacademy.org/math/ap-calculus-bc) (_Ongoing_), [Multivariable Calculus](https://www.khanacademy.org/math/multivariable-calculus) (_Not Started_), and [Differential Equations](https://www.khanacademy.org/math/differential-equations) (_Not Started_) courses.
+### 2. Practice  
+1. 🔴 [Python for Beginners](./02_practice/01_python_for_beginners/) by [freeCodeCamp](https://www.youtube.com/watch?v=eWRfhZUzrAc) and [pythoncheatsheet.org](https://www.pythoncheatsheet.org/)  
+2. 🔴 Intermediate Python by 
+3. 🔴 NumPy Crash Course 
+4. 🔴 Pandas Crash Course 
+5. 🔴 Matplotlib Course 
+6. 🔴 Seaborn Course
+7. 🔴 Machine Learning Specialization by Andrew Ng 
+8. 🔴 Machine Learning from Scratch
+9. 🔴 Intro to Machine Learning from Kaggle 
+10. 🔴 Intermediate Machine Learning from Kaggle 
 
-#### [Linear Algebra](./01_theory/02_linear_algebra/) (_Complete_)
-A structured compilation of my notes from **Krista King**'s [Become a Linear Algebra Master](https://www.udemy.com/course/linear-algebra-course/) course.
-
-#### [Statistics and Probability](./01_theory/03_statistics_and_probability/) (_Ongoing_)
-A structured compilation of my notes from **Khan Academy**’s [Statistics and Probability](https://www.khanacademy.org/math/statistics-probability) course.
-
-### 2. Practice
-Hands-on training materials for applied ML, including Python, SQL, and essential ML libraries.
-
-#### [Python for Beginners](./02_practice/01_python_for_beginners/)(_Ongoing_)
-A structured compilation of my notes from **freeCodeCamp.org**’s [Python for Beginners](https://www.youtube.com/watch?v=eWRfhZUzrAc) course and [pythoncheatsheet.org](https://www.pythoncheatsheet.org/).
-
-- Intermediate Python (_Not Started_)
-- NumPy Crash Course (_Not Started_)
-- Pandas Crash Course (_Not Started_)
-- Matplotlib Course (_Not Started_)
-- Seaborn Course (_Not Started_)
-- Machine Learning Specialization by Andrew Ng (_Not Started_)
-- Machine Learning from Scratch (_Not Started_)
-- Kaggle - Intro to Machine Learning (_Not Started_)
-- Kaggle - Intermediate Machine Learning (_Not Started_)
-
-### 3. Methodology (_Not Started_)
-A structured walkthrough of *John B. Rollins’s 10-Stage Foundational Methodology for Data Science*, providing a systematic approach to real-world ML projects.
+### 3. Methodology
+1. 🔴 Business Understanding
+2. 🔴 Analytic Approach
+3. 🔴 Data Requirements
+4. 🔴 Data Collection
+5. 🔴 Data Understanding
+6. 🔴 Data Preparation
+7. 🔴 Modeling
+8. 🔴 Evaluation
+9. 🔴 Deployment
+10. 🔴 Feedback
