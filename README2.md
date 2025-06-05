@@ -18,9 +18,7 @@ The Theory and Practice sections align with **AssemblyAI**'s [recommended roadma
 3. 🟠 [Statistics and Probability](./01_theory/03_statistics_and_probability/) from [Khan Academy](https://www.khanacademy.org/)
 
 ### 2. Practice  
-#### [Python Fundamentals](./02_practice/01_python_for_beginners/) (↻)  
-↻ *[Python for Beginners](https://www.youtube.com/watch?v=eWRfhZUzrAc)* (freeCodeCamp)  
-↻ [pythoncheatsheet.org](https://www.pythoncheatsheet.org/)  
+1. 🟠 [Python for Beginners](./02_practice/01_python_for_beginners/) from [freeCodeCamp](https://www.youtube.com/watch?v=eWRfhZUzrAc) and [pythoncheatsheet.org](https://www.pythoncheatsheet.org/)  
 
 **Pending:**  
 ☐ Intermediate Python  
