@@ -12,10 +12,13 @@ The Theory and Practice sections align with **AssemblyAI**'s [recommended roadma
 ## Content Status  
 🟢 Completed | 🟠 Ongoing | 🔴 Not Started
 
-### 1. Theory 🟠
+### 1. Theory
 
-#### [Calculus](./01_theory//01_calculus/) (_Ongoing_)
-A structured compilation of my notes from **Khan Academy**’s [Precalculus](https://www.khanacademy.org/math/precalculus) (🟢), [AP Calculus BC](https://www.khanacademy.org/math/ap-calculus-bc) (🟠), [Multivariable Calculus](https://www.khanacademy.org/math/multivariable-calculus) (🔴), and [Differential Equations](https://www.khanacademy.org/math/differential-equations) (🔴) courses.
+#### [Calculus](./01_theory//01_calculus/) by **Khan Academy**  
+* 🟢 [Precalculus](https://www.khanacademy.org/math/precalculus) 
+* 🟠 [AP Calculus BC](https://www.khanacademy.org/math/ap-calculus-bc)
+* 🔴 [Multivariable Calculus](https://www.khanacademy.org/math/multivariable-calculus)
+* 🔴 [Differential Equations](https://www.khanacademy.org/math/differential-equations)
 
 #### [Linear Algebra](./01_theory/02_linear_algebra/) (_Complete_)
 A structured compilation of my notes from **Krista King**'s [Become a Linear Algebra Master](https://www.udemy.com/course/linear-algebra-course/) course.
