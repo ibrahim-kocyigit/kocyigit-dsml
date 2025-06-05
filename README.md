@@ -17,7 +17,7 @@ The Theory and Practice sections align with **AssemblyAI**'s [recommended roadma
 3. 🟠 [Statistics and Probability](./01_theory/03_statistics_and_probability/) by [Khan Academy](https://www.khanacademy.org/)
 
 ### 2. Practice  
-1. 🔴 [Python for Beginners](./02_practice/01_python_for_beginners/) by [freeCodeCamp](https://www.youtube.com/watch?v=eWRfhZUzrAc) and [pythoncheatsheet.org](https://www.pythoncheatsheet.org/)  
+1. 🟠 [Python for Beginners](./02_practice/01_python_for_beginners/) by [freeCodeCamp](https://www.youtube.com/watch?v=eWRfhZUzrAc) and [pythoncheatsheet.org](https://www.pythoncheatsheet.org/)  
 2. 🔴 Intermediate Python Programming Course by [freeCodeCamp](https://www.youtube.com/watch?v=HGOBQPFzWKo)
 3. 🔴 NumPy Crash Course by [Patrick Loeber](https://www.youtube.com/watch?v=9JUAPgtkKpI)
 4. 🔴 Complete Python Pandas Data Science Tutorial by [Keith Galli](https://www.youtube.com/watch?v=2uvysYbKdjM)
