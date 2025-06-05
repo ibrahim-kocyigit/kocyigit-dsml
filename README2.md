@@ -3,9 +3,9 @@
 
 This project consolidates my curated learning resources, organized into three core pillars: **Theory**, **Practice**, and **Methodology**.  
 
-- **Theory**: Mathematical foundations (calculus, linear algebra, statistics and probability)  
+- **[Theory](./01_theory/)**: Mathematical foundations (calculus, linear algebra, statistics and probability)  
 - **Practice**: Applied skills (Python, SQL, ML libraries)  
-- **Methodology**: Implementation framework ()  
+- **Methodology**: Implementation framework
 
 The Theory and Practice sections align with **AssemblyAI**'s [recommended roadmap](https://www.youtube.com/watch?v=wtolxa9XTg), while the Methodology section implements **John B. Rollins**'s [Foundational Methodology for Data Science](./03_methodology/references/IBMOpenSource_FoundationalMethologyforDataScience.PDF) as a systematic framework for real-world ML projects.
 
