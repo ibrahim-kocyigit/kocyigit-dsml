@@ -25,8 +25,8 @@ The Theory and Practice sections align with **AssemblyAI**'s [recommended roadma
 6. 🔴 Seaborn Course
 7. 🔴 Machine Learning Specialization by Andrew Ng 
 8. 🔴 Machine Learning from Scratch
-9. 🔴 Intro to Machine Learning from Kaggle 
-10. 🔴 Intermediate Machine Learning from Kaggle 
+9. 🔴 Intro to Machine Learning by Kaggle 
+10. 🔴 Intermediate Machine Learning by Kaggle 
 
 ### 3. Methodology
 1. 🔴 Business Understanding
