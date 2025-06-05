@@ -13,27 +13,9 @@ The Theory and Practice sections align with **AssemblyAI**'s [recommended roadma
 🟢 Completed | 🟠 Ongoing | 🔴 Not Started
 
 ### 1. Theory
-
-1. 🟠 [Calculus](./01_theory/01_calculus/) from [Khan Academy](https://www.khanacademy.org/) (🟢 [Precalculus](./01_theory/01_calculus/00_precalculus/), 🟠 [AP Calculus BC](./01_theory/01_calculus/01_ap_calculus_bc/), 🔴 Multivariable Calculus, 🔴 Differential Equations
-2. 🟢 [Linear Algebra](./01_theory/02_linear_algebra/) by **[Krista King]**(https://www.udemy.com/course/linear-algebra-course/)
-
-#### [Statistics and Probability](./01_theory/03_statistics_and_probability/) (_Ongoing_)
-A structured compilation of my notes from **Khan Academy**’s [Statistics and Probability](https://www.khanacademy.org/math/statistics-probability) course.
-
-#### [Calculus](./01_theory/01_calculus/) (●○○○)  
-*Khan Academy courses:*  
-✓ [Precalculus](https://www.khanacademy.org/math/precalculus)  
-↻ [AP Calculus BC](https://www.khanacademy.org/math/ap-calculus-bc)  
-☐ Multivariable Calculus  
-☐ Differential Equations  
-
-#### [Linear Algebra](./01_theory/02_linear_algebra/) (✓)  
-✓ *[Become a Linear Algebra Master](https://www.udemy.com/course/linear-algebra-course/)* (Krista King)  
-
-#### [Statistics & Probability](./01_theory/03_statistics_and_probability/) (↻)  
-↻ *[Statistics and Probability](https://www.khanacademy.org/math/statistics-probability)* (Khan Academy)  
-
----
+1. 🟠 [Calculus](./01_theory/01_calculus/) from [Khan Academy](https://www.khanacademy.org/) (🟢 [Precalculus](./01_theory/01_calculus/00_precalculus/), 🟠 [AP Calculus BC](./01_theory/01_calculus/01_ap_calculus_bc/), 🔴 _Multivariable Calculus_, 🔴 _Differential Equations_)
+2. 🟢 [Linear Algebra](./01_theory/02_linear_algebra/) from [Krista King](https://www.udemy.com/course/linear-algebra-course/)
+3. 🟠 [Statistics and Probability](./01_theory/03_statistics_and_probability/) from [Khan Academy](https://www.khanacademy.org/)
 
 ### 2. Practice  
 #### [Python Fundamentals](./02_practice/01_python_for_beginners/) (↻)  
