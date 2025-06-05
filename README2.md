@@ -1,5 +1,5 @@
 # Kocyigit-ML  
-**A structured learning repository for mastering Machine Engineering fundamentals**  
+### A structured learning repository for mastering Machine Engineering fundamentals
 
 This project consolidates my curated learning resources, organized into three core pillars: **Theory**, **Practice**, and **Methodology**.  
 
