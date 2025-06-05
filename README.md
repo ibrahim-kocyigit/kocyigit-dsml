@@ -3,7 +3,7 @@
 
 This project consolidates my curated learning resources, organized into three core pillars: **Theory**, **Practice**, and **Methodology**.  
 
-- **[Theory](./01_theory/)**: Mathematical foundations (calculus, linear algebra, statistics and probability)  
+- **[Theory](./01_theory/)**: Mathematical foundations (Calculus, Linear algebra, Statistics and probability)  
 - **[Practice](./02_practice/)**: Applied skills (Python, SQL, Libraries for Data Science and Machine Learning)  
 - **[Methodology](./03_methodology/)**: Implementation framework
 
