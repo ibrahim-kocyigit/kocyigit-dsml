@@ -9,8 +9,7 @@ This project consolidates my curated learning resources, organized into three co
 
 The Theory and Practice sections align with **AssemblyAI**'s [recommended roadmap](https://www.youtube.com/watch?v=wtolxa9XTg), while the Methodology section implements **John B. Rollins**'s [Foundational Methodology for Data Science](./03_methodology/references/IBMOpenSource_FoundationalMethologyforDataScience.PDF) as a systematic framework for real-world ML projects.
 
-## Content Status  
-🟢 Completed | 🟠 Ongoing | 🔴 Not Started
+## Status  
 
 ### 1. Theory
 1. 🟠 [Calculus](./01_theory/01_calculus/) by [Khan Academy](https://www.khanacademy.org/) (🟢 [Precalculus](./01_theory/01_calculus/00_precalculus/), 🟠 [AP Calculus BC](./01_theory/01_calculus/01_ap_calculus_bc/), 🔴 _Multivariable Calculus_, 🔴 _Differential Equations_)
