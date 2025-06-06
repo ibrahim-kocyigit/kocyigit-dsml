@@ -18,12 +18,12 @@ _Clicking the course name will open my personal notes for that course, while cli
 3. 🟠 [Statistics and Probability](./01_theory/03_statistics_and_probability/) by [Khan Academy](https://www.khanacademy.org/)
 
 ### 2. Application  
-1. 🟠 [Python for Beginners](./02_application/01_python_for_beginners/) by [freeCodeCamp](https://www.youtube.com/watch?v=eWRfhZUzrAc) and [pythoncheatsheet.org](https://www.pythoncheatsheet.org/)  
-2. 🔴 Intermediate Python Programming Course by [freeCodeCamp](https://www.youtube.com/watch?v=HGOBQPFzWKo)
+1. 🟠 [Beginner Python](./02_application/01_beginner_python/) by [freeCodeCamp](https://www.youtube.com/watch?v=eWRfhZUzrAc) and [pythoncheatsheet.org](https://www.pythoncheatsheet.org/)  
+2. 🔴 Intermediate Python by [freeCodeCamp](https://www.youtube.com/watch?v=HGOBQPFzWKo)
 3. 🔴 NumPy Crash Course by [Patrick Loeber](https://www.youtube.com/watch?v=9JUAPgtkKpI)
-4. 🔴 Complete Python Pandas Data Science Tutorial by [Keith Galli](https://www.youtube.com/watch?v=2uvysYbKdjM)
-5. 🔴 Matplotlib Course by [freeCodeCamp](https://www.youtube.com/watch?v=3Xc3CA655Y4) 
-6. 🔴 Seaborn Full Course by [Derek Banas](https://www.youtube.com/watch?v=6GUZXDef2U0)
+4. 🔴 Pandas Crash Course by [Keith Galli](https://www.youtube.com/watch?v=2uvysYbKdjM)
+5. 🔴 Matplotlib Crash Course by [freeCodeCamp](https://www.youtube.com/watch?v=3Xc3CA655Y4) 
+6. 🔴 Seaborn Crash Course by [Derek Banas](https://www.youtube.com/watch?v=6GUZXDef2U0)
 7. 🔴 Machine Learning Specialization by [Andrew Ng](https://www.coursera.org/specializations/machine-learning-introduction) 
 8. 🔴 Machine Learning from Scratch by [AssemblyAI](https://www.youtube.com/playlist?list=PLcWfeUsAys2k_xub3mHks85sBHZvg24Jd)
 9. 🔴 Intro to Machine Learning by [Kaggle](https://www.kaggle.com/learn/intro-to-machine-learning) 
