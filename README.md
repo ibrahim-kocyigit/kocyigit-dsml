@@ -5,9 +5,9 @@ This project consolidates my curated learning resources, organized into three co
 
 1. **[Theory](./01_theory/)**: Mathematical foundations (calculus, linear algebra, statistics and probability)  
 2. **[Application](./02_application/)**: Applied skills (Python, libraries for data science and machine learning)  
-3. **[Framework](./03_framework/)**: Implementation framework
+3. **[Methodology](./03_methodology/)**: Implementation framework
 
-The **Theory** and **Application** sections align with **AssemblyAI**'s [recommended roadmap](https://www.youtube.com/watch?v=wtolixa9XTg), while the **Framework** section implements **John B. Rollins**'s [Foundational Methodology for Data Science](./03_framework/references/IBMOpenSource_FoundationalMethologyforDataScience.PDF) as a systematic framework for real-world ML projects.
+The **Theory** and **Application** sections align with **AssemblyAI**'s [recommended roadmap](https://www.youtube.com/watch?v=wtolixa9XTg), while the **Methodology** section implements **John B. Rollins**'s [Foundational Methodology for Data Science](./03_methodology/references/IBMOpenSource_FoundationalMethologyforDataScience.PDF) as a systematic framework for real-world ML projects.
 
 ## Content Status  
 _Clicking the course name will open my personal notes for that course, while clicking the creator's name will redirect you to the official course page._ (🟢 _Complete_ | 🟠 _In Progress_ | 🔴 _Not Started_)
@@ -29,7 +29,7 @@ _Clicking the course name will open my personal notes for that course, while cli
 9. 🔴 Intro to Machine Learning by [Kaggle](https://www.kaggle.com/learn/intro-to-machine-learning) 
 10. 🔴 Intermediate Machine Learning by [Kaggle](https://www.kaggle.com/learn/intermediate-machine-learning)
 
-### 3. Framework
+### 3. Methodology
 1. 🔴 Business Understanding
 2. 🔴 Analytic Approach
 3. 🔴 Data Requirements
