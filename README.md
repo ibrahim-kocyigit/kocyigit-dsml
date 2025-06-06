@@ -3,11 +3,11 @@
 
 This project consolidates my curated learning resources, organized into three core pillars: 
 
-1. **[Theory](./01_theory/)**: Mathematical foundations (Calculus, Linear algebra, Statistics and probability)  
-2. **[Practice](./02_practice/)**: Applied skills (Python, SQL, Libraries for Data Science and Machine Learning)  
-3. **[Methodology](./03_methodology/)**: Implementation framework
+1. **[Theory](./01_theory/)**: Mathematical foundations (calculus, linear algebra, statistics and probability)  
+2. **[Application](./02_application/)**: Applied skills (Python, libraries for data science and machine learning)  
+3. **[Framework](./03_framework/)**: Implementation framework
 
-The Theory and Practice sections align with **AssemblyAI**'s [recommended roadmap](https://www.youtube.com/watch?v=wtolixa9XTg), while the Methodology section implements **John B. Rollins**'s [Foundational Methodology for Data Science](./03_methodology/references/IBMOpenSource_FoundationalMethologyforDataScience.PDF) as a systematic framework for real-world ML projects.
+The **Theory** and **Application** sections align with **AssemblyAI**'s [recommended roadmap](https://www.youtube.com/watch?v=wtolixa9XTg), while the **Framework** section implements **John B. Rollins**'s [Foundational Methodology for Data Science](./03_framework/references/IBMOpenSource_FoundationalMethologyforDataScience.PDF) as a systematic framework for real-world ML projects.
 
 ## Content Status  
 _Clicking the course name will open my personal notes for that course, while clicking the creator's name will redirect you to the official course page._ (🟢 _Complete_ | 🟠 _In Progress_ | 🔴 _Not Started_)
@@ -17,8 +17,8 @@ _Clicking the course name will open my personal notes for that course, while cli
 2. 🟢 [Linear Algebra](./01_theory/02_linear_algebra/) by [Krista King](https://www.udemy.com/course/linear-algebra-course/)
 3. 🟠 [Statistics and Probability](./01_theory/03_statistics_and_probability/) by [Khan Academy](https://www.khanacademy.org/)
 
-### 2. Practice  
-1. 🟠 [Python for Beginners](./02_practice/01_python_for_beginners/) by [freeCodeCamp](https://www.youtube.com/watch?v=eWRfhZUzrAc) and [pythoncheatsheet.org](https://www.pythoncheatsheet.org/)  
+### 2. Application  
+1. 🟠 [Python for Beginners](./02_application/01_python_for_beginners/) by [freeCodeCamp](https://www.youtube.com/watch?v=eWRfhZUzrAc) and [pythoncheatsheet.org](https://www.pythoncheatsheet.org/)  
 2. 🔴 Intermediate Python Programming Course by [freeCodeCamp](https://www.youtube.com/watch?v=HGOBQPFzWKo)
 3. 🔴 NumPy Crash Course by [Patrick Loeber](https://www.youtube.com/watch?v=9JUAPgtkKpI)
 4. 🔴 Complete Python Pandas Data Science Tutorial by [Keith Galli](https://www.youtube.com/watch?v=2uvysYbKdjM)
@@ -29,7 +29,7 @@ _Clicking the course name will open my personal notes for that course, while cli
 9. 🔴 Intro to Machine Learning by [Kaggle](https://www.kaggle.com/learn/intro-to-machine-learning) 
 10. 🔴 Intermediate Machine Learning by [Kaggle](https://www.kaggle.com/learn/intermediate-machine-learning)
 
-### 3. Methodology
+### 3. Framework
 1. 🔴 Business Understanding
 2. 🔴 Analytic Approach
 3. 🔴 Data Requirements
