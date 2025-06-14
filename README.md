@@ -1,7 +1,7 @@
 # Kocyigit-ML 🤖 
 #### A structured learning repository for mastering Machine Learning fundamentals!
 
-This project consolidates my curated learning resources, organized into three core pillars: 
+This project consolidates my curated learning resources, organized into three pillars: 
 
 1. **[Theory](./01_theory/)**: Mathematical foundations (calculus, linear algebra, statistics and probability)  
 2. **[Application](./02_application/)**: Applied skills (Python, libraries for data science and machine learning)  
