@@ -1,5 +1,3 @@
-# Core Python variables and data types with DS/ML relevance
-
 """
 Key Concepts:
 - Dynamic typing (no explicit type declaration)
