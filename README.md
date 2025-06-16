@@ -18,7 +18,7 @@ _Clicking the course name will open my personal notes for that course, while cli
 3. 🟠 [Statistics and Probability](./01_theory/03_statistics_and_probability/) by [Khan Academy](https://www.khanacademy.org/)
 
 ### 2. Application  
-1. 🟠 [Beginner Python](./02_application/01_beginner_python/) by [freeCodeCamp](https://www.youtube.com/watch?v=eWRfhZUzrAc),  [pythoncheatsheet.org](https://www.pythoncheatsheet.org/), and [GeeksforGeeks](https://www.geeksforgeeks.org/)
+1. 🟠 [Python for Data Science](./02_application/01_python_for_data_science/) (AI-Generated) 
 2. 🔴 Intermediate Python by [freeCodeCamp](https://www.youtube.com/watch?v=HGOBQPFzWKo)
 3. 🔴 NumPy Crash Course by [Patrick Loeber](https://www.youtube.com/watch?v=9JUAPgtkKpI)
 4. 🔴 Pandas Crash Course by [Keith Galli](https://www.youtube.com/watch?v=2uvysYbKdjM)
