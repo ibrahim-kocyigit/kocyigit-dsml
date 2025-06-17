@@ -84,10 +84,6 @@ flattened = [num for row in matrix for num in row]  # [1, 2, 3, 4, 5, 6, 7, 8, 9
 categorized = ["Even" if x % 2 == 0 else "Odd" for x in range(5)]
 print(categorized)  # ['Even', 'Odd', 'Even', 'Odd', 'Even']
 
-# Dictionary comprehensions
-square_dict = {x: x**2 for x in range(5)}
-print(square_dict)  # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
-
 
 # ====================
 # 7. Memory Considerations
