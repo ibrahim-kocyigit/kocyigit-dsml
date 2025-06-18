@@ -8,6 +8,3 @@ _Translate the business problem into specific, measurable, achievable, relevant,
 
 ## Solution Requirements
 _Outline the high-level requirements for the analytic solution from a business perspective. What are the essential functionalities, constraints, and performance expectations (e.g., accuracy, speed, interpretability)? This doesn't need to be deeply technical at this stage, but it should guide the analytic approach._
-
-## Conclusion
-_Document the key findings, conclusions, and summaries from the report that will be incorporated into the main project `README.md`_ 
