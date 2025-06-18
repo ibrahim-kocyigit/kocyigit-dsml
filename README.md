@@ -28,10 +28,10 @@ _Clicking the course name will open my personal notes for that course, while cli
 1. 🟢 [Business Understanding](./03_methodology/01_business_understanding.md)
 2. 🟢 [Analytic Approach](./03_methodology/02_analytic_approach.md)
 3. 🟢 [Data Requirements](./03_methodology/03_data_requirements.md)
-4. 🔴 Data Collection
-5. 🔴 Data Understanding
-6. 🔴 Data Preparation
-7. 🔴 Modeling
-8. 🔴 Evaluation
-9. 🔴 Deployment
-10. 🔴 Feedback
+4. 🟢 [Data Collection](./03_methodology/04_data_collection.md)
+5. 🟢 [Data Understanding](./03_methodology/05_data_understanding.md)
+6. 🟢 [Data Preparation](./03_methodology/06_data_preparation.md)
+7. 🟢 [Modeling](./03_methodology/07_modeling.md)
+8. 🟢 [Evaluation](./03_methodology/08_evaluation.md)
+9. 🟢 [Deployment](./03_methodology/09_deployment.md)
+10. 🟢 [Feedback](./03_methodology/10_feedback.md)

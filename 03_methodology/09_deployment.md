@@ -28,7 +28,8 @@ Deploy the model according to the chosen deployment type. This might involve:
 * Creating a report or dashboard using a tool like Tableau or Power BI.
 
 ## Step 4: Monitor Model Performance
-After deployment, continuously monitor the model's performance in the production environment. Track key metrics and set up alerts for any significant degradation in performance.
+* After deployment, continuously monitor the model's performance in the production environment. Track key metrics and set up alerts for any significant degradation in performance.
 
 ## Step 5: Document Deployment Process
-Document the entire deployment process, including the deployment type, artifacts, steps taken, and monitoring setup.
+* Document the entire deployment process, including the deployment type, artifacts, steps taken, and monitoring setup.
+* Add a summary of the stage report to the main project `README.md`

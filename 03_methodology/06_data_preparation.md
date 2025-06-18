@@ -21,14 +21,15 @@ Transform the data to make it more suitable for modeling. This may involve:
 *   **Date/Time Feature Extraction:** Extract relevant features from date/time variables (e.g., day of week, month, year).
 
 ## Step 3: Feature Engineering
-Create new features from the existing data to potentially improve model performance. This is guided by domain knowledge and the insights gained during data understanding. Combine existing features, create interaction terms, or derive new variables based on business logic.
+* Create new features from the existing data to potentially improve model performance. This is guided by domain knowledge and the insights gained during data understanding. Combine existing features, create interaction terms, or derive new variables based on business logic.
 
 ## Step 4: Data Combination
-If data was collected from multiple sources, combine it into a single dataset for modeling. This may involve joining tables or merging dataframes. Ensure that the data is properly aligned and that keys are consistent.
+* If data was collected from multiple sources, combine it into a single dataset for modeling. This may involve joining tables or merging dataframes. Ensure that the data is properly aligned and that keys are consistent.
 
 ## Step 5: Create Interim and Processed Datasets
-*   Store the *intermediate* results of data cleaning and transformation in the `data/interim` directory. This allows you to track the changes made to the data and revert to earlier versions if needed.
-*   Create the *final, processed* dataset that will be used for modeling and store it in the `data/processed` directory.
+* Store the *intermediate* results of data cleaning and transformation in the `data/interim` directory. This allows you to track the changes made to the data and revert to earlier versions if needed.
+* Create the *final, processed* dataset that will be used for modeling and store it in the `data/processed` directory.
 
 ## Step 6: Document all steps
-Document every action you took in this stage.
+* Document every action you took in this stage.
+* Add a summary of the stage report to the main project `README.md`

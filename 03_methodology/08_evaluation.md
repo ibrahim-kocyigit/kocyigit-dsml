@@ -4,22 +4,23 @@ _"During model development and before deployment, the data scientist evaluates t
 _"In addition, data scientists may assign statistical significance tests to the model as further proof of its quality. This additional proof may be instrumental in justifying model implementation or taking actions when the stakes are high—such as an expensive supplemental medical protocol or a critical airplane flight system."_ - **John B. Rollins**
 
 ## Step 1: Load Trained Model
-Load the best-performing trained model (from `models/`) that was selected in Stage 7.
+* Load the best-performing trained model (from `models/`) that was selected in Stage 7.
 
 ## Step 2: Load Test Data
-Load the test dataset (which was set aside in Stage 7 and has *not* been used for training or hyperparameter tuning).
+* Load the test dataset (which was set aside in Stage 7 and has *not* been used for training or hyperparameter tuning).
 
 ## Step 3: Generate Predictions
-Use the loaded model to generate predictions on the test data.
+* Use the loaded model to generate predictions on the test data.
 
 ## Step 4: Evaluate Performance
-Evaluate the model's performance on the test data using the same evaluation metrics used during model selection (in Stage 7). This provides an unbiased estimate of how well the model is likely to generalize to new, unseen data. Calculate confidence intervals for the evaluation metrics, if appropriate.
+* Evaluate the model's performance on the test data using the same evaluation metrics used during model selection (in Stage 7). This provides an unbiased estimate of how well the model is likely to generalize to new, unseen data. Calculate confidence intervals for the evaluation metrics, if appropriate.
 
 ## Step 5: Assess Business Objectives
-Evaluate whether the model's performance on the test set meets the business objectives and solution requirements defined in Stage 1. Is the model "good enough" to be deployed?
+* Evaluate whether the model's performance on the test set meets the business objectives and solution requirements defined in Stage 1. Is the model "good enough" to be deployed?
 
 ## Step 6: Build User Documentation
-Use MkDocs (or Sphinx) to build the user-facing documentation in the docs/ directory. 
+* Use MkDocs (or Sphinx) to build the user-facing documentation in the docs/ directory. 
 
 ## Step 7: Document Results
-Thoroughly document the evaluation results, including the performance metrics, confidence intervals (if applicable), and an assessment of whether the model meets the business objectives.
+* Thoroughly document the evaluation results, including the performance metrics, confidence intervals (if applicable), and an assessment of whether the model meets the business objectives.
+* Add a summary of the stage report to the main project `README.md`
