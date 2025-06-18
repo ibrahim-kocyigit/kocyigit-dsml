@@ -19,7 +19,7 @@ _Clicking the course name will open my personal notes for that course, while cli
 
 ### 2. Application  
 1. 🟢 [Python Fundamentals](./02_application/01_python_fundamentals/) (AI-generated) 
-2. 🟠 [Intermediate Python](./02_application/02_intermediate_python/) (AI-generated) 
+2. 🟢 [Intermediate Python](./02_application/02_intermediate_python/) (AI-generated) 
 2. 🔴 NumPy Crash Course by [Patrick Loeber](https://www.youtube.com/watch?v=9JUAPgtkKpI)
 3. 🔴 Pandas Crash Course by [Keith Galli](https://www.youtube.com/watch?v=2uvysYbKdjM)
 4. 🔴 Matplotlib Crash Course by [freeCodeCamp](https://www.youtube.com/watch?v=3Xc3CA655Y4) 
