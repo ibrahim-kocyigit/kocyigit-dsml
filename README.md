@@ -24,9 +24,8 @@ _Clicking the course name will open my personal notes for that course, while cli
 4. 🟢 [Matplotlib](./02_application/04_matplotlib/)
 5. 🟢 [Seaborn](./02_application/05_seaborn/)
 6. 🟢 [Scikit-learn](./02_application/06_scikit-learn/)
-7. 🟠 [ML Models](./02_application/07_ml_models/)
+7. 🟠 [Modeling and Evaluation](./02_application/07_modeling_and_evaluation/)
 8. 🔴 Deployment
-
 
 ### 3. Methodology
 1. 🔴 Business Understanding
