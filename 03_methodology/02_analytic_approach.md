@@ -17,4 +17,4 @@ _"Once the business problem has been clearly stated, the data scientist can defi
 ## Step 5: Document and Justify
 * Detail the selected analytical methodology, alternative options evaluated, and the rationale behind your choice in the [Analytic Approach Report](./references/02_analytic_approach_report.md). Clearly articulate why the chosen method best addresses the business problem and aligns with project objectives.
 * Store any relevant research papers, articles, or documentation supporting your methodology or alternatives in the `references` folder.
-* Add a summary of the stage report to the main project `README.md`_ 
+* Add a summary of the stage report to the main project `README.md`
