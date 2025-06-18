@@ -21,6 +21,7 @@ _"Every project starts with business understanding. The business sponsors who ne
 * Prepare the final draft of the Business Understanding Report.
 * Distribute the report to business sponsors for thorough review and validation, specifically requesting feedback on the problem statement, objectives, and requirements.
 * Implement feedback through iterative revisions, facilitating a collaborative process to achieve a clear, validated, and mutually agreed-upon understanding.
+* Add a summary of the stage report to the main project `README.md`_ 
 
 <br>  
 
