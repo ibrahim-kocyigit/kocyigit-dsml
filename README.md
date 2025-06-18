@@ -5,9 +5,7 @@ This project consolidates my curated learning resources, organized into three pi
 
 1. **[Theory](./01_theory/)**: Mathematical foundations (calculus, linear algebra, statistics and probability)  
 2. **[Application](./02_application/)**: Applied skills (Python, libraries for data science and machine learning)  
-3. **[Methodology](./03_methodology/)**: Implementation framework
-
-The **Theory** and **Application** sections align with **AssemblyAI**'s [recommended roadmap](https://www.youtube.com/watch?v=wtolixa9XTg), while the **Methodology** section implements **John B. Rollins**'s [Foundational Methodology for Data Science](./03_methodology/references/IBMOpenSource_FoundationalMethologyforDataScience.PDF) as a systematic framework for real-world ML projects.
+3. **[Methodology](./03_methodology/)**: Implementation framework based on Foundational Methodology for Data Science by **John B. Rollins**
 
 ## Content Status  
 _Clicking the course name will open my personal notes for that course, while clicking the creator's name will redirect you to the official course page._ (🟢 _Complete_ | 🟠 _In Progress_ | 🔴 _Not Started_)
