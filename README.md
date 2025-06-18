@@ -27,7 +27,7 @@ _Clicking the course name will open my personal notes for that course, while cli
 ### 3. Methodology
 1. 🟢 [Business Understanding](./03_methodology/01_business_understanding.md)
 2. 🟢 [Analytic Approach](./03_methodology/02_analytic_approach.md)
-3. 🔴 Data Requirements
+3. 🟢 [Data Requirements](./03_methodology/03_data_requirements.md)
 4. 🔴 Data Collection
 5. 🔴 Data Understanding
 6. 🔴 Data Preparation
