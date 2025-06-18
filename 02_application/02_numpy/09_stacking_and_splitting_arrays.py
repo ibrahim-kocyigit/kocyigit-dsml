@@ -102,3 +102,5 @@ uneven_split = np.array_split(uneven_arr, 3)  # Split a 7-element array into 3 p
 print("Result of `array_split`:")
 for arr in uneven_split:
     print(arr)
+
+# --- End of File ---

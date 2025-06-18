@@ -77,3 +77,5 @@ print(f"NumPy array: {my_array}")
 # Check the type
 print(f"Type of my_list: {type(my_list)}")
 print(f"Type of my_array: {type(my_array)}")  # Note the type is numpy.ndarray
+
+# --- End of File ---

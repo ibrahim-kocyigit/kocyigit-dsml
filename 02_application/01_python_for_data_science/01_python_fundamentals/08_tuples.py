@@ -111,3 +111,5 @@ permissions = ("read", "write", "execute")
 print(f"\nNumber of permissions: {len(permissions)}")
 print(f"Does user have 'write' permission? {'write' in permissions}")
 print(f"Does user have 'admin' permission? {'admin' in permissions}")
+
+# --- End of File ---

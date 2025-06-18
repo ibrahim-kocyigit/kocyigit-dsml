@@ -116,3 +116,5 @@ print(f"Solution: x = {x[0]:.1f}, y = {x[1]:.1f}")
 # --- Verification ---
 # Check if A @ x equals b
 print(f"Verification (A @ x): {A_system @ x}")  # Should be [8., 6.]
+
+# --- End of File ---

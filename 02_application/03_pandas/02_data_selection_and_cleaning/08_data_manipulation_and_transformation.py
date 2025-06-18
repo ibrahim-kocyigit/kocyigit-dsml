@@ -112,3 +112,5 @@ if not df.empty:
     # It takes a dictionary mapping {old_name: new_name}.
     df_renamed = df.rename(columns={"TotalPrice": "Revenue", "OrderDate": "Date"})
     print("DataFrame with renamed columns:\n", df_renamed.head())
+
+# --- End of File ---

@@ -116,3 +116,5 @@ print("\nCentered data (data - means):\n", centered_data)
 
 # We can verify the new means are very close to zero
 print(f"\nNew means of centered data: {centered_data.mean(axis=0).round(2)}")
+
+# --- End of File ---

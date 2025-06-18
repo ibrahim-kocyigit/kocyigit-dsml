@@ -113,3 +113,5 @@ print(f"Column vector shape: {col_vec.shape}")  # Shape is now (3, 1)
 row_vec = vec[np.newaxis, :]
 print(f"\nRow vector:\n{row_vec}")
 print(f"Row vector shape: {row_vec.shape}")  # Shape is now (1, 3)
+
+# --- End of File ---

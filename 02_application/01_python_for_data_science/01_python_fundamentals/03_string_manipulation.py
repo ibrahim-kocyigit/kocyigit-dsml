@@ -119,3 +119,5 @@ my_string = "Machine Learning"
 print(f"Length of string: {len(my_string)}")  # 16
 print("Machine" in my_string)  # True
 print("Java" not in my_string)  # True
+
+# --- End of File ---

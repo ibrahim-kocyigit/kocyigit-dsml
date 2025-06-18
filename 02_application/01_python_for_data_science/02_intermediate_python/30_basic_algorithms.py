@@ -134,3 +134,5 @@ print(f"The 10th Fibonacci number is: {fibonacci(10)}")
 print("-" * 30)
 
 print("This concludes the Intermediate Python phase!")
+
+# --- End of File ---

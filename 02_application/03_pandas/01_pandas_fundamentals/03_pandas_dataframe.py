@@ -110,3 +110,5 @@ print("\nDataFrame with new 'Is_Metropolitan' column:\n", df_from_dict)
 # Use the `del` keyword for in-place deletion.
 del df_from_dict["Region"]
 print("\nDataFrame after deleting 'Region' column:\n", df_from_dict)
+
+# --- End of File ---

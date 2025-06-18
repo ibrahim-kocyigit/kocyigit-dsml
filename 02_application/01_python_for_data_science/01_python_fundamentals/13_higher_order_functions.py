@@ -125,3 +125,5 @@ print(f"Triple of 10: {triple(10)}")
 print(f"The type of `double` is: {type(double)}")  # <class 'function'>
 
 # This concept is closely related to "closures," which we'll cover later.
+
+# --- End of File ---

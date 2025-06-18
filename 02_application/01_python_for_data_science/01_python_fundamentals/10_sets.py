@@ -123,3 +123,5 @@ permission_sets = {
     frozenset(["read", "write", "execute"]): "Power User",
 }
 print(f"\nRole for {immutable_set}: {permission_sets[immutable_set]}")
+
+# --- End of File ---

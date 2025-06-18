@@ -104,3 +104,5 @@ large_array_32 = np.ones(1_000_000, dtype=np.float32)  # 1 million 32-bit floats
 print("--- Memory Usage ---")
 print(f"Memory of float64 array: {large_array_64.nbytes / 1e6} MB")  # Approx 8 MB
 print(f"Memory of float32 array: {large_array_32.nbytes / 1e6} MB")  # Approx 4 MB
+
+# --- End of File ---

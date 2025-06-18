@@ -99,3 +99,5 @@ sales_data["3-Day_Moving_Avg"] = sales_data["Sales"].rolling(window=3).mean()
 print("\nData with 3-day moving average (using .rolling(3).mean()):\n", sales_data)
 # Note: The first two values are NaN because there are not enough preceding data points
 # to fill the window of size 3.
+
+# --- End of File ---

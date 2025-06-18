@@ -116,3 +116,5 @@ print(f"Generator object: {large_squares_gen}")
 print("First 5 values from the generator:")
 for i in range(5):
     print(next(large_squares_gen))
+
+# --- End of File ---

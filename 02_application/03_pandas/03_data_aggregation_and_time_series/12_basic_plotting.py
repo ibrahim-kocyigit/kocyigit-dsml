@@ -107,3 +107,5 @@ else:
     print("DataFrame is empty, no plots to display.")
 
 print("\nThis concludes the Pandas for Data Analysis curriculum!")
+
+# --- End of File ---

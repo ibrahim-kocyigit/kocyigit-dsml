@@ -118,3 +118,5 @@ if not df.empty:
         "Result of `df.query('Category == \"Electronics\" and Price > 100')`:\n",
         query_result,
     )
+
+# --- End of File ---

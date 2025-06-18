@@ -142,3 +142,5 @@ print(f"Language: {combined_config['language']}")  # From user_config
 # Modifying the ChainMap affects ONLY the first dictionary in the chain
 combined_config["language"] = "JavaScript"
 print(f"Modified user_config: {user_config}")
+
+# --- End of File ---

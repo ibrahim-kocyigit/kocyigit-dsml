@@ -110,3 +110,5 @@ if not df.empty:
         }
     )
     print("Multiple aggregations by Category:\n", aggregations)
+
+# --- End of File ---

@@ -112,3 +112,5 @@ print(f"20 in my_list: {20 in my_list}")  # True
 # Example: 6 in binary is 0110, 3 in binary is 0011
 print(f"6 & 3: {6 & 3}")  # Binary 0110 & 0011 = 0010, which is 2
 print(f"6 | 3: {6 | 3}")  # Binary 0110 | 0011 = 0111, which is 7
+
+# --- End of File ---

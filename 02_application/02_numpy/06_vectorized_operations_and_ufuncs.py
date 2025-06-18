@@ -91,3 +91,5 @@ arr_positives = np.full_like(data, 100)  # Array full of 100s
 arr_negatives = np.full_like(data, -100)  # Array full of -100s
 selective_result = np.where(data > 0, arr_positives, arr_negatives)
 print("\nResult of selecting from two other arrays:\n", selective_result)
+
+# --- End of File ---

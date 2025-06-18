@@ -112,3 +112,5 @@ print("Why are closures useful?")
 print("1. Data Hiding: The `count` variable is protected.")
 print("2. Function Factories: We can create specialized functions like `say_hello`.")
 print("3. Decorators: They are the foundation for our next topic!")
+
+# --- End of File ---

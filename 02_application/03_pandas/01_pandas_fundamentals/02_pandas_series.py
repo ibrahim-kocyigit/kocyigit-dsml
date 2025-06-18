@@ -111,3 +111,5 @@ print("Series s2:\n", s2)
 # and `NaN` (Not a Number) for labels that don't exist in both ('a', 'd').
 s_sum = s1 + s2
 print("\nSum of s1 and s2 (with alignment):\n", s_sum)
+
+# --- End of File ---

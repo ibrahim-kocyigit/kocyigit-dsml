@@ -1,5 +1,3 @@
-# 07_handling_missing_data.py
-
 import pandas as pd
 import numpy as np
 import os

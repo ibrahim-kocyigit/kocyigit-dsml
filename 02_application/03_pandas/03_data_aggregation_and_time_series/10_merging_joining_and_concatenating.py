@@ -114,3 +114,5 @@ print("\nJoined staff and salary data:\n", staff_with_salary)
 
 # Note: `pd.merge` can also join on indices using `left_index=True` and `right_index=True`.
 # `merge` is the more powerful and flexible function overall.
+
+# --- End of File ---

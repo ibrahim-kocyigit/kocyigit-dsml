@@ -93,3 +93,5 @@ zipped_students = zip(student_names, student_scores)
 for rank, (name, score) in enumerate(zipped_students, start=1):
     # Note: We unpack the tuple from zip `(name, score)` directly in the loop signature.
     print(f"Rank {rank}: {name} scored {score}.")
+
+# --- End of File ---
