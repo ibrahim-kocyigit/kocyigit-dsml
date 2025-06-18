@@ -3,7 +3,7 @@ _"Every project starts with business understanding. The business sponsors who ne
 
 ## Step 1: Initial Meeting & Information Gathering
 * Schedule and attend an initial meeting with the business sponsors/project stakeholders. Ask clarifying questions to understand their objectives, the business problem they are trying to solve, how they currently approach the problem, and any existing solutions. [^1] Take detailed notes. 
-* Transcribe your notes into the [Business Understanding Report](./stage_reports/01_business_understanding_report.md).
+* Transcribe your notes into the [Business Understanding Report](./references/01_business_understanding_report.md).
 
 ## Step 2: Define the Business Problem
 * Based on the initial meeting(s), formulate a clear and concise statement of the business problem. Focus on what the business needs to achieve. Distill the core issue.

@@ -25,7 +25,7 @@ _Clicking the course name will open my personal notes for that course, while cli
 7. 🟠 [Modeling and Evaluation](./02_application/07_modeling_and_evaluation/)
 
 ### 3. Methodology
-1. 🔴 Business Understanding
+1. 🟢 [Business Understanding](./03_methodology/01_business_understanding.md)
 2. 🔴 Analytic Approach
 3. 🔴 Data Requirements
 4. 🔴 Data Collection
