@@ -1,4 +1,0 @@
-Hello, World!
-This is the first line written from Python.
-Line 3
-Line 4

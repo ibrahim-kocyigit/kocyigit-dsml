@@ -18,16 +18,15 @@ _Clicking the course name will open my personal notes for that course, while cli
 3. 🟠 [Statistics and Probability](./01_theory/03_statistics_and_probability/) by [Khan Academy](https://www.khanacademy.org/)
 
 ### 2. Application  
-1. 🟢 [Python Fundamentals](./02_application/01_python_fundamentals/) (AI-generated) 
-2. 🟢 [Intermediate Python](./02_application/02_intermediate_python/) (AI-generated) 
-3. 🟢 [Numpy](./02_application/03_numpy/) (AI-generated)  
-4. 🟢 [Pandas](./02_application/04_pandas/) (AI-generated)  
-5. 🔴 Matplotlib Crash Course by [freeCodeCamp](https://www.youtube.com/watch?v=3Xc3CA655Y4) 
-6. 🔴 Seaborn Crash Course by [Derek Banas](https://www.youtube.com/watch?v=6GUZXDef2U0)
-7. 🔴 Machine Learning Specialization by [Andrew Ng](https://www.coursera.org/specializations/machine-learning-introduction) 
-8. 🔴 Machine Learning from Scratch by [AssemblyAI](https://www.youtube.com/playlist?list=PLcWfeUsAys2k_xub3mHks85sBHZvg24Jd)
-9. 🔴 Intro to Machine Learning by [Kaggle](https://www.kaggle.com/learn/intro-to-machine-learning) 
-10. 🔴 Intermediate Machine Learning by [Kaggle](https://www.kaggle.com/learn/intermediate-machine-learning)
+1. 🟢 [Python for Data Science](./02_application/01_python_for_data_science/)
+2. 🟢 [Numpy](./02_application/02_numpy/)
+3. 🟢 [Pandas](./02_application/03_pandas/)
+4. 🟢 [Matplotlib](./02_application/04_matplotlib/)
+5. 🔴 Seaborn Crash Course by [Derek Banas](https://www.youtube.com/watch?v=6GUZXDef2U0)
+6. 🔴 Machine Learning Specialization by [Andrew Ng](https://www.coursera.org/specializations/machine-learning-introduction) 
+7. 🔴 Machine Learning from Scratch by [AssemblyAI](https://www.youtube.com/playlist?list=PLcWfeUsAys2k_xub3mHks85sBHZvg24Jd)
+8. 🔴 Intro to Machine Learning by [Kaggle](https://www.kaggle.com/learn/intro-to-machine-learning) 
+9. 🔴 Intermediate Machine Learning by [Kaggle](https://www.kaggle.com/learn/intermediate-machine-learning)
 
 ### 3. Methodology
 1. 🔴 Business Understanding
