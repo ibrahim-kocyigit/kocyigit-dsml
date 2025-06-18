@@ -1,4 +1,4 @@
-# Analytic Approach Document
+# Analytic Approach Report
 
 ## 1. Introduction
 
