@@ -23,7 +23,7 @@ _Clicking the course name will open my personal notes for that course, while cli
 3. 🟢 [Pandas](./02_application/03_pandas/)
 4. 🟢 [Matplotlib](./02_application/04_matplotlib/)
 5. 🟢 [Seaborn](./02_application/05_seaborn/)
-6. 🟢 [scikit-learn](./02_application/06_scikit-learn/)
+6. 🟢 [Scikit-learn](./02_application/06_scikit-learn/)
 7. 🟠 [ML Models](./02_application/07_ml_models/)
 8. 🔴 Deployment
 
