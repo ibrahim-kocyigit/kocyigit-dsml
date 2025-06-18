@@ -23,10 +23,10 @@ _Clicking the course name will open my personal notes for that course, while cli
 3. 🟢 [Pandas](./02_application/03_pandas/)
 4. 🟢 [Matplotlib](./02_application/04_matplotlib/)
 5. 🟢 [Seaborn](./02_application/05_seaborn/)
-6. 🔴 Machine Learning Specialization by [Andrew Ng](https://www.coursera.org/specializations/machine-learning-introduction) 
-7. 🔴 Machine Learning from Scratch by [AssemblyAI](https://www.youtube.com/playlist?list=PLcWfeUsAys2k_xub3mHks85sBHZvg24Jd)
-8. 🔴 Intro to Machine Learning by [Kaggle](https://www.kaggle.com/learn/intro-to-machine-learning) 
-9. 🔴 Intermediate Machine Learning by [Kaggle](https://www.kaggle.com/learn/intermediate-machine-learning)
+6. 🟢 [scikit-learn](./02_application/06_scikit-learn/)
+7. 🟠 [ML Models](./02_application/07_ml_models/)
+8. 🔴 Deployment
+
 
 ### 3. Methodology
 1. 🔴 Business Understanding
