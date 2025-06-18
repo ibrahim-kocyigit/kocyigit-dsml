@@ -22,7 +22,7 @@ _Clicking the course name will open my personal notes for that course, while cli
 2. 🟢 [Numpy](./02_application/02_numpy/)
 3. 🟢 [Pandas](./02_application/03_pandas/)
 4. 🟢 [Matplotlib](./02_application/04_matplotlib/)
-5. 🔴 Seaborn Crash Course by [Derek Banas](https://www.youtube.com/watch?v=6GUZXDef2U0)
+5. 🟢 [Seaborn](./02_application/05_seaborn/)
 6. 🔴 Machine Learning Specialization by [Andrew Ng](https://www.coursera.org/specializations/machine-learning-introduction) 
 7. 🔴 Machine Learning from Scratch by [AssemblyAI](https://www.youtube.com/playlist?list=PLcWfeUsAys2k_xub3mHks85sBHZvg24Jd)
 8. 🔴 Intro to Machine Learning by [Kaggle](https://www.kaggle.com/learn/intro-to-machine-learning) 
