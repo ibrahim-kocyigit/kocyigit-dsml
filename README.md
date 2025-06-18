@@ -17,11 +17,11 @@ _Clicking the course name will open my personal notes for that course, while cli
 
 ### 2. Application  
 1. 🟠 [Python for Data Science](./02_application/01_python_for_data_science/)
-2. 🟠 [Numpy](./02_application/02_numpy/)
-3. 🟠 [Pandas](./02_application/03_pandas/)
-4. 🟠 [Matplotlib](./02_application/04_matplotlib/)
-5. 🟠 [Seaborn](./02_application/05_seaborn/)
-6. 🟠 [Scikit-learn](./02_application/06_scikit-learn/)
+2. 🟠 [Numpy Crash Course](./02_application/02_numpy/)
+3. 🟠 [Pandas Crash Course](./02_application/03_pandas/)
+4. 🟠 [Matplotlib Crash Course](./02_application/04_matplotlib/)
+5. 🟠 [Seaborn Crash Course](./02_application/05_seaborn/)
+6. 🟠 [Scikit-learn Crash Course](./02_application/06_scikit-learn/)
 7. 🟠 [Modeling and Evaluation](./02_application/07_modeling_and_evaluation/)
 
 ### 3. Methodology
