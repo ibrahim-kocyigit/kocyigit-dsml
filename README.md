@@ -15,9 +15,9 @@ This project consolidates my curated learning resources, organized into five pil
 _Clicking the course name will open my personal notes for that course, while clicking the creator's name will redirect you to the official course page._ (🟢 _Complete_ | 🟠 _In Progress_ | 🔴 _Not Started_)
 
 ### 1. Math
-1. 🟠 [Calculus](./01_math/01_calculus/) by [Khan Academy](https://www.khanacademy.org/) (🟢 [Precalculus](./01_math/01_calculus/00_precalculus/), 🟠 [AP Calculus BC](./01_math/01_calculus/01_ap_calculus_bc/), 🔴 Multivariable Calculus, 🔴 Differential Equations)
-2. 🟢 [Linear Algebra](./01_math/02_linear_algebra/) by [Krista King](https://www.udemy.com/course/linear-algebra-course/)
-3. 🟠 [Statistics and Probability](./01_math/03_statistics_and_probability/) by [Khan Academy](https://www.khanacademy.org/)
+1. 🟠 [Calculus](./01_math/01_calculus/) (🟢 [Precalculus](./01_math/01_calculus/00_precalculus/), 🟠 [AP Calculus BC](./01_math/01_calculus/01_ap_calculus_bc/), 🔴 Multivariable Calculus, 🔴 Differential Equations)
+2. 🟢 [Linear Algebra](./01_math/02_linear_algebra/)
+3. 🟠 [Statistics and Probability](./01_math/03_statistics_and_probability/)
 
 ### 2. Toolkit  
 1. 🟠 [Python for Data Science](./02_toolkit/01_python_for_data_science/)
