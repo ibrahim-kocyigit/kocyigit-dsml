@@ -2,13 +2,14 @@
 
 #### A structured learning repository for mastering Machine Learning fundamentals\!
 
-This project consolidates my curated learning resources, organized into four pillars:
+This project consolidates my curated learning resources, organized into five pillars:
 
 1.  **[Math](./01_math/)**: The mathematical foundations of machine learning, including Calculus, Linear Algebra, and Statistics & Probability.
 2.  **[Toolkit](./02_toolkit//)**: The foundational Python libraries for data handling, numerical computation, and visualization, such as NumPy, Pandas, Matplotlib, and Seaborn.
 3.  **[Models](./03_models/)**: The implementation and theory of various machine learning models, from classical algorithms with Scikit-Learn to an introduction to Deep Learning with TensorFlow/Keras.
-4.  **[Methodology](./04_methodology/)**: A step-by-step implementation framework for executing data science projects, based on the Foundational Methodology for Data Science by **John B. Rollins**.
-5. **[MLOps and Deployment](./05_mlops_and_deployment/)**: Techniques and tools for packaging, serving, monitoring, and explaining machine learning models in a real-world, production environment.
+4. **[MLOps and Deployment](./04_mlops_and_deployment/)**: Techniques and tools for packaging, serving, monitoring, and explaining machine learning models in a real-world, production environment.
+5.  **[Methodology](./05_methodology/)**: A step-by-step implementation framework for executing data science projects, based on the Foundational Methodology for Data Science by **John B. Rollins**.
+
 
 ## Content Status  
 _Clicking the course name will open my personal notes for that course, while clicking the creator's name will redirect you to the official course page._ (🟢 _Complete_ | 🟠 _In Progress_ | 🔴 _Not Started_)
@@ -33,7 +34,15 @@ _Clicking the course name will open my personal notes for that course, while cli
 5. 🔴 Unsupervised Learning
 6. 🔴 Introduction to Deep Learning
 
-### 4. Methodology
+### 4. MLOps and Deployment
+1. 🔴 Model Persistance
+2. 🔴 API Development
+3. 🔴 Containerization
+4. 🔴 Interactive Dashboards
+5. 🔴 Model Interpretability (XAI)
+6. 🔴 ML Monitoring Concepts
+
+### 5. Methodology
 1. 🟢 [Business Understanding](./04_methodology/01_business_understanding.md)
 2. 🟢 [Analytic Approach](./04_methodology/02_analytic_approach.md)
 3. 🟢 [Data Requirements](./04_methodology/03_data_requirements.md)
@@ -45,10 +54,3 @@ _Clicking the course name will open my personal notes for that course, while cli
 9. 🟢 [Deployment](./04_methodology/09_deployment.md)
 10. 🟢 [Feedback](./04_methodology/10_feedback.md)
 
-### 5. MLOps and Deployment
-1. 🔴 Model Persistance
-2. 🔴 API Development
-3. 🔴 Containerization
-4. 🔴 Interactive Dashboards
-5. 🔴 Model Interpretability XAI
-6. 🔴 ML Monitoring Concepts
