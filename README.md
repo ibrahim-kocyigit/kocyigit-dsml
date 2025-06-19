@@ -1,11 +1,13 @@
-# Kocyigit-ML 🤖 
-#### A structured learning repository for mastering Machine Learning fundamentals!
+# Kocyigit-ML 🤖
 
-This project consolidates my curated learning resources, organized into three pillars: 
+#### A structured learning repository for mastering Machine Learning fundamentals\!
 
-1. **[Theory](./01_theory/)**: Mathematical foundations (calculus, linear algebra, statistics and probability)  
-2. **[Application](./02_application/)**: Applied skills (Python, libraries for data science and machine learning)  
-3. **[Methodology](./03_methodology/)**: Implementation framework based on Foundational Methodology for Data Science by **John B. Rollins**
+This project consolidates my curated learning resources, organized into four pillars:
+
+1.  **[Math](./01_math/)**: The mathematical foundations of machine learning, including Calculus, Linear Algebra, and Statistics & Probability.
+2.  **[Toolkit](./02_toolkit//)**: The foundational Python libraries for data handling, numerical computation, and visualization, such as NumPy, Pandas, Matplotlib, and Seaborn.
+3.  **[Models](./03_models/)**: The implementation and theory of various machine learning models, from classical algorithms with Scikit-Learn to an introduction to Deep Learning with TensorFlow/Keras.
+4.  **[Methodology](./04_methodology/)**: A step-by-step implementation framework for executing data science projects, based on the Foundational Methodology for Data Science by **John B. Rollins**.
 
 ## Content Status  
 _Clicking the course name will open my personal notes for that course, while clicking the creator's name will redirect you to the official course page._ (🟢 _Complete_ | 🟠 _In Progress_ | 🔴 _Not Started_)
