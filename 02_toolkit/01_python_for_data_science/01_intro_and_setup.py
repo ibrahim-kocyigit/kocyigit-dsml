@@ -1,5 +1,16 @@
 # =======================================
-# PYTHON INTERPRETER & EXECUTION
+# TABLE OF CONTENTS
+# =======================================
+# 1. Python Interpreter & Execution
+# 2. Syntax Fundamentals
+# 3. Variables & Naming Conventions
+# 4. Virtual Environments
+# 5. Package Management with Pip
+# 6. "Hello, World!" Program
+
+
+# =======================================
+# 1. PYTHON INTERPRETER & EXECUTION
 # =======================================
 # - An interpreted language; no compilation step needed.
 # - The interpreter executes code top-to-bottom, line by line.
