@@ -12,7 +12,7 @@ This project consolidates my curated learning resources, organized into five pil
 
 
 ## Content Status  
-_Clicking the course name will open my personal notes for that course, while clicking the creator's name will redirect you to the official course page._ (🟢 _Complete_ | 🟠 _In Progress_ | 🔴 _Not Started_)
+(🟢 _Complete_ | 🟠 _In Progress_ | 🔴 _Not Started_)
 
 ### 1. Math
 1. 🟠 [Calculus](./01_math/01_calculus/) (🟢 [Precalculus](./01_math/01_calculus/00_precalculus/), 🟠 [AP Calculus BC](./01_math/01_calculus/01_ap_calculus_bc/), 🔴 Multivariable Calculus, 🔴 Differential Equations)
