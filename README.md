@@ -43,14 +43,14 @@ _Clicking the course name will open my personal notes for that course, while cli
 6. 🔴 ML Monitoring Concepts
 
 ### 5. Methodology
-1. 🟢 [Business Understanding](./05_methodology/01_business_understanding.md)
-2. 🟢 [Analytic Approach](./05_methodology/02_analytic_approach.md)
-3. 🟢 [Data Requirements](./05_methodology/03_data_requirements.md)
-4. 🟢 [Data Collection](./05_methodology/04_data_collection.md)
-5. 🟢 [Data Understanding](./05_methodology/05_data_understanding.md)
-6. 🟢 [Data Preparation](./05_methodology/06_data_preparation.md)
-7. 🟢 [Modeling](./05_methodology/07_modeling.md)
-8. 🟢 [Evaluation](./05_methodology/08_evaluation.md)
-9. 🟢 [Deployment](./05_methodology/09_deployment.md)
-10. 🟢 [Feedback](./05_methodology/10_feedback.md)
+1. 🔴 Business Understanding
+2. 🔴 Analytic Approach
+3. 🔴 Data Requirements
+4. 🔴 Data Collection
+5. 🔴 Data Understanding
+6. 🔴 Data Preparation
+7. 🔴 Modeling
+8. 🔴 Evaluation
+9. 🔴 Deployment
+10. 🔴 Feedback
 
