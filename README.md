@@ -11,7 +11,7 @@ This project consolidates my curated learning resources, organized into five pil
 5.  **[Methodology](./05_methodology/)**: A step-by-step implementation framework for executing data science projects, based on the Foundational Methodology for Data Science by **John B. Rollins**.
 
 
-## Content Status  
+## Table of Contents
 (🟢 _Complete_ | 🟠 _In Progress_ | 🔴 _Not Started_)
 
 ### 1. Math
