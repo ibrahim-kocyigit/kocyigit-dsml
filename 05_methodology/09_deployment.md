@@ -10,7 +10,7 @@ The goal of this stage is to take the validated champion model from Stage 8 and 
 The first step is to serialize the final, trained model pipeline into a file. This file contains the entire state of our pre-processing steps and the trained model, ready to be loaded into another application.
 
 * **Action:** Save the final model pipeline object to a single, versioned file.
-* **Toolkit Connection:** This step uses the skills from `04_MLOps/01_Model_Persistence/`, typically using the `joblib` library.
+* **Toolkit Connection:** This step uses the skills from `04_mlops/01_model_persistence/`, typically using the `joblib` library.
 
 > **Final Model Artifact:**
 >
@@ -42,7 +42,7 @@ Develop the application code that will load the model artifact and serve predict
 
 * **Action:** Write the application script (e.g., the FastAPI script, the Streamlit app).
 * **Action:** Package the application and its dependencies for deployment (e.g., using a `Dockerfile`).
-* **Toolkit Connection:** This step heavily utilizes skills from `04_MLOps`, such as `02_API_Development` and `03_Containerization`.
+* **Toolkit Connection:** This step heavily utilizes skills from `04_mlops`, such as `02_api_development` and `03_containerization`.
 
 > **Implementation Details:**
 >
