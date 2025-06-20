@@ -6,8 +6,8 @@ This project consolidates my curated learning resources, organized into five pil
 
 1.  **[Math](./01_math/)**: The mathematical foundations of machine learning, including Calculus, Linear Algebra, and Statistics & Probability.
 2.  **[Toolkit](./02_toolkit/)**: The foundational skills for data science, covering core Python programming and its essential libraries like NumPy, Pandas, Matplotlib, and Seaborn.
-3.  **[Specialization](./03_specialization/)**: Notes from Machine Learning Specialization by Andrew Ng.
-4. **[MLOps](./04_mlops/)**: Techniques and tools for packaging, serving, monitoring, and explaining machine learning models in a real-world, production environment.
+3.  **[Specialization](./03_specialization/)**: Deep dives into specific machine learning domains, covering the theory, from-scratch implementation, and library-based application of various predictive models.
+4. **[MLOps](./04_mlops/)**: Tools and methodologies for taking machine learning models to production, including packaging, serving, monitoring, and automation.
 5.  **[Methodology](./05_methodology/)**: A step-by-step implementation framework for executing data science projects, based on the Foundational Methodology for Data Science by **John B. Rollins**.
 
 
