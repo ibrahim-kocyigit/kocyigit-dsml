@@ -1,4 +1,4 @@
-# Math: The Language of Machine Learning
+## Math: The Language of Machine Learning
 
 In an era of powerful libraries like Scikit-Learn and TensorFlow that can implement complex algorithms in just a few lines of code, a common question arises: *Is a deep understanding of math still necessary for machine learning?*
 
@@ -12,17 +12,12 @@ While these libraries abstract away the complex implementation details, a solid 
 
 3.  **Innovation and Customization:** Ultimately, a deep mathematical foundation empowers you to move beyond off-the-shelf solutions. It gives you the ability to read cutting-edge research papers, understand novel algorithms, and even design custom models or loss functions tailored to specific, unique business problems that standard libraries might not solve well.
 
------
-
-## Structure of this Pillar
+### Structure of this Pillar
 
 This pillar is structured into the three key mathematical disciplines that form the bedrock of modern machine learning and data science.
 
-### 1. [Calculus](./01_calculus/)
-The engine of optimization. Calculus provides the tools to find the "best" parameters for a model by minimizing error.
+1. **[Calculus](./01_calculus/)**: The engine of optimization. Calculus provides the tools to find the "best" parameters for a model by minimizing error.
 
-### 2. [Linear Algebra](./02_linear_algebra/)
-The language of data. Linear algebra gives us the structures (vectors and matrices) and operations to efficiently work with large datasets.
+2. **[Linear Algebra](./02_linear_algebra/)**: The language of data. Linear algebra gives us the structures (vectors and matrices) and operations to efficiently work with large datasets.
 
-### 3. [Statistics and Probability](./03_statistics_and_probability/)
-The framework for inference and uncertainty. This pillar provides the tools to draw conclusions from data and quantify the confidence in our model's results.
+3. **[Statistics and Probability](./03_statistics_and_probability/)**: The framework for inference and uncertainty. This pillar provides the tools to draw conclusions from data and quantify the confidence in our model's results.
