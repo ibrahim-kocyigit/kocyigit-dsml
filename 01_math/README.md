@@ -13,6 +13,7 @@ While these libraries abstract away the complex implementation details, a solid 
 3.  **Innovation and Customization:** Ultimately, a deep mathematical foundation empowers you to move beyond off-the-shelf solutions. It gives you the ability to read cutting-edge research papers, understand novel algorithms, and even design custom models or loss functions tailored to specific, unique business problems that standard libraries might not solve well.
 
 ### Table of Contents
+----
 
 This pillar is structured into the three key mathematical disciplines that form the bedrock of modern machine learning and data science.
 
