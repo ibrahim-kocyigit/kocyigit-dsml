@@ -27,9 +27,13 @@ This project consolidates my curated learning resources, organized into five pil
 5. 🔴 Seaborn Fundamentals
 
 ### 3. Specialization
-1. 🔴 Supervised Machine Learning: Regression and Classification
-2. 🔴 Advanced Learning Algorithms
-3. 🔴 Unsupervised Learning, Recommenders, Reinforcement Learning
+1. 🟠 [Foundational ML Concepts](./03_specialization/01_foundational_ml_concepts/)
+2. 🔴 Scikit-learn Fundamentals
+3. 🔴 Regression
+4. 🔴 Classification
+5. 🔴 Model Improvement and Selection
+6. 🔴 Unsupervised Learning
+7. 🔴 Introduction to Deep Learning
 
 ### 4. MLOps and Deployment
 1. 🔴 Model Persistance

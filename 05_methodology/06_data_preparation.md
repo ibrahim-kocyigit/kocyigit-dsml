@@ -62,7 +62,7 @@ Combine different data sources (if necessary) and select the final set of featur
 Separate the clean, prepared data into the final feature matrix (`X`) and target vector (`y`), and then perform the train-test split.
 
 * **Action:** Create the final training and testing sets.
-* **Toolkit Connection:** This step uses `sklearn.model_selection.train_test_split` from the `03_specialization/01_scikit-learn_fundamentals` section.
+* **Toolkit Connection:** This step uses `sklearn.model_selection.train_test_split` from the `03_specialization/02_scikit-learn_fundamentals` section.
 
 > **Final Data Output:**
 >

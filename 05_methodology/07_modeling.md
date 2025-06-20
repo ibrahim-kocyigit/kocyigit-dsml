@@ -11,7 +11,7 @@ First, we train the simple baseline model identified in Stage 2. This provides a
 
 * **Action:** Train the baseline model using the training data (`X_train`, `y_train`).
 * **Action:** Evaluate its performance using 5-fold cross-validation to get a robust score.
-* **Models Connection:** This step utilizes code from the `03_specialization` pillar, such as `02_supervised_learning_regression/01_linear_regression/` or `02_supervised_learning_classification/01_logistic_regression/`.
+* **Models Connection:** This step utilizes code from the `03_specialization` pillar, such as `03_regression/01_linear_regression/` or `03_classification/01_logistic_regression/`.
 
 > **Baseline Model Performance:**
 >
@@ -39,7 +39,7 @@ Train the other, potentially more complex, candidate models. The goal here is to
 For the most promising models (typically those with the best balance of performance and speed), perform a systematic search for the best hyperparameter settings.
 
 * **Action:** Use `GridSearchCV` or `RandomizedSearchCV` to find the optimal hyperparameters for the top 1-2 candidate models.
-* **Models Connection:** This step uses skills from `03_Models/04_Model_Improvement_and_Selection/`.
+* **Models Connection:** This step uses skills from `03_specialization/05_model_improvement_and_selection/`.
 
 > **Hyperparameter Tuning Results:**
 >
