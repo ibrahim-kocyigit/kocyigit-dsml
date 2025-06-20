@@ -1,7 +1,7 @@
 # Stage 1: Business Understanding
 _"Every project starts with business understanding. The business sponsors who need the analytic solution play the most critical role in this stage by defining the problem, project objectives and solution requirements from a business perspective. This first stage lays the foundation for a successful resolution of the business problem. To help guarantee the project's success, the sponsors should be involved throughout the project to provide the domain expertise, review intermediate findings and ensure the work remains on track to generate the intended solution."_ - **John B. Rollins**
 
----
+
 ## Purpose
 The goal of this stage is to fully comprehend the project from a business perspective. All outputs should be framed in business terms to ensure alignment with stakeholders. The translation to an analytical problem will occur in Stage 2.
 
@@ -24,7 +24,7 @@ The first step is to meet with all relevant stakeholders (business sponsors, dom
 > * ***Attendees:*** *[List Attendees and Roles]*
 > * ***Key Takeaways:*** *[Summarize the most important points, decisions, and action items here.]*
 
----
+
 ## Step 2: Define the Business Problem
 Based on the gathered information, distill the core issue into a clear and concise statement.
 
@@ -34,7 +34,7 @@ Based on the gathered information, distill the core issue into a clear and conci
 >
 > * *[Insert a clear, one-to-two sentence summary of the business problem here. Example: "Customer churn in the premium subscription tier has increased by 15% over the last two quarters, leading to a significant revenue loss and impacting future growth projections."]*
 
----
+
 ## Step 3: Define Project Objectives
 Translate the business problem into specific, measurable business goals.
 
@@ -46,7 +46,7 @@ Translate the business problem into specific, measurable business goals.
 > 2.  **Secondary Objective:** *[Example: Identify the top 5 factors that are most influential in a customer's decision to churn, to inform future marketing strategies.]*
 > 3.  **Success Criteria:** *[Example: The solution's outputs should lead to a measurable increase in customer retention campaign effectiveness, benchmarked against the current process.]*
 
----
+
 ## Step 4: Define Solution Requirements
 Outline the high-level requirements for the final solution from the perspective of its end-users and the business.
 
@@ -58,7 +58,7 @@ Outline the high-level requirements for the final solution from the perspective 
 > * **Usability:** *[Example: The business team must be able to understand the primary reasons provided for a customer's high-risk status.]*
 > * **Integration:** *[Example: The final output list must be delivered in a CSV format to a designated shared drive.]*
 
----
+
 ## Step 5: Documentation and Validation
 This final step ensures all stakeholders are aligned before any technical work begins.
 
