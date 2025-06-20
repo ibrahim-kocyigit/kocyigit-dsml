@@ -18,11 +18,11 @@ While these libraries abstract away the complex implementation details, a solid 
 
 This pillar is structured into the three key mathematical disciplines that form the bedrock of modern machine learning and data science.
 
-### [1. Calculus](./01_calculus/)
+### 1. [Calculus](./01_calculus/)
 The engine of optimization. Calculus provides the tools to find the "best" parameters for a model by minimizing error.
 
-### [2. Linear Algebra](./02_linear_algebra/)
+### 2. [Linear Algebra](./02_linear_algebra/)
 The language of data. Linear algebra gives us the structures (vectors and matrices) and operations to efficiently work with large datasets.
 
-### [3. Statistics and Probability](./03_statistics_and_probability/)
+### 3. [Statistics and Probability](./03_statistics_and_probability/)
 The framework for inference and uncertainty. This pillar provides the tools to draw conclusions from data and quantify the confidence in our model's results.
