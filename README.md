@@ -35,7 +35,7 @@ This project consolidates my curated learning resources, organized into five pil
 6. 🔴 Unsupervised Learning
 7. 🔴 Introduction to Deep Learning
 
-### 4. MLOps and Deployment
+### 4. MLOps 
 1. 🔴 Model Persistance
 2. 🔴 API Development
 3. 🔴 Containerization
