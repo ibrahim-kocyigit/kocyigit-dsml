@@ -11,18 +11,6 @@ Each stage is documented in its own file within this folder. These files serve a
 
 This lifecycle represents a repeatable process for delivering robust and effective analytic solutions.
 
-```
-[ 1. Business Understanding ]  →  [ 2. Analytic Approach ]  →  [ 3. Data Requirements ]
-                                                                       ↓
-[ 6. Data Preparation ]  ←  [ 5. Data Understanding ]  ←  [ 4. Data Collection ]
-         ↓
-[ 7. Modeling ]  →  [ 8. Evaluation ]  →  [ 9. Deployment ]  →  [ 10. Feedback ]
-                                                                    (Loop Back)
-```
-
-
-### Table of Contents
-
 1.  **[Business Understanding](./01_business_understanding.md)**: Defining the problem, objectives, and requirements from a purely business perspective.
 
 2.  **[Analytic Approach](./02_analytic_approach.md)**: Translating the business problem into a formal data science framework, including selecting the ML problem type and technical success metrics.
