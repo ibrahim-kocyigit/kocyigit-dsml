@@ -2,11 +2,11 @@
 # TABLE OF CONTENTS
 # =======================================
 # 1. String Basics & Immutability
-# 2. Indexing and Slicing
-# 3. Concatenation & Repetition
-# 4. Common String Methods
-# 5. Splitting and Joining
-# 6. String Formatting
+# 2. String Formatting
+# 3. Indexing and Slicing
+# 4. Concatenation & Repetition
+# 5. Common String Methods
+# 6. Splitting and Joining
 # 7. String Length & Membership
 
 
@@ -23,7 +23,23 @@ original_string = "Python"
 
 
 # =======================================
-# 2. INDEXING AND SLICING
+# 2. STRING FORMATTING
+# =======================================
+# - The modern, preferred way to embed expressions inside string literals.
+
+# --- f-Strings (Formatted String Literals) - Recommended ---
+name = "Ibrahim"
+age = 42
+print(f"{name} is {age} years old.")
+# Can include expressions directly:
+print(f"Next year, {name} will be {age + 1}.")
+
+# --- `.format()` method ---
+print("{} is {} years old.".format(name, age))
+
+
+# =======================================
+# 3. INDEXING AND SLICING
 # =======================================
 # - Access individual characters with square brackets `[]`.
 # - Indexing: First character is at index 0, last is at -1.
@@ -40,7 +56,7 @@ print(f"Reversed string: {text[::-1]}")  # 'ecneicS ataD'
 
 
 # =======================================
-# 3. CONCATENATION & REPETITION
+# 4. CONCATENATION & REPETITION
 # =======================================
 # - `+` operator: Combines two strings.
 # - `*` operator: Repeats a string multiple times.
@@ -52,7 +68,7 @@ separator = "-" * 20  # "--------------------"
 
 
 # =======================================
-# 4. COMMON STRING METHODS
+# 5. COMMON STRING METHODS
 # =======================================
 
 # --- Case Conversion ---
@@ -91,7 +107,7 @@ print(filename.endswith(".txt"))  # False
 
 
 # =======================================
-# 5. SPLITTING AND JOINING
+# 6. SPLITTING AND JOINING
 # =======================================
 # `.split()`: Breaks a string into a list of substrings.
 # `.join()`: Joins elements of an iterable (like a list) into a single string.
@@ -102,23 +118,6 @@ user_data_list = csv_data.split(",")  # ['Ibrahim', 'Kocyigit', '42', 'Data Scie
 words_to_join = ["Python", "is", "awesome"]
 joined_sentence = " ".join(words_to_join)  # "Python is awesome"
 joined_with_dot = ".".join(words_to_join)  # "Python.is.awesome"
-
-
-# =======================================
-# 6. STRING FORMATTING
-# =======================================
-# - The modern, preferred way to embed expressions inside string literals.
-
-# --- f-Strings (Formatted String Literals) - Recommended ---
-name = "Ibrahim"
-age = 42
-print(f"{name} is {age} years old.")
-# Can include expressions directly:
-print(f"Next year, {name} will be {age + 1}.")
-
-# --- `.format()` method ---
-print("{} is {} years old.".format(name, age))
-
 
 # =======================================
 # 7. STRING LENGTH & MEMBERSHIP
