@@ -53,7 +53,9 @@ courses = ("Math", "Science", "History", "Art")
 print("--- Zipping students and grades ---")
 zipped_data = zip(students, grades)
 # We convert the zip object to a list to see its contents
-print(f"Zipped object as a list: {list(zipped_data)}")
+print(
+    f"Zipped object as a list: {list(zipped_data)}"
+)  # [('Alice', 85), ('Bob', 92), ('Charlie', 78)]
 
 # Zipping is best used directly in a for loop
 print("\n--- Looping with zip ---")
@@ -79,8 +81,8 @@ print(f"Original data pairs: {data_pairs}")
 labels, values = zip(*data_pairs)
 
 # The result is two tuples
-print(f"Unzipped labels: {labels}")
-print(f"Unzipped values: {values}")
+print(f"Unzipped labels: {labels}")  # Unzipped labels: ('x1', 'x2', 'x3')
+print(f"Unzipped values: {values}")  # Unzipped values: (10, 20, 30)
 print("-" * 30)
 
 
