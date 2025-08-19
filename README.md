@@ -1,10 +1,10 @@
-# Kocyigit-ML 🤖
+# Kocyigit-DSML 🤖
 
-#### A structured learning repository for mastering Machine Learning fundamentals\!
+#### A structured learning repository for mastering Data Science and Machine Learning fundamentals\!
 
 This project consolidates my curated learning resources, organized into five pillars:
 
-1.  **[Math](./01_math/)**: The mathematical foundations of machine learning, including Calculus, Linear Algebra, and Statistics & Probability.
+1.  **[Math](./01_math/)**: The mathematical foundations of data science and machine learning, including Calculus, Linear Algebra, and Statistics & Probability.
 2.  **[Toolkit](./02_toolkit/)**: The foundational skills for data science, covering core Python programming and its essential libraries like NumPy, Pandas, Matplotlib, and Seaborn.
 3.  **[Specialization](./03_specialization/)**: Deep dives into specific machine learning domains, covering the theory, from-scratch implementation, and library-based application of various predictive models.
 4. **[MLOps](./04_mlops/)**: Tools and methodologies for taking machine learning models to production, including packaging, serving, monitoring, and automation.
