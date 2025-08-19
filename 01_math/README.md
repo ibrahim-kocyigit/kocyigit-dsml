@@ -1,4 +1,4 @@
-# 01\. Math: The Language of Data
+# Math: The Language of Data
 
 In an era of powerful libraries like Pandas, Scikit-Learn, and TensorFlow, a common question arises: *Is a deep understanding of math still necessary?*
 
