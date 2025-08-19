@@ -4,8 +4,6 @@ This pillar is dedicated to building the practical, hands-on skills with the cor
 
 The curriculum is a curated, step-by-step guide, moving from core Python programming concepts to the specialized libraries for numerical computing, data manipulation, and visualization.
 
------
-
 ## How to Use This Toolkit: A Practical Guide
 
 The goal of these lessons is not to memorize every function and command. That's what documentation is for. The true goal is to build a strong **mental index** and **muscle memory** of the available tools.
@@ -13,8 +11,6 @@ The goal of these lessons is not to memorize every function and command. That's 
 The most effective way to learn from these files is to **manually re-type the code** into your own `.py` scripts or Jupyter Notebooks. The physical act of typing helps solidify concepts in a way that copy-pasting does not.
 
 By doing this, you'll remember that a specific tool exists (e.g., "I know Pandas has a way to merge dataframes," or "I remember Seaborn can create plots for different categories automatically"). When you face a similar problem in a real project, you'll know what to search for in the official documentation or on Google, which is the standard workflow of every professional data scientist.
-
------
 
 ### Note on Content Generation
 
