@@ -27,7 +27,7 @@ This project consolidates my curated learning resources, organized into five pil
 5. 🔴 Seaborn Fundamentals
 
 ### 3. Specializations
-1.  🔴 Statistics with Python
+1.  🔴 Data Analysis and Inference
 2.  🔴 Machine Learning Specialization
 3.  🔴 Advanced ML Specializations
 
