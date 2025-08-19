@@ -1,4 +1,4 @@
-# Kocyigit-DSML 🤖
+# Kocyigit-DSML
 
 #### A structured learning repository for mastering Data Science and Machine Learning fundamentals\!
 
