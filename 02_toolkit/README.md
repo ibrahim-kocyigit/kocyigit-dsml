@@ -1,4 +1,4 @@
-# Toolkit
+# Toolkit: From Data to Insight
 
 This pillar is dedicated to building the practical, hands-on skills with the core Python libraries that form the foundation of any data science and machine learning project.
 

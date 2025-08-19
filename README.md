@@ -4,11 +4,11 @@
 
 This project consolidates my curated learning resources, organized into five pillars:
 
-1.  **[Math](./01_math/)**: The mathematical foundations of data science and machine learning, including Calculus, Linear Algebra, and Statistics & Probability.
-2.  **[Toolkit](./02_toolkit/)**: The foundational skills for data science, covering core Python programming and its essential libraries like NumPy, Pandas, Matplotlib, and Seaborn.
-3.  **[Specialization](./03_specialization/)**: Deep dives into specific machine learning domains, covering the theory, from-scratch implementation, and library-based application of various predictive models.
-4. **[MLOps](./04_mlops/)**: Tools and methodologies for taking machine learning models to production, including packaging, serving, monitoring, and automation.
-5.  **[Methodology](./05_methodology/)**: A step-by-step implementation framework for executing data science projects, based on the Foundational Methodology for Data Science by **John B. Rollins**.
+1. **[Math](https://www.google.com/search?q=./01_math/)**: The mathematical foundations of data science and machine learning, including Calculus, Linear Algebra, and Statistics & Probability.
+2. **[Toolkit](https://www.google.com/search?q=./02_toolkit/)**: The foundational skills for data science, covering core Python programming and its essential libraries like NumPy, Pandas, Matplotlib, and Seaborn.
+3. **[Specialization](https://www.google.com/search?q=./03_specialization/)**: Deep dives into specific data science and machine learning domains, from analysis and inference to building advanced predictive models.
+4. **[MLOps](https://www.google.com/search?q=./04_mlops/)**: Tools and methodologies for taking machine learning models to production, including packaging, serving, monitoring, and automation.
+5. **[Methodology](https://www.google.com/search?q=./05_methodology/)**: A step-by-step implementation framework for executing data science projects, based on the Foundational Methodology for Data Science by **John B. Rollins**.
 
 
 ## Table of Contents
@@ -27,21 +27,18 @@ This project consolidates my curated learning resources, organized into five pil
 5. 🔴 Seaborn Fundamentals
 
 ### 3. Specialization
-1. 🟠 [Foundational ML Concepts](./03_specialization/01_foundational_ml_concepts/)
-2. 🔴 Scikit-learn Fundamentals
-3. 🔴 Regression
-4. 🔴 Classification
-5. 🔴 Model Improvement and Selection
-6. 🔴 Unsupervised Learning
-7. 🔴 Introduction to Deep Learning
+1.  🔴 Data Analysis and Inference
+2.  🔴 Classical Machine Learning
+3.  🔴 Advanced Specializations
 
 ### 4. MLOps 
-1. 🔴 Model Persistance
-2. 🔴 API Development
-3. 🔴 Containerization
-4. 🔴 Interactive Dashboards
-5. 🔴 Model Interpretability (XAI)
-6. 🔴 ML Monitoring Concepts
+1.  🔴 Model Persistence
+2.  🔴 API Development
+3.  🔴 Containerization
+4.  🔴 Interactive Dashboards
+5.  🔴 Model Interpretability (XAI)
+6.  🔴 ML Monitoring Concepts
+
 
 ### 5. Methodology
 1. 🟢 [Business Understanding](./05_methodology/01_business_understanding.md)
@@ -54,4 +51,3 @@ This project consolidates my curated learning resources, organized into five pil
 8. 🟢 [Evaluation](./05_methodology/08_evaluation.md)
 9. 🟢 [Deployment](./05_methodology/09_deployment.md)
 10. 🟢 [Feedback](./05_methodology/10_feedback.md)
-
