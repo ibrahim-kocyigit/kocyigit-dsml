@@ -14,7 +14,7 @@ This project consolidates my curated learning resources, organized into five pil
 ## Table of Contents
 (🟢 _Complete_ | 🟠 _In Progress_ | 🔴 _Not Started_)
 
-### 1. [Math](./01_math/)
+### 1. Math
 1. 🟠 [Calculus](./01_math/01_calculus/) (🟢 [Precalculus](./01_math/01_calculus/00_precalculus/), 🟠 [AP Calculus BC](./01_math/01_calculus/01_ap_calculus_bc/), 🔴 Multivariable Calculus, 🔴 Differential Equations)
 2. 🟢 [Linear Algebra](./01_math/02_linear_algebra/)
 3. 🟠 [Statistics and Probability](./01_math/03_statistics_and_probability/)
