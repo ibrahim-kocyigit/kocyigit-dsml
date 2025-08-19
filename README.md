@@ -27,9 +27,14 @@ This project consolidates my curated learning resources, organized into five pil
 5. 🔴 Seaborn Fundamentals
 
 ### 3. Specialization
-1.  🔴 Data Analysis and Inference
-2.  🔴 Classical Machine Learning
-3.  🔴 Advanced Specializations
+1.  🔴 Foundations for Specialization
+2.  🔴 Data Analysis and Inference
+3.  🔴 Regression Modeling
+4.  🔴 Classification Modeling
+5.  🔴 Unsupervised Learning
+6.  🔴 Natural Language Processing (NLP)
+7.  🔴 Time Series Forecasting
+8.  🔴 Introduction to Deep Learning
 
 ### 4. MLOps 
 1.  🔴 Model Persistence
