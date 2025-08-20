@@ -24,12 +24,14 @@
 # --- `import module_name` ---
 # - Imports the entire module. Access contents with `module_name.member`
 import math
+
 print(f"The square root of 81 is: {math.sqrt(81)}")
 print(f"The value of Pi is {math.pi}")
 
 # --- `from module_name import member` ---
 # - Imports a specific function, class, or variable directly into the current namespace.
 from random import choice, randint
+
 print(f"A random number between 1 and 100: {randint(1, 100)}")
 print(f"A random choice from a list: {choice(['apple', 'banana', 'cherry'])}")
 
@@ -37,8 +39,9 @@ print(f"A random choice from a list: {choice(['apple', 'banana', 'cherry'])}")
 # - Imports a module with a shorter, more convenient name (an alias).
 # - This is extremely common in Data Science (e.g. `import numpy as np`).
 import datetime as dt
+
 print(f"\nThe current date and time is {dt.datetime.now()}")
-print("-"*30)
+print("-" * 30)
 
 
 # =======================================
@@ -53,7 +56,7 @@ print("-"*30)
 # └── math_utils.py
 
 # --- Step 1: Create the `__init__.py` file ---
-# This file can be completely empty. Its presence tells Python that 
+# This file can be completely empty. Its presence tells Python that
 # `my_ds_tools` is a package, allowing you to import from it.
 
 # --- Step 2: Create the `string_utils.py` module ---
@@ -93,7 +96,7 @@ print(f"Character count of cleaned text: {string_utils.count_chars(cleaned)}")
 data_points = [10, 20, 30, 40, 50]
 avg = average(data_points)
 print(f"\nThe average of {data_points} is {avg}")
-print("-"*30)
+print("-" * 30)
 
 
 # =======================================
@@ -103,7 +106,7 @@ print("-"*30)
 # - `__name__` is a special built-in variable.
 #   - When a file is run directly, its `__name__` is set to "__main__".
 #   - When a file is imported as a module, its `__name__` is set to its filename.
-# - This block allows you to write code that ONLY RUNS when the file is executed directly, 
+# - This block allows you to write code that ONLY RUNS when the file is executed directly,
 #   not when it's imported. It's perfect for tests or demonstrations of the module's functions.
 
 # --- To see this in action, add the following block to the END of your `math_utils.py` file ---
@@ -115,7 +118,7 @@ if __name__ == '__main__':
     print(f"Testing average function: {average(test_data)}")
 """
 
-# Now, if you run `python my_ds_tools/math_utils.py` from your terminal, 
+# Now, if you run `python my_ds_tools/math_utils.py` from your terminal,
 # you will see the test output. But when you import `average` (as we did above),
 # that test code does not run.
 

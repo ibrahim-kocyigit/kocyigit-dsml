@@ -43,27 +43,28 @@ file_path_append = os.path.join(FOLDER_NAME, "log_file.txt")
 # --- Writing with mode 'w' ---
 print(f"--- Writing to '{file_path_write}' (mode 'w') ---")
 try:
-    with open(file_path_write, 'w') as f:
+    with open(file_path_write, "w") as f:
         f.write("Hello, World!\n")
         f.write("This is the first line written from Python.\n")
         lines_to_write = ["Line 3\n", "Line 4\n"]
-        f.writelines(lines_to_write) # Writes a list of strings
+        f.writelines(lines_to_write)  # Writes a list of strings
     print("Successfully wrote to the file.")
 except IOError as e:
     print(f"Error writing to file: {e}")
-    
+
 # --- Appending with mode 'a' ---
 print(f"\n--- Appending to '{file_path_append}' (mode 'a') ---")
 try:
-    with open(file_path_append, 'a') as f:
+    with open(file_path_append, "a") as f:
         # Get current time for a log entry
         from datetime import datetime
+
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         f.write(f"LOG: System started at {timestamp}\n")
     print("Successfully appended to the log file.")
 except IOError as e:
     print(f"Error appending to file: {e}")
-    
+
 
 # =======================================
 # 4. READING FROM FILES
@@ -76,20 +77,22 @@ try:
         # --- Method 1: Iterating line by line (most memory-efficient for large files) ---
         print("Reading line by line:")
         for line in f:
-            print(f" - {line.strip()}") # .strip() removes leading/trailing whitespace, including '\n'
-        
+            print(
+                f" - {line.strip()}"
+            )  # .strip() removes leading/trailing whitespace, including '\n'
+
         # --- Method 2: .read() - reads the entire file into one string ---
         print("\nReading with .read():")
-        f.seek(0) # Go back to the start of the file
+        f.seek(0)  # Go back to the start of the file
         full_content = f.read()
-        print(full_content) 
-        
+        print(full_content)
+
         # --- Method 3: .readLines() - reads all lines into a list of strings ---
         print("Reading with .readlines():")
         f.seek(0)
         all_lines = f.readlines()
         print(all_lines)
-        
+
 except FileNotFoundError:
     print(f"Error: The file '{file_path_write}' was not found.")
 except IOError as e:
@@ -107,7 +110,7 @@ if os.path.exists(file_path_write):
     print(f"'{file_path_write}' exists.")
 else:
     print(f"'{file_path_write}' does not exist.")
-    
+
 # --- Deleting a file (safely) ---
 # It's good practice to check if a file exists before trying to delete it.
 if os.path.exists(file_path_write):
@@ -116,6 +119,6 @@ if os.path.exists(file_path_write):
         print(f"Successfully deleted '{file_path_write}'.")
     except OSError as e:
         print(f"Error deleting file: {e}")
-        
-        
+
+
 # --- End of File
