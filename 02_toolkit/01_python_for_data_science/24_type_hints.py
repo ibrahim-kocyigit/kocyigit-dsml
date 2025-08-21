@@ -1,4 +1,13 @@
-# 24_type_hints.py
+# =======================================
+# TABLE OF CONTENTS
+# =======================================
+# 1. What are Type Hints?
+# 2. Basic Type Hinting Syntax
+# 3. Hinting Complex Types
+# 4. Hinting Optional Values and Union Types
+# 5. Type Aliases and Callables
+# 6. Using a Static Type Checker (`mypy`)
+
 
 # =======================================
 # 1. WHAT ARE TYPE HINTS?
@@ -9,7 +18,8 @@
 # - Benefits:
 #   1. Improved Readability: Makes code self-documenting.
 #   2. Bug Prevention: Tools like `mypy` can catch type errors before execution.
-#   3. Better IDE Support: Enables enhanced autocompletion and error highlighting.
+#   3. Better IDE Support: Enables enhanced autocompletion and error highlighting
+#      (e.g., Pylance's type checking functionality on VS Code).
 
 
 # =======================================
@@ -23,26 +33,26 @@ age: int = 30
 is_active: bool = True
 height: float = 1.75
 
+
 # --- Function and Return Value Hinting ---
 # Syntax: `def func(param: type, ...) -> return_type:`
 def greet(user_name: str) -> str:
     """Greets a user, with type hints for the parameter and return value."""
     return f"Hello, {user_name}!"
 
-greeting_message = greet(name)
-print(greeting_message)
-# Calling greet(123) would still RUN, but a type checker like `mypy` would flag it as an error.
+
+greeting_msg = greet(name)
+print(greeting_msg)
+# Calling greet(123) would still RUN, but a type checker like `mypy` or `Pylance` would flag it as an error.
 print("-" * 30)
 
 
 # =======================================
-# 3. HINTING COMPLEX TYPES (from `typing` module)
+# 3. HINTING COMPLEX TYPES
 # =======================================
-# - For complex types like lists or dictionaries with specific contents, we use the `typing` module.
-# - Note: Since Python 3.9+, you can use built-in types like `list` and `dict` directly.
+# - Since Python 3.9+, you can use built-in types like `list` and `dict` directly.
 #   We will use the modern syntax here.
 
-# --- Hinting for Lists, Sets, and Tuples ---
 # A list of integers
 scores: list[int] = [90, 85, 92, 78]
 
@@ -52,23 +62,21 @@ unique_tags: set[str] = {"python", "data", "science"}
 # A tuple with a fixed structure of item types
 user_record: tuple[int, str, bool] = (101, "Bob", True)
 
-
-# --- Hinting for Dictionaries ---
 # A dictionary with string keys and integer values
-id_to_score: dict[str, int] = {
-    "user1": 100,
-    "user2": 85
-}
+id_to_score: dict[str, int] = {"user1": 100, "user2": 85}
 
 print("--- A function with complex type hints ---")
+
+
 def process_scores(score_map: dict[str, int]) -> float:
     """Calculates the average score from a dictionary."""
     if not score_map:
         return 0.0
     return sum(score_map.values()) / len(score_map)
 
-average_score = process_scores(id_to_score)
-print(f"The average score is: {average_score}")
+
+avg_score = process_scores(id_to_score)
+print(f"The average score is: {avg_score}")
 print("-" * 30)
 
 
@@ -76,9 +84,9 @@ print("-" * 30)
 # 4. HINTING OPTIONAL VALUES AND UNION TYPES
 # =======================================
 # - Used when a value could be of a specific type OR `None`.
+# - Syntax: `type | None` (modern syntax, Python 3.10+)
 
-# --- `| None` (modern syntax, Python 3.10+) ---
-# This is the new, preferred way to denote an optional type.
+
 def find_user(user_id: int) -> str | None:
     """Finds a user by ID, returning their name or None if not found."""
     if user_id in (1, 2, 3):
@@ -86,16 +94,13 @@ def find_user(user_id: int) -> str | None:
     else:
         return None
 
-# --- `from typing import Optional` (older syntax) ---
-# `Optional[str]` is exactly the same as `str | None`. You will see this in older codebases.
-from typing import Optional
-def find_user_legacy(user_id: int) -> Optional[str]:
-    # ... same logic as above ...
-    pass
 
+# --- Using the optional return value ---
 user = find_user(2)
 if user:
-    print(f"Found user: {user.upper()}") # Type checker knows `user` is a string here
+    # Inside this block, the type checker knows `user` is a `str`,
+    # so calling .upper() is safe.
+    print(f"Found user: {user.upper()}")
 else:
     print("User not found.")
 
@@ -115,20 +120,29 @@ from typing import Callable
 Vector = list[float]
 Matrix = list[Vector]
 
+
 def scale_vector(scalar: float, vector: Vector) -> Vector:
     """Scales a vector by a scalar value."""
     return [scalar * item for item in vector]
+
 
 # --- Hinting a Function (Callable) ---
 # A callable that takes two floats and returns a float
 Operation = Callable[[float, float], float]
 
+
 def apply_operation(a: float, b: float, op: Operation) -> float:
     """Applies a given operation to two numbers."""
     return op(a, b)
 
-def add(x: float, y: float) -> float: return x + y
-def multiply(x: float, y: float) -> float: return x * y
+
+def add(x: float, y: float) -> float:
+    return x + y
+
+
+def multiply(x: float, y: float) -> float:
+    return x * y
+
 
 result_add = apply_operation(10, 20, add)
 result_mult = apply_operation(10, 20, multiply)
@@ -144,8 +158,10 @@ print("-" * 30)
 # - Installation: `pip install mypy`
 # - Usage: `mypy your_script_name.py`
 
+
 def calculate_length(text: str) -> int:
     return len(text)
+
 
 # This line is correct
 calculate_length("hello")
