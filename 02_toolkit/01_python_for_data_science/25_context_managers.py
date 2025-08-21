@@ -1,5 +1,3 @@
-# 25_context_managers.py
-
 import time
 from contextlib import contextmanager
 import os

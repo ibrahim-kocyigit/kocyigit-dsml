@@ -1,6 +1,14 @@
-# 01_numpy_intro_and_setup.py
-
 import time
+import numpy as np
+
+# =======================================
+# TABLE OF CONTENTS
+# =======================================
+# 1. What is Numpy?
+# 2. Installation and Import Convention
+# 3. Why Use NumPy? (Performance & Convenience)
+# 4. The `ndarray` Object
+
 
 # =======================================
 # 1. WHAT IS NUMPY?
@@ -18,7 +26,7 @@ import time
 #   `pip install numpy`
 #
 # - The universal community convention for importing NumPy is:
-import numpy as np
+# import numpy as np
 
 
 # =======================================
@@ -46,17 +54,16 @@ end_time = time.perf_counter()
 py_time = end_time - start_time
 print(f"Time taken with Python list: {py_time:.4f} seconds.")
 
-
 # NumPy Array method
 np_array = np.arange(list_size)
 start_time = time.perf_counter()
-np_array_squared = np_array ** 2 # This is a fast, vectorized operation
+np_array_squared = np_array**2  # This is a fast, vectorized operation
 end_time = time.perf_counter()
 np_time = end_time - start_time
 print(f"Time taken with NumPy array: {np_time:.4f} seconds.")
 
 # Compare the results
-print(f"\nNumPy was approximately {py_time / np_time:.2f} times faster.")
+print(f"\nNumPy was approximately {py_time/np_time:.2f} times faster.")
 print("-" * 30)
 
 
@@ -67,7 +74,13 @@ print("-" * 30)
 # - For now, let's create a simple one from a Python list.
 
 # A simple Python list
-my_list = [1, 2, 3, 4, 5]
+my_list = [
+    1,
+    2,
+    3,
+    4,
+    5,
+]
 
 # Creating a NumPy array from the list
 my_array = np.array(my_list)
@@ -78,7 +91,7 @@ print(f"NumPy array: {my_array}")
 
 # Check the type
 print(f"Type of my_list: {type(my_list)}")
-print(f"Type of my_array: {type(my_array)}") # Note the type is numpy.ndarray
+print(f"Type of my_array: {type(my_array)}")  # Note the type is numpy.ndarray
 
 
 # --- End of File ---
