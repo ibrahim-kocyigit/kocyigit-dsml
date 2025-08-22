@@ -20,7 +20,7 @@ This project consolidates my curated learning resources, organized into five pil
 3. 🟠 [Statistics and Probability](./01_math/03_statistics_and_probability/)
 
 ### 2. Toolkit  
-1. 🟠 [Python for Data Science](./02_toolkit/01_python_for_data_science/)
+1. 🟢 [Python for Data Science](./02_toolkit/01_python_for_data_science/)
 2. 🟠 [Numpy Fundamentals](./02_toolkit/02_numpy_fundamentals/)
 3. 🔴 Pandas Fundamentals
 4. 🔴 Matplotlib Fundamentals

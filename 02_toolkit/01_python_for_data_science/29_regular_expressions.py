@@ -1,6 +1,13 @@
-# 29_regular_expressions.py
-
 import re
+
+# =======================================
+# TABLE OF CONTENTS
+# =======================================
+# 1. What are Regular Expressions?
+# 2. Core `re` Module Functions
+# 3. Common Regex Patterns (Metacharacters)
+# 4. Practical Examples
+
 
 # =======================================
 # 1. WHAT ARE REGULAR EXPRESSIONS?
@@ -85,7 +92,9 @@ if ip_match:
 
 # --- Example 2: Finding all numbers in a string using `findall` ---
 text_with_numbers = "Order 123 for user 456 costs 78.90 dollars."
-numbers = re.findall(r"\d+\.?\d*", text_with_numbers) # `\.?` makes the decimal optional
+numbers = re.findall(
+    r"\d+\.?\d*", text_with_numbers
+)  # `\.?` makes the decimal optional
 print(f"Found numbers: {numbers}")
 
 

@@ -1,0 +1,10 @@
+{
+    "userId": 101,
+    "username": "py_master",
+    "isActive": true,
+    "courses": [
+        "Python Fundamentals",
+        "Intermediate Python"
+    ],
+    "last_login": null
+}
