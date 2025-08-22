@@ -1,6 +1,14 @@
-# 03_array_attributes_and_dtypes.py
-
 import numpy as np
+
+# =======================================
+# TABLE OF CONTENTS
+# =======================================
+# 1. Introduction to Array Attributes
+# 2. Fundamental Array Attributes
+# 3. Understanding Data Types (`dtype`)
+# 4. Specifying and Changing `dtype`
+# 5. Memory Considerations
+
 
 # =======================================
 # 1. INTRODUCTION TO ARRAY ATTRIBUTES
@@ -9,12 +17,8 @@ import numpy as np
 # - These attributes describe the array's structure, size, and data type.
 # - We will create a sample array to use for our inspection.
 
-# A 3x4 array (3 rows, 4 columns)
-array_2d = np.array([
-    [1, 2, 3, 4],
-    [5, 6, 7, 8],
-    [9, 10, 11, 12]
-])
+# A 3x4 array
+array_2d = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
 
 print("--- Sample 2D Array ---")
 print(array_2d)
@@ -27,7 +31,6 @@ print("-" * 30)
 # - These attributes provide key information about the array's dimensions and size.
 
 # --- `.ndim`: Number of Dimensions ---
-# - Returns the number of axes (dimensions) of the array.
 # - A vector is 1-D, a matrix is 2-D, etc.
 print(f"Number of dimensions (.ndim): {array_2d.ndim}")
 
@@ -58,16 +61,16 @@ int_array = np.array([1, 2, 3])
 float_array = np.array([1.0, 2, 3])
 
 print("--- Data Types (dtype) ---")
-print(f"Data type of our sample 2D array: {array_2d.dtype}") # e.g., int32 or int64
-print(f"Data type of int_array: {int_array.dtype}")
-print(f"Data type of float_array: {float_array.dtype}") # e.g., float64
+print(f"Data type of our sample 2D array: {array_2d.dtype}")  # e.g., int32 or int64
+print(f"Data type of int_array: {int_array.dtype}")  # int64
+print(f"Data type of float_array: {float_array.dtype}")  # float64
 print("-" * 30)
 
 
 # =======================================
 # 4. SPECIFYING AND CHANGING `dtype`
 # =======================================
-# - You can explicitly set the data type on creation or change it later.
+# You can explicitly set the data type on creation or change it later.
 
 # --- Specifying `dtype` on Creation ---
 # Create an array and specify that its elements should be 64-bit floats.
@@ -75,7 +78,6 @@ specific_dtype_array = np.array([1, 2, 3], dtype=np.float64)
 print("--- Specifying and Changing dtypes ---")
 print(f"Array created with dtype=np.float64: {specific_dtype_array}")
 print(f"Its dtype is: {specific_dtype_array.dtype}")
-
 
 # --- Changing `dtype` with `.astype()` ---
 # - The `.astype()` method creates a NEW array with the specified data type.
@@ -103,13 +105,13 @@ print("-" * 30)
 # - If you know your data will not exceed a certain range (e.g., 0-255), you can
 #   use a smaller data type to be more memory-efficient.
 
-large_array_64 = np.ones(1_000_000, dtype=np.float64) # 1 million 64-bit floats
-large_array_32 = np.ones(1_000_000, dtype=np.float32) # 1 million 32-bit floats
+large_array_64 = np.ones(1_000_000, dtype=np.float64)  # 1 million 64-bit floats
+large_array_32 = np.ones(1_000_000, dtype=np.float32)  # 1 million 32-bit floats
 
 # .nbytes shows the total bytes consumed by the array's data.
 print("--- Memory Usage ---")
-print(f"Memory of float64 array: {large_array_64.nbytes / 1e6} MB") # Approx 8 MB
-print(f"Memory of float32 array: {large_array_32.nbytes / 1e6} MB") # Approx 4 MB
+print(f"Memory of float64 array: {large_array_64.nbytes / 1e6} MB")  # Approx 8 MB
+print(f"Memory of float32 array: {large_array_32.nbytes / 1e6} MB")  # Approx 4 MB
 
 
 # --- End of File ---
