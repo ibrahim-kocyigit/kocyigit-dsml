@@ -1,6 +1,13 @@
-# 06_vectorized_operations_and_ufuncs.py
-
 import numpy as np
+
+# =======================================
+# TABLE OF CONTENTS
+# =======================================
+# 1. What is Vectorization?
+# 2. Element-wise Arithmetic Operations
+# 3. Universal Functions (ufuncs)
+# 4. Conditional Logic with `np.where()`
+
 
 # =======================================
 # 1. WHAT IS VECTORIZATION?
@@ -28,14 +35,18 @@ print("Array 2:\n", arr2)
 
 # --- Operations between two arrays ---
 print("\nArray 1 + Array 2:\n", arr1 + arr2)
-print("\nArray 1 * Array 2:\n", arr1 * arr2)
+print(
+    "\nArray 1 * Array 2:\n", arr1 * arr2
+)  # Note that this is element-wise multiplication, not matrix multiplication.
 
 
 # --- Operations with a scalar (a single number) ---
 # This is a simple form of broadcasting.
 print("\nArray 1 * 3:\n", arr1 * 3)
-print("\n1 / Array 1 (as float):\n", 1 / arr1.astype(float)) # Convert to float to see fractions
-print("\nArray 1 ** 2 (squared):\n", arr1 ** 2)
+print(
+    "\n1 / Array 1 (as float):\n", 1 / arr1.astype(float)
+)  # Convert to float to see fractions
+print("\nArray 1 ** 2 (squared):\n", arr1**2)
 print("-" * 30)
 
 
@@ -43,18 +54,17 @@ print("-" * 30)
 # 3. UNIVERSAL FUNCTIONS (UFUNCS)
 # =======================================
 # - A ufunc is a function that performs fast, element-wise operations on `ndarray` objects.
-# - The arithmetic operators we just used are actually convenient wrappers for ufuncs.
+# - The arithmetic operators we used are actually convenient wrappers for ufuncs.
 #   (e.g., `+` is a shortcut for `np.add`).
 
 arr = np.arange(1, 10).reshape(3, 3)
 print("--- Universal Functions (ufuncs) ---")
 print("Original array for ufuncs:\n", arr)
 
-# --- Unary Ufuncs (operate on one array) ---
+# --- Unary ufuncs (operate on one array) ---
 print("\nSquare root (`np.sqrt`):\n", np.sqrt(arr))
 print("\nExponential e^x (`np.exp`):\n", np.exp(arr))
 print("\nNatural logarithm (`np.log`):\n", np.log(arr))
-
 
 # --- Binary Ufuncs (operate on two arrays) ---
 # These are the explicit function calls for the operators we saw earlier
@@ -87,9 +97,10 @@ result = np.where(data > 0, 1, -1)
 print("\nResult of `np.where(data > 0, 1, -1)`:\n", result)
 
 # It can also be used to selectively choose values from two other arrays
-arr_positives = np.full_like(data, 100) # Array full of 100s
-arr_negatives = np.full_like(data, -100) # Array full of -100s
+arr_positives = np.full_like(data, 100)  # Array full of 100s
+arr_negatives = np.full_like(data, -100)  # Array full of -100s
 selective_result = np.where(data > 0, arr_positives, arr_negatives)
 print("\nResult of selecting from two other arrays:\n", selective_result)
+
 
 # --- End of File ---
