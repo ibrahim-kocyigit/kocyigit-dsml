@@ -1,1 +1,0 @@
-The notes in this section are curated from my studies of the comprehensive Calculus curriculum ([Precalculus](https://www.khanacademy.org/math/precalculus), [AP Calculus BC](https://www.khanacademy.org/math/ap-calculus-bc), and [Multivariable Calculus](https://www.khanacademy.org/math/multivariable-calculus) on [Khan Academy](https://www.khanacademy.org/)).

@@ -4,7 +4,7 @@
 
 This project consolidates my curated learning resources, organized into five pillars:
 
-1. **[Math](./01_math/)**: The mathematical foundations of data science and machine learning, including Calculus, Linear Algebra, and Statistics & Probability.
+1. **[Math](./01_math/)**: The mathematical foundations of data science and machine learning, including Linear Algebra, Calculus, and Statistics & Probability.
 2. **[Toolkit](./02_toolkit/)**: The foundational skills for data science, covering core Python programming and its essential libraries like NumPy, Pandas, Matplotlib, and Seaborn.
 3. **[Specializations](./03_specializations/)**: Deep dives into specific data science and machine learning domains, from analysis and inference to building advanced predictive models.
 4. **[MLOps](./04_mlops/)**: Tools and methodologies for taking machine learning models to production, including packaging, serving, monitoring, and automation.
@@ -15,9 +15,10 @@ This project consolidates my curated learning resources, organized into five pil
 (🟢 _Complete_ | 🟠 _In Progress_ | 🔴 _Not Started_)
 
 ### 1. Math
-1. 🟠 [Calculus](./01_math/01_calculus/) (🟢 [Precalculus](./01_math/01_calculus/00_precalculus/), 🟠 [AP Calculus BC](./01_math/01_calculus/01_ap_calculus_bc/), 🔴 Multivariable Calculus)
-2. 🟢 [Linear Algebra](./01_math/02_linear_algebra/)
-3. 🟠 [Statistics and Probability](./01_math/03_statistics_and_probability/)
+1. 🟢 [High School Math](./01_math/01_high_school_math/) 
+2. 🟠 [Linear Algebra](./01_math/02_linear_algebra_for_ml_and_ds/)
+2. 🔴 Calculus
+3. 🔴 Probability and Statistics
 
 ### 2. Toolkit  
 1. 🟢 [Python for Data Science](./02_toolkit/01_python_for_data_science/)

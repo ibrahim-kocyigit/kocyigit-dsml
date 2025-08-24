@@ -1,1 +1,0 @@
-The notes in this section are curated from my studies of the complete Linear Algebra course by **Krista King** on [Udemy](https://www.udemy.com/course/linear-algebra-course).

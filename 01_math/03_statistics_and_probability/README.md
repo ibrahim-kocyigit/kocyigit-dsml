@@ -1,1 +1,0 @@
-The notes in this section are curated from my studies of the comprehensive [Statistics and Probability](https://www.khanacademy.org/math/statistics-probability) curriculum on [Khan Academy](https://www.khanacademy.org/).
