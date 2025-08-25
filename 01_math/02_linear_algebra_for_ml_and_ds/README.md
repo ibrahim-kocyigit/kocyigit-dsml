@@ -2,13 +2,9 @@
 
 This section contains my personal, detailed notes on linear algebra, focusing on the concepts most essential for machine learning and data science. A strong grasp of linear algebra is non-negotiable for understanding how algorithms work, from the simple mechanics of linear regression to the complex architecture of deep neural networks.
 
------
-
 ## Source Material
 
 The notes in this folder are curated from my studies of the course **"Linear Algebra for Machine Learning and Data Science"** by **DeepLearning.AI**, taught by the excellent instructor **Luis Serrano**. This course is the first part of the broader **"Mathematics for Machine Learning and Data Science"** specialization available on Coursera.
-
------
 
 ## How to Use These Notes
 
