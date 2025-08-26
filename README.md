@@ -16,8 +16,8 @@ This project consolidates my curated learning resources, organized into five pil
 
 ### 1. Math
 1. 🟢 [High School Math](./01_math/01_high_school_math/) 
-2. 🟠 [Linear Algebra](./01_math/02_linear_algebra_for_ml_and_ds/)
-2. 🔴 Calculus
+2. 🟢 [Linear Algebra](./01_math/02_linear_algebra_for_ml_and_ds/)
+2. 🟠 [Calculus](./01_math/03_calculus_for_ml_and_ds/)
 3. 🔴 Probability and Statistics
 
 ### 2. Toolkit  
