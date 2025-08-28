@@ -1,6 +1,10 @@
-# 08_array_manipulation.py
-
 import numpy as np
+
+# =======================================
+# TABLE OF CONTENTS
+# =======================================
+# 1. Reshaping Arrays
+
 
 # =======================================
 # 1. RESHAPING ARRAYS
@@ -49,7 +53,7 @@ print("Original shape:", arr_3x4.shape)
 # Transpose the array
 transposed_arr = arr_3x4.T
 print("\nTransposed array:\n", transposed_arr)
-print("Transposed shape:", transposed_arr.shape) # Shape is now (4, 3)
+print("Transposed shape:", transposed_arr.shape)  # Shape is now (4, 3)
 print("-" * 30)
 
 
@@ -102,18 +106,18 @@ print("--- Adding a New Axis ---")
 # Start with a 1-D array
 vec = np.array([1, 2, 3])
 print(f"Original vector: {vec}")
-print(f"Original shape: {vec.shape}") # Shape is (3,)
+print(f"Original shape: {vec.shape}")  # Shape is (3,)
 
 # --- Convert to a column vector ---
 # Use `np.newaxis` in the column's position
 col_vec = vec[:, np.newaxis]
 print(f"\nColumn vector:\n{col_vec}")
-print(f"Column vector shape: {col_vec.shape}") # Shape is now (3, 1)
+print(f"Column vector shape: {col_vec.shape}")  # Shape is now (3, 1)
 
 # --- Convert to a row vector ---
 # Use `np.newaxis` in the row's position
 row_vec = vec[np.newaxis, :]
 print(f"\nRow vector:\n{row_vec}")
-print(f"Row vector shape: {row_vec.shape}") # Shape is now (1, 3)
+print(f"Row vector shape: {row_vec.shape}")  # Shape is now (1, 3)
 
 # --- End of File ---
