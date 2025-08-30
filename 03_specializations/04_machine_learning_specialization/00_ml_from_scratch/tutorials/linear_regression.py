@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
 # Importing from my own modules
-from supervised.linear_regression import LinearRegression
+from models.linear_regression import LinearRegression
 from preprocessing.standard_scaler import StandardScaler
 from metrics.mse import mean_squared_error
 
