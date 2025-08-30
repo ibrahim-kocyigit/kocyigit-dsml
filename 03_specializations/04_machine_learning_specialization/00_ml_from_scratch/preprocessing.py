@@ -60,4 +60,5 @@ class StandardScaler:
             np.ndarray: The transformed data.
         """
         self.fit(X)
+
         return self.transform(X)
