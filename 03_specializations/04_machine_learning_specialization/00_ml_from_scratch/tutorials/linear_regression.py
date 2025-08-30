@@ -41,8 +41,8 @@ X_test_scaled = scaler.transform(
 )  # Use the same scaler for the test set (no fitting this time)
 
 # Create the Regressor, fit the data, and make predictions
-reg = LinearRegression()
-reg.fit(X_train_scaled, y_train, alpha=0.001, epochs=10000)
+reg = LinearRegression(alpha=0.001, epochs=10000)
+reg.fit(X_train_scaled, y_train)
 preds = reg.predict(X_test_scaled)
 
 # Calculate MSE

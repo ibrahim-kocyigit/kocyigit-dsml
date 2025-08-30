@@ -4,12 +4,24 @@ import numpy as np
 class LinearRegression:
     """
     A simple Linear Regression model implemented from scratch using Gradient Descent.
+
+    Args:
+        alpha (float, optional): The learning rate. Defaults to 0.001.
+        epochs (int, optional): The number of iterations for gradient descent. Defaults to 1000.
+
     """
 
-    def __init__(self) -> None:
+    def __init__(
+        self,
+        alpha: float = 0.001,
+        epochs: int = 1000,
+    ) -> None:
         """
-        Initializes the model's parameters.
+        Initializes the model's configuration.
+
         """
+        self.alpha = alpha
+        self.epochs = epochs
         self.weights = None
         self.bias = None
 
@@ -17,8 +29,6 @@ class LinearRegression:
         self,
         X: np.ndarray,
         y: np.ndarray,
-        alpha: float = 0.001,
-        epochs: int = 1000,
     ) -> "LinearRegression":
         """
         Trains the linear regression model using the provided data.
@@ -26,22 +36,19 @@ class LinearRegression:
         Args:
             X (np.ndarray): Training data features (num_observations, num_features).
             y (np.ndarray): Training data targets (num_observations).
-            alpha (float, optional): The learning rate. Defaults to 0.001.
-            epochs (int, optional): The number of iterations to run gradient descent. Defaults to 1000.
 
         Returns:
             LinearRegression: The fitted model instance.
+
         """
         num_observations, num_features = X.shape
 
         # Initialize parameters
-        self.alpha = alpha
-        self.epochs = epochs
         self.weights = np.zeros(num_features)
         self.bias = 0
 
         # Gradient Descent
-        for _ in range(epochs):
+        for _ in range(self.epochs):
             # Calculate predictions
             preds = X @ self.weights + self.bias
 
@@ -70,8 +77,11 @@ class LinearRegression:
 
         Returns:
             np.ndarray: The predicted values.
+
         """
+
         # Check that weights or bias are not None before predicting
         if self.weights is None or self.bias is None:
             raise ValueError("LinearRegression model has not been fitted yet.")
+
         return X @ self.weights + self.bias
