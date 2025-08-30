@@ -15,7 +15,7 @@ from models.linear_regression import LinearRegression
 from preprocessing.standard_scaler import StandardScaler
 from metrics.mse import mean_squared_error
 
-# --- Testing the Linear Regression model ---
+# --- Using the Linear Regression model ---
 
 # Load the data
 sales = pd.read_csv(
@@ -24,7 +24,7 @@ sales = pd.read_csv(
 
 # Split the data
 X_train, X_test, y_train, y_test = train_test_split(
-    sales[["Marketing_Spend"]], sales["Revenue"], test_size=0.33, random_state=42
+    sales[["Marketing_Spend"]], sales["Revenue"], test_size=0.3, random_state=42
 )
 
 # Convert to numpy arrays
@@ -36,7 +36,9 @@ y_test = np.array(y_test)
 # Scale the features
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)  # Use the same scaler for the test set
+X_test_scaled = scaler.transform(
+    X_test
+)  # Use the same scaler for the test set (no fitting this time)
 
 # Create the Regressor, fit the data, and make predictions
 reg = LinearRegression()
