@@ -1,10 +1,12 @@
 .DS_Store
 .venv
+__pycache__
+.ipynb_checkpoints
+
 to_do.txt
 temp.ipynb
 temp.md
 temp.py
 backlog
 files_for_17_file_io
-__pycache__
-.ipynb_checkpoints
+numpy_saved_files

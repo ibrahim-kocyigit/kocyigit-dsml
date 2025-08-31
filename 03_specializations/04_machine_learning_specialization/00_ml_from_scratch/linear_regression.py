@@ -1,4 +1,13 @@
+# Imports for the model
 import numpy as np
+
+# Imports for the analysis
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from preprocessing import StandardScaler
+from metrics import mean_squared_error
+from pathlib import Path
 
 
 class LinearRegression:
@@ -85,3 +94,57 @@ class LinearRegression:
             raise ValueError("LinearRegression model has not been fitted yet.")
 
         return X @ self.weights + self.bias
+
+
+def run_analysis():
+    """
+    This function contains the full, end-to-end tutorial script for
+    running the linear regression analysis.
+
+    """
+    print("--- Starting Linear Regression Analysis ---")
+
+    # Load the data
+    sales = pd.read_csv("./data/marketing_sales.csv")
+
+    # Split the data
+    X_train, X_test, y_train, y_test = train_test_split(
+        sales[["Marketing_Spend"]], sales["Revenue"], test_size=0.3, random_state=42
+    )
+
+    # Convert to numpy arrays
+    X_train = np.array(X_train)
+    X_test = np.array(X_test)
+    y_train = np.array(y_train)
+    y_test = np.array(y_test)
+
+    # Scale the features
+    scaler = StandardScaler()
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.transform(
+        X_test
+    )  # Use the same scaler for the test set (no fitting this time)
+
+    # Create the Regressor, fit the data, and make predictions
+    reg = LinearRegression(alpha=0.001, epochs=10000)
+    reg.fit(X_train_scaled, y_train)
+    preds = reg.predict(X_test_scaled)
+
+    # Calculate MSE
+    mse = mean_squared_error(y_test, preds)
+    print(f"Mean Squared Error on the test set: {mse:.2f}")
+
+    # Visualize Results
+    plt.figure(figsize=(8, 6))
+    plt.scatter(X_test, y_test, color="blue", label="Actual Data")
+    plt.plot(X_test, preds, color="red", linewidth=2, label="Our Prediction")
+    plt.xlabel("Marketing Spend")
+    plt.ylabel("Revenue")
+    plt.title("Model Performance on Test Data")
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
+
+if __name__ == "__main__":
+    run_analysis()

@@ -22,8 +22,8 @@ This project consolidates my curated learning resources, organized into five pil
 
 ### 2. Toolkit  
 1. 🟢 [Python for Data Science](./02_toolkit/01_python_for_data_science/)
-2. 🟠 [Numpy Fundamentals](./02_toolkit/02_numpy_fundamentals/)
-3. 🔴 Pandas Fundamentals
+2. 🟢 [Numpy Fundamentals](./02_toolkit/02_numpy_fundamentals/)
+3. 🟠 Pandas Fundamentals
 4. 🔴 Matplotlib Fundamentals
 5. 🔴 Seaborn Fundamentals
 
