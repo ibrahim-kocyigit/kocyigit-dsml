@@ -1,7 +1,15 @@
-# 03_pandas_dataframe.py
-
 import pandas as pd
 import numpy as np
+
+# =======================================
+# TABLE OF CONTENTS
+# =======================================
+# 1. What is a Pandas DataFrame?
+# 2. Creating a DataFrame
+# 3. Essential DataFrame Attributes
+# 4. Inspecting Data (Essential Methods)
+# 5. Basic Column Operations
+
 
 # =======================================
 # 1. WHAT IS A PANDAS DATAFRAME?
@@ -21,9 +29,9 @@ print("--- Creating a DataFrame ---")
 # --- From a Dictionary of Lists (most common) ---
 # The dictionary keys become column names. All lists must be the same length.
 data_dict = {
-    'City': ['Söke', 'İzmir', 'İstanbul', 'Ankara'],
-    'Population': [123_301, 4_479_525, 15_655_924, 5_803_482],
-    'Region': ['Aegean', 'Aegean', 'Marmara', 'Anatolia']
+    "City": ["Aydin", "Izmir", "Istanbul", "Ankara"],
+    "Population": [123_301, 4_479_525, 15_655_924, 5_803_482],
+    "Region": ["Aegean", "Aegean", "Marmara", "Anatolia"],
 }
 df_from_dict = pd.DataFrame(data_dict)
 print("DataFrame from a dictionary of lists:\n", df_from_dict)
@@ -31,11 +39,11 @@ print("DataFrame from a dictionary of lists:\n", df_from_dict)
 
 # --- From a 2D NumPy Array ---
 # You must provide the column and index labels separately.
-data_np = np.random.randint(80, 100, size=(4, 3)) # 4x3 array of random scores
+data_np = np.random.randint(80, 100, size=(4, 3))  # 4x3 array of random scores
 df_from_np = pd.DataFrame(
     data_np,
-    index=['Alice', 'Bob', 'Charlie', 'David'],
-    columns=['Math', 'Science', 'History']
+    index=["Alice", "Bob", "Charlie", "David"],
+    columns=["Math", "Science", "History"],
 )
 print("\nDataFrame from a NumPy array:\n", df_from_np)
 print("-" * 30)
@@ -94,23 +102,23 @@ print("Original DataFrame:\n", df_from_dict)
 
 # --- Selecting a Single Column (returns a Series) ---
 # Bracket notation is preferred as it's more robust.
-city_series = df_from_dict['City']
+city_series = df_from_dict["City"]
 print("\nSelecting the 'City' column:\n", city_series)
 print(f"Type of the selection: {type(city_series)}")
 
 # --- Selecting Multiple Columns (returns a DataFrame) ---
 # Pass a list of column names.
-subset_df = df_from_dict[['City', 'Region']]
+subset_df = df_from_dict[["City", "Region"]]
 print("\nSelecting the 'City' and 'Region' columns:\n", subset_df)
 
 # --- Adding a New Column ---
 # Add a new column by simple assignment.
-df_from_dict['Is_Metropolitan'] = df_from_dict['Population'] > 1_000_000
+df_from_dict["Is_Metropolitan"] = df_from_dict["Population"] > 1_000_000
 print("\nDataFrame with new 'Is_Metropolitan' column:\n", df_from_dict)
 
 # --- Deleting a Column ---
 # Use the `del` keyword for in-place deletion.
-del df_from_dict['Region']
+del df_from_dict["Region"]
 print("\nDataFrame after deleting 'Region' column:\n", df_from_dict)
 
 

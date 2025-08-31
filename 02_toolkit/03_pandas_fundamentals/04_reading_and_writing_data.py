@@ -1,13 +1,20 @@
-# 04_reading_and_writing_data.py
-
 import pandas as pd
 import os
+
+# =======================================
+# TABLE OF CONTENTS
+# =======================================
+# 1. Introduction to Pandas I/O
+# 2. Step 1: Creating Our Sample Dataset
+# 3. Step 2: Reading Data From a CSV File
+# 4. A Note on Other File Formats
+
 
 # =======================================
 # 1. INTRODUCTION TO PANDAS I/O
 # =======================================
 # - A huge part of data analysis involves reading data from external sources
-#   (like CSVs, Excel files) and writing results back to them.
+#   (like CSV, Excel files) and writing results back to them.
 # - Pandas provides a powerful and easy-to-use set of I/O (Input/Output) tools.
 # - We will focus on CSV (Comma-Separated Values) files, the most common format.
 # - Our Strategy: This script will first CREATE a sample CSV file, and then
@@ -27,12 +34,26 @@ file_path = os.path.join(DATA_FOLDER, "sample_sales_data.csv")
 
 # --- Second, define the data as a dictionary ---
 sales_data = {
-    'OrderID': [101, 102, 103, 104, 105, 106],
-    'Product': ['Laptop', 'Mouse', 'Keyboard', 'Monitor', 'Mouse', 'Webcam'],
-    'Category': ['Electronics', 'Electronics', 'Electronics', 'Electronics', 'Accessories', 'Accessories'],
-    'Price': [1200.00, 25.50, 75.00, 300.00, 27.00, 50.00],
-    'Quantity': [1, 2, 1, 2, 3, 1],
-    'OrderDate': ['2025-01-15', '2025-01-15', '2025-01-16', '2025-01-17', '2025-01-18', '2025-01-18']
+    "OrderID": [101, 102, 103, 104, 105, 106],
+    "Product": ["Laptop", "Mouse", "Keyboard", "Monitor", "Mouse", "Webcam"],
+    "Category": [
+        "Electronics",
+        "Electronics",
+        "Electronics",
+        "Electronics",
+        "Accessories",
+        "Accessories",
+    ],
+    "Price": [1200.00, 25.50, 75.00, 300.00, 27.00, 50.00],
+    "Quantity": [1, 2, 1, 2, 3, 1],
+    "OrderDate": [
+        "2025-01-15",
+        "2025-01-15",
+        "2025-01-16",
+        "2025-01-17",
+        "2025-01-18",
+        "2025-01-18",
+    ],
 }
 df_to_save = pd.DataFrame(sales_data)
 
@@ -58,6 +79,7 @@ print("-" * 30)
 # - It's powerful and has many optional parameters to handle different file formats.
 
 print("--- Reading Data from CSV ---")
+
 try:
     # --- Basic Read ---
     df_loaded = pd.read_csv(file_path)
@@ -66,15 +88,12 @@ try:
     # Use .head() to inspect the first few rows of the loaded DataFrame
     print(df_loaded.head())
 
-
     # --- Reading with Parameters ---
     # `index_col` can set a specific column as the DataFrame index.
     # `parse_dates` can be given a list of columns to automatically convert to datetime objects.
     print("\n--- Reading data again with more parameters ---")
     df_loaded_adv = pd.read_csv(
-        file_path,
-        index_col='OrderID',
-        parse_dates=['OrderDate']
+        file_path, index_col="OrderID", parse_dates=["OrderDate"]
     )
     print("Loaded data with 'OrderID' as index and 'OrderDate' as datetime object:\n")
     print(df_loaded_adv.head())
@@ -82,7 +101,6 @@ try:
     # Use .info() to see the effect of `parse_dates`
     print("\nDataFrame info after parsing dates:")
     df_loaded_adv.info()
-
 except FileNotFoundError:
     print(f"Error: The file '{file_path}' was not found.")
 except Exception as e:
