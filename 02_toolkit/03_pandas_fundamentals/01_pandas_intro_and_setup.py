@@ -1,4 +1,12 @@
-# 01_pandas_intro_and_setup.py
+# =======================================
+# TABLE OF CONTENTS
+# =======================================
+# 1. What is Pandas?
+# 2. Installation and Import Convention
+# 3. Why Use Pandas?
+# 4. Pandas' Core Data Structures
+# 5. Configuring Pandas Display Options
+
 
 # =======================================
 # 1. WHAT IS PANDAS?
@@ -29,7 +37,7 @@ import numpy as np
 # =======================================
 # - Pandas excels at handling tabular data (data organized in rows and columns).
 # - Key Features:
-#   1. DataFrame Object: A powerful, flexible 2D data structure for handling
+#   1. DataFrame object: A powerful, flexible 2D data structure for handling
 #      and manipulating table-like data.
 #   2. Data I/O: Tools for easily reading and writing data from various formats
 #      (CSV, Excel, SQL databases, JSON, etc.).
@@ -60,9 +68,9 @@ print("-" * 30)
 # - A two-dimensional, labeled data structure with columns of potentially different types.
 # - This is the primary Pandas data structure. Think of it as a spreadsheet or an SQL table.
 data = {
-    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
-    'Age': [25, 30, 35, 40],
-    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']
+    "Name": ["Alice", "Bob", "Charlie", "David"],
+    "Age": [25, 30, 35, 40],
+    "City": ["New York", "Los Angeles", "Chicago", "Houston"],
 }
 df = pd.DataFrame(data)
 
