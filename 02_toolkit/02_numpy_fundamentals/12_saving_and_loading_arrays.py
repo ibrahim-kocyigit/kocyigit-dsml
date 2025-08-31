@@ -4,7 +4,10 @@ import os
 # =======================================
 # TABLE OF CONTENTS
 # =======================================
-# 1.
+# 1. Introduction to File I/O in Numpy
+# 2. Binary Format: `.npy` and `.npz`
+# 3. Text Format: `.csv` and `.txt`
+# 4. Conclusion: Which Format to Use?
 
 
 # =======================================
