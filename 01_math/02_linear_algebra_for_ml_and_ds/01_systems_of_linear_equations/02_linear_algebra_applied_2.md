@@ -82,7 +82,8 @@ Our course-score problem is a perfect analogy for the components of a machine le
 The **weights** are the unknown values we are trying to solve for. In machine learning, these are the parameters the model "learns."
 
 * In our problem, the unknowns are the scores: $a, c, p$.
-* We collect these into a single column **vector**:
+* We collect these into a single column **vector**:  
+
 $`
 w = \begin{bmatrix} a \\ c \\ p \end{bmatrix}
 `$
