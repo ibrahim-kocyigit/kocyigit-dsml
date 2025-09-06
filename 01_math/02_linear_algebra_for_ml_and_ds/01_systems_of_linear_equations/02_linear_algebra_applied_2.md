@@ -30,7 +30,7 @@ $$ y = WX + b $$
 
 This compact form is the backbone of how we perform calculations in machine learning.
 
-*(Note: If you're already familiar with linear algebra, you might notice we're being a bit imprecise here. Depending on how we define our vectors and matrices, we might need to use a transpose ($W^T$) to make the math work. We'll ignore that detail for now to focus on the core concept.)*
+*(Note: If you're already familiar with linear algebra, you might notice we're being a bit imprecise here. Depending on how we define our vectors and matrices, we might need to use a transpose ($`W^T`$) to make the math work. We'll ignore that detail for now to focus on the core concept.)*
 
 --- 
 
