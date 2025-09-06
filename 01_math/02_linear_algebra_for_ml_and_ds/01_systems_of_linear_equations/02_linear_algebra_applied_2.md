@@ -109,9 +109,9 @@ The **targets** are the known results on the other side of the equal sign. In a 
 * In our problem, the targets are the equation outcomes: 6, 4, 10.
 * We collect these into a column **vector**, which we can call:  
  
-$
+$`
 y = \begin{bmatrix} 6 \\ 4 \\ 10 \end{bmatrix}
-$
+`$
 
 ### The Full Picture: $Xw = y$
 
@@ -119,17 +119,17 @@ When we put it all together, our entire system of three separate equations can b
 
 Visually, that looks like this:  
 
-$
+$`
 \begin{bmatrix}
 1 & 1 & -1 \\
 1 & -1 & 2 \\
 4 & -2 & 1
 \end{bmatrix}
 \begin{bmatrix} a \\ c \\ p \end{bmatrix}
-$=
-$
+`$=
+`$
 \begin{bmatrix} 6 \\ 4 \\ 10 \end{bmatrix}
-$ 
+`$ 
 
 This elegant notation is fundamental to linear algebra and is used everywhere in machine learning to represent data and solve complex problems.
 
