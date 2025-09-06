@@ -44,7 +44,7 @@ $` y = w_1(\text{wind\_speed}) + w_2(\text{temperature}) + b `$
 
 With two features, our model is no longer a line in a 2D plane. It's now a **plane** in a 3D space. We can extend this idea to any number of features ($n$), such as pressure, humidity, etc. The generalized equation for $n$ features becomes:
 
-$$ y = w_1x_1 + w_2x_2 + \dots + w_nx_n + b $$
+$` y = w_1x_1 + w_2x_2 + \dots + w_nx_n + b `$
 
 Here, $x_1, x_2, \dots, x_n$ represent the different input features. Conceptually, it works the same way: we need to find the right values for all the weights ($w_1, \dots, w_n$) and the bias ($b$) to make accurate predictions.
 
