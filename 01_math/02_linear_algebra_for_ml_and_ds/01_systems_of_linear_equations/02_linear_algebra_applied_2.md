@@ -126,7 +126,8 @@ $`
 4 & -2 & 1
 \end{bmatrix}
 \begin{bmatrix} a \\ c \\ p \end{bmatrix}
-`$=
+`$
+$`=`$
 $`
 \begin{bmatrix} 6 \\ 4 \\ 10 \end{bmatrix}
 `$ 
