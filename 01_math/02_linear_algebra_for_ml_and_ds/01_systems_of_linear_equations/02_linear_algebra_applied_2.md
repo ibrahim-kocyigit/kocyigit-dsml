@@ -84,7 +84,7 @@ The **weights** are the unknown values we are trying to solve for. In machine le
 * In our problem, the unknowns are the scores: $a, c, p$.
 * We collect these into a single column **vector**:  
 
-$` w = \begin{bmatrix} a \\ c \\ p \end{bmatrix} `$
+$$` w = \begin{bmatrix} a \\ c \\ p \end{bmatrix} `$$
 
 ### Features (The Known Coefficients) - Matrix $X$
 
