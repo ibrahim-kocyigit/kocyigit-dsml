@@ -23,11 +23,11 @@ If we plot our collected data points, we might see a clear pattern. The objectiv
 
 The equation for the line above is the familiar:
 
-$` y = mx + b `$
+$$ y = mx + b $$
 
 In machine learning, this is often written as:
 
-$` y = wx + b `$
+$$ y = wx + b $$
 
 * `y`: The predicted output (Power Output)
 * `x`: The input feature (Wind Speed)
