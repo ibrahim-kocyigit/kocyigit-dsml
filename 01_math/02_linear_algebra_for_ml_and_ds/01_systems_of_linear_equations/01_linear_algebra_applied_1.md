@@ -40,7 +40,7 @@ The goal is to find the optimal values for the weight (`w`) and bias (`b`) that 
 
 In most real-world scenarios, you'll use more than one feature to make a prediction. Let's add **temperature** to our wind turbine model. The equation now needs a new weight for the new feature:
 
-$$ y = w_1(\text{wind\_speed}) + w_2(\text{temperature}) + b $$
+$` y = w_1(\text{wind\_speed}) + w_2(\text{temperature}) + b `$
 
 With two features, our model is no longer a line in a 2D plane. It's now a **plane** in a 3D space. We can extend this idea to any number of features ($n$), such as pressure, humidity, etc. The generalized equation for $n$ features becomes:
 
