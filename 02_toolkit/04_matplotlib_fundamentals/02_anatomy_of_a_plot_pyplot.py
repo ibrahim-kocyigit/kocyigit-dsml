@@ -1,7 +1,13 @@
-# 02_anatomy_of_a_plot_pyplot.py
-
 import matplotlib.pyplot as plt
 import numpy as np
+
+# =======================================
+# TABLE OF CONTENTS
+# =======================================
+# 1. The Anatomy of a Plot
+# 2. Building a Plot Step-By-Step
+# 3. Summary of Pyplot Commands
+
 
 # =======================================
 # 1. THE ANATOMY OF A PLOT
@@ -25,29 +31,27 @@ import numpy as np
 
 # --- Step 1: Prepare Data ---
 # We'll plot two functions, sine and cosine, to demonstrate the legend.
-x = np.linspace(0, 10, 100) # 100 points from 0 to 10
+x = np.linspace(0, 10, 100)  # 100 points from 0 to 10
 y_sin = np.sin(x)
 y_cos = np.cos(x)
-
 
 # --- Step 2: Create the Plot and Add Components ---
 
 # `plt.figure()` can be used to control the overall window size.
-plt.figure(figsize=(10, 6)) # (width, height in inches)
+plt.figure(figsize=(10, 6))  # (width, height in inches)
 
 # Plot the data. We add a `label` to each line for the legend.
-plt.plot(x, y_sin, label='Sine Wave')
-plt.plot(x, y_cos, label='Cosine Wave')
+plt.plot(x, y_sin, label="Sine Wave")
+plt.plot(x, y_cos, label="Cosine Wave")
 
-
-# --- Step 3: Add Labels, Title, and other Components ---
+# --- Step 3: Add Labels, Title, and Other Components ---
 
 # Add a title to the plot
-plt.title('Sine and Cosine Functions')
+plt.title("Sine and Cosine Functions")
 
 # Add labels to the x and y axes
-plt.xlabel('X-axis (from 0 to 10)')
-plt.ylabel('Y-axis (Value)')
+plt.xlabel("X-axis (from 0 to 10)")
+plt.ylabel("Y-axis (Value)")
 
 # Add a legend to identify the lines
 # This function automatically uses the `label`s we defined in `plt.plot()`.
@@ -59,7 +63,6 @@ plt.grid(True)
 # You can manually set the limits of the axes
 plt.xlim(0, 10)
 plt.ylim(-1.5, 1.5)
-
 
 # --- Step 4: Show the Plot ---
 # `plt.show()` displays the final, complete figure.
