@@ -1,34 +1,40 @@
-# 04_intro_to_oo_interface.py
-
 import matplotlib.pyplot as plt
 import numpy as np
 
 # =======================================
+# TABLE OF CONTENTS
+# =======================================
+# 1. Why a New Interface? The Limits of Pyplot
+# 2. The Core Objects: `Figure` and `Axes`
+# 3. Creating a Figure and Axes
+# 4. A Simple Plot with the OO Interface
+# 5. Summary of the OO Workflow
+
+
+# =======================================
 # 1. WHY A NEW INTERFACE? THE LIMITS OF PYPLOT
 # =======================================
-# - The `pyplot` interface (`plt.plot()`, `plt.title()`, etc.) is a "state-based" interface.
+# - The `pyplot` interface (`plt.plot()`, `plt.title()`, etc.) is a "state-based interface."
 # - It keeps track of the "current" figure and axes, and all `plt` commands apply to them.
 # - This is simple and great for quick, interactive plots.
 # - However, it can become clumsy and confusing when you need to manage multiple plots
 #   or have fine-grained control over the figure elements.
-#
+
 # - The Object-Oriented (OO) interface is the solution. Here, you explicitly create
 #   and hold onto figure and axes objects, then call methods directly on them.
 # - The OO approach is more explicit, less ambiguous, and is the recommended
-#   best practice for any non-trivial plot (e.g., in scripts, applications, or for publication).
+#   best practice for any non-trivial plot (e.g., in scripts, applications, or for publication.)
 
 
 # =======================================
 # 2. THE CORE OBJECTS: `Figure` AND `Axes`
 # =======================================
-# - The OO interface revolves around two main objects:
-#
+# - The OO interface revolves around two main objects.
 # - `Figure`: The top-level container for everything. It's the overall window or canvas
 #   that holds all the plot elements. You can think of it as the picture frame.
-#
-# - `Axes`: The actual plot itself — the area where data is plotted with an x-axis and y-axis.
+# - `Axes`: The actual plot itself - the area where data is plotted with an x-axis and y-axis.
 #   A single `Figure` can contain one or more `Axes` objects (subplots).
-#   Think of it as the photograph inside the frame. (Note the spelling: Axes, not Axis).
+#   Think of it as the photograph inside the frame (Note the spelling: Axes, not Axis).
 
 
 # =======================================
@@ -59,12 +65,11 @@ y_data = x_data**2
 
 # --- Step 2: Create Figure and Axes ---
 # We already did this above, but we'll do it again for a complete example.
-fig, ax = plt.subplots(figsize=(8, 6)) # Can still control figure size here
+fig, ax = plt.subplots(figsize=(8, 6))  # We can still control the figure size here
 
 # --- Step 3: Plot data on the Axes object ---
 # Instead of `plt.plot()`, we call the `.plot()` method on our `ax` object.
 ax.plot(x_data, y_data)
-
 
 # --- Compare to the pyplot interface ---
 # Pyplot way (implicit):
@@ -74,7 +79,6 @@ ax.plot(x_data, y_data)
 #   ax.plot(x_data, y_data)
 #
 # The OO way is clearer about *where* the plot is being drawn.
-
 
 # --- Step 4: Show the Plot ---
 # `plt.show()` is still used at the end to display the figure.

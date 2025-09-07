@@ -1,7 +1,12 @@
-# 05_plotting_with_axes_objects.py
-
 import matplotlib.pyplot as plt
 import numpy as np
+
+# =======================================
+# TABLE OF CONTENTS
+# =======================================
+# 1. Plotting with the `Axes` Object
+# 2. Building a Plot (The OO Way)
+
 
 # =======================================
 # 1. PLOTTING WITH THE `Axes` OBJECT
@@ -33,11 +38,11 @@ import numpy as np
 #   time using the object-oriented approach.
 
 print("--- Building a plot with the OO interface ---")
+
 # --- Step 1: Prepare Data ---
 x = np.linspace(0, 10, 100)
 y_sin = np.sin(x)
 y_cos = np.cos(x)
-
 
 # --- Step 2: Create a Figure and an Axes object ---
 # This is our standard starting point for OO plotting.
@@ -47,15 +52,15 @@ print(f"Created an Axes object: {type(ax)}")
 
 
 # --- Step 3: Plot data directly onto the Axes (`ax`) ---
-ax.plot(x, y_sin, label='Sine Wave')
-ax.plot(x, y_cos, label='Cosine Wave')
+ax.plot(x, y_sin, label="Sine Wave")
+ax.plot(x, y_cos, label="Cosine Wave")
 
 
 # --- Step 4: Customize the plot using `ax` methods ---
 # Use the `set_*` methods to add labels and a title.
-ax.set_title('Sine and Cosine Functions (OO Style)')
-ax.set_xlabel('X-axis')
-ax.set_ylabel('Y-axis')
+ax.set_title("Sine and Cosine Functions (The OO Style)")
+ax.set_xlabel("X-axis")
+ax.set_ylabel("Y-axis")
 
 # Set the limits for the axes.
 ax.set_xlim(0, 10)
