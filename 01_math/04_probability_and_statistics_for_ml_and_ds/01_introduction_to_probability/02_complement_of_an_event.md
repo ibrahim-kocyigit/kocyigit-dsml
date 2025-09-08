@@ -47,13 +47,19 @@ In the Venn diagram, if the event `P(soccer)` is the area inside the circle (30%
 Instead of counting all 7 other possibilities, we can use the complement rule.
 * The probability of getting three heads is $P(\text{HHH}) = \frac{1}{8}$.
 * The probability of *not* getting three heads is:
-    $$ P(\text{not HHH}) = 1 - P(\text{HHH}) = 1 - \frac{1}{8} = \frac{7}{8} $$
+```math
+P(\text{not HHH}) = 1 - P(\text{HHH}) = 1 - \frac{1}{8} = \frac{7}{8}
+```
+<br>
 
 ### Example 2: Rolling a Die
 **Question:** What's the probability of rolling anything **other than** a 6?
 
 * The probability of rolling a 6 is $P(6) = \frac{1}{6}$.
 * The probability of *not* rolling a 6 is:
-    $$ P(\text{not 6}) = 1 - P(6) = 1 - \frac{1}{6} = \frac{5}{6} $$
+```math
+P(\text{not 6}) = 1 - P(6) = 1 - \frac{1}{6} = \frac{5}{6}
+```
+<br>
 
 The complement rule is a very powerful tool that often simplifies probability problems by allowing us to calculate the probability of the event we *don't* want and subtracting it from 1.
