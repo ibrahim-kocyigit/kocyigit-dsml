@@ -16,24 +16,26 @@ Let's use an example.
 Since a kid cannot play both sports, these events are disjoint. We can find the total number of kids who play a sport and divide by the total. If there are 10 kids, 3 play soccer and 4 play basketball. The total number of kids who play a sport is $3 + 4 = 7$.
 
 The probability is:
-$$ P(\text{Soccer or Basketball}) = \frac{7}{10} = 0.7 $$
+```math
+P(\text{Soccer or Basketball}) = \frac{7}{10} = 0.7
+```
+<br>
 
 Notice that this is simply the sum of the individual probabilities: $0.3 + 0.4 = 0.7$.
 
----
 ## The Addition Rule for Disjoint Events
 
 This leads us to our main rule. If `A` and `B` are disjoint events, the probability of `A` or `B` happening is the sum of their probabilities.
 
 > **Formula:**
-> $$ P(A \cup B) = P(A) + P(B) $$
+> ```math 
+> P(A \cup B) = P(A) + P(B)
+> ```
 > *Where the union symbol `∪` means "or".*
 
 In a Venn diagram, disjoint events are represented by two separate, non-overlapping circles. The probability of their union is the sum of the areas of the two circles.
 
 ![](./images/0301.png)
-
----
 
 ## Applying the Rule to Dice Rolls
 
@@ -44,7 +46,10 @@ In a Venn diagram, disjoint events are represented by two separate, non-overlapp
 * **Event B:** Rolling a 5 {5}. The probability is $P(B) = \frac{1}{6}$.
 
 These events are disjoint because a number cannot be both even and five. Therefore:
-$$ P(A \cup B) = P(A) + P(B) = \frac{3}{6} + \frac{1}{6} = \frac{4}{6} = \frac{2}{3} $$
+```math
+P(A \cup B) = P(A) + P(B) = \frac{3}{6} + \frac{1}{6} = \frac{4}{6} = \frac{2}{3}
+```
+<br>
 
 ### Example 2: Rolling Two Dice
 Let's visualize the sample space of 36 possible outcomes for rolling two dice.
