@@ -68,7 +68,9 @@ E[\text{Matches}] = E[A] + E[B] + E[C]
 <br>
 
 What is the expected value for Aisha, `E[A]`?
-* Aisha has a 1/3 chance of getting her name right (`A=1`) and a 2/3 chance of getting it wrong (`A=0`).
+
+Aisha has a 1/3 chance of getting her name right (`A=1`) and a 2/3 chance of getting it wrong (`A=0`).
+
 ```math
 E[A] = (1 \cdot \frac{1}{3}) + (0 \cdot \frac{2}{3}) = \frac{1}{3}
 ```
