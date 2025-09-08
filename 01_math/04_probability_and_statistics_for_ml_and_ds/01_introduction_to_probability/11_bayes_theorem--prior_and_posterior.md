@@ -22,7 +22,7 @@ Let's look at our previous problems through this new lens.
     * $P(\text{Spam}) = \frac{\text{Total Spam Emails}}{\text{Total Emails}} = \frac{20}{100} = 20\%$  
 * **Event/Evidence:** We discover that the email contains the word "lottery."  
 * **Posterior:** The updated probability that the email is spam, *given that* it contains the word "lottery."
-    * $P(\text{Spam} | \text{"lottery"}) = \frac{\text{Spam emails with "lottery"}}{\text{Total emails with "lottery"}} = \frac{14}{24} \approx 58.3\%$
+    * $P(\text{Spam} | \text{lottery}) = \frac{\text{Spam emails with "lottery"}}{\text{Total emails with "lottery"}} = \frac{14}{24} \approx 58.3\%$
 
 ### Example 2: The Medical Diagnosis
 * **Prior:** The initial probability of being sick based on the general population.
