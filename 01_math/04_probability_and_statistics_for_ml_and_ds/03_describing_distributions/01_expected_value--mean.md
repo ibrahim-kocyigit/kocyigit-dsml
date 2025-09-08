@@ -46,7 +46,10 @@ To answer this, we can calculate the **expected payoff**.
 
 The expected value `E(X)` is the weighted average of the outcomes:
 
-> $$E(X) = (10 \text{ dollars} \cdot 0.5) + (0 \text{ dollars} \cdot 0.5) = 5 \text{ dollars}$$
+```math
+E(X) = (10 \text{ dollars} \cdot 0.5) + (0 \text{ dollars} \cdot 0.5) = 5 \text{ dollars}
+```
+<br>
 
 On average, you can expect to win 5 dollars each time you play. Therefore, 5 dollars is the highest amount you should be willing to pay.
 
@@ -61,10 +64,7 @@ If you have a discrete random variable `X` with a probability mass function `p(x
 
 The concept is the same for continuous random variables: the expected value is still the "balancing point" of the distribution. However, instead of summing a finite number of values, we have to use an integral to calculate the weighted average over a continuous interval.
 
-```math
-E[X] = \int_{-\infty}^{\infty} x \cdot f(x) \,dx
-```
-<br>
+> $$ E[X] = \int_{-\infty}^{\infty} x \cdot f(x) \,dx $$
 
 **Intuition:**
 Just like the discrete version, this is a **weighted average**. The integral "sums up" all the possible values of `x`, where each `x` is weighted by its probability density `f(x)`.
