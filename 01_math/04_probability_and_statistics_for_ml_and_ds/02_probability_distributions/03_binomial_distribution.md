@@ -20,7 +20,7 @@ One possible sequence is `HHTTT`. Since each flip is an independent event with P
 ```
 <br>
 
-2.  **Count the number of possible sequences:**. 
+2.  **Count the number of possible sequences:** 
 
 `HHTTT` is not the only way to get 2 heads. `HTHTT` and `TTHHH` are other possibilities. We need to count how many unique ways we can arrange 2 heads and 3 tails.
 
