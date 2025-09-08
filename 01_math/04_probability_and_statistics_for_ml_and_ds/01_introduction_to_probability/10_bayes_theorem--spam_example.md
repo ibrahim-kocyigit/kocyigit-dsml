@@ -31,7 +31,7 @@ When we are given the evidence that an email contains the word "lottery," our wo
 3.  **Calculate the probability:**
 
 ```math
-P(\text{Spam} | \text{lottery}) = \frac{\text{Number of spam emails with "lottery"}}{\text{Total number of emails with "lottery"}} = \frac{14}{24} = \frac{7}{12} \approx 0.583
+P(\text{Spam} | \text{'lottery'}) = \frac{\text{Number of spam emails with "lottery"}}{\text{Total number of emails with "lottery"}} = \frac{14}{24} = \frac{7}{12} \approx 0.583
 ```
 <br>
 
