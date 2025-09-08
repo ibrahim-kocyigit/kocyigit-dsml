@@ -28,35 +28,38 @@ This is a combination problem. The number of ways to choose *k* successes from *
 ```math
 \binom{n}{k} = \frac{n!}{k!(n-k)!}
 ```
+<br>
 
 For our problem, this is "5 choose 2":
 ```math
 \binom{5}{2} = \frac{5!}{2!(5-2)!} = \frac{120}{2 \cdot 6} = 10
 ```
+<br>
 
-* There are **10** different ways to get exactly 2 heads in 5 flips.
+There are **10** different ways to get exactly 2 heads in 5 flips.
 
 Since each of these 10 sequences has a probability of 1/32, the total probability is:
-$$ P(X=2) = 10 \times \frac{1}{32} = \frac{10}{32} $$
-
----
+```math
+P(X=2) = 10 \times \frac{1}{32} = \frac{10}{32}
+```
+<br>
 
 ## The Binomial Probability Mass Function (PMF)
 
 We can generalize this into a single formula, the PMF for the binomial distribution. This formula gives the probability of getting exactly `x` successes in `n` trials, where the probability of success in any single trial is `p`.
 
-> **Binomial PMF:**
 > $$ P(X=x) = \binom{n}{x} p^x (1-p)^{n-x} $$
 
 We say that the random variable `X` follows a binomial distribution, and we denote it as:
-$$ X \sim \text{Binomial}(n, p) $$
 
----
+```math
+X \sim \text{Binomial}(n, p)
+```
+<br>
+
 ## Visualizing the Binomial Distribution
 
 ![](./images/0301.png)
-
----
 
 ## Framing Other Problems as Binomial
 
@@ -70,5 +73,10 @@ This is a binomial problem in disguise.
 * A "failure" is rolling anything else. The probability of failure is **1 - p = 5/6**.
 
 We want to find the probability of getting exactly **x = 3** successes. We can plug these values into the binomial PMF:
-$$ P(X=3) = \binom{5}{3} (\frac{1}{6})^3 (1-\frac{1}{6})^{5-3} $$
-$$ = 10 \cdot (\frac{1}{216}) \cdot (\frac{5}{6})^2 = 10 \cdot \frac{1}{216} \cdot \frac{25}{36} \approx 0.032 $$
+
+```math
+P(X=3) = \binom{5}{3} (\frac{1}{6})^3 (1-\frac{1}{6})^{5-3}
+```
+```math
+= 10 \cdot (\frac{1}{216}) \cdot (\frac{5}{6})^2 = 10 \cdot \frac{1}{216} \cdot \frac{25}{36} \approx 0.032
+```
