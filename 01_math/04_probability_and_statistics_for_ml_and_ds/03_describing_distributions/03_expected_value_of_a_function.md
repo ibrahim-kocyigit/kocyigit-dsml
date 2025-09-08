@@ -66,6 +66,7 @@ E[2X - 5] = \frac{(2 \cdot 1 - 5) + (2 \cdot 2 - 5) + \dots + (2 \cdot 6 - 5)}{6
 ```math
 = 2 \cdot E[X] - 5
 ```
+<br>
 
 The expected value of the roll of a fair die, `E[X]`, is 3.5. So, $2 \cdot (3.5) - 5 = 7 - 5 = 2$. This gives us the same result.
 
