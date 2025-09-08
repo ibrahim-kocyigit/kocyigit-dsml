@@ -40,8 +40,8 @@ In a Venn diagram, disjoint events are represented by two separate, non-overlapp
 ### Example 1: Rolling One Die
 **Question:** What is the probability of rolling an even number or a 5?
 
-* **Event A:** Rolling an even number {2, 4, 6}. The probability is $P(A) = \frac{3}{6}$.
-* **Event B:** Rolling a 5 {5}. The probability is $P(B) = \frac{1}{6}$.
+* **Event A:** Rolling an even number {2, 4, 6}. The probability is $P(A) = \frac{3}{6}$
+* **Event B:** Rolling a 5 {5}. The probability is $P(B) = \frac{1}{6}$
 
 These events are disjoint because a number cannot be both even and five. Therefore:
 ```math
@@ -53,17 +53,17 @@ P(A \cup B) = P(A) + P(B) = \frac{3}{6} + \frac{1}{6} = \frac{4}{6} = \frac{2}{3
 Let's visualize the sample space of 36 possible outcomes for rolling two dice.
 
 **Question 1:** What is the probability of the sum being 7 or 10?
-* **Event A (Sum = 7):** There are 6 favorable outcomes. $P(A) = \frac{6}{36}$.
-* **Event B (Sum = 10):** There are 3 favorable outcomes. $P(B) = \frac{3}{36}$.
+* **Event A (Sum = 7):** There are 6 favorable outcomes. $P(A) = \frac{6}{36}$
+* **Event B (Sum = 10):** There are 3 favorable outcomes. $P(B) = \frac{3}{36}$
 * These are disjoint events.
 * $P(A \cup B) = \frac{6}{36} + \frac{3}{36} = \frac{9}{36} = \frac{1}{4}$.
 
 ![](./images/0302.png)
 
 **Question 2:** What is the probability of the absolute difference being 2 or 1?
-* **Event A (Difference = 2):** There are 8 favorable outcomes. $P(A) = \frac{8}{36}$.
-* **Event B (Difference = 1):** There are 10 favorable outcomes. $P(B) = \frac{10}{36}$.
+* **Event A (Difference = 2):** There are 8 favorable outcomes. $P(A) = \frac{8}{36}$
+* **Event B (Difference = 1):** There are 10 favorable outcomes. $P(B) = \frac{10}{36}$
 * These are disjoint events.
-* $P(A \cup B) = \frac{8}{36} + \frac{10}{36} = \frac{18}{36} = \frac{1}{2}$.
+* $P(A \cup B) = \frac{8}{36} + \frac{10}{36} = \frac{18}{36} = \frac{1}{2}$
 
 ![](./images/0303.png)
