@@ -31,7 +31,7 @@ When we are given the evidence that an email contains the word "lottery," our wo
 3.  **Calculate the probability:**
 
 ```math
-P(\text{Spam} | \text{'lottery'}) = \frac{\text{Number of spam emails with "lottery"}}{\text{Total number of emails with "lottery"}} = \frac{14}{24} = \frac{7}{12} \approx 0.583
+P(\text{Spam} | \text{lottery}) = \frac{\text{Number of spam emails with "lottery"}}{\text{Total number of emails with "lottery"}} = \frac{14}{24} = \frac{7}{12} \approx 0.583
 ```
 <br>
 
@@ -48,23 +48,31 @@ Let's solve the same problem using the formula.
 * **B:** The email contains the word "lottery".
 
 **Bayes' Theorem:**
-$$ P(A|B) = \frac{P(A) \cdot P(B|A)}{P(A) \cdot P(B|A) + P(A') \cdot P(B|A')} $$
+```math
+P(A|B) = \frac{P(A) \cdot P(B|A)}{P(A) \cdot P(B|A) + P(A') \cdot P(B|A')}
+```
+<br>
 
 Let's calculate each component from our initial data:
 * **$P(A)$ (Prior):** The overall probability of an email being spam.
     * $P(\text{Spam}) = \frac{20}{100} = 0.2$  
-` `
+
 * **$P(A')$ (Complement):** The overall probability of an email being ham.
     * $P(\text{Not Spam}) = \frac{80}{100} = 0.8$  
-` `
+
 * **$P(B|A)$ (Likelihood):** The probability of seeing the word "lottery" *given that* the email is spam.
-    * Out of 20 spam emails, 14 have the word. $P(\text{"lottery"}| \text{Spam}) = \frac{14}{20} = 0.7$  
-` `
+    * Out of 20 spam emails, 14 have the word. $P(\text{lottery}| \text{Spam}) = \frac{14}{20} = 0.7$  
+
 * **$P(B|A')$ (Likelihood of Complement):** The probability of seeing the word "lottery" *given that* the email is ham.
-    * Out of 80 ham emails, 10 have the word. $P(\text{"lottery"}| \text{Not Spam}) = \frac{10}{80} = 0.125$
+    * Out of 80 ham emails, 10 have the word. $P(\text{lottery}| \text{Not Spam}) = \frac{10}{80} = 0.125$
 
 Now, we plug these values into the formula:
-$$ P(\text{Spam} | \text{"lottery"}) = \frac{(0.2) \cdot (0.7)}{(0.2) \cdot (0.7) + (0.8) \cdot (0.125)} $$
-$$ = \frac{0.14}{0.14 + 0.1} = \frac{0.14}{0.24} \approx 0.583 $$
+```math
+P(\text{Spam} | \text{"lottery"}) = \frac{(0.2) \cdot (0.7)}{(0.2) \cdot (0.7) + (0.8) \cdot (0.125)}
+```
+```math
+= \frac{0.14}{0.14 + 0.1} = \frac{0.14}{0.24} \approx 0.583
+```
+<br>
 
 The formal calculation gives us the exact same result as our intuitive method.
