@@ -50,13 +50,9 @@ This rule can be generalized for any linear combination of two independent norma
 If $X \sim N(\mu_X, \sigma_X^2)$ and $Y \sim N(\mu_Y, \sigma_Y^2)$, then for any constants `a` and `b`, the new variable `Z = aX + bY` also follows a normal distribution.
 
 Parameters for `Z = aX + bY` are:
-* **Mean:** 
 ```math
 \mu_Z = a\mu_X + b\mu_Y
 ```
-<br>
-
-* **Variance:**
 ```math
 \sigma_Z^2 = a^2\sigma_X^2 + b^2\sigma_Y^2
 ```
