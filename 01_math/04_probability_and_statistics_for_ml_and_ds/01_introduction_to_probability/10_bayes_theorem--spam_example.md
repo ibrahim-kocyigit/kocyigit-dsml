@@ -68,7 +68,7 @@ Let's calculate each component from our initial data:
 
 Now, we plug these values into the formula:
 ```math
-P(\text{Spam} | \text{"lottery"}) = \frac{(0.2) \cdot (0.7)}{(0.2) \cdot (0.7) + (0.8) \cdot (0.125)}
+P(\text{Spam} | \text{lottery}) = \frac{(0.2) \cdot (0.7)}{(0.2) \cdot (0.7) + (0.8) \cdot (0.125)}
 ```
 ```math
 = \frac{0.14}{0.14 + 0.1} = \frac{0.14}{0.24} \approx 0.583
