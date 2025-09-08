@@ -67,9 +67,16 @@ Now we can substitute our expressions for the numerator and the denominator back
 
 Let's plug our known numbers into Bayes' Theorem to find the probability that you are sick given that you tested positive.
 
-* **Numerator:** $ P(A) \cdot P(B|A) = (0.0001) \times (0.99) = 0.000099 $
+* **Numerator:** 
+```math
+P(A) \cdot P(B|A) = (0.0001) \times (0.99) = 0.000099
+```
 * **Denominator:**
-    * Part 1 (True Positives): $ P(A) \cdot P(B|A) = 0.000099 $
+    * Part 1 (True Positives):
+    ```math
+    P(A) \cdot P(B|A) = 0.000099
+    ```
+     
     * Part 2 (False Positives): $ P(A') \cdot P(B|A') = (0.9999) \times (0.01) = 0.009999 $
     * Total Denominator = $0.000099 + 0.009999 = 0.010098$  
 
