@@ -56,15 +56,19 @@ On average, you can expect to win 5 dollars each time you play. Therefore, 5 dol
 
 If you have a discrete random variable `X` with a probability mass function `p(x)`, the expected value is the sum of each possible value multiplied by its probability.
 
-**Expected Value (Discrete):**  
-> $$ E[X] = \sum x \cdot p(x) $$
+```math
+E[X] = \sum x \cdot p(x)
+```
+
 
 ## Expected Value for Continuous Variables
 
 The concept is the same for continuous random variables: the expected value is still the "balancing point" of the distribution. However, instead of summing a finite number of values, we have to use an integral to calculate the weighted average over a continuous interval.
 
-**Expected Value (Continuous):**  
-> $$E[X] = \int_{-\infty}^{\infty} x \cdot f(x) \,dx$$
+```math
+E[X] = \int_{-\infty}^{\infty} x \cdot f(x) \,dx
+```
+<br>
 
 **Intuition:**
 Just like the discrete version, this is a **weighted average**. The integral "sums up" all the possible values of `x`, where each `x` is weighted by its probability density `f(x)`.
