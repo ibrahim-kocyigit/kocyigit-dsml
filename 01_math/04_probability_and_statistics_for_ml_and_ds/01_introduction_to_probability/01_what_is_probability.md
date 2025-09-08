@@ -40,7 +40,11 @@ In probability, an **experiment** is any process that produces an uncertain outc
 For a single flip of a fair coin, the sample space consists of two equally likely outcomes: {Heads, Tails}.
 * **Event:** Landing on Heads.
 * **Sample Space:** {Heads, Tails}
-* **Probability:** $P(\text{Heads}) = \frac{1}{2} = 0.5$
+* **Probability:** 
+```math
+P(\text{Heads}) = \frac{1}{2} = 0.5
+```
+<br>
 
 ### Experiment 2: Flipping Two Coins
 If we flip two coins, we can map out all the possible outcomes:
