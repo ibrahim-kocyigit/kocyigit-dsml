@@ -31,7 +31,6 @@ This leads us to our main rule. If `A` and `B` are disjoint events, the probabil
 > ```math 
 > P(A \cup B) = P(A) + P(B)
 > ```
-> *Where the union symbol `∪` means "or".*
 
 In a Venn diagram, disjoint events are represented by two separate, non-overlapping circles. The probability of their union is the sum of the areas of the two circles.
 
