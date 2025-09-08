@@ -45,10 +45,8 @@ To answer this, we can calculate the **expected payoff**.
 * You have a 50% chance of winning 0 dollars.
 
 The expected value `E(X)` is the weighted average of the outcomes:
-```math
-E(X) = (10 \text{ dollars} \cdot 0.5) + (0 \text{ dollars} \cdot 0.5) = 5 \text{ dollars}
-```
-<br>
+
+> $$E(X) = (10 \text{ dollars} \cdot 0.5) + (0 \text{ dollars} \cdot 0.5) = 5 \text{ dollars}$$
 
 On average, you can expect to win 5 dollars each time you play. Therefore, 5 dollars is the highest amount you should be willing to pay.
 
@@ -56,9 +54,7 @@ On average, you can expect to win 5 dollars each time you play. Therefore, 5 dol
 
 If you have a discrete random variable `X` with a probability mass function `p(x)`, the expected value is the sum of each possible value multiplied by its probability.
 
-```math
-E[X] = \sum x \cdot p(x)
-```
+> $$ E[X] = \sum x \cdot p(x) $$
 
 
 ## Expected Value for Continuous Variables
