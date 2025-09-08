@@ -4,12 +4,15 @@ So far, we've learned about the **Probability Mass Function (PMF)** for discrete
 
 The **Cumulative Distribution Function (CDF)** offers a more direct way to get probabilities.
 
-> The **CDF**, denoted as a capital `F(x)`, tells you the probability that a random variable `X` will take on a value **less than or equal to** a certain value `x`.
-> $$ F(x) = P(X \le x) $$
+The **CDF**, denoted as a capital `F(x)`, tells you the probability that a random variable `X` will take on a value **less than or equal to** a certain value `x`.
+
+```math
+F(x) = P(X \le x)
+```
+<br>
 
 The CDF essentially "accumulates" probability as you move from left to right along the number line.
 
----
 ## The CDF for Discrete Distributions
 
 Let's start with a discrete example. Imagine the probability distribution for the duration of a support call, grouped into 1-minute intervals. The CDF at any point is the sum of all the probabilities up to that point.
@@ -22,20 +25,19 @@ For discrete variables, the CDF is a "step function." It is flat between values 
 
 ![](./images/0801.png)
 
----
-
 ## The CDF for Continuous Distributions
 
 For a continuous distribution, the CDF has a similar meaning, but it's calculated differently. The value of the CDF at a point `x`, `F(x)`, is the **total area under the PDF curve** from the beginning of the range up to `x`.
 
 This is a powerful concept. Instead of having to calculate a new area (an integral) every time we want a probability, we can use the CDF. The probability of an outcome falling between `a` and `b` is simply the difference between the CDF values at those points:
-$$ P(a \le X \le b) = F(b) - F(a) $$
+```math
+P(a \le X \le b) = F(b) - F(a)
+```
+<br>
 
 Because there are no "jumps" in a continuous distribution (the probability of any single point is zero), the CDF is a smooth, non-decreasing curve.
 
 ![](./images/0802.png)
-
----
 
 ## Properties of a Valid CDF
 
