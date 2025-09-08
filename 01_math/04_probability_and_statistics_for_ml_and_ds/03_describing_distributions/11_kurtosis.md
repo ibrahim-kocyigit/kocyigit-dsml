@@ -22,8 +22,9 @@ Both distributions are perfectly symmetric around 0. Therefore, the **mean for b
 
 #### Variance (Related to the Second Moment):
 Let's calculate the variance for each game. Since the mean is 0, the variance is just $E[X^2]$.
-* `Var(X₁) = ((-1)² * 0.5) + (1² * 0.5) = 1`
-* `Var(X₂) = ((-10)² * 1/202) + ((-0.1)² * 100/202) + ((0.1)² * 100/202) + ((10)² * 1/202) = (100/202) + (1/202) + (1/202) + (100/202) = 202/202 = 1`
+
+* $Var(X_1) = ((-1)^2 * 0.5) + ((1)^2 * 0.5) = 1$
+* $Var(X_2) = ((-10)^2 * 1/202) + ((-0.1)^2 * 100/202) + ((0.1)^2 * 100/202) + ((10)^2 * 1/202) = (100/202) + (1/202) + (1/202) + (100/202) = 202/202 = 1$
 
 Believe it or not, the **variance for both is 1**. According to this measure, neither game is riskier than the other.  
 
