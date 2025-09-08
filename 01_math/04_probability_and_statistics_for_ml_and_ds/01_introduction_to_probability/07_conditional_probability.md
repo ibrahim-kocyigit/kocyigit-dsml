@@ -98,7 +98,8 @@ We use the General Product Rule: $ P(A \cap B) = P(A) \cdot P(B|A) $.
 ```math
 P(\text{Soccer} \cap \text{Running Shoes}) = P(\text{Soccer}) \cdot P(\text{Running Shoes | Soccer})
 ```
-```math= 0.4 \times 0.8 = 0.32
+```math
+= 0.4 \times 0.8 = 0.32
 ```
 <br>
 
