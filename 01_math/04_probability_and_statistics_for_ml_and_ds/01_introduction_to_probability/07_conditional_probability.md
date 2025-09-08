@@ -68,7 +68,10 @@ Let's try to build this with a rule.
 * Now, *given that* the first die is a 6, what is the probability that the sum is 10? Our sample space is now just the 6 outcomes where the first die is a 6: {(6,1), (6,2), (6,3), (6,4), (6,5), (6,6)}. Within this space, only one outcome, (6,4), gives a sum of 10. So, $P(\text{Sum=10} \text{ | First=6}) = \frac{1}{6}$
 
 Notice that if we multiply these, we get the right answer:
-$ P(\text{First=6}) \cdot P(\text{Sum=10} \text{ | First=6}) = \frac{1}{6} \cdot \frac{1}{6} = \frac{1}{36} $
+```math
+P(\text{First=6}) \cdot P(\text{Sum=10} \text{ | First=6}) = \frac{1}{6} \cdot \frac{1}{6} = \frac{1}{36}
+```
+<br>
 
 This gives us the **General Product Rule**, which works for any events, independent or not:
 
