@@ -21,7 +21,7 @@ To get the correct count of kids who play at least one sport, we must add the tw
 `Total Athletes = (Soccer Players) + (Basketball Players) - (Players of Both)`
 `Total Athletes = 6 + 5 - 3 = 8`
 
-The probability is therefore $\frac{8}{10} = 0.8$.
+The probability is therefore $\frac{8}{10} = 0.8$
 
 ![](./images/0401.png)
 
@@ -57,5 +57,7 @@ P(A \cup B) = P(A) + P(B) - P(A \cap B)
 ```math
 P(A \cup B) = \frac{6}{36} + \frac{10}{36} - \frac{2}{36} = \frac{14}{36} = \frac{7}{18}
 ```
+<br> 
+
 
 ![](./images/0402.png)
