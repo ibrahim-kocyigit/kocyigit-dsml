@@ -56,7 +56,7 @@ Let's visualize the sample space of 36 possible outcomes for rolling two dice.
 * **Event A (Sum = 7):** There are 6 favorable outcomes. $P(A) = \frac{6}{36}$
 * **Event B (Sum = 10):** There are 3 favorable outcomes. $P(B) = \frac{3}{36}$
 * These are disjoint events.
-* $P(A \cup B) = \frac{6}{36} + \frac{3}{36} = \frac{9}{36} = \frac{1}{4}$.
+* $P(A \cup B) = \frac{6}{36} + \frac{3}{36} = \frac{9}{36} = \frac{1}{4}$
 
 ![](./images/0302.png)
 
