@@ -11,9 +11,13 @@ If we toss a coin 10 times, the number of heads we can obtain is a random variab
 Let's ask a specific question: What is the probability of obtaining exactly **2 heads** when you flip **5 fair coins**?
 
 The process has two parts:
-1.  **Calculate the probability of one specific sequence:**
-    * One possible sequence is `HHTTT`. Since each flip is an independent event with P(H)=0.5 and P(T)=0.5, the probability of this specific sequence is:
-    $ (0.5) \times (0.5) \times (0.5) \times (0.5) \times (0.5) = (0.5)^5 = \frac{1}{32} $  
+1.  Calculate the probability of one specific sequence:
+
+One possible sequence is `HHTTT`. Since each flip is an independent event with P(H)=0.5 and P(T)=0.5, the probability of this specific sequence is:
+```math
+(0.5) \times (0.5) \times (0.5) \times (0.5) \times (0.5) = (0.5)^5 = \frac{1}{32}
+```
+<br>
 
 2.  **Count the number of possible sequences:**
     * `HHTTT` is not the only way to get 2 heads. `HTHTT` and `TTHHH` are other possibilities. We need to count how many unique ways we can arrange 2 heads and 3 tails.
