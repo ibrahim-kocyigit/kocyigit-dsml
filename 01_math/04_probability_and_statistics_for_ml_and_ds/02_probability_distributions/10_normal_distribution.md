@@ -18,7 +18,7 @@ The Probability Density Function (PDF) for the normal distribution is a bit more
 * **The Mean ($\mu$):** This parameter controls the **center** of the bell curve.
 * **The Standard Deviation ($\sigma$):** This parameter controls the **spread** or "wideness" of the bell curve. A small `σ` gives a tall, skinny curve, while a large `σ` gives a short, wide curve.
 
-**The Normal PDF Formula:**. 
+**The Normal PDF Formula:**  
 ```math
 f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{ -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2 }
 ```
