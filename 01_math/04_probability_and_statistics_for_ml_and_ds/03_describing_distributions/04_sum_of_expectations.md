@@ -69,7 +69,10 @@ E[\text{Matches}] = E[A] + E[B] + E[C]
 
 What is the expected value for Aisha, `E[A]`?
 * Aisha has a 1/3 chance of getting her name right (`A=1`) and a 2/3 chance of getting it wrong (`A=0`).
-* $ E[A] = (1 \cdot \frac{1}{3}) + (0 \cdot \frac{2}{3}) = \frac{1}{3} $
+```math
+E[A] = (1 \cdot \frac{1}{3}) + (0 \cdot \frac{2}{3}) = \frac{1}{3}
+```
+<br>
 
 The same logic applies to Beto and Cameron: $E[B] = 1/3$ and $E[C] = 1/3$.
 
