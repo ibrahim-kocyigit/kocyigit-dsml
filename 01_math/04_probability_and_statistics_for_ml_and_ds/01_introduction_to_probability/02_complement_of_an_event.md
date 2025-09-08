@@ -28,7 +28,6 @@ This is always true, and it leads us to the **Complement Rule**.
 
 The probability of an event `A` not occurring is equal to 1 minus the probability of `A` occurring.
 
-> **Formula:** 
 > ```math
 > P(A') = 1 - P(A)
 > ```

@@ -27,7 +27,6 @@ Notice that this is simply the sum of the individual probabilities: $0.3 + 0.4 =
 
 This leads us to our main rule. If `A` and `B` are disjoint events, the probability of `A` or `B` happening is the sum of their probabilities.
 
-> **Formula:**
 > ```math 
 > P(A \cup B) = P(A) + P(B)
 > ```
