@@ -57,5 +57,8 @@ The outcome of the first die is independent of the outcome of the second.
 * The probability of the second die being a 6 is `P(Die 2 = 6) = 1/6`.
 
 Using the product rule:
-$$ P(\text{6 and 6}) = P(\text{Die 1 = 6}) \cdot P(\text{Die 2 = 6}) = \frac{1}{6} \times \frac{1}{6} = \frac{1}{36} $$
+```math
+P(\text{6 and 6}) = P(\text{Die 1 = 6}) \cdot P(\text{Die 2 = 6}) = \frac{1}{6} \times \frac{1}{6} = \frac{1}{36}
+```
+
 This matches the result we found by counting the outcomes in the 36-cell sample space.
