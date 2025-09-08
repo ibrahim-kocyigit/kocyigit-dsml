@@ -60,5 +60,6 @@ Using the product rule:
 ```math
 P(\text{6 and 6}) = P(\text{Die 1 = 6}) \cdot P(\text{Die 2 = 6}) = \frac{1}{6} \times \frac{1}{6} = \frac{1}{36}
 ```
+<br>
 
 This matches the result we found by counting the outcomes in the 36-cell sample space.
