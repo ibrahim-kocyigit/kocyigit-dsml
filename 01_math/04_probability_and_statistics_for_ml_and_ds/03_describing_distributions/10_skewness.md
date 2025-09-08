@@ -32,8 +32,11 @@ Let's calculate the **third moment**, $E[X^3]$.
 
 The third moment finally reveals the difference! The large positive value for the lottery is due to the small chance of a very large positive outcome. The large negative value for the insurance is due to the small chance of a very large negative outcome.
 
-> **Skewness** is the standardized third moment. It measures the asymmetry of a distribution.
-> $$ \text{Skewness} = E \left[ \left(\frac{X - \mu}{\sigma}\right)^3 \right] $$
+**Skewness** is the standardized third moment. It measures the asymmetry of a distribution.
+```math
+\text{Skewness} = E \left[ \left(\frac{X - \mu}{\sigma}\right)^3 \right]
+```
+<br>
 
 * **Positive Skewness (Right Skew):** The distribution has a long tail to the right. The lottery is an example.
 * **Negative Skewness (Left Skew):** The distribution has a long tail to the left. The insurance example.
