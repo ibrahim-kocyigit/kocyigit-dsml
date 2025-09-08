@@ -44,16 +44,34 @@ Let's use this assumption to calculate $P(\text{Spam} | \text{"lottery" AND "win
 
 Now, we apply Bayes' theorem, but we use our naive assumption to calculate the likelihood of seeing both words.
 
-* **Numerator:** $P(\text{Spam}) \cdot P(\text{lottery} \cap \text{winning} | \text{Spam})$
-  $$ \approx P(\text{Spam}) \cdot P(\text{lottery} | \text{Spam}) \cdot P(\text{winning} | \text{Spam}) $$
-  $$ = 0.2 \times 0.7 \times 0.75 = 0.105 $$
+**Numerator:** 
+```math
+P(\text{Spam}) \cdot P(\text{lottery} \cap \text{winning} | \text{Spam})
+```
+```math
+\approx P(\text{Spam}) \cdot P(\text{lottery} | \text{Spam}) \cdot P(\text{winning} | \text{Spam})
+```
+```math
+= 0.2 \times 0.7 \times 0.75 = 0.105
+```
+<br>
 
-* **Denominator:** (The total probability of seeing both words)
-  $$ \approx [P(\text{Spam}) \cdot P(\text{lottery}|S) \cdot P(\text{winning}|S)] + [P(\text{Ham}) \cdot P(\text{lottery}|H) \cdot P(\text{winning}|H)] $$
-  $$ = (0.2 \cdot 0.7 \cdot 0.75) + (0.8 \cdot 0.125 \cdot 0.1) $$
-  $$ = 0.105 + 0.01 = 0.115 $$
+**Denominator** (The total probability of seeing both words):
+```math
+\approx [P(\text{Spam}) \cdot P(\text{lottery}|S) \cdot P(\text{winning}|S)] + [P(\text{Ham}) \cdot P(\text{lottery}|H) \cdot P(\text{winning}|H)]
+```
+```math
+= (0.2 \cdot 0.7 \cdot 0.75) + (0.8 \cdot 0.125 \cdot 0.1)
+```
+```math
+= 0.105 + 0.01 = 0.115
+```
+<br>
 
-* **Final Posterior Probability:**
-  $$ P(\text{Spam} | \text{lottery} \cap \text{winning}) = \frac{\text{Numerator}}{\text{Denominator}} = \frac{0.105}{0.115} \approx 0.913 $$
+**Final Posterior Probability:**
+```math
+P(\text{Spam} | \text{lottery} \cap \text{winning}) = \frac{\text{Numerator}}{\text{Denominator}} = \frac{0.105}{0.115} \approx 0.913
+```
+<br>
 
 By combining the evidence from two words, our belief that the email is spam has increased dramatically, from 20% to **91.3%**. This is the power of the Naive Bayes algorithm.
