@@ -22,6 +22,8 @@ Let's look at our previous problems through this new lens.
 ```math
 P(\text{Spam}) = \frac{\text{Total Spam Emails}}{\text{Total Emails}} = \frac{20}{100} = 20\%
 ```
+<br>
+
 * **Event/Evidence:** We discover that the email contains the word "lottery."  
 * **Posterior:** The updated probability that the email is spam, *given that* it contains the word "lottery."
 ```math
