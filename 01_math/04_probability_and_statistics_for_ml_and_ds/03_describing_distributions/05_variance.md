@@ -22,7 +22,10 @@ The standard approach is to use the **squared deviation**, `(X - E[X])²`. This 
 
 **Definition:** The **variance**, denoted as `Var(X)` or `σ²`, is the expected value (or average) of the squared deviation.
 
-> $$ \text{Var}(X) = E[(X - E[X])^2] $$
+```math
+\text{Var}(X) = E[(X - E[X])^2]
+```
+<br>
 
 Let's calculate the variance for our two games:
 * **Game 1:** The squared deviations are $(-1-0)^2=1$ and $(1-0)^2=1$.
@@ -37,7 +40,11 @@ The variance successfully captures the massive difference in the spread of the t
 
 While the definition above is intuitive, an alternative formula is often easier for calculations:
 
-> $$ \text{Var}(X) = E[X^2] - (E[X])^2 $$
+```math
+\text{Var}(X) = E[X^2] - (E[X])^2
+```
+<br>
+
 In words: The variance is the expected value of the square of the variable, minus the square of the expected value.
 
 ## Properties of Variance
@@ -46,7 +53,10 @@ Variance has a very important property related to scaling and shifting a random 
 
 **Rule:** For any random variable `X` and any constants `a` and `b`:  
 
-> $$ \text{Var}(aX + b) = a^2\text{Var}(X) $$
+```math
+\text{Var}(aX + b) = a^2\text{Var}(X)
+```
+<br>
 
 Let's break this down:
 * **Adding a constant `b` does not change the variance.** Shifting a distribution left or right changes its mean, but it does **not** change its spread.
