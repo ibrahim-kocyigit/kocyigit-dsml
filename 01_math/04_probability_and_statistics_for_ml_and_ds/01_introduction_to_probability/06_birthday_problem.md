@@ -39,7 +39,7 @@ P(\text{no matches}) = \frac{365}{365} \times \frac{364}{365} \times \frac{363}{
 ```
 <br>
 
-Let's visualize how quickly this probability drops as the number of people increases.
+Let's visualize how quickly this probability drops as the number of people increases:
 
 ![](./images/0601.png)
 
