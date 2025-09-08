@@ -28,12 +28,11 @@ This is always true, and it leads us to the **Complement Rule**.
 
 The probability of an event `A` not occurring is equal to 1 minus the probability of `A` occurring.
 
-> **Formula:**
-> ```math
-> P(A') = 1 - P(A)
-> ```
-> <br>
-> *Where `A'` (A-prime) represents the complement of event `A`.*
+### Formula:
+```math
+P(A') = 1 - P(A)
+```
+*Where `A'` (A-prime) represents the complement of event `A`.*
 
 In the Venn diagram, if the event `P(soccer)` is the area inside the circle (30%), then its complement `P(not soccer)` is the entire area *outside* the circle (70%). Together, they make up the entire sample space (100%).
 
