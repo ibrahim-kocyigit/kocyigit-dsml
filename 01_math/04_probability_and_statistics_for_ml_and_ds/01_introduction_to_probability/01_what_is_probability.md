@@ -23,7 +23,10 @@ P(\text{Event}) = \frac{\text{Number of Favorable Outcomes}}{\text{Total Number 
 * The **sample space** is the set of all possible outcomes: "all the children in the school." The total number of outcomes is **10**.
 
 Therefore, the probability is:
-$$ P(\text{soccer}) = \frac{3}{10} = 0.3 \quad \text{or} \quad 30\% $$
+```math
+P(\text{soccer}) = \frac{3}{10} = 0.3 \quad \text{or} \quad 30\%
+```
+<br>
 
 We can visualize this relationship using a Venn diagram:
 
@@ -49,7 +52,11 @@ Our sample space has 4 total possible outcomes: **{HH, HT, TH, TT}**.
 **Quiz:** What is the probability of both coins landing on heads?
 * The number of favorable outcomes (HH) is **1**.
 * The total number of outcomes is **4**.
-* **Probability:** $P(\text{HH}) = \frac{1}{4} = 0.25$
+* **Probability:** 
+```math
+P(\text{HH}) = \frac{1}{4} = 0.25
+```
+<br>
 
 ### Experiment 3: Flipping Three Coins
 If we flip three coins, the number of outcomes doubles again. The sample space is:
