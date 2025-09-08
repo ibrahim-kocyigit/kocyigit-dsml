@@ -16,7 +16,7 @@ This is not the variance, but it is directly used to calculate the variance: $\t
 #### Third Moment (k=3): $E[X^3]$
 This is used to calculate the **skewness** of a distribution.
 
-#### Fourth Moment (k=4):** $E[X^4]$
+#### Fourth Moment (k=4): $E[X^4]$
 This is used to calculate the **kurtosis** of a distribution.
 
 ### General Formula (Discrete Case):
@@ -26,4 +26,4 @@ E[X^k] = \sum x_i^k \cdot P(X=x_i)
 ```
 <br>
 
-In this lesson, we will focus on what the third and fourth moments tell us about a distribution's shape.
+In the next two lessons, we will focus on what the third and fourth moments tell us about a distribution's shape.
