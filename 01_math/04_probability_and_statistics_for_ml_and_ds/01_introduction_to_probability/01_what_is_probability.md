@@ -17,7 +17,8 @@ To solve this, we use the basic formula for probability:
 ```math
 P(\text{Event}) = \frac{\text{Number of Favorable Outcomes}}{\text{Total Number of Possible Outcomes}}
 ```
-
+  
+  
 * The **event** is the outcome we are interested in: "the child plays soccer." The number of favorable outcomes is **3**.
 * The **sample space** is the set of all possible outcomes: "all the children in the school." The total number of outcomes is **10**.
 
