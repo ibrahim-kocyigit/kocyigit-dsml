@@ -71,7 +71,12 @@ There are **8** total possible outcomes.
 **Quiz:** What is the probability of all three coins landing on heads?
 * The number of favorable outcomes (HHH) is **1**.
 * The total number of outcomes is **8**.
-* **Probability:** $P(\text{HHH}) = \frac{1}{8} = 0.125$
+* **Probability:**
+
+```math
+P(\text{HHH}) = \frac{1}{8} = 0.125
+```
+<br>
 
 ## The Dice Roll Experiment
 
@@ -84,17 +89,29 @@ Let's reinforce the concept of probability using the experiment of rolling a fai
 * **Sample Space:** There are 6 equally likely outcomes: {1, 2, 3, 4, 5, 6}.
 * **Event:** The outcome we are interested in is "rolling a 6." There is only **1** favorable outcome.
 * **Probability:**
-    $$ P(\text{rolling a 6}) = \frac{1}{6} $$
+```math
+P(\text{rolling a 6}) = \frac{1}{6}
+```
+<br>
+
 
 ### Experiment 2: Rolling Two Dice
 
 **Question:** What is the probability of rolling two 6s?
 
-To find the answer, we need to determine the size of our sample space. For each of the 6 possible outcomes of the first die, there are 6 possible outcomes for the second die. Therefore, the total number of possible outcomes is $6 \times 6 = 36$.
+To find the answer, we need to determine the size of our sample space. For each of the 6 possible outcomes of the first die, there are 6 possible outcomes for the second die. Therefore, the total number of possible outcomes is 
+
+```math
+6 \times 6 = 36
+```
+<br>
 
 The sample space is {(1,1), (1,2), ..., (6,5), (6,6)}.
 
 * **Sample Space:** 36 total outcomes.
 * **Event:** The outcome we want is "(6, 6)". There is only **1** favorable outcome.
 * **Probability:**
-    $$ P(\text{rolling two 6s}) = \frac{1}{36} $$
+```math
+P(\text{rolling two 6s}) = \frac{1}{36}
+```
+<br>
