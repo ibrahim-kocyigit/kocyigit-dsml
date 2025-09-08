@@ -42,8 +42,11 @@ Let's calculate the **fourth moment**, $E[X^4]$.
 
 The fourth moment is finally different, and it's much larger for Game 2. This is because the extreme values (`-10` and `10`), when raised to the fourth power, have a huge impact on the calculation, even though their probabilities are small.
 
-> **Kurtosis** is the standardized fourth moment. It measures the "tailedness" of a distribution—how much of its variance is due to infrequent, extreme outliers.
-> $$ \text{Kurtosis} = E \left[ \left(\frac{X - \mu}{\sigma}\right)^4 \right] $$
+**Kurtosis** is the standardized fourth moment. It measures the "tailedness" of a distribution—how much of its variance is due to infrequent, extreme outliers.
+```math
+\text{Kurtosis} = E \left[ \left(\frac{X - \mu}{\sigma}\right)^4 \right]
+```
+<br>
 
 * **Low Kurtosis (Thin Tails):** The distribution's variance comes from frequent, modest deviations from the mean (like Game 1).
 * **High Kurtosis (Thick/Heavy Tails):** The distribution's variance is driven by rare, extreme outliers (like Game 2).
