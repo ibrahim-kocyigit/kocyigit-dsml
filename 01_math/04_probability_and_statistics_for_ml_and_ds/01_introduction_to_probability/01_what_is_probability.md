@@ -99,12 +99,7 @@ P(\text{rolling a 6}) = \frac{1}{6}
 
 **Question:** What is the probability of rolling two 6s?
 
-To find the answer, we need to determine the size of our sample space. For each of the 6 possible outcomes of the first die, there are 6 possible outcomes for the second die. Therefore, the total number of possible outcomes is 
-
-```math
-6 \times 6 = 36
-```
-<br>
+To find the answer, we need to determine the size of our sample space. For each of the 6 possible outcomes of the first die, there are 6 possible outcomes for the second die. Therefore, the total number of possible outcomes is $6 \times 6 = 36$.
 
 The sample space is {(1,1), (1,2), ..., (6,5), (6,6)}.
 
