@@ -32,7 +32,6 @@ The probability of an event `A` not occurring is equal to 1 minus the probabilit
 > ```math
 > P(A') = 1 - P(A)
 > ```
-*Where `A'` (A-prime) represents the complement of event `A`.*
 
 In the Venn diagram, if the event `P(soccer)` is the area inside the circle (30%), then its complement `P(not soccer)` is the entire area *outside* the circle (70%). Together, they make up the entire sample space (100%).
 
