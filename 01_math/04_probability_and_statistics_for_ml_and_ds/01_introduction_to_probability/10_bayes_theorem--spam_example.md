@@ -33,6 +33,7 @@ When we are given the evidence that an email contains the word "lottery," our wo
 ```math
 P(\text{Spam} | \text{lottery}) = \frac{\text{Number of spam emails with "lottery"}}{\text{Total number of emails with "lottery"}} = \frac{14}{24} = \frac{7}{12} \approx 0.583
 ```
+<br>
 
 So, after seeing the word "lottery," our belief that the email is spam has increased from our prior probability of 20% to a new **posterior probability** of 58.3%.
 
