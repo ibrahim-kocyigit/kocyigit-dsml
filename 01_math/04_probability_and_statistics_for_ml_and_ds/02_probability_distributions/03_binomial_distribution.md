@@ -13,7 +13,7 @@ Let's ask a specific question: What is the probability of obtaining exactly **2 
 The process has two parts:
 1.  **Calculate the probability of one specific sequence:**. 
 
-* One possible sequence is `HHTTT`. Since each flip is an independent event with P(H)=0.5 and P(T)=0.5, the probability of this specific sequence is:
+One possible sequence is `HHTTT`. Since each flip is an independent event with P(H)=0.5 and P(T)=0.5, the probability of this specific sequence is:
 
 ```math
 (0.5) \times (0.5) \times (0.5) \times (0.5) \times (0.5) = (0.5)^5 = \frac{1}{32}
