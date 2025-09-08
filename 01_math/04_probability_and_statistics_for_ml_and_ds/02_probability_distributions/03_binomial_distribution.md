@@ -13,19 +13,28 @@ Let's ask a specific question: What is the probability of obtaining exactly **2 
 The process has two parts:
 1.  **Calculate the probability of one specific sequence:**. 
 
-One possible sequence is `HHTTT`. Since each flip is an independent event with P(H)=0.5 and P(T)=0.5, the probability of this specific sequence is:
+* One possible sequence is `HHTTT`. Since each flip is an independent event with P(H)=0.5 and P(T)=0.5, the probability of this specific sequence is:
+
 ```math
 (0.5) \times (0.5) \times (0.5) \times (0.5) \times (0.5) = (0.5)^5 = \frac{1}{32}
 ```
 <br>
 
-2.  **Count the number of possible sequences:**
-    * `HHTTT` is not the only way to get 2 heads. `HTHTT` and `TTHHH` are other possibilities. We need to count how many unique ways we can arrange 2 heads and 3 tails.
-    * This is a combination problem. The number of ways to choose *k* successes from *n* trials is given by the **binomial coefficient**:
-    $$ \binom{n}{k} = \frac{n!}{k!(n-k)!} $$
-    * For our problem, this is "5 choose 2":
-    $$ \binom{5}{2} = \frac{5!}{2!(5-2)!} = \frac{120}{2 \cdot 6} = 10 $$
-    * There are **10** different ways to get exactly 2 heads in 5 flips.
+2.  **Count the number of possible sequences:**. 
+
+`HHTTT` is not the only way to get 2 heads. `HTHTT` and `TTHHH` are other possibilities. We need to count how many unique ways we can arrange 2 heads and 3 tails.
+
+This is a combination problem. The number of ways to choose *k* successes from *n* trials is given by the **binomial coefficient**:
+```math
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
+```
+
+For our problem, this is "5 choose 2":
+```math
+\binom{5}{2} = \frac{5!}{2!(5-2)!} = \frac{120}{2 \cdot 6} = 10
+```
+
+* There are **10** different ways to get exactly 2 heads in 5 flips.
 
 Since each of these 10 sequences has a probability of 1/32, the total probability is:
 $$ P(X=2) = 10 \times \frac{1}{32} = \frac{10}{32} $$
