@@ -64,10 +64,13 @@ The large positive covariance confirms the strong positive linear relationship w
 | 15 | 0 | 4.5 | -3.7 | -16.65 |
 | **Sum** | | | | **-74.5** |
 
-$$ \text{Cov}(\text{Age, Naps}) = \frac{-74.5}{10} = -7.45 $$
+```math
+\text{Cov}(\text{Age, Naps}) = \frac{-74.5}{10} = -7.45
+```
+<br>
+
 The large negative covariance confirms the strong negative linear relationship.
 
----
 ### Scenario 3: Age vs. Grades
 * **Mean of Age ($\mu_x$):** 10.5
 * **Mean of Grades ($\mu_y$):** 5.0
@@ -86,5 +89,9 @@ The large negative covariance confirms the strong negative linear relationship.
 | 15 | 7 | 4.5 | 2.0 | 9.0 |
 | **Sum** | | | | **1.0** |
 
-$$ \text{Cov}(\text{Age, Grades}) = \frac{1.0}{10} = 0.1 $$
+```math
+\text{Cov}(\text{Age, Grades}) = \frac{1.0}{10} = 0.1
+```
+<br>
+
 The covariance is very close to zero, confirming the lack of a clear linear relationship that we observed in the scatter plot.
