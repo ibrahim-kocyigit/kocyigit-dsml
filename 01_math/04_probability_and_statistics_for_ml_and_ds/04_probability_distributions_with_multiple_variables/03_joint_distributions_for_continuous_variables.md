@@ -29,20 +29,31 @@ For our call center data, we'd expect two peaks:
 
 We can now calculate the mean and variance for each of our variables from the joint dataset.
 
-**Mean (Expected Value):**
-$ E[X] = \mu_x = 4.903 $
-<br>
-
+#### Mean (Expected Value):
+```math
+E[X] = \mu_x = 4.903
+```
 ```math
 E[Y] = \mu_y = 5.280
 ```
 <br>
 
-**Variance:**
+#### Variance:
 To calculate the variance, we use the formula $\text{Var}(X) = E[X^2] - (E[X])^2$.
-* For X (Wait Time):
-    * $ E[X^2] = 32.561 $
-    * $ \text{Var}(X) = 32.561 - (4.903)^2 \approx 8.526 $
-* For Y (Satisfaction):
-    * $ E[Y^2] = 38.037 $
-    * $ \text{Var}(Y) = 38.037 - (5.280)^2 \approx 10.163 $
+
+**For X (Wait Time):**  
+```math
+E[X^2] = 32.561
+```
+```math
+\text{Var}(X) = 32.561 - (4.903)^2 \approx 8.526
+```
+<br>
+
+**For Y (Satisfaction):**   
+```math
+E[Y^2] = 38.037
+```
+```math
+\text{Var}(Y) = 38.037 - (5.280)^2 \approx 10.163
+```
