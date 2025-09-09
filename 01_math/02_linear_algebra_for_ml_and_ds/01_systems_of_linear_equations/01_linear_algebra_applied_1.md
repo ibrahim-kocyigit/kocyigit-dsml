@@ -52,8 +52,6 @@ y = w_1x_1 + w_2x_2 + \dots + w_nx_n + b
 
 Here, $x_1, x_2, \dots, x_n$ represent the different input features. Conceptually, it works the same way: we need to find the right values for all the weights ($w_1, \dots, w_n$) and the bias ($b$) to make accurate predictions.
 
----
-
 ## From Regression to Systems of Equations
 
 In a typical machine learning dataset, you don't have just one data point; you have many records (let's say $m$ records). Each record gives us a complete equation where the feature values ($x$'s) and the target value ($y$) are known. The unknowns we need to solve for are the weights and the bias.

@@ -9,8 +9,6 @@ In the previous section, we established that a linear regression model with $n$ 
 
 An important thing to remember is that the **weights ($w$)** and the **bias ($b$)** are the **same for all equations**. We are looking for a single set of these values that works for every record in our dataset. The features ($x$) and targets ($y$) are unique to each row.
 
----
-
 ## A More Compact Notation: Vectors and Matrices
 
 Writing out the full system of equations can be cumbersome. Linear algebra gives us a much more efficient way to represent this using **vectors** and **matrices**.
@@ -30,9 +28,7 @@ $$ y = WX + b $$
 
 This compact form is the backbone of how we perform calculations in machine learning.
 
-*(Note: If you're already familiar with linear algebra, you might notice we're being a bit imprecise here. Depending on how we define our vectors and matrices, we might need to use a transpose ($W^T$) to make the math work. We'll ignore that detail for now to focus on the core concept.)*
-
---- 
+*(Note: If you're already familiar with linear algebra, you might notice we're being a bit imprecise here. Depending on how we define our vectors and matrices, we might need to use a transpose to make the math work. We'll ignore that detail for now to focus on the core concept.)*
 
 ## Analytical vs. Empirical Solutions
 
@@ -41,8 +37,6 @@ When you have a system of linear equations, there are two general ways to "solve
 * **Analytical Solution**: This is what you do with a pencil and paper. Using algebraic methods like substitution or elimination, you can find the *exact* values for your unknowns. This is possible if you have a "perfect" system, often where the number of unique equations matches the number of unknown variables.
 
 * **Empirical Solution**: This is the machine learning approach. In reality, data is noisy and a perfect solution rarely exists. Linear regression finds the best *approximate* solution by iteratively adjusting the weights and bias to minimize the error. It's an empirical, or data-driven, way of finding the best-fit line or plane.
-
----
 
 ## A New Problem: What Are Your Scores? 🤔
 
@@ -53,8 +47,6 @@ Let's frame a new problem to explore these concepts. Imagine you took three cour
 3.  Four times your Linear Algebra score minus double your Calculus score plus your Probability & Statistics score is **10**.
 
 Can we use this information to figure out your exact scores? Let's turn these sentences into a system of linear equations.
-
---- 
 
 ## Formulating the System of Equations
 
@@ -70,8 +62,6 @@ Now we can translate the sentences into equations:
 3.  $4a - 2c + p = 10$
 
 This is a classic system of linear equations. Since we have 3 distinct equations and 3 unknowns, we might be able to solve this analytically (We will cover how to solve systems of linear equations later).
-
----
 
 ## Relating This Back to Machine Learning
 
