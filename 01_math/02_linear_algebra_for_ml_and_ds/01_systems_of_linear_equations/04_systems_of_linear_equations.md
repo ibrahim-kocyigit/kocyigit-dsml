@@ -10,7 +10,10 @@ Can be turned into an equation by assigning variables:
 * Let `b` = the price of a banana.
 
 The resulting equation is:
-$ a + b = 10 $
+```math
+a + b = 10
+```
+<br>
 
 In this section, we'll solve a few systems using logic and see how they can result in one unique solution, infinite solutions, or no solution at all.
 
@@ -32,7 +35,10 @@ Let's solve this with logic. The only difference between your purchase on Day 1 
 Therefore, that one extra banana must cost 2 dollars. So, **b = 2**.
 
 Now that we know a banana costs 2 dollars, we can substitute this value back into the first day's equation:
-$ a + 2 = 10 $
+```math
+a + 2 = 10
+```
+<br>
 
 Solving for `a`, we find that an apple must cost 8 dollars. So, **a = 8**.
 
