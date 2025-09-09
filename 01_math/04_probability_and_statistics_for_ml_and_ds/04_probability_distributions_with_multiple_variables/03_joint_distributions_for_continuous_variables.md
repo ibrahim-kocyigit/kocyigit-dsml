@@ -61,4 +61,4 @@ E[Y^2] = 38.037
 
 ---
 
-**Next** [Marginal Distributions](./04_marginal_distributions.md)
+**Next:** [Marginal Distributions](./04_marginal_distributions.md)

@@ -100,4 +100,4 @@ The covariance is very close to zero, confirming the lack of a clear linear rela
 
 ---
 
-**Next** [Covariance of a Probability Distribution](./07_covariance_of_a_probability_description.md)
+**Next:** [Covariance of a Probability Distribution](./07_covariance_of_a_probability_description.md)

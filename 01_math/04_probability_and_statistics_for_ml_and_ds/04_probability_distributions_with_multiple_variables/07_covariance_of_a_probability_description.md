@@ -67,4 +67,4 @@ The negative covariance confirms our intuition that as wait time (`X`) increases
 
 ---
 
-**Next** []()
+**Next:** []()

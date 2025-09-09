@@ -52,4 +52,4 @@ f_{Y|X}(y|x) = \frac{f_{X,Y}(x,y)}{f_X(x)}
 
 ---
 
-**Next** [Covariance of a Dataset](./06_covariance_of_a_dataset.md)
+**Next:** [Covariance of a Dataset](./06_covariance_of_a_dataset.md)

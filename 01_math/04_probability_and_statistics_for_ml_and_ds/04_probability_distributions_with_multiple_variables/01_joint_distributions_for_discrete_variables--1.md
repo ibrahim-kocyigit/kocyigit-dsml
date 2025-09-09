@@ -66,4 +66,4 @@ With this table, we can easily look up any joint probability.
 
 ---
 
-**Next** [Joint Distribution (Discrete) - Part 2](./02_joint_distributions_for_discrete_variables--2.md.md)
+**Next:** [Joint Distribution (Discrete) - Part 2](./02_joint_distributions_for_discrete_variables--2.md.md)

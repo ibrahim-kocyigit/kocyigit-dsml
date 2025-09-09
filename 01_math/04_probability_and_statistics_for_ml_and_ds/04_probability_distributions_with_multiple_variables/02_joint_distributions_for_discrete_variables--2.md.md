@@ -66,4 +66,4 @@ With this table, we can easily find any joint probability.
 
 ---
 
-**Next** [Joint Distribution for Continuous Variables](./03_joint_distributions_for_continuous_variables.md)
+**Next:** [Joint Distribution for Continuous Variables](./03_joint_distributions_for_continuous_variables.md)

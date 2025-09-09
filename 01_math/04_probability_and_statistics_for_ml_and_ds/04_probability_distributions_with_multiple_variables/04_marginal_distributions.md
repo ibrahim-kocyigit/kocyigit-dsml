@@ -65,4 +65,4 @@ The result is a 1D probability distribution for a single variable, derived from 
 
 ---
 
-**Next** [Conditional Distributions](./05_conditional_distributions.md)
+**Next:** [Conditional Distributions](./05_conditional_distributions.md)
