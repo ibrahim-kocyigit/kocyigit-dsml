@@ -30,10 +30,9 @@ For our call center data, we'd expect two peaks:
 We can now calculate the mean and variance for each of our variables from the joint dataset.
 
 **Mean (Expected Value):**
-```math
-E[X] = \mu_x = 4.903
-```
+$ E[X] = \mu_x = 4.903 $
 <br>
+
 ```math
 E[Y] = \mu_y = 5.280
 ```
