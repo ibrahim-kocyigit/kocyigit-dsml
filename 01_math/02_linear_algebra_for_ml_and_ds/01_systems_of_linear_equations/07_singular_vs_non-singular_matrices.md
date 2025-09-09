@@ -52,6 +52,8 @@ Based on this:
 ```math
 \begin{bmatrix} 1 & 1 \\ 1 & 2 \end{bmatrix}
 ```
+<br>
+
 ... is **non-singular**.
 
 <br>
@@ -60,6 +62,8 @@ Based on this:
 ```math
 \begin{bmatrix} 1 & 1 \\ 2 & 2 \end{bmatrix}
 ```
+<br>
+
 ... is **singular**.
 <br>
 
