@@ -52,11 +52,16 @@ Based on this:
 ```math
 \begin{bmatrix} 1 & 1 \\ 1 & 2 \end{bmatrix}
 ```
-... is non-singular.
+... is **non-singular**.
 
 <br>
 
-2. The matrix $\begin{bmatrix} 1 & 1 \\ 2 & 2 \end{bmatrix}$ is **singular**.
+2. The matrix:
+```math
+\begin{bmatrix} 1 & 1 \\ 2 & 2 \end{bmatrix}
+```
+... is **singular**.
+<br>
 
 This is a key idea: we can now analyze a matrix on its own to determine these properties, without needing to solve the entire system of equations every time.
 
@@ -64,47 +69,48 @@ This is a key idea: we can now analyze a matrix on its own to determine these pr
 
 The same principle applies to larger systems. Let's form corresponding matrices for three 3x3 systems by taking the coefficients of `a`, `b`, and `c`:
 
-**System 1 (Non-Singular):**
+#### System 1 (Non-Singular):
 * $a + b + c = 10$
 * $a + 2b + c = 15$
 * $a + b + 2c = 12$
 * **Matrix 1:**
-$
+```math
 \begin{bmatrix}
 1 & 1 & 1 \\
 1 & 2 & 1 \\
 1 & 1 & 2
 \end{bmatrix}
-$
+```
+<br>
 
-**System 2 (Singular):**
+#### System 2 (Singular):
 * $a + b + c = 10$
 * $a + b + 2c = 15$
 * $a + b + 3c = 20$
 * **Matrix 2:**
-$
+```math
 \begin{bmatrix}
 1 & 1 & 1 \\
 1 & 1 & 2 \\
 1 & 1 & 3
 \end{bmatrix}
-$
+```
+<br>
 
-**System 3 (Singular):**
+#### System 3 (Singular):
 * $a + b + c = 10$
 * $2a + 2b + 2c = 20$
 * $3a + 3b + 3c = 30$
 
 * **Matrix 4:**
-$
+```math
 \begin{bmatrix}
 1 & 1 & 1 \\
 2 & 2 & 2 \\
 3 & 3 & 3
 \end{bmatrix}
-$  
-
----
+```
+<br>
 
 ## Classifying the 3x3 Matrices
 
