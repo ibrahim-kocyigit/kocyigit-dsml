@@ -122,3 +122,7 @@ The determinant gives us a quick, purely computational way to test for singulari
 
 * `det(A) = 0` ↔️ Rows are linearly **dependent** ↔️ Matrix is **SINGULAR**.
 * `det(A) ≠ 0` ↔️ Rows are linearly **independent** ↔️ Matrix is **NON-SINGULAR**.
+
+---
+
+[Next: Solving Non-Singular Systems of Linear Equations](../02_solving_systems_of_linear_equations/01_solving_non-singular_system_of_linear_equations.md)

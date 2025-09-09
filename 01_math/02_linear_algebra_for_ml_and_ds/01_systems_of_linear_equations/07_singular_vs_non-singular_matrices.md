@@ -125,3 +125,7 @@ Based on our analysis of the original systems, we can now classify these matrice
 * **Matrix 3** is **singular** because its system was also redundant.
 
 From now on, we can focus on the properties of the matrix itself to understand the nature of the system it represents.
+
+---
+
+[Next: Linear Dependence and Independence](./08_linear_dependence_and_independence.md)

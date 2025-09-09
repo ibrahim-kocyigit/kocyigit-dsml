@@ -98,3 +98,7 @@ We've been using the term **linear equation**. What exactly does it mean? An equ
 * Variables as exponents: $2^a + b = 10$
 
 **Linear Algebra** is the study of these simpler, "linear" systems. Their straightforward structure allows us to manipulate them and extract information in powerful ways.
+
+---
+
+[Next: Visualizing Systems of Equations as Lines and Planes](./05_visualizing_systems_of_equations_as_lines_and_planes.md)

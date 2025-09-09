@@ -82,3 +82,6 @@ Visualizing these can be tricky, but the concept is the same: the solution is th
 
 ![](./images/0505.png)
 
+---
+
+[Next: A Geometric Notion of Non-Singularity](./06_a_geometric_notion_of_non-singularity.md)

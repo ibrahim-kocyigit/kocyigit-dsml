@@ -65,3 +65,7 @@ Singularity is a property of the **coefficients of the variables** (e.g., the `2
 This means that to determine if a system is singular or non-singular, we only need to look at its simplified **homogeneous** version. The question simply becomes:
 * Do the lines intersect **only** at the origin? (Non-singular)
 * Do the lines **overlap** entirely? (Singular)
+
+---
+
+[Next: Singular vs. Non-Singular Matrices](./07_singular_vs_non-singular_matrices.md)

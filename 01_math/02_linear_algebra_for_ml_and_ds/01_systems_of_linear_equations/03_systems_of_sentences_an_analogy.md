@@ -97,3 +97,7 @@ Let's solve this step-by-step:
 
 1.  **What color is the bird?** The bird is **red**.
 2.  **Is the system singular or non-singular?** We started with 3 sentences and were able to determine 3 unique pieces of information (the color of each of the three animals). The system contains no redundancies or contradictions. Therefore, it is a **complete** system and is **non-singular**.
+
+---
+
+[Next: Systems of Linear Equations](./04_systems_of_linear_equations.md)
