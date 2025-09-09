@@ -46,3 +46,8 @@ A function `F(x)` must satisfy four conditions to be a valid CDF:
 2.  **The values must be between 0 and 1.** Since it represents a probability, it cannot be negative or greater than one.
 3.  **The left endpoint must be 0.** As $x \to -\infty$, $F(x) \to 0$.
 4.  **The right endpoint must be 1.** As $x \to \infty$, $F(x) \to 1$.
+
+
+---
+
+**Next:** [The Uniform Distribution](./09_uniform_distribution.md)

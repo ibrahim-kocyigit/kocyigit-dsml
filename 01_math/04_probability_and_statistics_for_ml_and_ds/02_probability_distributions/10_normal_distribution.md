@@ -51,3 +51,8 @@ The great thing about the normal distribution is that it models so many real-wor
 * IQ scores
 * Measurement errors in experiments
 * Noise in a communication channel
+
+
+---
+
+**Next:** [The Chi-Squared Distribution](./11_chi-squared_distribution.md)

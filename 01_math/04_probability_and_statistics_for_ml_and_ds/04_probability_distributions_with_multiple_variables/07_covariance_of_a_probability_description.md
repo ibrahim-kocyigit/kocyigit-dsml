@@ -63,3 +63,8 @@ Then the covariance is:
 <br>
 
 The negative covariance confirms our intuition that as wait time (`X`) increases, customer satisfaction (`Y`) tends to decrease.
+
+
+---
+
+**Next** []()

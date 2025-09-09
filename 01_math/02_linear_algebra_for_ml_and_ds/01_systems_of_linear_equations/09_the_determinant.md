@@ -125,4 +125,4 @@ The determinant gives us a quick, purely computational way to test for singulari
 
 ---
 
-[Next: Solving Non-Singular Systems of Linear Equations](../02_solving_systems_of_linear_equations/01_solving_non-singular_system_of_linear_equations.md)
+**Next:** [Solving Non-Singular Systems of Linear Equations](../02_solving_systems_of_linear_equations/01_solving_non-singular_system_of_linear_equations.md)

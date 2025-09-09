@@ -1,4 +1,4 @@
-# Conditional Distribution
+# Conditional Distributions
 
 A **conditional distribution** is the distribution of one variable *given that* we know the value of another. It's like taking a "slice" of the joint distribution.
 
@@ -48,3 +48,8 @@ The resulting 2D curve on that slice gives us the *shape* of the conditional dis
 f_{Y|X}(y|x) = \frac{f_{X,Y}(x,y)}{f_X(x)}
 ```
 *(Where the numerator is the joint PDF and the denominator is the marginal PDF.)*
+
+
+---
+
+**Next** [Covariance of a Dataset](./06_covariance_of_a_dataset.md)

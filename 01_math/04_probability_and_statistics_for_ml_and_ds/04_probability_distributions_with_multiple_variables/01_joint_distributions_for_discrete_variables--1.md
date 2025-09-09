@@ -1,4 +1,4 @@
-# Joint Distribution (Discrete) - Part 1
+# Joint Distribution for Discrete Variables - Part 1
 
 In the previous lessons, we learned about probability distributions for a single random variable. But what if we want to analyze two variables at the same time, for example, the **age** and **height** of a population, and see how they are related?
 
@@ -63,3 +63,7 @@ Now, we divide every count by the total number of children (10) to get the **Joi
 With this table, we can easily look up any joint probability.
 * $P(\text{Age}=8, \text{Height}=48) = 0.0$ (There are no children with this combination).
 * $P(\text{Age}=7, \text{Height}=46) = 0.2$ (2 out of 10 children have this combination).
+
+---
+
+**Next** [Joint Distribution (Discrete) - Part 2](./02_joint_distributions_for_discrete_variables--2.md.md)

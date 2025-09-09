@@ -62,3 +62,7 @@ This process is equivalent to taking an integral, but visually, it's like projec
 
 The result is a 1D probability distribution for a single variable, derived from the more complex 2D joint distribution.
 
+
+---
+
+**Next** [Conditional Distributions](./05_conditional_distributions.md)

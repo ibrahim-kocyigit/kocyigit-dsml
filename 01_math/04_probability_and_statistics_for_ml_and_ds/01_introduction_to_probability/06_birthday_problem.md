@@ -52,3 +52,8 @@ As the plot clearly shows, the probability of everyone having a unique birthday 
 * For **n=50** people, the probability of no match is a tiny 3%.
 
 This non-intuitive result happens because we are not comparing one person's birthday to another's; we are checking every possible **pair** of people in the group, and the number of pairs grows much faster than the number of people.
+
+
+---
+
+**Next:** [Conditional Probability](./07_conditional_probability.md)

@@ -26,3 +26,8 @@ Now let's look at the `sales` column from the same dataset, which appears more b
 This time, the QQ plot confirms that the `sales` data is **approximately normally distributed**. The blue data points fall very closely along the straight orange reference line, indicating that the quantiles of our sample data match the theoretical quantiles of a normal distribution very well.
 
 ![](./images/1602.png)
+
+
+---
+
+**Next:** [Joint Distribution (Discrete) - Part 1](../04_probability_distributions_with_multiple_variables/01_joint_distributions_for_discrete_variables--1.md)

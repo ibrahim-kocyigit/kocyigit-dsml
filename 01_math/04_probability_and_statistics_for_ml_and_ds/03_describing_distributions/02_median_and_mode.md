@@ -43,3 +43,8 @@ For a **normal distribution**, which is perfectly symmetric, the situation is ve
 > **The mean, median, and mode are all the exact same value**, located at the center and peak of the bell curve.
 
 ![](./images/0202.png)
+
+
+---
+
+**Next:** [Expected Value of a Function](./03_expected_value_of_a_function.md)

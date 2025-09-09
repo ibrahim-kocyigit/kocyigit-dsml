@@ -125,4 +125,4 @@ Visually, that looks like this:
 This elegant notation is fundamental to linear algebra and is used everywhere in machine learning to represent data and solve complex problems.
 
 ---
-[Next: Systems of Sentences - An Analogy](./03_systems_of_sentences_an_analogy.md)
+**Next:** [Systems of Sentences - An Analogy](./03_systems_of_sentences_an_analogy.md)

@@ -69,4 +69,4 @@ This collection of multiple linear equations that we want to solve simultaneousl
 
 ---
 
-[Next: Linear Algebra Applied - II ](./02_linear_algebra_applied_2.md)
+**Next:** [Linear Algebra Applied - II ](./02_linear_algebra_applied_2.md)

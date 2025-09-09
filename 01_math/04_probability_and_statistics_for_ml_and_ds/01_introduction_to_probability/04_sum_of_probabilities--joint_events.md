@@ -61,3 +61,7 @@ P(A \cup B) = \frac{6}{36} + \frac{10}{36} - \frac{2}{36} = \frac{14}{36} = \fra
 
 
 ![](./images/0402.png)
+
+---
+
+**Next:** [Independence](./05_independence.md)

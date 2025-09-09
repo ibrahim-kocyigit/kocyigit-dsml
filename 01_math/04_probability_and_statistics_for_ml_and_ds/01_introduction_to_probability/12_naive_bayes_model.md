@@ -75,3 +75,8 @@ P(\text{Spam} | \text{lottery} \cap \text{winning}) = \frac{\text{Numerator}}{\t
 <br>
 
 By combining the evidence from two words, our belief that the email is spam has increased dramatically, from 20% to **91.3%**. This is the power of the Naive Bayes algorithm.
+
+
+---
+
+**Next:** [Probability in Machine Learning](./13_probability_in_machine_learning.md)

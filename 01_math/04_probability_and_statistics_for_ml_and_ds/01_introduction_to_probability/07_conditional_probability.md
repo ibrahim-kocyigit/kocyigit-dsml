@@ -122,3 +122,8 @@ The probability tree shows us the four possible, mutually exclusive outcomes for
     * $P(S' \cap R') = 0.6 \times 0.5 = 0.30$ (30%)
 
 Notice that the sum of the probabilities of all possible outcomes is $0.32 + 0.08 + 0.30 + 0.30 = 1.0$.
+
+
+---
+
+**Next:** [Bayes' Theorem Intuition](./08_bayes_theorem--intuition.md)

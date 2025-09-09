@@ -53,3 +53,8 @@ The fourth moment is finally different, and it's much larger for Game 2. This is
 * **High Kurtosis (Thick/Heavy Tails):** The distribution's variance is driven by rare, extreme outliers (like Game 2).
 
 ![](./images/1101.png)
+
+
+---
+
+**Next:** [Quantiles](./12_quantiles.md)

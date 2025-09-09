@@ -61,3 +61,8 @@ Variance has a very important property related to scaling and shifting a random 
 Let's break this down:
 * **Adding a constant `b` does not change the variance.** Shifting a distribution left or right changes its mean, but it does **not** change its spread.
 * **Multiplying by a constant `a` scales the variance by `a²`.** If you double the value of all outcomes, you are also doubling their deviations from the mean. Since variance is based on the *squared* deviation, the total variance increases by a factor of $2^2 = 4$.
+
+
+---
+
+**Next:** [Standard Deviation](./06_standard_deviation.md)

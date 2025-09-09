@@ -32,3 +32,8 @@ For any normal distribution, a predictable percentage of the data lies within a 
 This is a powerful rule of thumb for quickly understanding the spread of normally distributed data.
 
 ![](./images/0601.png)
+
+
+---
+
+**Next:** [The Sum of Independent Gaussian (Normal) Variables](./07_sum_of_gaussians.md)

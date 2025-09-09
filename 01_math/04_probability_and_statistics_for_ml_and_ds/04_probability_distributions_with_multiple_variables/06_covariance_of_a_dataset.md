@@ -95,3 +95,9 @@ The large negative covariance confirms the strong negative linear relationship.
 <br>
 
 The covariance is very close to zero, confirming the lack of a clear linear relationship that we observed in the scatter plot.
+
+
+
+---
+
+**Next** [Covariance of a Probability Distribution](./07_covariance_of_a_probability_description.md)

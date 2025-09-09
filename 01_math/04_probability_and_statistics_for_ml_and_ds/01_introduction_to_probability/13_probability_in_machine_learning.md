@@ -51,3 +51,8 @@ Probability is also central to **unsupervised learning**, especially in a field 
 * **Text Generation:** The goal is to maximize the probability that a sequence of words forms a coherent and sensical sentence.
 
 In these cases, the model is trying to learn `P(Data)`—the probability of the data itself—in order to create new, high-probability examples.
+
+
+---
+
+**Next:** [Random Variables](../02_probability_distributions/01_random_variables.md)

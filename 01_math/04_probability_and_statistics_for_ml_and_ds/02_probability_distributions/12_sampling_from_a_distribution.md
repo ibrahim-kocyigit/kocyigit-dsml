@@ -32,3 +32,8 @@ The same beautiful principle works for continuous distributions. It's difficult 
 This process will generate new data points that perfectly follow the original Probability Density Function (PDF). Notice how the denser regions of the PDF correspond to the steeper parts of the CDF. This means that a uniform sampling on the y-axis will naturally produce more data points in those dense regions on the x-axis.
 
 ![](./images/1202.png)
+
+
+---
+
+**Next:** [Expected Value (Mean)](../03_describing_distributions/01_expected_value--mean.md)

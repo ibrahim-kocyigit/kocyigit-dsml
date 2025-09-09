@@ -33,3 +33,8 @@ The distribution of this new variable `W` is a **Chi-Squared distribution with *
 The number of **degrees of freedom** is the number of independent standard normal variables that you are summing. As the degrees of freedom (`k`) increase, the shape of the distribution changes: it becomes less skewed and starts to look more symmetric and bell-shaped.
 
 ![](./images/1102.png)
+
+
+---
+
+**Next:** [Sampling from a Distribution](./12_sampling_from_a_distribution.md)

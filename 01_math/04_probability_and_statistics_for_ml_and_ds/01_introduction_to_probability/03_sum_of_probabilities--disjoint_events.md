@@ -67,3 +67,7 @@ Let's visualize the sample space of 36 possible outcomes for rolling two dice.
 * $P(A \cup B) = \frac{8}{36} + \frac{10}{36} = \frac{18}{36} = \frac{1}{2}$
 
 ![](./images/0303.png)
+
+---
+
+**Next:** [The Sum of Probabilities (for Joint Events)](./04_sum_of_probabilities--joint_events.md)

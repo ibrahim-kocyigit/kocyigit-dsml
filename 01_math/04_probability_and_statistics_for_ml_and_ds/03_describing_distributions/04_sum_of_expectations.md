@@ -100,3 +100,8 @@ E[\text{Matches}] = E[P_1] + E[P_2] + \dots + E[P_n]
 <br>
 
 This is why the expected number of matches is always 1, no matter how many people there are.
+
+
+---
+
+**Next:** [Variance](./05_variance.md)

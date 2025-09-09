@@ -90,3 +90,8 @@ P(A|B) = \frac{0.000099}{0.010098} \approx 0.0098
 <br>
 
 The result is approximately **0.98%**, the exact same answer we found intuitively by breaking down the population. This formula may look complicated, but it's just a combination of the simpler probability rules we've already learned.
+
+
+---
+
+**Next:** [Bayes' Theorem - A Spam Filter Example](./10_bayes_theorem--spam_example.md)

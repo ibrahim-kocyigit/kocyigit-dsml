@@ -110,3 +110,7 @@ The sample space is {(1,1), (1,2), ..., (6,5), (6,6)}.
 P(\text{rolling two 6s}) = \frac{1}{36}
 ```
 <br>
+
+---
+
+**Next:** [The Complement of an Event](./02_complement_of_an_event.md)

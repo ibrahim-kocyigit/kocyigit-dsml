@@ -42,3 +42,8 @@ A box plot gives us several insights at a glance:
 Let's now look at a box plot for another dataset that includes some outliers.
 
 ![](./images/1302.png)
+
+
+---
+
+**Next:** [Visualizing Data: Kernel Density Estimation](./14_kernel_density_estimation.md)

@@ -60,3 +60,8 @@ P(X=x) = \binom{n}{x} p^x (1-p)^{n-x}
 Let's visualize this for the biased coin example:
 
 ![](./images/0401.png)
+
+
+---
+
+**Next:** [The Bernoulli Distribution](./05_bernoulli_distribution.md)

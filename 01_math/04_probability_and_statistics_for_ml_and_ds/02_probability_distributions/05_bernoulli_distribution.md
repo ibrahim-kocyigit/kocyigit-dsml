@@ -21,3 +21,8 @@ The Probability Mass Function (PMF) is very simple:
 * **P(X = 0) = 1 - p**
 
 This is the fundamental building block. A **Binomial distribution** simply describes the outcome of performing *n* independent Bernoulli trials.
+
+
+---
+
+**Next:** [Probability Distributions (Continuous)](./07_probability_density_function.md)

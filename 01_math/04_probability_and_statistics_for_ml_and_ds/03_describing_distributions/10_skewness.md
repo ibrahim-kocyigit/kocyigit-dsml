@@ -43,3 +43,8 @@ The third moment finally reveals the difference! The large positive value for th
 * **Zero Skewness:** The distribution is perfectly symmetric (like the normal distribution).
 
 ![](./images/1001.png)
+
+
+---
+
+**Next:** [Kurtosis](./11_kurtosis.md)

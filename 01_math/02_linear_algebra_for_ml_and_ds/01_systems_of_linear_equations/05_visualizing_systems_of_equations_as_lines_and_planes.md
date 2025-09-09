@@ -84,4 +84,4 @@ Visualizing these can be tricky, but the concept is the same: the solution is th
 
 ---
 
-[Next: A Geometric Notion of Non-Singularity](./06_a_geometric_notion_of_non-singularity.md)
+**Next:** [A Geometric Notion of Non-Singularity](./06_a_geometric_notion_of_non-singularity.md)

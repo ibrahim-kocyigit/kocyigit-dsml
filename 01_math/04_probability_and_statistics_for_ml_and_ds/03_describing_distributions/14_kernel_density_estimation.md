@@ -29,3 +29,8 @@ Let's see what happens when we have a much larger dataset. We will generate 1000
 Notice how the smooth KDE curve captures the overall shape of the blocky histogram, providing a much cleaner and more interpretable view of the data's distribution.
 
 ![](./images/1402.png)
+
+
+---
+
+**Next:** [Visualizing Data: Violin Plots](./15_violin_plots.md)

@@ -62,3 +62,7 @@ P(\text{not 6}) = 1 - P(6) = 1 - \frac{1}{6} = \frac{5}{6}
 <br>
 
 The complement rule is a very powerful tool that often simplifies probability problems by allowing us to calculate the probability of the event we *don't* want and subtracting it from 1.
+
+---
+
+**Next:** [The Sum of Probabilities (for Disjoint Events)](./03_sum_of_probabilities--disjoint_events.md)

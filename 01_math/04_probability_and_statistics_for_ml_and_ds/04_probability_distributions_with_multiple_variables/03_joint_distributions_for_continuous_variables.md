@@ -1,4 +1,4 @@
-# Joint Distribution (Continuous)
+# Joint Distribution for Continuous Variables
 
 So far, the joint distributions we've seen have involved discrete variables (like age and height rounded to the nearest inch). But what happens when both variables are **continuous**?
 
@@ -57,3 +57,8 @@ E[Y^2] = 38.037
 ```math
 \text{Var}(Y) = 38.037 - (5.280)^2 \approx 10.163
 ```
+
+
+---
+
+**Next** [Marginal Distributions](./04_marginal_distributions.md)

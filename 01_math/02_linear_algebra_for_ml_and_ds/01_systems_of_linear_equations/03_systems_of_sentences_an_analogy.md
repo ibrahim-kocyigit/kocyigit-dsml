@@ -100,4 +100,4 @@ Let's solve this step-by-step:
 
 ---
 
-[Next: Systems of Linear Equations](./04_systems_of_linear_equations.md)
+**Next:** [Systems of Linear Equations](./04_systems_of_linear_equations.md)

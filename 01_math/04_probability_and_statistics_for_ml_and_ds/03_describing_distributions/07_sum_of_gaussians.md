@@ -56,3 +56,8 @@ Parameters for `Z = aX + bY` are:
 ```math
 \sigma_Z^2 = a^2\sigma_X^2 + b^2\sigma_Y^2
 ```
+
+
+---
+
+**Next:** [Standardizing a Distribution](./08_standardizing_a_distribution.md)

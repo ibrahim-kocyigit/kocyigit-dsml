@@ -44,3 +44,8 @@ Let's look at our previous problems through this new lens.
 * **Event/Evidence:** You are told that the first coin landed on heads.
 * **Posterior:** The updated probability that both coins are heads, *given that* the first was heads.
     * $P(\text{HH} | \text{First=H}) = \frac{1}{2}$
+
+
+---
+
+**Next:** [The Naive Bayes Model](./12_naive_bayes_model.md)

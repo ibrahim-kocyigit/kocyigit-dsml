@@ -56,3 +56,7 @@ It's important to distinguish the random variables we study in probability from 
 
 * **Deterministic Variable:** Has a fixed, known value (e.g., `x = 2`).
 * **Random Variable:** Has an uncertain value described by a probability distribution.
+
+---
+
+**Next:** [Probability Distributions (Discrete)](./02_discrete_probability_distributions.md)

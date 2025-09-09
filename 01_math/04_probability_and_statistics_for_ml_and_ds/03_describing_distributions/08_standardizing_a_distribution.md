@@ -50,3 +50,8 @@ Z = \frac{X - \mu}{\sigma}
 The resulting variable `Z` will always have a mean of 0 and a standard deviation of 1. This process is crucial in statistics because it allows us to compare variables that are measured on different scales.
 
 ![](./images/0801.png)
+
+
+---
+
+**Next:** [Moments of a Distribution](./09_moments_of_a_distribution.md)

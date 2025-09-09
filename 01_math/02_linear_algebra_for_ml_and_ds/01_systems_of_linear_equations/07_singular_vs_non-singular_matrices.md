@@ -128,4 +128,4 @@ From now on, we can focus on the properties of the matrix itself to understand t
 
 ---
 
-[Next: Linear Dependence and Independence](./08_linear_dependence_and_independence.md)
+[Linear Dependence and Independence](./08_linear_dependence_and_independence.md)

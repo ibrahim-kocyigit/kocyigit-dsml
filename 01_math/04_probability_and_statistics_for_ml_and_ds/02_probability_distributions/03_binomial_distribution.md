@@ -80,3 +80,8 @@ P(X=3) = \binom{5}{3} (\frac{1}{6})^3 (1-\frac{1}{6})^{5-3}
 ```math
 = 10 \cdot (\frac{1}{216}) \cdot (\frac{5}{6})^2 = 10 \cdot \frac{1}{216} \cdot \frac{25}{36} \approx 0.032
 ```
+
+
+---
+
+**Next:** [The Binomial Coefficient](./04_binomial_coefficient.md)

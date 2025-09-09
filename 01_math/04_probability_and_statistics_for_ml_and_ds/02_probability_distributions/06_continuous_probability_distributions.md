@@ -33,3 +33,8 @@ Unlike a PMF where the height of a bar is the probability, the height of the PDF
 For continuous distributions, probability is not the height of the curve, but the **area under the curve** for a given interval.
 
 > **Key Rule:** For a continuous probability distribution, the **total area under the PDF curve must equal 1**. The probability of an outcome falling within a certain range is the area under the curve in that range.
+
+
+---
+
+**Next:** [The Probability Density Function](./07_probability_density_function.md)

@@ -79,3 +79,8 @@ E[aX + b] = aE[X] + b
 <br>
 
 This rule is extremely useful as it often allows us to simplify complex expected value calculations.
+
+
+---
+
+**Next:** [The Sum of Expectations](./04_sum_of_expectations.md)

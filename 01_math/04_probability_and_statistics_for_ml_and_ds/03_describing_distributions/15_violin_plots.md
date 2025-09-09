@@ -9,3 +9,8 @@ What's so cool about violin plots? They cleverly combine the information from tw
 Essentially, a violin plot is a KDE curve mirrored on both sides of a box plot. This allows you to see the statistical summary and the full distribution shape at the same time.
 
 ![](./images/1501.png)
+
+
+---
+
+**Next:** [Visualizing Data: QQ Plots](./16_qq_plots.md)

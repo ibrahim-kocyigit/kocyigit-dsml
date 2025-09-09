@@ -37,3 +37,8 @@ A function `f(x)` must satisfy three conditions to be considered a valid PDF:
 | **Probability Function**| **Probability Mass Function (PMF)**, `p(x)` | **Probability Density Function (PDF)**, `f(x)` |
 | **How to find P(X=x)?**| `p(x)` (The height of the bar) | **0** |
 | **How to find P(a ≤ X ≤ b)?**| Sum the heights of the bars from `a` to `b` | Find the **area under the curve** from `a` to `b` |
+
+
+---
+
+**Next:** [The Cumulative Distribution Function (CDF)](./08_cumulative_distribution_function.md)

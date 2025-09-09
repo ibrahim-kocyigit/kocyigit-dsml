@@ -56,3 +56,8 @@ F(x) =
 <br>
 
 ![](./images/0901.png)
+
+
+---
+
+**Next:** [The Normal Distribution](./10_normal_distribution.md)

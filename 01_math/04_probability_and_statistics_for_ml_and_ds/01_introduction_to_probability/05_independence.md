@@ -63,3 +63,7 @@ P(\text{6 and 6}) = P(\text{Die 1 = 6}) \cdot P(\text{Die 2 = 6}) = \frac{1}{6} 
 <br>
 
 This matches the result we found by counting the outcomes in the 36-cell sample space.
+
+---
+
+**Next:** [Birthday Problem](./06_birthday_problem.md)

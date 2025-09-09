@@ -130,6 +130,6 @@ This gives us our most direct definition of singularity yet.
     * **What it means:** Every row provides unique, essential information that cannot be constructed from the other rows.
     * **Result:** The matrix is **NON-SINGULAR**.
 
-    ---
+---
 
-    [Next: The Determinant](./09_the_determinant.md)
+**Next:** [The Determinant](./09_the_determinant.md)

@@ -68,4 +68,4 @@ This means that to determine if a system is singular or non-singular, we only ne
 
 ---
 
-[Next: Singular vs. Non-Singular Matrices](./07_singular_vs_non-singular_matrices.md)
+**Next:** [Singular vs. Non-Singular Matrices](./07_singular_vs_non-singular_matrices.md)

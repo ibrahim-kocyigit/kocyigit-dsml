@@ -76,3 +76,8 @@ P(\text{Spam} | \text{lottery}) = \frac{(0.2) \cdot (0.7)}{(0.2) \cdot (0.7) + (
 <br>
 
 The formal calculation gives us the exact same result as our intuitive method.
+
+
+---
+
+**Next:** [Bayes' Theorem - Prior and Posterior](./11_bayes_theorem--prior_and_posterior.md)

@@ -44,3 +44,8 @@ A function is a valid PMF if it satisfies two conditions:
 Notice that the shape of the probability distributions for 3, 4, and 5 coin tosses are all very similar—they are symmetric and bell-shaped. These random variables all belong to the same family of distributions, called the **Binomial Distribution**.
 
 We will learn more about the Binomial distribution and other common probability distributions in the next lesson.
+
+
+---
+
+**Next:** [The Binomial Distribution](./03_binomial_distribution.md)

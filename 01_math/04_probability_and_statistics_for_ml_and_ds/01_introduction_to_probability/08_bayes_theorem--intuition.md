@@ -71,3 +71,8 @@ This counter-intuitive result happens because the disease is very rare. The numb
 We can also visualize this process with a probability tree:
 
 ![](./images/0801.png)
+
+
+---
+
+**Next:** [Bayes' Theorem - The Mathematical Formula](./09_bayes_theorem--mathematical_formula.md)

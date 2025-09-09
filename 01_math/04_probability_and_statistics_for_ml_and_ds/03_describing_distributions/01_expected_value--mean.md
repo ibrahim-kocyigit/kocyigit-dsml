@@ -76,3 +76,7 @@ While we won't focus on the integral calculation, the visual intuition remains t
 It's natural to think that the mean is the point where the data is split in half (50% on one side, 50% on the other). That point is actually called the **median**.
 
 The mean is the **balancing point**. This means that in a skewed distribution, a few extreme values far from the center can "pull" the mean in their direction, just like a small mouse can balance a heavy elephant if it's placed far enough away on a seesaw.
+
+---
+
+**Next:** [Other Measures of Central Tendency: Median and Mode](./02_median_and_mode.md)

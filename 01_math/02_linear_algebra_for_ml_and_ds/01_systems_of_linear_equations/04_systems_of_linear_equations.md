@@ -101,4 +101,4 @@ We've been using the term **linear equation**. What exactly does it mean? An equ
 
 ---
 
-[Next: Visualizing Systems of Equations as Lines and Planes](./05_visualizing_systems_of_equations_as_lines_and_planes.md)
+**Next:** [Visualizing Systems of Equations as Lines and Planes](./05_visualizing_systems_of_equations_as_lines_and_planes.md)

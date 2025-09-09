@@ -27,3 +27,8 @@ E[X^k] = \sum x_i^k \cdot P(X=x_i)
 <br>
 
 In the next two lessons, we will focus on what the third and fourth moments tell us about a distribution's shape.
+
+
+---
+
+**Next:** [Skewness](./10_skewness.md)

@@ -1,4 +1,4 @@
-# Joint Distribution (Discrete) - Part 2
+# Joint Distribution for Discrete Variables - Part 2
 
 Let's continue our exploration of joint distributions with a classic example: rolling two fair six-sided dice.
 
@@ -63,3 +63,7 @@ With this table, we can easily find any joint probability.
 * **What is P(X=1, Y=1)?**
     * We look at the row for `Y=1` and the column for `X=1`. The probability is **0**. This is an impossible event, as the minimum possible sum is 2.
 
+
+---
+
+**Next** [Joint Distribution for Continuous Variables](./03_joint_distributions_for_continuous_variables.md)

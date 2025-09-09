@@ -1,4 +1,4 @@
-# Quantiles and Box Plots
+# Quantiles
 
 While we have numerical ways to describe a distribution (like mean, variance, etc.), it's also incredibly important to be able to visualize it. In this lesson, we will learn about **quantiles**, which are points that divide a dataset into equal-sized, continuous portions.
 
@@ -38,3 +38,8 @@ F(q_k) = \frac{k}{100}
 <br>
 
 ![](./images/1201.png)
+
+
+---
+
+**Next:** [Visualizing Data: Box Plots](./13_box_plots.md)
