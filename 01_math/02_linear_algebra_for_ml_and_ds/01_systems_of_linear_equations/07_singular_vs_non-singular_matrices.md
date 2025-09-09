@@ -48,8 +48,15 @@ The connection is very straightforward. We apply the same terminology from the s
     If a system of equations is **singular** (has infinitely many solutions or no solution), its matrix of coefficients is called a **singular matrix**.
 
 Based on this:
-* The matrix $\begin{bmatrix} 1 & 1 \\ 1 & 2 \end{bmatrix}$ is **non-singular**.
-* The matrix $\begin{bmatrix} 1 & 1 \\ 2 & 2 \end{bmatrix}$ is **singular**.
+1. The matrix: 
+```math
+\begin{bmatrix} 1 & 1 \\ 1 & 2 \end{bmatrix}
+```
+... is non-singular.
+
+<br>
+
+2. The matrix $\begin{bmatrix} 1 & 1 \\ 2 & 2 \end{bmatrix}$ is **singular**.
 
 This is a key idea: we can now analyze a matrix on its own to determine these properties, without needing to solve the entire system of equations every time.
 
