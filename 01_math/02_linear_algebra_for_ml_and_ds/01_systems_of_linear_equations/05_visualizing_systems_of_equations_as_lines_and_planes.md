@@ -10,7 +10,10 @@ A **system of equations** is simply the visualization of all the lines or planes
 ## Visualizing a Single Equation as a Line
 
 Let's take our familiar equation:
-$ a + b = 10 $
+```math
+a + b = 10
+```
+<br>
 
 How do we draw this? We just need to find some pairs of `(a, b)` that are solutions and plot them.
 * If `a = 10`, then `b = 0`. This gives us the point **(10, 0)**.
@@ -65,6 +68,8 @@ The same logic extends to three dimensions. An equation with three variables, li
 ```math
 a + b + c = 10
 ```
+<br>
+
 ...is represented by a flat **plane** in 3D space.
 
 A system of three such equations corresponds to an arrangement of three planes. The solution is where all three planes intersect.
