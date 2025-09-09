@@ -66,3 +66,6 @@ We can write one equation for each record in our dataset. We use a superscript i
 Ideally, we want to find a single set of weights ($w_1, \dots, w_n$) and a single bias ($b$) that solve all $m$ equations at the same time (or come as close as possible).
 
 This collection of multiple linear equations that we want to solve simultaneously is a fundamental concept known as a **system of linear equations**. This will be our main topic of study.
+
+
+[Next: Linear Algebra Applied - II ](./02_linear_algebra_applied_2.md)
