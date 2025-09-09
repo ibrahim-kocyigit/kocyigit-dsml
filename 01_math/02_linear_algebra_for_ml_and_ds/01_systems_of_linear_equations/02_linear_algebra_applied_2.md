@@ -109,9 +109,10 @@ The **targets** are the known results on the other side of the equal sign. In a 
 
 * In our problem, the targets are the equation outcomes: 6, 4, 10.
 * We collect these into a column **vector**, which we can call: 
-$
+```math
 y = \begin{bmatrix} 6 \\ 4 \\ 10 \end{bmatrix}
-$
+```
+<br>
 
 ### The Full Picture: $Xw = y$
 
