@@ -34,3 +34,17 @@ This process is an application of the conditional probability formula we've alre
 P(Y=y | X=x) = \frac{P(X=x, Y=y)}{P(X=x)}
 ```
 *(Where the numerator is the joint probability and the denominator is the marginal probability).*
+<br>
+
+## Conditional Distribution (Continuous Case)
+
+The concept is exactly the same for continuous variables. To find the conditional distribution of `Y` given a specific value of `X` (e.g., `X=4`), we take a "slice" of the 3D joint PDF at that `x` value.
+
+![](./images/0501.png)
+
+The resulting 2D curve on that slice gives us the *shape* of the conditional distribution. Just like in the discrete case, we then have to **normalize** this curve so that its total area is 1, making it a valid PDF.
+
+```math
+f_{Y|X}(y|x) = \frac{f_{X,Y}(x,y)}{f_X(x)}
+```
+*(Where the numerator is the joint PDF and the denominator is the marginal PDF.)*
