@@ -27,7 +27,10 @@ Let's go back to our basic 2x2 singular and non-singular matrices.
 <br>
 
 For the **singular matrix**, it's easy to see a relationship between the rows:
-$ \text{Row 2} = 2 \times \text{Row 1} $
+```math
+\text{Row 2} = 2 \times \text{Row 1}
+```
+<br>
 
 Because the second row can be perfectly predicted from the first, it offers no new information. The rows are said to be **linearly dependent**. This dependency is the reason the matrix is **singular**.
 
@@ -48,7 +51,10 @@ Consider this singular matrix:
 <br>
 
 Here, the relationship is:
-$ \text{Row 3} = \text{Row 1} + \text{Row 2} $
+```math
+\text{Row 3} = \text{Row 1} + \text{Row 2}
+```
+<br>
 
 Since the third row is just the sum of the first two, it is redundant. The information was already there. This makes the rows **linearly dependent** and the matrix **singular**.
 
