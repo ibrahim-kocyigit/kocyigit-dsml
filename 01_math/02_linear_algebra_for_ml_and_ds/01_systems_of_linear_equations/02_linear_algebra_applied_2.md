@@ -83,22 +83,25 @@ The **weights** are the unknown values we are trying to solve for. In machine le
 
 * In our problem, the unknowns are the scores: $a, c, p$.
 * We collect these into a single column **vector**:
-$
+```math
 w = \begin{bmatrix} a \\ c \\ p \end{bmatrix}
-$
+```
+<br>
 
 ### Features (The Known Coefficients) - Matrix $X$
 
 The **features** are the known coefficients that multiply each of our unknown weights. In a real dataset, these would be your input data points.
 
 * We collect all the features from our system of equations into a **matrix**, which we can call $X$. Each row in the matrix corresponds to one of our equations: 
-$
+```math
 X = \begin{bmatrix}
 1 & 1 & -1 \\
 1 & -1 & 2 \\
 4 & -2 & 1
 \end{bmatrix}
-$
+
+```
+<br>
 
 ### Targets (The Known Outcomes) - Vector $y$
 
@@ -116,16 +119,16 @@ When we put it all together, our entire system of three separate equations can b
 
 Visually, that looks like this:  
 
-$
+```math
 \begin{bmatrix}
 1 & 1 & -1 \\
 1 & -1 & 2 \\
 4 & -2 & 1
 \end{bmatrix}
 \begin{bmatrix} a \\ c \\ p \end{bmatrix}
-$=
-$
+=
 \begin{bmatrix} 6 \\ 4 \\ 10 \end{bmatrix}
-$ 
+```
+<br> 
 
 This elegant notation is fundamental to linear algebra and is used everywhere in machine learning to represent data and solve complex problems.
