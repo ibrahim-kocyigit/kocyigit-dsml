@@ -136,4 +136,4 @@ $\mathrm{Cov}(X, Y) = E[XY] - E[X]E[Y]$
 
 ---
 
-**Next:** []()
+**Next:** [Covariance Matrix](./08_covariance_matrix.md)
