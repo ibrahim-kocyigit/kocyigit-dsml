@@ -80,10 +80,6 @@ $$
 \end{pmatrix}
 $$
 
-## Five Variables Example
-
-For five variables, the covariance matrix is $5 \times 5$, with variances on the diagonal and covariances elsewhere.
-
 ## Visualization
 
 To visualize a covariance matrix, you can use a heatmap. 

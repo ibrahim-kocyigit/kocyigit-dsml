@@ -42,7 +42,8 @@ $$
 - Variance of age: 9.17
 - Variance of naps: 39.56
 
-Correlation coefficient:
+Correlation coefficient:  
+
 $$
 r = \frac{-7.45}{\sqrt{9.17} \times \sqrt{39.56}} \approx -0.894
 $$
