@@ -54,7 +54,8 @@ $$
 - Variance of age: 9.17
 - Variance of height: 39.56
 
-Correlation coefficient:
+Correlation coefficient:  
+
 $$
 r = \frac{17}{\sqrt{9.17} \times \sqrt{39.56}} \approx 0.893
 $$
