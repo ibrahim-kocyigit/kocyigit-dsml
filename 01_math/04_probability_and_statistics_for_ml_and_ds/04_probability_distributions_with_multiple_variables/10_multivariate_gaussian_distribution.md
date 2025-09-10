@@ -44,14 +44,7 @@ Where:
 - The diagonal elements of $\Sigma$ are the variances of each variable.
 - The off-diagonal elements are the covariances between variables.
 
-## Visualization
-
-- For two variables, the multivariate Gaussian looks like a bell surface.
-- If variables are independent, contours are circles.
-- If variables are correlated, contours are ellipses.
-
-**Graph:**  
-{insert screenshot of 3D bell surface and top-down view showing elliptical contours}
+![](./images/1003.png)
 
 ## Key Points
 
@@ -65,4 +58,6 @@ Where:
 - Multivariate Gaussian distributions are widely used in statistics and machine learning.
 - They model joint behavior of multiple variables, such as in principal component analysis (PCA), Gaussian mixture models, and more.
 
-**Next:** Exploratory Data
+---
+
+**Next:** []()
