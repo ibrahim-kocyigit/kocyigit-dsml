@@ -9,7 +9,7 @@ Players X and Y play three games, each with outcomes that affect their winnings 
 ### Game 1
 
 - **Outcomes**: Both players win $1$ $(+1, +1)$, or both lose $1$ $(-1, -1)$
-- **Probability**: Each outcome has probability $ \frac{1}{2} $
+- **Probability**: Each outcome has probability $\frac{1}{2}$
 
 **Graph**: Points at $(1, 1)$ and $(-1, -1)$, each with $0.5$ probability.
 
