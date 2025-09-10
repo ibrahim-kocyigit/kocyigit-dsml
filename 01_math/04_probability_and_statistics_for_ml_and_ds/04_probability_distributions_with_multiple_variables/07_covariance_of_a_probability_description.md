@@ -39,7 +39,7 @@ Players X and Y play three games, each with outcomes that affect their winnings 
 - **Outcomes**: Both win $1$ $(+1, +1)$, both lose $1$ $(-1, -1)$, or neither wins/loses $(0, 0)$
 - **Probabilities**: Win: $\frac{1}{2}$, Lose: $\frac{1}{3}$, Nothing: $\frac{1}{6}$
 
-**Graph**: Points at $(1, 1)$ [$0.5$], $(-1, -1)$ [$0.33$], $(0, 0)$ [$0.17$]
+**Graph**: Points at $(1, 1)$ [0.5], $(-1, -1)$ [0.33], $(0, 0)$ [0.17]
 
 ![Game 4 Outcome](images/0704.png)
 
