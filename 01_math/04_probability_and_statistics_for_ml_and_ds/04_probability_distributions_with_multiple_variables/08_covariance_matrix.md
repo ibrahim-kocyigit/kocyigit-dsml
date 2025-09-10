@@ -48,22 +48,24 @@ $$
 For the games with two players (X and Y), the covariance matrices for Game 1 and Game 2 are:
 
 **Game 1:**
-$$
+```math
 \Sigma =
 \begin{pmatrix}
 1 & 1 \\
 1 & 1
 \end{pmatrix}
-$$
+```
+<br>
 
 **Game 2:**
-$$
+```math
 \Sigma =
 \begin{pmatrix}
 1 & -1 \\
 -1 & 1
 \end{pmatrix}
-$$
+```
+<br>
 
 ## Three Variables Example
 
