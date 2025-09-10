@@ -46,49 +46,51 @@ Players X and Y play three games, each with outcomes that affect their winnings 
 ## Expectation and Variance Calculations
 
 For all games except Game 4:
-- $ E[X] = E[Y] = 0 $  
+- $E[X] = E[Y] = 0$  
   (average winnings are zero)
-- $ \operatorname{Var}(X) = \operatorname{Var}(Y) = 1 $  
-  (variance of individual outcomes is $1$)
+- $\mathrm{Var}(X) = \mathrm{Var}(Y) = 1$  
+  (variance of individual outcomes is 1)
 
 **Game 4:**
-- $ E[X] = E[Y] = \frac{1}{6} $
-- $ \operatorname{Var}(X) = \operatorname{Var}(Y) = 0.806 $  
+- $E[X] = E[Y] = \frac{1}{6}$
+- $\mathrm{Var}(X) = \mathrm{Var}(Y) = 0.806$  
   (calculated using weighted probabilities)
+
+---
 
 ## Covariance Calculations
 
 - **Covariance** measures how two variables change together.
 - Formula for discrete distributions (possibly unequal probabilities):
 
-$ \operatorname{Cov}(X, Y) = E\left[(X - E[X])(Y - E[Y])\right] = \sum_{i} p_i \cdot (X_i - E[X]) (Y_i - E[Y]) $
+$\mathrm{Cov}(X, Y) = E[(X - E[X])(Y - E[Y])] = \sum_{i} p_i \cdot (X_i - E[X]) (Y_i - E[Y])$
 
 Or equivalently:
 
-$ \operatorname{Cov}(X,Y) = E[XY] - E[X]E[Y] $
+$\mathrm{Cov}(X, Y) = E[XY] - E[X]E[Y]$
 
 ### Game 1
 
 - Both win or both lose together.
-- $ \operatorname{Cov}(X, Y) = 1 $
+- $\mathrm{Cov}(X, Y) = 1$
 - Positive correlation: outcomes move together.
 
 ### Game 2
 
 - One wins, other loses.
-- $ \operatorname{Cov}(X, Y) = -1 $
+- $\mathrm{Cov}(X, Y) = -1$
 - Negative correlation: outcomes move oppositely.
 
 ### Game 3
 
 - All combinations equally likely.
-- $ \operatorname{Cov}(X, Y) = 0 $
+- $\mathrm{Cov}(X, Y) = 0$
 - No correlation: knowing one outcome doesn’t predict the other.
 
 ### Game 4
 
 - Unequal probabilities.
-- $ \operatorname{Cov}(X, Y) = 0.806 $
+- $\mathrm{Cov}(X, Y) = 0.806$
 - Calculate using the general formula and weighted probabilities.
 
 ---
@@ -98,7 +100,7 @@ $ \operatorname{Cov}(X,Y) = E[XY] - E[X]E[Y] $
 - **Expectation and variance** of individual players do not distinguish these games.
 - **Covariance** reveals the relationship:
   - Positive covariance: players win/lose together.
-  - Negative covariance: player's outcomes are opposed.
+  - Negative covariance: players' outcomes are opposed.
   - Zero covariance: outcomes are independent.
 
 ---
@@ -109,25 +111,25 @@ $ \operatorname{Cov}(X,Y) = E[XY] - E[X]E[Y] $
 - **Y**: Customer rating.
 - **Observation**: As waiting time increases, rating decreases (negative correlation).
 
-**Covariance Calculation**:
+**Covariance Calculation:**
 
-$ E[XY] = 18.014 $  
-$ E[X] = 5.297 $  
-$ E[Y] = 4.917 $  
-$ \operatorname{Cov}(X, Y) = E[XY] - E[X]E[Y] = 18.014 - (5.297 \times 4.917) = -7.878 $
+- $E[XY] = 18.014$
+- $E[X] = 5.297$
+- $E[Y] = 4.917$
+- $\mathrm{Cov}(X, Y) = E[XY] - E[X]E[Y] = 18.014 - (5.297 \times 4.917) = -7.878$
 
-**Graph**: {add screenshot of graph for waiting time vs rating here}
+**Graph**: {insert screenshot of graph for waiting time vs rating here}
 
 ---
 
 ## Summary Table
 
-| Game   | Main Outcomes                               | Probabilities         | Covariance | Notes          |
-|--------|---------------------------------------------|----------------------|------------|----------------|
-| Game 1 | Both win or both lose                       | $ \frac{1}{2} $ each      | $+1$       | Positive corr. |
-| Game 2 | One wins, other loses                       | $ \frac{1}{2} $ each      | $-1$       | Negative corr. |
-| Game 3 | All combinations (win/lose)                 | $ \frac{1}{4} $ each      | $0$        | No corr.       |
-| Game 4 | Both win, both lose, or nothing             | $ \frac{1}{2}, \frac{1}{3}, \frac{1}{6} $ | $+0.806$    | Weighted corr. |
+| Game   | Main Outcomes                               | Probabilities                   | Covariance | Notes          |
+|--------|---------------------------------------------|---------------------------------|------------|----------------|
+| Game 1 | Both win or both lose                       | $1/2$ each                      | $+1$       | Positive corr. |
+| Game 2 | One wins, other loses                       | $1/2$ each                      | $-1$       | Negative corr. |
+| Game 3 | All combinations (win/lose)                 | $1/4$ each                      | $0$        | No corr.       |
+| Game 4 | Both win, both lose, or nothing             | $1/2$, $1/3$, $1/6$             | $+0.806$   | Weighted corr. |
 
 ---
 
@@ -135,4 +137,4 @@ $ \operatorname{Cov}(X, Y) = E[XY] - E[X]E[Y] = 18.014 - (5.297 \times 4.917) = 
 
 - Covariance quantifies the relationship between two random variables.
 - It is essential for distinguishing joint distributions, especially when expectation and variance are identical.
-- Positive covariance means variables increase together, negative means they move oppositely, zero means independence.
+- Positive covariance means variables increase together, negative means they move oppositely, zero means
