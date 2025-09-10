@@ -114,8 +114,6 @@ $\mathrm{Cov}(X, Y) = E[XY] - E[X]E[Y]$
 - $E[Y] = 5.280$
 - $\mathrm{Cov}(X, Y) = E[XY] - E[X]E[Y] = 18.014 - (4.903 \times 5.280) = -7.878$
 
-**Graph**:  
-
 ![](./images/0705.png)
 
 

@@ -73,8 +73,6 @@ The closer the data points are to a straight line, the closer the correlation co
 - Diagonal from top left to bottom right: negative correlation
 - Scattered points: correlation near zero
 
-**Graph:**  
-
 ![](./images/0901.png)
 
 ## Key Takeaways
