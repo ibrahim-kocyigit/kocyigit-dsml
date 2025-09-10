@@ -19,7 +19,7 @@ Players X and Y play three games, each with outcomes that affect their winnings 
 ### Game 2
 
 - **Outcomes**: X wins $1$, Y loses $1$ $(+1, -1)$; X loses $1$, Y wins $1$ $(-1, +1)$
-- **Probability**: Each outcome has probability $ \frac{1}{2} $
+- **Probability**: Each outcome has probability $\frac{1}{2}$
 
 **Graph**: Points at $(1, -1)$ and $(-1, 1)$, each with $0.5$ probability.
 
@@ -28,7 +28,7 @@ Players X and Y play three games, each with outcomes that affect their winnings 
 ### Game 3
 
 - **Outcomes**: Both win $1$ $(+1, +1)$, both lose $1$ $(-1, -1)$, X wins/Y loses $(+1, -1)$, X loses/Y wins $(-1, +1)$
-- **Probability**: Each outcome has probability $ \frac{1}{4} $
+- **Probability**: Each outcome has probability $\frac{1}{4}$
 
 **Graph**: Points at $(1, 1)$, $(1, -1)$, $(-1, 1)$, $(-1, -1)$, each with $0.25$ probability.
 
@@ -37,7 +37,7 @@ Players X and Y play three games, each with outcomes that affect their winnings 
 ### Game 4
 
 - **Outcomes**: Both win $1$ $(+1, +1)$, both lose $1$ $(-1, -1)$, or neither wins/loses $(0, 0)$
-- **Probabilities**: Win: $ \frac{1}{2} $, Lose: $ \frac{1}{3} $, Nothing: $ \frac{1}{6} $
+- **Probabilities**: Win: $\frac{1}{2}$, Lose: $\frac{1}{3}$, Nothing: $\frac{1}{6}$
 
 **Graph**: Points at $(1, 1)$ [$0.5$], $(-1, -1)$ [$0.33$], $(0, 0)$ [$0.17$]
 
