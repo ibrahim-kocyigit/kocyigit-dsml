@@ -86,7 +86,7 @@ For five variables, the covariance matrix is $5 \times 5$, with variances on the
 
 ## Visualization
 
-To visualize a covariance matrix, you can use a heatmap. Here is example code to generate a random covariance matrix and plot it:
+To visualize a covariance matrix, you can use a heatmap. 
 
 ![Covariance Matrix Heatmap](images/0801.png)
 
@@ -104,4 +104,4 @@ To visualize a covariance matrix, you can use a heatmap. Here is example code to
 
 ---
 
-**Next:** []()
+**Next:** [Correlation Coefficient](./09_correlation_coefficient.md)
