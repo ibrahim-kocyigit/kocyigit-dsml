@@ -93,8 +93,6 @@ $\mathrm{Cov}(X, Y) = E[XY] - E[X]E[Y]$
 - $\mathrm{Cov}(X, Y) = 0.806$
 - Calculate using the general formula and weighted probabilities.
 
----
-
 ## Covariance Distinguishes Games
 
 - **Expectation and variance** of individual players do not distinguish these games.
@@ -102,8 +100,6 @@ $\mathrm{Cov}(X, Y) = E[XY] - E[X]E[Y]$
   - Positive covariance: players win/lose together.
   - Negative covariance: players' outcomes are opposed.
   - Zero covariance: outcomes are independent.
-
----
 
 ## Practical Example: Waiting Time vs Customer Rating
 
@@ -114,13 +110,14 @@ $\mathrm{Cov}(X, Y) = E[XY] - E[X]E[Y]$
 **Covariance Calculation:**
 
 - $E[XY] = 18.014$
-- $E[X] = 5.297$
-- $E[Y] = 4.917$
-- $\mathrm{Cov}(X, Y) = E[XY] - E[X]E[Y] = 18.014 - (5.297 \times 4.917) = -7.878$
+- $E[X] = 4.903$
+- $E[Y] = 5.280$
+- $\mathrm{Cov}(X, Y) = E[XY] - E[X]E[Y] = 18.014 - (4.903 \times 5.280) = -7.878$
 
-**Graph**: {insert screenshot of graph for waiting time vs rating here}
+**Graph**:  
 
----
+![](./images/0705.png)
+
 
 ## Summary Table
 
@@ -131,10 +128,12 @@ $\mathrm{Cov}(X, Y) = E[XY] - E[X]E[Y]$
 | Game 3 | All combinations (win/lose)                 | $1/4$ each                      | $0$        | No corr.       |
 | Game 4 | Both win, both lose, or nothing             | $1/2$, $1/3$, $1/6$             | $+0.806$   | Weighted corr. |
 
----
-
 ## Key Takeaways
 
 - Covariance quantifies the relationship between two random variables.
 - It is essential for distinguishing joint distributions, especially when expectation and variance are identical.
 - Positive covariance means variables increase together, negative means they move oppositely, zero means
+
+---
+
+**Next:** []()
