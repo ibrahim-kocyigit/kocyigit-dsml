@@ -66,12 +66,6 @@ $$
 - Variances: much larger
 - Correlation coefficient: very close to 0 (uncorrelated)
 
-### Waiting Time vs. Customer Rating
-
-- Covariance: -7.878
-- Standard deviations: calculated from variances
-- Correlation coefficient: $-0.845$ (strong negative correlation)
-
 ## Visualization
 
 The closer the data points are to a straight line, the closer the correlation coefficient is to +1 or -1.  
@@ -80,7 +74,8 @@ The closer the data points are to a straight line, the closer the correlation co
 - Scattered points: correlation near zero
 
 **Graph:**  
-{insert screenshot of scatter plots for age vs. naps, age vs. height, age vs. grades, and waiting time vs. rating}
+
+![](./images/0901.png)
 
 ## Key Takeaways
 
@@ -89,4 +84,6 @@ The closer the data points are to a straight line, the closer the correlation co
 - The sign shows the direction of the relationship; the magnitude shows the strength.
 - Useful for comparing pairs of variables in statistics and machine learning.
 
-**Next:** []()
+---
+
+**Next:** [Multivariate Gaussian Distribution](./10_multivariate_gaussian_distribution.md)
