@@ -1,70 +1,138 @@
 # Covariance of a Probability Distribution
 
-The expected value and variance tell us a lot about a single random variable, but they don't capture the relationship *between* two variables. Consider three different games:
+## Scenario Overview
 
-* **Game 1:** You and a friend play. Either you both win 1 dollar, or you both lose 1 dollar. (Perfectly correlated)
-* **Game 2:** If you win 1 dollar, your friend loses 1 dollar, and vice versa. (Perfectly negatively correlated)
-* **Game 3:** There are four equally likely outcomes: (Win, Win), (Win, Lose), (Lose, Win), and (Lose, Lose). (Uncorrelated)
+Players X and Y play three games, each with outcomes that affect their winnings (either $+1$ or $-1$). For each game, the joint outcomes and their probabilities differ, leading to different covariance values. Covariance helps distinguish the relationships between player outcomes that expectancy and variance alone cannot.
 
-If we analyze each player's outcomes separately, we'll find that for all three games, the expected value is 0 and the variance is 1 for both players. These measures fail to tell the games apart. To see the difference, we must look at both players at the same time using **covariance**.
+## Game Definitions & Outcome Diagrams
 
-![](./images/0701.png)
+### Game 1
 
-## Calculating Covariance for a Distribution
+- **Outcomes**: Both players win $1$ $(+1, +1)$, or both lose $1$ $(-1, -1)$
+- **Probability**: Each outcome has probability $ \frac{1}{2} $
 
-The formula for the covariance of a dataset can be adapted for a probability distribution. It's the weighted average of the product of deviations, where the weights are the probabilities.
+**Graph**: Points at $(1, 1)$ and $(-1, -1)$, each with $0.5$ probability.
 
-
-```math
-\text{Cov}(X, Y) = E[(X - \mu_x)(Y - \mu_y)] = \sum (x_i - \mu_x)(y_i - \mu_y) \cdot P(X=x_i, Y=y_i)
-```
-<br>
-
-Let's calculate this for our three games. In all cases, $\mu_x = 0$ and $\mu_y = 0$, so the formula simplifies to $E[XY]$.
-
-* **For Game 1:** The possible outcomes are `(1, 1)` and `(-1, -1)`, each with probability 0.5.
-```math
-\text{Cov}(X, Y) = (1 \cdot 1 \cdot 0.5) + ((-1) \cdot (-1) \cdot 0.5) = 0.5 + 0.5 = 1
-```
-<br>
-
-* **For Game 2:** The outcomes are `(1, -1)` and `(-1, 1)`, each with probability 0.5.
-```math
-\text{Cov}(X, Y) = (1 \cdot -1 \cdot 0.5) + ((-1) \cdot 1 \cdot 0.5) = -0.5 + -0.5 = -1
-```
-<br>
-
-* **For Game 3:** The outcomes are `(1, 1)`, `(1, -1)`, `(-1, 1)`, and `(-1, -1)`, each with probability 0.25.
-```math
-\text{Cov}(X, Y) = (1 \cdot 1 \cdot 0.25) + (1 \cdot -1 \cdot 0.25) + (-1 \cdot 1 \cdot 0.25) + (-1 \cdot -1 \cdot 0.25)
-```
-```math
-= 0.25 - 0.25 - 0.25 + 0.25 = 0
-```
+![Game 1 Outcome](images/0701.png)
 
 
-## Alternative Formula
+### Game 2
 
-Just like with variance, there is an alternative and often simpler formula for covariance.
+- **Outcomes**: X wins $1$, Y loses $1$ $(+1, -1)$; X loses $1$, Y wins $1$ $(-1, +1)$
+- **Probability**: Each outcome has probability $ \frac{1}{2} $
 
-```math
-\text{Cov}(X, Y) = E[XY] - E[X]E[Y]
-```
-<br>
+**Graph**: Points at $(1, -1)$ and $(-1, 1)$, each with $0.5$ probability.
 
-Let's apply this to the **call center example** from the previous lesson.
-* We calculated the means: $E[X] = 4.903$ and $E[Y] = 5.280$.
-* Let's assume we calculate the expected value of the product, $E[XY]$, to be 18.014.
+![Game 2 Outcome](images/0702.png)
 
-Then the covariance is:
-```math
-\text{Cov}(X, Y) = 18.014 - (4.903 \cdot 5.280) = 18.014 - 25.888 \approx -7.87
-```
-<br>
+### Game 3
 
-The negative covariance confirms our intuition that as wait time (`X`) increases, customer satisfaction (`Y`) tends to decrease.
+- **Outcomes**: Both win $1$ $(+1, +1)$, both lose $1$ $(-1, -1)$, X wins/Y loses $(+1, -1)$, X loses/Y wins $(-1, +1)$
+- **Probability**: Each outcome has probability $ \frac{1}{4} $
 
+**Graph**: Points at $(1, 1)$, $(1, -1)$, $(-1, 1)$, $(-1, -1)$, each with $0.25$ probability.
+
+![Game 3 Outcome](images/0703.png)
+
+### Game 4
+
+- **Outcomes**: Both win $1$ $(+1, +1)$, both lose $1$ $(-1, -1)$, or neither wins/loses $(0, 0)$
+- **Probabilities**: Win: $ \frac{1}{2} $, Lose: $ \frac{1}{3} $, Nothing: $ \frac{1}{6} $
+
+**Graph**: Points at $(1, 1)$ [$0.5$], $(-1, -1)$ [$0.33$], $(0, 0)$ [$0.17$]
+
+![Game 4 Outcome](images/0704.png)
+
+## Expectation and Variance Calculations
+
+For all games except Game 4:
+- $ E[X] = E[Y] = 0 $  
+  (average winnings are zero)
+- $ \operatorname{Var}(X) = \operatorname{Var}(Y) = 1 $  
+  (variance of individual outcomes is $1$)
+
+**Game 4:**
+- $ E[X] = E[Y] = \frac{1}{6} $
+- $ \operatorname{Var}(X) = \operatorname{Var}(Y) = 0.806 $  
+  (calculated using weighted probabilities)
+
+## Covariance Calculations
+
+- **Covariance** measures how two variables change together.
+- Formula for discrete distributions (possibly unequal probabilities):
+
+$ \operatorname{Cov}(X, Y) = E\left[(X - E[X])(Y - E[Y])\right] = \sum_{i} p_i \cdot (X_i - E[X]) (Y_i - E[Y]) $
+
+Or equivalently:
+
+$ \operatorname{Cov}(X,Y) = E[XY] - E[X]E[Y] $
+
+### Game 1
+
+- Both win or both lose together.
+- $ \operatorname{Cov}(X, Y) = 1 $
+- Positive correlation: outcomes move together.
+
+### Game 2
+
+- One wins, other loses.
+- $ \operatorname{Cov}(X, Y) = -1 $
+- Negative correlation: outcomes move oppositely.
+
+### Game 3
+
+- All combinations equally likely.
+- $ \operatorname{Cov}(X, Y) = 0 $
+- No correlation: knowing one outcome doesn’t predict the other.
+
+### Game 4
+
+- Unequal probabilities.
+- $ \operatorname{Cov}(X, Y) = 0.806 $
+- Calculate using the general formula and weighted probabilities.
 
 ---
 
-**Next:** []()
+## Covariance Distinguishes Games
+
+- **Expectation and variance** of individual players do not distinguish these games.
+- **Covariance** reveals the relationship:
+  - Positive covariance: players win/lose together.
+  - Negative covariance: player's outcomes are opposed.
+  - Zero covariance: outcomes are independent.
+
+---
+
+## Practical Example: Waiting Time vs Customer Rating
+
+- **X**: Waiting time for a phone call.
+- **Y**: Customer rating.
+- **Observation**: As waiting time increases, rating decreases (negative correlation).
+
+**Covariance Calculation**:
+
+$ E[XY] = 18.014 $  
+$ E[X] = 5.297 $  
+$ E[Y] = 4.917 $  
+$ \operatorname{Cov}(X, Y) = E[XY] - E[X]E[Y] = 18.014 - (5.297 \times 4.917) = -7.878 $
+
+**Graph**: {add screenshot of graph for waiting time vs rating here}
+
+---
+
+## Summary Table
+
+| Game   | Main Outcomes                               | Probabilities         | Covariance | Notes          |
+|--------|---------------------------------------------|----------------------|------------|----------------|
+| Game 1 | Both win or both lose                       | $ \frac{1}{2} $ each      | $+1$       | Positive corr. |
+| Game 2 | One wins, other loses                       | $ \frac{1}{2} $ each      | $-1$       | Negative corr. |
+| Game 3 | All combinations (win/lose)                 | $ \frac{1}{4} $ each      | $0$        | No corr.       |
+| Game 4 | Both win, both lose, or nothing             | $ \frac{1}{2}, \frac{1}{3}, \frac{1}{6} $ | $+0.806$    | Weighted corr. |
+
+---
+
+## Key Takeaways
+
+- Covariance quantifies the relationship between two random variables.
+- It is essential for distinguishing joint distributions, especially when expectation and variance are identical.
+- Positive covariance means variables increase together, negative means they move oppositely, zero means independence.
