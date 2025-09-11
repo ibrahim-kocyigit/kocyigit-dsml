@@ -18,13 +18,13 @@ There are two primary ways we can manipulate linear equations to create new, equ
 
 1. **Multiplying by a Constant:**  
    If an equation is true, multiplying both sides by the same non-zero constant results in an equation that is also true and carries the same information.  
+
    *Example:* If $a + b = 10$, then $7(a+b) = 7(10)$, which gives $7a + 7b = 70$.
 
 2. **Adding Two Equations:**  
    If two separate equations are true, their sum is also a true equation.  
-   *Example:* If $a + b = 10$ and $2a + 3b = 26$ are both true, then adding them together gives $(a+2a) + (b+3b) = 10+26$, which simplifies to $3a + 4b = 36$.
 
----
+   *Example:* If $a + b = 10$ and $2a + 3b = 26$ are both true, then adding them together gives $(a+2a) + (b+3b) = 10+26$, which simplifies to $3a + 4b = 36$.
 
 ## Solving a System: A Step-by-Step Example
 
@@ -83,8 +83,6 @@ We have successfully transformed our original system into the solved system:
 1. $a = 3$
 2. $b = 2$
 
----
-
 ## A Special Case: Zero Coefficients
 
 What if the variable you want to eliminate is already missing from an equation?
@@ -103,4 +101,4 @@ We can then proceed with Step 4 as usual, substituting $b=2$ into the first equa
 
 ---
 
-**Next:** []()
+**Next:** [Solving Systems of Equations with More Variables](./03_solving_system_of_equations_with_more_variables.md)
