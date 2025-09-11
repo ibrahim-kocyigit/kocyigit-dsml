@@ -106,4 +106,4 @@ This shows that using $n$ in the denominator underestimates the variance, while 
 
 ---
 
-**Next:** []()
+**Next:** [Law of Large Numbers](./05_law_of_large_numbers.md)
