@@ -60,11 +60,41 @@ Using $n-1$ in the denominator corrects for the bias introduced by using the sam
 
 ## Example Calculation
 
-Suppose you randomly select 3 values from `larger_var`: [151, 159, 170].
+Suppose you have three cards labeled 1, 2, and 3. You draw one card at random.
 
-- Sample mean: $\bar{x} = \frac{151 + 159 + 170}{3} = 160$
-- Naive variance: $\frac{(151-160)^2 + (159-160)^2 + (170-160)^2}{3} = \frac{81 + 1 + 100}{3} = 60.67$
-- Unbiased variance: $\frac{(151-160)^2 + (159-160)^2 + (170-160)^2}{2} = \frac{182}{2} = 91$
+- **Population mean:**  
+  $\mu = \frac{1 + 2 + 3}{3} = 2$
+
+- **Population variance:**  
+  $\sigma^2 = \frac{(1-2)^2 + (2-2)^2 + (3-2)^2}{3} = \frac{1 + 0 + 1}{3} = \frac{2}{3}$
+
+Now, suppose you draw two cards (with replacement), so $n = 2$.  
+
+Let's look at all possible samples of size 2:
+
+| Sample | Sample Mean | Naive Variance (divide by $n$) | Unbiased Variance (divide by $n-1$) |
+|--------|-------------|-------------------------------|-------------------------------------|
+| (1,1)  | 1           | 0                             | 0                                   |
+| (1,2)  | 1.5         | 0.25                          | 0.5                                 |
+| (1,3)  | 2           | 1                             | 2                                   |
+| (2,1)  | 1.5         | 0.25                          | 0.5                                 |
+| (2,2)  | 2           | 0                             | 0                                   |
+| (2,3)  | 2.5         | 0.25                          | 0.5                                 |
+| (3,1)  | 2           | 1                             | 2                                   |
+| (3,2)  | 2.5         | 0.25                          | 0.5                                 |
+| (3,3)  | 3           | 0                             | 0                                   |
+
+Now, average the variances across all samples:
+
+- **Average naive variance (divide by $n$):**  
+  $(0 + 0.25 + 1 + 0.25 + 0 + 0.25 + 1 + 0.25 + 0) / 9 = 3 / 9 = 0.33$
+
+- **Average unbiased variance (divide by $n-1$):**  
+  $(0 + 0.5 + 2 + 0.5 + 0 + 0.5 + 2 + 0.5 + 0) / 9 = 6 / 9 = 0.67$
+
+The true population variance is $2/3 \approx 0.67$.
+
+This shows that using $n$ in the denominator underestimates the variance, while using $n-1$ gives an unbiased estimate (matches the true value).
 
 ## Summary
 
