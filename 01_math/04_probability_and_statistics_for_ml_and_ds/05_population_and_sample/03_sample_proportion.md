@@ -14,9 +14,11 @@ Example:
 If 4 out of 10 people own a bicycle, the population proportion is $4/10 = 0.4$ or 40%.
 
 This metric is called the **population proportion**, denoted by $P$:
-$$
+
+```math
 P = \frac{\text{Number with characteristic } x}{N}
-$$
+```
+
 where $N$ is the population size.
 
 ## Sample Proportion
@@ -28,9 +30,11 @@ Take a random sample of 6 people.
 If 2 out of 6 own a bicycle, the sample proportion is $2/6 \approx 0.333$ or 33.3%.
 
 This metric is the **sample proportion**, denoted by $\hat{P}$:
-$$
+
+```math
 \hat{P} = \frac{\text{Number with characteristic in sample}}{n}
-$$
+```
+
 where $n$ is the sample size.
 
 **Key Point:**  
