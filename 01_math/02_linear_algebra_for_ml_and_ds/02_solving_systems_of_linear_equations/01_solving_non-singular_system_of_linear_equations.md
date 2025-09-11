@@ -19,11 +19,13 @@ The goal of this lesson is to learn a systematic process to get from any non-sin
 There are two primary ways we can manipulate linear equations to create new, equally true equations.
 
 1. **Multiplying by a Constant:**  
-   If an equation is true, multiplying both sides by the same non-zero constant results in an equation that is also true and carries the same information.  
+   If an equation is true, multiplying both sides by the same non-zero constant results in an equation that is also true and carries the same information. 
+
    *Example:* If $a + b = 10$, then $7(a+b) = 7(10)$, which gives $7a + 7b = 70$.
 
 2. **Adding Two Equations:**  
    If two separate equations are true, their sum is also a true equation.  
+
    *Example:* If $a + b = 10$ and $2a + 3b = 26$ are both true, then adding them together gives $(a+2a) + (b+3b) = 10+26$, which simplifies to $3a + 4b = 36$.
 
 ## Solving a System: A Step-by-Step Example
@@ -80,11 +82,21 @@ We have found the first part of our solution!
 
 Now that we know $b = 2$, we can substitute this value back into one of our simplified original equations (let's use the first one).
 
-$ a + 0.2b = 3.4 $  
-$ a + 0.2(2) = 3.4 $  
-$ a + 0.4 = 3.4 $  
-$ a = 3.4 - 0.4 $  
-$ a = 3 $
+```math
+a + 0.2b = 3.4
+```
+```math
+a + 0.2(2) = 3.4
+```
+```math
+a + 0.4 = 3.4
+```
+```math
+a = 3.4 - 0.4
+```
+```math
+a = 3
+```
 
 ### The Solved System
 
@@ -102,10 +114,13 @@ What if the variable you want to eliminate is already missing from an equation?
 
 Here, the coefficient of $a$ in the second equation is 0. This is good news! The variable $a$ is already eliminated for us. We can immediately solve the second equation:
 
-$ 3b = 6 \implies b = 2 $
+```math
+3b = 6 \implies b = 2
+```
+<br>
 
 We can then proceed with Step 4 as usual, substituting $b=2$ into the first equation to find that $a=3$.
 
 ---
 
-**Next:** []()
+**Next:** [Solving Singular Systems of Linear Equations](./02_solving_singular_system_of_linear_equations.md)
