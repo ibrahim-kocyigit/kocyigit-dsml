@@ -49,9 +49,9 @@ Our new, equivalent system is:
 
 Now we can subtract the first new equation from the second new equation to eliminate $a$.
 
-$ (a - a) + (-0.75b - 0.2b) = (1.5 - 3.4) $  
-$ 0a - 0.95b = -1.9 $  
-$ -0.95b = -1.9 $
+* $ (a - a) + (-0.75b - 0.2b) = (1.5 - 3.4) $  
+* $ 0a - 0.95b = -1.9 $  
+* $ -0.95b = -1.9 $
 
 ### Step 3: Solve for 'b'
 
