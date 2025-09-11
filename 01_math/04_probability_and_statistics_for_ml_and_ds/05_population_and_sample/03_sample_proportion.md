@@ -18,7 +18,7 @@ This metric is called the **population proportion**, denoted by $P$:
 ```math
 P = \frac{\text{Number with characteristic } x}{N}
 ```
-
+<br/>
 where $N$ is the population size.
 
 ## Sample Proportion
@@ -34,6 +34,7 @@ This metric is the **sample proportion**, denoted by $\hat{P}$:
 ```math
 \hat{P} = \frac{\text{Number with characteristic in sample}}{n}
 ```
+<br>
 
 where $n$ is the sample size.
 
