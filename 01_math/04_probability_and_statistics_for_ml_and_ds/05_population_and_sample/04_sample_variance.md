@@ -33,19 +33,22 @@ In practice, you rarely have access to the whole population. Instead, you estima
 ### Naive Sample Variance
 
 If you use the sample mean and divide by the sample size $n$, you get:
-$$
+```math
 \hat{\sigma}^2 = \frac{1}{n} \sum_{i=1}^n (x_i - \bar{x})^2
-$$
-where $\bar{x}$ is the sample mean.
+```
+<br>
+
+... where $\bar{x}$ is the sample mean.
 
 However, this estimator is **biased**—it tends to underestimate the true population variance.
 
 ### Unbiased Sample Variance
 
 To correct for this bias, divide by $n-1$ instead of $n$:
-$$
+```math
 s^2 = \frac{1}{n-1} \sum_{i=1}^n (x_i - \bar{x})^2
-$$
+```
+<br>
 
 This is called the **unbiased sample variance** and is the most common estimator in statistics.
 
