@@ -9,8 +9,6 @@ Variance measures how spread out your data is—it tells you how far points are 
 
 Both datasets have a mean of 160, but their variances are different.
 
-## Visual Comparison
-
 ![](./images/0401.png)
 
 ## Population Variance
