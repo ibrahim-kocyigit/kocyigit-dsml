@@ -68,4 +68,4 @@ A representative sample means your dataset’s distribution matches the populati
 
 --- 
 
-**Next:** []()
+**Next:** [Sample Mean](./02_sample_mean.md)
