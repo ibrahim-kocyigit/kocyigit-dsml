@@ -39,4 +39,4 @@ The law of large numbers guarantees that as your sample size grows, your sample 
 
 ---
 
-**Next:** []()
+**Next:** [Central Limit Theorem for Discrete Random Variables](./06_central_limit_theorem--discrete_random_variable.md)
