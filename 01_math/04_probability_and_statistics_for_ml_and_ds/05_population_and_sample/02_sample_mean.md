@@ -17,12 +17,12 @@ If you can’t record all heights, you randomly select a sample of 6 people.
 Take another random sample of 6 people:
 
 - **Sample mean ($\bar{X}_2$):**  
-  Average height of the second sample.  
+  Average height of the 6 shortest people.  
   Example: $\bar{X}_2 = 156$ cm.
 
 Comparing $\bar{X}_1$ and $\bar{X}_2$:
 - Both use 6 people, but $\bar{X}_1$ is a better estimate because it was randomly sampled.
-- $\bar{X}_2$ is biased (e.g., if it includes the shortest people).
+- $\bar{X}_2$ is biased.
 
 Now, try a smaller sample size ($n=2$):
 
