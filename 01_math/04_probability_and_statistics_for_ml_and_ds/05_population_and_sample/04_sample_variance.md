@@ -14,10 +14,12 @@ Both datasets have a mean of 160, but their variances are different.
 ## Population Variance
 
 The formula for population variance ($\sigma^2$) is:
-$$
+```math
 \sigma^2 = \frac{1}{N} \sum_{i=1}^N (x_i - \mu)^2
-$$
-where $\mu$ is the population mean and $N$ is the population size.
+```
+<br>
+
+... where $\mu$ is the population mean and $N$ is the population size.
 
 For both datasets, $\mu = 160$.
 
