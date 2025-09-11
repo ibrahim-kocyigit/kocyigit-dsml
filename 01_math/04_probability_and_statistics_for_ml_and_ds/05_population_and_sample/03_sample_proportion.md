@@ -18,7 +18,8 @@ This metric is called the **population proportion**, denoted by $P$:
 ```math
 P = \frac{\text{Number with characteristic } x}{N}
 ```
-<br/>
+<br>
+
 where $N$ is the population size.
 
 ## Sample Proportion
