@@ -11,32 +11,6 @@ Both datasets have a mean of 160, but their variances are different.
 
 ## Visual Comparison
 
-```python
-# Save as images/0401.png
-import matplotlib.pyplot as plt
-
-smaller_var = [158, 159, 160.5, 161, 161.5]
-larger_var = [151, 154, 159, 166, 170]
-
-plt.figure(figsize=(8, 4))
-plt.subplot(1, 2, 1)
-plt.scatter(range(1, 6), smaller_var, color='royalblue')
-plt.axhline(160, color='gray', linestyle='--')
-plt.title('Smaller Variance')
-plt.xlabel('Person')
-plt.ylabel('Height (cm)')
-
-plt.subplot(1, 2, 2)
-plt.scatter(range(1, 6), larger_var, color='firebrick')
-plt.axhline(160, color='gray', linestyle='--')
-plt.title('Larger Variance')
-plt.xlabel('Person')
-
-plt.tight_layout()
-plt.savefig('images/0401.png')
-plt.show()
-```
-
 ![](./images/0401.png)
 
 ## Population Variance
