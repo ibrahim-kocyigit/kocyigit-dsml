@@ -8,6 +8,8 @@ Let’s revisit Statistopia, where the population size is 10 and everyone’s he
   Calculated by averaging all 10 heights.  
   Example: $\mu = 160$ cm.
 
+![](./images/0201.png)
+
 If you can’t record all heights, you randomly select a sample of 6 people.
 
 - **Sample mean ($\bar{X}_1$):**  
@@ -35,4 +37,4 @@ The larger your sample size, the better your estimate of the population mean. Ra
 
 ---
 
-**Next:** []()
+**Next:** [Sample Proportion](./03_sample_proportion.md)
