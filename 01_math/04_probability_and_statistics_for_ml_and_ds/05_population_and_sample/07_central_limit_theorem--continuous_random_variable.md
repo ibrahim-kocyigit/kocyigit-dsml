@@ -4,10 +4,6 @@ Let's see the central limit theorem in the context of a continuous random variab
 
 Consider the text support line example: when you call, the operator can answer any time between 0 and 15 minutes. The wait time $x$ follows a uniform distribution from 0 to 15.
 
-## Uniform Distribution
-
-A uniform distribution models situations where every interval of the same length has the same chance of occurring, resulting in a constant probability density function.
-
 ## Averaging Wait Times
 
 Suppose you want to estimate the mean wait time.  
