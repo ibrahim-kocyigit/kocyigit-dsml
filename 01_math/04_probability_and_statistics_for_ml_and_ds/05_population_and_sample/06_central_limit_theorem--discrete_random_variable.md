@@ -15,8 +15,7 @@ Now, increase the number of coin flips:
 
 - For two coins, three coins, four coins, and so on, the distribution of the number of heads starts to look more and more like a bell curve (normal distribution).
 
-**Graph:**  
-{insert screenshot showing distributions for 1, 2, 3, 4, and 10 coin flips, with the 10-flip distribution resembling a Gaussian}
+![](./images/0601.png)
 
 Counting the number of heads in $n$ coin flips is the same as adding $n$ Bernoulli random variables (each is 1 for heads, 0 for tails).
 
