@@ -30,6 +30,8 @@ As $n$ increases, the distribution of the sample mean looks more and more like a
 - For a uniform distribution from 0 to 15, the mean is 7.5.
 - The variance of $y_n$ is the population variance divided by $n$.
 
+![](./images/0702.png)
+
 For the uniform distribution $U(0, 15)$:
 - Population variance = 18.75
 - Variance of the average = $18.75 / n$
@@ -39,19 +41,23 @@ As $n$ grows, the variance of the average gets smaller, so the distribution beco
 ## Comparing to the Gaussian
 
 If you plot the probability density function for a Gaussian with the same mean and variance as $y_n$, the fit becomes closer as $n$ increases.  
+
 For small $n$, the fit is rough, but for $n=4$ or $n=5$, the distributions are almost indistinguishable.
 
-**Graph:**  
-{insert screenshot comparing kernel density estimation and Gaussian PDF for different $n$}
+![](./images/0703.png)
 
 ## Standardizing the Average
 
 Standardizing the average makes it easier to compare distributions for different $n$.  
+
 As $n$ increases, the standardized average approaches a standard normal distribution.
+
+![](./images/0704.png)
 
 ## Formal Statement of the Central Limit Theorem
 
 Whenever you consider the average of $n$ independent, identically distributed random variables:
+
 - The mean of $y_n$ is the population mean.
 - The variance of $y_n$ is the population variance divided by $n$.
 
@@ -63,9 +69,8 @@ $$
 
 Or, in terms of sums:
 
-$$
-\frac{\sum_{i=1}^n X_i - n\mu}{\sqrt{n}\sigma} \to N(0, 1)
-$$
+![](./images/0705.png)
+
 
 ## Practical Notes
 
@@ -79,4 +84,4 @@ The mean stays the same, but the variance gets smaller as $n$ increases.
 
 ---
 
-**Next:** []()
+**Next:** [Maximum Likelihood Estimation: Motivation](../06_point_estimation/01_mle--motivation.md)
