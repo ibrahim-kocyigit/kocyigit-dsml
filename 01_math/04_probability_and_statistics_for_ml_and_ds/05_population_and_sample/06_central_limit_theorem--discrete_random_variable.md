@@ -41,10 +41,12 @@ Examples:
 
 As $n$ becomes large, the distribution of the sum (number of heads) becomes approximately normal, with mean $n p$ and variance $n p (1-p)$.
 
+![](./images/0602.png)
+
 ## Key Takeaway
 
 No matter the starting distribution, the averages of large samples will be normally distributed. This is the power of the Central Limit Theorem.
 
 ---
 
-**Next:** []()
+**Next:** [Central Limit Theorem for Continuous Random Variables](./07_central_limit_theorem--continuous_random_variable.md)
