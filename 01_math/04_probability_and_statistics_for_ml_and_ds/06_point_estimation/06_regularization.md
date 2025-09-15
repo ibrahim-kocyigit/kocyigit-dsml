@@ -56,4 +56,4 @@ This is crucial for generalization and avoiding overfitting.
 
 ---
 
-**Next:** []()
+**Next:** [Back to "Bayesics"](./07_back_to_bayesics.md)
