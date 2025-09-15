@@ -48,7 +48,7 @@ $$
 \log L = \text{const} - \frac{1}{2} \sum_{i=1}^n d_i^2
 $$
 
-Since the constant doesn't affect the maximum, maximizing log-likelihood is the same as **minimizing the sum of squared distances**—this is the least squares error.
+Since the constant doesn't affect the maximum and also we have a negative multiplier in the equation, maximizing log-likelihood is the same as **minimizing the sum of squared distances**—this is the least squares error.
 
 ![](./images/0503.png)
 
@@ -58,4 +58,4 @@ Finding the line that most likely produces the observed points using maximum lik
 
 ---
 
-**Next:** []()
+**Next:** [Regularization](./06_regularization.md)
