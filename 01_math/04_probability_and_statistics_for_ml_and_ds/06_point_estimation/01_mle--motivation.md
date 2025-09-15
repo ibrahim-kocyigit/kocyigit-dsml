@@ -2,7 +2,7 @@
 
 Maximum likelihood estimation (MLE) is a fundamental concept in machine learning for training models. The idea behind MLE is simple:  
 
-Given some evidence (data), you want to find the scenario (model or parameters) that most likely produced that evidence.
+> Given some evidence (data), you want to find the scenario (model or parameters) that most likely produced that evidence.
 
 ## Everyday Example
 
