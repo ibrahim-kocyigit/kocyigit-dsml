@@ -48,4 +48,4 @@ This is the essence of maximum likelihood estimation:
 
 ---
 
-**Next:** [MLE: Bernouilli Example](./02_mle--bernoulli_example.md)
+**Next:** [MLE: Bernoulli Example](./02_mle--bernoulli_example.md)

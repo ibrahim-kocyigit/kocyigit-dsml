@@ -73,6 +73,8 @@ $$
 
 So, the maximum likelihood estimate for the probability of heads is simply the proportion of heads observed.
 
+![](./images/0201.png)
+
 ---
 
-**Next:** []()
+**Next:** [Maximum Likelihood Estimation: Gaussian Example](./03_mle--gaussian_example.md)
