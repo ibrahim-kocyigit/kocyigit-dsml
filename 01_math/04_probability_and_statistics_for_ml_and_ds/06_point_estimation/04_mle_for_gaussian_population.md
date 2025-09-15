@@ -78,8 +78,7 @@ $$
 \implies \hat{\sigma} = \sqrt{ \frac{1}{n} \sum_{i=1}^n (x_i - \bar{x})^2 }
 $$
 
-**Note:**  
-The MLE for the standard deviation uses $1/n$ as the normalizing constant, while the unbiased sample standard deviation uses $1/(n-1)$.
+**Note:**  The MLE for the standard deviation uses $1/n$ as the normalizing constant, while the unbiased sample standard deviation uses $1/(n-1)$.
 
 ## Example
 
