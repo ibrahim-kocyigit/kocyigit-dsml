@@ -72,4 +72,4 @@ The Gaussian with mean 0 and variance 1 is the maximum likelihood estimate.
 
 ---
 
-**Next:** [MLE for Gaussian Population](./04_mle_for_gaussian_population.md)
+**Next:** [Maximum Likelihood Estimation for the Gaussian Population](./04_mle_for_gaussian_population.md)
