@@ -22,7 +22,8 @@ But intuitively, watching movies is a much more likely event than a popcorn cont
 ## Prior Probability Matters
 
 Even though a contest is more likely to produce popcorn, it's much less likely to happen in general. We should consider both:
-- The probability of the evidence given the scenario ($P(\text{popcorn} \mid \text{scenario})$)
+
+1. The probability of the evidence given the scenario: $P(\text{popcorn} \mid \text{scenario})$
 - The probability of the scenario itself ($P(\text{scenario})$)
 
 So, we multiply them:
