@@ -42,4 +42,4 @@ Now we'll dig deeper into the Bayesian approach and see how using priors affects
 
 ---
 
-**Next:** []()
+**Next:** [Bayesian Statistics: MAP Estimation](./09_bayesian_statistics--map.md)
