@@ -1,6 +1,7 @@
 # Bayesian Statistics: MAP Estimation
 
 Imagine three Bayesians find a coin on the street and want to estimate the probability of landing heads.  
+
 Each starts with a different prior belief:
 
 - **Bayesian 1:** Absolutely convinced the coin is fair. Their prior is very narrow and centered at 0.5, meaning they strongly believe $p = 0.5$.
