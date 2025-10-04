@@ -99,8 +99,9 @@ $$
 
 #### Variance:
 $$
-\operatorname{Var}[\theta \mid \mathbf{x}] = \frac{\alpha \beta}{(\alpha + \beta)^2 (\alpha + \beta + 1)}
+\{Var}[\theta \mid \mathbf{x}] = \frac{\alpha \beta}{(\alpha + \beta)^2 (\alpha + \beta + 1)}
 $$
+
 For $\alpha = 9$, $\beta = 3$:
 $$
 \operatorname{Var}[\theta \mid \mathbf{x}] = \frac{9 \cdot 3}{(12)^2 \cdot 13} = \frac{27}{1872} \approx 0.0144
