@@ -191,7 +191,7 @@ $$
 - Order of flips does not matter when we try to estimate the coin bias (parameter $\theta$); only $h$ and $t$ matter. When updating the posterior (using Bayes’ rule), the binomial coefficient appears in both the likelihood and the marginal likelihood (normalization), so it cancels out in calculations where we only care about 
 θ (e.g., estimating posterior summaries or MAP).
 - Sequential vs. batch updating produce the same posterior for conjugate models (like Beta–Bernoulli).
-- Covariates or time trends would break i.i.d. assumptions and require different modeling.
+- Covariates (like weather, player skill, or coin wear) or time trends (changes in probability over time) would break i.i.d. assumptions and require different modeling.
 - Normalizing constants can be ignored for MAP because they do not affect the argmax.
 
 **Next:** [Relationship between MAP, MLE and Regularization](./12_relationship_between_map_mle_and_regularization.md)
