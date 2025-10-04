@@ -162,7 +162,7 @@ $$
 p(\theta \mid \mathbf{x}_{1:20}) \propto \theta^{14}(1-\theta)^6.
 $$
 
-### Posterior summaries:
+### Posterior summaries
 #### Mean: 
 $$
 E[\theta \mid \mathbf{x}]=\dfrac{15}{15+7}=\dfrac{15}{22}\approx 0.6818
