@@ -40,21 +40,23 @@ $$
 
 ## Prior Choice and Conjugacy
 
-- Choose a non-informative (uniform) prior on $(0,1)$:
+- Choose a non-informative (uniform) prior on $(0,1)$:  
+
 $$
 \theta \sim \text{Beta}(\alpha,\beta)\quad \text{with } \alpha=\beta=1.
 $$
-
 - Conjugacy fact (Beta–Bernoulli):
   -  If $\theta \sim \text{Beta}(\alpha,\beta)$ and observe $h$ heads, $t$ tails,
   - Then posterior $\theta \mid \mathbf{x} \sim \text{Beta}(\alpha+h,\beta+t)$.
 
-- Beta pdf: 
+- Beta pdf:   
+
 $$
 \text{Beta}(a,b)\text{ pdf: } f(\theta)=\frac{\theta^{a-1}(1-\theta)^{b-1}}{B(a,b)}
 $$
 
-- Normalizing constant:
+- Normalizing constant:  
+
 $$
 \quad
 B(a,b)=\frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)}
