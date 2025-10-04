@@ -134,7 +134,7 @@ $$
 $$
 
 $$
-\Rightarrow \theta=0.8.
+\Rightarrow \theta=0.8
 $$
 
 #### MLE comparison:
@@ -150,19 +150,33 @@ Sequential update uses the Round 1 posterior as the new prior.
 
 - New data: $h=6$, $t=4$.
 - Prior now: $\text{Beta}(9,3)$.
-- Posterior:
+- Posterior:  
+
 $$
 \theta \mid \mathbf{x}_{1:20} \sim \text{Beta}(9+6,\,3+4)=\text{Beta}(15,7).
 $$
-- Posterior pdf (up to constant):
+
+- Posterior pdf (up to constant):  
+
 $$
 p(\theta \mid \mathbf{x}_{1:20}) \propto \theta^{14}(1-\theta)^6.
 $$
 
 ### Posterior summaries:
-- Mean: $E[\theta \mid \mathbf{x}]=\dfrac{15}{15+7}=\dfrac{15}{22}\approx 0.6818$.
-- Variance: $Var[\theta \mid \mathbf{x}]=\dfrac{15\cdot 7}{(22)^2(23)}=\dfrac{105}{11132}\approx 0.0094$.
-- MAP: $\dfrac{15-1}{15+7-2}=\dfrac{14}{20}=0.7$.
+#### Mean: 
+$$
+E[\theta \mid \mathbf{x}]=\dfrac{15}{15+7}=\dfrac{15}{22}\approx 0.6818
+$$
+
+#### Variance:
+$$
+Var[\theta \mid \mathbf{x}]=\dfrac{15\cdot 7}{(22)^2(23)}=\dfrac{105}{11132}\approx 0.0094
+$$
+
+#### MAP: 
+$$
+\dfrac{15-1}{15+7-2}=\dfrac{14}{20}=0.7
+$$
 
 #### Frequentist comparison:
 - Over all 20 flips, $h=14$, $n=20 \Rightarrow \hat{\theta}_{\text{MLE}}=0.7$.
