@@ -119,16 +119,20 @@ $$
 
 > Note: The mean, variance, and MAP formulas apply to any Beta($\alpha$, $\beta$) posterior, not just this specific case.
 
-Calculation of MAP via calculus (argmax of log-posterior):
+Calculation of MAP via calculus (argmax of log-posterior):  
+
 $$
 \ell(\theta) = (h)\ln\theta + (t)\ln(1-\theta)=8\ln\theta + 2\ln(1-\theta) 
 $$
+
 $$
 \Rightarrow \frac{d\ell}{d\theta}=\frac{8}{\theta}-\frac{2}{1-\theta}=0
 $$
+
 $$
 \Rightarrow 8(1-\theta)=2\theta 
 $$
+
 $$
 \Rightarrow \theta=0.8.
 $$
