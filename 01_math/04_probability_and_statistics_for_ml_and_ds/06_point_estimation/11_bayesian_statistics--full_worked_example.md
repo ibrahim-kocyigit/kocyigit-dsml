@@ -12,9 +12,11 @@ We will work through a complete Bayesian update with coin flips, starting from a
 - **Data:** $\mathbf{x} = (x_1,\dots,x_n)$ where each $x_i \in \{0,1\}$.
 - **Conditional model:** $x_i \mid \theta \sim \text{Bernoulli}(\theta)$, independent across flips.
 - **Likelihood** for $h$ heads and $t$ tails (with $h+t=n$):
+
 $$
 p_{X|\Theta=\theta}(x)=\theta^{h}(1-\theta)^{t}
 $$
+
 - Bayes’ theorem (continuous $\theta$, discrete $\mathbf{x}$):
 $$
 f_{\Theta|X=x}(\theta) = \frac{p_{X|\Theta=\theta}(x) \, f_\Theta(\theta)}{p_X(x)}
