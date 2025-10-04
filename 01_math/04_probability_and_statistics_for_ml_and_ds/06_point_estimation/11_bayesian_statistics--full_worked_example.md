@@ -17,11 +17,13 @@ $$
 p_{X|\Theta=\theta}(x)=\theta^{h}(1-\theta)^{t}
 $$
 
-- Bayes’ theorem (continuous $\theta$, discrete $\mathbf{x}$):
+- Bayes’ theorem (continuous $\theta$, discrete $\mathbf{x}$):  
+
 $$
 f_{\Theta|X=x}(\theta) = \frac{p_{X|\Theta=\theta}(x) \, f_\Theta(\theta)}{p_X(x)}
 $$
-- The proportionality version of the Bayes' Theorem which omits the denominator (_because it does not affect the location of the maximum (MAP). Likewise, constant priors do not change the argmax._):
+- The proportionality version of the Bayes' Theorem which omits the denominator (_because it does not affect the location of the maximum (MAP). Likewise, constant priors do not change the argmax._):  
+
 $$
 f_{\Theta|X=x}(\theta) \propto p_{X|\Theta=\theta}(x) \, f_\Theta(\theta)
 $$
@@ -33,7 +35,7 @@ $$
 - $p_{X|\Theta=\theta}(x)$ is the likelihood (probability of data $x$ given parameter $\theta$)
 - $f_\Theta(\theta)$ is the prior density of $\theta$
 - $p_X(x)$ is the marginal probability of the data (normalizing constant)
-- $ \propto $ means “is proportional to.”
+- $\propto$ means “is proportional to.”
 
 
 ## Prior Choice and Conjugacy
