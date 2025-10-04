@@ -66,16 +66,25 @@ $$
 
 - Data: $h=8$, $t=2$, $n=10$.
 - Prior: $\text{Beta}(1,1)$.
-- Posterior:
+- Posterior:  
+
 $$
 \theta \mid \mathbf{x}_{1:10} \sim \text{Beta}(1+8,\,1+2)=\text{Beta}(9,3).
 $$
-- Posterior pdf (up to constant):
+
+- Posterior pdf (up to constant):  
+
 $$
 p(\theta \mid \mathbf{x}_{1:10}) \propto \theta^{8}(1-\theta)^2.
 $$
 
-(Normalizing constant here is $1/B(9,3)=\dfrac{11!}{8!\,2!}$, consistent with $8!\cdot 2!/11!$ in the denominator.)
+(Normalizing constant here is... 
+
+$$
+1/B(9,3)=\dfrac{11!}{8!\,2!}
+$$
+
+... consistent with $8!\cdot 2!/11!$ in the denominator.)
 
 ### Posterior summaries
 
