@@ -18,6 +18,14 @@ $$
 
 ![](./images/1001.png)
 
+Therefore: 
+
+> “**Posterior** is **likelihood** times **prior** normalized by **evidence** (or **marginal likelihood**).”
+
+Or more succinctly:
+
+> "**Posterior** is **likelihood** times **prior**, normalized by the **total likelihood** across all hypotheses weighted by their **priors**."
+
 ## Example: Fair or Biased Coin
 
 Suppose you have a coin that could be:
