@@ -194,4 +194,6 @@ $$
 - Covariates (like weather, player skill, or coin wear) or time trends (changes in probability over time) would break i.i.d. assumptions and require different modeling.
 - Normalizing constants can be ignored for MAP because they do not affect the argmax.
 
+---
+
 **Next:** [Relationship between MAP, MLE and Regularization](./12_relationship_between_map_mle_and_regularization.md)
