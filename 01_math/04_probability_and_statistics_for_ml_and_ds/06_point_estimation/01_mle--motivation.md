@@ -1,5 +1,11 @@
 # Maximum Likelihood Estimation: Motivation
 
+**Point estimation** is a statistical method used to estimate the value of an unknown population parameter (such as the mean, variance, or proportion) by using a single value, called a point estimate, calculated from sample data.
+
+In other words, point estimation provides a single best guess for a population parameter based on observed data. Common examples include using the sample mean to estimate the population mean, the sample variance to estimate the population variance, and the sample proportion to estimate the population proportion.
+
+There are various methods for obtaining point estimates, and one of the most widely used is **maximum likelihood estimation (MLE)**.
+
 Maximum likelihood estimation (MLE) is a fundamental concept in machine learning for training models. The idea behind MLE is simple:  
 
 > Given some evidence (data), you want to find the scenario (model or parameters) that most likely produced that evidence.
