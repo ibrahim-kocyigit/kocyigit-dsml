@@ -1,7 +1,16 @@
-# 02_relational_and_distribution_plots.py
-
 import seaborn as sns
 import matplotlib.pyplot as plt
+
+
+# =======================================
+# TABLE OF CONTENTS
+# =======================================
+# 1. Introduction
+# 2. Relational Plots with `sns.scatterplot()`
+# 3. Relational Plots with `sns.lineplot()`
+# 4. Distribution Plots with `sns.histplot()`
+# 5. Distribution Plots with `sns.kdeplot()`
+
 
 # =======================================
 # 1. INTRODUCTION
@@ -11,7 +20,7 @@ import matplotlib.pyplot as plt
 #   2. Distribution Plots: To understand how a single variable is distributed.
 # - We will use Seaborn's high-level functions to create these plots with minimal code.
 
-# --- Apply the default Seaborn theme ---
+# Apply the default Seaborn theme
 sns.set_theme(style="whitegrid")
 
 
@@ -26,7 +35,7 @@ print("--- Loading 'penguins' dataset for relational plots ---")
 penguins_df = sns.load_dataset("penguins")
 print(penguins_df.head())
 
-# --- Create a new figure for our scatter plot ---
+# Create a new figure for our scatter plot
 plt.figure(figsize=(10, 6))
 
 # Use `hue` to color points by species. Seaborn handles the colors and legend automatically.
@@ -34,10 +43,10 @@ sns.scatterplot(
     data=penguins_df,
     x="flipper_length_mm",
     y="bill_length_mm",
-    hue="species",      # Color points by the 'species' column
-    size="body_mass_g", # Vary point size by the 'body_mass_g' column
-    style="island",     # Vary point marker style by the 'island' column
-    alpha=0.7           # Set transparency
+    hue="species",  # Color points by the 'species' column.
+    size="body_mass_g",  # Vary point size by the 'body_mass_g' column.
+    style="island",  # Vary point marker style by the 'island' column.
+    alpha=0.7,  # Set transparency
 )
 plt.title("Penguin Bill Length vs. Flipper Length")
 print("\nGenerated a scatter plot with hue, size, and style encoding.")
@@ -47,7 +56,7 @@ print("-" * 30)
 # =======================================
 # 3. RELATIONAL PLOTS WITH `sns.lineplot()`
 # =======================================
-# - Ideal for showing the relationship between two variables where the x-axis
+# - Ideal for showing the relationship betwen two variables where the x-axis
 #   variable is continuous (like time).
 # - Key Feature: It automatically aggregates data. If there are multiple y-values
 #   for a single x-value, it plots the mean and a shaded confidence interval.
@@ -56,7 +65,7 @@ print("--- Loading 'flights' dataset for line plot ---")
 flights_df = sns.load_dataset("flights")
 print(flights_df.head())
 
-# --- Create a new figure for our line plot ---
+# Create a new figure for our line plot
 plt.figure(figsize=(10, 6))
 
 # Plot the number of passengers over the years.
@@ -70,7 +79,7 @@ print("-" * 30)
 # =======================================
 # 4. DISTRIBUTION PLOTS WITH `sns.histplot()`
 # =======================================
-# - A histogram visualizes the distribution of a single numerical variable
+# - A histogram visualizes the distribution of a single numeric variable
 #   by grouping data into bins and counting the frequency.
 
 print("--- Loading 'tips' dataset for distribution plots ---")
@@ -81,7 +90,7 @@ print(tips_df.head())
 plt.figure(figsize=(10, 6))
 
 # Use `kde=True` to overlay a Kernel Density Estimate curve.
-# Use `hue` to see separate distributions for 'time' (Lunch/Dinner).
+# Use `hue` to see separate distributions for 'time'(Lunch/Dinner)
 sns.histplot(data=tips_df, x="total_bill", kde=True, hue="time")
 plt.title("Distribution of Total Bill Amounts by Time of Day")
 print("\nGenerated a histogram with KDE and hue.")
@@ -94,7 +103,7 @@ print("-" * 30)
 # - A Kernel Density Estimate (KDE) plot creates a smoothed representation
 #   of a variable's distribution.
 
-# --- Create a new figure for our KDE plot ---
+# Create a new figure for our KDE plot
 plt.figure(figsize=(10, 6))
 
 # Use `fill=True` to get a shaded plot.
