@@ -1,10 +1,18 @@
-# 03_categorical_plots.py
-
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+
 # =======================================
-# 1. INTRODUCTION TO CATEGORICAL PLOTS
+# TABLE OF CONTENTS
+# =======================================
+# 1. Introduction
+# 2. Categorical Scatter Plots
+# 3. Categorical Distribution Plots
+# 4. Categorical Estimate Plots
+
+
+# =======================================
+# 1. INTRODUCTION
 # =======================================
 # - A very common analysis task is to compare a numerical variable across different
 #   groups or categories. Seaborn excels at this with a rich family of functions.
@@ -30,21 +38,19 @@ print("-" * 30)
 # - These plots show every single data point, which helps visualize the
 #   underlying distribution of observations.
 
-# --- Create a figure with two subplots side-by-side ---
+# Create a figure with two subplots side-by-side
 fig1, axes = plt.subplots(1, 2, figsize=(14, 6))
 fig1.suptitle("Categorical Scatter Plots")
 
 # --- `sns.stripplot()` ---
 # - The most basic categorical scatter plot. Points can overlap.
-sns.stripplot(ax=axes[0], data=tips_df, x="day", y="total_bill")
+sns.stripplot(data=tips_df, ax=axes[0], x="day", y="total_bill")
 axes[0].set_title("stripplot")
 
 # --- `sns.swarmplot()` ---
 # - An improvement that adjusts points so they don't overlap.
 # - Gives a better sense of the distribution. (Note: doesn't scale to very large data).
-sns.swarmplot(
-    ax=axes[1], data=tips_df, x="day", y="total_bill", hue="smoker", dodge=True
-)
+sns.swarmplot(data=tips_df, ax=axes[1], x="day", y="total_bill", hue="smoker")
 axes[1].set_title("swarmplot (with hue)")
 
 print("Generated Categorical Scatter Plots (stripplot, swarmplot).")
@@ -61,14 +67,14 @@ fig2.suptitle("Categorical Distribution Plots")
 # --- `sns.boxplot()` ---
 # - Shows the quartiles of the dataset while the whiskers extend to show the
 #   rest of the distribution. Points beyond the whiskers are potential outliers.
-sns.boxplot(ax=axes[0], data=tips_df, x="day", y="total_bill", hue="time")
+sns.boxplot(data=tips_df, ax=axes[0], x="day", y="total_bill", hue="time")
 axes[0].set_title("boxplot (with hue)")
 
 # --- `sns.violinplot()` ---
 # - Combines a boxplot with a Kernel Density Estimate (KDE).
 # - It shows more detail about the shape of the distribution (e.g., if it's bimodal).
 sns.violinplot(
-    ax=axes[1], data=tips_df, x="day", y="total_bill", hue="time", split=True
+    data=tips_df, ax=axes[1], x="day", y="total_bill", hue="time", split=True
 )
 axes[1].set_title("violinplot (with hue and split)")
 
@@ -78,7 +84,7 @@ print("Generated Categorical Distribution Plots (boxplot, violinplot).")
 # =======================================
 # 4. CATEGORICAL ESTIMATE PLOTS
 # =======================================
-# - These plots show an estimate of central tendency (by default, the mean)
+# - The plots show an estimate of central tendency (by default, the mean)
 #   and its confidence interval for each category.
 
 fig3, axes = plt.subplots(1, 2, figsize=(14, 6))
@@ -87,13 +93,13 @@ fig3.suptitle("Categorical Estimate & Count Plots")
 # --- `sns.barplot()` ---
 # - IMPORTANT: This shows the *mean* for each category, not the sum or count.
 # - The black lines on the bars represent the confidence interval.
-sns.barplot(ax=axes[0], data=tips_df, x="day", y="total_bill")
-axes[0].set_title("barplot (showing mean total_bill)")
+sns.barplot(data=tips_df, ax=axes[0], x="day", y="total_bill")
+axes[0].set_title("barplot (showing mean total bill)")
 
 # --- `sns.countplot()` ---
 # - A special case that simply counts the number of occurrences in each category.
 # - It's like a histogram for categorical data. Notice you only provide `x`.
-sns.countplot(ax=axes[1], data=tips_df, x="day")
+sns.countplot(data=tips_df, ax=axes[1], x="day")
 axes[1].set_title("countplot (showing number of tips per day)")
 
 print("Generated Categorical Estimate and Count Plots (barplot, countplot).")
