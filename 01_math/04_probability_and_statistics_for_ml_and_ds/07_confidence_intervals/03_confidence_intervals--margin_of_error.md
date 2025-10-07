@@ -1,7 +1,5 @@
 # Confidence Intervals: Margin of Error
 
-## Constructing a Confidence Interval
-
 To build a confidence interval, you need two **ingredients**:
 - The sample mean ($\bar{x}$)
 - The margin of error
