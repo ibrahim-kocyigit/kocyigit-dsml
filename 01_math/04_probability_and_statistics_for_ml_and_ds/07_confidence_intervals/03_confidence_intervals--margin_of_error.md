@@ -2,16 +2,15 @@
 
 ## Constructing a Confidence Interval
 
-- To build a confidence interval, you need two ingredients:
-  - The sample mean ($\bar{x}$)
-  - The margin of error
+To build a confidence interval, you need two **ingredients**:
+- The sample mean ($\bar{x}$)
+- The margin of error
 
-- The margin of error depends on:
-  - The sample size ($n$)
-  - The confidence level (e.g., 95%)
+The margin of error **depends** on:
+- The sample size ($n$)
+- The confidence level (e.g., 95%)
 
-- The confidence interval is:  
-
+The **confidence interval** is:  
 $$
 \bar{x} \pm \text{margin of error}
 $$
@@ -36,7 +35,11 @@ $$
 z_{1-\alpha/2} \times \text{standard error}
 $$
 
-... where $\text{standard error} = \frac{\sigma}{\sqrt{n}}$
+... where  
+
+$$
+\text{standard error} = \frac{\sigma}{\sqrt{n}}
+$$
 
 - For 95% confidence:  
 
