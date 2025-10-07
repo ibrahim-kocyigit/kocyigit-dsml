@@ -69,3 +69,6 @@ So, the 95% confidence interval is **[163 cm, 177 cm]**.
 
 > **Interpretation:**  We are 95% confident that the true average height of adults in Statistopia lies between 163 cm and 177 cm.
 
+---
+
+**Next:** [Calculating Sample Size](./05_calculating_sample_size.md)
