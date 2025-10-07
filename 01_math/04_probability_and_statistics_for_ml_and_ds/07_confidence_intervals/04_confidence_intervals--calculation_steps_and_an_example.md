@@ -2,25 +2,25 @@
 
 The steps to calculate a confidence interval are:
 
-1. **Find the sample mean ($\bar{x}$).**
+1. Find the sample mean ($\bar{x}$).
 
-2. **Choose a desired confidence level** (e.g., 95%).
+2. Choose a desired confidence level (e.g., 95%).
 
-3. **Find the critical value ($z_{1-\alpha/2}$)** for the chosen confidence level (e.g., 1.96 for 95%).
+3. Find the critical value ($z_{1-\alpha/2}$) for the chosen confidence level (e.g., 1.96 for 95%).
 
-4. **Calculate the standard error** (standard deviation of the sample mean):  
+4. Calculate the standard error (standard deviation of the sample mean):  
 
 $$
 \text{Standard Error} = \frac{\sigma}{\sqrt{n}}
 $$
 
-5. **Compute the margin of error:**  
+5. Compute the margin of error:  
 
 $$
 \text{Margin of Error} = z_{1-\alpha/2} \times \text{Standard Error}
 $$
 
-6. **Construct the confidence interval:**  
+6. Construct the confidence interval:  
 
 $$
 \bar{x} \pm \text{Margin of Error}
@@ -29,12 +29,10 @@ $$
 ![](./images/0401.png)
 
 ## Assumptions for Valid Confidence Intervals
+Be sure to check the follwoing assumptions when applying confidence intervals in practice:
 
 - The sample is random.
-- The sample size is greater than 30, **or** the population is approximately normal.
-  - (In illustrations, smaller sample sizes may be used, but for real applications, these assumptions should be met.)
-
-Be sure to check these assumptions when applying confidence intervals in practice.
+- The sample size is greater than 30, **or** the population is approximately normal (In illustrations, smaller sample sizes may be used, but for real applications, these assumptions should be met).
 
 ## Example
 
