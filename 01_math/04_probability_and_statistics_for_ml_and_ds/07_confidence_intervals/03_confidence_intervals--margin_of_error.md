@@ -31,6 +31,7 @@ $$
   - These values are found using lookup tables or software.
 
 - The margin of error is:  
+
   $$
   z_{1-\alpha/2} \times \text{standard error}
   $$
