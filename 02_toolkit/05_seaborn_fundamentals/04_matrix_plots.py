@@ -1,9 +1,16 @@
-# 04_matrix_plots.py
-
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+
+# =======================================
+# TABLE OF CONTENTS
+# =======================================
+# 1. Introduction
+# 2. Heatmaps (`sns.heatmap`)
+# 3. Heatmap of a Correlation Matrix
+# 4. Clustermaps (`sns.clustermap`)
+
 
 # =======================================
 # 1. INTRODUCTION TO MATRIX PLOTS
@@ -14,7 +21,7 @@ import numpy as np
 #   patterns in data over two variables (e.g., time vs. categories).
 # - We will cover `sns.heatmap` and the more advanced `sns.clustermap`.
 
-# --- Apply a theme ---
+# Apply a theme
 sns.set_theme(style="white")
 
 
@@ -23,31 +30,29 @@ sns.set_theme(style="white")
 # =======================================
 # - The most common tool for visualizing a grid of data.
 # - To create a heatmap, the data often needs to be in a 2D matrix format,
-#   where both the rows and columns have meaningful labels. A pivot table is
+#   where both the rows and the columns have meaningful labels. A pivot table is
 #   a perfect way to prepare data for this.
 
 print("--- Preparing data for Heatmap using a pivot table ---")
 # Load the 'flights' dataset
 flights_df = sns.load_dataset("flights")
 
-# Use pandas `.pivot_table()` to create a matrix
+# Use Pandas' `.pivot_table()` to create a matrix
 flights_pivot = flights_df.pivot_table(
-    index='month',
-    columns='year',
-    values='passengers'
+    index="month", columns="year", values="passengers"
 )
 print("Flights data pivoted into a Year x Month matrix:\n", flights_pivot.head())
 
-# --- Create the Heatmap ---
+# Create the Heatmap
 plt.figure(figsize=(12, 8))
 sns.heatmap(
     data=flights_pivot,
-    annot=True,     # Display the data value in each cell
-    fmt='d',        # Format the annotations as integers
-    cmap='YlGnBu',  # Specify the color map
-    linewidths=.5   # Add lines between cells
+    annot=True,  # Display the data value in each cell
+    fmt=".0f",  # Format the annotations as floats with no decimals,
+    cmap="YlGnBu",  # Specify the color map (Yellow-Green-Blue in this case)
+    linewidths=0.5,  # Add lines between cells
 )
-plt.title('Airline Passengers per Month (1949-1960)', fontsize=16)
+plt.title("Airline Passengers per Month (1949-1960)", fontsize=16)
 print("\nGenerated a heatmap of airline passenger data.")
 print("-" * 30)
 
@@ -63,23 +68,24 @@ print("--- Creating a heatmap of a correlation matrix ---")
 penguins_df = sns.load_dataset("penguins")
 
 # Select only numerical columns for correlation calculation
-# In modern pandas, this can be done directly
+# In modern Pandas, this can be done directly
 numerical_cols = penguins_df.select_dtypes(include=np.number)
 
-# Calculate the correlation matrix using pandas `.corr()`
+# Calculate the correlation matrix using Pandas' `.corr()`
 correlation_matrix = numerical_cols.corr()
 print("Correlation matrix of penguin measurements:\n", correlation_matrix)
 
-# --- Create the Correlation Heatmap ---
+# Create the Correlation Heatmap
 plt.figure(figsize=(10, 7))
 sns.heatmap(
     data=correlation_matrix,
     annot=True,
-    fmt='.2f',          # Format annotations to 2 decimal places
-    cmap='coolwarm',    # Use a diverging colormap for correlations
-    vmin=-1, vmax=1   # Set the color bar limits from -1 to 1
+    fmt=".2f",  # Format annotations to 2 decimal places
+    cmap="coolwarm",  # Use a diverging colormap for correlations
+    vmin=-1,
+    vmax=1,  # Set the color bar limits from -1 to 1
 )
-plt.title('Correlation Matrix of Penguin Measurements', fontsize=16)
+plt.title("Correlation Matrix of Penguin Measurements", fontsize=16)
 print("\nGenerated a heatmap of a correlation matrix.")
 print("-" * 30)
 
@@ -96,7 +102,9 @@ print("--- Creating a clustermap ---")
 # `sns.clustermap` creates its own figure.
 # `standard_scale=1` normalizes the data within the columns, making patterns more visible.
 g = sns.clustermap(flights_pivot, cmap="viridis", standard_scale=1, figsize=(10, 8))
-g.fig.suptitle('Clustermap of Airline Passengers (Clustered by Similarity)', y=1.02, fontsize=16)
+g.figure.suptitle(
+    "Clustermap of Airline Passengers (Clustered by Similarity)", y=1.02, fontsize=16
+)
 print("Generated a clustermap, which reorders rows/columns to show patterns.")
 
 
