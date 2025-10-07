@@ -31,7 +31,7 @@ $$
 z_{1-\alpha/2} \times \text{standard error}
 $$
 
-... where  
+... where...  
 
 $$
 \text{standard error} = \frac{\sigma}{\sqrt{n}}
