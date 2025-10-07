@@ -1,7 +1,14 @@
-# 06_advanced_plots_and_customization.py
-
 import seaborn as sns
 import matplotlib.pyplot as plt
+
+# =======================================
+# TABLE OF CONTENTS
+# =======================================
+# 1. Introduction
+# 2. Bivariate Plots with Marginal Distributions (`sns.jointplot`)
+# 3. Visualizing Pairwise Relationships (`sns.pairplot`)
+# 4. Customizing Seaborn Plots with Matplotlib
+
 
 # =======================================
 # 1. INTRODUCTION
@@ -10,7 +17,7 @@ import matplotlib.pyplot as plt
 #   and demonstrates how to combine Seaborn's high-level interface with Matplotlib's
 #   low-level control for ultimate customization.
 
-# --- Setup: Apply a theme for our plots ---
+# --- Setup: Apply a theme for our plot ---
 sns.set_theme(style="whitegrid")
 
 
@@ -18,7 +25,7 @@ sns.set_theme(style="whitegrid")
 # 2. BIVARIATE PLOTS WITH MARGINAL DISTRIBUTIONS (`sns.jointplot`)
 # =======================================
 # - `jointplot` is a powerful function that creates a central scatter plot to show the
-#   relationship between two variables, plus marginal plots (histograms or KDEs)
+#   relationships between two variables, plus marginal plots (histograms or KDEs)
 #   on the top and right axes to show the distribution of each individual variable.
 # - It creates and manages its own figure.
 
@@ -28,9 +35,9 @@ tips_df = sns.load_dataset("tips")
 # --- Create a joint plot ---
 # The default shows a scatter plot in the center and histograms on the margins.
 sns.jointplot(data=tips_df, x="total_bill", y="tip")
-plt.suptitle("Joint Plot of Total Bill and Tip", y=1.02) # Add a title
+plt.suptitle("Joint Plot of Total Bill and Tip", y=1.02)  # Add a title
 
-# --- Change the kind of plot in the center ---
+# -- Change the kind of plot in the center ---
 # `kind='hex'` creates a 2D hexbin plot, useful for dense data.
 sns.jointplot(data=tips_df, x="total_bill", y="tip", kind="hex", cmap="magma")
 plt.suptitle("Hexbin Joint Plot", y=1.02)
@@ -68,8 +75,8 @@ print("-" * 30)
 #   functions to get fine-grained control over a plot's appearance after it's created.
 
 print("--- Customizing a Seaborn plot with Matplotlib ---")
-# --- Method 1: Customizing an "axes-level" plot ---
-# Functions like `boxplot`, `scatterplot`, etc., can be drawn on a specific Matplotlib Axes.
+# --- Method 1: Customizing an "axes-level" plot
+# Functions like `boxplot`, `scatterplot`, etc., can be drawn on a specific Matplotlib axes.
 
 # First, create a Matplotlib figure and axes
 fig, ax = plt.subplots(figsize=(10, 6))
@@ -81,18 +88,20 @@ sns.boxplot(data=tips_df, x="day", y="total_bill", ax=ax)
 ax.set_title("Customized Box Plot Title", fontsize=16)
 ax.set_xlabel("Day of the Week", fontsize=12)
 ax.set_ylabel("Total Bill (USD)", fontsize=12)
-ax.set_xticklabels(ax.get_xticklabels(), rotation=45) # Rotate x-axis labels
-ax.grid(linestyle='--', alpha=0.7)
+ax.set_xticklabels(ax.get_xticklabels(), rotation=45)  # Rotate x-axis labels
+ax.grid(linestyle="--", alpha=0.7)
 
 
 # --- Method 2: Customizing a "figure-level" plot ---
 # Functions like `pairplot` or `relplot` return a Grid object.
-# You can access the figure through the `.fig` attribute.
+# You can access the figure through the `.figure` attribute.
 g = sns.relplot(data=tips_df, x="total_bill", y="tip", col="time")
-g.fig.suptitle("Custom Title for a Figure-Level Plot", y=1.03)
+g.figure.suptitle("Custom Title for a Figure-Level Plot", y=1.03)
 # You can also iterate through the axes in the grid
 for ax in g.axes.flat:
-    ax.axline((0, 0), slope=.15, color="gray", lw=2, linestyle="--") # Add a reference line
+    ax.axline(
+        (0, 0), slope=0.15, color="gray", lw=2, linestyle="--"
+    )  # Add a reference line
 
 print("Customized an axes-level and a figure-level plot.")
 

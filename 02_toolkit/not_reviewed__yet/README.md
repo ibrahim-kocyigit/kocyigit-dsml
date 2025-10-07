@@ -1,1 +1,0 @@
-This folder contains the AI generated files which are not checked by me yet.

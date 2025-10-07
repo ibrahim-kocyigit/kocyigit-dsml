@@ -25,7 +25,7 @@ This project consolidates my curated learning resources, organized into five pil
 2. 🟢 [Numpy Fundamentals](./02_toolkit/02_numpy_fundamentals/)
 3. 🟢 [Pandas Fundamentals](./02_toolkit/03_pandas_fundamentals/)
 4. 🟢 [Matplotlib Fundamentals](./02_toolkit/04_matplotlib_fundamentals/)
-5. 🟠 [Seaborn Fundamentals](./02_toolkit/05_seaborn_fundamentals/)
+5. 🟢 [Seaborn Fundamentals](./02_toolkit/05_seaborn_fundamentals/)
 
 ### 3. Specializations
 1.  🔴 Exploratory Data Analysis for Machine Learning
