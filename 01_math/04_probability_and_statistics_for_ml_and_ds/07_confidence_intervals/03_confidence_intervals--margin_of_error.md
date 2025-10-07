@@ -10,10 +10,11 @@
   - The sample size ($n$)
   - The confidence level (e.g., 95%)
 
-- The confidence interval is:
-  $$
-  \bar{x} \pm \text{margin of error}
-  $$
+- The confidence interval is:  
+
+$$
+\bar{x} \pm \text{margin of error}
+$$
 
 ## Calculating the Margin of Error
 
@@ -29,13 +30,15 @@
 - For a 95% confidence interval, the critical values are $-1.96$ and $+1.96$.
   - These values are found using lookup tables or software.
 
-- The margin of error is:
+- The margin of error is:  
   $$
   z_{1-\alpha/2} \times \text{standard error}
   $$
-  where $\text{standard error} = \frac{\sigma}{\sqrt{n}}$
 
-- For 95% confidence:
+  ... where $\text{standard error} = \frac{\sigma}{\sqrt{n}}$
+
+- For 95% confidence:  
+
   $$
   \text{margin of error} = 1.96 \times \frac{\sigma}{\sqrt{n}}
   $$
@@ -45,7 +48,8 @@
 ## Rearranging the Inequality
 
 - The confidence interval bounds the sample mean, not $\mu$.
-- Rearranging the inequality gives an interval for $\mu$:
+- Rearranging the inequality gives an interval for $\mu$:  
+
   $$
   \bar{x} - \text{margin of error} \leq \mu \leq \bar{x} + \text{margin of error}
   $$
