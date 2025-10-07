@@ -16,9 +16,7 @@ $$
 
 ## Calculating the Margin of Error
 
-Suppose you have a population with unknown mean $\mu$ and known variance $\sigma^2$.
-
-Take a sample of size $n$ and compute the sample mean $\bar{x}$. The sample mean is normally distributed with mean $\mu_{\bar{x}}$ and variance $\sigma^2 / n$.
+Suppose you have a population with unknown mean $\mu$ and known variance $\sigma^2$. Take a sample of size $n$ and compute the sample mean $\bar{x}$. The sample mean is normally distributed with mean $\mu_{\bar{x}}$ and variance $\sigma^2 / n$.
 
 For a normal distribution:
 - About 68% of values lie within 1 standard deviation of the mean.
