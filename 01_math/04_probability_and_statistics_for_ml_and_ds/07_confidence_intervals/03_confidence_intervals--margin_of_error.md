@@ -32,17 +32,17 @@ $$
 
 - The margin of error is:  
 
-  $$
-  z_{1-\alpha/2} \times \text{standard error}
-  $$
+$$
+z_{1-\alpha/2} \times \text{standard error}
+$$
 
-  ... where $\text{standard error} = \frac{\sigma}{\sqrt{n}}$
+... where $\text{standard error} = \frac{\sigma}{\sqrt{n}}$
 
 - For 95% confidence:  
 
-  $$
-  \text{margin of error} = 1.96 \times \frac{\sigma}{\sqrt{n}}
-  $$
+$$
+\text{margin of error} = 1.96 \times \frac{\sigma}{\sqrt{n}}
+$$
 
 ![](./images/0301.png)
 
@@ -51,9 +51,9 @@ $$
 - The confidence interval bounds the sample mean, not $\mu$.
 - Rearranging the inequality gives an interval for $\mu$:  
 
-  $$
-  \bar{x} - \text{margin of error} \leq \mu \leq \bar{x} + \text{margin of error}
-  $$
+$$
+\bar{x} - \text{margin of error} \leq \mu \leq \bar{x} + \text{margin of error}
+$$
 
 
 ## Non-Normal Populations
