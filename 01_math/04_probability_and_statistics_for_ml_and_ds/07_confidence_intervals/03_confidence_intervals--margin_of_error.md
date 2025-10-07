@@ -11,25 +11,25 @@ The margin of error **depends** on:
 - The confidence level (e.g., 95%)
 
 The **confidence interval** is:  
+
 $$
 \bar{x} \pm \text{margin of error}
 $$
 
 ## Calculating the Margin of Error
 
-- Suppose you have a population with unknown mean $\mu$ and known variance $\sigma^2$.
-- Take a sample of size $n$ and compute the sample mean $\bar{x}$.
-- The sample mean is normally distributed with mean $\mu_{\bar{x}}$ and variance $\sigma^2 / n$.
+Suppose you have a population with unknown mean $\mu$ and known variance $\sigma^2$.
 
-- For a normal distribution:
-  - About 68% of values lie within 1 standard deviation of the mean.
-  - About 95% lie within 2 standard deviations.
-  - These points are called **z-scores** or **critical values**.
+Take a sample of size $n$ and compute the sample mean $\bar{x}$. The sample mean is normally distributed with mean $\mu_{\bar{x}}$ and variance $\sigma^2 / n$.
 
-- For a 95% confidence interval, the critical values are $-1.96$ and $+1.96$.
-  - These values are found using lookup tables or software.
+For a normal distribution:
+- About 68% of values lie within 1 standard deviation of the mean.
+- About 95% lie within 2 standard deviations.
+- These points are called **z-scores** or **critical values**.
 
-- The margin of error is:  
+For a 95% confidence interval, the critical values are $-1.96$ and $+1.96$. These values are found using lookup tables or software.
+
+The **margin of error** is:  
 
 $$
 z_{1-\alpha/2} \times \text{standard error}
@@ -41,7 +41,7 @@ $$
 \text{standard error} = \frac{\sigma}{\sqrt{n}}
 $$
 
-- For 95% confidence:  
+So, for 95% confidence:  
 
 $$
 \text{margin of error} = 1.96 \times \frac{\sigma}{\sqrt{n}}
