@@ -1,19 +1,25 @@
-# 05_multi_plot_grids.py
-
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 # =======================================
+# TABLE OF CONTENTS
+# =======================================
+# 1. Figure-Level vs. Axes-Level Functions
+# 2. `sns.relplot()`: Relational Plot Grids
+# 3. `sns.displot()`: Distribution Plot Grids
+# 4. `sns.catplot()`: Categorical Plot Grids
+
+
+# =======================================
 # 1. FIGURE-LEVEL VS. AXES-LEVEL FUNCTIONS
 # =======================================
-# - So far, we have mostly used "axes-level" functions (e.g., `scatterplot`,
+# - So far, we have mostly used "axes-level" functions (e.g., `scatterplot`),
 #   `histplot`). These functions draw onto a single Matplotlib `Axes` and don't
 #   affect the rest of the figure.
 #
 # - Seaborn also has "figure-level" functions (`relplot`, `displot`, `catplot`).
 #   These are more powerful because they create and manage the entire figure,
 #   including making it easy to create multiple subplots ("facets") based on your data.
-# - They use a `FacetGrid` object under the hood.
 
 # --- Setup: Apply a theme for our plots ---
 sns.set_theme(style="ticks", palette="deep")
@@ -28,13 +34,13 @@ sns.set_theme(style="ticks", palette="deep")
 print("--- Loading 'tips' dataset for relplot ---")
 tips_df = sns.load_dataset("tips")
 
-# --- Create a scatter plot faceted by the 'time' column ---
+# --- Create a scatter plot faceted by the `time` column ---
 # This will create two subplots: one for 'Lunch' and one for 'Dinner'.
 sns.relplot(
     data=tips_df,
     x="total_bill",
     y="tip",
-    col="time",  # Create columns of subplots based on the 'time' category
+    col="time",  # Create columns of subplots based on the 'time' category.
     hue="smoker",  # Still use hue to color points within each subplot
     style="smoker",  # Use different markers for smoker/non-smoker
 )
@@ -69,7 +75,7 @@ sns.displot(data=penguins_df, x="flipper_length_mm", col="species")  # Facet by 
 print("\nGenerated a distribution plot faceted by 'species'.")
 
 
-# --- Change the kind of plot to KDE ---
+# Change the kind of plot to KDE
 sns.displot(
     data=penguins_df,
     x="flipper_length_mm",
@@ -102,7 +108,13 @@ print("\nGenerated a categorical box plot faceted by 'smoker'.")
 
 # --- Let's see the same data, but with a different kind of plot ---
 # Simply change the `kind` parameter to get a different view of the same data.
-sns.catplot(data=tips_df, x="day", y="total_bill", col="smoker", kind="violin")
+sns.catplot(
+    data=tips_df,
+    x="day",
+    y="total_bill",
+    col="smoker",
+    kind="violin",  # We can easily change the plot kind
+)
 print("Generated a categorical violin plot of the same data.")
 
 
