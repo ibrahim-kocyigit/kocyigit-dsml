@@ -1,22 +1,30 @@
 # Confidence Intervals: Calculation Steps and an Example
 
-## Steps to Calculate a Confidence Interval
+The steps to calculate a confidence interval are:
 
 1. **Find the sample mean ($\bar{x}$).**
+
 2. **Choose a desired confidence level** (e.g., 95%).
+
 3. **Find the critical value ($z_{1-\alpha/2}$)** for the chosen confidence level (e.g., 1.96 for 95%).
+
 4. **Calculate the standard error** (standard deviation of the sample mean):  
-   $$
-   \text{Standard Error} = \frac{\sigma}{\sqrt{n}}
-   $$
+
+$$
+\text{Standard Error} = \frac{\sigma}{\sqrt{n}}
+$$
+
 5. **Compute the margin of error:**  
-   $$
-   \text{Margin of Error} = z_{1-\alpha/2} \times \text{Standard Error}
-   $$
+
+$$
+\text{Margin of Error} = z_{1-\alpha/2} \times \text{Standard Error}
+$$
+
 6. **Construct the confidence interval:**  
-   $$
-   \bar{x} \pm \text{Margin of Error}
-   $$
+
+$$
+\bar{x} \pm \text{Margin of Error}
+$$
 
 ![](./images/0401.png)
 
