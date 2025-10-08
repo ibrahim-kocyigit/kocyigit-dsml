@@ -89,12 +89,15 @@ You can also transpose a matrix. This is done by turning each of its columns int
 If... 
 
 $$
-A = \begin{bmatrix} 2 & 7 \\ 4 & 8 \\ 1 & 9 \end{bmatrix}$$
+A = \begin{bmatrix} 2 & 7 \\ 
+4 & 8 \\ 
+1 & 9 \end{bmatrix}$$
 
 ... (a 3x2 matrix), then its transpose is 
 
 $$
-A^T = \begin{bmatrix} 2 & 4 & 1 \\ 7 & 8 & 9 \end{bmatrix}
+A^T = \begin{bmatrix} 2 & 4 & 1 \\ 
+7 & 8 & 9 \end{bmatrix}
 $$
 
 ... (a 2x3 matrix).
