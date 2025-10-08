@@ -21,7 +21,9 @@ To solve this, we can represent our quantities and prices as vectors.
 - **Quantity Vector ($q$):**
   
 $$
-q = \begin{bmatrix} 2 \\ 4 \\ 1 \end{bmatrix}
+q = \begin{bmatrix} 2 \\
+4 \\
+1 \end{bmatrix}
 $$
 
 - **Price Vector ($p$):**
