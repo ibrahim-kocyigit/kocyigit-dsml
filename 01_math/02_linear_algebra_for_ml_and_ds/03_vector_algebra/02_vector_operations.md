@@ -9,9 +9,7 @@ To add or subtract two vectors, we simply add or subtract their corresponding co
 **Formulas:**  
 Given two vectors 
 
-$ 
-u = \begin{bmatrix} u_1 \\ u_2 \end{bmatrix} 
-$
+$u = \begin{bmatrix} u_1 \\ u_2 \end{bmatrix}$
 
 and  
 
