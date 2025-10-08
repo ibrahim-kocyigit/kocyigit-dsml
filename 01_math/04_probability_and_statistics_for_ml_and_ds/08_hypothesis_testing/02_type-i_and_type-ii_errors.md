@@ -37,4 +37,4 @@ Ideally, we would always make perfect decisions when testing hypotheses. However
 
 ---
 
-**Next:** 
+**Next:** [Right-Tailed, Left-Tailed, and Two-Tailed Tests](./03_right-tailed_left-tailed_and_two-tailed_tests.md)
