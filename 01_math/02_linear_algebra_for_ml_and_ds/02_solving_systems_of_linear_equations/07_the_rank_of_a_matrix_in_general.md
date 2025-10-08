@@ -50,4 +50,4 @@ The answer is **yes**, and it involves using the **row echelon form** of the mat
 
 ---
 
-**Next:** []
+**Next:** [Row Echelon Form](./08_row_echelon_form.md)
