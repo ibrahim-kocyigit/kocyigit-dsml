@@ -26,8 +26,6 @@ $$
 
 Since the determinant is **11** (non-zero), the matrix is **non-singular**.
 
----
-
 ## Operation 1: Switching Rows
 
 The first operation is to simply swap the positions of two rows.
@@ -35,13 +33,19 @@ The first operation is to simply swap the positions of two rows.
 **Original Matrix (det=11):**  
 
 $$
-\begin{bmatrix} 5 & 1 \\ 4 & 3 \end{bmatrix}
+\begin{bmatrix} 
+5 & 1 \\ 
+4 & 3 
+\end{bmatrix}
 $$
 
 **After Switching Rows:**
 
 $$
-\begin{bmatrix} 4 & 3 \\ 5 & 1 \end{bmatrix}
+\begin{bmatrix} 
+4 & 3 \\ 
+5 & 1 
+\end{bmatrix}
 $$
 
 Let's calculate the determinant of the new matrix:
@@ -52,8 +56,6 @@ $$
 
 The new determinant is **-11**. Since it's still non-zero, the matrix is still **non-singular**. Notice that switching two rows negates the determinant. If the original determinant had been 0, the new one would also be 0.
 
----
-
 ## Operation 2: Multiplying a Row by a Non-Zero Scalar
 
 The second operation is to multiply all the elements in a single row by a non-zero constant (a scalar).
@@ -61,13 +63,19 @@ The second operation is to multiply all the elements in a single row by a non-ze
 **Original Matrix (det=11):**
 
 $$
-\begin{bmatrix} 5 & 1 \\ 4 & 3 \end{bmatrix}
+\begin{bmatrix} 
+5 & 1 \\ 
+4 & 3 
+\end{bmatrix}
 $$
 
 **After Multiplying Row 1 by 10:**  
 
 $$
-\begin{bmatrix} 50 & 10 \\ 4 & 3 \end{bmatrix}
+\begin{bmatrix} 
+50 & 10 \\ 
+4 & 3 
+\end{bmatrix}
 $$
 
 Let's calculate the new determinant:
@@ -78,8 +86,6 @@ $$
 
 The new determinant is **110**, which is exactly **10 times** the original determinant. Since we multiplied by a non-zero scalar, a non-zero determinant remains non-zero, and a zero determinant would remain zero. This operation preserves singularity.
 
----
-
 ## Operation 3: Adding a Row to Another Row
 
 The final operation is to add one row to another. The row being added remains unchanged, while the row it's added to is replaced by the sum.
@@ -87,7 +93,10 @@ The final operation is to add one row to another. The row being added remains un
 **Original Matrix (det=11):**  
 
 $$
-\begin{bmatrix} 5 & 1 \\ 4 & 3 \end{bmatrix}
+\begin{bmatrix} 
+5 & 1 \\ 
+4 & 3 
+\end{bmatrix}
 $$
 
 **After Adding Row 2 to Row 1 (New Row 1 = Row 1 + Row 2):**  
@@ -95,7 +104,10 @@ $$
 _New Row 1 = `[5+4, 1+3]` = `[9, 4]`_  
 
 $$
-\begin{bmatrix} 9 & 4 \\ 4 & 3 \end{bmatrix}
+\begin{bmatrix} 
+9 & 4 \\ 
+4 & 3 
+\end{bmatrix}
 $$
 
 Let's calculate the new determinant:

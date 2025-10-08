@@ -134,4 +134,4 @@ $$
 
 ---
 
-**Next:** []
+**Next:** [Row Operations That Preserve Singularity](./05_row_operations_that_preserve_singularity.md)
