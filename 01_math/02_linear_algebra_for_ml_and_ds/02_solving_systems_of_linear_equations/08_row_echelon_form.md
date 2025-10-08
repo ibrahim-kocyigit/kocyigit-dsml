@@ -103,35 +103,42 @@ This algorithmic process gives us the easiest way to calculate the rank of a mat
 
 Let's check our examples:
 
-* **Matrix A (Non-Singular):**
-    * Row Echelon Form: 
-      $$
-      \begin{bmatrix} 
-      1 & 0.2 \\ 
-      0 & 1 
-      \end{bmatrix}
-      $$
-    * It has **two** non-zero rows. ➔ **Rank = 2**  
+#### Matrix A (Non-Singular):
 
-* **Matrix B (Singular):**
-    * Row Echelon Form: 
-      $$
-      \begin{bmatrix} 
-      1 & 0.2 \\ 
-      0 & 0 
-      \end{bmatrix}
-      $$
-    * It has **one** non-zero row. ➔ **Rank = 1**  
+* Row Echelon Form: 
 
-* **The Zero Matrix:**
-    * Row Echelon Form: 
-      $$
-      \begin{bmatrix} 
-      0 & 0 \\ 
-      0 & 0 
-      \end{bmatrix}
-      $$
-    * It has **zero** non-zero rows. ➔ **Rank = 0**
+$$
+\begin{bmatrix} 
+1 & 0.2 \\ 
+0 & 1 
+\end{bmatrix}
+$$
+
+* It has **two** non-zero rows. ➔ **Rank = 2**  
+
+#### Matrix B (Singular):**
+* Row Echelon Form: 
+
+$$
+\begin{bmatrix} 
+1 & 0.2 \\ 
+0 & 0 
+\end{bmatrix}
+$$
+
+* It has **one** non-zero row. ➔ **Rank = 1**  
+
+#### The Zero Matrix:**
+* Row Echelon Form: 
+
+$$
+\begin{bmatrix} 
+0 & 0 \\ 
+0 & 0 
+\end{bmatrix}
+$$
+
+* It has **zero** non-zero rows. ➔ **Rank = 0**
 
 This confirms what we learned before and gives us a powerful tool. It also leads to a final, clear definition of non-singularity:
 
