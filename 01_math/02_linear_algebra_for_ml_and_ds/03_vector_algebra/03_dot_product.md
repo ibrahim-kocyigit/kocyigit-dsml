@@ -104,8 +104,6 @@ $$
 
 **Notice** that the dimensions of the matrix swap.
 
----
-
 ## General Definition of the Dot Product
 
 Given two vectors, $x$ and $y$, with the same number of components ($n$):
@@ -127,4 +125,4 @@ Other common notations for the dot product include angled brackets, $\langle x, 
 
 ---
 
-**Next:** []
+**Next:** [The Geometric Dot Product](./04_the_geometric_dot_product.md)
