@@ -28,9 +28,11 @@ $$
 
 - **Price Vector ($p$):**
   
-  $$
-  p = \begin{bmatrix} 3 \\ 5 \\ 2 \end{bmatrix}
-  $$
+$$
+p = \begin{bmatrix} 3 \\ 
+5 \\ 
+2 \end{bmatrix}
+$$
 
 The total cost is found by multiplying the quantity of each fruit by its price and summing the results:
 - Cost of apples: $2 \times 3 = 6$ dollars
@@ -39,8 +41,6 @@ The total cost is found by multiplying the quantity of each fruit by its price a
 - **Total Cost:** $6 + 20 + 2 = 28$ dollars
 
 This operation—multiplying corresponding components and then summing them up—is exactly the **dot product**.
-
----
 
 ## Formalizing the Dot Product
 
@@ -51,8 +51,6 @@ The dot product of our two vectors is:
 $$
 \begin{bmatrix} 2 & 4 & 1 \end{bmatrix} \cdot \begin{bmatrix} 3 \\ 5 \\ 2 \end{bmatrix} = (2)(3) + (4)(5) + (1)(2) = 28
 $$
-
----
 
 ## Connection Between Dot Product and L2-Norm
 
@@ -68,13 +66,21 @@ This result, 25, is the square of the L2-norm ($5^2$).
 
 This is always true. The L2-norm of a vector is the **square root of the dot product of the vector with itself**: $||v||_2 = \sqrt{v \cdot v}$
 
----
-
 ## The Transpose Operation
 
 The operation of converting a column vector into a row vector (or vice-versa) is called the **transpose**. It is denoted by a superscript $T$.
 
-- If $v = \begin{bmatrix} 2 \\ 4 \\ 1 \end{bmatrix}$, then its transpose is $v^T = \begin{bmatrix} 2 & 4 & 1 \end{bmatrix}$.
+- If... 
+
+$$
+v = \begin{bmatrix} 2 \\ 4 \\ 1 \end{bmatrix}
+$$, 
+
+... then its transpose is 
+
+$$
+v^T = \begin{bmatrix} 2 & 4 & 1 \end{bmatrix}
+$$
 
 You can also transpose a matrix. This is done by turning each of its columns into a row.
 
