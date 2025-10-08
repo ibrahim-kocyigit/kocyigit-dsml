@@ -13,7 +13,8 @@ $$
 u = \begin{bmatrix} u_1 \\ u_2 \end{bmatrix} 
 $$
 
-and
+and  
+
 $$ 
 v = \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} 
 $$
@@ -25,6 +26,7 @@ u + v = \begin{bmatrix} u_1 + v_1 \\ u_2 + v_2 \end{bmatrix}
 $$
 
 - **Difference:**  
+
 $$
 u - v = \begin{bmatrix} u_1 - v_1 \\ u_2 - v_2 \end{bmatrix}
 $$
