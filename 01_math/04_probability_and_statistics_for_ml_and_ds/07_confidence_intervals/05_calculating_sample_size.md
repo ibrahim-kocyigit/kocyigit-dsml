@@ -39,6 +39,7 @@ $$
 $$
 
 4. Square both sides:  
+
 $$
 n \geq \left(\frac{25 \times 1.96}{3}\right)^2 \approx 266.78
 $$
@@ -60,3 +61,7 @@ $$
 - MOE: desired margin of error
 
 Plug in your values to find the required sample size for your study.
+
+---
+
+**Next:** [Difference Between Confidence and Probability](./06_difference_between_confidence_and_probability.md)
