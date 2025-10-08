@@ -102,4 +102,4 @@ Let's check the ranks of all the matrices we've analyzed:
 
 ---
 
-**Next:** []
+**Next:** [Reduced Row Echelon Form](./10_reduced_row_echelon_form.md)
