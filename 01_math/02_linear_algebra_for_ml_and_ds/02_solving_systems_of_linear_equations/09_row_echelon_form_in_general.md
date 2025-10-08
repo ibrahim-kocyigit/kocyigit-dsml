@@ -97,7 +97,8 @@ The row echelon form gives us the simplest possible way to find the rank of a ma
 
 Let's check the ranks of all the matrices we've analyzed:
 
-![](./images/0902.png)
+<img src="./images/0902.png" alt="" width="400"/>
+
 
 ---
 
