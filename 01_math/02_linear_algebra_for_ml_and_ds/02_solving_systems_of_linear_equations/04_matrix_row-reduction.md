@@ -105,23 +105,23 @@ $$
 
 For 2x2 matrices, this means there are only three possible row echelon forms:
 
-1.  **Non-Singular:**
+1.  **Non-Singular:**  
 
-    $$
-    \begin{bmatrix} 1 & * \\ 0 & 1 \end{bmatrix}
-    $$
+$$
+\begin{bmatrix} 1 & * \\ 0 & 1 \end{bmatrix}
+$$
 
 2.  **Singular (One leading 1):**  
 
-    $$
-    \begin{bmatrix} 1 & * \\ 0 & 0 \end{bmatrix}
-    $$
+$$
+\begin{bmatrix} 1 & * \\ 0 & 0 \end{bmatrix}
+$$
 
 3.  **Singular (Zero leading 1s):**  
 
-    $$
-    \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}
-    $$
+$$
+\begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}
+$$
 
 ---
 
