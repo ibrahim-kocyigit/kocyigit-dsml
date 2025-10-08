@@ -6,7 +6,7 @@ A key difference is that to solve a system, we can no longer ignore the constant
 
 ## The Augmented Matrix
 
-To solve a system, we first create an **augmented matrix**. This is done by taking the standard coefficient matrix and adding a final column that holds the constant values from the right-hand side of the equations. A vertical line is often used to separate the coefficients from the constants.
+To solve a system, we first create an **augmented matrix**. This is done by taking the standard coefficient matrix and adding a final column that holds the constant values from the right-hand side of the equations. A vertical line is often used to separate the coefficients from the constants in textbooks, but on GitHub, we simply use a regular matrix and note that the last column is the constants column.
 
 Let's solve the system of equations from the video lecture:
 
@@ -18,14 +18,14 @@ Let's solve the system of equations from the video lecture:
 **Augmented Matrix:**  
 
 $$
-\left[
-\begin{array}{ccc|c}
+\begin{bmatrix}
 2 & -1 & 1 & 1 \\
 2 & 2 & 2 & -2 \\
 4 & -2 & 3 & -1
-\end{array}
-\right]
+\end{bmatrix}
 $$
+
+*The last column is the constants column (right-hand side of the equations).*
 
 We can now apply our row operations to this entire augmented matrix to solve the system.
 
@@ -38,25 +38,21 @@ The first phase is to transform the matrix into **row echelon form (REF)**. We d
 **Initial Matrix:**  
 
 $$
-\left[
-\begin{array}{ccc|c}
+\begin{bmatrix}
 2 & -1 & 1 & 1 \\
 2 & 2 & 2 & -2 \\
 4 & -2 & 3 & -1
-\end{array}
-\right]
+\end{bmatrix}
 $$
 
 1.  **Normalize the pivot:** The first pivot is `2`. We divide the entire first row by 2. ($R1 = R1 / 2$)
 
 $$
-\left[
-\begin{array}{ccc|c}
+\begin{bmatrix}
 1 & -0.5 & 0.5 & 0.5 \\
 2 & 2 & 2 & -2 \\
 4 & -2 & 3 & -1
-\end{array}
-\right]
+\end{bmatrix}
 $$
 
 2.  **Eliminate below the pivot:**
@@ -64,13 +60,11 @@ $$
     * $R3 = R3 - 4 \times R1$
 
 $$
-\left[
-\begin{array}{ccc|c}
+\begin{bmatrix}
 1 & -0.5 & 0.5 & 0.5 \\
 0 & 3 & 1 & -3 \\
 0 & 0 & 1 & -3
-\end{array}
-\right]
+\end{bmatrix}
 $$
 
 ### Step 2: Process the Second Pivot (Row 2)
@@ -80,13 +74,11 @@ The first column is done. The next pivot is the `3` in Row 2.
 1.  **Normalize the pivot:** $R2 = R2 / 3$
 
 $$
-\left[
-\begin{array}{ccc|c}
+\begin{bmatrix}
 1 & -0.5 & 0.5 & 0.5 \\
 0 & 1 & 1/3 & -1 \\
 0 & 0 & 1 & -3
-\end{array}
-\right]
+\end{bmatrix}
 $$
 
 2.  **Eliminate below the pivot:** The value below is already `0`, so this step is complete.
@@ -105,13 +97,11 @@ The second phase is to transform the REF matrix into **reduced row echelon form 
 2.  **Clear Row 1:** $R1 = R1 - 0.5 \times R3$
 
 $$
-\left[
-\begin{array}{ccc|c}
+\begin{bmatrix}
 1 & -0.5 & 0 & 2 \\
 0 & 1 & 0 & 0 \\
 0 & 0 & 1 & -3
-\end{array}
-\right]
+\end{bmatrix}
 $$
 
 ### Step 5: Use the Second Pivot to Clear Above
@@ -119,13 +109,11 @@ $$
 1.  **Clear Row 1:** $R1 = R1 + 0.5 \times R2$
 
 $$
-\left[
-\begin{array}{ccc|c}
+\begin{bmatrix}
 1 & 0 & 0 & 2 \\
 0 & 1 & 0 & 0 \\
 0 & 0 & 1 & -3
-\end{array}
-\right]
+\end{bmatrix}
 $$
 
 The matrix is now in **Reduced Row Echelon Form**.
