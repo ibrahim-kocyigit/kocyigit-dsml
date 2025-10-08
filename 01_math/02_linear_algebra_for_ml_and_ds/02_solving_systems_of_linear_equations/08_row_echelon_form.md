@@ -116,7 +116,7 @@ $$
 
 * It has **two** non-zero rows. ➔ **Rank = 2**  
 
-#### Matrix B (Singular):**
+#### Matrix B (Singular):
 * Row Echelon Form: 
 
 $$
@@ -128,7 +128,7 @@ $$
 
 * It has **one** non-zero row. ➔ **Rank = 1**  
 
-#### The Zero Matrix:**
+#### The Zero Matrix:
 * Row Echelon Form: 
 
 $$
@@ -146,4 +146,4 @@ This confirms what we learned before and gives us a powerful tool. It also leads
 
 ---
 
-**Next:** []
+**Next:** [Row Echelon Form in General](./09_row_echelon_form_in_general.md)
