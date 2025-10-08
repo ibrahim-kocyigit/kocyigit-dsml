@@ -25,7 +25,7 @@ $$
 \end{bmatrix}
 $$
 
-*The last column is the constants column (right-hand side of the equations).*
+> *The last column is the constants column (right-hand side of the equations). Normally, this column is separated with a vertical bar (|) in LaTeX, but GitHub's renderer does not support this, so we simply display it as the last column.*
 
 We can now apply our row operations to this entire augmented matrix to solve the system.
 
@@ -131,4 +131,4 @@ If the matrix is singular, the algorithm stops when you get a row of zeros in th
 
 ---
 
-**Next:** []
+**Next:** [Vectors and Their Properties](../03_vector_algebra/01_vectors_and_their_properties.md)
