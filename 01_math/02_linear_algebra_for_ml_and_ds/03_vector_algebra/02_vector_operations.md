@@ -43,11 +43,13 @@ The difference between two vectors is very useful for calculating the "distance"
 Given two vectors $x = (1, 5)$ and $y = (6, 2)$:
 
 - **L1 Distance:**  
+
 $$
 ||x - y||_1 = |1-6| + |5-2| = |-5| + |3| = 5 + 3 = 8
 $$
 
 - **L2 Distance:**  
+
 $$
 ||x - y||_2 = \sqrt{(1-6)^2 + (5-2)^2} = \sqrt{(-5)^2 + 3^2} = \sqrt{25 + 9} = \sqrt{34} \approx 5.83
 $$
