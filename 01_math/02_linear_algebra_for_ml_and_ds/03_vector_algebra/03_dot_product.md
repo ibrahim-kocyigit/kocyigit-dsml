@@ -70,7 +70,7 @@ This is always true. The L2-norm of a vector is the **square root of the dot pro
 
 The operation of converting a column vector into a row vector (or vice-versa) is called the **transpose**. It is denoted by a superscript $T$.
 
-- If... 
+If... 
 
 $$
 v = \begin{bmatrix} 2 \\ 
@@ -86,9 +86,20 @@ $$
 
 You can also transpose a matrix. This is done by turning each of its columns into a row.
 
-- If $A = \begin{bmatrix} 2 & 7 \\ 4 & 8 \\ 1 & 9 \end{bmatrix}$ (a 3x2 matrix), then its transpose is $A^T = \begin{bmatrix} 2 & 4 & 1 \\ 7 & 8 & 9 \end{bmatrix}$ (a 2x3 matrix).
+If... 
 
-Notice that the dimensions of the matrix swap.
+$$
+A = \begin{bmatrix} 2 & 7 \\ 4 & 8 \\ 1 & 9 \end{bmatrix}$$
+
+... (a 3x2 matrix), then its transpose is 
+
+$$
+A^T = \begin{bmatrix} 2 & 4 & 1 \\ 7 & 8 & 9 \end{bmatrix}
+$$
+
+... (a 2x3 matrix).
+
+**Notice** that the dimensions of the matrix swap.
 
 ---
 
