@@ -6,7 +6,8 @@ The most important special case is when two vectors are **orthogonal** (perpendi
 
 > **Rule:** Two vectors are orthogonal if and only if their dot product is **zero**.
 
-Let's consider the vectors $u = (-1, 3)$ and $v = (6, 2)$. Their dot product is:
+Let's consider the vectors $u = (-1, 3)$ and $v = (6, 2)$. Their dot product is:  
+
 $$
 u \cdot v = (-1)(6) + (3)(2) = -6 + 6 = 0
 $$
