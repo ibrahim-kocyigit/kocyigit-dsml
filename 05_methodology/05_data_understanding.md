@@ -8,7 +8,19 @@
 The goal of this stage is to conduct Exploratory Data Analysis (EDA) to develop a deep understanding of the data's content, quality, and structure. Through descriptive statistics and visualization, we aim to uncover initial patterns, spot anomalies or data quality issues, and validate (or challenge) the initial hypotheses formed during the business understanding phase.
 
 
-## Step 1: Descriptive Statistics
+## Step 1: Initial Data Shaping
+
+Before diving into analysis, it's crucial to perform a first pass of cleaning and shaping. This is not the exhaustive cleaning that will happen in Stage 6, but rather a set of preliminary steps to make the data usable for EDA. The goal is to handle obvious errors and inconsistencies that would otherwise break visualizations or skew summary statistics.
+
+  * **Action:** Apply basic cleaning and formatting to the raw dataset.
+  * **Guiding Questions:**
+      * Are the column names consistent and easy to work with (e.g., convert to snake_case)?
+      * Are there any obvious data type errors that need correction (e.g., numbers stored as strings, dates as objects)?
+      * Are there fully duplicated rows that can be safely removed?
+  * **Toolkit Connection:** This step uses basic Pandas functions like `.rename()`, `.astype()`, `.to_datetime()`, and `.drop_duplicates()`.
+
+
+## Step 2: Descriptive Statistics
 
 Compute summary statistics to get a high-level quantitative overview of the dataset.
 
@@ -28,7 +40,7 @@ Compute summary statistics to get a high-level quantitative overview of the data
 > ```
 
 
-## Step 2: Univariate Analysis
+## Step 3: Univariate Analysis
 
 Analyze individual variables to understand their own distributions and characteristics.
 
@@ -49,7 +61,7 @@ Analyze individual variables to understand their own distributions and character
 > > *[Example: "The target variable `churn_status` is imbalanced, with class '1' representing only 15% of the dataset. This will require special handling (e.g., stratified splitting, appropriate metrics)."]*
 
 
-## Step 3: Bivariate Analysis
+## Step 4: Bivariate Analysis
 
 Analyze pairs of variables to investigate relationships and correlations.
 
@@ -70,7 +82,7 @@ Analyze pairs of variables to investigate relationships and correlations.
 > > *[Example: "The median `Price` for the 'Electronics' category is significantly higher than for 'Accessories', as shown in the box plot."]*
 
 
-## Step 4: Initial Findings Summary
+## Step 5: Initial Findings Summary
 
 Consolidate all observations from the EDA into a summary.
 
@@ -86,7 +98,7 @@ Consolidate all observations from the EDA into a summary.
 >       * *[Note any initial assumptions that were challenged or validated by the data.]*
 
 
-## Step 5: Final Review
+## Step 6: Final Review
 
 Conclude the data understanding phase. Based on the findings (especially data quality issues), it may be necessary to revisit Stage 3 (Data Requirements) or Stage 4 (Data Collection).
 
