@@ -60,21 +60,7 @@ Writing out three separate dot products is clumsy. Since the column vector of va
 
 This gives us the **matrix-vector product**, which is simply a stack of dot products:
 
-$$
-\begin{bmatrix}
-1 & 1 & 1 \\
-1 & 2 & 1 \\
-1 & 1 & 2
-\end{bmatrix}
-
-\begin{bmatrix} a \\ 
-b \\ 
-c \end{bmatrix}
-
-=
-
-\begin{bmatrix} 10 \\ 15 \\ 12 \end{bmatrix}
-$$
+<img src="./images/0501.png" width="200">
 
 This is the standard, compact way to represent a system of linear equations: **$Xw = y$**.
 
