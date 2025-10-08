@@ -122,4 +122,4 @@ Believe it or not, this operation **does not change the determinant at all**. Si
 
 ---
 
-**Next:** []
+**Next:** [The Rank of a Matrix](./06_the_rank_of_a_matrix.md)

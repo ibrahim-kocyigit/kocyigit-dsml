@@ -43,4 +43,4 @@ A full-rank matrix has no redundant information, its solution space is just a si
 
 ---
 
-**Next:** []
+**Next:** [The Rank of a Matrix in General](./07_the_rank_of_a_matrix_in_general.md)
