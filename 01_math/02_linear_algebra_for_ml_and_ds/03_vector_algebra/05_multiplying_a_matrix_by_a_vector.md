@@ -2,8 +2,6 @@
 
 In this lesson, we will learn how to multiply a matrix and a vector. This operation is fundamental to linear algebra and is precisely how we represent a system of linear equations in a compact form.
 
----
-
 ## From a Single Equation to a Dot Product
 
 Recall that the dot product is the sum of the products of corresponding entries. A single linear equation can be expressed as a dot product.
@@ -17,7 +15,9 @@ $$
 ...can be written as the dot product of a **row vector** of quantities and a **column vector** of unknown prices:  
 
 $$
-\begin{bmatrix} 2 & 4 & 1 \end{bmatrix} \cdot \begin{bmatrix} a \\ b \\ c \end{bmatrix} = 28
+\begin{bmatrix} 2 & 4 & 1 \end{bmatrix} \cdot \begin{bmatrix} a \\ 
+b \\ 
+c \end{bmatrix} = 28
 $$
 
 ---
