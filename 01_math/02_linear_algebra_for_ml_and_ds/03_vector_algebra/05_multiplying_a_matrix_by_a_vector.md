@@ -40,8 +40,19 @@ b \\
 c \end{bmatrix} = 10
 $$
 
-2.  $\begin{bmatrix} 1 & 2 & 1 \end{bmatrix} \cdot \begin{bmatrix} a \\ b \\ c \end{bmatrix} = 15$
-3.  $\begin{bmatrix} 1 & 1 & 2 \end{bmatrix} \cdot \begin{bmatrix} a \\ b \\ c \end{bmatrix} = 12$
+2.  
+$$
+\begin{bmatrix} 1 & 2 & 1 \end{bmatrix} \cdot \begin{bmatrix} a \\ 
+b \\ 
+c \end{bmatrix} = 15
+$$
+
+3.  
+$$
+\begin{bmatrix} 1 & 1 & 2 \end{bmatrix} \cdot \begin{bmatrix} a \\ 
+b \\ 
+c \end{bmatrix} = 12
+$$
 
 ---
 
