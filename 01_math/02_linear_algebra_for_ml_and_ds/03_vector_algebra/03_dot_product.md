@@ -2,8 +2,6 @@
 
 The **dot product** is a fundamental operation in linear algebra that allows us to combine two vectors to get a single number (a scalar). It has many uses, including a very nice and compact way to express systems of linear equations.
 
----
-
 ## An Intuitive Example: Calculating Total Cost
 
 Let's start with a simple problem. Imagine you are buying fruit:
@@ -22,9 +20,9 @@ To solve this, we can represent our quantities and prices as vectors.
 
 - **Quantity Vector ($q$):**
   
-  $$
-  q = \begin{bmatrix} 2 \\ 4 \\ 1 \end{bmatrix}
-  $$
+$$
+q = \begin{bmatrix} 2 \\ 4 \\ 1 \end{bmatrix}
+$$
 
 - **Price Vector ($p$):**
   
