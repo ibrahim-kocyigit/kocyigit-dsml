@@ -73,8 +73,10 @@ The operation of converting a column vector into a row vector (or vice-versa) is
 - If... 
 
 $$
-v = \begin{bmatrix} 2 \\ 4 \\ 1 \end{bmatrix}
-$$, 
+v = \begin{bmatrix} 2 \\ 
+4 \\ 
+1 \end{bmatrix}
+$$ 
 
 ... then its transpose is 
 
