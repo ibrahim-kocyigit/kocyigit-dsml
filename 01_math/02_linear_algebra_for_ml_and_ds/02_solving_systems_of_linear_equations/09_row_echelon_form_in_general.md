@@ -97,12 +97,7 @@ The row echelon form gives us the simplest possible way to find the rank of a ma
 
 Let's check the ranks of all the matrices we've analyzed:
 
-| Matrix Type            | Row Echelon Form                                                                 | Number of Pivots | Rank |
-| :--------------------- | :------------------------------------------------------------------------------ | :--------------: | :--: |
-| **Non-Singular**       | $\begin{bmatrix} 1 & * & * \\ 0 & 1 & * \\ 0 & 0 & 1 \end{bmatrix}$             |        3         |  **3** |
-| **Singular (Ex 1)**    | $\begin{bmatrix} 1 & 1 & 1 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{bmatrix}$             |        2         |  **2** |
-| **Singular (Ex 2)**    | $\begin{bmatrix} 1 & 1 & 1 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}$             |        1         |  **1** |
-| **Zero Matrix**        | $\begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}$             |        0         |  **0** |
+![](./images/0902.png)
 
 ---
 
