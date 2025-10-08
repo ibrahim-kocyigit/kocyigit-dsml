@@ -16,8 +16,6 @@ Since their dot product is 0, these vectors must be perpendicular, as we can see
 
 ![](./images/0401.png)
 
----
-
 ## The General Geometric Formula
 
 We know two special cases:
@@ -26,8 +24,11 @@ We know two special cases:
 
 What about the dot product for any two vectors $u$ and $v$? The formula connects the dot product to the angle, $\theta$, between the two vectors.
 
-> **Geometric Formula for the Dot Product:**  
-> $ u \cdot v = ||u|| \cdot ||v|| \cdot \cos(\theta) $
+**Geometric Formula for the Dot Product:**  
+
+$$ 
+u \cdot v = ||u|| \cdot ||v|| \cdot \cos(\theta) 
+$$
 
 This formula tells us that the dot product is the product of the magnitudes of the two vectors, scaled by the cosine of the angle between them.
 
