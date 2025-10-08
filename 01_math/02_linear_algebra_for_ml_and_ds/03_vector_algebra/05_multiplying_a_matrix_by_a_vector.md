@@ -20,8 +20,6 @@ b \\
 c \end{bmatrix} = 28
 $$
 
----
-
 ## From a System of Equations to Multiple Dot Products
 
 Now, imagine we have a system of three equations. Each equation can be expressed as its own dot product.
@@ -63,8 +61,6 @@ This gives us the **matrix-vector product**, which is simply a stack of dot prod
 <img src="./images/0501.png" width="200">
 
 This is the standard, compact way to represent a system of linear equations: **$Xw = y$**.
-
----
 
 ## A Note on Dimensions
 
