@@ -31,8 +31,15 @@ Now, imagine we have a system of three equations. Each equation can be expressed
 2.  $a + 2b + c = 15$
 3.  $a + b + 2c = 12$
 
-**As Dot Products:**
-1.  $\begin{bmatrix} 1 & 1 & 1 \end{bmatrix} \cdot \begin{bmatrix} a \\ b \\ c \end{bmatrix} = 10$
+**As Dot Products:**  
+
+1.  
+$$
+\begin{bmatrix} 1 & 1 & 1 \end{bmatrix} \cdot \begin{bmatrix} a \\ 
+b \\ 
+c \end{bmatrix} = 10
+$$
+
 2.  $\begin{bmatrix} 1 & 2 & 1 \end{bmatrix} \cdot \begin{bmatrix} a \\ b \\ c \end{bmatrix} = 15$
 3.  $\begin{bmatrix} 1 & 1 & 2 \end{bmatrix} \cdot \begin{bmatrix} a \\ b \\ c \end{bmatrix} = 12$
 
