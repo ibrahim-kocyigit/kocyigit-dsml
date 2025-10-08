@@ -54,10 +54,9 @@ To eliminate `b`, we can multiply the New Equation 3 by 2 and subtract it from t
 - $(-6b + 6b) + (-7c - 4c) = -33$
 - $-11c = -33$
 
-Solving this gives us our first known value:
-$$ c = 3 $$
+Solving this gives us our first known value:  
 
----
+$$ c = 3 $$
 
 ### Step 3: Back-Substitution
 
