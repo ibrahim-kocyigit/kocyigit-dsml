@@ -11,7 +11,11 @@ Let's explore the three main row operations using an example.
 **Example Matrix:**  
 
 $$
-A = \begin{bmatrix} 5 & 1 \\ 4 & 3 \end{bmatrix}
+A = 
+\begin{bmatrix} 
+5 & 1 \\ 
+4 & 3 
+\end{bmatrix}
 $$
 
 First, let's check if this matrix is singular by calculating its determinant:
