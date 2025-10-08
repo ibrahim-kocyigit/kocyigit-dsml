@@ -97,4 +97,4 @@ $$
 
 ---
 
-**Next:** []
+**Next:** [Vector Operations](./02_vector_operations.md)
