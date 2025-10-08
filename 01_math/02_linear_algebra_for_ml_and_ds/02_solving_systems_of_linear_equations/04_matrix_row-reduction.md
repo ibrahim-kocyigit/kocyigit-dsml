@@ -14,23 +14,23 @@ Let's trace the journey of a system and its corresponding matrix through this si
 
 **Original Matrix:**  
 
-$
+$$
 \begin{bmatrix}
 5 & 1 \\
 4 & -3
 \end{bmatrix}
-$
+$$
 
 After performing elimination steps (as we did in the previous lesson), we arrived at an intermediate system and its corresponding matrix.
 
 **Intermediate Matrix (Row Echelon Form):**  
 
-$
+$$
 \begin{bmatrix}
 1 & 0.2 \\
 0 & 1
 \end{bmatrix}
-$
+$$
 
 This form is called **row echelon form**. A key feature is that it has ones on the main diagonal and zeros *below* the diagonal.
 
@@ -42,12 +42,12 @@ Finally, after back-substitution, we arrived at the solved system.
 
 **Final Matrix (Reduced Row Echelon Form):**  
 
-$
+$$
 \begin{bmatrix}
 1 & 0 \\
 0 & 1
 \end{bmatrix}
-$
+$$
 
 This is the **identity matrix**, and it's called the **reduced row echelon form**. It has ones on the diagonal and zeros everywhere else.
 
@@ -61,23 +61,23 @@ What happens when we apply this process to a singular matrix?
 
 **Original Matrix:**  
 
-$
+$$
 \begin{bmatrix}
 5 & 1 \\
 10 & 2
 \end{bmatrix}
-$
+$$
 
 As we saw, subtracting twice the first equation from the second results in `0 = 0`. Applying the same logic to the matrix (e.g., subtracting twice the first row from the second row after normalization) results in a row of zeros.
 
 **Row Echelon Form of the Singular Matrix:**  
 
-$
+$$
 \begin{bmatrix}
 1 & 0.2 \\
 0 & 0
 \end{bmatrix}
-$
+$$
 
 The presence of a **row of all zeros** is the key indicator that the original matrix was **singular**.
 
@@ -92,14 +92,14 @@ This results in a general structure that looks like a staircase of ones, with ze
 
 **General Form:**  
 
-$
+$$
 \begin{bmatrix}
 1 & * & * & * \\
 0 & 1 & * & * \\
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0
 \end{bmatrix}
-$
+$$
 
 *(Where `*` can be any number)*
 
@@ -107,14 +107,21 @@ For 2x2 matrices, this means there are only three possible row echelon forms:
 
 1.  **Non-Singular:**
 
-    $ \begin{bmatrix} 1 & * \\ 0 & 1 \end{bmatrix} $
+    $$
+    \begin{bmatrix} 1 & * \\ 0 & 1 \end{bmatrix}
+    $$
 
 2.  **Singular (One leading 1):**  
 
-    $ \begin{bmatrix} 1 & * \\ 0 & 0 \end{bmatrix} $  
+    $$
+    \begin{bmatrix} 1 & * \\ 0 & 0 \end{bmatrix}
+    $$
 
 3.  **Singular (Zero leading 1s):**  
-    $ \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} $
+
+    $$
+    \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}
+    $$
 
 ---
 
