@@ -54,8 +54,6 @@ b \\
 c \end{bmatrix} = 12
 $$
 
----
-
 ## The Final Step: Matrix-Vector Multiplication
 
 Writing out three separate dot products is clumsy. Since the column vector of variables $(a, b, c)$ is the same in each equation, we can combine the row vectors into a single **matrix**.
@@ -68,8 +66,13 @@ $$
 1 & 2 & 1 \\
 1 & 1 & 2
 \end{bmatrix}
-\begin{bmatrix} a \\ b \\ c \end{bmatrix}
+
+\begin{bmatrix} a \\ 
+b \\ 
+c \end{bmatrix}
+
 =
+
 \begin{bmatrix} 10 \\ 15 \\ 12 \end{bmatrix}
 $$
 
