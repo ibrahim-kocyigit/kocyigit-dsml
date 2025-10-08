@@ -89,4 +89,4 @@ This is the **Reduced Row Echelon Form** of our original matrix.
 
 ---
 
-**Next:** []
+**Next:** [The Gaussian Elimination Algorithm](./11_the_gaussian_elimination_algorithm.md)
