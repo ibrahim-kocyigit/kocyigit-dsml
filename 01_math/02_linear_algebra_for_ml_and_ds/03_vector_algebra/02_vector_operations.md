@@ -78,4 +78,4 @@ $$
 
 ---
 
-**Next:** []
+**Next:** [Dot Product](./03_dot_product.md)
