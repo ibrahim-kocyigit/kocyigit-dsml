@@ -79,3 +79,7 @@ We have successfully transformed our original system into the solved system:
 1.  $a = 4$
 2.  $b = 2$
 3.  $c = 3$
+
+---
+
+**Next:** [Matrix Row-Reduction (Gaussian Elimination)](./04_matrix_row-reduction.md)
