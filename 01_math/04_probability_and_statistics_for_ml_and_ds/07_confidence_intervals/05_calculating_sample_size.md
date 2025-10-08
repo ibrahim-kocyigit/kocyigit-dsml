@@ -20,22 +20,28 @@ $$
 
 Now, solve for $n$:
 
-1. Divide both sides by $1.96$:
-   $$
-   \frac{3}{1.96} \geq \frac{25}{\sqrt{n}}
-   $$
-2. Multiply both sides by $\sqrt{n}$:
-   $$
-   \frac{3}{1.96} \sqrt{n} \geq 25
-   $$
-3. Divide both sides by $\frac{3}{1.96}$:
-   $$
-   \sqrt{n} \geq \frac{25 \times 1.96}{3}
-   $$
-4. Square both sides:
-   $$
-   n \geq \left(\frac{25 \times 1.96}{3}\right)^2 \approx 266.78
-   $$
+1. Divide both sides by $1.96$:  
+
+$$
+\frac{3}{1.96} \geq \frac{25}{\sqrt{n}}
+$$
+
+2. Multiply both sides by $\sqrt{n}$:  
+
+$$
+\frac{3}{1.96} \sqrt{n} \geq 25
+$$
+
+3. Divide both sides by $\frac{3}{1.96}$:  
+
+$$
+\sqrt{n} \geq \frac{25 \times 1.96}{3}
+$$
+
+4. Square both sides:  
+$$
+n \geq \left(\frac{25 \times 1.96}{3}\right)^2 \approx 266.78
+$$
 
 Since you can't sample a fraction of a person, round up to the next whole number:
 
