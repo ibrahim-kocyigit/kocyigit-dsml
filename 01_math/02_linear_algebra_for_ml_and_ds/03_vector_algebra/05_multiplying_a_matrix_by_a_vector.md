@@ -78,4 +78,4 @@ The result of the multiplication will be a new vector whose length is equal to t
 
 ---
 
-**Next:** []
+**Next:** [Matrices as Linear Transformations](../04_linear_transformations/01_matrices_as_linear_transformations.md)
