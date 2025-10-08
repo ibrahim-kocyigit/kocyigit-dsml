@@ -34,8 +34,6 @@ This formula tells us that the dot product is the product of the magnitudes of t
 
 The term $||u|| \cos(\theta)$ represents the **projection** of vector $u$ onto vector $v$—the "shadow" that $u$ casts on $v$. So, the dot product is the length of this shadow multiplied by the length of $v$.
 
----
-
 ## The Sign of the Dot Product
 
 This formula gives us a powerful intuition: the **sign** of the dot product tells us about the angle between the vectors.
@@ -50,4 +48,4 @@ This effectively divides the entire 2D plane into three regions relative to vect
 
 ---
 
-**Next:** []
+**Next:** [Multiplying a Matrix by a Vector](./05_multiplying_a_matrix_by_a_vector.md)
