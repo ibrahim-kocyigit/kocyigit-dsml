@@ -8,13 +8,15 @@ The notes in this folder are curated from my studies of the course **"Linear Alg
 
 ## How to Use These Notes
 
-My primary recommendation is to enroll in the official course on [Coursera](https://www.coursera.org/learn/linear-algebra-machine-learning) and use these notes as a complementary resource. The best way to build deep understanding and long-term memory is through active learning.
+These notes are designed to be a comprehensive study guide, whether you are formally enrolled in the course or studying independently.
 
-**Suggested Workflow:**
+### For Course Takers
 
-1.  Watch a video lecture from the course.
-2.  Afterward, open the corresponding markdown file from this repository.
-3.  Manually re-type the notes into your own local digital notebook or copy them by hand to a physcial one. The physical act of typing/writing and engaging with the material is far more effective than just reading or copy-pasting.
+If you are enrolled in the Coursera specialization, you can use these notes as:
+*   A pre-reading tool to get familiar with the concepts before watching the lectures.
+*   A post-lecture review to solidify your understanding.
+*   A quick reference guide for key formulas and definitions.
+
 
 ### For Self-Study (Free Path)
 
