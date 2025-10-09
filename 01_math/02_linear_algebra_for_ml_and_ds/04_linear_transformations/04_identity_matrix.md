@@ -31,16 +31,11 @@ When you multiply the identity matrix by any vector, the result is the same vect
 
 $$
 \begin{bmatrix} 1 & 0 \\ 
-0 & 1 \end{bmatrix}
-\begin{bmatrix} a \\ 
+0 & 1 \end{bmatrix}\begin{bmatrix} a \\ 
+b \end{bmatrix} = \begin{bmatrix} (1)(a) + (0)(b) \\ 
+(0)(a) + (1)(b) \end{bmatrix} = \begin{bmatrix} a \\ 
 b \end{bmatrix}
-=
-\begin{bmatrix} (1)(a) + (0)(b) \\ 
-(0)(a) + (1)(b) \end{bmatrix}
-=
-\begin{bmatrix} a \\ 
-b \end{bmatrix}
-$$
+$$ 
 
 The ones on the diagonal preserve each component, and the zeros ensure that the components don't mix.
 
