@@ -23,7 +23,7 @@
 
 - Also helps linearize relationships with diminishing returns (e.g., budget vs. box office).
 
-<img src="./images/0502.png" width="500">
+<img src="./images/0502.png" width="800">
 
 
 ### Box-Cox Transformation
