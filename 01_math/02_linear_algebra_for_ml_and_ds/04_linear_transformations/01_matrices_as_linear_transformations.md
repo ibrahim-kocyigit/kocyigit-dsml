@@ -34,11 +34,15 @@ $$
 1 \end{bmatrix}
 $$
 
-- **Transforming (0, 1):**
+#### Transforming (0, 1):
 
-  $$
-  \begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix} \begin{bmatrix} 0 \\ 1 \end{bmatrix} = \begin{bmatrix} (3)(0)+(1)(1) \\ (1)(0)+(2)(1) \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}
-  $$
+$$
+\begin{bmatrix} 3 & 1 \\ 
+1 & 2 \end{bmatrix} \begin{bmatrix} 0 \\ 
+1 \end{bmatrix} = \begin{bmatrix} (3)(0)+(1)(1) \\ 
+(1)(0)+(2)(1) \end{bmatrix} = \begin{bmatrix} 1 \\ 
+2 \end{bmatrix}
+$$
 
 Notice that the transformed basis vectors are simply the **columns of the matrix $A$**!
 
