@@ -88,3 +88,7 @@ The best way to build a strong, visual intuition for linear transformations is t
 * **[Linear Transformation Tools on GeoGebra](https://www.geogebra.org/search/linear%20transformations)**
 
 As you adjust the matrix values in the tool, pay close attention to where the basis vectors (often shown in red and green) land. You will see that they always correspond to the columns of the matrix you've defined.
+
+---
+
+**Next:** [Matrix Multiplication](./03_matrix_multiplication.md)
