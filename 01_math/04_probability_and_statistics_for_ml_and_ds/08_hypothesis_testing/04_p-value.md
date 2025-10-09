@@ -81,7 +81,7 @@ Using our height data (observed sample mean = 68.442):
 - **p-value** = P(X̄ ≤ 64.252 | μ = 66.7) = 0.0049
 - Since 0.0049 < 0.05 (and even < 0.01), we **reject H₀**
 
-## Alternative Approach: Using the z-Statistic
+### Right-Tailed Test Using the z-Statistic
 
 Instead of working with the sample mean directly, we can standardize it using the **z-statistic**:
 
