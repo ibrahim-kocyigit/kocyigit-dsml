@@ -61,75 +61,51 @@ This is the standard, scalable method for finding an inverse.
 3.  Apply the exact same row operations to the right side ($I$) simultaneously.
 4.  When the left side becomes the identity matrix, the right side will have become the **inverse matrix, $A^{-1}$**. The final form will be $[I \mid A^{-1}]$.
 
-**Example:** Let's find the inverse of $A = \begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix}$.
+#### Example:
+
+Let's find the inverse of:  
+
+$$
+A = \begin{bmatrix} 3 & 1 \\ 
+1 & 2 \end{bmatrix}
+$$
 
 **Step 1: Set up the augmented matrix.**
 
-$$
-\left[
-\begin{array}{cc|cc}
-3 & 1 & 1 & 0 \\
-1 & 2 & 0 & 1
-\end{array}
-\right]
-$$
+<img src="./images/0502.png" width="150">
 
 **Step 2: Perform row operations to get RREF on the left side.**
 
-- $R1 = R1 / 3$ (Normalize the first pivot)
+<img src="./images/0503.png" width="150">
 
-  $$
-  \left[
-  \begin{array}{cc|cc}
-  1 & 1/3 & 1/3 & 0 \\
-  1 & 2 & 0 & 1
-  \end{array}
-  \right]
-  $$
 
 - $R2 = R2 - R1$ (Create a zero below the first pivot)
 
-  $$
-  \left[
-  \begin{array}{cc|cc}
-  1 & 1/3 & 1/3 & 0 \\
-  0 & 5/3 & -1/3 & 1
-  \end{array}
-  \right]
-  $$
+<img src="./images/0504.png" width="150">
+
 
 - $R2 = R2 \times (3/5)$ (Normalize the second pivot)
 
-  $$
-  \left[
-  \begin{array}{cc|cc}
-  1 & 1/3 & 1/3 & 0 \\
-  0 & 1 & -1/5 & 3/5
-  \end{array}
-  \right]
-  $$
+<img src="./images/0505.png" width="150">
+
 
 - $R1 = R1 - (1/3) \times R2$ (Create a zero above the second pivot)
 
-  $$
-  \left[
-  \begin{array}{cc|cc}
-  1 & 0 & 2/5 & -1/5 \\
-  0 & 1 & -1/5 & 3/5
-  \end{array}
-  \right]
-  $$
+<img src="./images/0506.png" width="150">
 
 **Step 3: Read the inverse matrix from the right side.**
 
 The left side is now the identity matrix. The right side is our inverse.
 
 $$
-A^{-1} = \begin{bmatrix} 2/5 & -1/5 \\ -1/5 & 3/5 \end{bmatrix}
+A^{-1} = \begin{bmatrix} 2/5 & -1/5 \\ 
+-1/5 & 3/5 \end{bmatrix}
 $$
-
----
 
 ## When Does an Inverse Not Exist?
 
 A crucial point in linear algebra is that **not all matrices have an inverse**. A matrix can only be inverted if it is **non-singular**. If you try to perform Gauss-Jordan elimination on a singular matrix, you will find it impossible to get the identity matrix on the left side because you will end up with a row of all zeros.
+
+---
+
+**Next:** [Neural Networks and Matrices](./06_neural_networks_and_matrices.md)
