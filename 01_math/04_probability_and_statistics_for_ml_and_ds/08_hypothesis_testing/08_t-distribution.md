@@ -10,7 +10,7 @@ $$
 z = \frac{\bar{x} - \mu}{\sigma/\sqrt{n}}
 $$
 
-... follows a **standard normal distribution** ($N(0,1)$). This is called the **z-statistic**.
+... follows a **standard normal distribution** $N(0,1)$. This is called the **z-statistic**.
 
 **If $\sigma$ is unknown (the usual case)**, we estimate $\sigma$ with the sample standard deviation $s$. The statistic...  
 
