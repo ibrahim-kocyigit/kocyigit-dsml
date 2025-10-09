@@ -57,9 +57,9 @@ If you plot power for different values of $\alpha$:
 - **Higher $\alpha$** (e.g., 0.1) increases power but also increases type I error.
 - **Lower $\alpha$** (e.g., 0.01) decreases power but reduces type I error.
 
-## Trade-Off Between Type I and Type II Errors
-
 ![](./images/0604.png)
+
+## Trade-Off Between Type I and Type II Errors
 
 - For a fixed sample size, **reducing $\alpha$** (type I error) **increases $\beta$** (type II error), and vice versa.
 - **Larger sample sizes** allow you to reduce both $\alpha$ and $\beta$.
