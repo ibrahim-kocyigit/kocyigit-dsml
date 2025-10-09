@@ -4,7 +4,7 @@ This section contains my personal, detailed notes on linear algebra, focusing on
 
 ## Source Material
 
-The notes in this folder are curated from my studies of the course **"Linear Algebra for Machine Learning and Data Science"** by **DeepLearning.AI**, taught by the excellent instructor **Luis Serrano**. This course is the first part of the broader **"Mathematics for Machine Learning and Data Science"** specialization available on Coursera.
+The notes in this folder are curated from my studies of the course **"Linear Algebra for Machine Learning and Data Science"** by **DeepLearning.AI**, taught by the excellent instructor **Luis Serrano**. This course is the first part of the broader [Mathematics for Machine Learning and Data Science](https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science) specialization available on Coursera.
 
 ## How to Use These Notes
 

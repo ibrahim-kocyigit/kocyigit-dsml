@@ -6,7 +6,7 @@ Concepts like **gradient descent** and the **backpropagation** algorithm, which 
 
 ## Source Material
 
-The notes in this folder are curated from my studies of the course **"Calculus for Machine Learning and Data Science"** by **DeepLearning.AI**, taught by the excellent instructor **Luis Serrano**. This course is the second part of the broader **"Mathematics for Machine Learning and Data Science"** specialization available on Coursera.
+The notes in this folder are curated from my studies of the course **"Calculus for Machine Learning and Data Science"** by **DeepLearning.AI**, taught by the excellent instructor **Luis Serrano**. This course is the second part of the broader [Mathematics for Machine Learning and Data Science](https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science) specialization available on Coursera.
 
 ## How to Use These Notes
 
