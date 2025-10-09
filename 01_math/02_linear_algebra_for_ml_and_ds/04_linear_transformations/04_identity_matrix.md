@@ -27,7 +27,7 @@ $$
 
 ### Why It Works
 
-When you multiply the identity matrix by any vector, the result is the same vector you started with. Let's see why with a 2x2 example:
+When you multiply the identity matrix by any vector, the result is the same vector you started with. Let's see why with a 2x2 example:  
 
 $$
 \begin{bmatrix} 1 & 0 \\ 
