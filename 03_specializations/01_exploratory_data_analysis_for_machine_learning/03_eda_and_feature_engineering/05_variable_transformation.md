@@ -44,6 +44,8 @@
     ```
 - Allows the model to fit curves (e.g., diminishing returns, inflection points).
 
+<img src="./images/0503.png" width="800">
+
 ## Key Takeaways
 
 - Transformations (log, Box-Cox, polynomial) help meet model assumptions and capture complex relationships.
