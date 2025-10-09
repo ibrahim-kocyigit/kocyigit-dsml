@@ -18,9 +18,13 @@
     data['log_feature'] = np.log1p(data['feature'])
     ```
 - Log transformation can turn a skewed distribution into a more normal one.
-- Helps linearize relationships with diminishing returns (e.g., budget vs. box office).
 
-![](./images/0601.png)
+![](./images/0501.png)
+
+- Also helps linearize relationships with diminishing returns (e.g., budget vs. box office).
+
+<img src="./images/0502.png" width="500">
+
 
 ### Box-Cox Transformation
 
