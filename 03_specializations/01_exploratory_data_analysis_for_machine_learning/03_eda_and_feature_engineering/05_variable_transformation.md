@@ -20,6 +20,8 @@
 - Log transformation can turn a skewed distribution into a more normal one.
 - Helps linearize relationships with diminishing returns (e.g., budget vs. box office).
 
+![](./images/0601.png)
+
 ### Box-Cox Transformation
 
 - More flexible than log; finds the best transformation to normalize data.
