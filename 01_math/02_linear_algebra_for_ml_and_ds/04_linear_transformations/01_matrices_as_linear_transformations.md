@@ -62,13 +62,19 @@ $$
 
 To find its transformed location, we just take the same combination of the *transformed* basis vectors:
 
-> $\text{Transformed Point} = -2 \cdot (3, 1) + 3 \cdot (1, 2) = (-6, -2) + (3, 6) = (-3, 4)$
+$$
+\text{Transformed Point} = -2 \cdot (3, 1) + 3 \cdot (1, 2) = (-6, -2) + (3, 6) = (-3, 4)
+$$
 
 This matches what we get from direct matrix multiplication:
 
-> $$
-> \begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix} \begin{bmatrix} -2 \\ 3 \end{bmatrix} = \begin{bmatrix} (3)(-2)+(1)(3) \\ (1)(-2)+(2)(3) \end{bmatrix} = \begin{bmatrix} -3 \\ 4 \end{bmatrix}
-> $$
+$$
+\begin{bmatrix} 3 & 1 \\ 
+1 & 2 \end{bmatrix} \begin{bmatrix} -2 \\ 
+3 \end{bmatrix} = \begin{bmatrix} (3)(-2)+(1)(3) \\ 
+(1)(-2)+(2)(3) \end{bmatrix} = \begin{bmatrix} -3 \\ 
+4 \end{bmatrix}
+$$
 
 ---
 
