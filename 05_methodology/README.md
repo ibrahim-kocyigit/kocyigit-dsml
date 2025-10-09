@@ -2,7 +2,7 @@
 
 A successful data science project is more than just code; it's a disciplined process. This pillar outlines the structured methodology used for every project within this repository, ensuring a clear path from a business idea to a deployed, value-generating solution.
 
-The framework adopted here is the **Foundational Methodology for Data Science** by **John B. Rollins**. It is a comprehensive 10-stage lifecycle that covers a project from inception to feedback, emphasizing clear communication, iterative development, and alignment with business goals.
+The framework adopted here is the [Foundational Methodology for Data Science](./references/IBMOpenSource_FoundationalMethologyforDataScience.PDF) by **John B. Rollins**. It is a comprehensive 10-stage lifecycle that covers a project from inception to feedback, emphasizing clear communication, iterative development, and alignment with business goals.
 
 Each stage is documented in its own file within this folder. These files serve as both an explanation of the process and as practical, reusable templates to be filled out for any new project.
 
