@@ -41,7 +41,6 @@
 - Residuals help identify outliers after modeling.
 - Several strategies exist for handling outliers: removal, replacement, transformation, prediction, or keeping them.
 - Data cleaning is essential for building reliable models.
-- Next: Move on to exploratory data analysis in the machine learning workflow.
 
 ---
 
