@@ -192,10 +192,12 @@ You can also represent this perceptron graphically as a node that takes inputs x
 
 ![Perceptron 1](./images/0602.png)
 
----
-
 ### The Perceptron Diagram
 
 The diagram below illustrates the structure of a simple perceptron. The inputs (features $x_1$ and $x_2$) are fed into the main node, each multiplied by its corresponding weight ($w_1$ and $w_2$). Inside the node, this weighted sum is added to a bias term ($b$). The result is then passed through an **activation function**, which acts as a decision-maker to produce the final output—a classification of either **1** (e.g., "Spam", "Will Churn", "Yes") or **0** (e.g., "Not Spam", "Will Not Churn", "No").
 
 ![Perceptron 1](./images/0603.png)
+
+---
+
+**Next:** [Singularity and Rank of Linear Transformations](../05_determinants_in-depth/01_singularity_and_rank_of_linear_transformations.md)
