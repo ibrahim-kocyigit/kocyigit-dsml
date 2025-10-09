@@ -9,12 +9,32 @@ Let's say we have an unknown 2x2 matrix, but we know it transforms the unit squa
 ![Linear Transformation](./images/0201.png)
 
 From this, we can see:  
-* The vector $\begin{bmatrix} 1 \\ 0 \end{bmatrix}$ gets sent to the vector  
-  $\begin{bmatrix} 3 \\ -1 \end{bmatrix}$  
-* The vector $\begin{bmatrix} 0 \\ 1 \end{bmatrix}$ gets sent to the vector  
-  $\begin{bmatrix} 2 \\ 3 \end{bmatrix}$
+* The vector...
 
----
+$$\begin{bmatrix} 1 \\ 
+0 \end{bmatrix}
+$$
+
+... gets sent to the vector ...  
+
+$$
+\begin{bmatrix} 3 \\ 
+-1 \end{bmatrix}
+$$  
+
+* The vector...  
+
+$$
+\begin{bmatrix} 0 \\ 
+1 \end{bmatrix}
+$$
+
+... gets sent to the vector... 
+
+$$
+\begin{bmatrix} 2 
+\\ 3 \end{bmatrix}
+$$
 
 ## The Core Rule: Transformed Basis Vectors are the Columns
 
