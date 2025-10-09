@@ -31,14 +31,16 @@ Under $H_0$, this statistic follows a **t-distribution** with $n-1$ degrees of f
   $H_1$: $\mu > 66.7$
 
 - **Observed t-statistic:**  
-  $$
-  t = \frac{68.442 - 66.7}{3.113 / \sqrt{10}} = 1.771
-  $$
+
+$$
+t = \frac{68.442 - 66.7}{3.113 / \sqrt{10}} = 1.771
+$$
 
 - **p-value:** Probability that $t$ is greater than 1.771 under $H_0$ (with 9 degrees of freedom):  
-  $$
-  p = 0.0552
-  $$
+
+$$
+p = 0.0552
+$$
 
 - **Conclusion:** $p = 0.0552 > 0.05$  
   **Do not reject $H_0$.**
@@ -54,9 +56,10 @@ Under $H_0$, this statistic follows a **t-distribution** with $n-1$ degrees of f
   $H_1$: $\mu \neq 66.7$
 
 - **p-value:** Probability that $|t|$ is greater than 1.771 (both tails):  
-  $$
-  p = 0.1103
-  $$
+
+$$
+p = 0.1103
+$$
 
 - **Conclusion:** $p = 0.1103 > 0.05$  
   **Do not reject $H_0$.**
@@ -69,14 +72,16 @@ Under $H_0$, this statistic follows a **t-distribution** with $n-1$ degrees of f
 - **Suppose** the sample mean is $\bar{x} = 64.252$ (with $s$ unchanged).
 
 - **Observed t-statistic:**  
-  $$
-  t = \frac{64.252 - 66.7}{3.113 / \sqrt{10}} = -2.487
-  $$
+
+$$
+t = \frac{64.252 - 66.7}{3.113 / \sqrt{10}} = -2.487
+$$
 
 - **p-value:** Probability that $t$ is less than $-2.487$ under $H_0$:  
-  $$
-  p = 0.0173
-  $$
+
+$$
+p = 0.0173
+$$
 
 - **Conclusion:** $p = 0.0173 < 0.05$  
   **Reject $H_0$ and accept that the population mean has decreased.**
