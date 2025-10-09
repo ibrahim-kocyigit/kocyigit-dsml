@@ -50,15 +50,15 @@ The visualization below shows how the unit square formed by the original basis v
 
 ![](./images/0101.png)
 
----
-
 ## A Change of Coordinates
 
 Because the transformation is linear, the entire grid of the input space gets warped uniformly. This means we can think of the transformation as a **change of coordinates**.
 
 To find where any point goes, we can express it as a combination of the original basis vectors. For example, the point $(-2, 3)$ can be written as:
 
-> $(-2, 3) = -2 \cdot (1, 0) + 3 \cdot (0, 1) = -2\hat{i} + 3\hat{j}$
+$$
+(-2, 3) = -2 \cdot (1, 0) + 3 \cdot (0, 1) = -2\hat{i} + 3\hat{j}
+$$
 
 To find its transformed location, we just take the same combination of the *transformed* basis vectors:
 
