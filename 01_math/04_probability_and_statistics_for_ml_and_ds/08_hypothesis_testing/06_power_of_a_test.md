@@ -7,7 +7,8 @@ So far, we've focused on **type I errors** (false positives) through the signifi
 - **Type I error ($\alpha$):** Rejecting $H_0$ when it is actually true.
 - **Type II error ($\beta$):** Failing to reject $H_0$ when it is actually false.
 
-![](./images/0601.png)
+<img src="./images/0601.png" width="300")
+
 
 In our running example (testing if the mean height of 18-year-olds in the US has increased from 66.7 inches):
 
