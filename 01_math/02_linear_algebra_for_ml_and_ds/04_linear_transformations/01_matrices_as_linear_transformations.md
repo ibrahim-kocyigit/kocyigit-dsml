@@ -12,9 +12,10 @@ Let's consider a 2x2 matrix. This matrix will define a transformation that maps 
 
 **Transformation Matrix:**  
 
-$
-A = \begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix}
-$
+$$
+A = \begin{bmatrix} 3 & 1 \\ 
+1 & 2 \end{bmatrix}
+$$
 
 The process is simple: to find where a point $(a, b)$ goes, we represent it as a column vector and multiply it by the matrix $A$.
 
