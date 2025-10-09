@@ -59,26 +59,77 @@ This is the standard, scalable method for finding an inverse.
 1.  Create an **augmented matrix** by placing your original matrix $A$ on the left and the **identity matrix $I$** of the same size on the right. Our goal is to transform $[A \mid I]$.
 2.  Use **row operations** to transform the left side ($A$) into the identity matrix.
 3.  Apply the exact same row operations to the right side ($I$) simultaneously.
-4.  When the left side becomes the identity matrix, the right side will have become the **inverse matrix,# The Matrix Inverse
+4.  When the left side becomes the identity matrix, the right side will have become the **inverse matrix, $A^{-1}$**. The final form will be $[I \mid A^{-1}]$.
 
-In arithmetic, the inverse of a number is what you multiply it by to get 1 (e.g., the inverse of 2 is 1/2, because $2 \times \frac{1}{2} = 1$).
+**Example:** Let's find the inverse of $A = \begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix}$.
 
-The **inverse of a matrix**, denoted as $A^{-1}$, is the matrix that, when multiplied by the original matrix $A$, results in the **identity matrix** ($I$).  
-
-$$
-A \cdot A^{-1} = I
-$$
-
-Geometrically, the inverse matrix corresponds to a linear transformation that **"undoes"** the transformation of the original matrix, returning the space to its initial state.
-
-Let's consider our transformation matrix from before:  
+**Step 1: Set up the augmented matrix.**
 
 $$
-A = \begin{bmatrix} 3 & 1 \\ 
-1 & 2 \end{bmatrix}
+\left[
+\begin{array}{cc|cc}
+3 & 1 & 1 & 0 \\
+1 & 2 & 0 & 1
+\end{array}
+\right]
 $$
 
-This matrix transforms the unit square into a parallelogram. The inverse matrix, $A^{-1}$, will be the transformation that maps that parallelogram back into the original unit square.
+**Step 2: Perform row operations to get RREF on the left side.**
 
-![](./images/0501.png)
+- $R1 = R1 / 3$ (Normalize the first pivot)
 
+  $$
+  \left[
+  \begin{array}{cc|cc}
+  1 & 1/3 & 1/3 & 0 \\
+  1 & 2 & 0 & 1
+  \end{array}
+  \right]
+  $$
+
+- $R2 = R2 - R1$ (Create a zero below the first pivot)
+
+  $$
+  \left[
+  \begin{array}{cc|cc}
+  1 & 1/3 & 1/3 & 0 \\
+  0 & 5/3 & -1/3 & 1
+  \end{array}
+  \right]
+  $$
+
+- $R2 = R2 \times (3/5)$ (Normalize the second pivot)
+
+  $$
+  \left[
+  \begin{array}{cc|cc}
+  1 & 1/3 & 1/3 & 0 \\
+  0 & 1 & -1/5 & 3/5
+  \end{array}
+  \right]
+  $$
+
+- $R1 = R1 - (1/3) \times R2$ (Create a zero above the second pivot)
+
+  $$
+  \left[
+  \begin{array}{cc|cc}
+  1 & 0 & 2/5 & -1/5 \\
+  0 & 1 & -1/5 & 3/5
+  \end{array}
+  \right]
+  $$
+
+**Step 3: Read the inverse matrix from the right side.**
+
+The left side is now the identity matrix. The right side is our inverse.
+
+$$
+A^{-1} = \begin{bmatrix} 2/5 & -1/5 \\ -1/5 & 3/5 \end{bmatrix}
+$$
+
+---
+
+## When Does an Inverse Not Exist?
+
+A crucial point in linear algebra is that **not all matrices have an inverse**. A matrix can only be inverted if it is **non-singular**. If you try to perform Gauss-Jordan elimination on a singular matrix, you will find it impossible to get the identity matrix on the left side because you will end up with a row of all zeros.
