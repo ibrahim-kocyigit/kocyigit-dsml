@@ -24,11 +24,15 @@ $$
 
 Let's see how this matrix transforms the fundamental building blocks of our plane. The vectors $(1, 0)$ and $(0, 1)$ are called **basis vectors**. Where they land after the transformation tells us everything about how the entire space is warped.
 
-- **Transforming (1, 0):**
+#### Transforming (1, 0):
 
-  $$
-  \begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix} \begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix} (3)(1)+(1)(0) \\ (1)(1)+(2)(0) \end{bmatrix} = \begin{bmatrix} 3 \\ 1 \end{bmatrix}
-  $$
+$$
+\begin{bmatrix} 3 & 1 \\ 
+1 & 2 \end{bmatrix} \begin{bmatrix} 1 \\ 
+0 \end{bmatrix} = \begin{bmatrix} (3)(1)+(1)(0) \\ 
+(1)(1)+(2)(0) \end{bmatrix} = \begin{bmatrix} 3 \\ 
+1 \end{bmatrix}
+$$
 
 - **Transforming (0, 1):**
 
