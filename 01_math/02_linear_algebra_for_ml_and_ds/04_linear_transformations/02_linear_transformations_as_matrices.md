@@ -32,8 +32,8 @@ $$
 ... gets sent to the vector... 
 
 $$
-\begin{bmatrix} 2 
-\\ 3 \end{bmatrix}
+\begin{bmatrix} 2 \\ 
+3 \end{bmatrix}
 $$
 
 ## The Core Rule: Transformed Basis Vectors are the Columns
@@ -43,21 +43,43 @@ This reveals the fundamental connection between a 2D linear transformation and i
 > **The columns of the matrix are the vectors where the original basis vectors, $\hat{i}$ and $\hat{j}$, land.**
 
 So, if we know that:  
-* $\hat{i} = \begin{bmatrix} 1 \\ 0 \end{bmatrix}$ transforms to $\begin{bmatrix} 3 \\ -1 \end{bmatrix}$  
-* $\hat{j} = \begin{bmatrix} 0 \\ 1 \end{bmatrix}$ transforms to $\begin{bmatrix} 2 \\ 3 \end{bmatrix}$
+
+$$
+\hat{i} = \begin{bmatrix} 1 \\ 
+0 \end{bmatrix}
+$$
+
+transforms to... 
+
+$$
+\begin{bmatrix} 3 \\ 
+-1 \end{bmatrix}
+$$ 
+
+...and...
+
+$$
+\hat{j} = \begin{bmatrix} 0 \\ 
+1 \end{bmatrix}
+$$
+
+...transforms to... 
+
+$$
+\begin{bmatrix} 2 \\ 
+3 \end{bmatrix}
+$$
 
 Then the matrix that performs this transformation must be:
 
-$
+$$
 A = \begin{bmatrix} 3 & 2 \\
 -1 & 3 \end{bmatrix}
-$
+$$
 
 The first column is the transformed $\hat{i}$, and the second column is the transformed $\hat{j}$. It's that simple. Let's visualize this to confirm.
 
 ![](./images/0202.png)
-
----
 
 ## Interactive Exploration
 
