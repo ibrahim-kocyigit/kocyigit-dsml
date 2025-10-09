@@ -51,6 +51,9 @@ $$
 \text{p-value} = P(|Z| > |z|) = P(|Z| > 1.3416) = 0.1797
 $$
 
+![](./images/1001.png)
+
+**Conclusion:** Since the p-value is bigger than the significance level of 0.05, you do not have enough evidence to reject the null hypothesis that $p = 0.5$.
 
 
 ---
