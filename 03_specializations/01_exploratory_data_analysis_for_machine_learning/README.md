@@ -4,7 +4,7 @@ The notes in this folder are curated from my studies of the course [Exploratory 
 
 ## How to Use These Notes
 
-These notes are intended as concise summaries of the key concepts and techniques covered in the course.
+The best way to benefit from these notes is to take the course and use them as reminders of the main ideas and techniques. Alternatively, you can use these notes as prompts for AI agents (such as ChatGPT or GitHub Copilot) to request more detailed explanations or code examples on specific topics.
 
 ### Prerequisites
 
