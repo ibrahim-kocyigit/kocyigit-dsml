@@ -21,6 +21,36 @@ $$
 
 In this example, $\hat{p} = \frac{7}{20} = 0.35$.
 
+Remember that under certain conditions, the Central Limit Theorem states that  
+
+$$
+\hat{p} \sim N\left(p, \sqrt{\frac{p(1-p)}{20}}\right)
+$$
+
+or equivalently,  
+
+$$
+Z = \frac{\frac{X}{20} - p}{\sqrt{\frac{p(1-p)}{20}}} \sim N(0, 1)
+$$
+
+$Z$ will be your test statistic. If $H_0$ is true ($p = 0.5$), then your test statistic becomes  
+
+$$
+Z = \frac{\frac{X}{20} - 0.5}{\sqrt{\frac{0.5(1-0.5)}{20}}} = \frac{\frac{X}{20} - 0.5}{0.5/\sqrt{20}} \sim N(0, 1)
+$$
+
+Consider a significance level $\alpha = 0.05$. To make a decision, you need to get the p-value for your observed statistic. With the observed sample $x = 7$, the observed statistic is  
+
+$$
+z = \frac{\frac{7}{20} - 0.5}{0.5/\sqrt{20}} = -1.3416
+$$
+
+The p-value is then the probability that $|Z| > |z|$:  
+
+$$
+\text{p-value} = P(|Z| > |z|) = P(|Z| > 1.3416) = 0.1797
+$$
+
 
 
 ---
