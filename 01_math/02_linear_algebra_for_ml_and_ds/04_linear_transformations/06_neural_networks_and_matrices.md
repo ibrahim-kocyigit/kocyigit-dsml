@@ -71,7 +71,8 @@ $$
 1 & 2
 \end{bmatrix}
 \quad
-\text{Model Vector (w)} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+\text{Model Vector (w)} = \begin{bmatrix} 1 \\ 
+1 \end{bmatrix}
 $$
 
 The product $Xw$ gives us a vector of the total scores for each email:
@@ -86,11 +87,16 @@ $$
 1 & 0 \\
 2 & 2 \\
 2 & 0 \\
-1 & 2
-\end{bmatrix}
-\begin{bmatrix} 1 \\ 1 \end{bmatrix}
-=
-\begin{bmatrix} 2 \\ 3 \\ 0 \\ 2 \\ 1 \\ 1 \\ 4 \\ 2 \\ 3 \end{bmatrix}
+1 & 2 \end{bmatrix} \begin{bmatrix} 1 \\ 
+1 \end{bmatrix} = \begin{bmatrix} 2 \\ 
+3 \\ 
+0 \\ 
+2 \\ 
+1 \\ 
+1 \\ 
+4 \\ 
+2 \\ 
+3 \end{bmatrix}
 $$
 
 We can then apply our threshold check (`> 1.5`) to this score vector to get our final predictions.
