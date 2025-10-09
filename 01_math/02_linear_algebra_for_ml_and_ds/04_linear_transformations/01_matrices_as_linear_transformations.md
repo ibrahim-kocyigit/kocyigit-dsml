@@ -4,8 +4,6 @@ In the previous lessons, we've seen matrices as a way to represent systems of li
 
 A linear transformation is a function that takes a point (or vector) in a space and maps it to a new point in a way that preserves lines and keeps the origin fixed. In 2D, you can think of it as a way of stretching, shearing, rotating, or reflecting the entire plane.
 
----
-
 ## The Transformation Process
 
 Let's consider a 2x2 matrix. This matrix will define a transformation that maps any point from an "input" plane to a new point in an "output" plane.
@@ -20,7 +18,8 @@ $$
 The process is simple: to find where a point $(a, b)$ goes, we represent it as a column vector and multiply it by the matrix $A$.
 
 $$
-\text{new\_vector} = A \cdot \begin{bmatrix} a \\ b \end{bmatrix}
+\text{new-vector} = A \cdot \begin{bmatrix} a \\ 
+b \end{bmatrix}
 $$
 
 Let's see how this matrix transforms the fundamental building blocks of our plane. The vectors $(1, 0)$ and $(0, 1)$ are called **basis vectors**. Where they land after the transformation tells us everything about how the entire space is warped.
