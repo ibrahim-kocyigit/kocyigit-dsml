@@ -101,8 +101,6 @@ $$
 
 We can then apply our threshold check (`> 1.5`) to this score vector to get our final predictions.
 
----
-
 ## The Bias Trick
 
 Instead of using a separate threshold, it's more common in neural networks to incorporate it into the model as a **bias** term.
@@ -130,14 +128,15 @@ $$
 **2. Augment the Model Vector (w):** We add the bias term.
 
 $$
-w_{aug} = \begin{bmatrix} 1 \\ 1 \\ -1.5 \end{bmatrix}
+w_{aug} = \begin{bmatrix} 1 \\ 
+1 \\ 
+-1.5 \end{bmatrix}
 $$
 
 **3. Perform the Matrix-Vector Multiplication:**
 
 $$
-X_{aug} \cdot w_{aug} = \begin{bmatrix}
-1 & 1 & 1 \\
+X_{aug} \cdot w_{aug} = \begin{bmatrix} 1 & 1 & 1 \\
 2 & 1 & 1 \\
 0 & 0 & 1 \\
 0 & 2 & 1 \\
@@ -145,16 +144,20 @@ X_{aug} \cdot w_{aug} = \begin{bmatrix}
 1 & 0 & 1 \\
 2 & 2 & 1 \\
 2 & 0 & 1 \\
-1 & 2 & 1
-\end{bmatrix}
-\begin{bmatrix} 1 \\ 1 \\ -1.5 \end{bmatrix}
-=
-\begin{bmatrix} 0.5 \\ 1.5 \\ -1.5 \\ 0.5 \\ -0.5 \\ -0.5 \\ 2.5 \\ 0.5 \\ 1.5 \end{bmatrix}
+1 & 2 & 1 \end{bmatrix} \begin{bmatrix} 1 \\ 
+1 \\ 
+-1.5 \end{bmatrix} = \begin{bmatrix} 0.5 \\ 
+1.5 \\ 
+-1.5 \\ 
+0.5 \\ 
+-0.5 \\ 
+-0.5 \\ 
+2.5 \\ 
+0.5 \\ 
+1.5 \end{bmatrix}
 $$
 
 Now, we just need to check if these results are greater than 0. This gives us the exact same predictions as checking if the original scores were greater than 1.5. This "bias trick" is the standard way neural networks handle thresholds.
-
----
 
 ## The AND Operator: Another Linearly Separable Problem
 
