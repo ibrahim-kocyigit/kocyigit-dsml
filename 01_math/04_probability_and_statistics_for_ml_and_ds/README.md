@@ -8,7 +8,7 @@ The notes in this folder are curated from my studies of the course **"Probabilit
 
 ## How to Use These Notes
 
-These notes are designed to be a comprehensive study guide, whether you are formally enrolled in the course or studying independently.
+These notes are intended as detailed summaries rather than exhaustive lecture transcripts. They focus on the most important concepts, definitions, and formulas, providing a concise yet thorough reference. Use them to reinforce your understanding, but consult the original course materials or textbooks for complete coverage and in-depth explanations.
 
 ### For Course Takers
 
