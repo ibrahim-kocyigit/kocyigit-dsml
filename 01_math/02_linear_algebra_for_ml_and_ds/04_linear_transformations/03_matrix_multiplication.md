@@ -95,17 +95,32 @@ $$
 $$
 
 * **Top-Right Entry (Row 1 of B · Col 2 of A):**  
-  $\begin{bmatrix} 2 & -1 \end{bmatrix} \cdot \begin{bmatrix} 1 \\ 2 \end{bmatrix} = (2)(1) + (-1)(2) = 0$
+
+$$
+\begin{bmatrix} 2 & -1 \end{bmatrix} \cdot \begin{bmatrix} 1 \\ 
+2 \end{bmatrix} = (2)(1) + (-1)(2) = 0
+$$
 
 * **Bottom-Left Entry (Row 2 of B · Col 1 of A):**  
-  $\begin{bmatrix} 0 & 2 \end{bmatrix} \cdot \begin{bmatrix} 3 \\ 1 \end{bmatrix} = (0)(3) + (2)(1) = 2$
+
+$$
+\begin{bmatrix} 0 & 2 \end{bmatrix} \cdot \begin{bmatrix} 3 \\ 
+1 \end{bmatrix} = (0)(3) + (2)(1) = 2
+$$
 
 * **Bottom-Right Entry (Row 2 of B · Col 2 of A):**  
-  $\begin{bmatrix} 0 & 2 \end{bmatrix} \cdot \begin{bmatrix} 1 \\ 2 \end{bmatrix} = (0)(1) + (2)(2) = 4$
 
-The resulting matrix is exactly what we found geometrically: $\begin{bmatrix} 5 & 0 \\ 2 & 4 \end{bmatrix}$
+$$
+\begin{bmatrix} 0 & 2 \end{bmatrix} \cdot \begin{bmatrix} 1 \\ 
+2 \end{bmatrix} = (0)(1) + (2)(2) = 4
+$$
 
----
+The resulting matrix is exactly what we found geometrically:  
+
+$$
+\begin{bmatrix} 5 & 0 \\ 
+2 & 4 \end{bmatrix}
+$$
 
 ## Multiplication of Non-Square Matrices
 
@@ -116,3 +131,7 @@ This "row-times-column" dot product rule works for non-square matrices as well, 
 The resulting matrix will have the number of rows from the first matrix and the number of columns from the second.
 
 **Rule:** An **(m x n)** matrix multiplied by an **(n x p)** matrix results in an **(m x p)** matrix.
+
+---
+
+**Next:** [Identity Matrix](./04_identity_matrix.md)
