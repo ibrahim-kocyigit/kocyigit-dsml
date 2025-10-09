@@ -28,8 +28,8 @@ This project consolidates my curated learning resources, organized into five pil
 5. 🟢 [Seaborn Fundamentals](./02_toolkit/05_seaborn_fundamentals/)
 
 ### 3. Specializations
-1.  🟠 [Exploratory Data Analysis for Machine Learning](./03_specializations/01_exploratory_data_analysis_for_machine_learning/)
-2.  🔴 Inferential Statistical Analysis with Python
+1.  🟢 [Exploratory Data Analysis for Machine Learning](./03_specializations/01_exploratory_data_analysis_for_machine_learning/)
+2.  🟠 [Inferential Statistical Analysis with Python](./03_specializations/02_inferential_statistical_analysis_with_python/)
 3.  🔴 Fitting Statistical Models to Data with Python
 4.  🔴 Machine Learning Specialization
 5.  🔴 Advanced ML Specializations
