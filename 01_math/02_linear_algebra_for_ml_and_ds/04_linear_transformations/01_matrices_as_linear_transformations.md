@@ -76,8 +76,6 @@ $$
 4 \end{bmatrix}
 $$
 
----
-
 ## The "Apples and Bananas" Analogy
 
 We can also think of this transformation in a data context. Imagine the matrix represents the fruit you buy on two separate days:
@@ -97,7 +95,8 @@ $$
 The input vector represents the **prices** of the fruit:
 
 $$
-\begin{bmatrix} a \\ b \end{bmatrix}
+\begin{bmatrix} a \\ 
+b \end{bmatrix}
 \quad
 \begin{matrix}
 \leftarrow \text{Price of an apple} \\
@@ -108,7 +107,10 @@ $$
 The matrix-vector multiplication transforms a vector of **prices** into a vector of **total daily costs**:
 
 $$
-\begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix} \begin{bmatrix} a \\ b \end{bmatrix} = \begin{bmatrix} 3a + b \\ a + 2b \end{bmatrix}
+\begin{bmatrix} 3 & 1 \\ 
+1 & 2 \end{bmatrix} \begin{bmatrix} a \\ 
+b \end{bmatrix} = \begin{bmatrix} 3a + b \\ 
+a + 2b \end{bmatrix}
 \quad
 \begin{matrix}
 \leftarrow \text{Total cost on Day 1} \\
@@ -117,3 +119,7 @@ $$
 $$
 
 So, if apples and bananas both cost 1 dollar ($a=1$, $b=1$), the transformation sends the price vector $(1, 1)$ to the cost vector $(4, 3)$.
+
+---
+
+**Next:** [Linear Transformations as Matrices](./02_linear_transformations_as_matrices.md)
