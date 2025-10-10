@@ -2,7 +2,7 @@
 
 So far, you've learned to make decisions based on the p-value of the observed statistic. If the p-value is smaller than the significance level $\alpha$, then you reject the null hypothesis and accept the alternative hypothesis as true.
 
-But what is the most extreme sample you could get so that you would still **just** reject $H_0$? This is the sample that has a p-value exactly equal to $\alpha$. Anything less extreme would not satisfy the condition. This threshold is called the **critical value** (often denoted $K_\alpha$).
+But what is the most extreme sample you could get so that you would still **just** reject $H_0$? This is the sample that has a p-value exactly equal to $\alpha$. Anything less extreme would not satisfy the condition. This threshold is called the **critical value** (often denoted $k_\alpha$ or $c_\alpha$).
 
 - The **critical value** depends on the significance level $\alpha$ you choose.
 - For a given test, any observed statistic more extreme than the critical value will have a p-value of $\alpha$ or less.
@@ -13,28 +13,12 @@ But what is the most extreme sample you could get so that you would still **just
 
 #### Right-Tailed Test:  
 
-$$ 
-K_\alpha = \mu_0 + z_\alpha \cdot \frac{\sigma}{\sqrt{n}} 
-$$
-
-#### Left-Tailed Test:  
-
-$$ 
-K_\alpha = \mu_0 - z_\alpha \cdot \frac{\sigma}{\sqrt{n}} 
-$$ 
-
-#### Two-Tailed Test:
-- Left:  
-
-$$
-K_{\alpha/2} = \mu_0 - z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}
-$$
-
-- Right: 
-
-$$
-K_{1-\alpha/2} = \mu_0 + z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}
-$$
+| Test Type        | Critical Value Formula                                                    | Standard $z$ Notation         | Notes                                   |
+|------------------|--------------------------------------------------------------------------|-------------------------------|-----------------------------------------|
+| Right-tailed     | $k_\alpha = \mu_0 + z_\alpha \cdot \frac{\sigma}{\sqrt{n}}$              | $z_\alpha$                    | Area $\alpha$ to the right              |
+| Left-tailed      | $k_\alpha = \mu_0 - z_\alpha \cdot \frac{\sigma}{\sqrt{n}}$              | $-z_\alpha$ or $z_{1-\alpha}$ | Area $\alpha$ to the left               |
+| Two-tailed (L)   | $k_{\alpha/2} = \mu_0 - z_{1-\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$    | $-z_{1-\alpha/2}$             | Area $\alpha/2$ in each tail            |
+| Two-tailed (R)   | $k_{1-\alpha/2} = \mu_0 + z_{1-\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$  | $z_{1-\alpha/2}$              | Area $\alpha/2$ in each tail            |
 
 ## Example: Right-Tailed Test
 

@@ -37,8 +37,13 @@ But the **margin of error** is calculated differently:
 $$
 \text{Margin of Error} = z \times \sqrt{ \frac{\hat{p}(1 - \hat{p})}{n} }
 $$
+...where $z$ is the critical value for your confidence level (e.g., 1.96 for 95%) and...
 
-...where $z$ is the critical value for your confidence level (e.g., 1.96 for 95%).
+$$
+\sqrt{ \frac{\hat{p}(1 - \hat{p})}{n} }
+$$
+
+is the **standard error** formula for proportions.
 
 ## Step-by-Step Example
 
