@@ -23,6 +23,8 @@ $$
 ... where $s_D$ is the sample standard deviation of the differences, and $n$ is the number of pairs.
 - The statistic follows a t-distribution with $n-1$ degrees of freedom.
 
+![](./images/1301.png)
+
 ## Hypotheses
 
 - **Null hypothesis ($H_0$):** The mean difference is zero ($\mu_D = 0$), i.e., no effect.
@@ -39,6 +41,9 @@ $$
 - For a right-tailed test ($H_1: \mu_D > 0$), with significance level $\alpha = 0.05$:
   - p-value = 0.0227
   - Since p-value $<$ 0.05, reject $H_0$: conclude the training program is effective for weight loss.
+
+![](./images/1302.png)
+![](./images/1303.png)
 
 ## Key Insight
 
