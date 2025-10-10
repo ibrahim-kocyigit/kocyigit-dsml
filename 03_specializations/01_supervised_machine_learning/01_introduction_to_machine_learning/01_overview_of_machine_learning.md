@@ -22,6 +22,8 @@
 
 - This course will teach you the fundamentals of machine learning and how to implement these concepts in code.
 
+---
+
 ## Applications of Machine Learning
 
 ### Why is Machine Learning so Important?
