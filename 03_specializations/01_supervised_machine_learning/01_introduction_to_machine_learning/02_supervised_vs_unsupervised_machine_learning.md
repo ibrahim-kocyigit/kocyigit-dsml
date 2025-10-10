@@ -25,18 +25,18 @@
 
 ## Supervised Learning
 
-- **Definition:** Supervised learning algorithms learn **input (x) to output (y) mappings**.
-- **Key Characteristic:** The algorithm is given a dataset that includes the "right answers" (correct labels `y` for each input `x`).
-- After training on these `x-y` pairs, the model can predict the output `y` for a new, unseen input `x`.
+- **Definition:** Supervised learning algorithms learn mappings from **input** ($x$) to **output** ($y$).
+- **Key Characteristic:** The algorithm is trained on a dataset containing the correct output labels ($y$) for each input ($x$).
+- After learning from these $(x, y)$ pairs, the model can predict the output $y$ for a new, unseen input $x$.
 
 #### Examples of Supervised Learning
 
-- **Spam Filtering:** Input `x` is an email, output `y` is "spam" or "not spam".
-- **Speech Recognition:** Input `x` is an audio clip, output `y` is the text transcript.
-- **Machine Translation:** Input `x` is English text, output `y` is the Spanish translation.
-- **Online Advertising:** Input `x` is user/ad info, output `y` is "click" or "no click".
-- **Self-Driving Cars:** Input `x` is an image, output `y` is the position of other cars.
-- **Visual Inspection:** Input `x` is a product image, output `y` is "defect" or "no defect".
+- **Spam Filtering:** $x$ = email, $y$ = "spam" or "not spam"
+- **Speech Recognition:** $x$ = audio clip, $y$ = text transcript
+- **Machine Translation:** $x$ = English text, $y$ = Spanish translation
+- **Online Advertising:** $x$ = user/ad information, $y$ = "click" or "no click"
+- **Self-Driving Cars:** $x$ = image, $y$ = position of other cars
+- **Visual Inspection:** $x$ = product image, $y$ = "defect" or "no defect"
 
 ### Regression
 
@@ -72,7 +72,7 @@
 
 ## Unsupervised Learning
 
-- **Definition:** Unsupervised learning algorithms are given data that **does not have any output labels (`y`)**.
+- **Definition:** Unsupervised learning algorithms are given data that **does not have any output labels ( $y$ )**.
 - **Goal:** To find interesting structures or patterns in the data on its own, without being "supervised" with right answers.
 
 ### Clustering Algorithms
