@@ -121,4 +121,35 @@ $$
 
 ---
 
-**Next:** []()
+## Visualization the Cost Function
+
+- Previously, you saw the cost function $J(w)$ or $J(w, b)$ as a curve (when $b=0$) or as a surface (when both $w$ and $b$ vary).
+- The **goal of linear regression** is to find the values of $w$ and $b$ that minimize $J(w, b)$.
+
+### 3D Surface Plot
+
+- With two parameters ($w$ and $b$), the cost function $J(w, b)$ forms a **3D surface**.
+- This surface typically looks like a "soup bowl" or a "hammock"—a smooth, convex shape.
+- Each point $(w, b)$ on the surface corresponds to a particular choice of parameters and the height is the value of $J(w, b)$ for those parameters.
+
+![](./images/0303.png)
+
+### Contour Plot
+
+- A **contour plot** is a 2D visualization of the 3D cost surface.
+- Each ellipse (oval) in the contour plot represents points with the same cost value (i.e., the same "height" on the 3D surface).
+- The center of the smallest ellipse is the minimum of $J(w, b)$—the optimal parameters for the model.
+- Contour plots are analogous to topographical maps, where each contour line represents a constant elevation.
+
+![](./images/0304.png)
+
+### Intuition
+
+- The bottom of the bowl (center of the contours) is where $J(w, b)$ is minimized.
+- Different choices of $w$ and $b$ correspond to different straight lines $f(x) = wx + b$ fit to the data.
+- The best fit is at the minimum of the cost function.
+
+
+---
+
+**Next:** [Training the Model with Gradient Descent](./04_traing_the_model_with_gradient_descent.md)
