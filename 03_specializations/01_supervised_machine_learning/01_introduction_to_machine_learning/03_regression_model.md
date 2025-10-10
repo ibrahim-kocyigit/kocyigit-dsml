@@ -61,3 +61,29 @@ $$
     - $y^{(i)}$: output (e.g., house price)
 
 ---
+
+## Cost Function Formula
+
+- To implement linear regression, the first key step is to define a **cost function**.
+- The cost function measures how well the model fits the data.
+- **Parameters** $w$ and $b$ (also called coefficients or weights) are adjusted to minimize the cost function.
+
+### Squared Error Cost Function
+
+- For each training example $i$, the model predicts $\hat{y}^{(i)} = f_{w,b}(x^{(i)}) = wx^{(i)} + b$.
+- The error for example $i$ is $\hat{y}^{(i)} - y^{(i)}$.
+- The squared error for example $i$ is $(\hat{y}^{(i)} - y^{(i)})^2$.
+
+- The **cost function** $J(w, b)$ is defined as the average squared error over all $m$ training examples (with a factor of $1/2$ for convenience):
+
+$$
+J(w, b) = \frac{1}{2m} \sum_{i=1}^m \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)^2
+$$
+
+- $J(w, b)$ is also called the **squared error cost function**.
+
+- The goal is to find values of $w$ and $b$ that make $J(w, b)$ as small as possible.
+
+---
+
+
