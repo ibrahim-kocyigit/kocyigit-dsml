@@ -9,6 +9,32 @@ But what is the most extreme sample you could get so that you would still **just
 - You can create a decision rule based on the critical value:  
   - **Reject $H_0$ if the observed statistic is more extreme than $K_\alpha$.**
 
+## Formulas
+
+#### Right-Tailed Test:  
+
+$$ 
+K_\alpha = \mu_0 + z_\alpha \cdot \frac{\sigma}{\sqrt{n}} 
+$$
+
+#### Left-Tailed Test:  
+
+$$ 
+K_\alpha = \mu_0 - z_\alpha \cdot \frac{\sigma}{\sqrt{n}} 
+$$ 
+
+#### Two-Tailed Test:
+- Left:  
+
+$$
+K_{\alpha/2} = \mu_0 - z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}
+$$
+
+- Right: 
+
+$$
+K_{1-\alpha/2} = \mu_0 + z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}
+$$
 
 ## Example: Right-Tailed Test
 

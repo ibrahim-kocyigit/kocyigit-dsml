@@ -102,7 +102,7 @@ Under H₀, the z-statistic follows a **standard normal distribution** N(0,1), m
 - The p-value measures how compatible your sample data is with H₀
 - Smaller p-values provide stronger evidence against H₀
 - The decision threshold is determined by your chosen significance level (α)
-- The same test can be performed using either the original statistic or its standardized version
+- The same test can be performed using either the original statistic or its standardized version. The standardized version (z-score in this case) is usually more convenient, especially because you can use standard tables or calculators for the probability.
 
 ---
 
