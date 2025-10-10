@@ -38,7 +38,7 @@ If the true population mean is **70** (not 66.7), the probability of not rejecti
 
 For $\mu = 70$, the probability that $\bar{x} < 68.26$ is $\beta = 0.033$.
 
-**Note:** $\beta$ depends on the true value of $\mu$ in the alternative hypothesis, not just on the observed sample.
+**Note:** $\beta$ depends on the true value of $\mu$ in the alternative hypothesis, not just on the observed sample. But of course we don't know the true value of $\mu$ in the alternative hypothesis, that's why we'll plot the possible values soon.
 
 ## Power of a Test
 
@@ -65,10 +65,19 @@ If you plot power for different values of $\alpha$:
 
 ![](./images/0604.png)
 
-## Trade-Off Between Type I and Type II Errors
+## Why Visualize?
 
-- For a fixed sample size, **reducing $\alpha$** (type I error) **increases $\beta$** (type II error), and vice versa.
-- **Larger sample sizes** allow you to reduce both $\alpha$ and $\beta$.
+By plotting power ($1-\beta$) against different values of $\mu$ (the true mean in $H_1$) for various $\alpha$ values, you can see:
+  - How likely you are to detect a real effect (higher power is better).
+  - How your choice of $\alpha$ affects both type I errors (false positives) and power:
+    - A higher $\alpha$ increases power, but also increases the risk of type I errors.
+    - A lower $\alpha$ reduces type I errors, but also reduces power (increases type II errors).
+- You can also see how increasing sample size improves power for the same $\alpha$: 
+    - Larger sample sizes allow you to reduce both $\alpha$ and $\beta$
+
+> **Bottom line:**  The plot helps you choose a significance level ($\alpha$) and sample size that balance the risk of false positives and false negatives, depending on what’s more important for your specific application. This is your “sweet spot.”
+
+
 
 ## Summary
 
