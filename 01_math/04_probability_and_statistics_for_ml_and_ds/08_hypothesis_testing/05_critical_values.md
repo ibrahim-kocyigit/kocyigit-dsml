@@ -11,8 +11,6 @@ But what is the most extreme sample you could get so that you would still **just
 
 ## Formulas
 
-#### Right-Tailed Test:  
-
 | Test Type        | Critical Value Formula                                                    | Standard $z$ Notation         | Notes                                   |
 |------------------|--------------------------------------------------------------------------|-------------------------------|-----------------------------------------|
 | Right-tailed     | $k_\alpha = \mu_0 + z_\alpha \cdot \frac{\sigma}{\sqrt{n}}$              | $z_\alpha$                    | Area $\alpha$ to the right              |
