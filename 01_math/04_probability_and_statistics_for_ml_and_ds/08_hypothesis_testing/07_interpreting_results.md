@@ -9,7 +9,7 @@ Let's sum up the steps involved in hypothesis testing:
 
 ### Step 2: Design the Test
 
-- **Choose the test statistic** (e.g., sample mean).
+- **Choose the test statistic** (e.g., sample mean, z-statistic, t-statistic, etc.).
 - **Set the significance level ($\alpha$):** Commonly $\alpha = 0.05$.
   - $\alpha$ is the maximum probability of making a Type I error (rejecting $H_0$ when it is true).
   - Choose $\alpha$ to be small, but remember that lowering $\alpha$ increases the risk of Type II errors for a fixed sample size.
