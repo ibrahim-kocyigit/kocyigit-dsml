@@ -24,6 +24,8 @@ This allows us to answer: **How likely was our sample if H₀ is true?**
 
 The **p-value** is the probability, assuming H₀ is true, that the test statistic takes on a value as extreme as or more extreme than the observed value.
 
+> **p-value:** If the null hypothesis is true, what is the probability that we would see sample data as extreme as (or more extreme than) what we actually observed, just by random chance?
+
 ### Right-Tailed Test Example
 
 ![](./images/0402.png)

@@ -11,7 +11,7 @@ H_1 &: p \neq 0.5 \quad \text{(the coin is not fair)}
 \end{align*}
 $$
 
-Imagine you toss the coin $20$ times, and $7$ of those tosses result in heads. Your random sample consists of a single random variable $X$, where $X = $ "number of heads in $20$ coin flips". This variable follows a Binomial distribution: $X \sim \mathrm{Binomial}(20, p)$.
+Imagine you toss the coin $20$ times, and $7$ of those tosses result in heads. Your random sample consists of a single random variable $X$, where $X = $ number of heads in $20$ coin flips. This variable follows a Binomial distribution: $X \sim \mathrm{Binomial}(20, p)$.
 
 A good estimate for the population proportion $p$ is the relative frequency of heads observed in your sample:
 
