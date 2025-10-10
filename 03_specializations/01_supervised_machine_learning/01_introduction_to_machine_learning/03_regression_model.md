@@ -25,3 +25,39 @@
 - **A Single Training Example:** A pair $(x, y)$ representing one input and its corresponding output.
 - **The $i$-th Training Example:** The $i$-th row in the dataset, denoted as $(x^{(i)}, y^{(i)})$.
     - The superscript $(i)$ is an index, not an exponent. For example, $x^{(1)}$ is the input feature for the first training example.
+
+---
+
+## The Supervised Learning Process
+
+- The **training set** contains both input features $x$ and output targets $y$ (the "right answers").
+- The learning algorithm takes the training set and produces a **function** $f$ (the model).
+    - $f$ is sometimes called a hypothesis, but here we call it a function or model.
+- The model $f$ takes a new input $x$ and outputs a prediction $\hat{y}$ ("y-hat").
+    - $y$ is the true value (target), $\hat{y}$ is the model's estimate or prediction.
+
+### Linear Model Representation
+
+- For linear regression, the model is a straight line:  
+
+$$
+f_{w,b}(x) = wx + b
+$$
+
+... where $w$ and $b$ are parameters (weights/bias) learned from the data.
+- Sometimes written simply as $f(x) = wx + b$ for convenience.
+
+### Why Linear?
+
+- Linear (straight line) models are simple and easy to work with.
+- They serve as a foundation for more complex, non-linear models (e.g., curves, polynomials).
+- **Univariate linear regression** (one input variable) is also called **linear regression with one variable**.
+
+### Data Table and Notation
+
+- The data can be visualized as a table:
+    - Each row: $(x^{(i)}, y^{(i)})$ for $i = 1, 2, \ldots, m$
+    - $x^{(i)}$: input (e.g., house size)
+    - $y^{(i)}$: output (e.g., house price)
+
+---
