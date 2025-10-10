@@ -28,9 +28,9 @@ This project consolidates my curated learning resources, organized into five pil
 5. 🟢 [Seaborn Fundamentals](./02_toolkit/05_seaborn_fundamentals/)
 
 ### 3. Specializations
-1.  🟠 [Statistics with Python](./03_specializations/01_statistics_with_python/)
-2.  🔴 Machine Learning Specialization
-3.  🔴 Advanced ML Specializations
+1.  🟠 [Supervised Machine Learning](./03_specializations/01_supervised_machine_learning/)
+2.  🔴 Advanced Learning Algorithms
+3.  🔴 Unsupervised Learning, Recommenders, Reinforcement Learning
 
 ### 4. MLOps 
 1.  🔴 Model Persistence
