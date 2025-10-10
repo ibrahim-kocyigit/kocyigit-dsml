@@ -36,7 +36,7 @@ If the true population mean is **70** (not 66.7), the probability of not rejecti
 - Under $H_0$: $\bar{X} \sim N(66.7, 3^2/10)$
 - Under $H_1$ (e.g., $\mu = 70$): $\bar{X} \sim N(70, 3^2/10)$
 
-For $\mu = 70$, the probability that $\bar{x} < 68.26$ is $\beta = 0.33$.
+For $\mu = 70$, the probability that $\bar{x} < 68.26$ is $\beta = 0.033$.
 
 **Note:** $\beta$ depends on the true value of $\mu$ in the alternative hypothesis, not just on the observed sample.
 
