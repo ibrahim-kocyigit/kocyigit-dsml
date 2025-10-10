@@ -16,6 +16,12 @@ In our running example (testing if the mean height of 18-year-olds in the US has
 
 ## Calculating Type II Error Probability ($\beta$)
 
+| Test Type      | Type II Error Formula                                                                                              |
+|----------------|-------------------------------------------------------------------------------------------------------------------|
+| Right-tailed   | $\beta = P\left( Z < \frac{k - \mu_1}{\sigma/\sqrt{n}} \right)$                                                   |
+| Left-tailed    | $\beta = P\left( Z > \frac{k - \mu_1}{\sigma/\sqrt{n}} \right)$ or $1 - P\left( Z < \frac{k - \mu_1}{\sigma/\sqrt{n}} \right)$ |
+| Two-tailed     | $\beta = P\left( \frac{k_L - \mu_1}{\sigma/\sqrt{n}} < Z < \frac{k_R - \mu_1}{\sigma/\sqrt{n}} \right)$           |
+
 Suppose:
 - Sample size $n = 10$
 - Standard deviation $\sigma = 3$
