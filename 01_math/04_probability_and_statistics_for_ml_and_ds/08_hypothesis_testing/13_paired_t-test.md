@@ -45,6 +45,8 @@ $$
 ![](./images/1302.png)
 ![](./images/1303.png)
 
+> **Result:** “There is statistically significant evidence at the 5% significance level that the diet led to weight loss.”
+
 ## Key Insight
 
 - The paired t-test reduces to a one-sample t-test on the differences.
