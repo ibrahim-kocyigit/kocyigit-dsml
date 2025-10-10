@@ -39,6 +39,8 @@ $$
 
 This statistic follows a **t-distribution** with degrees of freedom calculated by a somewhat complex formula (software will compute it for you). In this example, the degrees of freedom is approximately **16.8**.
 
+_**Reminder:** When you subtract two independent random variables, the variance of the difference is the sum of the variances._
+
 ## Example Calculation
 
 - $\bar{x} = 68.442$, $s_x = 3.113$, $n_x = 10$
