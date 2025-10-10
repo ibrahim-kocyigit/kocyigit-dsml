@@ -12,7 +12,10 @@ A/B testing is a practical application of two-sample hypothesis testing, commonl
 - **Scenario:** Test if moving the "Buy Now" button increases purchase amounts.
 - **Design:** 80 customers see design A, 20 see design B.
 - **Results:**
-  - Group A: $\bar{x}_A = \$50$, $s_A = \$10$
+  - Group A: 
+  
+  $\bar{x}_A = \$50$, $s_A = \$10$
+  
   - Group B: $\bar{x}_B = \$55$, $s_B = \$15$
 - **Hypotheses:**
   - $H_0$: Mean purchase for A and B are the same ($\mu_A = \mu_B$)
