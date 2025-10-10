@@ -44,6 +44,11 @@ Let's sum up the steps involved in hypothesis testing:
 - **Not rejecting $H_0$:** There is **not enough evidence** to support $H_1$; this does **not** mean $H_0$ is true.
   - Example: In the spam email analogy, not enough evidence to call an email spam does **not** guarantee it is ham.
 
+### Wording of the Conclusion
+
+- “There is statistically significant evidence at the ${\alpha}=$ {_insert_value here_} significance level that {_insert H1 here_}.”
+- “There is not statistically significant evidence at the ${\alpha}=$ {_insert_value here_} significance level that {_insert H1 here_}.”
+
 ---
 
 **Next:** [t-Distribution](./08_t-distribution.md)
