@@ -32,3 +32,5 @@ The type of variable determines how you can summarize, analyze, and visualize yo
 - The same real-world concept (e.g., age) can sometimes be represented as different variable types depending on context or coding.
 
 ---
+
+**Next:** [Study Design](./03_study_design.md)
