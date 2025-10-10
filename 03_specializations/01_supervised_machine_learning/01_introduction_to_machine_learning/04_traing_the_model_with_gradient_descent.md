@@ -1,8 +1,8 @@
 # Training the Model with Gradient Descent
 
-## Gradient Descent
-
 > **Note:** [Gradients](../../../01_math/03_calculus_for_ml_and_ds/03_gradients/) and [gradient descent](../../../01_math/03_calculus_for_ml_and_ds/04_gradient_descent/) are already covered in detail in the **Calculus for Machine Learning and Data Science** course, which is part of the Math pillar in this repository.
+
+## Gradient Descent
 
 - In previous videos, you saw how different choices of parameters $w$ and $b$ affect the cost function $J(w, b)$.
 - **Goal:** Find the values of $w$ and $b$ that minimize $J(w, b)$.
