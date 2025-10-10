@@ -68,3 +68,4 @@
 
 ---
 
+**Next:** [Variable Types](./02_variable_types.md)
