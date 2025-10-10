@@ -85,7 +85,7 @@ $$
 
 **Conclusion:** Since the p-value is smaller than the significance level (0.05), you have enough evidence to reject the null hypothesis and conclude that the two population proportions are different.
 
-### General Case
+## General Case
 
 Suppose you have two groups:
 
@@ -113,34 +113,37 @@ $$
 z = \frac{\frac{x}{n_1} - \frac{y}{n_2}}{\sqrt{\frac{x+y}{n_1 + n_2}\left(1 - \frac{x+y}{n_1 + n_2}\right)\left(\frac{1}{n_1} + \frac{1}{n_2}\right)}}
 $$
 
-#### p-value Calculation
+### p-value Calculation
 
-- **Right-tailed test:** $H_0: p_1 - p_2 = 0$ vs. $H_1: p_1 - p_2 > 0$
-    $$
-    \text{p-value} = P(Z > z)
-    $$
+- **Right-tailed test:** $H_0: p_1 - p_2 = 0$ vs. $H_1: p_1 - p_2 > 0$  
+
+$$
+\text{p-value} = P(Z > z)
+$$
 
 ![](./images/1201.png)
 
-- **Left-tailed test:** $H_0: p_1 - p_2 = 0$ vs. $H_1: p_1 - p_2 < 0$
-    $$
-    \text{p-value} = P(Z < z)
-    $$
+- **Left-tailed test:** $H_0: p_1 - p_2 = 0$ vs. $H_1: p_1 - p_2 < 0$  
+
+$$
+\text{p-value} = P(Z < z)
+$$
 
 ![](./images/1202.png)
 
-- **Two-tailed test:** $H_0: p_1 - p_2 = 0$ vs. $H_1: p_1 - p_2 \neq 0$
-    $$
-    \text{p-value} = P(|Z| > |z|)
-    $$
+- **Two-tailed test:** $H_0: p_1 - p_2 = 0$ vs. $H_1: p_1 - p_2 \neq 0$  
 
-    ### Assumptions and Conditions
+$$
+\text{p-value} = P(|Z| > |z|)
+$$
 
-    For these results to be valid, the following conditions must be satisfied:
+## Assumptions and Conditions
 
-    1. **Independent Random Samples:** You have two simple random samples that are independent of each other. Each sample comes from a different population, and the samples do not influence one another.
-    2. **Population Size:** Each population should be at least 20 times larger than its corresponding sample. This helps ensure the independence of observations.
-    3. **Binary Outcomes:** Each individual in the samples can be classified into one of two categories: either they belong to the specified group or they do not.
-    4. **Sample Size:** Both sample sizes should be at least 10. This is necessary for the normal approximation to be valid when the null hypothesis ( $H_0$ ) holds.
+For these results to be valid, the following conditions must be satisfied:
+
+1. **Independent Random Samples:** You have two simple random samples that are independent of each other. Each sample comes from a different population, and the samples do not influence one another.
+2. **Population Size:** Each population should be at least 20 times larger than its corresponding sample. This helps ensure the independence of observations.
+3. **Binary Outcomes:** Each individual in the samples can be classified into one of two categories: either they belong to the specified group or they do not.
+4. **Sample Size:** Both sample sizes should be at least 10. This is necessary for the normal approximation to be valid when the null hypothesis ( $H_0$ ) holds.
 
 **Next:** [Paired t-Test](./13_paired_t-test.md)
