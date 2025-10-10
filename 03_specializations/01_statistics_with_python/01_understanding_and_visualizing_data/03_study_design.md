@@ -64,3 +64,5 @@ Study design refers to the planning and structuring of data collection and analy
 - Understanding study design helps avoid bias and ensures results are informative.
 
 ---
+
+**Next:** [Data Management and Manipulation](./04_data_management_and_manipulation.md)
