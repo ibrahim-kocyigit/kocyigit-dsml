@@ -33,7 +33,7 @@ $$
 
 - The t-distribution has one parameter: **degrees of freedom** ($\nu$), usually $n-1$ (sample size minus one).
 - As the degrees of freedom increase, the t-distribution approaches the normal distribution.
-- For $n \geq 30$, the t and normal distributions are nearly identical.
+- For $n \geq 30$, the t and normal distributions are nearly identical. **That’s why, in practice, many textbooks and statisticians recommend using the z-distribution for large samples (n≥30).**
 
 **Example:** If you have $n = 10$ samples, the degrees of freedom $\nu = 10 - 1 = 9$.
 
