@@ -86,4 +86,39 @@ $$
 
 ---
 
+## Cost Function Intuition
 
+- The **cost function** $J(w, b)$ measures how well the model's predictions fit the training data.
+- The goal is to find values of $w$ and $b$ that **minimize** $J(w, b)$.
+
+### Visualizing the Cost Function
+
+- For intuition, consider a simplified model: $f_w(x) = wx$ (i.e., $b = 0$).
+- The cost function becomes $J(w) = \frac{1}{2m} \sum_{i=1}^m (wx^{(i)} - y^{(i)})^2$.
+- Each value of $w$ gives a different straight line $f_w(x)$ and a corresponding cost $J(w)$.
+
+#### Example with Three Training Points: $(1,1), (2,2), (3,3)$
+
+- If $w = 1$:
+    - $f(x) = x$ fits all points exactly, so $J(1) = 0$.
+- If $w = 0.5$:
+    - $f(x) = 0.5x$ underestimates $y$ for each $x$.
+    - The cost $J(0.5)$ is higher (e.g., $J(0.5) \approx 0.58$).
+- If $w = 0$:
+    - $f(x) = 0$ (horizontal line), so the errors are large.
+    - The cost $J(0)$ is even higher (e.g., $J(0) \approx 2.33$).
+- If $w = -0.5$:
+    - $f(x)$ is a downward-sloping line, resulting in even larger errors and cost.
+
+- **Key Idea:** For each $w$, you can plot the corresponding $J(w)$. The value of $w$ that minimizes $J(w)$ gives the best fit to the data.
+
+![](./images/0302.png)
+
+### Generalization
+
+- In the general case (with both $w$ and $b$), you seek to minimize $J(w, b)$.
+- The best-fit line is the one where $J(w, b)$ is as small as possible.
+
+---
+
+**Next:** []()
