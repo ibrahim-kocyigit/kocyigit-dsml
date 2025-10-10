@@ -52,12 +52,10 @@ $$
 
 ## Right-Tailed Test
 
-![](./images/1101.png)
-
 - **Null hypothesis:** $\mu_{US} - \mu_{AR} = 0$
 - **Alternative hypothesis:** $\mu_{US} - \mu_{AR} > 0$
 - **Significance level:** $\alpha = 0.05$
-- **Degrees of freedom:** $\approx 16.8$ (_Calculation is complex, so done with a library_)
+- **Degrees of freedom:** $\approx 16.8$ 
 
 **p-value:** Probability under $H_0$ that $t$ is greater than 1.7459  
 $p = 0.0495$
@@ -65,9 +63,9 @@ $p = 0.0495$
 **Decision:** $p < 0.05$  
 $\rightarrow$ **Reject $H_0$**. There is evidence that the US mean is greater than the Argentina mean.
 
-## Two-Tailed Test
+![](./images/1101.png)
 
-![](./images/1102.png)
+## Two-Tailed Test
 
 - **Null hypothesis:** $\mu_{US} - \mu_{AR} = 0$
 - **Alternative hypothesis:** $\mu_{US} - \mu_{AR} \neq 0$
@@ -77,6 +75,8 @@ $p = 0.0991$
 
 **Decision:** $p > 0.05$  
 $\rightarrow$ **Do not reject $H_0$**. There is not enough evidence to conclude the means are different.
+
+![](./images/1102.png)
 
 ## Summary
 
