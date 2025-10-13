@@ -1,4 +1,4 @@
-# 6. Plotting Predictions and Prediction Uncertainty
+# Plotting Predictions and Prediction Uncertainty
 
 ## The Importance of Visualizing Uncertainty
 

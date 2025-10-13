@@ -1,6 +1,6 @@
-# 1. What Do We Mean by Fitting Models to Data?
+# What Do We Mean by Fitting Models to Data?
 
-## 1.1. Introduction
+## Introduction
 *   **Goal:** To fit statistical models to collected data in order to answer research questions.
 *   **Key Distinction:** We are **fitting models to data**, not fitting data to models.
 *   **Process:**
@@ -8,13 +8,13 @@
     2.  We then fit these specified models to our collected data.
 *   **Purpose of Models:** Models describe the distributions of variables or the relationships between them in our dataset.
 
-## 1.2. Why Do We Fit Models to Data?
+## Why Do We Fit Models to Data?
 
 1.  **Estimation:** To estimate distributional properties of variables (e.g., means, variances, quantiles), potentially conditional on other variables.
 2.  **Summarization & Inference:** To concisely summarize relationships between variables and make inferential statements about those relationships (e.g., the relationship between a predictor and a dependent variable).
 3.  **Prediction:** To predict values of variables of interest based on other predictor variables and to characterize the uncertainty in those predictions.
 
-## 1.3. Focus on Parametric Models
+## Focus on Parametric Models
 
 *   This course focuses on **parametric models**.
 *   **Definition:** Models where we estimate **parameters** that describe the distributions of the variables we are interested in.
@@ -23,26 +23,26 @@
     *   We estimate these parameters from the data.
 *   **Inference:** We will use techniques from [Probability and Statistics](../../../01_math/04_probability_and_statistics_for_ml_and_ds/) course (confidence intervals, hypothesis testing) to make inferences about these model parameters.
 
-## 1.4. Key Concepts Introduced
+## Key Concepts Introduced
 
 *   **Specifying a Probability Model:** Defining a model based on a research question.
 *   **Estimating Model Parameters:** Using data to find the values of a model's parameters.
 *   **Assessing Model Fit:** Evaluating how well a model summarizes the observed data and relationships.
 
-## 1.5. Example: Test Performance vs. Age
+## Example: Test Performance vs. Age
 
-### 1.5.1. Research Question & Theory
+### Research Question & Theory
 
 *   **Variable of Interest:** Test performance (0-8 points).
 *   **Predictor:** Standardized age.
 *   **Theoretical Relationship:** A **curvilinear (quadratic) relationship** is hypothesized. Performance is expected to be best at moderate ages and worse at very low or very high ages.
 
-### 1.5.2. Modeling Goals
+### Modeling Goals
 
 1.  **Descriptive:** Estimate the marginal (overall) mean of test performance.
 2.  **Conditional:** Estimate the mean performance conditional on age (i.e., the relationship between age and performance).
 
-### 1.5.3. Modeling Approach 1: Mean Only Model
+### Modeling Approach 1: Mean Only Model
 
 *   **Model:** Assumes test performance follows a normal distribution defined by an overall mean ($M$) and variance ($\sigma^2$).
 *   **Regression Equation:** $Performance = M + E$
@@ -55,7 +55,7 @@
 
 ![](./images/0101.png)
 
-### 1.5.4. Modeling Approach 2: Conditional Model (Quadratic)
+### Modeling Approach 2: Conditional Model (Quadratic)
 
 *   **Model:** Assumes test performance follows a normal distribution where the **mean is a quadratic function of age**.
 *   **Regression Equation:** $Performance = a + b \cdot Age + c \cdot Age^2 + E$
@@ -77,7 +77,7 @@
 
 ![](./images/0103.png)
 
-## 1.6. Example of a Poorly Fitting (Misspecified) Model
+## Example of a Poorly Fitting (Misspecified) Model
 
 *   **Scenario:** Fitting a **linear model** ($Performance = a + b \cdot Age + E$) when the true relationship is curvilinear.
 *   **Indicators of Poor Fit:**

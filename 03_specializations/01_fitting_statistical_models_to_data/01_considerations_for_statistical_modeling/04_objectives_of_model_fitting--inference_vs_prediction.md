@@ -1,20 +1,20 @@
-# 4. Objectives of Model Fitting: Inference vs. Prediction
+# Objectives of Model Fitting: Inference vs. Prediction
 
-## 4.1. Two Main Objectives in Model Fitting
+## Two Main Objectives in Model Fitting
 
-### 4.1.1. Objective 1: Making Inference
+### Objective 1: Making Inference
 - **Focus:** Understanding relationships between variables in the dataset
 - **Goal:** Test hypotheses and draw conclusions about population parameters
 - **Key Question:** "Is there a significant relationship between X and Y?"
 
-### 4.1.2. Objective 2: Making Predictions
+### Objective 2: Making Predictions
 - **Focus:** Forecasting future outcomes based on historical data
 - **Goal:** Generate accurate forecasts for new observations
 - **Key Question:** "What value of Y can we expect given specific values of X?"
 
-## 4.2. Inference: Testing Relationships Between Variables
+## Inference: Testing Relationships Between Variables
 
-### 4.2.1. Example Revisited: Age vs. Test Performance
+### Example Revisited: Age vs. Test Performance
 **Model:** Performance follows a quadratic relationship with age:
 
 $\text{Performance} = a + b \cdot \text{Age} + c \cdot \text{Age}^2 + E$
@@ -30,7 +30,7 @@ Once we've calculated the parameter estimates we can...
 - test hypotheses about whether parameters are equal to 0, or...
 - form confidence intervals for these parameters to determine whether or not the value of 0 is contained within the confidence interval
 
-### 4.2.2. Hypothesis Testing for Parameters
+### Hypothesis Testing for Parameters
 
 **Test Statistic Formula:**  
 
@@ -49,7 +49,7 @@ $$
 - Very unlikely to observe such a large estimate if the null hypothesis ($b = 0$) were true
 - **Conclusion:** Strong evidence to reject $H_0: b = 0$
 
-### 4.2.3. Interpreting Parameter Significance
+### Interpreting Parameter Significance
 
 **Parameter a ($\hat{a} = 5.11$, $t_{\hat{a}} = 51.1$):**
 - Mean test performance when age equals the overall mean
@@ -64,9 +64,9 @@ $$
 - Negative and significant → Performance decreases after initial acceleration
 - **Key Insight:** If c were not significant, relationship would be linear rather than curvilinear
 
-## 4.3. Prediction: Forecasting Future Outcomes
+## Prediction: Forecasting Future Outcomes
 
-### 4.3.1. Making Predictions from Fitted Model
+### Making Predictions from Fitted Model
 **Prediction Equation:**
 
 $$
@@ -81,7 +81,7 @@ $$
 
 <img src="./images/0401.png" width="500">
 
-### 4.3.2. Importance of Accounting for Uncertainty
+### Importance of Accounting for Uncertainty
 
 **Key Points:**
 1. All predictions have associated uncertainty
@@ -93,7 +93,7 @@ $$
 - **Simple model** (no predictors): Same prediction for everyone, high uncertainty
 - **Complex model** (with predictors): Different predictions based on X values, lower uncertainty
 
-## 4.4. Critical Distinctions Between Objectives
+## Critical Distinctions Between Objectives
 
 | **Inference** | **Prediction** |
 |---------------|----------------|

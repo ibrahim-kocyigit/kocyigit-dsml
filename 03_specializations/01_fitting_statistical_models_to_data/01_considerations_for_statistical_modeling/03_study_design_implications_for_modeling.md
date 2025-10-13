@@ -1,14 +1,14 @@
-# 3. Different Study Designs Generate Different Types of Data: Implications for Modeling
+# Different Study Designs Generate Different Types of Data: Implications for Modeling
 
-## 3.1. Core Principle
+## Core Principle
 
 **Different study designs generate different types of data**, and this has **critical implications** for the models we fit.
 
 > Understanding **how data were generated** is essential before fitting statistical models.
 
-## 3.2. Common Study Designs and Their Modeling Implications
+## Common Study Designs and Their Modeling Implications
 
-### 3.2.1. Simple Random Samples (SRS)
+### Simple Random Samples (SRS)
 
 * **Key Property:** Observations are **Independent and Identically Distributed (i.i.d.)**
 * **Characteristics:**
@@ -24,7 +24,7 @@
 
 **Modeling Approach:** Can model differences between groups (e.g., different means by gender) while maintaining independence assumption **within groups**
 
-### 3.2.2. Clustered Samples
+### Clustered Samples
 
 * **Examples:** Hospitals, clinics, schools, neighborhoods
 * **Key Property:** Observations **within clusters are correlated**
@@ -40,7 +40,7 @@
 
 **Modeling Approach:** Include additional parameters to capture within-cluster correlation
 
-### 3.2.3. Longitudinal Studies
+### Longitudinal Studies
 
 * **Key Property:** Repeated measures from **same units over time** are correlated
 * **Characteristics:**
@@ -51,19 +51,19 @@
 <img src="./images/0302.png" width="500">
 
 
-## 3.3. Critical Dichotomy in Modeling
+## Critical Dichotomy in Modeling
 
-### 3.3.1. Independent Data
+### Independent Data
 * Observations completely independent of each other
 * May or may not arise from common distribution
 * **Examples:** Simple random samples
 
-### 3.3.2. Dependent Data
+### Dependent Data
 * Observations correlated due to study design features
 * **Examples:** Clustered samples, longitudinal measurements
 * **Requires:** Special modeling approaches to account for correlation
 
-## 3.4. Modeling Philosophy
+## Modeling Philosophy
 
 > The **best possible model** should reflect important study design features that affect the distributional properties of our variables of interest.
 

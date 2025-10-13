@@ -1,11 +1,11 @@
-# 5. Mixed Effects Models: Is It Time to Go Bayesian by Default?
+# Mixed Effects Models: Is It Time to Go Bayesian by Default?
 
 **[Source](https://babieslearninglanguage.blogspot.com/2018/02/mixed-effects-models-is-it-time-to-go.html):** "Babies Learning Language: Mixed Effects Models: Is it Time to Go Full Bayes?" (February 2018)
 
 _Note: The blog post explains the basic ideas of Bayesian modeling and inference in the multilevel modeling context. It also introduces some of the advantages of Bayesian approaches to fitting multilevel models in a specific subject matter context. The following summary have been revised for Python-based libraries._
 
 
-## 5.1. The Problem with Classical Linear Mixed Models (LMMs)
+## The Problem with Classical Linear Mixed Models (LMMs)
 
 LMMs are the standard tool in fields like psycholinguistics for handling grouped data (e.g., multiple responses from the same subject or item). However, they have significant limitations, especially with complex datasets.
 
@@ -14,7 +14,7 @@ LMMs are the standard tool in fields like psycholinguistics for handling grouped
     *   The common symptom is a **singular fit** warning (e.g., in R's `lme4` or Python's `statsmodels`). This often indicates that the model has estimated a random effects variance of (or very close to) zero.
     *   **The Consequence:** The `p-values` derived from such models (e.g., via `lmerTest` in R or `summary()` in Python) become highly unreliable and anti-conservative (i.e., they are more likely to yield false positives).
 
-## 5.2. The Proposed Solution: Go Bayesian
+## The Proposed Solution: Go Bayesian
 
 1.  **Handles Complex Models Gracefully:**
     *   Bayesian models do not struggle with singular fits in the same way. They can fit maximal models even with sparse data, providing stable and reliable estimates.
@@ -31,7 +31,7 @@ LMMs are the standard tool in fields like psycholinguistics for handling grouped
     *   Provides powerful tools like **Posterior Predictive Checks (PPC)** to see if your model's predictions actually match your observed data.
     *   Offers metrics like the **Leave-One-Out Information Criterion (LOOIC)** for robust model comparison, which is often more reliable than AIC or BIC.
 
-## 5.3. The Practical Workflow: From `statsmodels` to `bambi` (Python)
+## The Practical Workflow: From `statsmodels` to `bambi` (Python)
 
 *   **Essential Steps in a Bayesian Workflow (Python):**
     1.  **Specify the Model:** Define your formula, just like in `statsmodels` or `bambi`.
@@ -47,7 +47,7 @@ LMMs are the standard tool in fields like psycholinguistics for handling grouped
     6.  **Check Your Model:** Use posterior predictive checks to see if simulated data from the model looks like your real data. Use LOO for model comparison.
 
 
-## 5.4. Key Concepts & Terminology
+## Key Concepts & Terminology
 
 *   **MCMC (Markov Chain Monte Carlo):** Computational algorithm to sample from the posterior.
 *   **Posterior Distribution:** Probability distribution of a parameter after considering the data and prior.
@@ -56,7 +56,7 @@ LMMs are the standard tool in fields like psycholinguistics for handling grouped
 *   **R-hat:** Convergence diagnostic; values near 1.0 indicate good mixing.
 *   **Posterior Predictive Checks (PPC):** Assess model fit by comparing observed data to simulated data from the posterior.
 
-## 5.5. Conclusion: When to Make the Switch?
+## Conclusion: When to Make the Switch?
 
 The recommendation is clear: **It is time to "go full Bayes" for your mixed models.**
 
