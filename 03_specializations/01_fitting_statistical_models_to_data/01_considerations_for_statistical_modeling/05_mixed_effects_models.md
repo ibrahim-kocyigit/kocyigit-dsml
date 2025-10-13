@@ -2,7 +2,7 @@
 
 **[Source](https://babieslearninglanguage.blogspot.com/2018/02/mixed-effects-models-is-it-time-to-go.html):** "Babies Learning Language: Mixed Effects Models: Is it Time to Go Full Bayes?" (February 2018)
 
-_Note: The following summary have been revised for Python-based libraries._
+_Note: The blog post explains the basic ideas of Bayesian modeling and inference in the multilevel modeling context. It also introduces some of the advantages of Bayesian approaches to fitting multilevel models in a specific subject matter context. The following summary have been revised for Python-based libraries._
 
 
 ## 5.1. The Problem with Classical Linear Mixed Models (LMMs)
@@ -35,40 +35,17 @@ LMMs are the standard tool in fields like psycholinguistics for handling grouped
 
 *   **Essential Steps in a Bayesian Workflow (Python):**
     1.  **Specify the Model:** Define your formula, just like in `statsmodels` or `bambi`.
-        - *Classical (frequentist):*
-            ```python
-            import statsmodels.formula.api as smf
-            model = smf.mixedlm("y ~ x1 + x2", data, groups=data["subject"])
-            result = model.fit()
-            ```
-        - *Bayesian:*
-            ```python
-            import bambi as bmb
-            model = bmb.Model("y ~ x1 + x2 + (1|subject)", data)
-            ```
+
     2.  **Define Priors:** In `bambi`, you can specify priors for parameters. If not specified, sensible defaults (weakly informative) are used.
-        ```python
-        model = bmb.Model("y ~ x1 + x2 + (1|subject)", data, priors={"x1": bmb.Prior("Normal", mu=0, sigma=1)})
-        ```
+
     3.  **Run the Sampler:** Use `model.fit()` to run MCMC sampling (PyMC under the hood).
-        ```python
-        idata = model.fit()
-        ```
+
     4.  **Check Chain Convergence:** Use diagnostics like the **R-hat statistic** (should be ≈ 1.0) and trace plots (should look like "fuzzy caterpillars").
-        ```python
-        import arviz as az
-        az.summary(idata)  # includes R-hat
-        az.plot_trace(idata)
-        ```
+
     5.  **Interpret the Output:** Examine posterior summaries (mean, standard deviation, credible intervals).
-        ```python
-        az.summary(idata, hdi_prob=0.95)
-        ```
+
     6.  **Check Your Model:** Use posterior predictive checks to see if simulated data from the model looks like your real data. Use LOO for model comparison.
-        ```python
-        az.plot_ppc(idata)
-        az.loo(idata)
-        ```
+
 
 ## 5.4. Key Concepts & Terminology
 
@@ -87,4 +64,4 @@ The Bayesian approach with `bambi` (and PyMC) in Python is accessible, powerful,
 
 ---
 
-**Next:** []()
+**Next:** [Plotting Predictions and Prediction Uncertainty](./06_plotting_predictions_and_prediction_uncertainty.md)
