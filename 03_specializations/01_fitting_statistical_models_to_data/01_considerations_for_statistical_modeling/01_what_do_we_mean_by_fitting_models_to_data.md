@@ -74,13 +74,15 @@
 *   **Assessing Fit:** Check the residuals.
     *   **Q-Q Plot:** Should show points on a straight line, supporting the normality assumption.
     *   **Residuals vs. Predicted Plot:** Residuals should be symmetrically scattered around zero with constant variance.
-    *   {{insert screenshot showing a Q-Q plot and a residuals vs. predicted plot for the quadratic model here}}
+
+![](./images/0103.png)
 
 ## 6. Example of a Poorly Fitting (Misspecified) Model
 
-*   **Scenario:** Fitting a **linear model** (`Performance = a + b*Age + E`) when the true relationship is curvilinear.
+*   **Scenario:** Fitting a **linear model** ($Performance = a + b \cdot Age + E$) when the true relationship is curvilinear.
 *   **Indicators of Poor Fit:**
     *   The fitted line does not follow the data pattern.
     *   **Residuals show a systematic pattern** (e.g., a curvilinear trend) instead of being randomly scattered around zero.
     *   Predictions are poor, especially at low and high ages.
-    *   {{insert screenshot showing a scatter plot with a poorly fitting linear line and a plot of residuals with a clear pattern here}}
+
+![](./images/0104.png)
