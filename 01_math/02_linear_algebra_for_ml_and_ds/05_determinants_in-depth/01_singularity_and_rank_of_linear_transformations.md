@@ -26,7 +26,14 @@ $$
 1 \end{bmatrix}
 $$  
 
-* **Transforming $\hat{j}$:** $ \begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix} \begin{bmatrix} 0 \\ 1 \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \end{bmatrix} $
+* **Transforming $\hat{j}$:**  
+
+$$ 
+\begin{bmatrix} 3 & 1 \\ 
+1 & 2 \end{bmatrix} \begin{bmatrix} 0 \\ 
+1 \end{bmatrix} = \begin{bmatrix} 1 \\ 
+2 \end{bmatrix} 
+$$
 
 Because the two resulting vectors are not parallel, they form a new, valid basis that can span the entire 2D plane. Let's visualize this.
 
@@ -43,13 +50,30 @@ A **singular** transformation is one that squashes a space into a **lower dimens
 
 Let's analyze the transformation defined by this matrix:  
 
-$ B = \begin{bmatrix} 1 & 1 \\ 2 & 2 \end{bmatrix} $  
+$$ 
+B = \begin{bmatrix} 1 & 1 \\ 
+2 & 2 \end{bmatrix} 
+$$  
 
 Again, let's see where it sends our basis vectors:
 
-* **Transforming $\hat{i}$:** $ \begin{bmatrix} 1 & 1 \\ 2 & 2 \end{bmatrix} \begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \end{bmatrix} $  
+* **Transforming $\hat{i}$:**  
 
-* **Transforming $\hat{j}$:** $ \begin{bmatrix} 1 & 1 \\ 2 & 2 \end{bmatrix} \begin{bmatrix} 0 \\ 1 \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \end{bmatrix} $
+$$
+\begin{bmatrix} 1 & 1 \\ 
+2 & 2 \end{bmatrix} \begin{bmatrix} 1 \\ 
+0 \end{bmatrix} = \begin{bmatrix} 1 \\ 
+2 \end{bmatrix} 
+$$  
+
+* **Transforming $\hat{j}$:**  
+
+$$
+\begin{bmatrix} 1 & 1 \\ 
+2 & 2 \end{bmatrix} \begin{bmatrix} 0 \\ 
+1 \end{bmatrix} = \begin{bmatrix} 1 \\ 
+2 \end{bmatrix} 
+$$
 
 Both basis vectors land on the exact same output vector `(1, 2)`. This means the entire grid of the original plane gets collapsed onto the single line defined by this vector.
 
