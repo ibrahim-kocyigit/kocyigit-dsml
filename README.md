@@ -29,7 +29,7 @@ This project consolidates my curated learning resources, organized into five pil
 
 ### 3. Specializations
 1.  🟠 [Fitting Statistical Models to Data with Python](./03_specializations/01_fitting_statistical_models_to_data/)
-2.  🟠 [Machine Learning](./03_specializations/02_machine_learning_with_python/)
+2.  🟠 [Machine Learning with Python](./03_specializations/02_machine_learning_with_python/)
 3.  🔴 Deep Learning
 
 ### 4. MLOps 
