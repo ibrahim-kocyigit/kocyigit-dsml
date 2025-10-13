@@ -44,12 +44,12 @@
 
 ### 1.5.3. Modeling Approach 1: Mean Only Model
 
-*   **Model:** Assumes test performance follows a normal distribution defined by an overall mean ($M$) and variance ( $\sigma^2$ ).
+*   **Model:** Assumes test performance follows a normal distribution defined by an overall mean ($M$) and variance ($\sigma^2$).
 *   **Regression Equation:** $Performance = M + E$
     *   $E$ (error) is assumed to be normally distributed with mean 0 and variance $\sigma^2$.
 *   **Parameters to Estimate:** $M$ (mean) and $\sigma^2$ (variance).
 *   **Results from Example:**
-    *   Estimated Mean ( $\hat{M}$ ): **4.57**
+    *   Estimated Mean ($\hat{M}$): **4.57**
     *   Estimated Variance ( $\hat{\sigma}^2$ ): **1.82**
 *   **Assessing Fit:** Check if the residuals (observed - predicted) are normally distributed.
     *   {{insert screenshot showing a histogram and Q-Q plot of residuals from the mean-only model here}}
