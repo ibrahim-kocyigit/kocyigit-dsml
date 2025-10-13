@@ -51,34 +51,37 @@ $$
 
 ### 4.2.3. Interpreting Parameter Significance
 
-**Parameter a ($\hat{a} = 5.11$, $t = 51.1$):**
+**Parameter a ($\hat{a} = 5.11$, $t_{\hat{a}} = 51.1$):**
 - Mean test performance when age equals the overall mean
 - Significantly different from zero → Performance is nonzero at average age
 
-**Parameter b ($\hat{b} = 0.24$, $t = 4.0$):**
+**Parameter b ($\hat{b} = 0.24$, $t_{\hat{b}} = 4.0$):**
 - Initial rate of increase in test performance when standardized age = 0
 - Positive and significant → Initial positive relationship with age
 
-**Parameter c ($\hat{c} = -0.26$, $t = -8.67$):**
+**Parameter c ($\hat{c} = -0.26$, $t_{\hat{c}} = -8.67$):**
 - Non-linear acceleration in performance as function of age
 - Negative and significant → Performance decreases after initial acceleration
 - **Key Insight:** If c were not significant, relationship would be linear rather than curvilinear
 
-## 3. Prediction: Forecasting Future Outcomes
+## 4.3. Prediction: Forecasting Future Outcomes
 
-### Making Predictions from Fitted Model
+### 4.3.1. Making Predictions from Fitted Model
 **Prediction Equation:**
 
 $$
 \hat{\text{Performance}} = 5.11 + 0.24 \times \text{Age} - 0.26 \times \text{Age}^2
 $$
 
-**Example:** Predicting performance when standardized age = 1:
-$\hat{\text{Performance}} = 5.11 + 0.24 \times 1 - 0.26 \times 1^2 = 5.09$
+**Example:** Predicting performance when standardized age = 1:  
 
-{{insert screenshot showing scatter plot with fitted quadratic curve and prediction at age=1 here}}
+$$
+\hat{\text{Performance}} = 5.11 + 0.24 \times 1 - 0.26 \times 1^2 = 5.09
+$$
 
-### Importance of Accounting for Uncertainty
+<img src="./images/0401.png" width="500">
+
+### 4.3.2. Importance of Accounting for Uncertainty
 
 **Key Points:**
 1. All predictions have associated uncertainty
@@ -90,7 +93,7 @@ $\hat{\text{Performance}} = 5.11 + 0.24 \times 1 - 0.26 \times 1^2 = 5.09$
 - **Simple model** (no predictors): Same prediction for everyone, high uncertainty
 - **Complex model** (with predictors): Different predictions based on X values, lower uncertainty
 
-## 4. Critical Distinctions Between Objectives
+## 4.4. Critical Distinctions Between Objectives
 
 | **Inference** | **Prediction** |
 |---------------|----------------|
@@ -99,14 +102,10 @@ $\hat{\text{Performance}} = 5.11 + 0.24 \times 1 - 0.26 \times 1^2 = 5.09$
 | Interpret coefficients and significance | Assess prediction accuracy |
 | Understand underlying mechanisms | Practical forecasting applications |
 
-## 5. Looking Ahead
 
-### Upcoming Topics:
-1. **Estimation methods** for model parameters
-2. **Hypothesis testing** and confidence intervals
-3. **Prediction techniques** and uncertainty quantification
-4. **Model assessment** and quality evaluation
-5. **Frequentist vs. Bayesian inference** approaches
+> **Key Reminder:**  
+> Always assess overall quality of model fit regardless of whether primary objective is inference or prediction.
 
-### Key Reminder:
-Always assess overall quality of model fit regardless of whether primary objective is inference or prediction.
+---
+
+**Next:** [Mixed Effects Models: Is It Time to Go Bayesian by Default?](./05_mixed_effects_models.md)
