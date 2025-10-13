@@ -2,9 +2,11 @@
 
 There is a very simple and powerful rule that connects the determinant of a matrix to the determinant of its inverse.
 
-> **Rule:** The determinant of an inverse matrix is the reciprocal of the determinant of the original matrix.
-> 
-> $ \det(A^{-1}) = \frac{1}{\det(A)} $
+**Rule:** The determinant of an inverse matrix is the reciprocal of the determinant of the original matrix.
+
+$$
+\det(A^{-1}) = \frac{1}{\det(A)} 
+$$
 
 This makes intuitive sense. If a transformation `A` scales the area of a space by a factor of 5, then the inverse transformation `A⁻¹` must scale it back down by a factor of 1/5 to return the space to its original state.
 
