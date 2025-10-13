@@ -30,7 +30,7 @@
 * **Key Property:** Observations **within clusters are correlated**
   - Observations from same cluster tend to be similar
 
-![](./images/0301.png)
+<img src="./images/0301.jpg" width="500">
 
 **Example:** Happiness measurements from selected neighborhoods
 - Observations within same neighborhood are correlated
