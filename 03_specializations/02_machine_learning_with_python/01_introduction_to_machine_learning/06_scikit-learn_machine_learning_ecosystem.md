@@ -50,11 +50,11 @@ Most tasks needed in a machine learning pipeline are implemented in scikit-learn
 ```python
 # 1. Data Scaling (Preprocessing)
 from sklearn import preprocessing
-X_scaled = preprocessing.scale(X)
+X = preprocessing.StandardScaler().fit(X).transform(X)
 
 # 2. Train/Test Split
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.33)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33)
 
 # 3. Model Instantiation
 from sklearn import svm
