@@ -81,4 +81,4 @@ Despite the power of ML, **humans are still crucial** in the loop. For example, 
 
 ---
 
-**Next:** []()
+**Next:** [Machine Learning Model Lifecycle](./02_machine_learning_model_lifecycle.md)
