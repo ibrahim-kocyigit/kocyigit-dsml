@@ -12,17 +12,27 @@ This makes intuitive sense. If a transformation `A` scales the area of a space b
 
 Let's look at some examples to verify this:
 
-* **Example 1:**
-    * $ A = \begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix} \implies \det(A) = 5 $
+#### Example 1:
 
-    * $ A^{-1} = \begin{bmatrix} 0.4 & -0.2 \\ -0.2 & 0.6 \end{bmatrix} \implies \det(A^{-1}) = 0.2 $
+$$
+A = \begin{bmatrix} 3 & 1 \\ 
+1 & 2 \end{bmatrix} \implies \det(A) = 5 
+$$
 
-    * We can see that $0.2 = \frac{1}{5}$. The rule holds.
+$$
+A^{-1} = \begin{bmatrix} 0.4 & -0.2 \\ -0.2 & 0.6 \end{bmatrix} \implies \det(A^{-1}) = 0.2 
+$$
 
-* **Example 2 (Singular Matrix):**
-    * $ B = \begin{bmatrix} 1 & 1 \\ 2 & 2 \end{bmatrix} \implies \det(B) = 0 $
+We can see that $0.2 = \frac{1}{5}$. The rule holds.
 
-    * This matrix is singular and **has no inverse**. Notice that the formula $\frac{1}{\det(B)}$ would result in division by zero, which is undefined. The rule is consistent.
+#### Example 2 (Singular Matrix):
+
+$$
+B = \begin{bmatrix} 1 & 1 \\ 
+2 & 2 \end{bmatrix} \implies \det(B) = 0 
+$$
+
+This matrix is singular and **has no inverse**. Notice that the formula $\frac{1}{\det(B)}$ would result in division by zero, which is undefined. The rule is consistent.
 
 ---
 ## The Algebraic Proof
