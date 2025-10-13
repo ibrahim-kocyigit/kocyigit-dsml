@@ -86,4 +86,4 @@
 
 ---
 
-**Next:** [Study Design Implications for Modeling](./03_study_design_implications_for_modeling.md)
+**Next:** [Study Designs and Their Implications for Modeling](./03_study_design_implications_for_modeling.md)
