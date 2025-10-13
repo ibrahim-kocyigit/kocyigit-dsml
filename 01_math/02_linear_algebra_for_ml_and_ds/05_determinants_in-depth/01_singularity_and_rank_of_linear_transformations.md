@@ -4,18 +4,19 @@ Since matrices correspond to linear transformations, the concepts of **singular*
 
 The key is to look at the **image** of the transformation—the set of all possible output points after applying the transformation to every point in the original space.
 
----
 ## Case 1: Non-Singular Transformation
 
 A **non-singular** transformation is one that maps a space onto another space of the **same dimension**. For example, it takes a 2D plane and maps it to the entire 2D plane. The grid might be stretched or sheared, but it still covers every point.
 
 Let's analyze the transformation defined by this matrix:  
 
-$ A = \begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix} $  
+$$
+A = \begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix} 
+$$  
 
 To understand what this does to the entire plane, we only need to see where it sends our basis vectors, $\hat{i} = (1, 0)$ and $\hat{j} = (0, 1)$.
 
-* **Transforming $\hat{i}$:** $ \begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix} \begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix} 3 \\ 1 \end{bmatrix} $  
+* **Transforming $\hat{i}$:** $\begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix} \begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix} 3 \\ 1 \end{bmatrix}$  
 
 * **Transforming $\hat{j}$:** $ \begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix} \begin{bmatrix} 0 \\ 1 \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \end{bmatrix} $
 
