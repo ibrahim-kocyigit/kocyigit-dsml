@@ -86,3 +86,7 @@
     *   Predictions are poor, especially at low and high ages.
 
 ![](./images/0104.png)
+
+---
+
+**Next:** [Types of Variables in Statistical Modeling](./02_types_of_variables_in_statistical_modeling.md)

@@ -83,3 +83,7 @@
    - Use techniques to check for systematics differences (e.g., Chi-Square tests)
 2. **Consider imputation** if evidence of systematic missingness
    - Predict missing values using other variables in dataset
+
+---
+
+**Next:** [Study Design Implications for Modeling](./03_study_design_implications_for_modeling.md)
