@@ -50,14 +50,15 @@
 *   **Parameters to Estimate:** $M$ (mean) and $\sigma^2$ (variance).
 *   **Results from Example:**
     *   Estimated Mean ($\hat{M}$): **4.57**
-    *   Estimated Variance ( $\hat{\sigma}^2$ ): **1.82**
+    *   Estimated Variance ($\hat{\sigma}^2$): **1.82**
 *   **Assessing Fit:** Check if the residuals (observed - predicted) are normally distributed.
-    *   {{insert screenshot showing a histogram and Q-Q plot of residuals from the mean-only model here}}
 
-### Modeling Approach 2: Conditional Model (Quadratic)
+![](./images/0101.png)
+
+### 1.5.4. Modeling Approach 2: Conditional Model (Quadratic)
 
 *   **Model:** Assumes test performance follows a normal distribution where the **mean is a quadratic function of age**.
-*   **Regression Equation:** `Performance = a + b*(Age) + c*(Age)² + E`
+*   **Regression Equation:** $Performance = a + b \cdot Age + c \cdot Age^2 + E$
 *   **Parameters to Estimate:**
     *   $a$, $b$, $c$ (regression coefficients defining the quadratic relationship).
     *   $\sigma^2$ (variance of the errors).
@@ -67,7 +68,9 @@
     *   $\hat{c} = -0.26$ (Quadratic coefficient)
     *   $\hat{\sigma}^2 = 1.29$
 *   **Visualizing the Fit:** The fitted quadratic curve should capture the curvilinear pattern in the scatter plot.
-    *   {{insert screenshot showing a scatter plot of performance vs. age with a fitted quadratic curve here}}
+
+![](./images/0102.png)
+
 *   **Assessing Fit:** Check the residuals.
     *   **Q-Q Plot:** Should show points on a straight line, supporting the normality assumption.
     *   **Residuals vs. Predicted Plot:** Residuals should be symmetrically scattered around zero with constant variance.
