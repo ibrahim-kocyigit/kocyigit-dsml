@@ -19,7 +19,7 @@
 
 $\text{Performance} = a + b \cdot \text{Age} + c \cdot \text{Age}^2 + E$
 
-...where $ E\sim N(0, \sigma^2)$
+...where $E\sim N(0, \sigma^2)$
 
 **Parameter Estimates:**
 - $\hat{a} = 5.11$ (SE = 0.10)
