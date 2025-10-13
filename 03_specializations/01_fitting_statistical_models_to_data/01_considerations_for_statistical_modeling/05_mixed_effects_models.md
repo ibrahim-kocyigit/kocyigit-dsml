@@ -6,10 +6,10 @@
 
 LMMs are the standard tool in fields like psycholinguistics for handling grouped data (e.g., multiple responses from the same subject or item). However, they have significant limitations, especially with complex datasets.
 
-*   **Key Limitation: Unreliable $p-values$ with Complex Random Effects.**
-    *   When your model includes maximal random effects structures (e.g., $(1 + \text{predictor} \mid \text{subject}) + (1 + \text{predictor} \mid \text{item})$) or when data is sparse, the classical LMM framework can fail.
+*   **Key Limitation: Unreliable `p-values` with Complex Random Effects.**
+    *   When your model includes maximal random effects structures (e.g., `(1 + predictor | subject) + (1 + predictor | item)`) or when data is sparse, the classical LMM framework can fail.
     *   The common symptom is a **singular fit** warning in R (e.g., using `lme4`). This often indicates that the model has estimated a random effects variance of (or very close to) zero.
-    *   **The Consequence:** The $p$-values derived from such models (e.g., via `lmerTest`) become highly unreliable and anti-conservative (i.e., they are more likely to yield false positives).
+    *   **The Consequence:** The `p-values` derived from such models (e.g., via `lmerTest`) become highly unreliable and anti-conservative (i.e., they are more likely to yield false positives).
 
 #### **2. The Proposed Solution: Go Bayesian**
 
