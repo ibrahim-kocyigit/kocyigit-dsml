@@ -95,4 +95,4 @@ Always prefer the scenario with **lower variance estimates** (like Dataset 1) wh
 
 ---
 
-**Next:** []()
+**Next:** [Getting Started with Modeling in Python](./07_getting_started_with_modeling_in_python.ipynb)
