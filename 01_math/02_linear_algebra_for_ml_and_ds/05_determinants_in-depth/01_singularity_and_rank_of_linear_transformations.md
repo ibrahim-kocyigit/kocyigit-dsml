@@ -98,3 +98,7 @@ Let's summarize our findings:
 | **Zero Matrix (C)** | A point (the origin) | 0 | **0** |
 
 This shows that the rank directly measures how "squashed" or "collapsed" the output of a transformation is. A full-rank matrix preserves the original dimension, while a rank-deficient matrix reduces it.
+
+---
+
+**Next:** [The Determinant as an Area](./02_determinant_as_an_area.md)

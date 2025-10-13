@@ -57,3 +57,4 @@ The **absolute value** of the determinant, $|-5| = 5$, still tells us the scalin
 
 ---
 
+**Next:** [The Determinant of a Product](./03_determinant_of_a_product.md)

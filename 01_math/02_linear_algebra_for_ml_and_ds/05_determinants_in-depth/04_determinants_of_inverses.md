@@ -34,32 +34,45 @@ $$
 
 This matrix is singular and **has no inverse**. Notice that the formula $\frac{1}{\det(B)}$ would result in division by zero, which is undefined. The rule is consistent.
 
----
 ## The Algebraic Proof
 
 Why is this rule always true? We can prove it easily using the rules we already know.
 
 1.  **Start with the definition of an inverse:**
 
-    $ A \cdot A^{-1} = I $  
+$$
+A \cdot A^{-1} = I 
+$$  
 
-    (A matrix multiplied by its inverse is the identity matrix)
+(A matrix multiplied by its inverse is the identity matrix)
 
 2.  **Take the determinant of both sides:**  
 
-    $ \det(A \cdot A^{-1}) = \det(I) $  
+$$
+\det(A \cdot A^{-1}) = \det(I) 
+$$  
 
 
-3.  **Apply the product rule for determinants** to the left side:
+3.  **Apply the product rule for determinants** to the left side:  
 
-    $ \det(A) \cdot \det(A^{-1}) = \det(I) $
+$$
+\det(A) \cdot \det(A^{-1}) = \det(I) 
+$$
 
-4.  **The determinant of the identity matrix is always 1.** The identity transformation doesn't change the area of the unit square at all, so its area scaling factor is 1. Therefore:
+4.  **The determinant of the identity matrix is always 1.** The identity transformation doesn't change the area of the unit square at all, so its area scaling factor is 1. Therefore:  
 
-    $ \det(A) \cdot \det(A^{-1}) = 1 $
+$$
+\det(A) \cdot \det(A^{-1}) = 1 
+$$
 
-5.  **Solve for the determinant of the inverse** by dividing both sides by $\det(A)$:
+5.  **Solve for the determinant of the inverse** by dividing both sides by $\det(A)$:  
 
-    $ \det(A^{-1}) = \frac{1}{\det(A)} $  
+$$
+\det(A^{-1}) = \frac{1}{\det(A)} 
+$$  
 
 This simple proof confirms our rule.
+
+---
+
+**Next:** [Basis in Linear Algebra](../06_eigenvalues_and_eigenvectors/01_basis_in_linear_algebra.ipynb)

@@ -78,3 +78,6 @@ If one of your transformations (e.g., B) is singular, it squashes the plane into
 
 ![Determinant](./images/0302.png)
 
+---
+
+**Next:** [The Determinant of an Inverse](./04_determinants_of_inverses.md)
