@@ -37,7 +37,13 @@ $$
 \det(C) = (1)(3) - (4)(-3) = 3 - (-12) = 15 
 $$
 
-As we can see, $ \det(A) \cdot \det(B) = 5 \times 3 = 15 $, so the rule holds.
+As we can see, 
+
+$$
+\det(A) \cdot \det(B) = 5 \times 3 = 15
+$$
+
+...so the rule holds.
 
 ## The Geometric Intuition
 
