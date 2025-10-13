@@ -11,12 +11,20 @@ A **non-singular** transformation is one that maps a space onto another space of
 Let's analyze the transformation defined by this matrix:  
 
 $$
-A = \begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix} 
+A = \begin{bmatrix} 3 & 1 \\ 
+1 & 2 \end{bmatrix} 
 $$  
 
 To understand what this does to the entire plane, we only need to see where it sends our basis vectors, $\hat{i} = (1, 0)$ and $\hat{j} = (0, 1)$.
 
-* **Transforming $\hat{i}$:** $\begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix} \begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix} 3 \\ 1 \end{bmatrix}$  
+* **Transforming $\hat{i}$:**  
+
+$$
+\begin{bmatrix} 3 & 1 \\ 
+1 & 2 \end{bmatrix} \begin{bmatrix} 1 \\ 
+0 \end{bmatrix} = \begin{bmatrix} 3 \\ 
+1 \end{bmatrix}
+$$  
 
 * **Transforming $\hat{j}$:** $ \begin{bmatrix} 3 & 1 \\ 1 & 2 \end{bmatrix} \begin{bmatrix} 0 \\ 1 \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \end{bmatrix} $
 
