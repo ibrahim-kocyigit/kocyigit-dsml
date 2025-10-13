@@ -26,6 +26,10 @@ $\text{Performance} = a + b \cdot \text{Age} + c \cdot \text{Age}^2 + E$
 - $\hat{b} = 0.24$ (SE = 0.06) 
 - $\hat{c} = -0.26$ (SE = 0.03)
 
+Once we've calculated the parameter estimates we can...
+- test hypotheses about whether parameters are equal to 0, or...
+- form confidence intervals for these parameters to determine whether or not the value of 0 is contained within the confidence interval
+
 ### 4.2.2. Hypothesis Testing for Parameters
 
 **Test Statistic Formula:**  
@@ -45,17 +49,17 @@ $$
 - Very unlikely to observe such a large estimate if the null hypothesis ($b = 0$) were true
 - **Conclusion:** Strong evidence to reject $H_0: b = 0$
 
-### Interpreting Parameter Significance
+### 4.2.3. Interpreting Parameter Significance
 
-**Parameter a ($\hat{a} = 5.11$):**
+**Parameter a ($\hat{a} = 5.11$, $t = 51.1$):**
 - Mean test performance when age equals the overall mean
 - Significantly different from zero → Performance is nonzero at average age
 
-**Parameter b ($\hat{b} = 0.24$):**
+**Parameter b ($\hat{b} = 0.24$, $t = 4.0$):**
 - Initial rate of increase in test performance when standardized age = 0
 - Positive and significant → Initial positive relationship with age
 
-**Parameter c ($\hat{c} = -0.26$):**
+**Parameter c ($\hat{c} = -0.26$, $t = -8.67$):**
 - Non-linear acceleration in performance as function of age
 - Negative and significant → Performance decreases after initial acceleration
 - **Key Insight:** If c were not significant, relationship would be linear rather than curvilinear
@@ -63,16 +67,14 @@ $$
 ## 3. Prediction: Forecasting Future Outcomes
 
 ### Making Predictions from Fitted Model
-
 **Prediction Equation:**
-\[
+
+$$
 \hat{\text{Performance}} = 5.11 + 0.24 \times \text{Age} - 0.26 \times \text{Age}^2
-\]
+$$
 
 **Example:** Predicting performance when standardized age = 1:
-\[
-\hat{\text{Performance}} = 5.11 + 0.24(1) - 0.26(1)^2 = 5.09
-\]
+$\hat{\text{Performance}} = 5.11 + 0.24 \times 1 - 0.26 \times 1^2 = 5.09$
 
 {{insert screenshot showing scatter plot with fitted quadratic curve and prediction at age=1 here}}
 
