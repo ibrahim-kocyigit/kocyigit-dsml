@@ -69,7 +69,7 @@
     *   $\hat{\sigma}^2 = 1.29$
 *   **Visualizing the Fit:** The fitted quadratic curve should capture the curvilinear pattern in the scatter plot.
 
-![](./images/0102.png)
+<img src="./images/0102.png" width="500">
 
 *   **Assessing Fit:** Check the residuals.
     *   **Q-Q Plot:** Should show points on a straight line, supporting the normality assumption.
