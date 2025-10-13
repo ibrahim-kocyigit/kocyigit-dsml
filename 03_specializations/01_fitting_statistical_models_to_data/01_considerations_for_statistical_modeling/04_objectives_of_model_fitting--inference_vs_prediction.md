@@ -28,11 +28,17 @@ $\text{Performance} = a + b \cdot \text{Age} + c \cdot \text{Age}^2 + E$
 
 ### 4.2.2. Hypothesis Testing for Parameters
 
-**Test Statistic Formula:**
-$t = \dfrac{\text{Estimate} - 0}{\text{Standard Error}}$
+**Test Statistic Formula:**  
 
-**Example Calculation for parameter $b$:**
-$t = \dfrac{0.24}{0.06} = 4.0$
+$$
+t = \dfrac{\text{Estimate} - 0}{\text{Standard Error}}
+$$
+
+**Example Calculation for parameter $b$:**  
+
+$$
+t = \dfrac{0.24}{0.06} = 4.0
+$$
 
 **Interpretation:**
 - A test statistic of 4.0 indicates the estimate is 4 standard errors above zero
