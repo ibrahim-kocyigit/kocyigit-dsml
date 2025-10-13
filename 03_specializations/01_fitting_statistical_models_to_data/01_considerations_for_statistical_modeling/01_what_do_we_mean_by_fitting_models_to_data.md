@@ -77,7 +77,7 @@
 
 ![](./images/0103.png)
 
-## 6. Example of a Poorly Fitting (Misspecified) Model
+## 1.6. Example of a Poorly Fitting (Misspecified) Model
 
 *   **Scenario:** Fitting a **linear model** ($Performance = a + b \cdot Age + E$) when the true relationship is curvilinear.
 *   **Indicators of Poor Fit:**
