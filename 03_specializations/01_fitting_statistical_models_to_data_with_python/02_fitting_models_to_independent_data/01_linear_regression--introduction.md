@@ -79,7 +79,7 @@ $$
 ### Final Model
 
 $$
-\hat{y} = 7.55 + 1.1\,x
+\hat{y} = 7.55 + 1.1\ x
 $$
 
 ...where $x$ is the height (in inches).
@@ -94,7 +94,7 @@ $$
 \hat{y} = 7.55 + 1.1 \times 64 = 78.4 \text{ inches}
 $$
 
-**Note:** This represents the estimated mean cartwheel distance for all adults who are 64 inches tall.
+**Note:** This represents the estimated mean cartwheel distance for **all** adults who are 64 inches tall.
 
 ## Residual Analysis
 
@@ -109,7 +109,7 @@ $$
 \text{Residual} = y - \hat{y}
 $$
 
-## 7. Important Considerations
+## Important Considerations
 
 ### Extrapolation Warning
 - Only make predictions within the range of the original height data
