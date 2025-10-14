@@ -121,4 +121,4 @@ $$
 
 ---
 
-**Next:** ![Linear Regression: Overview](./03_linear_regression--overview.pdf)
+**Next:** [Linear Regression: Overview](./03_linear_regression--overview.pdf)
