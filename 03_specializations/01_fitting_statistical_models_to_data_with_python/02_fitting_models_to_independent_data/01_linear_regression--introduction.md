@@ -7,6 +7,8 @@
 - **Primary Response Variable:** Cartwheel distance (inches) - distance traveled from start to end
 - **Potential Predictors:** Height, completion status (whether feet went over head and landed on feet)
 
+![](./images/0101.png)
+
 ### Research Goals
 1. Develop a model to predict average cartwheel distance for adults
 2. Determine if height is a useful predictor for cartwheel distance
@@ -21,14 +23,14 @@
 ### Baseline Prediction
 Without any predictors, best estimate for next adult's cartwheel distance = 82.48 inches (sample mean)
 
-## 3. Examining Height as a Predictor
+## Examining Height as a Predictor
 
 ### Theoretical Relationship
 **Hypothesis:** Taller people might generally have larger cartwheel distances
 
 ### Visual Assessment: Scatter Plot
 
-![](./images/0101.png)
+![](./images/0102.png)
 
 **Scatter Plot Interpretation Framework:**
 - **Form:** Approximately linear
@@ -42,7 +44,7 @@ Without any predictors, best estimate for next adult's cartwheel distance = 82.4
   - Only 11% of variability in cartwheel distances explained by linear relationship with height
   - Substantial remaining variability unexplained
 
-## 4. Linear Regression Model
+## Linear Regression Model
 
 ### Model Equation (Estimate Regression Line)
 
@@ -65,11 +67,11 @@ $$
 - **Residuals:** Observed error = $y - \hat{y}$
 - **Objective:** Minimize $\sum (y - \hat{y})^2$ (sum of squared residuals)
 
-## 5. Fitted Model and Predictions
+## Fitted Model and Predictions
 
 ### Estimated Coefficients
 
-![](./images/0102.png)
+<img src="./images/0103.png" width="500">
 
 - **Intercept ($b_0$):** 7.55
 - **Slope ($b_1$):** 1.1
@@ -94,7 +96,7 @@ $$
 
 **Note:** This represents the estimated mean cartwheel distance for all adults who are 64 inches tall.
 
-## 6. Residual Analysis
+## Residual Analysis
 
 ### Example Calculation
 - **Observed:** 64-inch adult with 87-inch cartwheel distance
@@ -117,7 +119,7 @@ $$
 - $r^2 = 0.11$ indicates height explains only a small portion of variability
 - Other factors likely influence cartwheel distance
 
-## 8. Next Steps in Analysis
+## Next Steps in Analysis
 
 1. **Inference:** Assess statistical significance of the relationship
 2. **Assumption Checking:** Verify regression assumptions are met
