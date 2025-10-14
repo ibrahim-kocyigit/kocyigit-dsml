@@ -32,13 +32,13 @@ Is there a significant positive linear relationship between cartwheel distance a
 - **Interpretation:** Marginally significant at 10% level ($p = 0.056$)
 - Not statistically significant at 5% level
 
-## 3. Confidence Intervals
+## Confidence Intervals
 
 ### 95% Confidence Interval for Slope
 - **Range:** -0.278 to 2.493 inches
 - **Interpretation:** With 95% confidence, the true change in cartwheel distance for a one-inch height increase is between 0.2 inches shorter and 2.5 inches longer
 
-## 4. Two Types of Intervals
+## Two Types of Intervals
 
 ### Confidence Interval for Mean Response
 - Estimates the **average** cartwheel distance for all adults at a specific height
@@ -52,7 +52,7 @@ Is there a significant positive linear relationship between cartwheel distance a
 - **Always wider** than confidence intervals for the mean
 - Accounts for both estimation uncertainty and individual variability
 
-## 5. Regression Assumptions
+## Regression Assumptions
 
 ### Model Equation  
 
@@ -82,7 +82,7 @@ $$
 - $\hat{\sigma} = 14.5$ inches
 - Represents typical distance between observed and predicted values
 
-## 6. Multiple Regression: Adding Completion Status
+## Multiple Regression: Adding Completion Status
 
 ### Extended Model
 
@@ -108,7 +108,7 @@ $$
 - **One-sided p-value:** 0.0425
 - **Conclusion:** Significant positive association between height and cartwheel distance **after adjusting for completion status**
 
-## 7. Key Takeaways
+## Key Takeaways
 
 ### Multiple Regression Interpretation
 - Each coefficient represents the relationship **holding other variables constant**
@@ -119,3 +119,6 @@ $$
 - Multiple predictors: Height significant after accounting for completion status ($p = 0.0425$)
 - Residual standard deviation remains ~14.5 inches
 
+---
+
+**Next:** ![Linear Regression: Overview](./03_linear_regression--overview.pdf)
