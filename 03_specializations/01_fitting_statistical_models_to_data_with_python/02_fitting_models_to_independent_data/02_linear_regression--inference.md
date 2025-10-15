@@ -121,4 +121,4 @@ $$
 
 ---
 
-**Next:** [Causation vs. Correalation](./03_causation_vs_correlation.md)
+**Next:** [Causation vs. Correlation in Statistical Modeling](./03_causation_vs_correlation.md)
