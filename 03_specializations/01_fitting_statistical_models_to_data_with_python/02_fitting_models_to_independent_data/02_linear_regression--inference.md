@@ -23,7 +23,7 @@ Is there a significant positive linear relationship between cartwheel distance a
 
 ### Statistical Interpretation
 - **Estimated slope:** 1.1 inches per inch of height
-- **Standard error:** 0.67 (measures variability of slope estimates - _how far are away our estimated slopes are from the true slope on average_)
+- **Standard error:** 0.67 (measures variability of slope estimates - _how far away our estimated slopes are from the true slope on average_)
 - **t-statistic:** 1.65 (1.65 standard errors above zero)
 - **Two-sided p-value:** 0.112
 
