@@ -159,4 +159,4 @@ $$
 
 ---
 
-**Next:** [Logistic Regression: Inference](./06_logictic_regression--inference.md)
+**Next:** [Logistic Regression: Inference](./07_logictic_regression--inference.md)

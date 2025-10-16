@@ -140,3 +140,6 @@ $$
 - Small samples limit ability to detect effects
 - Interpretation requires careful consideration of log-odds scale
 
+---
+
+**Next:** [Logistic Regression: Further Reading](./08_logictic_regression--further_reading.pdf)

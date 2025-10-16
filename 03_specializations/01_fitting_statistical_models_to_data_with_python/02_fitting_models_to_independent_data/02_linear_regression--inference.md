@@ -121,4 +121,4 @@ $$
 
 ---
 
-**Next:** [Causation vs. Correlation in Statistical Modeling](./03_causation_vs_correlation.md)
+**Next:** [Linear Regression: Further Reading](./03_linear_regression--further_reading.pdf)

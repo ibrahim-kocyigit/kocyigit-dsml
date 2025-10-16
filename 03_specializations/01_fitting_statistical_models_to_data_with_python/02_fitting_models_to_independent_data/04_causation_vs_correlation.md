@@ -63,4 +63,4 @@ By mastering these concepts, you move from simply describing patterns in data to
 
 ---
 
-**Next:** [Importance of Data Visualization](./04_importance_of_data_visualization.ipynb)
+**Next:** [Importance of Data Visualization](./05_importance_of_data_visualization.ipynb)
