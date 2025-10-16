@@ -27,7 +27,7 @@ $$
 
 ### Application to Cartwheel Data
 - **Estimated slope ($b_1$):** 0.2096
-- **Standard error ($SE(b_1)$):** 0.171
+- **Standard error $SE(b_1)$:** 0.171
 - **Critical value ($z^*$):** 1.96 (for 95% confidence)
 
 ### Calculation
