@@ -44,10 +44,11 @@ $$
 \begin{pmatrix} u_{0j} \\ u_{1j} \end{pmatrix} \sim N \left( \begin{pmatrix} 0 \\ 0 \end{pmatrix}, \mathbf{D} \right)
 $$
 
-The mean is a vector of zeros, indicating that the "average" cluster has no deviation from the fixed effects. The interesting part is the **variance-covariance matrix, D**:
+  The mean is a vector of zeros, indicating that the "average" cluster has no deviation from the fixed effects. The interesting part is the **variance-covariance matrix, D**:
 
 $$
-\mathbf{D} = \begin{pmatrix} \sigma^2_{u0} & \sigma_{u01} \\ \sigma_{u01} & \sigma^2_{u1} \end{pmatrix}
+\mathbf{D} = \begin{pmatrix} \sigma^2_{u0} & \sigma_{u01} \\
+ \sigma_{u01} & \sigma^2_{u1} \end{pmatrix}
 $$
 
 *   $\sigma^2_{u0}$: The variance of the random intercepts. (How much do the starting points vary across clusters?)
