@@ -111,27 +111,36 @@ Notice that the error variance (1.29) is smaller than in the mean-only model (1.
 
 Fitting a model is easy; fitting a *good* model is the challenge. We must always check if our model's assumptions hold and if it provides a reasonable description of the data. The primary tool for this is **residual analysis**.
 
-A **residual** is the difference between the observed value and the value predicted by the model.
+A **residual** is the difference between the observed value and the value predicted by the model.  
+
 $$
 \text{residual}_i = \text{Observed}_i - \text{Predicted}_i
 $$
+
 If our model is good, the residuals should be nothing but random noise, showing no discernible patterns.
 
 ### Checking the Fit of the Quadratic Model
 1.  **Normality of Residuals:** A Q-Q plot of the residuals shows they fall on a straight line, confirming our assumption that the errors are normally distributed.
-    {{ Insert screenshot of the Q-Q plot of residuals for the conditional model here }}
+
+    <img src="./images/0105.png" width="500">
 
 2.  **Constant Variance & Mean of Zero:** We plot the residuals against the predicted values. The plot shows the points are symmetrically scattered around 0 with a consistent vertical spread. This confirms our assumptions of zero mean and constant variance for the errors.
-    {{ Insert screenshot of the residuals vs. fitted values plot for the conditional model here }}
+
+    <img src="./images/0106.png" width="500">
 
 ### What a Bad Fit Looks Like: The Misspecified Model
 
 Imagine we ignored our theory and fit a simple *linear* model (`Performance = a + b*age`).
 
+<img src="./images/0107.png" width="500">
+
+
 1.  **Visual Fit:** The straight line clearly misses the curve in the data.
-    {{ Insert screenshot of the scatter plot with the poor linear fit line here }}
 
 2.  **Residual Plot:** The plot of residuals vs. predicted values shows a clear, systematic U-shaped pattern. This is a massive red flag. When your residuals have a pattern, it means your model has failed to capture a key feature of the data (in this case, the curvilinear relationship).
-    {{ Insert screenshot of the residuals vs. fitted values plot for the misspecified linear model here }}
 
 This confirms that the quadratic model was a much better choice, and it illustrates why assessing model fit is a critical, non-negotiable step in the modeling process.
+
+---
+
+**Next:** [Types of Variables in Statistical Modeling](./02_types_of_variables_in_statistical_modeling.md)
