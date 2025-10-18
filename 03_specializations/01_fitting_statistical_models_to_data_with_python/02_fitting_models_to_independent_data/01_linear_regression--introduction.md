@@ -22,7 +22,7 @@ Before fitting a formal model, we must first explore the relationship between ou
 
 A scatter plot is the most important tool for examining the relationship between two quantitative variables.
 
-{{ Insert screenshot of the scatter plot of Cartwheel Distance vs. Height here }}
+<img src="./images/0102.png" width="500">
 
 When describing a scatter plot, we look for four things:
 1.  **Form:** Is the overall pattern linear (straight line) or curved? Here, it looks **approximately linear**.
