@@ -54,9 +54,6 @@ Before fitting any model, you must investigate missing data.
     3.  If there's a significant difference (e.g., the dropped group is 80% female while the kept group is 50% female), you have evidence of systematic differences, and listwise deletion is likely introducing bias.
 *   **Potential Solutions:** If bias is suspected, more advanced techniques like **imputation** (predicting and filling in the missing values) may be necessary.
 
-### What's Next?
-The way we collect data has profound implications for how we model it. In the next lecture, we will explore how different **study designs** (e.g., cross-sectional, longitudinal, clustered) affect the properties of our data and require specific modeling choices to ensure our analysis is valid.
-
 ---
 
 **Next:** [Study Designs and Their Implications for Modeling](./03_study_designs_and_their_implications_for_modeling.md)

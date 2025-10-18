@@ -65,8 +65,6 @@ This leads to the most important takeaway for the entire course: you must identi
 
 **The bottom line:** The best model is one that accurately reflects the properties of the data, and the study design is the primary source of those properties. Ignoring the dependencies introduced by your study design will lead to flawed statistical inference.
 
-## 4. What's Next?
-Now that we understand how variables get their roles and how study design impacts our data, we will turn to the different **objectives** of modeling. Are we trying to make inferences about relationships, or are we focused purely on prediction? We will also revisit the two main philosophical approaches to making inference: **Frequentist** vs. **Bayesian** statistics.
 ---
 
 **Next:** [Objectives of Model Fitting: Inference vs. Prediction](./04_objectives_of_model_fitting--inference_vs_prediction.md)
