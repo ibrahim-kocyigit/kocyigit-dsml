@@ -1,4 +1,4 @@
-# Lecture Notes: What Do We Mean by Fitting Models to Data?
+# What Do We Mean by Fitting Models to Data?
 
 ## 1. The Intuitive Idea: Creating a "Mathematical Recipe" for Data
 
@@ -38,7 +38,8 @@ Let's walk through the lecture's example to see these ideas in action.
 Before modeling, we always explore the data visually.
 
 1.  **Distribution of Performance:** A histogram and a Normal Q-Q plot show that the `performance` scores, by themselves, look roughly like a bell curve. This gives us confidence that assuming a Normal distribution is reasonable.
-    {{ Insert screenshot of the histogram and Q-Q plot for performance here }}
+
+    <img src="./images/0101.png" width="500">
 
 2.  **Relationship between Age and Performance:** A scatter plot of `performance` vs. `age` visually confirms our theory. We can see the inverted U-shape.
     {{ Insert screenshot of the scatter plot of performance vs. age here }}
