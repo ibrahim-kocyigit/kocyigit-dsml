@@ -17,10 +17,12 @@ The LRT works by comparing the **log-likelihood** values from the two models. Th
 *   A **lower** `-2LL` value indicates a **better** model fit.
 *   The full model will *always* have a `-2LL` that is less than or equal to the nested model's `-2LL`.
 
-The **test statistic** for the LRT is the difference between these two values:
+The **test statistic** for the LRT is the difference between these two values:  
+
 $$
 \text{Test Statistic} = (-2LL_{\text{reduced}}) - (-2LL_{\text{full}})
 $$
+
 This difference will always be positive. A large difference means that removing the parameters had a big negative impact on the model's fit, suggesting the parameters were important.
 
 We then compare this test statistic to a **chi-square ($\chi^2$) distribution** to get a p-value.
@@ -57,7 +59,8 @@ This is a simpler model that only has random intercepts for the interviewers (th
 *   `-2 REML log-likelihood` = **7166.8**
 *   *Observation:* The `-2LL` went up, which means the fit got worse after we removed the random slopes. But is it *significantly* worse?
 
-**Step 3: Calculate the Test Statistic**
+**Step 3: Calculate the Test Statistic**  
+
 $$
 \text{Test Statistic} = 7166.8 - 7143.3 = 23.5
 $$
@@ -77,7 +80,7 @@ The p-value is extremely small. Therefore, we **reject the null hypothesis**.
 
 We have very strong evidence that the variance of the random interviewer slopes is not zero. This confirms that the random slopes are a statistically significant and necessary component of our model. The more complex model is justified.
 
-## 4. Summary
+## 4. Key Takeaways
 
 *   The Likelihood Ratio Test (LRT) is a fundamental tool for comparing nested statistical models.
 *   It helps us formally decide whether a set of fixed effects (predictors) or random effects (variance components) significantly improves the model fit.
