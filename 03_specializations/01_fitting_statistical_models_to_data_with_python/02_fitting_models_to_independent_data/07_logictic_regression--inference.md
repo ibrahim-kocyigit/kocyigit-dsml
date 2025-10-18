@@ -34,20 +34,20 @@ $$
 **The Numbers (from the output):**
 *   Sample slope ($b_1$): `0.2096`
 *   Standard Error $SE(b_1)$: `0.171`
-*   Critical Value $z^*$: For a 95% confidence interval, $z^*$ is `1.96`.
+*   Critical Value: For a 95% confidence interval, $z^*$ is `1.96`.
 
 **The Calculation:**  
 
 $$
-\text{95 CI} = 0.2096 \pm (1.96 \times 0.171)
+\text{0.95 CI} = 0.2096 \pm (1.96 \times 0.171)
 $$
 
 $$
-\text{95 CI} = 0.2096 \pm 0.335
+\text{0.95 CI} = 0.2096 \pm 0.335
 $$
 
 $$
-\text{95 CI} = [-0.126, 0.545]
+\text{0.95 CI} = [-0.126, 0.545]
 $$
 
 This matches the interval provided directly in the software output.
