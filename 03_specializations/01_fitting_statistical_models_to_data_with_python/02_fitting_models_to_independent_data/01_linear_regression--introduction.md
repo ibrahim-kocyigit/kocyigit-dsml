@@ -6,7 +6,7 @@ Imagine you're asked to predict the cartwheel distance for the next person who w
 
 Your simplest, most basic prediction would be to just use the overall mean: **82.48 inches**. This is your best guess for *anyone*, regardless of their characteristics.
 
-{{ Insert screenshot of the histogram/Q-Q plot for cartwheel distance here }}
+<img src="./images/0101.png" width="500">
 
 But common sense suggests this isn't the whole story. A person's physical attributes, like their height, might influence how far their cartwheel goes. It's plausible that taller people have longer limbs and can therefore travel a greater distance.
 
