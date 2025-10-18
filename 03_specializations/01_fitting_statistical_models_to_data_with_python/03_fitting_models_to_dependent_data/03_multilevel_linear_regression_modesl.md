@@ -79,7 +79,7 @@ $$
 \beta_{0j} = \beta_{0} + \beta_{2}T_j + u_{0j}
 $$
 
-...where $T_j$ is a cluster-level predictor (e.g., gender, age, etc.).
+...where $T_j$ is a cluster-level predictor (e.g., gender).
 
 If $T_j$ is a good predictor, we expect the variability of $u_{0j}$ to go down. In our hypothetical scenario:
 
