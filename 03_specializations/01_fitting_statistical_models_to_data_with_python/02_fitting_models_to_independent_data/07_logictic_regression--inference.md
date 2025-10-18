@@ -33,8 +33,8 @@ $$
 
 **The Numbers (from the output):**
 *   Sample slope ($b_1$): `0.2096`
-*   Standard Error ($SE(b_1)$): `0.171`
-*   Critical Value ($z^*$): For a 95% confidence interval, $z^*$ is `1.96`.
+*   Standard Error ( $SE(b_1)$ ): `0.171`
+*   Critical Value ( $z^*$ ): For a 95% confidence interval, $z^*$ is `1.96`.
 
 **The Calculation:**  
 
