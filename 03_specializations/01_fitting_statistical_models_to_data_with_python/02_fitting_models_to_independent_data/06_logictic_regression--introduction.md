@@ -1,161 +1,115 @@
 # Logistic Regression: Introduction
 
-## Study Context and Research Question
+## 1. The Intuitive Idea: Why Linear Regression Fails for Yes/No Outcomes
 
-### Data Overview
-- **Sample:** 25 adults attempting cartwheels
-- **Response Variable:** Completion status (binary: 0 = failed, 1 = successful)
-- **Predictor Variable:** Age
-- **Research Question:** Is there a relationship between age and probability of successfully completing a cartwheel?
+In the last lectures, we used linear regression to predict a continuous outcome (`Cartwheel Distance`). But what if our outcome of interest is binary—a "yes" or "no" question? For our cartwheel data, a great example is: "Did the person successfully complete the cartwheel?" This is a 1 (Yes) or 0 (No) variable.
 
-## The Problem with Linear Regression for Binary Outcomes
+Our research question is: "Is there a relationship between a person's age and the *probability* of them completing a cartwheel?"
 
-### Initial Scatter Plot
+Let's start by seeing what happens if we naively apply the tool we already know: linear regression.
 
-<img src="./images/0501.png" width="500">
+<img src="./images/0601.png" width="500">
 
-### Limitations of Linear Regression
-- **Problem:** Linear regression predicts probabilities outside [0,1] range
-- **Example:** For age 50, predicted probability ≈ 110% (impossible)
-- **Equation:** $\hat{y} = 0.34 + 0.015 \times \text{age}$
+We immediately see several problems:
+1.  **Nonsensical Predictions:** The fitted line extends above 1 and below 0. The model might predict a 110% probability of success for an older person or a -10% probability for a younger person. Probabilities, by definition, must be between 0 and 1 (or 0% and 100%).
+2.  **Incorrect Model Form:** The data points only exist at `Y=0` and `Y=1`. A straight line is clearly not the right shape to model this reality.
 
-## Logistic Regression: The Solution
+We need a new approach. Instead of modeling the probability directly, we need to model a *transformation* of the probability that doesn't have the 0-to-1 boundary.
 
-### Key Transformation: Logit Function
+## 2. The Theoretical Framework: From Probability to Log-Odds
 
-$$
-\text{logit}(p) = \ln\left(\frac{p}{1-p}\right)
-$$
+The solution is to use a **link function** to transform our binary outcome into something that can range from negative infinity to positive infinity, just like a continuous Y variable. For logistic regression, this transformation is the **logit function**.
 
-...where $p$ = probability of success
+The logit function converts a probability into **log-odds**. Let's break that down.
 
-### Properties of Logit Transformation
-- **Symmetry:** logit(p) = -logit(1-p)
-- **Range:** $(-\infty, +\infty)$ (unbounded)
-- **Interpretation:**
-  - logit(p) = 0 → p = 0.5 (equal odds)
-  - logit(p) > 0 → p > 0.5
-  - logit(p) < 0 → p < 0.5
+1.  **Probability (P):** The probability of success (e.g., P = 0.80).
+2.  **Odds:** The ratio of the probability of success to the probability of failure.
+    $$
+    \text{Odds} = \frac{P}{1 - P}
+    $$
+    If P=0.80, the odds are `0.80 / 0.20 = 4`, or "4 to 1". Odds can range from 0 to infinity.
+3.  **Log-Odds (Logit):** The natural logarithm of the odds.
+    $$
+    \text{logit}(P) = \ln\left(\frac{P}{1 - P}\right)
+    $$
+    This is the key transformation. It takes a probability (bounded between 0 and 1) and maps it onto the entire number line (from $-\infty$ to $+\infty$).
 
-### Logistic Regression Model
+{{ Insert screenshot of the graph of the logit function here }}
 
-$$
-\text{logit}(\hat{p}) = b_0 + b_1 \times \text{age}
-$$
+*   A probability of 0.5 (even odds) maps to a log-odds of 0.
+*   Probabilities > 0.5 map to positive log-odds.
+*   Probabilities < 0.5 map to negative log-odds.
 
-## Visualizing Logistic Regression
-
-### Characteristic S-Shaped Curve
-
-<img src="./images/0502.png" width="500">
-
-**Key Features:**
-- Asymptotically approaches 0 and 1
-- Monotonic (always increasing or decreasing)
-- Inflection point at p = 0.5
-
-### Extrapolation Warning
-- **Youngest observed age:** 22 years
-- **Caution:** Predicting for age 15 involves extrapolation
-- **Best practice:** Restrict predictions to observed age range
-
-## Model Output and Interpretation
-
-### Python Output Summary
-- **Model family:** Binomial
-- **Link function:** Logit
-- **Coefficients:**
-  - Intercept: -4.42
-  - Age: 0.2096
-
-### Logistic Regression Equation
+### The Logistic Regression Model
+Now we can build a model that looks very similar to linear regression, but with our transformed outcome. This is a type of **Generalized Linear Model (GLM)**.
 
 $$
-\text{logit}(\hat{p}) = -4.42 + 0.2096 \times \text{age}
+\text{logit}(\hat{P}) = b_0 + b_1X
+$$
+Or, written out fully:
+$$
+\ln\left(\frac{\hat{P}}{1 - \hat{P}}\right) = b_0 + b_1X
 $$
 
-## Interpreting Coefficients
+*   The model is **linear on the log-odds scale**.
+*   When we transform the predictions back to the probability scale, we get the characteristic **S-shaped curve** (a sigmoid curve). This curve is perfect for our needs because it is always bounded between 0 and 1.
 
-### Slope Interpretation (Two Ways)
+{{ Insert screenshot of the S-shaped logistic curve on the scatter plot }}
 
-**1. Log-Odds Scale:**
-- For each 1-year increase in age, log-odds of success increases by 0.2096
+## 3. Interpreting the Model: The Challenge of Log-Odds
 
-**2. Odds Ratio Scale:**
+We fit our model to the cartwheel data and get the following coefficients from the software output:
+*   $b_0 = -4.42$ (Intercept)
+*   $b_1 = 0.2096$ (Slope for Age)
 
+Our fitted model is:
 $$
-\text{Odds Ratio} = e^{0.2096} = 1.23
-$$
-
-- For each 1-year increase in age, odds of success multiply by 1.23
-- **Interpretation:** 23% increase in odds per year
-
-### Example Prediction: Age 36
-
-**Step 1: Calculate log-odds**
-
-$$
-\text{logit}(\hat{p}) = -4.42 + 0.2096 \times 36 = 3.13
+\text{logit}(\hat{P}) = -4.42 + 0.2096 \times (\text{Age})
 $$
 
-**Step 2: Convert to probability**
-- Log-odds of 3.13 → probability ≈ 95%
+Interpreting the slope ($b_1$) is trickier than in linear regression.
 
-<img src="./images/0503.png" width="500">
+*   **Direct (but less intuitive) Interpretation:** "For each one-year increase in age, the **log-odds** of successfully completing a cartwheel is estimated to increase by 0.2096, on average." This is mathematically correct but hard to explain.
 
+*   **Odds Ratio Interpretation (More common):** To make it more intuitive, we exponentiate the slope to get an **odds ratio (OR)**.
+    $$
+    \text{Odds Ratio} = e^{b_1} = e^{0.2096} \approx 1.23
+    $$
+    **Interpretation:** "For each one-year increase in age, the **odds** of a successful cartwheel are estimated to be **multiplied by 1.23** (or increase by 23%), on average."
+    *   An OR > 1 means the odds increase as X increases.
+    *   An OR < 1 means the odds decrease as X increases.
+    *   An OR = 1 means X has no effect on the odds.
 
-## Uncertainty and Prediction Intervals
+## 4. Using the Model for Prediction
 
-### Confidence Bands
+Let's predict the outcome for someone who is 36 years old.
 
-<img src="./images/0504.png" width="500">
+**Step 1: Predict the log-odds.**
+Plug the age into our fitted equation:
+$$
+\text{logit}(\hat{P}) = -4.42 + 0.2096 \times (36) \approx 3.13
+$$
 
-**Key Observations:**
-- Narrowest bands near mean age (26 years)
-- Widest bands at extremes (fewer data points)
-- Reflects uncertainty in parameter estimates
+**Step 2: Convert the log-odds back to a probability.**
+The inverse of the logit function is the logistic function:
+$$
+\hat{P} = \frac{e^{\text{log-odds}}}{1 + e^{\text{log-odds}}}
+$$
+$$
+\hat{P} = \frac{e^{3.13}}{1 + e^{3.13}} \approx \frac{22.87}{23.87} \approx 0.958
+$$
+**Conclusion:** We predict that a 36-year-old has about a **96% probability** of successfully completing a cartwheel.
 
-### Transformed Uncertainty
+## 5. Model Assumptions and Uncertainty
 
-<img src="./images/0505.png" width="500">
+*   **Primary Assumption:** The core assumption of logistic regression is that the relationship between the predictors and the **logit of the probability** is linear. Checking this can be challenging, especially with small sample sizes, as residual plots are not as informative as they are in linear regression.
 
-- Confidence bands on probability scale show asymmetric uncertainty
-- Maximum uncertainty occurs near p = 0.5
+*   **Uncertainty:** Just like with linear regression, our fitted S-curve has uncertainty. We can plot confidence bands around it. These bands will be narrowest where we have the most data and wider in the tails of the data distribution. Because we only have 25 observations, the uncertainty in our model is quite high, especially for the oldest individuals.
 
-## Model Assumptions and Diagnostics
+{{ Insert screenshot of the probability plot with the confidence bands here }}
 
-### Primary Assumption
-- **Linearity:** Log-odds are linearly related to predictors
-- Must assume model specification is correct
-
-### Residual Analysis Challenges
-- **Limited residual values:** Only two possible residuals for each x (1-$\hat{p}$ or 0-$\hat{p}$)
-- **More informative when:** 
-  - X takes wide range of values
-  - Multiple covariates included
-  - Larger sample sizes
-
-### Improving Diagnostics
-- Include additional predictors
-- Collect data across broader age range
-- Larger sample sizes provide more residual information
-
-## Key Takeaways
-
-### Advantages of Logistic Regression
-- Predicts probabilities within [0,1] range
-- Handles binary outcome data appropriately
-- Provides interpretable odds ratios
-
-### Interpretation Guidelines
-- **Coefficients:** Represent changes in log-odds
-- **Odds ratios:** Multiplicative changes in odds
-- **Predictions:** Always check for extrapolation
-
-### Practical Considerations
-- Assess linearity assumption carefully
-- Be cautious with predictions outside observed range
-- Consider sample size limitations for reliable inference
+## 6. What's Next?
+Now that we know how to fit and interpret a basic logistic regression model, the next step is to perform **inference**. We will learn how to conduct hypothesis tests and create confidence intervals for the slope to determine if the relationship between age and the probability of completion is statistically significant.
 
 ---
 
