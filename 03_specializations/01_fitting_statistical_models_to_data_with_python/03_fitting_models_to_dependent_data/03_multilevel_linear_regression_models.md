@@ -137,9 +137,15 @@ Good analysis doesn't stop at finding an effect; it investigates it. Diagnostics
 
 3.  **Investigating the Outliers:**
     *   **The Outlier Intercept (ID 4976):** A plot of this interviewer's data revealed they collected an unusually large number of low "helpfulness" scores. This could be due to their interviewing style or the specific group they surveyed.
-    {{ Insert screenshot of the data plot for interviewer 4976 here }}
+
+    ![](./images/0305.png)
+
     *   **The Outlier Slope (ID 7519):** This was a classic data cleaning issue! A plot of their data showed one extreme data point. It turned out that the value `88`, a code for missing data, was accidentally treated as a real value. This single point artificially flattened the regression line for that interviewer, making their slope an outlier. This highlights the critical importance of descriptive statistics and data cleaning before modeling.
-    {{ Insert screenshot of the data plot for interviewer 7519 showing the outlier point here }}
+    ![](./images/0306.png)
 
 ### Conclusions & Next Steps
 The variance among interviewers is real, but it needs to be re-evaluated after fixing the data cleaning issue. If the variance remains, it adds uncertainty to our overall estimates. A next step would be to add interviewer-level predictors (like their response rate or attitudes) to the Level 2 model to try and *explain* this variance.
+
+---
+
+**Next:** [Likelihood Ratio Tests for Fixed Effects and Variance Components](./04_lrt_for_fixed_effects_and_variance_components.md)
