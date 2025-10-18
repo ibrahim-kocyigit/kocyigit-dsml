@@ -25,16 +25,16 @@ The logit function converts a probability into **log-odds**. Let's break that do
 1.  **Probability (P):** The probability of success (e.g., P = 0.80).
 2.  **Odds:** The ratio of the probability of success to the probability of failure.  
 
-    $$
-    \text{Odds} = \frac{P}{1 - P}
-    $$
+$$
+\text{Odds} = \frac{P}{1 - P}
+$$
 
     If P=0.80, the odds are `0.80 / 0.20 = 4`, or "4 to 1". Odds can range from 0 to infinity.
 3.  **Log-Odds (Logit):** The natural logarithm of the odds.  
 
-    $$
-    \text{logit}(P) = \ln\left(\frac{P}{1 - P}\right)
-    $$
+$$
+\text{logit}(P) = \ln\left(\frac{P}{1 - P}\right)
+$$
 
     This is the key transformation. It takes a probability (bounded between 0 and 1) and maps it onto the entire number line (from $-\infty$ to $+\infty$).
 
@@ -50,7 +50,9 @@ Now we can build a model that looks very similar to linear regression, but with 
 $$
 \text{logit}(\hat{P}) = b_0 + b_1X
 $$
-Or, written out fully:
+
+Or, written out fully:  
+
 $$
 \ln\left(\frac{\hat{P}}{1 - \hat{P}}\right) = b_0 + b_1X
 $$
@@ -66,7 +68,8 @@ We fit our model to the cartwheel data and get the following coefficients from t
 *   $b_0 = -4.42$ (Intercept)
 *   $b_1 = 0.2096$ (Slope for Age)
 
-Our fitted model is:
+Our fitted model is:  
+
 $$
 \text{logit}(\hat{P}) = -4.42 + 0.2096 \times (\text{Age})
 $$
@@ -75,33 +78,39 @@ Interpreting the slope ($b_1$) is trickier than in linear regression.
 
 *   **Direct (but less intuitive) Interpretation:** "For each one-year increase in age, the **log-odds** of successfully completing a cartwheel is estimated to increase by 0.2096, on average." This is mathematically correct but hard to explain.
 
-*   **Odds Ratio Interpretation (More common):** To make it more intuitive, we exponentiate the slope to get an **odds ratio (OR)**.
-    $$
-    \text{Odds Ratio} = e^{b_1} = e^{0.2096} \approx 1.23
-    $$
-    **Interpretation:** "For each one-year increase in age, the **odds** of a successful cartwheel are estimated to be **multiplied by 1.23** (or increase by 23%), on average."
-    *   An OR > 1 means the odds increase as X increases.
-    *   An OR < 1 means the odds decrease as X increases.
-    *   An OR = 1 means X has no effect on the odds.
+*   **Odds Ratio Interpretation (More common):** To make it more intuitive, we exponentiate the slope to get an **odds ratio (OR)**.  
+
+$$
+\text{Odds Ratio} = e^{b_1} = e^{0.2096} \approx 1.23
+$$
+
+  **Interpretation:** "For each one-year increase in age, the **odds** of a successful cartwheel are estimated to be **multiplied by 1.23** (or increase by 23%), on average."
+  *   An OR > 1 means the odds increase as X increases.
+  *   An OR < 1 means the odds decrease as X increases.
+  *   An OR = 1 means X has no effect on the odds.
 
 ## 4. Using the Model for Prediction
 
 Let's predict the outcome for someone who is 36 years old.
 
 **Step 1: Predict the log-odds.**
-Plug the age into our fitted equation:
+Plug the age into our fitted equation:  
+
 $$
 \text{logit}(\hat{P}) = -4.42 + 0.2096 \times (36) \approx 3.13
 $$
 
 **Step 2: Convert the log-odds back to a probability.**
-The inverse of the logit function is the logistic function:
+The inverse of the logit function is the logistic function:  
+
 $$
 \hat{P} = \frac{e^{\text{log-odds}}}{1 + e^{\text{log-odds}}}
 $$
+
 $$
 \hat{P} = \frac{e^{3.13}}{1 + e^{3.13}} \approx \frac{22.87}{23.87} \approx 0.958
 $$
+
 **Conclusion:** We predict that a 36-year-old has about a **96% probability** of successfully completing a cartwheel.
 
 ## 5. Model Assumptions and Uncertainty
@@ -111,9 +120,6 @@ $$
 *   **Uncertainty:** Just like with linear regression, our fitted S-curve has uncertainty. We can plot confidence bands around it. These bands will be narrowest where we have the most data and wider in the tails of the data distribution. Because we only have 25 observations, the uncertainty in our model is quite high, especially for the oldest individuals.
 
 {{ Insert screenshot of the probability plot with the confidence bands here }}
-
-## 6. What's Next?
-Now that we know how to fit and interpret a basic logistic regression model, the next step is to perform **inference**. We will learn how to conduct hypothesis tests and create confidence intervals for the slope to determine if the relationship between age and the probability of completion is statistically significant.
 
 ---
 
