@@ -1,0 +1,17 @@
+[project]
+name = "kocyigit-dsml"
+version = "0.1.0"
+description = "This ongoing project consolidates my curated DS and ML resources."
+authors = [
+    { name = "Ibrahim Kocyigit"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.7",
+    "numpy>=2.3.4",
+    "pandas>=2.3.3",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.14.5",
+]
