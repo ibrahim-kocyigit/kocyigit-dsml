@@ -107,4 +107,4 @@ When making predictions, we often provide a **prediction interval** (e.g., "we a
 
 ---
 
-**Next:** [Mixed Effects Models: Is It Time to Go Bayesian by Default?](./05_mixed_effects_models.md)
+**Next:** [Plotting Predictions and Prediction Uncertainty](./05_plotting_predictions_and_prediction_uncertainty.md)
