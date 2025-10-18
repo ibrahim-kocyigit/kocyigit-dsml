@@ -8,7 +8,7 @@ Imagine your boss gives you a dataset showing a relationship between two variabl
 
 You're about to go home when your boss brings you a *second* dataset from a different source. You plot it, and it looks much noisier, but you fit a linear model anyway as requested.
 
-![](./images/0601.png)
+![](./images/0501.png)
 
 **The Second Model:** `y = 5.43 + 2.97x`
 
@@ -31,7 +31,7 @@ The best way to represent this uncertainty is to plot it directly on the graph. 
 *   A **narrow band** means we are very confident that our estimated line is close to the true, underlying relationship.
 *   A **wide band** means we are very uncertain. The true relationship could be quite different from the line we estimated.
 
-![](./images/0602.png)
+![](./images/0502.png)
 
 | Model 1 (Low Variance) | Model 2 (High Variance) |
 | :---: | :---: |
