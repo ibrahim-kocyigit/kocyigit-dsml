@@ -39,7 +39,7 @@ $$
 
   This is the key transformation. It takes a probability (bounded between 0 and 1) and maps it onto the entire number line (from $-\infty$ to $+\infty$).
 
-{{ Insert screenshot of the graph of the logit function here }}
+<img src="./images/0602.png" width="500">
 
 *   A probability of 0.5 (even odds) maps to a log-odds of 0.
 *   Probabilities > 0.5 map to positive log-odds.
@@ -61,7 +61,7 @@ $$
 *   The model is **linear on the log-odds scale**.
 *   When we transform the predictions back to the probability scale, we get the characteristic **S-shaped curve** (a sigmoid curve). This curve is perfect for our needs because it is always bounded between 0 and 1.
 
-{{ Insert screenshot of the S-shaped logistic curve on the scatter plot }}
+<img src="./images/0603.png" width="500">
 
 ## 3. Interpreting the Model: The Challenge of Log-Odds
 
@@ -120,7 +120,7 @@ $$
 
 *   **Uncertainty:** Just like with linear regression, our fitted S-curve has uncertainty. We can plot confidence bands around it. These bands will be narrowest where we have the most data and wider in the tails of the data distribution. Because we only have 25 observations, the uncertainty in our model is quite high, especially for the oldest individuals.
 
-{{ Insert screenshot of the probability plot with the confidence bands here }}
+<img src="./images/0604.png" width="500">
 
 ---
 
