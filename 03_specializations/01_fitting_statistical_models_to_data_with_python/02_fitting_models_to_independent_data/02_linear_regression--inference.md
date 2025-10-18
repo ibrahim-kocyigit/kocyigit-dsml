@@ -48,7 +48,7 @@ The 95% confidence interval for the slope is `[-0.2, 2.5]`.
 
 Our model can provide two types of intervals, and it's crucial to understand the difference.
 
-{{ Insert screenshot of the scatter plot showing both the confidence and prediction bands here }}
+<img src="./images/0201.png" width="500">
 
 *   **Confidence Interval for the Mean Response (Narrower, Inner Bands):** This is an interval for the **average** Y at a given X.
     *   **Question:** "For *all* adults who are 64 inches tall, what is the plausible range for their *average* cartwheel distance?"
@@ -67,10 +67,13 @@ The key assumptions (often remembered by the acronym **LINE**) are:
 2.  **I**ndependence: The errors are independent of each other. (Ensured by study design).
 3.  **N**ormality: The errors, $\epsilon$, are normally distributed.
     *   **Check:** A Q-Q plot of the residuals. The points should fall along a straight line.
-    {{ Insert screenshot of the Q-Q plot of residuals here }}
+
+    <img src="./images/0202.png" width="500">
+
 4.  **E**qual Variance (Homoscedasticity): The errors have a constant variance ($\sigma^2$) at all levels of X.
     *   **Check:** A plot of residuals vs. predicted values (or vs. the X variable). We want to see a random, formless cloud of points with a consistent vertical spread. No funnel shapes or curves.
-    {{ Insert screenshot of the residual plot (residuals vs. height) here }}
+
+    <img src="./images/0203.png" width="500">
 
 For our cartwheel data, the assumption checks look reasonable.
 
@@ -88,7 +91,7 @@ When you have multiple predictors, you must interpret each coefficient **while h
 
 Visually, this creates two parallel regression lines—one for completers and one for non-completers—with the same slope but shifted vertically by the value of $b_2$.
 
-{{ Insert screenshot of the plot showing two parallel regression lines for completers and non-completers here }}
+![](./images/0204.png)
 
 **Re-evaluating Height:**
 After adjusting for completion status, the p-value for the `Height` coefficient is now `0.085 / 2 = 0.0425` (for a one-sided test). By accounting for some of the other noise in the data (completion status), the signal for the height relationship has become stronger and is now statistically significant at the 0.05 level. This is a common and powerful result of multiple regression.
