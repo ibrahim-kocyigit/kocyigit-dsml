@@ -67,21 +67,21 @@ $$
 
 ![](./images/0301.png)
 
-**Combining levels gives the same model as above.**
+Combining levels gives the same model as above.
 
 ## Explaining Between-Cluster Variance
 
 ### Adding Cluster-Level Predictors
 
-**Extended level 2 equation** is now:
+Extended level 2 equation is now:
 
 $$
-\beta_{0j} = \beta_{0} + \beta_{2}MALE_j + u_{0j}
+\beta_{0j} = \beta_{0} + \beta_{2}T_j + u_{0j}
 $$
 
-...where $MALE_j$ is a cluster-level predictor (the gender).
+...where $T_j$ is a cluster-level predictor (e.g., gender, age, etc.).
 
-If gender is a good predictor, we expect the variability of $u_{0j}$ to go down. In our hypothetical scenario:
+If $T_j$ is a good predictor, we expect the variability of $u_{0j}$ to go down. In our hypothetical scenario:
 
 - **Initial model:** $\hat{\sigma}_0^2 = 2$
 - **After adding predictor:** $\hat{\sigma}_0^2 = 1$
@@ -178,4 +178,4 @@ Do ESS interviewers introduce variability in the relationship between trust in p
 
 ---
 
-**Next:** []()
+**Next:** [Likelihood Ratio Tests for Fixed Effects and Variance Components](./04_lrt_for_fixed_effects_and_variance_components.md)
