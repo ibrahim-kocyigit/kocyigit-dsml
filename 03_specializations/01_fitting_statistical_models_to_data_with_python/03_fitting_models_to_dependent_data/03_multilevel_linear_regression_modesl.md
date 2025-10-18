@@ -100,7 +100,7 @@ If $T_j$ is a good predictor, we expect the variability of $u_{0j}$ to go down. 
    - Compares models with and without random effects
    - Assesses if removing parameters significantly worsens model fit
 
-_**Note:** The LRT will be covered in detail later in the course_
+**Note:** _The LRT will be covered in detail._
 
 ## ESS Example Application
 
@@ -132,8 +132,11 @@ Do ESS interviewers introduce variability in the relationship between trust in p
 
 ### Random Effects Diagnostics
 
-![](./images/0303.png)
-![](./images/0304.png)
+#### EBLUPs for Random Intercepts
+![](./images/0303.jpg)
+
+#### EBLUPs for Random Slopes
+![](./images/0304.jpg)
 
 - **EBLUPs (Empirical Best Linear Unbiased Predictors):** Predicted random effects
 - **Q-Q plots** should show normal distribution
