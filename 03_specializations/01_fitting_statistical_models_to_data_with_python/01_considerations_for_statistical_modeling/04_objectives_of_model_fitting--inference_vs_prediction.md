@@ -9,7 +9,8 @@ When we fit a statistical model, we are typically pursuing one of two primary ob
 
 Let's use our ongoing example of test performance and age to explore these two objectives.
 
-{{ Insert screenshot of the scatter plot with the fitted quadratic curve here }}
+
+<img src="./images/0401.png" width="500">
 
 ## 2. Objective 1: Inference (Understanding the Relationship)
 
