@@ -33,20 +33,26 @@ $$
 Because the random effects are random variables, we must define their probability distributions.
 
 1.  **Level 1 Errors ($e_{ij}$):** We assume the individual errors are normally distributed with a mean of 0 and a constant variance, $\sigma^2_e$. This is the *within-cluster* variance.
-    $$
-    e_{ij} \sim N(0, \sigma^2_e)
-    $$
+
+$$
+e_{ij} \sim N(0, \sigma^2_e)
+$$
+
 2.  **Level 2 Random Effects ($u_j$):** We assume the random effects for the intercept ($u_{0j}$) and slope ($u_{1j}$) are drawn from a **bivariate normal distribution**. This means we're not just defining their individual variances, but also the relationship *between* them.
-    $$
-    \begin{pmatrix} u_{0j} \\ u_{1j} \end{pmatrix} \sim N \left( \begin{pmatrix} 0 \\ 0 \end{pmatrix}, \mathbf{D} \right)
-    $$
-    The mean is a vector of zeros, indicating that the "average" cluster has no deviation from the fixed effects. The interesting part is the **variance-covariance matrix, D**:
-    $$
-    \mathbf{D} = \begin{pmatrix} \sigma^2_{u0} & \sigma_{u01} \\ \sigma_{u01} & \sigma^2_{u1} \end{pmatrix}
-    $$
-    *   $\sigma^2_{u0}$: The variance of the random intercepts. (How much do the starting points vary across clusters?)
-    *   $\sigma^2_{u1}$: The variance of the random slopes. (How much do the relationships/trends vary across clusters?)
-    *   $\sigma_{u01}$: The **covariance** between the intercepts and slopes. This is a crucial term. A non-zero covariance means the intercept and slope for a cluster are related. For example, a negative covariance might mean that clusters with higher starting points (intercepts) tend to have flatter growth (slopes).
+
+$$
+\begin{pmatrix} u_{0j} \\ u_{1j} \end{pmatrix} \sim N \left( \begin{pmatrix} 0 \\ 0 \end{pmatrix}, \mathbf{D} \right)
+$$
+
+The mean is a vector of zeros, indicating that the "average" cluster has no deviation from the fixed effects. The interesting part is the **variance-covariance matrix, D**:
+
+$$
+\mathbf{D} = \begin{pmatrix} \sigma^2_{u0} & \sigma_{u01} \\ \sigma_{u01} & \sigma^2_{u1} \end{pmatrix}
+$$
+
+*   $\sigma^2_{u0}$: The variance of the random intercepts. (How much do the starting points vary across clusters?)
+*   $\sigma^2_{u1}$: The variance of the random slopes. (How much do the relationships/trends vary across clusters?)
+*   $\sigma_{u01}$: The **covariance** between the intercepts and slopes. This is a crucial term. A non-zero covariance means the intercept and slope for a cluster are related. For example, a negative covariance might mean that clusters with higher starting points (intercepts) tend to have flatter growth (slopes).
 
 ## 3. The Main Goal: Explaining Between-Cluster Variance
 
