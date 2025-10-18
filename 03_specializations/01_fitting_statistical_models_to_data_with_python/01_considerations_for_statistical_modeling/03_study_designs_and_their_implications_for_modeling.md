@@ -32,7 +32,9 @@ This is where things get more complex and require more advanced models. Correlat
 
 #### 1. Clustered Samples
 *   **Design:** The population is divided into clusters (e.g., schools, neighborhoods, hospitals). A random sample of *clusters* is selected, and then observations are collected from within those clusters.
-    {{ Insert screenshot of the map showing selected neighborhoods as clusters here }}
+
+  <img src="./images/0301.jpg" width="500">
+
 *   **Key Property:** Observations *within* the same cluster are correlated. They are not independent.
 *   **Modeling Implication:**
     *   We have less unique information, which leads to **larger standard errors** and less precise estimates if not handled correctly.
