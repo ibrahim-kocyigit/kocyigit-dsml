@@ -119,15 +119,21 @@ Good analysis doesn't stop at finding an effect; it investigates it. Diagnostics
 
 1.  **Level 1 Residuals:** We check if the within-cluster errors are normally distributed and have constant variance.
     *   The QQ plot showed residuals falling on a straight line, suggesting the normality assumption is met.
-    {{ Insert screenshot of the QQ plot of residuals here }}
+
+    ![](./images/0301.png)
+
     *   The residuals vs. fitted plot showed no clear pattern (like a funnel), supporting the constant variance assumption.
-    {{ Insert screenshot of the residuals vs. fitted values plot here }}
+
+    ![](./images/0302.png)
 
 2.  **Level 2 Random Effects (EBLUPs):** We examine the predicted random effects for each interviewer to see if any are outliers.
     *   The QQ plot for the random intercepts showed one interviewer (ID 4976) with an unusually low intercept.
-    {{ Insert screenshot of the QQ plot for random intercept EBLUPs here }}
+
+    ![](./images/0303.jpg)
+
     *   The QQ plot for the random slopes showed another interviewer (ID 7519) with an unusual slope.
-    {{ Insert screenshot of the QQ plot for random slope EBLUPs here }}
+
+    ![](./images/0304.jpg)
 
 3.  **Investigating the Outliers:**
     *   **The Outlier Intercept (ID 4976):** A plot of this interviewer's data revealed they collected an unusually large number of low "helpfulness" scores. This could be due to their interviewing style or the specific group they surveyed.
