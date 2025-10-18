@@ -16,7 +16,7 @@ Just as with linear regression, we use confidence intervals and hypothesis tests
 
 We'll use the output from our statistical software to get the key numbers we need.
 
-{{ Insert screenshot of the Python output table for the logistic regression model }}
+<img src="./images/0701.png" width="500">
 
 ### Confidence Interval for the Slope ($\beta_1$)
 A confidence interval gives us a range of plausible values for the true population slope.
