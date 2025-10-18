@@ -67,7 +67,7 @@ $$
 E_i \sim N(0, \sigma^2)
 $$
 
-### The Fit:
+#### The Fit:
 After fitting the model, we get estimates:
 *   Estimated Mean ($\hat{M}$): 4.57 points.
 *   Estimated Variance ($\hat{\sigma}^2$): 1.82.
@@ -78,22 +78,27 @@ This model gives us a basic description, but it completely ignores our theory ab
 
 This model incorporates our theory about the curvilinear relationship with age.
 
-**The Model:**
-We state that performance is a quadratic function of age, plus some random error. This is a **linear regression model** (it's linear in the *parameters* a, b, and c).
+#### The Model:
+We state that performance is a quadratic function of age, plus some random error. This is a **linear regression model** (it's linear in the *parameters* a, b, and c).  
+
 $$
 \text{Performance}_i = a + b(\text{age}_i) + c(\text{age}_i^2) + e_i
 $$
-**The Parameters:**
+
+#### The Parameters:
 1.  $a$: The intercept. The predicted performance for a student with average age (since age is standardized, `age=0` is the mean).
 2.  $b$: The linear coefficient for age.
 3.  $c$: The quadratic coefficient for age. A negative `c` will produce the inverted U-shape we expect.
 4.  $\sigma^2$: The variance of the errors ($e_i$). This is now the *conditional* variance—the unexplained variability in performance *after* accounting for age.
 
-**The Assumption:**
+#### The Assumption:
+
 $$
 e_i \sim N(0, \sigma^2)
 $$
-**The Fit:**
+
+#### The Fit:
+
 The software gives us estimates for our parameters:
 *   $\hat{a} = 5.11$
 *   $\hat{b} = 0.24$
