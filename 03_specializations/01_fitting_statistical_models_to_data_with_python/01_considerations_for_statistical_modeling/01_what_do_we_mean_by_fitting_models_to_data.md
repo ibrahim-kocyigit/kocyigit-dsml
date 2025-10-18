@@ -42,27 +42,32 @@ Before modeling, we always explore the data visually.
     <img src="./images/0101.png" width="500">
 
 2.  **Relationship between Age and Performance:** A scatter plot of `performance` vs. `age` visually confirms our theory. We can see the inverted U-shape.
-    {{ Insert screenshot of the scatter plot of performance vs. age here }}
+
+    <img src="./images/0102.png" width="500">
 
 ### Modeling Approach 1: The Mean-Only Model (Unconditional)
 
 This is the simplest possible model. It ignores all predictors and just aims to describe the overall distribution of the outcome.
 
-**The Model:**
-We state that each student's performance score is the overall mean plus some random, individual error.
+#### The Model:
+We state that each student's performance score is the overall mean plus some random, individual error.  
+
 $$
 \text{Performance}_i = M + E_i
 $$
-**The Parameters:**
+
+#### The Parameters:
 1.  $M$: The marginal (overall) mean of test performance.
 2.  $\sigma^2$: The variance of the errors ($E_i$), which represents the variance in test performance across all students.
 
-**The Assumption:**
-We assume the errors are normally distributed with a mean of 0.
+#### The Assumption:
+We assume the errors are normally distributed with a mean of 0.  
+
 $$
 E_i \sim N(0, \sigma^2)
 $$
-**The Fit:**
+
+### The Fit:
 After fitting the model, we get estimates:
 *   Estimated Mean ($\hat{M}$): 4.57 points.
 *   Estimated Variance ($\hat{\sigma}^2$): 1.82.
