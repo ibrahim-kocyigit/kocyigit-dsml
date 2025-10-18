@@ -41,7 +41,9 @@ $$
 2.  **Level 2 Random Effects ($u_j$):** We assume the random effects for the intercept ($u_{0j}$) and slope ($u_{1j}$) are drawn from a **bivariate normal distribution**. This means we're not just defining their individual variances, but also the relationship *between* them.
 
 $$
-\begin{pmatrix} u_{0j} \\ u_{1j} \end{pmatrix} \sim N \left( \begin{pmatrix} 0 \\ 0 \end{pmatrix}, \mathbf{D} \right)
+\begin{pmatrix} u_{0j} \\ 
+u_{1j} \end{pmatrix} \sim N \left( \begin{pmatrix} 0 \\ 
+0 \end{pmatrix}, \mathbf{D} \right)
 $$
 
   The mean is a vector of zeros, indicating that the "average" cluster has no deviation from the fixed effects. The interesting part is the **variance-covariance matrix, D**:
