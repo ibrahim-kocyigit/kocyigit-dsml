@@ -1,4 +1,4 @@
-# Lecture Notes: Multilevel Linear Regression Models
+# Multilevel Linear Regression Models
 
 ## 1. The Intuitive Idea: From One Model to Many Names
 
