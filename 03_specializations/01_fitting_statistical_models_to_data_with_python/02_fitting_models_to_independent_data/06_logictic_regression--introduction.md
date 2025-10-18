@@ -23,15 +23,19 @@ The solution is to use a **link function** to transform our binary outcome into 
 The logit function converts a probability into **log-odds**. Let's break that down.
 
 1.  **Probability (P):** The probability of success (e.g., P = 0.80).
-2.  **Odds:** The ratio of the probability of success to the probability of failure.
+2.  **Odds:** The ratio of the probability of success to the probability of failure.  
+
     $$
     \text{Odds} = \frac{P}{1 - P}
     $$
+
     If P=0.80, the odds are `0.80 / 0.20 = 4`, or "4 to 1". Odds can range from 0 to infinity.
-3.  **Log-Odds (Logit):** The natural logarithm of the odds.
+3.  **Log-Odds (Logit):** The natural logarithm of the odds.  
+
     $$
     \text{logit}(P) = \ln\left(\frac{P}{1 - P}\right)
     $$
+
     This is the key transformation. It takes a probability (bounded between 0 and 1) and maps it onto the entire number line (from $-\infty$ to $+\infty$).
 
 {{ Insert screenshot of the graph of the logit function here }}
