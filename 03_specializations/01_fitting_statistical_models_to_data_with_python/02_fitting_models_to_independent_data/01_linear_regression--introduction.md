@@ -33,7 +33,6 @@ When describing a scatter plot, we look for four things:
 ### Step 2: Quantify with Correlation and R-Squared
 
 Visuals are great, but we also need numbers to quantify the relationship's strength.
-
 *   **Correlation Coefficient (r):** This measures the strength and direction of the *linear* relationship.
     *   $r = 0.33$
     *   The positive sign confirms the positive direction. The value, 0.33, confirms our visual assessment of a weak-to-moderate linear relationship.
@@ -58,11 +57,13 @@ The **Method of Least Squares** is the criterion we use. It states that the best
 
 ### The Linear Regression Model
 
-The equation for our line is:
+The equation for our line is:  
+
 $$
 \hat{Y} = b_0 + b_1X
 $$
-Where:
+
+... where:
 *   $\hat{Y}$ ("y-hat") is the **predicted value** of the dependent variable.
 *   $X$ is the value of the independent variable.
 *   $b_0$ is the **Y-intercept**: the predicted value of Y when X is 0.
@@ -72,7 +73,8 @@ Using software that implements the least squares method, we get our estimated co
 *   $b_0 = 7.55$ (Intercept)
 *   $b_1 = 1.10$ (Slope)
 
-So, our final prediction equation is:
+So, our final prediction equation is:  
+
 $$
 \text{Predicted Cartwheel Distance} = 7.55 + 1.10 \times (\text{Height})
 $$
@@ -91,22 +93,15 @@ $$
 
 It's important to note that this is a prediction of the *average* distance for all people who are 64 inches tall. Any single individual might be different.
 
-We can now calculate the residual for an actual person in our dataset who was 64 inches tall and had a distance of 87 inches:
+We can now calculate the residual for an actual person in our dataset who was 64 inches tall and had a distance of 87 inches:  
 
 $$
 \text{Residual} = \text{Observed} - \text{Predicted} = 87 - 78.4 = +8.6 \text{ inches}
 $$
+
 This person's cartwheel was 8.6 inches longer than our model predicted based on their height. These residuals will become critical for checking our model's assumptions later.
 
 **A Note on Extrapolation:** We should only make predictions for X values that fall within the range of our original data (in this case, heights from roughly 58 to 76 inches). Predicting for an `X` value far outside this range is called **extrapolation** and is very risky, as we have no evidence that the linear relationship holds.
-
-## 5. What's Next?
-
-So far, we have focused on the *descriptive* side of regression—fitting a line to our sample data. Next, we will move to the *inferential* side:
-*   Assessing if the relationship we found is statistically significant.
-*   Checking the assumptions that must be met for our inferences to be valid.
-*   Expanding our model to include more than one predictor variable.
-
 
 ---
 
