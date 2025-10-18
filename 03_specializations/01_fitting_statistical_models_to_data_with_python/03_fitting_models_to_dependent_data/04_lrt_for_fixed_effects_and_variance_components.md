@@ -1,4 +1,4 @@
-# Lecture Notes: Week 3 - Likelihood Ratio Tests for Fixed Effects and Variance Components
+# Likelihood Ratio Tests for Fixed Effects and Variance Components
 
 ## 1. The Intuitive Idea: Is the More Complicated Model Worth It?
 
@@ -83,7 +83,7 @@ We have very strong evidence that the variance of the random interviewer slopes 
 *   It helps us formally decide whether a set of fixed effects (predictors) or random effects (variance components) significantly improves the model fit.
 *   The test statistic is the difference in the `-2 log-likelihood` values between a full and a reduced model.
 *   When testing **fixed effects**, we use a standard chi-square distribution.
-*   When testing if a **variance component is zero**, we must use a more complex **mixture of chi-square distributions** to get an accurate p-value.
+*   When testing if a **variance component is zero**, we must use a more complex **mixture of chi-square distributions** to get an accurate p-value. 
 
 
 ---
