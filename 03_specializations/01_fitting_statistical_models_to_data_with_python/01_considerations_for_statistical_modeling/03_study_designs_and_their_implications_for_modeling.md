@@ -43,7 +43,10 @@ This is where things get more complex and require more advanced models. Correlat
 #### 2. Longitudinal Studies
 *   **Design:** Repeated measurements of the same variable are collected from the same units (e.g., people, companies) over time.
 *   **Key Property:** This is a special type of clustering where the **individual is the cluster**. The repeated measurements on a single person are correlated with each other. A person who is generally happy today is likely to be generally happy next month.
-    {{ Insert screenshot of the graph showing individual trajectories over time here }}
+
+  <img src="./images/0302.png" width="500">
+
+
 *   **Modeling Implication:**
     *   Just like with clustered samples, the observations are dependent.
     *   The model must account for the **within-unit correlation** over time. This allows us to separate changes happening *over time within a person* from differences *between people*.
