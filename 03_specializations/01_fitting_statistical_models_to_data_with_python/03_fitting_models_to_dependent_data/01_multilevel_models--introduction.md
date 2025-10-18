@@ -33,44 +33,38 @@
 ### Level 1 Equation (Observation Level)
 
 $$
-y_{ij} = \beta_{0j} + \beta_{1j}x_{ij} + e_{ij}
+y_{ij} = \beta_{0j} + \beta_{1j}x_{1ij} + e_{ij}
 $$
 
 ...where:
 
 - $y_{ij}$: Dependent variable for observation $i$ in cluster $j$
 - $\beta_{0j}$, $\beta_{1j}$: **Cluster-specific** coefficients (random)
-- $x_{ij}$: Predictor variable
+- $x_{1ij}$: Predictor variable
 - $e_{ij}$: Observation-level error term
 
 ### Level 2 Equations (Cluster Level)
 **For random intercept:**  
 
 $$
-\beta_{0j} = \gamma_{00} + u_{0j}
+\beta_{0j} = \beta_{0} + u_{0j}
 $$
 
 **For random slope:**  
 
 $$
-\beta_{1j} = \gamma_{10} + u_{1j}
-$$
-
-### Combined Model
-
-$$
-y_{ij} = \underbrace{\gamma_{00} + \gamma_{10}x_{ij}}_{\text{Fixed part}} + \underbrace{u_{0j} + u_{1j}x_{ij} + e_{ij}}_{\text{Random part}}
+\beta_{1j} = \beta_{1} + u_{1j}
 $$
 
 ## Random Effects Interpretation
 
 ### Distributional Assumptions
-- **Random effects:** $u_{0j} \sim N(0, \tau_0^2)$, $u_{1j} \sim N(0, \tau_1^2)$
+- **Random effects:** $u_{0j} \sim N(0, \sigma_0^2)$, $u_{1j} \sim N(0, \sigma_1^2)$
 - **Errors:** $e_{ij} \sim N(0, \sigma^2)$
 
 ### Variance Components
-- $\tau_0^2$: **Between-cluster variance** in intercepts
-- $\tau_1^2$: **Between-cluster variance** in slopes
+- $\sigma_0^2$: **Between-cluster variance** in intercepts
+- $\sigma_1^2$: **Between-cluster variance** in slopes
 - $\sigma^2$: **Within-cluster variance** (residual error)
 
 ## Expanded Inference Capabilities
@@ -112,17 +106,23 @@ $$
 
 ### Adding Cluster-Level Predictors
 
+**Extended Level 1 Equation:**  
+
+$$
+y_{ti} = \beta_{0i} + \beta_{1i}x_{1ti} + e_{ti}
+$$
+
 **Extended Level 2 Equations:**  
 
 $$
-\beta_{0j} = \gamma_{00} + \gamma_{01}T_j + u_{0j}
+\beta_{0i} = \beta_{00} + \beta_{01}T_{i} + u_{0i}
 $$
 
 $$
-\beta_{1j} = \gamma_{10} + \gamma_{11}T_j + u_{1j}
+\beta_{1i} = \beta_{10} + \beta_{11}T_{i} + u_{1i}
 $$
 
-...where $T_j$ is a cluster-level predictor
+...where $T_i$ is a cluster-level predictor
 
 ### Interpretation
 - $\gamma_{01}$, $\gamma_{11}$: How cluster-level predictors explain between-cluster variance
