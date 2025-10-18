@@ -64,7 +64,7 @@ arr_copy[0] = 100
 print("\n--- Slices as Copies (using .copy()) ---")
 print(f"Original array: {arr_1d}")
 print(f"Copy of slice after modification: {arr_copy}")
-print(f"Original array is NOT modified this time.")
+print("Original array is NOT modified this time.")
 print("-" * 30)
 
 

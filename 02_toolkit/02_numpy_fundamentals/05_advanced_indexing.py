@@ -43,7 +43,7 @@ print("The boolean mask (arr > 20):\n", is_greater_than_20)
 
 # --- Step 2: Use the mask to index the original array ---
 # This selects only the elements where the mask is True.
-print(f"Elements greater than 20:\n", arr[is_greater_than_20])
+print("Elements greater than 20:\n", arr[is_greater_than_20])
 
 
 # --- Combining boolean conditions ---

@@ -23,7 +23,7 @@ import numpy as np
 arr = np.array([1, 2, 3])
 # Here, the scalar `5` is "broadcast" to the shape of `arr`
 result = arr + 5  # Conceptually becomes [1, 2, 3] + [5, 5, 5]
-print(f"--- Simple Broadcasting (Array + Scalar) ---")
+print("--- Simple Broadcasting (Array + Scalar) ---")
 print(f"Result of [1, 2, 3] + 5: {result}")
 print("-" * 30)
 
