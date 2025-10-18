@@ -63,24 +63,34 @@ A primary reason for using multilevel models is to see if we can explain *why* s
 
 Let's walk through the example from the lecture. Imagine we have a longitudinal study where `j` represents subjects.
 
-**Step 1: Fit a model with random intercepts.**
-The Level 2 equation for the intercept is simple:
-$$ \beta_{0j} = \gamma_{00} + u_{0j} $$
+#### Step 1: Fit a model with random intercepts
+The Level 2 equation for the intercept is simple:  
+
+$$
+\beta_{0j} = \gamma_{00} + u_{0j}
+$$
+
 We fit this model and find the variance of the random intercepts. Let's say the estimated variance is $\hat{\sigma}^2_{u0} = 2.0$. This number represents the total between-subject variability in the intercepts that our model hasn't explained yet.
 
-**Step 2: Add a subject-level predictor.**
-Now, let's add a predictor that is specific to the subject, like `Male_j` (where 1=Male, 0=Female), to the Level 2 equation:
-$$ \beta_{0j} = \gamma_{00} + \gamma_{01}(\text{Male}_j) + u_{0j} $$
+#### Step 2: Add a subject-level predictor
+Now, let's add a predictor that is specific to the subject, like `Male_j` (where 1=Male, 0=Female), to the Level 2 equation:  
+
+$$
+\beta_{0j} = \gamma_{00} + \gamma_{01}(\text{Male}_j) + u_{0j} 
+$$
+
 We are testing if gender can help explain some of that variability in intercepts.
 
-**Step 3: Compare the variance.**
+#### Step 3: Compare the variance
 After fitting the new model, we look at the new estimate for the random intercept variance. Let's say it has dropped to $\hat{\sigma}^2_{u0} = 1.0$.
 
-**Step 4: Calculate "Proportion of Variance Explained" (PVE).**
-The drop in variance means our new predictor is doing some work! We can quantify how much:
+#### Step 4: Calculate "Proportion of Variance Explained" (PVE)
+The drop in variance means our new predictor is doing some work! We can quantify how much:  
+
 $$
 \text{PVE} = \frac{(\text{Initial Variance} - \text{Final Variance})}{\text{Initial Variance}} = \frac{(2.0 - 1.0)}{2.0} = 0.50
 $$
+
 We can conclude that **"50% of the between-subject variance in the intercepts is explained by gender."** This is a powerful and direct conclusion that standard regression cannot provide.
 
 ## 4. Estimation and Hypothesis Testing

@@ -4,5 +4,5 @@
 
 ---
 
-**Next:** [Multilevel Linear Regression Models](./03_multilevel_linear_regression_modesl.md)
+**Next:** [Multilevel Linear Regression Models](./03_multilevel_linear_regression_models.md)
 
