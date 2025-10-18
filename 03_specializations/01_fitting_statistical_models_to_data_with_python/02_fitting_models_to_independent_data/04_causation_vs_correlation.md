@@ -35,7 +35,7 @@ The ability to make a causal claim depends almost entirely on **how the data was
 
 ## 3. Advanced Designs for Causal Inference: Real-World Case Studies
 
-### Case Study 1: Sequential, Adaptive Interventions (Danny's Work)
+### Case Study 1: Sequential, Adaptive Interventions
 In many real-world settings (like healthcare or education), a single decision isn't enough. We need a sequence of decisions over time.
 
 *   **The Problem:** How do we figure out the best *sequence* of treatments for a child with anxiety? Do we start with behavioral therapy? If that doesn't work, do we increase the dose or add medication?
@@ -45,7 +45,7 @@ In many real-world settings (like healthcare or education), a single decision is
     2.  **Monitor and Re-randomize:** After a set period (e.g., 12 weeks), identify the children who are not responding well. Then, *re-randomize* just those children to a new set of options (e.g., increase the dose of their current treatment vs. switch to the other treatment).
 *   **The Causal Power:** This design allows researchers to make causal claims not just about the initial treatment, but about the best *second-stage* treatment for those who don't respond initially. It directly addresses the question of "what to do next."
 
-### Case Study 2: Combining Observational and Experimental Data (Johann's Work)
+### Case Study 2: Combining Observational and Experimental Data
 Randomized trials are the gold standard, but they are expensive and time-consuming. Observational data is cheap and plentiful but can't prove causation. Can we get the best of both worlds?
 
 *   **The Goal:** Use a large amount of cheap observational data to make a small, expensive experiment more efficient and powerful.
