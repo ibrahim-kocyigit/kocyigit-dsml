@@ -105,7 +105,7 @@ except IOError as e:
 # - The `os` module can be used to check for existence, delete files, etc.
 
 # --- Checking for existence ---
-print(f"\n--- File management ---")
+print("\n--- File management ---")
 if os.path.exists(file_path_write):
     print(f"'{file_path_write}' exists.")
 else:

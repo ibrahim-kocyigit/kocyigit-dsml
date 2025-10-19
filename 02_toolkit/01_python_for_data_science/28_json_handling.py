@@ -58,7 +58,7 @@ print(f"\nPretty JSON string:\n{json_string_pretty}")
 
 
 # --- Using `json.dump()` to write directly to a file ---
-print(f"\n--- `json.dump()` (Python -> JSON File) ---")
+print("\n--- `json.dump()` (Python -> JSON File) ---")
 try:
     with open(file_path, "w") as f:
         json.dump(user_data, f, indent=4)
@@ -87,7 +87,7 @@ print(f"Accessing a value: {location_data['country']}")
 
 
 # --- Using `json.load()` to read from a file ---
-print(f"\n--- `json.load()` (JSON File -> Python) ---")
+print("\n--- `json.load()` (JSON File -> Python) ---")
 try:
     with open(file_path, "r") as f:
         loaded_user_data = json.load(f)

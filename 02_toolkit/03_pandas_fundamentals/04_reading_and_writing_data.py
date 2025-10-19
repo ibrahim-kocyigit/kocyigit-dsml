@@ -63,7 +63,7 @@ df_to_save = pd.DataFrame(sales_data)
 #   index (0, 1, 2...) as a column in the CSV file. This is usually what you want.
 try:
     df_to_save.to_csv(file_path, index=False)
-    print(f"--- Data Creation ---")
+    print("--- Data Creation ---")
     print(f"Successfully created and saved sample data to '{file_path}'")
 except Exception as e:
     print(f"Error saving file: {e}")
