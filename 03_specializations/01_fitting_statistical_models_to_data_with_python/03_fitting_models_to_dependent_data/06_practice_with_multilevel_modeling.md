@@ -83,4 +83,4 @@ By playing with this app, you can develop a much deeper and more intuitive under
 
 ---
 
-**Next:** []()
+**Next:** [What are Marginal Models and Why Do We Need Them?](./07_marginal_models--introduction.md)
