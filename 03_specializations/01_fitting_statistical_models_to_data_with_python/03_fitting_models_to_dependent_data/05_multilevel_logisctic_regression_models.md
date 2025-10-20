@@ -14,10 +14,12 @@ This is essential when we have a reason to believe that the probability of a "Ye
 
 ## 2. The Theoretical Framework: Adding Random Effects to the Logit
 
-We start with the logistic regression model from Week 2, which models the log-odds of success:
+We start with the logistic regression model from Week 2, which models the log-odds of success:  
+
 $$
 \text{logit}(P_{ij}) = \ln\left(\frac{P_{ij}}{1 - P_{ij}}\right)
 $$
+
 Where $P_{ij}$ is the probability of success for individual `i` in cluster `j`.
 
 Now, we build a multilevel model for these log-odds, incorporating both fixed and random effects. A common model is the **random intercept model**:
@@ -52,7 +54,7 @@ We will now fit a **multilevel logistic regression model** to account for this c
 1.  **The Model:** We'll fit a random intercept model, allowing the baseline probability of smoking to vary across the different NHANES sampling clusters.
 2.  **The Research Question:** Besides correcting our standard errors, we can also ask a new, interesting question: "How much does the prevalence of smoking vary between different geographic areas, even after accounting for individual demographics?" We can estimate the variance of the random intercepts ($\sigma^2_{u0}$) to answer this.
 
-{{ Insert screenshot of the bar chart showing the proportion of smokers across different NHANES clusters here }}
+<img src="./images/0501.png" width="500">
 
 This plot clearly shows that the proportion of smokers varies substantially from one cluster to another, confirming that a multilevel approach is appropriate.
 
@@ -65,14 +67,10 @@ This plot clearly shows that the proportion of smokers varies substantially from
 ## 4. Model Diagnostics and Next Steps
 
 *   **Diagnostics:** We can check the assumption that our random effects are normally distributed by creating a Q-Q plot of their predicted values (the EBLUPs). For the NHANES data, the plot looks good, with no major outliers.
-    {{ Insert screenshot of the Q-Q plot of the random intercept EBLUPs here }}
-*   **Next Steps:** Since we found significant unexplained variance between clusters, a logical next step would be to try to *explain* that variance. We could add cluster-level predictors to the model, such as the average income or education level of each geographic area, to see if they can account for why smoking rates are higher in some areas than others.
 
-## 5. What's Next?
-We have now covered the fundamentals of multilevel modeling for both continuous and binary outcomes. Next, we will:
-*   Walk through a complete, hands-on example of fitting a multilevel model to longitudinal data in Python.
-*   Explore an interactive web application to visualize how these models work.
-*   Introduce an alternative approach for handling dependent data, called **marginal models**, which do not rely on random effects.
+    <img src="./images/0502.png" width="500">
+
+*   **Next Steps:** Since we found significant unexplained variance between clusters, a logical next step would be to try to *explain* that variance. We could add cluster-level predictors to the model, such as the average income or education level of each geographic area, to see if they can account for why smoking rates are higher in some areas than others.
 
 ---
 
