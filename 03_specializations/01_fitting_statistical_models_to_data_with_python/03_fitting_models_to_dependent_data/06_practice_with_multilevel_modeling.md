@@ -38,10 +38,12 @@ This is the simplest multilevel model, where we only allow the baseline level of
 ### Visualizing the Approaches in the App:
 
 *   **Pooled View:** The app shows a single histogram of `Negative Affect` for all observations combined, with one dashed line representing the overall mean (16.2). This is the "one size fits all" prediction.
-    {{ Insert screenshot of the app's "Pooled" histogram view here }}
+
+    <img src="./images/0601.png" width="500">
 
 *   **Unpooled View:** The app shows a series of boxplots, one for each of the 37 musicians. We immediately see huge variability: some musicians consistently have high anxiety, some have low anxiety, and some have wide-ranging anxiety. This visual strongly suggests that the pooled approach is wrong and that a multilevel model is needed.
-    {{ Insert screenshot of the app's "Unpooled" boxplot view here }}
+    
+    <img src="./images/0602.png" width="500">
 
 *   **Hierarchical Model View:** This is the core of the app.
     *   **Model Equation:** It clearly displays the Level 1 and Level 2 equations for the random intercept model, helping to connect the theory to the application.
@@ -57,10 +59,12 @@ This more complex model allows both the baseline anxiety (intercept) and the rel
 ### Visualizing the Approaches:
 
 *   **Pooled View:** The app shows a single scatter plot of `Negative Affect` vs. `Previous` for all data points, with one single regression line fitted through them. This represents the average, pooled relationship.
-    {{ Insert screenshot of the app's "Pooled" scatter plot with one line here }}
+
+    <img src="./images/0603.png" width="500">
 
 *   **Unpooled View:** This is a powerful visualization. The app shows **37 separate regression lines**, one for each musician. We can see that the relationship between experience and anxiety is different for different people—some lines are steep, some are flat, some are even positive. This provides strong visual motivation for needing a random slope.
-    {{ Insert screenshot of the app's "Unpooled" view with many regression lines here }}
+
+    <img src="./images/0604.png" width="500">
 
 *   **Hierarchical Model View:**
     *   **Model Equation:** The app updates the equations to show that now *both* the intercept and the slope have their own Level 2 equations with random effects.
@@ -76,3 +80,7 @@ The Cal Poly app is an invaluable tool for building intuition about multilevel m
 *   **Clear Output:** It provides standard model output, including parameter estimates and variance components, in a clear format.
 
 By playing with this app, you can develop a much deeper and more intuitive understanding of why and how multilevel models work.
+
+---
+
+**Next:** []()
