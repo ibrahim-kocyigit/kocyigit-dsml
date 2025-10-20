@@ -50,22 +50,22 @@ Let's walk through the example of testing if the random slopes for interviewers 
 *   **Null Hypothesis ($H_0$):** The variance of the random slopes is zero. The random slopes are not needed.
 *   **Alternative Hypothesis ($H_A$):** The variance of the random slopes is greater than zero.
 
-**Step 1: Fit the Full Model (Reference Model)**
+#### Step 1: Fit the Full Model (Reference Model)  
 This is the model that includes both random intercepts and random slopes for the interviewers. We use **Restricted Maximum Likelihood (REML)** estimation, which is preferred for testing variance components.
 *   `-2 REML log-likelihood` = **7143.3**
 
-**Step 2: Fit the Reduced Model (Nested Model)**
+#### Step 2: Fit the Reduced Model (Nested Model)  
 This is a simpler model that only has random intercepts for the interviewers (the random slopes are removed).
 *   `-2 REML log-likelihood` = **7166.8**
 *   *Observation:* The `-2LL` went up, which means the fit got worse after we removed the random slopes. But is it *significantly* worse?
 
-**Step 3: Calculate the Test Statistic**  
+#### Step 3: Calculate the Test Statistic  
 
 $$
 \text{Test Statistic} = 7166.8 - 7143.3 = 23.5
 $$
 
-**Step 4: Calculate the p-value using the Correct Distribution**
+#### Step 4: Calculate the p-value using the Correct Distribution
 Because we are testing a variance component against zero, we must use a special mixture of chi-square distributions. For testing a random slope (which involves both a variance and a covariance term), the appropriate reference distribution is a 50/50 mixture of a $\chi^2$ distribution with 1 degree of freedom and a $\chi^2$ distribution with 2 degrees of freedom.
 
 The calculation looks like this:
@@ -75,7 +75,7 @@ p_value = 0.5 * P(chi-square(df=1) > 23.5) + 0.5 * P(chi-square(df=2) > 23.5)
 The result of this calculation is:
 *   `p = 4.57e-06` which is essentially **p < 0.001**.
 
-**Step 5: Make a Conclusion**
+#### Step 5: Make a Conclusion
 The p-value is extremely small. Therefore, we **reject the null hypothesis**.
 
 We have very strong evidence that the variance of the random interviewer slopes is not zero. This confirms that the random slopes are a statistically significant and necessary component of our model. The more complex model is justified.
