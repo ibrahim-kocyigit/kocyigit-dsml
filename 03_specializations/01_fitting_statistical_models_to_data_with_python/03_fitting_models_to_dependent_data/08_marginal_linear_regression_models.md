@@ -92,3 +92,6 @@ In this case, the marginal, population-average relationship is weaker and not st
 
 Marginal models, fit via GEE, provide a powerful, fast, and robust alternative to MLMs when the research question is about the **population-average effect**. The key is to correctly specify the mean structure and make a reasonable choice for the working correlation structure to get accurate standard errors.
 
+---
+
+**Next:** [Marginal Logistic Regression](./09_marginal_logistic_regression.md)
