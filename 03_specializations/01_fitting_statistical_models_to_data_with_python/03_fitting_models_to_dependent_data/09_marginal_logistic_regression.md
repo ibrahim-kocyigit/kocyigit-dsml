@@ -72,7 +72,7 @@ We need to check if our choice of the `exchangeable` working correlation structu
 
 This is an interesting finding because our MLM analysis *did* find the random intercept variance to be statistically significant. This highlights a subtle point: MLMs and GEEs conceptualize and test for dependency in different ways, and they can occasionally lead to slightly different conclusions about the importance of that dependency, even while giving similar results for the fixed effects.
 
-## 4. Summary
+## 4. Key Takeaways
 
 *   Marginal logistic regression, fit via GEE, is the primary alternative to multilevel logistic regression for clustered binary data.
 *   It provides **population-average** estimates of the predictor effects, which can be easier to interpret and communicate than the cluster-specific estimates from an MLM.
@@ -80,5 +80,6 @@ This is an interesting finding because our MLM analysis *did* find the random in
 *   In the NHANES smoking example, the GEE and MLM approaches yielded very similar numerical results for the fixed effects, though their interpretation remains fundamentally different.
 *   Model selection in GEE, using tools like QIC, can help determine the most appropriate working correlation structure and assess the strength of the dependency.
 
-## 5. What's Next?
-You will now have the opportunity to get hands-on practice fitting both marginal linear (GEE) and marginal logistic (GEE) models using Python in a Jupyter Notebook, allowing you to interpret the results and compare different modeling choices for yourself.
+---
+
+**Next:** []()
