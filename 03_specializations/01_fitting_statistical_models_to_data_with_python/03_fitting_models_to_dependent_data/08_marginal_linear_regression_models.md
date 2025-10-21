@@ -14,15 +14,17 @@ Today, we focus on applying this marginal philosophy to **continuous** outcomes 
 GEE is the primary computational engine used to fit marginal models. Let's look under the hood.
 
 ### The Marginal Model Equation
-The equation for a marginal linear model looks deceptively simple, very much like a standard linear regression model. The key is what's *missing*.
+The equation for a marginal linear model looks deceptively simple, very much like a standard linear regression model. The key is what's *missing*.  
+
 $$
 Y_{ij} = \beta_0 + \beta_1X_{ij} + e_{ij}
 $$
+
 Notice the complete absence of any random effect terms (like $u_{0j}$). The model only contains **fixed effects** ($\beta_0, \beta_1$) which represent the population-average intercept and slope.
 
 The dependency in the data isn't modeled via random effects; it's handled by specifying the correlation structure of the error terms ($e_{ij}$) within each cluster.
 
-![](./images/0801.png)
+<img src="./images/0801.png" width="500">
 
 ### How GEE Finds the Coefficients
 Instead of maximizing a likelihood function (like in MLM), GEE works by solving a complex equation called a **score function** or an **estimating equation**. The goal is to find the values for the $\beta$ coefficients that make this equation balance out to zero.
