@@ -1,7 +1,5 @@
 # What are Marginal Models and Why Do We Need Them?
 
-# Lecture Notes: Week 3 - What are Marginal Models and Why Do We Fit Them?
-
 ## 1. The Intuitive Idea: Shifting the Research Question
 
 So far, we have learned to handle dependent (clustered or longitudinal) data using **multilevel models (MLMs)**. The core idea of an MLM is to ask a *conditional* or *cluster-specific* question:
@@ -20,7 +18,7 @@ Marginal models are not interested in estimating *why* or *how much* clusters va
 
 This plot shows the fundamental difference between the two approaches for longitudinal data from several children.
 
-{{ Insert screenshot of the plot showing MLM fits (dashed lines) and the marginal model fit (solid line) }}
+<img src="./images/0701.png" width="500">
 
 *   **Multilevel Model Fit (Dashed Lines):** Each child gets their own unique trajectory line. The model captures the variability *between* children.
 *   **Marginal Model Fit (Solid Line):** There is only **one single line** representing the average trajectory for the entire population. This same line is plotted for every child because the model is not estimating child-specific effects.
@@ -29,14 +27,16 @@ This plot shows the fundamental difference between the two approaches for longit
 
 The key difference in a marginal model is that it does **not** include random effects. Instead, it tackles the problem in two distinct steps:
 
-**Step 1: Model the Mean Structure**
-This part is exactly the same as any other regression model. We specify how the average of the dependent variable is related to our predictors.
+#### Step 1: Model the Mean Structure
+This part is exactly the same as any other regression model. We specify how the average of the dependent variable is related to our predictors.  
+
 $$
 \text{Mean of } Y = \beta_0 + \beta_1X_1 + \beta_2X_2 + \dots
 $$
-This gives us the population-average regression coefficients ($\beta$s) that we want to make inferences about.
 
-**Step 2: Model the Variance-Covariance Structure**
+This gives us the population-average regression coefficients ( $\beta$s ) that we want to make inferences about.
+
+#### Step 2: Model the Variance-Covariance Structure
 This is where the magic happens. After accounting for the predictors in the mean structure, we are left with residuals (errors). Because our data is clustered, these residuals are not independent. We must explicitly tell the model what we think the pattern of correlation among the residuals looks like *within* a cluster. This is called specifying the **"working" correlation structure**.
 
 Two common choices are:
@@ -60,13 +60,13 @@ By correctly specifying this structure, the model can produce **robust standard 
 
 ### Why Use Them (Advantages over MLMs):
 1.  **Computationally Faster & Simpler:** Because they don't involve the complex estimation of random effects, marginal models are often much faster to fit, especially for non-normal outcomes (like binary or count data).
-2.  **Robustness:** They are often considered more "robust" because the estimates of the regression coefficients ($\beta$s) are generally reliable even if you slightly mis-specify the correlation structure. The standard errors will adjust accordingly.
+2.  **Robustness:** They are often considered more "robust" because the estimates of the regression coefficients ( $\beta$'s) are generally reliable even if you slightly mis-specify the correlation structure. The standard errors will adjust accordingly.
 3.  **Easier for Non-Normal Outcomes:** Fitting a multilevel logistic model can be very computationally intensive. A marginal logistic model (often fit using a technique called **Generalized Estimating Equations, or GEE**) is much more straightforward.
 
 ### The Main Disadvantage:
 The trade-off is clear: **You cannot make any inference about between-cluster variance.** If your research question involves understanding why some clusters have higher outcomes than others, a marginal model is the wrong tool; you must use a multilevel model.
 
-## 4. Summary and What's Next?
+## 4.Key Takeaways
 
 | Feature | **Multilevel Models (MLMs)** | **Marginal Models (e.g., GEE)** |
 | :--- | :--- | :--- |
@@ -76,4 +76,3 @@ The trade-off is clear: **You cannot make any inference about between-cluster va
 | **Inference on Variance** | Yes, a primary goal. | No. |
 | **Computational Cost**| Higher, especially for non-normal outcomes. | Lower, generally faster. |
 
-Now that we have an overview of this alternative approach, we will revisit the ESS and NHANES examples from earlier. We will fit marginal models to these datasets and compare the results and interpretations to what we found using multilevel models. This will provide a concrete understanding of how these two powerful techniques differ in practice.
