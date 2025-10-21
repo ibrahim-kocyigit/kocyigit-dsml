@@ -17,15 +17,21 @@ We are no longer trying to estimate *how much* smoking rates vary between areas;
 The Generalized Estimating Equations (GEE) framework was specifically designed to handle non-normal longitudinal or clustered data, making it a natural fit for binary outcomes.
 
 ### Modeling the Mean and Variance
-Recall that for a binary variable, the **mean** is simply the probability of success, `P(Y=1)`. In logistic regression, we model this mean using the logit link function:
+Recall that for a binary variable, the **mean** is simply the probability of success, `P(Y=1)`. In logistic regression, we model this mean using the logit link function:  
+
 $$
 \text{logit}(P) = \ln\left(\frac{P}{1 - P}\right) = \beta_0 + \beta_1X_1 + \dots
 $$
-A unique feature of binary data is that its **variance is determined by its mean**:
+
+A unique feature of binary data is that its **variance is determined by its mean**:  
+
 $$
 \text{Variance}(Y) = P \times (1 - P)
 $$
+
 This simplifies things for us. Once we have specified the model for the mean (the logistic regression part), the model for the variance is automatically defined. The only remaining task for the user is to specify the **working correlation structure** for the observations within each cluster.
+
+<img src="./images/0901.png" width="500">
 
 ## 3. Application: Revisiting the NHANES Smoking Data with GEE
 
