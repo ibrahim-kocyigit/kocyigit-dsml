@@ -17,16 +17,15 @@ We are no longer trying to estimate *how much* smoking rates vary between areas;
 The Generalized Estimating Equations (GEE) framework was specifically designed to handle non-normal longitudinal or clustered data, making it a natural fit for binary outcomes.
 
 ### Modeling the Mean and Variance
-
-<p align="center">
-    <img src="./images/0901.png" width="500">
-</p>
-
 Recall that for a binary variable, the **mean** is simply the probability of success, `P(Y=1)`. In logistic regression, we model this mean using the logit link function:  
 
 $$
 \text{logit}(P) = \ln\left(\frac{P}{1 - P}\right) = \beta_0 + \beta_1X_1 + \dots
 $$
+
+<p align="center">
+    <img src="./images/0901.png" width="400">
+<p>
 
 A unique feature of binary data is that its **variance is determined by its mean**:  
 
@@ -49,17 +48,17 @@ Let's re-analyze the NHANES smoking data using a marginal logistic regression mo
 
 The table below compares the estimated coefficients (on the log-odds scale) and standard errors from the two different approaches.
 
-{{ Insert screenshot of the table comparing MLM and GEE results for the NHANES model }}
+<img src="./images/0902.png" width="500">
 
 **Key Observation:** The results from the two methods are remarkably similar.
 *   **Coefficients:** The estimated effects for predictors like `Male`, `Age`, and `Family Income` are nearly identical in both models.
 *   **Standard Errors:** The standard errors are also very similar.
 *   **Inference:** The same predictors are found to be statistically significant in both analyses. For example, being male and older are associated with higher odds of smoking, while having a larger household size or higher income-to-poverty ratio is associated with lower odds.
 
-**Why are they so similar here?**
+#### Why are they so similar here?
 While the *interpretation* is always different (conditional vs. marginal), the numerical results of MLMs and GEEs can be very close, especially when the amount of between-cluster variance is small. In this specific case, the dependency introduced by the clustering was not strong enough to create a large divergence between the two types of estimates.
 
-**The Crucial Difference Remains Interpretation:**
+#### The Crucial Difference Remains Interpretation:
 *   **MLM:** The coefficient for `Male` represents the effect of being male *within a given geographic cluster*.
 *   **GEE:** The coefficient for `Male` represents the effect of being male *averaged across all geographic clusters in the population*.
 
