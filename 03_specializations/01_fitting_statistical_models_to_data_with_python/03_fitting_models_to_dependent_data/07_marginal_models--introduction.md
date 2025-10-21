@@ -76,3 +76,6 @@ The trade-off is clear: **You cannot make any inference about between-cluster va
 | **Inference on Variance** | Yes, a primary goal. | No. |
 | **Computational Cost**| Higher, especially for non-normal outcomes. | Lower, generally faster. |
 
+---
+
+**Next:** [Marginal Linear Regression Models](./08_marginal_linear_regression_models.md)
