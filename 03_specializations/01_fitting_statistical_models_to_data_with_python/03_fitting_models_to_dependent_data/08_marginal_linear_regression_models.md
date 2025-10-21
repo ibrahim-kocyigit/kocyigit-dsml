@@ -22,6 +22,8 @@ Notice the complete absence of any random effect terms (like $u_{0j}$). The mode
 
 The dependency in the data isn't modeled via random effects; it's handled by specifying the correlation structure of the error terms ($e_{ij}$) within each cluster.
 
+![](./images/0801.png)
+
 ### How GEE Finds the Coefficients
 Instead of maximizing a likelihood function (like in MLM), GEE works by solving a complex equation called a **score function** or an **estimating equation**. The goal is to find the values for the $\beta$ coefficients that make this equation balance out to zero.
 
