@@ -49,7 +49,7 @@ The most important choice a user makes when fitting a GEE model is selecting a *
 
 ### The "Magic" of GEE: Robustness
 A fantastic feature of GEE is its **robustness**.
-*   The estimates of the regression coefficients ($\beta$s) are **consistent** (they get closer to the true population value as sample size increases) **even if you choose the wrong working correlation structure!**
+*   The estimates of the regression coefficients ( $\beta$'s) are **consistent** (they get closer to the true population value as sample size increases) **even if you choose the wrong working correlation structure!**
 *   However, a poor choice of correlation structure will affect the **standard errors**. Choosing a structure that fits the data well leads to more efficient and reliable standard errors.
 
 ## 3. Comparing Models and Making Inferences
@@ -88,8 +88,7 @@ In this case, the marginal, population-average relationship is weaker and not st
     *   QIC (Independence): 6791.55
 *   The QIC for the exchangeable model is slightly lower, providing evidence that accounting for the correlation within interviewers did improve the model fit, justifying the use of GEE over a simple linear regression.
 
-## 5. Summary and What's Next?
+## 5. Key Takeaways
 
 Marginal models, fit via GEE, provide a powerful, fast, and robust alternative to MLMs when the research question is about the **population-average effect**. The key is to correctly specify the mean structure and make a reasonable choice for the working correlation structure to get accurate standard errors.
 
-Next, we will extend this logic to binary outcomes by exploring **marginal logistic regression models**, again using GEE, and apply it to our NHANES smoking example.
