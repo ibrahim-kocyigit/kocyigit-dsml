@@ -8,7 +8,7 @@ So far in this course, we have focused on two main types of dependent variables:
 
 However, real-world data is much richer and more varied. What if our outcome is a choice between three different brands? Or a ranking on a 1-to-5 scale? Or the number of times an event occurs?
 
-This lecture introduces four common types of dependent variables that go beyond the simple linear/logistic framework. For each type, specialized statistical models are required to properly anaylze the data. The key takeaway is that the nature of your dependent variable dictates the type of model you must use.
+This lecture introduces four common types of dependent variables that go beyond the simple linear/logistic framework. For each type, specialized statistical models are required to properly analyze the data. The key takeaway is that the nature of your dependent variable dictates the type of model you must use.
 
 ## 2. A Gallery of Common Dependent Variable Types
 
@@ -49,9 +49,9 @@ This lecture introduces four common types of dependent variables that go beyond 
 * **What it is:** A variable that measures the **duration until a specific event of interest occurs**.
 * **The Question it Answers:** "How long did it last?" or "How long until it happened?"
 * **Examples:**  
-    * The time from a cancer dignosis until death.
+    * The time from a cancer diagnosis until death.
     * The time until a machine part fails.
-    * The time a user remains subsribed to a service before churning.
+    * The time a user remains subscribed to a service before churning.
 * **Key Feature:** This data type has a unique challenge called **censoring**. For many subjects, the event may not have occurred by the end of the study (e.g., the patient is still alive, the machine part is still working). Our model must be able to correctly handle this "incomplete" information.
 * **Appropriate Models:** Survival Analysis techniques like Kaplan-Meier curves and Cox Proportional Hazards Models.
 
