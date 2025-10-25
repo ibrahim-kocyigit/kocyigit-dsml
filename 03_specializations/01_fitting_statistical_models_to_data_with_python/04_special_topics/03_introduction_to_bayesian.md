@@ -1,6 +1,6 @@
 # Introduction to Bayesian
 
-# 1. The Intuitive Idea: What is a "Probability"?
+## 1. The Intuitive Idea: What is a "Probability"?
 
 At the heart of statistics lie two major philosophical frameworks: **Frequentist** and **Bayesian**. While this course primarily uses the Frequentist approach, understanding the Bayesian alternative is crucial for a complete statistical education.
 
@@ -50,8 +50,8 @@ A Bayesian uses this new piece of data to **update their belief**.
     3. From Bag B (S/P), I could have drawn the one silver chocolate.
 * Given that I *did* draw a silver chocolate, two of the three equally likely possibilities come from Bag A.
 * Therefore, my updated belief (called the **posterior probability**) is now:
-    * **Probability I have Bag A (S/S) = 2/3 (or ≈67%)**
-    * **Probability I have Bag B (S/P) = 1/3 (or ≈33%)**
+    * Probability I have Bag A (S/S) = 2/3 (or ≈67%)
+    * Probability I have Bag B (S/P) = 1/3 (or ≈33%)
 
 My confidence that I am holding the S/S bag has increased from 50% to 67% based on the new evidence.
 
