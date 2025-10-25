@@ -37,11 +37,11 @@ Modern software makes this easy. Fit your chosen model once _without_ weights an
     * **Action:** You can confidently **report the unweighted results**, perhaps noting in a footnote that a weighted analysis produced similar coefficients but with less precision.
 * **Scenario B: Coefficients change substantially when weights are added.**
     * **Diagnosis:** This is a red flag. It signals that your model is likely misspecified. The weights are correcting for a factor that your model has missed. The difference between the weighted and unweighted coefficients *is* the bias that the weights are removing.
-    * **Action:** Your should **report the weighted estimates**. Because your model is imperfect, the weighted results are your best bet for an unbiased estimate of the population-average relationships. It's better to have an unbiased estimate of a potentially imperfect model than a biased estimate.
+    * **Action:** You should **report the weighted estimates**. Because your model is imperfect, the weighted results are your best bet for an unbiased estimate of the population-average relationships. It's better to have an unbiased estimate of a potentially imperfect model than a biased estimate.
 
 ## 4. Conclusion
 
-The decision to use survey weights in regression is not a simple "yes" or "no". It's an analytical process. By fitting your model both with and without weights and comparing the results, your gain critical insight into both your model's specification and the nature of your sample. When in doubt, or when the coefficients change significantly, using weights is the safer, more conservative choice to ensure your results are unbiased with respect to the complex sample design.
+The decision to use survey weights in regression is not a simple "yes" or "no". It's an analytical process. By fitting your model both with and without weights and comparing the results, you gain critical insight into both your model's specification and the nature of your sample. When in doubt, or when the coefficients change significantly, using weights is the safer, more conservative choice to ensure your results are unbiased with respect to the complex sample design.
 
 --
 
