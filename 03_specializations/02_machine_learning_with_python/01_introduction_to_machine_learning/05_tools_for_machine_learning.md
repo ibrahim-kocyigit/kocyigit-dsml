@@ -1,7 +1,5 @@
 # Tools for Machine Learning
 
-# Lecture Notes: Tools for Machine Learning
-
 ## 1. The Intuitive Idea: The ML Workshop
 
 If a machine learning project is like building a house, then **data** is the raw material (the wood, concrete, and steel), and the **tools** are everything in your workshop (the saws, drills, and measuring tapes). You need the right material and the right tools for the job.
