@@ -108,4 +108,4 @@ with open('my_model.pkl', 'wb') as f:
 
 ---
 
-**Next:** [Introduction to Regression](../02_linear_and_logictic_regression/01_introduction_to_regression.md)
+**Next:** [Introduction to Regression](../02_linear_and_logistic_regression/01_introduction_to_regression.md)
