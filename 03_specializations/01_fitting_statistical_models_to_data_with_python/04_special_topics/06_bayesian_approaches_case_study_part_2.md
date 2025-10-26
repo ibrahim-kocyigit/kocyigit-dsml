@@ -78,4 +78,4 @@ Our diagnostic checks have revealed several key problems with our simple linear 
 
 ---
 
-**Next:** [Bayesian Approaches Case Study: Part II]()
+**Next:** [Bayesian Approaches Case Study: Part III](./07_bayesian_approaches_case_study_part_3.md)
