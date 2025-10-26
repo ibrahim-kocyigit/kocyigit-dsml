@@ -32,6 +32,6 @@ To make this process concrete, we will analyze a dataset from the **National Lon
 For simplicity, we will start with a basic linear regression model, excluding the `momHS` variable for now.
 
 $$
-\text{kid\_score} = \beta_0 + \beta_1 \cdot \text{momIQ} + \beta_2 \cdot \text{momAge} + \epsilon
+\text{kidScore} = \beta_0 + \beta_1 \cdot \text{momIQ} + \beta_2 \cdot \text{momAge} + \epsilon
 $$
 
