@@ -23,7 +23,7 @@ $$ \hat{y} = \theta_0 + \theta_1 x_1 $$
 
 Where:
 
-*   $ \hat{y} $ (y-hat) is the **predicted value** of the target variable. It's the value on the regression line for a given `x`.
-*   $ x_1 $ is the single **independent variable** or feature (e.g., `Engine Size`).
-*   $ \theta_0 $ is the **y-intercept** of the line. It's also known as the "bias." It's the predicted value of `y` when `x` is zero.
-*   $ \theta_1 $ is the **slope** of the line. It's also known as the "coefficient" for the feature `x₁`. It represents the change in `y` for a one-unit increase in `x`.
+*   $\hat{y}$ (y-hat) is the **predicted value** of the target variable. It's the value on the regression line for a given `x`.
+*   $x_1$ is the single **independent variable** or feature (e.g., `Engine Size`).
+*   $\theta_0$ is the **y-intercept** of the line. It's also known as the "bias." It's the predicted value of `y` when `x` is zero.
+*   $\theta_1$ is the **slope** of the line. It's also known as the "coefficient" for the feature `x₁`. It represents the change in `y` for a one-unit increase in `x`.
