@@ -27,11 +27,11 @@ To make this process concrete, we will analyze a dataset from the **National Lon
 
 * **Dataset:** 434 observations.
 * **Research Question:** Can we predict a child's IQ score based on characteristics of their mother?
-* **Independen Variables:** `mom_iq` (mother's IQ), `mom_age` (mother's age at birth), and `mom_hs` (whether the mother attended high school).
+* **Independen Variables:** `momIQ` (mother's IQ), `momAge` (mother's age at birth), and `momHS` (whether the mother attended high school).
 
-For simplicity, we will start with a basic linear regression model, excluding the `mom_hs` variable for now.
+For simplicity, we will start with a basic linear regression model, excluding the `momHS` variable for now.
 
 $$
-\text{kid\_score} = \beta_0 + \beta_1 \cdot \text{mom\_iq} + \beta_2 \cdot \text{mom\_age} + \epsilon
+\text{kid\_score} = \beta_0 + \beta_1 \cdot \text{momIQ} + \beta_2 \cdot \text{momAge} + \epsilon
 $$
 
