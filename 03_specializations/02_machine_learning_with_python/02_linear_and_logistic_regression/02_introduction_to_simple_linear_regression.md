@@ -56,7 +56,7 @@ For simple linear regression, there is a direct mathematical solution to find th
 
 $$ \theta_1 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{n} (x_i - \bar{x})^2} $$
 
-**2. Calculate the Intercept ($ \theta_0 $):**  
+**2. Calculate the Intercept ($\theta_0$):**  
 
 $$ \theta_0 = \bar{y} - \theta_1 \bar{x} $$
 
