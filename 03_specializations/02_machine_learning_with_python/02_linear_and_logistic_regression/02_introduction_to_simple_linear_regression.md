@@ -75,12 +75,12 @@ To predict the CO2 emission for a car with an engine size of 2.4:
 
 ## 5. Pros and Cons of Simple Linear Regression (OLS)
 
-#### Advantages
+#### Advantages:
 * **Simple to Understand and Interpret:** The linear relationship and the meaning of the coefficients are very intuitive.
 * **No Hyperparameter Tuning:** The solution is calculated directly from the data; there are no complex parameters to tune.
 * **Fast:** It is computationally inexpensive, especially on smaller datasets.
 
-#### Disadvantages
+#### Disadvantages:
 * **Overly Simplistic:** It can only capture linear relationships and will perform poorly if the true relationship is non-linear.
 * **Sensitive to Outliers:** Because OLS minimizes *squared* errors, a single data point that is very far from the line (an outlier) will have a huge squared error, which can dramatically pull the best-fit line towards it and reduce the model's accuracy.
 
@@ -92,4 +92,4 @@ To predict the CO2 emission for a car with an engine size of 2.4:
 
 ---
 
-**Next:** []()
+**Next:** [Lab: Simple Linear Regression](./03_lab--simple_linear_regression.ipynb)
