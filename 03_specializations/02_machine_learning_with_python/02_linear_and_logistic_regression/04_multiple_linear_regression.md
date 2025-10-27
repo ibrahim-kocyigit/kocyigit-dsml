@@ -78,4 +78,4 @@ To build a robust multiple regression model, you should aim for a balanced set o
 
 ---
 
-**Next:** [Lab: Multiple Linear Regression](./05_multiple_linear_regression.md)
+**Next:** [Lab: Multiple Linear Regression](./05_lab--multiple_linear_regression.md)
