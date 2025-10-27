@@ -22,3 +22,60 @@ Where:
 *   $x_1, x_2, \dots, x_n$ are the **independent variables** (features).
 *   $\theta_0$ is the **y-intercept** (or bias).
 *   $\theta_1, \theta_2, \dots, \theta_n$ are the **coefficients** (or weights) for each feature. Each $\theta_i$ represents the change in $\hat{y}$ for a one-unit increase in the corresponding feature $x_i$, assuming all other features are held constant.
+
+The machine learning algorithm's job is to find the optimal values for all the data ( $\theta$ ) parameters.
+
+## 3. How to Train the Model: Finding the Best Parameters
+Just like with simple linear regression, the goal is to find the parameters that **minimize the Mean Squared Error (MSE)**. There are two primary methods to achieve this:
+
+1. **Ordinary Least Squares (OLS):**
+    * **How it works:** A direct, mathematical approach that uses linear algebra (matrix operations) on the entire dataset to calculate the single best set of coefficients.
+    * **When to use:** Works well for smaller to medium-sized datasets where the computation is feasible.
+2. **Optimization Approach (e.g., Gradient Descent):**
+    * **How it works:** An iterative approach. It starts with random values for the coefficients and then repeatedly makes small adjustments to them, each time moving in the direction that reduces the model's error on the training data. It continues this process until the error is minimized.
+    * **When to use:** This is the preferred method for very large datasets where calculating the OLS solution directly would be too computationally expensive.
+
+## 4. Handling Categorical Variables
+
+Multiple Linear Regression requires all input features to be numerical. So what do we do with categorical variables like "Fuel Type" or "Transmission"? We convert them into numbers.
+
+**Binary Variables (2 categories):**  
+Convert them into a single numerical feature with values of 0 and 1. This is called creating a **dummy variable**.
+* **Example:** For a `Transmission` feature, "Manual" could become 0 and "Automatic" could become 1.
+
+**Multi-Class Variables (>2 categories):** Convert them into multiple new boolean (0/1) features, one for each category. This technique is called **One-Hot Encoding**.
+* **Example:** For a `FuelType` feature with classes "Gas", "Diesel", "Electric", we would create three new features: `is_Gas`, `is_Diesel`, and `is_Electric`. A gasoline car would have a 1 in the `is_Gas` column, and 0s in the others.
+
+## 5. The Pitfalls of Multiple Linear Regression
+While powerful, multiple linear regression comes with some important caveats.
+
+#### Pitfall 1: Overfitting
+* **What it is:** Adding too many features to your model can cause it to "memorize" the training data, including its noise and random fluctuations.
+* **The Conseuqence:** The model will perform exceptionally well on the training data but will fail to generalize and make accurate predictions on new, unseen data.
+
+#### Pitfall 2: Multicollinearity
+* **What it is:** This occurs when two or more independent variables in your model are highly correlated with each other (e.g. `Engine Size` and `Number of Cylinders` are likely highly correlated). When this happens, the variables are no longer truly independent.
+* **The Consequences:**
+    1. It becomes difficult for the model to determine the individual effect of each correlated feature. The coefficient estimates can become unstable and hard to interpret.
+    2. It makes "what-if" scenarios unreliable. You can't realistically ask "What happens if I change `Engine Size` while holding `Cylinders` constant?" because in the real world, they change together.
+* **The Solution:** Before finalizing your model, perform a correlation analysis and remove, redundant, highly correlated features.
+
+## 6. A Balanced Approach to Feature Selection
+
+To build a robust multiple regression model, you should aim for a balanced set of features that are:
+1. Uncorrelated with each other (to avoid multicollinearity).
+2. Highly correlated with the target variable (so they are good predictors).
+3. Understandable and controllable (if possible, for interpretability).
+
+
+## 7. Summary
+
+*   Multiple Linear Regression extends simple linear regression by using **two or more features** to predict a continuous target.
+*   The model learns a **coefficient for each feature**, representing its independent contribution to the prediction.
+*   It's more powerful than simple linear regression but introduces risks like **overfitting** and **multicollinearity**.
+*   Careful **feature selection** is crucial to building a reliable and interpretable model.
+*   The model can be trained using **OLS** (for smaller data) or optimization methods like **Gradient Descent** (for larger data).
+
+---
+
+**Next:** [Lab: Multiple Linear Regression](./05_multiple_linear_regression.md)
