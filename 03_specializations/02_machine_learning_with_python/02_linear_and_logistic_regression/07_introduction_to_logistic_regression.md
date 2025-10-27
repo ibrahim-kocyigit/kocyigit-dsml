@@ -32,7 +32,7 @@ $$
 z = \theta_0 + \theta_1 x_1 + \theta_2 x_2 + \dots + \theta_n x_n 
 $$
 
-**Sigmoid Function ($ \sigma $):**  
+**Sigmoid Function ($\sigma$):**  
 
 $$
 \sigma(z) = \frac{1}{1 + e^{-z}} 
