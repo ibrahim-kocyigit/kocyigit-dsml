@@ -17,9 +17,9 @@ The training process for logistic regression (and many other machine learning mo
 5. **Repeat:** Go back to step 2 and repeat the process. Continue this loop until the error is sufficiently small or a maximum number of iterations is reached.
 
 ## 3. The Cost Function: Log Loss (or Binary Cross-Entropy)
-For logistic regression, the most common cost function is **Log Loss**, also known as Binary Cross-Entropy. Its job is to measure how well the predicted probabilities mathc the actual class labels.
+For logistic regression, the most common cost function is **Log Loss**, also known as Binary Cross-Entropy. Its job is to measure how well the predicted probabilities match the actual class labels.
 
-The formula for Log Loss for a single obervation is: `Cost(ŷ, y) = -[ y * log(ŷ) + (1-y) * log(1-ŷ) ]`
+The formula for Log Loss for a single observation is: `Cost(ŷ, y) = -[ y * log(ŷ) + (1-y) * log(1-ŷ) ]`
 
 Where:
 * `y` is the actual class (0 or 1).
@@ -30,7 +30,7 @@ Let's break down how it works:
 #### Case 1: The actual class is 1 (`y=1`)
 * The formula simplifies to `Cost = -log(ŷ)`.
 * If our prediction `ŷ` is close to 1 (a confident, correct prediction), the `log(ŷ)` is close to 0, so the cost is very low.
-* If our prediction `ŷ` is close to 0 (a confident, *incorrect* prediction), `log(ŷ)` approached negative infinity, so the cost becomes very high. **Log Loss heavily penalizes confident but wrong predictions.**
+* If our prediction `ŷ` is close to 0 (a confident, *incorrect* prediction), `log(ŷ)` approaches negative infinity, so the cost becomes very high. **Log Loss heavily penalizes confident but wrong predictions.**
 
 #### Case 2: The actual class is 0 (`y=0`)
 * The formula simplifies to `Cost = -log(1-ŷ)`.
@@ -43,7 +43,7 @@ The total Log Loss for the entire dataset is simply the average of this cost acr
 
 How do we actually adjust the parameters to minimize the Log Loss? The most popular method is **Gradient Descent**.
 
-Imagine the cost function as a 3D surface, like a hilly landscape, where the lowers point represents the minimum error.
+Imagine the cost function as a 3D surface, like a hilly landscape, where the lowest point represents the minimum error.
 
 <img src="./images/0801.png" alt="Gradient Descent visualization" width="600"/>
 
@@ -62,9 +62,9 @@ Standard Gradient Descent calculates the gradient using the **entire training da
 * **How it works:** Instead of using the whole dataset, SGD estimates the gradient using only a **small, random subset of the data** (a "mini-batch") for each step.
 * **Advantages:**  
     * **Much Faster:** It's computationally cheaper, allowing for many more updates in the same amount of time.
-    * **Avoids Local Minima:** The "noisy" steps caused by using a random subset can help the algorith to "jump out" of shallow local minima and find a better, more global minimum.
+    * **Avoids Local Minima:** The "noisy" steps caused by using a random subset can help the algorithm to "jump out" of shallow local minima and find a better, more global minimum.
 * **Disadvantages:**
-    * The path to minimum is less direct and can "wander around" the minimum before settling. This can be improved by gradually descreasing the learning rate as the algorithm gets closer to the solution.
+    * The path to minimum is less direct and can "wander around" the minimum before settling. This can be improved by gradually decreasing the learning rate as the algorithm gets closer to the solution.
 
 ## 5. Summary
 
