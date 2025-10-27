@@ -14,8 +14,6 @@ If we try to fit a stright line to data that is clearly curved, our model will b
 
 Polynomial regression is one of the simplest and most common ways to model non-linear relationships. Instead of fitting a straight line, we fit a polynomial curve (like a quatratic or cubic curve) to the data.
 
-<img src="./images/0602.png" alt="" width="800"/>
-
 The model equation looks like this:  
 
 $$ \hat{y} = \theta_0 + \theta_1 x + \theta_2 x^2 + \dots + \theta_n x^n $$
@@ -26,11 +24,13 @@ Where:
 *   $x^2, x^3, \dots, x^n$ are the new polynomial features.
 *   $n$ is the degree of the polynomial.
 
+<img src="./images/0602.png" alt="" width="800"/>
+
 ### The Trick: Transforming it into a Linear Problem
 
 How do we solve this? We can transform this into a **Multiple Linear Regression** problem with a clever trick: we treat each polynomial term as a *new, separate feature*.
 
-Let's say we have a cubic model ($ n=3 $):  
+Let's say we have a cubic model ($n=3$):  
 
 $$ \hat{y} = \theta_0 + \theta_1 x + \theta_2 x^2 + \theta_3 x^3 $$
 
