@@ -42,7 +42,7 @@ The sigmoid function takes any real number `z` and "squashes" it into a value be
 
 <img src="./images/0702.png" alt="Sigmoid Function Curve" width="600"/>
 
-The output of the sigmoid function, $ \hat{p} = \sigma(z) $, is our predicted **probability**.  
+The output of the sigmoid function, $\hat{p} = \sigma(z)$, is our predicted **probability**.  
 
 $$
 \hat{p} = P(y=1 | X) 
