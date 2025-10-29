@@ -44,7 +44,7 @@ Because KNN is based on calculating distances, features with large scales will d
 KNN's performance degrades as the number of features increases. In high-dimensional spaces, the concept of "distance" becomes less meaningful, and all points tend to be far apart from each other.
 * **Solution:** Use **feature selection** to keep only the most relevant features. This improves accuracy and reduces computational cost.
 
-### Handling Class Imbalance
+### Handling Class Imbalance
 In its basic form, KNN's majority vote can be biased if the class distribution is skewed. A more frequent class will likely to dominate the predictions simply because it has more data points.
 * **Solution:** Use **weighted voting**, where closer neighbors get a larger "vote" than neighbors that are farther away. This can be enabled in scikit-learn's `KNeighborsClassifier` by setting `weights='distance'`.
 
