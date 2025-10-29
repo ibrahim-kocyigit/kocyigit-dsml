@@ -1,1 +1,2 @@
-# Supervised Learning with KNN
+# Supervised Learning with K-Nearest Neighbors (KNN)
+
