@@ -73,3 +73,7 @@ This final step ensures all stakeholders are aligned before any technical work b
 * **Key Revisions:** [Summarize any important changes made during the review process.]
 * **Signed Off By:** [List Stakeholders]
 ```
+
+---
+
+**Next:** [Analytic Approach](./02_analytic_approach.md)
