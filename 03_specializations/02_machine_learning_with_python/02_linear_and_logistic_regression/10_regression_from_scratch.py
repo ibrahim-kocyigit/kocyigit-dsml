@@ -297,7 +297,7 @@ def simple_linear_regression_tutorial():
         n_samples=100, n_features=1, noise=10, random_state=42
     )
 
-    X = X.flatten()  # <-- Add this line
+    X = X.flatten()
 
     # Split data into training (80%) and testing (20%) sets
     X_train, X_test, y_train, y_test = train_test_split(
