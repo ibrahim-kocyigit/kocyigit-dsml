@@ -81,7 +81,7 @@ Conclude the data collection phase. If significant data gaps were discovered tha
   * **Action:** Add a summary of this stage to the main project `README.md`.
 
 ```markdown
-### Data Collection Report
+### Data Collection Report
 * **Status:** *[Completed]*
 * **Key Findings:** 
   * Note any successes or discovered gaps. 
