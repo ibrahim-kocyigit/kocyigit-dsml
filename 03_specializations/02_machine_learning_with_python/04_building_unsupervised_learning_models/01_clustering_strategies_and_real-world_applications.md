@@ -53,8 +53,9 @@ This method creates a tree-like hierarchy of nested clusters. The results are vi
 * **Strengths:** Very intuitive and provides a rich visualization of the data's structure. Doesn't require you to pre-specify the number of clusters.
 * **Weakness:** Can be computationally expensive for large datasets.
 
+A dendrogram showing the genetic relationship between dog breeds:
+
 <img src="./images/0103.png" alt="Hierarchical Clustering Dendrogram" width="400"/>
-*A dendrogram showing the genetic relationship between dog breeds.*
 
 ## 4. Hierarchical Clustering Strategies
 
@@ -66,11 +67,12 @@ This is the most common approach.
 2. **Iterate:** In each step, find the two closest clusters and **merge** them into a single new cluster.
 3. **Terminate:** Repeat until all data points have been merged into a single, large cluster.
 
+The Canadian cities example shows how Montreal and Ottawa are merged first, then that cluster is merged with Toronto, and so on:
+
 <img src="./images/0104.png" width="800">
 <img src="./images/0105.png" width="800">
 <img src="./images/0106.png" width="800">
 <img src="./images/0107.png" width="800">
-*The Canadian cities example shows how Montreal and Ottawa are merged first, then that cluster is merged with Toronto, and so on.*
 
 ### 4.2. Divisive Clustering (Top-Down)
 This approach is less common.
