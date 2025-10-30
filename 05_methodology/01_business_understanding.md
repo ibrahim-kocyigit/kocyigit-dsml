@@ -68,8 +68,7 @@ This final step ensures all stakeholders are aligned before any technical work b
 * **Action:** Add a summary of this stage to the main project README.md.
 
 ```markdown
-> ### Validation Summary:**
->
+> ### Validation Summary
 > * **Date Signed Off:** [Insert Date]
 > * **Key Revisions:** [Summarize any important changes made during the review process.]
 > * **Signed Off By:** [List Stakeholders]
