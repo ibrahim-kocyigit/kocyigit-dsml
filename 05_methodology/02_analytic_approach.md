@@ -17,7 +17,7 @@ Based on the project objectives, determine the appropriate family of machine lea
     * Are we trying to find a simpler underlying structure in high-dimensional data? -> **Dimensionality Reduction**
 
 ```markdown
-### ML Problem Framing:**
+### ML Problem Framing
 * **Type of Problem:** [Insert one: Supervised Classification, Supervised Regression, Unsupervised Clustering, etc.]
 * **Brief Justification:** [Explain why this framing fits the business objective. Example: "Since the business objective is to predict whether a customer will churn (a 'yes' or 'no' outcome), this is a supervised binary classification problem."]
 ```
