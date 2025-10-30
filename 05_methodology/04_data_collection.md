@@ -17,14 +17,13 @@ Write the necessary scripts to extract data from the sources identified in the p
       * What SQL query is needed to pull customer transaction history?
       * What Python script is required to access a necessary third-party API?
       * How will credentials and API keys be managed securely?
-  * **Toolkit Connection:** This step heavily utilizes skills from the `02_Toolkit` pillar, such as `pandas.read_sql` or Python's `requests` library.
 
-> **Scripts and Queries Log:**
->
->   * ***Customer Profile Data:*** *[Link to `/scripts/sql/get_customer_profiles.sql`]*
->   * ***Transaction Data:*** *[Link to `/scripts/python/get_transaction_logs.py`]*
->   * ***External Data:*** *[Link to `/scripts/python/get_external_data.py`]*
-
+```markdown
+### Scripts and Queries Log
+* **Customer Profile Data:** [Link to `.../get_customer_profiles.sql`]
+* **Transaction Data:** [Link to `.../get_transaction_logs.py`]
+* **External Data:** [Link to `.../get_external_data.py`]
+```
 
 ## Step 2: Execute Data Collection & Store Raw Data
 
@@ -35,12 +34,12 @@ Run the developed scripts and save the raw, unaltered output to a designated sto
       * Where will the raw data be stored (e.g., a specific project folder like `/data/raw/`, a cloud storage bucket)?
       * What naming convention will be used for the raw files to ensure clarity and versioning (e.g., `YYYY-MM-DD_source_data.csv`)?
 
-> **Execution Log:**
->
->   * ***Status:*** *[Completed / In Progress]*
->   * ***Date of Collection:*** *[e.g., 2025-06-20]*
->   * ***Raw Data Location:*** *[e.g., `/data/raw/`]*
-
+```markdown
+### Execution Log
+* **Status:** [Completed / In Progress]
+* **Date of Collection:** [e.g., 2025-06-20]
+* **Raw Data Location:** [e.g., `/data/raw/`]
+```
 
 ## Step 3: Initial Data Ingestion and Verification
 
@@ -52,18 +51,12 @@ Perform a quick, high-level check to ensure the collected data is readable and a
       * Do the number of rows and columns seem reasonable?
       * By glancing at the first few rows (`.head()`) and the data types (`.info()`), does the data match expectations?
 
-> **Initial Verification Output (`df.info()`):**
->
-> ```
-> > [Paste the output of df.info() for the primary raw dataset here to provide a quick summary of columns, non-null counts, and data types.]
-> ```
->
-> **Initial Verification Output (`df.head()`):**
->
-> ```
-> > [Paste the output of df.head() here.]
-> ```
+```markdown
+### Initial Data Ingestion and Verification
+> [Between triple quotes, paste the output of df.info() for the primary raw dataset here to provide a quick summary of columns, non-null counts, and data types.]
 
+> [Between triple quotes, paste the output of df.head() here.]
+```
 
 ## Step 4: Document the Collected Data
 
@@ -71,13 +64,13 @@ Maintain a clear log of the datasets that have been collected. This is crucial f
 
   * **Action:** Fill out a log for each dataset acquired.
 
-> **Data Collection Log:**
->
-> | Source Name | Data Location/File | Date Collected | Version/Timestamp | Notes |
-> | :--- | :--- | :--- | :--- | :--- |
-> | *CRM DB* | `/data/raw/2025-06-20_customer_profiles.csv`| *2025-06-20* | *2025-06-20 19:30* | *Contains all active customer profiles.* |
-> | *Sales Logs* | `/data/raw/2025-06-20_transactions.parquet`| *2025-06-20* | *2025-06-20 19:30* | *Transaction data for the last 24 months.*|
-
+```markdown
+### Data Collection Log
+| Source Name | Data Location/File | Date Collected | Version/Timestamp | Notes |
+| :--- | :--- | :--- | :--- | :--- |
+| CRM DB | `/data/raw/2025-06-20_customer_profiles.csv`| 2025-06-20 | 2025-06-20 19:30 | Contains all active customer profiles. |
+| Sales Logs | `/data/raw/2025-06-20_transactions.parquet`| 2025-06-20 | 2025-06-20 19:30 | Transaction data for the last 24 months.|
+```
 
 ## Step 5: Final Review
 
@@ -86,7 +79,14 @@ Conclude the data collection phase. If significant data gaps were discovered tha
   * **Action:** Prepare a brief summary report of the data collection process.
   * **Action:** Add a summary of this stage to the main project `README.md`.
 
-> **Stage Summary:**
->
->   * ***Status:*** *[Completed]*
->   * ***Key Findings:*** *[Note any successes or discovered gaps. Example: "Successfully collected customer profile and transaction data. The proposed external API was found to be deprecated; an alternative source needs to be identified or the analytic approach must be adjusted to proceed without this data."]*
+```markdown
+### Data Collection Report
+* **Status:** *[Completed]*
+* **Key Findings:** 
+  * Note any successes or discovered gaps. 
+  * Summarize the results of initial data ingestion and verification.
+  ```
+
+---
+
+**Next:** [Data Understanding](./05_data_understanding.md)
