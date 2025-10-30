@@ -1,4 +1,4 @@
-# ------------------------- REGRESSION FROM SCRATCH ------------------------- #
+# ---------------------------- REGRESSION FROM SCRATCH ---------------------------- #
 # This file includes implementations of simple linear regression,
 # multiple linear regression, and logistic regression from scratch using
 # NumPy. Each model includes methods for fitting to data and making predictions.
@@ -7,7 +7,7 @@
 #
 # Even though I tried to implement best practices, I did not include any
 # docstrings or type hints to keep the code concise and focused on the core logic.
-# -------------------------------------------------------------------------- #
+# --------------------------------------------------------------------------------- #
 
 from __future__ import annotations
 import numpy as np
