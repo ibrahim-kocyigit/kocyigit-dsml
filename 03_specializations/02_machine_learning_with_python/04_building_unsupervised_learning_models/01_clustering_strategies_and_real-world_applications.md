@@ -66,10 +66,10 @@ This is the most common approach.
 2. **Iterate:** In each step, find the two closest clusters and **merge** them into a single new cluster.
 3. **Terminate:** Repeat until all data points have been merged into a single, large cluster.
 
-![](./images/0104.png)
-![](./images/0105.png)
-![](./images/0106.png)
-![](./images/0107.png)
+<img src="./images/0104.png" width="800">
+<img src="./images/0105.png" width="800">
+<img src="./images/0106.png" width="800">
+<img src="./images/0107.png" width="800">
 *The Canadian cities example shows how Montreal and Ottawa are merged first, then that cluster is merged with Toronto, and so on.*
 
 ### 4.2. Divisive Clustering (Top-Down)
