@@ -19,7 +19,7 @@ The first step is to meet with all relevant stakeholders (business sponsors, dom
 * **Action:** Transcribe detailed notes from the meeting(s).
 
 ```markdown
-> 📝 **Meeting Notes Summary:**
+> **Meeting Notes Summary:**
 >
 > * **Date:** [Insert Date]
 > * **Attendees:** [List Attendees and Roles]
@@ -32,7 +32,7 @@ Based on the gathered information, distill the core issue into a clear and conci
 * **Action:** Formulate the business problem statement.
 
 ```markdown
-> 📝 **Business Problem Statement:**
+> **Business Problem Statement:**
 > [Insert a clear, one-to-two sentence summary of the business problem here. Example: "Customer churn in the premium subscription tier has increased by 15% over the last two quarters, leading to a significant revenue loss and impacting future growth projections."]
 ```
 
