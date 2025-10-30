@@ -79,6 +79,7 @@ Finalize the data requirements and get approval from data owners and stakeholder
 ### Validation Summary
 * **Date Approved:** [Insert Date]
 * **Approved By:** [List Data Owners/SMEs]
+```
 
 ---
 
