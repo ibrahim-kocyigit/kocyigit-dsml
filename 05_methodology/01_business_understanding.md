@@ -40,24 +40,24 @@ Translate the business problem into specific, measurable business goals.
 
 * **Action:** List the primary and secondary objectives for the project in business terms.
 
-> **Project Objectives & Success Criteria:**
->
-> 1.  **Primary Objective:** *[Example: Reduce the rate of customer churn in the premium tier by at least 5% within the next six months.]*
-> 2.  **Secondary Objective:** *[Example: Identify the top 5 factors that are most influential in a customer's decision to churn, to inform future marketing strategies.]*
-> 3.  **Success Criteria:** *[Example: The solution's outputs should lead to a measurable increase in customer retention campaign effectiveness, benchmarked against the current process.]*
-
+```markdown
+> ### Project Objectives & Success Criteria
+> 1.  **Primary Objective:** [Example: Reduce the rate of customer churn in the premium tier by at least 5% within the next six months.]
+> 2.  **Secondary Objective:** [Example: Identify the top 5 factors that are most influential in a customer's decision to churn, to inform future marketing strategies.]
+> 3.  **Success Criteria:** [Example: The solution's outputs should lead to a measurable increase in customer retention campaign effectiveness, benchmarked against the current process.]
+```
 
 ## Step 4: Define Solution Requirements
 Outline the high-level requirements for the final solution from the perspective of its end-users and the business.
 
 * **Action:** Detail the essential functionalities and constraints.
 
-> **Solution Requirements:**
->
-> * **Functionality:** *[Example: The solution must produce a weekly list of customers who are identified as high-risk.]*
-> * **Usability:** *[Example: The business team must be able to understand the primary reasons provided for a customer's high-risk status.]*
-> * **Integration:** *[Example: The final output list must be delivered in a CSV format to a designated shared drive.]*
-
+```markdown
+> ### Solution Requirements
+> * **Functionality:** [Example: The solution must produce a weekly list of customers who are identified as high-risk.]
+> * **Usability:** [Example: The business team must be able to understand the primary reasons provided for a customer's high-risk status.]
+> * **Integration:** [Example: The final output list must be delivered in a CSV format to a designated shared drive.]
+```
 
 ## Step 5: Documentation and Validation
 This final step ensures all stakeholders are aligned before any technical work begins.
@@ -67,9 +67,10 @@ This final step ensures all stakeholders are aligned before any technical work b
 * **Action:** Implement feedback and secure formal sign-off.
 * **Action:** Add a summary of this stage to the main project README.md.
 
-
-> **Validation Summary:**
+```markdown
+> ### Validation Summary:**
 >
-> * ***Date Signed Off:*** *[Insert Date]*
-> * ***Key Revisions:*** *[Summarize any important changes made during the review process.]*
-> * ***Signed Off By:*** *[List Stakeholders]*
+> * **Date Signed Off:** [Insert Date]
+> * **Key Revisions:** [Summarize any important changes made during the review process.]
+> * **Signed Off By:** [List Stakeholders]
+```
