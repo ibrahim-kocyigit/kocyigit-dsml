@@ -21,9 +21,9 @@ The first step is to meet with all relevant stakeholders (business sponsors, dom
 ```markdown
 > 📝 **Meeting Notes Summary:**
 >
-> * ***Date:*** *[Insert Date]*
-> * ***Attendees:*** *[List Attendees and Roles]*
-> * ***Key Takeaways:*** *[Summarize the most important points, decisions, and action items here.]*
+> * **Date:** [Insert Date]
+> * **Attendees:** [List Attendees and Roles]
+> * **Key Takeaways:** [Summarize the most important points, decisions, and action items here.]
 ```
 
 ## Step 2: Define the Business Problem
