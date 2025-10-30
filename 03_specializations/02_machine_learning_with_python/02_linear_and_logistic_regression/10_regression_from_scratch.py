@@ -167,7 +167,7 @@ def logistic_regression_tutorial():
     print(" ")
 
 
-# Main function to select and run the desired regression tutorial
+# Main function to run the tutorials
 def main():
     simple_linear_regression_tutorial()
     multiple_linear_regression_tutorial()
