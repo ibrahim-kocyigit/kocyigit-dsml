@@ -20,8 +20,6 @@ class SimpleLinearRegression:
         return self
 
     def predict(self, X):
-        if self.slope is None or self.intercept is None:
-            raise ValueError("Model is not fitted yet. Call .fit() before .predict()")
         return self.slope * X + self.intercept
 
 
@@ -45,8 +43,6 @@ class MultipleLinearRegression:
         return self
 
     def predict(self, X):
-        if self.weights is None or self.bias is None:
-            raise ValueError("Model is not fitted yet. Call .fit() before .predict()")
         return X @ self.weights + self.bias
 
 
@@ -75,8 +71,6 @@ class LogisticRegression:
         return self
 
     def predict(self, X, mode="prob"):
-        if self.weights is None or self.bias is None:
-            raise ValueError("Model is not fitted yet. Call .fit() before .predict()")
         probs = sigmoid(X @ self.weights + self.bias)
         if mode == "prob":
             return np.array(probs)
