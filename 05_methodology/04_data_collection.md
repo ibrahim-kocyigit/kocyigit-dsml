@@ -52,7 +52,8 @@ Perform a quick, high-level check to ensure the collected data is readable and a
       * By glancing at the first few rows (`.head()`) and the data types (`.info()`), does the data match expectations?
 
 ```markdown
-### Initial Data Ingestion and Verification
+### Initial Data Ingestion and Verification
+
 > [Between triple quotes, paste the output of df.info() for the primary raw dataset here to provide a quick summary of columns, non-null counts, and data types.]
 
 > [Between triple quotes, paste the output of df.head() here.]
