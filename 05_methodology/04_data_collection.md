@@ -53,9 +53,9 @@ Perform a quick, high-level check to ensure the collected data is readable and a
 
 ```markdown
 ### Initial Data Ingestion and Verification
-> [Between triple quotes, paste the output of df.info() for the primary raw dataset here to provide a quick summary of columns, non-null counts, and data types.]
-> 
-> [Between triple quotes, paste the output of df.head() here.]
+[Between triple quotes, paste the output of df.info() for the primary raw dataset here to provide a quick summary of columns, non-null counts, and data types.]
+
+[Between triple quotes, paste the output of df.head() here.]
 ```
 
 ## Step 4: Document the Collected Data
