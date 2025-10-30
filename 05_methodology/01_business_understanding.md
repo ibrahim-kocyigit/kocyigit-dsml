@@ -18,12 +18,13 @@ The first step is to meet with all relevant stakeholders (business sponsors, dom
     * Who are the subject matter experts we can consult throughout the project?
 * **Action:** Transcribe detailed notes from the meeting(s).
 
-> **Meeting Notes Summary:**
+```markdown
+> 📝 **Meeting Notes Summary:**
 >
 > * ***Date:*** *[Insert Date]*
 > * ***Attendees:*** *[List Attendees and Roles]*
 > * ***Key Takeaways:*** *[Summarize the most important points, decisions, and action items here.]*
-
+```
 
 ## Step 2: Define the Business Problem
 Based on the gathered information, distill the core issue into a clear and concise statement.
