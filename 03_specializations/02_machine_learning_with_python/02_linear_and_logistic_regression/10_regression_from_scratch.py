@@ -73,8 +73,8 @@ class LogisticRegression:
     def predict(self, X, mode="prob"):
         probs = sigmoid(X @ self.weights + self.bias)
         if mode == "prob":
-            return np.array(probs)
+            return probs
         elif mode == "class":
-            return (np.array(probs) >= 0.5).astype(int)
+            return (probs >= 0.5).astype(int)
         else:
             raise ValueError("mode must be 'prob' or 'class'")
