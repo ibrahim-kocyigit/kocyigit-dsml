@@ -31,10 +31,11 @@ Based on the gathered information, distill the core issue into a clear and conci
 
 * **Action:** Formulate the business problem statement.
 
-> **Business Problem Statement:**
+```markdown
+> 📝 **Business Problem Statement:**
 >
-> * *[Insert a clear, one-to-two sentence summary of the business problem here. Example: "Customer churn in the premium subscription tier has increased by 15% over the last two quarters, leading to a significant revenue loss and impacting future growth projections."]*
-
+> * [Insert a clear, one-to-two sentence summary of the business problem here. Example: "Customer churn in the premium subscription tier has increased by 15% over the last two quarters, leading to a significant revenue loss and impacting future growth projections."]
+```
 
 ## Step 3: Define Project Objectives
 Translate the business problem into specific, measurable business goals.
