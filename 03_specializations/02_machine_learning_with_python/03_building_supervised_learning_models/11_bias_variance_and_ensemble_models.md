@@ -11,19 +11,19 @@ To understand model performance, we need to understand two types of error: bias 
     * **Low Bias:** The model's predictions are, on average, correct.
 
 * **Variance (Precision):** This refers to how much a model's predictions fluctuate for a given data point when trained on different subsets of the data.
-    * **High Variance:** The model is highly sensitivie to the specific training data it sees. It learns the noise, not just the signal. This leads to **overfitting**.
+    * **High Variance:** The model is highly sensitive to the specific training data it sees. It learns the noise, not just the signal. This leads to **overfitting**.
     * **Low Variance:** The model produces stable and consistent predictions across different training sets.
 
 The ideal model has **low bias** and **low variance**, consistently hitting the center of the target.
 
 ## 2. The Bias-Variance Tradeoff
 
-In machine learning, there is a fundamental tradeoff between bias and variance. You can't lower one without typically incresing the other.
+In machine learning, there is a fundamental tradeoff between bias and variance. You can't lower one without typically increasing the other.
 
 <img src="./images/1102.png" alt="Bias-Variance Tradeoff Curve" width="600"/>
 
 * **Low Model Complexity (e.g., a shallow Decision Tree)** leads to **high bias** and low variance. The model is too simple to learn the data's patterns (**underfitting**). It performs poorly on both training and test data.
-* **High Model Complexity (e.g., a very deep Decirion Tree)** leads to **low bias** and high variance. The model is so complex that it memorizes the training data, including its noise (**overfitting**). It performs perfectly on training data but very poorly on unseen data.
+* **High Model Complexity (e.g., a very deep Decision Tree)** leads to **low bias** and high variance. The model is so complex that it memorizes the training data, including its noise (**overfitting**). It performs perfectly on training data but very poorly on unseen data.
 
 The goal is to find the "sweet spot" of model complexity that minimizes the **total error**, which is a combination of bias, variance, and irreducible error (random noise in the data itself.)
 
@@ -75,4 +75,4 @@ By systematically correcting errors, boosting turns a series of weak learners (h
 
 ---
 
-**Next:** [Lab: Random Forests and XGBoost]()
+**Next:** [Lab: Random Forests and XGBoost](./12_lab--random_forest_and_xgboost.ipynb)
