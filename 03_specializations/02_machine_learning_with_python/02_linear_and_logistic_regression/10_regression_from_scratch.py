@@ -1,12 +1,12 @@
 # ---------------------------- REGRESSION FROM SCRATCH ---------------------------- #
-# This file includes implementations of simple linear regression,
-# multiple linear regression, and logistic regression from scratch using
-# NumPy. Each model includes methods for fitting to data and making predictions.
-# Additionally, there are tutorial functions demonstrating how to use each model
-# with synthetic datasets, along with evaluation metrics.
+# This file includes implementations of simple linear regression, multiple linear
+# regression, and logistic regression from scratch using NumPy. Additionally,
+# there are tutorial functions demonstrating how to use each model with synthetic
+# datasets, along with evaluation metrics.
 #
-# Even though I tried to implement best practices, I did not include any
-# docstrings or type hints to keep the code concise and focused on the core logic.
+# Even though I tried to implement best practices when it comes to code organization
+# and structure, I did not include any docstrings or type hints to keep the code
+# concise and focused on the core logic.
 # --------------------------------------------------------------------------------- #
 
 from __future__ import annotations
@@ -28,10 +28,8 @@ class SimpleLinearRegression:
         self.slope = None
 
     def fit(self, X, y):
-        x_bar = np.mean(X)
-        y_bar = np.mean(y)
-        self.slope = np.cov(X, y, bias=True)[0, 1] / np.var(X)
-        self.intercept = y_bar - self.slope * x_bar
+        self.slope = np.cov(X, y, bias=True)[0, 1] / np.var(X)  # rise / run
+        self.intercept = np.mean(y) - self.slope * np.mean(X)
         return self
 
     def predict(self, X):
