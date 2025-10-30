@@ -16,11 +16,11 @@ Based on the project objectives, determine the appropriate family of machine lea
     * Are we trying to discover natural groupings in the data without a predefined outcome? -> **Clustering**
     * Are we trying to find a simpler underlying structure in high-dimensional data? -> **Dimensionality Reduction**
 
-> **ML Problem Framing:**
->
-> * ***Type of Problem:*** *[Insert one: Supervised Classification, Supervised Regression, Unsupervised Clustering, etc.]*
-> * ***Brief Justification:*** *[Explain why this framing fits the business objective. Example: "Since the business objective is to predict whether a customer will churn (a 'yes' or 'no' outcome), this is a supervised binary classification problem."]*
-
+```markdown
+### ML Problem Framing:**
+* ***Type of Problem:*** *[Insert one: Supervised Classification, Supervised Regression, Unsupervised Clustering, etc.]*
+* ***Brief Justification:*** *[Explain why this framing fits the business objective. Example: "Since the business objective is to predict whether a customer will churn (a 'yes' or 'no' outcome), this is a supervised binary classification problem."]*
+```
 
 ## Step 2: Identify Candidate Models
 List potential algorithms that could solve the problem. It's good practice to start with a simple, interpretable baseline model and then list more complex candidates.

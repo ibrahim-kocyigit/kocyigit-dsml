@@ -19,10 +19,10 @@ The first step is to meet with all relevant stakeholders (business sponsors, dom
 * **Action:** Transcribe detailed notes from the meeting(s).
 
 ```markdown
-> ### Meeting Notes Summary
-> * **Date:** [Insert Date]
-> * **Attendees:** [List Attendees and Roles]
-> * **Key Takeaways:** [Summarize the most important points, decisions, and action items here.]
+### Meeting Notes Summary
+* **Date:** [Insert Date]
+* **Attendees:** [List Attendees and Roles]
+* **Key Takeaways:** [Summarize the most important points, decisions, and action items here.]
 ```
 
 ## Step 2: Define the Business Problem
@@ -31,8 +31,8 @@ Based on the gathered information, distill the core issue into a clear and conci
 * **Action:** Formulate the business problem statement.
 
 ```markdown
-> ### Business Problem Statement
-> [Insert a clear, one-to-two sentence summary of the business problem here. Example: "Customer churn in the premium subscription tier has increased by 15% over the last two quarters, leading to a significant revenue loss and impacting future growth projections."]
+### Business Problem Statement
+[Insert a clear, one-to-two sentence summary of the business problem here. Example: "Customer churn in the premium subscription tier has increased by 15% over the last two quarters, leading to a significant revenue loss and impacting future growth projections."]
 ```
 
 ## Step 3: Define Project Objectives
@@ -41,10 +41,10 @@ Translate the business problem into specific, measurable business goals.
 * **Action:** List the primary and secondary objectives for the project in business terms.
 
 ```markdown
-> ### Project Objectives & Success Criteria
-> 1.  **Primary Objective:** [Example: Reduce the rate of customer churn in the premium tier by at least 5% within the next six months.]
-> 2.  **Secondary Objective:** [Example: Identify the top 5 factors that are most influential in a customer's decision to churn, to inform future marketing strategies.]
-> 3.  **Success Criteria:** [Example: The solution's outputs should lead to a measurable increase in customer retention campaign effectiveness, benchmarked against the current process.]
+### Project Objectives & Success Criteria
+1.  **Primary Objective:** [Example: Reduce the rate of customer churn in the premium tier by at least 5% within the next six months.]
+2.  **Secondary Objective:** [Example: Identify the top 5 factors that are most influential in a customer's decision to churn, to inform future marketing strategies.]
+3.  **Success Criteria:** [Example: The solution's outputs should lead to a measurable increase in customer retention campaign effectiveness, benchmarked against the current process.]
 ```
 
 ## Step 4: Define Solution Requirements
@@ -53,10 +53,10 @@ Outline the high-level requirements for the final solution from the perspective 
 * **Action:** Detail the essential functionalities and constraints.
 
 ```markdown
-> ### Solution Requirements
-> * **Functionality:** [Example: The solution must produce a weekly list of customers who are identified as high-risk.]
-> * **Usability:** [Example: The business team must be able to understand the primary reasons provided for a customer's high-risk status.]
-> * **Integration:** [Example: The final output list must be delivered in a CSV format to a designated shared drive.]
+### Solution Requirements
+* **Functionality:** [Example: The solution must produce a weekly list of customers who are identified as high-risk.]
+* **Usability:** [Example: The business team must be able to understand the primary reasons provided for a customer's high-risk status.]
+* **Integration:** [Example: The final output list must be delivered in a CSV format to a designated shared drive.]
 ```
 
 ## Step 5: Documentation and Validation
@@ -68,8 +68,8 @@ This final step ensures all stakeholders are aligned before any technical work b
 * **Action:** Add a summary of this stage to the main project README.md.
 
 ```markdown
-> ### Validation Summary
-> * **Date Signed Off:** [Insert Date]
-> * **Key Revisions:** [Summarize any important changes made during the review process.]
-> * **Signed Off By:** [List Stakeholders]
+### Validation Summary
+* **Date Signed Off:** [Insert Date]
+* **Key Revisions:** [Summarize any important changes made during the review process.]
+* **Signed Off By:** [List Stakeholders]
 ```
