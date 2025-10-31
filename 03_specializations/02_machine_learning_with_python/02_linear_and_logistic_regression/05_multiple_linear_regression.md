@@ -17,7 +17,7 @@ The equation for multiple linear regression is a straightforward extension of th
 
 $$ \hat{y} = \theta_0 + \theta_1 x_1 + \theta_2 x_2 + \dots + \theta_n x_n $$
 
-Where:
+...where:
 *   $\hat{y}$ is the **predicted value** of the target.
 *   $x_1, x_2, \dots, x_n$ are the **independent variables** (features).
 *   $\theta_0$ is the **y-intercept** (or bias).
