@@ -14,6 +14,8 @@ Machine learning is a part of the broader field of Artificial Intelligence (AI).
 *   **Machine Learning (ML) (A Subset of AI):** The specific practice of using algorithms to learn patterns from data. It often requires humans to guide the process through "feature engineering" (selecting the right data characteristics for the model to learn from).
 *   **Deep Learning (DL) (A Specialized Subset of ML):** A powerful type of machine learning that uses complex, multi-layered "neural networks." Its key advantage is the ability to automatically learn and extract features from highly complex and unstructured data (like images or audio), reducing the need for manual feature engineering.
 
+<img src="./images/0101.png" width="400">
+
 ## 3. How Do Machines Learn? The Four Learning Paradigms
 
 Machine learning models differ in *how* they learn from data. There are four main approaches:
