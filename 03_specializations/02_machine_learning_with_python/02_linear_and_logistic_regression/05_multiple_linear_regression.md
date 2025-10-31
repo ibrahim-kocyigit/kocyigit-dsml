@@ -39,11 +39,11 @@ Just like with simple linear regression, the goal is to find the parameters that
 
 Multiple Linear Regression requires all input features to be numerical. So what do we do with categorical variables like "Fuel Type" or "Transmission"? We convert them into numbers.
 
-#### Binary Variables (2 categories):
+#### Binary Variables (2 categories):  
 Convert them into a single numerical feature with values of 0 and 1. This is called creating a **dummy variable**.
 * **Example:** For a `Transmission` feature, "Manual" could become 0 and "Automatic" could become 1.
 
-#### Multi-Class Variables (>2 categories):
+#### Multi-Class Variables (>2 categories):  
 Convert them into multiple new boolean (0/1) features, one for each category. This technique is called **One-Hot Encoding**.
 * **Example:** For a `FuelType` feature with classes "Gas", "Diesel", "Electric", we would create three new features: `is_Gas`, `is_Diesel`, and `is_Electric`. A gasoline car would have a 1 in the `is_Gas` column, and 0s in the others.
 
