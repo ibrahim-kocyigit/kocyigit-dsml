@@ -1,3 +1,8 @@
+# The implementation files in this course are aimed to provide clear and concise
+# implementations of the algorithms discussed in the lectures. They are designed for
+# educational purposes and may not include all optimizations or best practices for
+# production-level code.
+
 # ----- Implementation: Simple Linear Regression ----- #
 
 from __future__ import annotations
