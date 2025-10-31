@@ -40,7 +40,7 @@ For the most promising models (typically those with the best balance of performa
 * **Action:** Use `GridSearchCV` or `RandomizedSearchCV` to find the optimal hyperparameters for the top 1-2 candidate models.
 
 ```Markdown
-#### Hyperparameter Tuning Results
+### Hyperparameter Tuning Results
 * **Model Tuned:** [Example: Random Forest Classifier]
 * **Tuning Method:** [e.g., RandomizedSearchCV with 50 iterations and 5-fold CV.]
 * **Best Parameters Found:** [e.g., `{'n_estimators': 300, 'max_depth': 12, 'min_samples_leaf': 4}`]
