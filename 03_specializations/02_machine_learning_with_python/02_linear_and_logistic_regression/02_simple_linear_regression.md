@@ -61,7 +61,7 @@ $$ \theta_0 = \bar{y} - \theta_1 \bar{x} $$
 
 Where $\bar{x}$ and $\bar{y}$ are the mean (average) values of the `x` and `y` variables, respectively.
 
-### Example Calculation:
+### Example Calculation
 For the CO2 dataset, after calculating the means and sums:
 *   The slope $\theta_1$ is calculated to be **39**.
 *   The intercept $\theta_0$ is calculated to be **125.7**.
