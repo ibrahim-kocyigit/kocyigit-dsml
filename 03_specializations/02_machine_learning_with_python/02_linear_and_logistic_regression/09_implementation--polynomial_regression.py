@@ -77,4 +77,4 @@ class MultipleLinearRegression:
         return X @ self.weights + self.bias
 
 
-# Next: 07_lab--multiplie_linear_regression.ipynb
+# Next: 10_lab--polynomial_regression.ipynb
