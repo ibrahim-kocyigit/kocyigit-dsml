@@ -28,11 +28,9 @@ The machine learning algorithm's job is to find the optimal values for all the d
 ## 3. How to Train the Model: Finding the Best Parameters
 Just like with simple linear regression, the goal is to find the parameters that **minimize the Mean Squared Error (MSE)**. There are two primary methods to achieve this:
 
-### 1. Ordinary Least Squares (OLS):
+### 1. Ordinary Least Squares (OLS)
 
-**How it works:** A direct, mathematical approach that uses linear algebra (matrix operations) on the entire dataset to calculate the single best set of coefficients. This is also known as the **Normal Equation**.
-
-**The Formula:**     
+A direct, mathematical approach that uses linear algebra (matrix operations) on the entire dataset to calculate the single best set of coefficients. This is also known as the **Normal Equation**: 
 
 $$
 \theta = (X^T X)^{-1} X^T y
@@ -40,7 +38,7 @@ $$
     
 ...where $X$ is the feature matrix (with an added column of ones for the intercept $\theta_0$), and $y$ is the vector of target values.
 
-**When to use:** Works well for smaller to medium-sized datasets where the computation is feasible.
+This method works well for smaller to medium-sized datasets where the computation is feasible.
 
 
 ### 2. Optimization Approach (e.g., Gradient Descent)
