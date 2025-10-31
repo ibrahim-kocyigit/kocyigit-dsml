@@ -8,7 +8,7 @@ Simple Linear Regression is a supervised learning technique used to model the re
 
 **The Analogy:** Imagine plotting your data on a scatter plot. Simple Linear Regression is the process of finding the one straight line that best "cuts through" the cloud of data points, capturing the general trend.
 
-**Example: CO2 Emissions:**
+### Example: CO2 Emissions
 * **Independent Variable (x):** `Engine Size`
 * **Dependent Variable (y):** `CO2 Emissions`
 * A scatter plot shows that as `Engine Size` increases, `CO2 Emissions` also tend to increase in a roughly linear fashion. Our goal is to find the line that best represents this relationship.
@@ -34,18 +34,18 @@ The machine learning algorithm's job is to find the optimal values for the param
 
 How does the algorithm know which line is the best? It aims to minimize the prediction error.
 
-#### Residual Error:
+### Residual Error
 For any single data point, the residual is the **vertical distance** between the actual value (`y`) and the value predicted by the line (`ŷ`). It's the measure of our model's error for that one point.
 * `Error = Actual Value - Predicted Value`
 
-#### Mean Squared Error (MSE):
+### Mean Squared Error (MSE)
 To find the total error for the whole dataset, we can't just average the residuals (because positive and negative errors would cancel out). Instead, we:
 
 1.  Square each individual residual error.
 2.  Calculate the average of these squared errors.
 This gives us the **Mean Squared Error (MSE)**.
 
-#### Ordinary Least Squares (OLS):
+### Ordinary Least Squares (OLS)
 The goal of the linear regression algorithm is to find the specific values of $\theta_0$ and $\theta_1$ that **minimize the MSE**. This method is called **Ordinary Least Squares (OLS)** because it finds the line that minimizes the sum of the squared errors.
 
 ## 4. Finding the Solution: The OLS Formulas
@@ -62,7 +62,7 @@ $$ \theta_0 = \bar{y} - \theta_1 \bar{x} $$
 
 Where $\bar{x}$ and $\bar{y}$ are the mean (average) values of the `x` and `y` variables, respectively.
 
-#### Example Calculation:
+### Example Calculation:
 For the CO2 dataset, after calculating the means and sums:
 *   The slope $\theta_1$ is calculated to be **39**.
 *   The intercept $\theta_0$ is calculated to be **125.7**.
