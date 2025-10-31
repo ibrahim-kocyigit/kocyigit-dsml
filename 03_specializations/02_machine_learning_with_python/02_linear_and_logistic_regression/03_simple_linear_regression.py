@@ -29,4 +29,4 @@ class SimpleLinearRegression:
         return self.slope * X + self.intercept
 
 
-# Next: 04_lab--simple_linear_regression.ipynb
+# Next: 04_simple_linear_regression.ipynb

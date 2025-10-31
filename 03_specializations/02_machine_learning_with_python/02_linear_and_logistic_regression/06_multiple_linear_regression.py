@@ -2,31 +2,6 @@ from __future__ import annotations
 import numpy as np
 
 
-# This basic implementation works for univariate polynomial regression only.
-class PolynomialRegression:
-    def __init__(self, degree: int, learning_rate: float = 0.01, max_iters: int = 1000):
-        self.degree = degree
-        self.model = MultipleLinearRegression(
-            learning_rate=learning_rate, max_iters=max_iters
-        )
-
-    def _transform(self, X: np.ndarray) -> np.ndarray:
-        X_poly = np.ones((len(X), self.degree))
-        for i in range(1, self.degree + 1):
-            X_poly[:, i - 1] = (X**i).ravel()
-        return X_poly
-
-    def fit(self, X: np.ndarray, y: np.ndarray) -> PolynomialRegression:
-        X_poly = self._transform(X)
-        self.model.fit(X_poly, y)
-        return self
-
-    def predict(self, X: np.ndarray) -> np.ndarray:
-        X_poly = self._transform(X)
-        return self.model.predict(X_poly)
-
-
-# This class was copied from 06_implementation--multiple_linear_regression.py
 class MultipleLinearRegression:
     def __init__(self, learning_rate: float = 0.01, max_iters: int = 1000):
         self.learning_rate = learning_rate
@@ -77,4 +52,4 @@ class MultipleLinearRegression:
         return X @ self.weights + self.bias
 
 
-# Next: 10_lab--polynomial_regression.ipynb
+# Next: 07_multiplie_linear_regression.ipynb
