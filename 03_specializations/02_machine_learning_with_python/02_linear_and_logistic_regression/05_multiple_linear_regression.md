@@ -44,8 +44,6 @@ $$
 ### 2. Optimization Approach (e.g., Gradient Descent)
 An iterative approach. It starts with random values for the coefficients and then repeatedly makes small adjustments to them, each time moving in the direction that reduces the model's error on the training data. It continues this process until the error is minimized.
 
-#### The Formulas
-
 **Cost Function (MSE):**  This is the function we want to minimize:
 
 $$
