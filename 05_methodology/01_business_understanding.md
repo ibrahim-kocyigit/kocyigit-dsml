@@ -70,7 +70,8 @@ This final step ensures all stakeholders are aligned before any technical work b
 ```markdown
 ### Validation Summary
 * **Date Signed Off:** [Insert Date]
-* **Key Revisions:** [Summarize any important changes made during the review process.]
+* **Key Revisions:**
+    * [Summarize any important changes made during the review process.]
 * **Signed Off By:** [List Stakeholders]
 ```
 

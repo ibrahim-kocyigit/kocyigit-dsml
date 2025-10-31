@@ -11,14 +11,13 @@ First, we train the simple baseline model identified in Stage 2. This provides a
 
 * **Action:** Train the baseline model using the training data (`X_train`, `y_train`).
 * **Action:** Evaluate its performance using 5-fold cross-validation to get a robust score.
-* **Models Connection:** This step utilizes code from the `03_specialization` pillar, such as `03_regression/01_linear_regression/` or `03_classification/01_logistic_regression/`.
 
-> **Baseline Model Performance:**
->
-> * **Model:** *[Example: Logistic Regression]*
-> * **Cross-Validation Score (Primary Metric - e.g., AUC):** *[e.g., 0.78 ± 0.02]*
-> * **Notes:** *[e.g., "Establishes the minimum acceptable performance. The model is fast and highly interpretable."]*
-
+```Markdown
+### Baseline Model Performance
+* **Model:** [Example: Logistic Regression]
+* **Cross-Validation Score (Primary Metric - e.g., AUC):** [e.g., 0.78 ± 0.02]
+* **Notes:** [e.g., "Establishes the minimum acceptable performance. The model is fast and highly interpretable."]
+```
 
 ## Step 2: Train Candidate Models
 Train the other, potentially more complex, candidate models. The goal here is to see if more sophisticated algorithms provide a significant performance lift over the baseline.
@@ -26,28 +25,27 @@ Train the other, potentially more complex, candidate models. The goal here is to
 * **Action:** Train each candidate model on the training data.
 * **Action:** Evaluate each using 5-fold cross-validation.
 
-> **Candidate Model Performance Summary:**
->
-> | Model Name | CV Score (Mean) | CV Score (Std Dev) | Training Time (s) | Initial Observations |
-> | :--- | :--- | :--- | :--- | :--- |
-> | *Random Forest* | *[e.g., 0.83]* | *[e.g., 0.02]* | *[e.g., 15.2]* | *[Significant lift over baseline, but slower.]* |
-> | *SVM* | *[e.g., 0.81]* | *[e.g., 0.03]* | *[e.g., 45.7]* | *[Good performance but very slow to train.]* |
-> | *Gradient Boosting* | *[e.g., 0.84]* | *[e.g., 0.02]* | *[e.g., 20.5]* | *[Highest performance out-of-the-box.]* |
-
+```Markdown
+### Candidate Model Performance Summary
+| Model Name | CV Score (Mean) | CV Score (Std Dev) | Training Time (s) | Initial Observations |
+| :--- | :--- | :--- | :--- | :--- |
+| **Random Forest** | [e.g., 0.83] | [e.g., 0.02] | [e.g., 15.2] | [Significant lift over baseline, but slower.] |
+| **SVM** | [e.g., 0.81] | [e.g., 0.03] | [e.g., 45.7] | [Good performance but very slow to train.] |
+| **Gradient Boosting** | [e.g., 0.84] | [e.g., 0.02] | [e.g., 20.5] | [Highest performance out-of-the-box.] |
+```
 
 ## Step 3: Hyperparameter Tuning
 For the most promising models (typically those with the best balance of performance and speed), perform a systematic search for the best hyperparameter settings.
 
 * **Action:** Use `GridSearchCV` or `RandomizedSearchCV` to find the optimal hyperparameters for the top 1-2 candidate models.
-* **Models Connection:** This step uses skills from `03_specialization/05_model_improvement_and_selection/`.
 
-> **Hyperparameter Tuning Results:**
->
-> * **Model Tuned:** *[Example: Random Forest Classifier]*
-> * **Tuning Method:** *[e.g., RandomizedSearchCV with 50 iterations and 5-fold CV.]*
-> * **Best Parameters Found:** *[e.g., `{'n_estimators': 300, 'max_depth': 12, 'min_samples_leaf': 4}`]*
-> * **Best CV Score After Tuning:** *[e.g., 0.85 ± 0.01]*
-
+```Markdown
+#### Hyperparameter Tuning Results
+* **Model Tuned:** [Example: Random Forest Classifier]
+* **Tuning Method:** [e.g., RandomizedSearchCV with 50 iterations and 5-fold CV.]
+* **Best Parameters Found:** [e.g., `{'n_estimators': 300, 'max_depth': 12, 'min_samples_leaf': 4}`]
+* **Best CV Score After Tuning:** [e.g., 0.85 ± 0.01]
+```
 
 ## Step 4: Final Model Selection
 Compare the robust, cross-validated scores of the tuned models and select the single "champion" model that will be used for the final evaluation and potential deployment.
@@ -58,11 +56,11 @@ Compare the robust, cross-validated scores of the tuned models and select the si
     * Does the performance gain from a complex model justify any loss in interpretability or increase in prediction time?
     * Does the selected model meet the business success criteria outlined in Stage 1 and the technical acceptance threshold from Stage 2?
 
-> **Champion Model Selection:**
->
-> * **Selected Model:** *[Example: Tuned Random Forest Classifier]*
-> * **Justification:** *[Example: "The tuned Random Forest provided a 7% lift in our primary AUC metric over the baseline and slightly outperformed the Gradient Boosting model. Its feature importance attribute also provides a good level of interpretability, satisfying the business requirement to understand key drivers."]*
-
+```Markdown
+### Champion Model Selection:
+* **Selected Model:** [Example: Tuned Random Forest Classifier]
+* **Justification:** [Example: "The tuned Random Forest provided a 7% lift in our primary AUC metric over the baseline and slightly outperformed the Gradient Boosting model. Its feature importance attribute also provides a good level of interpretability, satisfying the business requirement to understand key drivers."]
+```
 
 ## Step 5: Final Review
 Conclude the modeling phase. The output of this stage is a single, trained model object and a report justifying its selection.
@@ -70,9 +68,14 @@ Conclude the modeling phase. The output of this stage is a single, trained model
 * **Action:** Prepare a brief summary report of the modeling process, experimental results, and final model selection.
 * **Action:** Add a summary of this stage to the main project `README.md`.
 
-> **Stage Summary:**
->
-> * ***Status:*** *[Completed]*
-> * ***Champion Model:*** *[Example: `Tuned Random Forest`]*
-> * ***Expected Performance (from CV):*** *[e.g., `AUC = 0.85 ± 0.01`]*
-> * ***Next Steps:*** *[e.g., "Proceed to Stage 8 to perform a final evaluation of the champion model on the held-back test set."]*
+```Markdown
+### Modeling Stage Review
+* **Status:** [Completed]
+* **Champion Model:** [Example: `Tuned Random Forest`]
+* **Expected Performance (from CV):** [e.g., `AUC = 0.85 ± 0.01`]
+* **Next Steps:** [e.g., "Proceed to Stage 8 to perform a final evaluation of the champion model on the held-back test set."]
+```
+
+---
+
+**Next:** [Evaluation](./08_evaluation.md)

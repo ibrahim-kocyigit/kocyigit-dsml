@@ -17,16 +17,16 @@ Address all data quality issues that were identified during the Data Understandi
 ### Data Cleaning Log
 
 #### Handling Missing Values
-[Describe the strategy used. Example: "Missing values in the `Price` column were imputed using the median of the product's category, as discovered in Stage 5."]
+* [Describe the strategy used. Example: "Missing values in the `Price` column were imputed using the median of the product's category, as discovered in Stage 5."]
 
 #### Correcting Data Types
-[Describe any type corrections. Example: "The `OrderID` column, initially loaded as an integer, was converted to a string object to prevent it from being treated as a numerical feature."]
+* [Describe any type corrections. Example: "The `OrderID` column, initially loaded as an integer, was converted to a string object to prevent it from being treated as a numerical feature."]
 
 #### Handling Outliers:
-[Describe the outlier handling strategy. Example: "Outliers in the `TotalPrice` column were capped at the 99th percentile to reduce the effect of extreme values."]
+* [Describe the outlier handling strategy. Example: "Outliers in the `TotalPrice` column were capped at the 99th percentile to reduce the effect of extreme values."]
 
 #### Removing Duplicates:
-[State the result of duplicate checks. Example: "A check for duplicate rows was performed and 12 fully duplicated rows were removed from the dataset."]
+* [State the result of duplicate checks. Example: "A check for duplicate rows was performed and 12 fully duplicated rows were removed from the dataset."]
 ```
 
 ## Step 2: Feature Engineering

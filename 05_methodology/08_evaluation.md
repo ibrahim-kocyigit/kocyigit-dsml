@@ -12,12 +12,12 @@ Before the final evaluation, the champion model (with its optimal hyperparameter
 * **Action:** Take the best model and hyperparameters from Stage 7 and fit the model using all available training data (`X_train`, `y_train`).
 * **Justification:** This step ensures the model learns from the maximum amount of data possible before it is finalized.
 
-> **Final Training Log:**
->
-> * ***Model:** [Example: Tuned Random Forest Classifier]*
-> * ***Date of Training:** [e.g., 2025-06-20]*
-> * ***Action:** The champion model was successfully re-trained on the complete training dataset.*
-
+```Markdown
+### Final Training Log
+* **Model:** [Example: Tuned Random Forest Classifier]
+* **Date of Training:** [e.g., 2025-06-20]
+* **Action:** The champion model was successfully re-trained on the complete training dataset.
+```
 
 ## Step 2: Performance on the Hold-Out Test Set
 Use the final trained model to make predictions on the test set (`X_test`) and calculate the final performance metrics.
@@ -25,16 +25,16 @@ Use the final trained model to make predictions on the test set (`X_test`) and c
 * **Action:** Generate predictions on `X_test` and compute the primary and secondary metrics defined in Stage 2.
 * **Guiding Question:** How does the model's performance on the test set compare to the average performance seen during cross-validation? They should be reasonably close.
 
-> **Final Performance Metrics:**
->
-> | Metric | Cross-Validation Score (from Stage 7) | **Final Test Set Score** |
-> | :--- | :--- | :--- |
-> | *AUC* | *0.85 ± 0.01* | * **0.84** * |
-> | *Recall* | *0.78 ± 0.03* | * **0.76** * |
-> | *Accuracy*| *0.91 ± 0.01* | * **0.90** * |
->
-> **Comment:** *[The model's performance on the unseen test set is consistent with the results from cross-validation, which gives us confidence that the model is stable and has generalized well.]*
+```Markdown
+### Final Performance Metrics
+| Metric | Cross-Validation Score (from Stage 7) | **Final Test Set Score** |
+| :--- | :--- | :--- |
+| **AUC** | 0.85 ± 0.01 | **0.84** |
+| **Recall** | 0.78 ± 0.03 | **0.76** |
+| **Accuracy**| 0.91 ± 0.01 | **0.90** |
 
+**Comment:** [The model's performance on the unseen test set is consistent with the results from cross-validation, which gives us confidence that the model is stable and has generalized well.]
+```
 
 ## Step 3: Business Impact Analysis
 Translate the final technical metrics into tangible business outcomes. This step is critical for communicating the value of the model to stakeholders.
@@ -45,10 +45,10 @@ Translate the final technical metrics into tangible business outcomes. This step
     * What is the projected impact of this model if deployed (e.g., cost savings, revenue increase, number of customers identified)?
     * What are the risks associated with the model's errors (e.g., the cost of a False Positive vs. a False Negative)?
 
-> **Business Impact Statement:**
->
-> * *[Example: "The final model achieves a Recall of 76% on the test set. This translates to successfully identifying an estimated 3 out of every 4 customers who are likely to churn, meeting the primary business objective. The model's performance is projected to enable the retention team to target an additional 200 high-risk customers per month."]*
-
+```Markdown
+### Business Impact Statement
+* [Example: "The final model achieves a Recall of 76% on the test set. This translates to successfully identifying an estimated 3 out of every 4 customers who are likely to churn, meeting the primary business objective. The model's performance is projected to enable the retention team to target an additional 200 high-risk customers per month."]
+```
 
 ## Step 4: Final Model Review and Sign-Off
 Present the final evaluation results and business impact analysis to the project sponsors and key stakeholders for a final decision on deployment.
@@ -56,15 +56,19 @@ Present the final evaluation results and business impact analysis to the project
 * **Action:** Conduct a final model review meeting.
 * **Action:** Obtain a formal go/no-go decision for deployment.
 
-> **Deployment Decision:**
->
-> * ***Decision:*** *[Go / No-Go for Deployment]*
-> * ***Justification:*** *[Example: "The model's performance on the test set met the pre-defined success criteria. The business sponsor has approved moving to the deployment stage."]*
-> * ***Next Steps:*** *[e.g., "Proceed to Stage 9 to package the model for production."]*
-
+```Markdown
+### Deployment Decision
+* **Decision:** [Go / No-Go for Deployment]
+* **Justification:** [Example: "The model's performance on the test set met the pre-defined success criteria. The business sponsor has approved moving to the deployment stage."]
+* **Next Steps:** [e.g., "Proceed to Stage 9 to package the model for production."]
+```
 
 ## Step 5: Final Documentation
 Finalize all reports and documentation related to the model's performance.
 
 * **Action:** Prepare the final evaluation report. This is a key project deliverable that documents the model's expected real-world performance.
 * **Action:** Add a summary of this stage to the main project `README.md`.
+
+---
+
+**Next:** [Deployment](./09_deployment.md)

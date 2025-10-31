@@ -14,10 +14,11 @@ Before diving into analysis, it's crucial to perform a first pass of cleaning an
 
   * **Action:** Apply basic cleaning and formatting to the raw dataset.
   * **Guiding Questions:**
+      * Are there any columns that we are **100% sure** are not needed for the project and can be dropped? (Any columns that *might* be useful - for example, that might help making sense of another feature - should be retained for now.)
       * Are the column names consistent and easy to work with (e.g., convert to snake_case)?
       * Are there any obvious data type errors that need correction (e.g., numbers stored as strings, dates as objects)?
-      * Are there fully duplicated rows that can be safely removed?
-  * **Toolkit Connection:** This step uses basic Pandas functions like `.rename()`, `.astype()`, `.to_datetime()`, and `.drop_duplicates()`.
+      * Are there **fully** duplicated rows that can be safely removed?
+  * **Toolkit Connection:** This step uses basic Pandas functions like `.drop(columns=[])`, `.rename()`, `.astype()`, `.to_datetime()`, and `.drop_duplicates()`.
 
 ```Markdown
 ### Initial Data Shaping Report
