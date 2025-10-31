@@ -51,11 +51,11 @@ The goal of the linear regression algorithm is to find the specific values of $\
 
 For simple linear regression, there is a direct mathematical solution to find the optimal parameters that minimize the MSE. These formulas were derived in the early 1800s.
 
-### 1. Calculate the Slope ($\theta_1$)
+#### 1. Calculate the Slope ($\theta_1$)
 
 $$ \theta_1 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{n} (x_i - \bar{x})^2} $$
 
-### 2. Calculate the Intercept ($\theta_0$)
+#### 2. Calculate the Intercept ($\theta_0$)
 
 $$ \theta_0 = \bar{y} - \theta_1 \bar{x} $$
 
