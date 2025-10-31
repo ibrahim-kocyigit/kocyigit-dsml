@@ -29,7 +29,7 @@ class PolynomialRegression:
         return self.model.predict(X_poly)
 
 
-# This class was copied from 06_implementation--multiple_linear_regression.py
+# This class was copied from 06_multiple_linear_regression_implementation.py
 class MultipleLinearRegression:
     def __init__(self, learning_rate: float = 0.01, max_iters: int = 1000):
         self.learning_rate = learning_rate
