@@ -29,28 +29,35 @@ The machine learning algorithm's job is to find the optimal values for all the d
 Just like with simple linear regression, the goal is to find the parameters that **minimize the Mean Squared Error (MSE)**. There are two primary methods to achieve this:
 
 ### 1. Ordinary Least Squares (OLS):
-* **How it works:** A direct, mathematical approach that uses linear algebra (matrix operations) on the entire dataset to calculate the single best set of coefficients. This is also known as the **Normal Equation**.
-* **The Formula:**  
-    
-    $$ \theta = (X^T X)^{-1} X^T y $$
-    
-    Where $X$ is the feature matrix (with an added column of ones for the intercept $\theta_0$), and $y$ is the vector of target values.
-* **When to use:** Works well for smaller to medium-sized datasets where the computation is feasible.
 
-2. **Optimization Approach (e.g., Gradient Descent):**
-    * **How it works:** An iterative approach. It starts with random values for the coefficients and then repeatedly makes small adjustments to them, each time moving in the direction that reduces the model's error on the training data. It continues this process until the error is minimized.
-    * **The Formulas:**
-        1.  **Cost Function (MSE):** The function we want to minimize.
-            $$ J(\theta) = \frac{1}{m} \sum_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^2 $$
-        2.  **Gradients:** The partial derivatives of the cost function, which tell us the direction of steepest ascent. We move in the opposite direction.
-            *   For the bias/intercept ($\theta_0$):
-                $$ \frac{\partial J}{\partial \theta_0} = \frac{2}{m} \sum_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)}) $$
-            *   For any other coefficient ($\theta_j$ where $j > 0$):
-                $$ \frac{\partial J}{\partial \theta_j} = \frac{2}{m} \sum_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)}) x_j^{(i)} $$
-        3.  **Update Rule:** How we update the parameters in each iteration.
-            $$ \theta_j := \theta_j - \alpha \frac{\partial J}{\partial \theta_j} $$
-            Where $\alpha$ is the learning rate.
-    * **When to use:** This is the preferred method for very large datasets where calculating the OLS solution directly would be too computationally expensive.
+**How it works:** A direct, mathematical approach that uses linear algebra (matrix operations) on the entire dataset to calculate the single best set of coefficients. This is also known as the **Normal Equation**.
+
+**The Formula:**     
+
+$$
+\theta = (X^T X)^{-1} X^T y
+$$
+    
+...where $X$ is the feature matrix (with an added column of ones for the intercept $\theta_0$), and $y$ is the vector of target values.
+
+**When to use:** Works well for smaller to medium-sized datasets where the computation is feasible.
+
+
+### 2. Optimization Approach (e.g., Gradient Descent)
+* **How it works:** An iterative approach. It starts with random values for the coefficients and then repeatedly makes small adjustments to them, each time moving in the direction that reduces the model's error on the training data. It continues this process until the error is minimized.
+
+* **The Formulas:**
+    1.  **Cost Function (MSE):** The function we want to minimize.
+        $$ J(\theta) = \frac{1}{m} \sum_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^2 $$
+    2.  **Gradients:** The partial derivatives of the cost function, which tell us the direction of steepest ascent. We move in the opposite direction.
+        *   For the bias/intercept ($\theta_0$):
+            $$ \frac{\partial J}{\partial \theta_0} = \frac{2}{m} \sum_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)}) $$
+        *   For any other coefficient ($\theta_j$ where $j > 0$):
+            $$ \frac{\partial J}{\partial \theta_j} = \frac{2}{m} \sum_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)}) x_j^{(i)} $$
+    3.  **Update Rule:** How we update the parameters in each iteration.
+        $$ \theta_j := \theta_j - \alpha \frac{\partial J}{\partial \theta_j} $$
+        Where $\alpha$ is the learning rate.
+* **When to use:** This is the preferred method for very large datasets where calculating the OLS solution directly would be too computationally expensive.
 
 
 ## 4. Handling Categorical Variables
