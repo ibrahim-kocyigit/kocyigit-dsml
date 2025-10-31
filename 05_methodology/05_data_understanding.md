@@ -19,6 +19,10 @@ Before diving into analysis, it's crucial to perform a first pass of cleaning an
       * Are there fully duplicated rows that can be safely removed?
   * **Toolkit Connection:** This step uses basic Pandas functions like `.rename()`, `.astype()`, `.to_datetime()`, and `.drop_duplicates()`.
 
+```Markdown
+### Initial Data Shaping Report
+* [List all cleaning actions taken here. Example: "Renamed columns to snake_case", "Converted `order_date` to datetime", "Removed 150 duplicate rows".]
+```
 
 ## Step 2: Descriptive Statistics
 
@@ -27,17 +31,15 @@ Compute summary statistics to get a high-level quantitative overview of the data
   * **Action:** Generate and analyze descriptive statistics for all numerical and categorical features.
   * **Toolkit Connection:** This step primarily uses the `pandas.DataFrame.describe()` method.
 
-> **Numerical Feature Summary (`df.describe()`):**
->
-> ```
-> > [Paste the output of df.describe() for numerical columns here. Analyze the count, mean, std, min, max, and quartile values for initial insights into scale and spread.]
-> ```
->
-> **Categorical Feature Summary (`df.describe(include='object')`):**
->
-> ```
-> > [Paste the output of df.describe(include='object') here. Analyze the count, unique values, top (most frequent) category, and frequency.]
-> ```
+```Markdown
+### Descriptive Statistics
+
+#### Numerical Feature Summary (`df.describe()`)
+[Between triple quotes, paste  the output of df.describe() for numerical columns here. Analyze the count, mean, std, min, max, and quartile values for initial insights into scale and spread.]
+
+#### Categorical Feature Summary (`df.describe(include='object')`)
+[Between triple quotes, paste  the output of df.describe(include='object') here. Analyze the count, unique values, top (most frequent) category, and frequency.]
+```
 
 
 ## Step 3: Univariate Analysis
@@ -51,15 +53,14 @@ Analyze individual variables to understand their own distributions and character
       * What are the frequency counts of key categorical features?
   * **Toolkit Connection:** This step uses `seaborn.histplot`, `seaborn.kdeplot`, and `seaborn.countplot`.
 
-> **Univariate Analysis Plots:**
->
-> *[Embed or link to key visualizations, e.g., `univariate_plots.png`]*
->
-> **Key Observations:**
->
-> > *[Note any findings. Example: "The `Price` feature is heavily right-skewed, suggesting the presence of a few high-value outliers. A log transformation may be necessary in the data preparation stage."]*
-> > *[Example: "The target variable `churn_status` is imbalanced, with class '1' representing only 15% of the dataset. This will require special handling (e.g., stratified splitting, appropriate metrics)."]*
+```Markdown
+### Univariate Analysis
+[Embed or link to key visualizations, e.g., `univariate_plots.png`]
 
+#### Key Observations from Univariate Analysis
+* Note any findings. [Example: "The `Price` feature is heavily right-skewed, suggesting the presence of a few high-value outliers. A log transformation may be necessary in the data preparation stage."]
+* [Example: "The target variable `churn_status` is imbalanced, with class '1' representing only 15% of the dataset. This will require special handling (e.g., stratified splitting, appropriate metrics)."]*
+```
 
 ## Step 4: Bivariate Analysis
 
@@ -72,15 +73,14 @@ Analyze pairs of variables to investigate relationships and correlations.
       * Is there a linear or non-linear relationship between key numerical features?
   * **Toolkit Connection:** This step uses `seaborn.scatterplot`, `seaborn.boxplot`, and `seaborn.heatmap` on a correlation matrix (`df.corr()`).
 
-> **Bivariate Analysis Plots:**
->
-> *[Embed or link to key visualizations, e.g., a correlation heatmap and several boxplots.]*
->
-> **Key Observations:**
->
-> > *[Note any findings. Example: "There is a strong positive correlation (0.85) between `feature_A` and `feature_B`, suggesting potential multicollinearity."]*
-> > *[Example: "The median `Price` for the 'Electronics' category is significantly higher than for 'Accessories', as shown in the box plot."]*
+```Markdown
+### Bivariate Analysis
+[Embed or link to key visualizations, e.g., a correlation heatmap and several boxplots.]
 
+#### Key Observations from Bivariate Analysis
+* Note any findings. [Example: "There is a strong positive correlation (0.85) between `feature_A` and `feature_B`, suggesting potential multicollinearity."]
+* [Example: "The median `Price` for the 'Electronics' category is significantly higher than for 'Accessories', as shown in the box plot."]*
+```
 
 ## Step 5: Initial Findings Summary
 
@@ -88,15 +88,18 @@ Consolidate all observations from the EDA into a summary.
 
   * **Action:** Create a bulleted list of the most important insights and data quality issues discovered.
 
-> **EDA Summary:**
->
->   * **Key Insights:**
->       * *[List 2-3 of the most interesting business-relevant patterns found.]*
->   * **Data Quality Issues:**
->       * *[List any issues found, e.g., "The `last_login_date` column has 30% missing values." or "Detected significant outliers in the `order_value` column."]*
->   * **Revised Assumptions:**
->       * *[Note any initial assumptions that were challenged or validated by the data.]*
+```Markdown
+### Exploratory Data Analysis (EDA) Summary
 
+#### Key Insights
+* [List 2-3 of the most interesting business-relevant patterns found.]
+
+#### Data Quality Issues
+* [List any issues found, e.g., "The `last_login_date` column has 30% missing values." or "Detected significant outliers in the `order_value` column."]
+
+#### Revised Assumptions
+* [Note any initial assumptions that were challenged or validated by the data.]
+```
 
 ## Step 6: Final Review
 
@@ -105,8 +108,13 @@ Conclude the data understanding phase. Based on the findings (especially data qu
   * **Action:** Prepare a brief summary report of the EDA findings for both technical and business stakeholders.
   * **Action:** Add a summary of this stage to the main project `README.md`.
 
-> **Stage Summary:**
->
->   * ***Status:*** *[Completed]*
->   * ***Key Finding for Stakeholders:*** *[Translate one key insight into a simple business statement. Example: "Initial analysis shows that customers with a tenure of less than 6 months are significantly more likely to churn."]*
->   * ***Next Steps:*** *[Outline next steps. Example: "Proceed to Data Preparation stage. The discovered data quality issues (missing values, outliers) will be addressed as the first priority."]*
+```Markdown
+### Data Understanding Summary
+
+* **Status:** [Completed]
+* **Key Finding for Stakeholders:** [Translate one key insight into a simple business statement. Example: "Initial analysis shows that customers with a tenure of less than 6 months are significantly more likely to churn."]
+* **Next Steps:** [Outline next steps. Example: "Proceed to Data Preparation stage. The discovered data quality issues (missing values, outliers) will be addressed as the first priority."]
+```
+
+---
+**Next:** [Data Preparation](./06_data_preparation.md)
