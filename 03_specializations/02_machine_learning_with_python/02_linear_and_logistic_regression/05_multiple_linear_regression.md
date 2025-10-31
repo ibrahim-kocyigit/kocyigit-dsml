@@ -55,13 +55,13 @@ $$
 * For the bias/intercept ($\theta_0$):  
 
 $$
-\frac{\partial J}{\partial \theta_0} = \frac{2}{n} \sum_{i=1}^{n} (\hat{y}^{(i)} - y^{(i)})
+\frac{\partial J}{\partial \theta_0} = - \frac{2}{n} \sum_{i=1}^{n} (y^{(i)} - \hat{y}^{(i)})
 $$
 
 * For any other coefficient ($\theta_j$ where $j > 0$):
 
 $$
-\frac{\partial J}{\partial \theta_j} = \frac{2}{n} \sum_{i=1}^{n} (\hat{y}^{(i)} - y^{(i)}) x_j^{(i)}
+\frac{\partial J}{\partial \theta_j} = -\frac{2}{n} \sum_{i=1}^{n} (y^{(i)} - \hat{y}^{(i)}) x_j^{(i)}
 $$
 
 **Update Rule:** How we update the parameters in each iteration.
