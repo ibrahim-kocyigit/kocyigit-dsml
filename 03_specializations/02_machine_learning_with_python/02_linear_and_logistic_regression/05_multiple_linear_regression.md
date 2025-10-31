@@ -33,10 +33,10 @@ Just like with simple linear regression, the goal is to find the parameters that
 A direct, mathematical approach that uses linear algebra (matrix operations) on the entire dataset to calculate the single best set of coefficients. This is also known as the **Normal Equation**: 
 
 $$
-\theta = (X^T X)^{-1} X^T y
+\theta = (X_b^T X_b)^{-1} X_b^T y
 $$
     
-...where $X$ is the feature matrix (with an added column of ones for the intercept $\theta_0$), and $y$ is the vector of target values.
+...where $X_b$ is the feature matrix (with an added column of ones for the intercept $\theta_0$), and $y$ is the vector of target values.
 
 **When to Use:** This method works well for smaller to medium-sized datasets where the computation is feasible.
 
