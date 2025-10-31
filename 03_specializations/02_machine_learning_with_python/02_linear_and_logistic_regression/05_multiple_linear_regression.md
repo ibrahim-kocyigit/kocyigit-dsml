@@ -47,7 +47,7 @@ An iterative approach. It starts with random values for the coefficients and the
 **Cost Function (MSE):**  This is the function we want to minimize:
 
 $$
-J(\theta) = \frac{1}{m} \sum_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^2
+J(\theta) = \frac{1}{n} \sum_{i=1}^{n} (\hat{y}^{(i)} - y^{(i)})^2
 $$
 
 **Gradients:** The partial derivatives of the cost function, which tell us the direction of steepest ascent. We move in the opposite direction.
@@ -55,13 +55,13 @@ $$
 * For the bias/intercept ($\theta_0$):  
 
 $$
-\frac{\partial J}{\partial \theta_0} = \frac{2}{m} \sum_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})
+\frac{\partial J}{\partial \theta_0} = \frac{2}{n} \sum_{i=1}^{n} (\hat{y}^{(i)} - y^{(i)})
 $$
 
 * For any other coefficient ($\theta_j$ where $j > 0$):
 
 $$
-\frac{\partial J}{\partial \theta_j} = \frac{2}{m} \sum_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)}) x_j^{(i)}
+\frac{\partial J}{\partial \theta_j} = \frac{2}{n} \sum_{i=1}^{n} (\hat{y}^{(i)} - y^{(i)}) x_j^{(i)}
 $$
 
 **Update Rule:** How we update the parameters in each iteration.
