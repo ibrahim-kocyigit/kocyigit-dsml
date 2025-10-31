@@ -4,9 +4,8 @@
 
 Simple Linear Regression is a supervised learning technique used to model the relationship between two variables by fitting a straight line to the observed data.
 
-**The Goal:** To use a **single independent variable** (feature) to predict a **single continuous dependent variable** (target).
-
-**The Analogy:** Imagine plotting your data on a scatter plot. Simple Linear Regression is the process of finding the one straight line that best "cuts through" the cloud of data points, capturing the general trend.
+* **The Goal:** To use a **single independent variable** (feature) to predict a **single continuous dependent variable** (target).
+* **The Analogy:** Imagine plotting your data on a scatter plot. Simple Linear Regression is the process of finding the one straight line that best "cuts through" the cloud of data points, capturing the general trend.
 
 ### Example: CO2 Emissions
 * **Independent Variable (x):** `Engine Size`
