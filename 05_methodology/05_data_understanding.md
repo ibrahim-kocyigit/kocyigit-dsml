@@ -35,10 +35,10 @@ Compute summary statistics to get a high-level quantitative overview of the data
 ### Descriptive Statistics
 
 #### Numerical Feature Summary (`df.describe()`)
-[Between triple quotes, paste  the output of df.describe() for numerical columns here. Analyze the count, mean, std, min, max, and quartile values for initial insights into scale and spread.]
+```[Paste the output of df.describe() for numerical columns here. Analyze the count, mean, std, min, max, and quartile values for initial insights into scale and spread.]```
 
 #### Categorical Feature Summary (`df.describe(include='object')`)
-[Between triple quotes, paste  the output of df.describe(include='object') here. Analyze the count, unique values, top (most frequent) category, and frequency.]
+```[Paste the output of df.describe(include='object') here. Analyze the count, unique values, top (most frequent) category, and frequency.]```
 ```
 
 
