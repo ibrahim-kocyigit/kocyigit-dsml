@@ -4,14 +4,14 @@
 
 Regression is a fundamental technique in supervised machine learning. Its core purpose is to model the relationship between a set of input features and a **continuous target variable**.
 
-In simple terms, regression helps us answer the question: **How much?** or **"What will the value be?"**
+In simple terms, regression helps us answer the question: **"How much?"** or **"What will the value be?"**
 
-#### The Process
+### The Process
 1. **Collect Data:** Gather a dataset with known features (input) and a known continuous target value (the "correct answer").
 2. **Train a Model:** Use a regression algorithm to "learn" the mathematical relationship between the features and the target from this historical data.
 3. **Make Predictions:** Use the trained model to predict the target value for new, unseen data where only the features are known.
 
-#### Example: CO2 Emissions
+### Example: CO2 Emissions
 * **Goal:** Predict the CO2 emissions of a new car.
 * **Data:** A dataset of existing cars with features like `Engine Size`, `Number of Cylinders`, and `Fuel Consumption`, along with their known `CO2 Emissions`.
 * **Prediction:** For a new car, you provide its `Engine Size` and `Cylinders`, and the model predicts its expected `CO2 Emissions`.
