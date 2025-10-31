@@ -1,4 +1,4 @@
-# Introduction to Simple Linear Regression
+# Simple Linear Regression
 
 ## 1. The Intuitive Idea: Drawing the Best Straight Line
 
@@ -92,4 +92,4 @@ To predict the CO2 emission for a car with an engine size of 2.4:
 
 ---
 
-**Next:** [Lab: Simple Linear Regression](./03_lab--simple_linear_regression.ipynb)
+**Next:** [Implementation: Simple Linear Regression](./03_implementation--simple_linear_regression.py)

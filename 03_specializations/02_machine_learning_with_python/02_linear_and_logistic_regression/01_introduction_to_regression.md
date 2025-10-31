@@ -74,4 +74,4 @@ There are many different regression algorithms, each with its own strengths and 
 
 ---
 
-**Next:** [Introduction to Simple Linear Regression](./02_introduction_to_simple_linear_regression.md)
+**Next:** [Simple Linear Regression](./02_simple_linear_regression.md)
