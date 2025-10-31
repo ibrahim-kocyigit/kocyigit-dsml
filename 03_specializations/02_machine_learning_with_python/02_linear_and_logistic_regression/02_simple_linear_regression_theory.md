@@ -74,12 +74,12 @@ To predict the CO2 emission for a car with an engine size of 2.4:
 
 ## 5. Pros and Cons of Simple Linear Regression (OLS)
 
-#### Advantages:
+### Advantages
 * **Simple to Understand and Interpret:** The linear relationship and the meaning of the coefficients are very intuitive.
 * **No Hyperparameter Tuning:** The solution is calculated directly from the data; there are no complex parameters to tune.
 * **Fast:** It is computationally inexpensive, especially on smaller datasets.
 
-#### Disadvantages:
+### Disadvantages
 * **Overly Simplistic:** It can only capture linear relationships and will perform poorly if the true relationship is non-linear.
 * **Sensitive to Outliers:** Because OLS minimizes *squared* errors, a single data point that is very far from the line (an outlier) will have a huge squared error, which can dramatically pull the best-fit line towards it and reduce the model's accuracy.
 
@@ -87,14 +87,14 @@ To predict the CO2 emission for a car with an engine size of 2.4:
 
 Before applying the model, it's crucial to inspect your data. The core assumptions of OLS give us a practical checklist of what to look for. The best tool for this is a simple **scatter plot**.
 
-### Key Characteristics to Look For:
+### Key Characteristics to Look For
 1.  **Linear Relationship:** The data points should appear to follow a straight line, not a curve. This is the most fundamental assumption. If you see a clear pattern, but it's not linear (e.g., a "U" shape), simple linear regression is not the right tool.
 2.  **Absence of Major Outliers:** Look for individual data points that are very far away from the general cloud of points. As noted before, OLS is sensitive to these, and they can skew your results.
 3.  **Homoscedasticity (Constant Variance):** This is a fancy term for a simple idea: the spread (or variance) of the data points around the potential line should be roughly the same across the entire range of your x-variable.
     *   **Good:** The cloud of points is an even "cigar" shape.
     *   **Bad (Heteroscedasticity):** The cloud of points fans out, like a cone or megaphone shape. This means the model's predictions will be less reliable for certain ranges of `x`.
 
-### Common Issues and What to Do:
+### Common Issues and What to Do
 *   **Problem: The relationship is non-linear.**
     *   **Solution:** You may need a more complex model, like **Polynomial Regression**. Alternatively, you can sometimes transform one or both variables (e.g., using a logarithm `log(x)` or square root) to make the relationship linear.
 *   **Problem: There are significant outliers.**
