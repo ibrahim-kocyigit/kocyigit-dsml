@@ -50,19 +50,20 @@ class MultipleLinearRegression:
         return X @ self.weights + self.bias
 
 
-# Sigmoid function for logistic regression
+# Sigmoid function for logistic regressor
 def sigmoid(z: np.ndarray) -> np.ndarray:
     return 1 / (1 + np.exp(-z))
 
 
-class LogisticRegression:
+# Just a regressor for this lecture, not a classifier
+class LogisticRegressor:
     def __init__(self, learning_rate: float = 0.001, max_iters: int = 1000):
         self.learning_rate = learning_rate
         self.max_iters = max_iters
         self.weights = None
         self.bias = None
 
-    def fit(self, X: np.ndarray, y: np.ndarray) -> LogisticRegression:
+    def fit(self, X: np.ndarray, y: np.ndarray) -> LogisticRegressor:
         n_observations, n_features = X.shape
         self.weights = np.zeros(n_features)
         self.bias = 0
@@ -74,13 +75,7 @@ class LogisticRegression:
             self.bias = self.bias - self.learning_rate * db
         return self
 
-    def predict(self, X: np.ndarray, mode: str = "prob") -> np.ndarray:
+    def predict(self, X: np.ndarray) -> np.ndarray:
         if self.weights is None or self.bias is None:
             raise ValueError("Model is not trained yet. Please call 'fit' first.")
-        probs = sigmoid(X @ self.weights + self.bias)
-        if mode == "prob":
-            return probs
-        elif mode == "class":
-            return (probs >= 0.5).astype(int)
-        else:
-            raise ValueError("mode must be 'prob' or 'class'")
+        return sigmoid(X @ self.weights + self.bias)
