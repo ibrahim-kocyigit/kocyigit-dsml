@@ -102,8 +102,6 @@ Before applying the model, it's crucial to inspect your data. The core assumptio
 *   **Problem: The data shows heteroscedasticity (non-constant variance).**
     *   **Solution:** This is a more advanced topic, but a common fix is to apply a transformation to the dependent variable (`y`), such as taking its logarithm or square root. This can help stabilize the variance.
 
----
-
 ## 7. Summary
 *   Simple Linear Regression models the relationship between **one feature** and **one continuous target** by fitting a straight line.
 *   The goal is to find the line that **minimizes the Mean Squared Error (MSE)**.
