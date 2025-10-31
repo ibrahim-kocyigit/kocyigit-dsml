@@ -3,7 +3,7 @@ import numpy as np
 
 
 class MultipleLinearRegression:
-    def __init__(self, learning_rate: float = 0.001, max_iter: int = 1000):
+    def __init__(self, learning_rate: float = 0.01, max_iter: int = 1000):
         self.learning_rate = learning_rate
         self.max_iter = max_iter
         self.weights = None
