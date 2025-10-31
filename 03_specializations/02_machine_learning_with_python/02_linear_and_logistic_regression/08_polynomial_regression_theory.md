@@ -72,4 +72,4 @@ An overfit model will have an amazing score on the data it was trained on, but i
 
 ---
 
-**Next:** [Implementation: Polynomial Regression](./09_polynomial_regression.py)
+**Next:** [Polynomial Regression Implementation](./09_polynomial_regression_implementation.py)

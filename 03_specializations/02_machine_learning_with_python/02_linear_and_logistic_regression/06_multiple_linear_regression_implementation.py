@@ -1,3 +1,6 @@
+# ----- Implementation: Multiple Linear Regression ----- #
+
+
 from __future__ import annotations
 import numpy as np
 
@@ -52,4 +55,4 @@ class MultipleLinearRegression:
         return X @ self.weights + self.bias
 
 
-# Next: 07_multiplie_linear_regression.ipynb
+# Next: 07_multiplie_linear_regression_lab.ipynb

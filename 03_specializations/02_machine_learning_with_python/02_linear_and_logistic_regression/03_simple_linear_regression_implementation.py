@@ -1,3 +1,5 @@
+# ----- Implementation: Simple Linear Regression ----- #
+
 from __future__ import annotations
 import numpy as np
 
@@ -29,4 +31,4 @@ class SimpleLinearRegression:
         return self.slope * X + self.intercept
 
 
-# Next: 04_simple_linear_regression.ipynb
+# Next: 04_simple_linear_regression_lab.ipynb

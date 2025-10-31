@@ -116,4 +116,4 @@ To build a robust multiple regression model, you should aim for a balanced set o
 
 ---
 
-**Next:** [Implementation: Multiple Linear Regression](./06_multiple_linear_regression.py)
+**Next:** [Multiple Linear Regression Implementation](./06_multiple_linear_regression_implementation.py)

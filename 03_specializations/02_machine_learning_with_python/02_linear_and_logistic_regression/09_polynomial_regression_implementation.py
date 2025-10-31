@@ -1,3 +1,6 @@
+# ----- Implementation: Polynomial Regression ----- #
+
+
 from __future__ import annotations
 import numpy as np
 
@@ -77,4 +80,4 @@ class MultipleLinearRegression:
         return X @ self.weights + self.bias
 
 
-# Next: 10_polynomial_regression.ipynb
+# Next: 10_polynomial_regression_lab.ipynb
