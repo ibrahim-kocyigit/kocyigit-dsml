@@ -32,14 +32,32 @@ The machine learning algorithm's job is to find the optimal values for all the t
 For a multiple linear regression model to be accurate and reliable, several key assumptions about the data must be met. Violating these assumptions can lead to misleading or incorrect conclusions.
 
 1.  **Linearity:** The underlying relationship between the independent variables and the dependent variable is linear. The model can only capture a linear trend, so if the true relationship is curved (non-linear), the model will be a poor fit.
+    > **What to do if it's violated?**
+    > *   **Apply Feature Transformations:** Transform independent variables (e.g., using log, square root, or polynomial terms like $x^2$) to create a linear relationship.
+    > *   **Use a Different Model:** Switch to a non-linear model like Polynomial Regression, Decision Trees, or a Gradient Boosting model that can capture complex, non-linear patterns.
 
 2.  **Independence of Residuals:** The residuals (prediction errors) are independent. This means that the error of one prediction is not correlated with the error of another. This is often a concern in time-series data where consecutive observations might be related.
+    > **What to do if it's violated?**
+    > *   **For Time-Series Data:** Use models specifically designed for sequential data, such as ARIMA, SARIMA, or Recurrent Neural Networks (RNNs).
+    > *   **Feature Engineering:** If not time-series, this may indicate a missing explanatory variable. Consider adding other relevant features to the model.
 
-3.  **Homoscedasticity (Constant Variance):** The residuals have constant variance at every level of the independent variables. In other words, the spread of the errors should be consistent across all predicted values. If the spread increases or decreases (e.g., forming a cone shape in a residual plot), this is called **heteroscedasticity**, and it can make our coefficient estimates less reliable.
+3.  **Homoscedasticity (Constant Variance):** The residuals have constant variance at every level of the independent variables. In other words, the spread of the errors should be consistent across all predicted values. If the spread increases or decreases (e.g., forming a cone shape in a residual plot), this is called **heteroscedasticity**.
+    > **What to do if it's violated?**
+    > *   **Transform the Target Variable:** Applying a transformation (e.g., log or square root) to the target variable (`y`) can often stabilize the variance.
+    > *   **Use Weighted Least Squares (WLS):** This is a type of regression that assigns less weight to data points that have higher error variance.
+    > *   **Use Robust Standard Errors:** This statistical method corrects the standard errors of the coefficients to account for the heteroscedasticity, making significance tests more reliable.
 
-4.  **Normality of Residuals:** The residuals are normally distributed. This assumption is important for conducting statistical tests on the coefficients (e.g., determining their significance). While the model can still be predictive without this, the inferences about the coefficients may be invalid.
+4.  **Normality of Residuals:** The residuals are normally distributed. This assumption is primarily important for the reliability of statistical tests on the coefficients.
+    > **What to do if it's violated?**
+    > *   **Don't Panic (with large datasets):** The Central Limit Theorem often implies that for large sample sizes, the coefficient estimates will be approximately normally distributed even if the residuals are not.
+    > *   **Check for Outliers:** Non-normality can be caused by a few extreme outliers. Investigate and consider removing them if they are data entry errors.
+    > *   **Apply Transformations:** As with other assumptions, a non-linear transformation of the target or features can sometimes resolve this.
 
-5.  **No Multicollinearity:** The independent variables are not highly correlated with each other. When two or more features are highly correlated, it becomes difficult for the model to determine the individual effect of each one. This makes the coefficient estimates unstable and hard to interpret. For example, you can't realistically determine the separate effects of `Engine Size` and `Number of Cylinders` if they always change together.
+5.  **No Multicollinearity:** The independent variables are not highly correlated with each other. When two or more features are highly correlated, it becomes difficult for the model to determine the individual effect of each one, making the coefficients unstable and hard to interpret.
+    > **What to do if it's violated?**
+    > *   **Remove One of the Correlated Features:** The simplest solution. If two features are highly correlated, they are providing redundant information. Keep the one that is more correlated with the target variable.
+    > *   **Combine the Features:** Create a new feature by combining the correlated ones (e.g., create an "average engine spec" from `Engine Size` and `Cylinders`).
+    > *   **Use Regularization:** Techniques like Ridge Regression can be used, which adds a penalty to the size of the coefficients and can handle multicollinearity better than standard OLS.
 
 ## 4. How the Model is Trained
 
