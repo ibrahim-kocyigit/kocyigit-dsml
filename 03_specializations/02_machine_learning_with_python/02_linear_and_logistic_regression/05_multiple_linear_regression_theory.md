@@ -108,7 +108,9 @@ $$
 
 **When to use:** Gradient descent is the preferred method for very large datasets where calculating the OLS solution directly would be too computationally expensive.
 
-## 5. Handling Categorical Variables
+## 5. Model Specific Considerations
+
+### Handling Categorical Variables
 
 Multiple Linear Regression requires all input features to be numerical. So what do we do with categorical variables like "Fuel Type" or "Transmission"? We convert them into numbers.
 
