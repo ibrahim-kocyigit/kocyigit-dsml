@@ -15,7 +15,7 @@ class SimpleLinearRegression:
         self.intercept = None
 
     def fit(self, X: np.ndarray, y: np.ndarray) -> SimpleLinearRegression:
-        # Slope: rise / run = cov(X, y) / var(X)
+        # Slope = cov(X, y) / var(X)
         self.slope = np.cov(X, y, bias=True)[0, 1] / np.var(X)
 
         """
