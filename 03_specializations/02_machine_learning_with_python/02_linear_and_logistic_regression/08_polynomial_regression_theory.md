@@ -30,7 +30,8 @@ $$
 
 This looks like a non-linear equation, but here's the clever trick: we can transform this into a **Multiple Linear Regression** problem by treating each polynomial term as a *new, separate feature*.
 
-Let's say we want to fit a cubic model (degree `n=3`):
+Let's say we want to fit a cubic model (degree `n=3`):  
+
 $$ \hat{y} = \theta_0 + \theta_1 x + \theta_2 x^2 + \theta_3 x^3 $$
 
 We can define a new set of features:
