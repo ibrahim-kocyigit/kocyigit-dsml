@@ -47,18 +47,25 @@ This is read as "the probability that the target `y` is 1, given the input featu
 
 Logistic Regression has its own set of assumptions, which are different from Linear Regression.
 
-1.  **Binary Outcome:** The target variable is binary or dichotomous. Logistic regression is designed for 2-class problems. (For more than two classes, you would use its extension, Softmax Regression).
-
-2.  **Independence of Observations:** The observations in the dataset are independent of each other. This is the same as in Linear Regression and is mainly a concern for time-series data.
-
-3.  **Linearity of Log-Odds:** This is the key assumption. Logistic Regression does not assume a linear relationship between the features and the target variable (`y`). Instead, it assumes a linear relationship between the features and the **log-odds** of the outcome. The log-odds is the logarithm of the odds ratio: `log(p / (1-p))`.
-
-4.  **No High Multicollinearity:** The independent variables should not be highly correlated with each other. This is the same as in Multiple Linear Regression and can make the model's coefficients unstable and difficult to interpret.
+1.  **Binary Outcome:** The target variable is binary or dichotomous. Logistic regression is designed for 2-class problems.
     > **What to do if it's violated?**
-    > *   Remove one of the highly correlated features.
-    > *   Combine the correlated features into a single new feature.
-    > *   Use regularization (L1 or L2), which is built into many logistic regression implementations.
+    > *   **Use a Multiclass Model:** If your target has more than two categories (e.g., "Low", "Medium", "High"), use a model designed for multiclass classification. The direct extension of logistic regression is **Multinomial Logistic Regression** (often called Softmax Regression). Other popular choices are Decision Trees, Random Forests, or Gradient Boosting models.
 
+2.  **Independence of Observations:** The observations in the dataset are independent of each other. This is often violated in time-series data or clustered data.
+    > **What to do if it's violated?**
+    > *   **For Time-Series Data:** Use models specifically designed for sequential data, such as ARIMA, LSTMs, or other Recurrent Neural Networks (RNNs).
+    > *   **For Clustered Data:** (e.g., students from the same school), use models that can account for this dependency, such as mixed-effects models or Generalized Estimating Equations (GEE).
+
+3.  **Linearity of Log-Odds:** This is the key assumption. Logistic Regression assumes a linear relationship between the features and the **log-odds** of the outcome.
+    > **What to do if it's violated?**
+    > *   **Feature Engineering:** Create new features that have a linear relationship with the log-odds. This can include polynomial features (e.g., `x^2`), interaction terms (e.g., `x1 * x2`), or other non-linear transformations.
+    > *   **Use a More Complex Model:** Switch to a non-linear classification model like a Support Vector Machine (SVM) with a non-linear kernel (e.g., RBF), a Decision Tree, or a neural network. These models can learn complex, non-linear decision boundaries automatically.
+
+4.  **No High Multicollinearity:** The independent variables should not be highly correlated with each other, as this can make the model's coefficients unstable and hard to interpret.
+    > **What to do if it's violated?**
+    > *   **Remove One of the Correlated Features:** The simplest solution. Keep the one that is more strongly correlated with the target variable.
+    > *   **Combine the Features:** Create a new feature by combining the correlated ones (e.g., create an average).
+    > *   **Use Regularization:** Techniques like Ridge (L2) or Lasso (L1) regression are very effective. Most scikit-learn implementations include regularization by default, which helps mitigate the effects of multicollinearity.
 ## 4. How the Model is Trained
 
 Training is an iterative process where the model "learns" the best parameters ($\theta$) by trying to minimize its prediction error. This follows a simple loop:
@@ -69,22 +76,40 @@ Training is an iterative process where the model "learns" the best parameters ($
 5. **Repeat:** Continue this loop until the error is minimized or a set number of iterations is reached.
 
 ### The Cost Function: Log Loss (or Binary Cross-Entropy)
-The Log Loss function measures how well the predicted probabilities match the actual class labels. It is designed to heavily penalize confident but wrong predictions.
+The Log Loss function measures how well the predicted probabilities (`p_hat`) match the actual class labels (`y`). The total cost over the entire dataset of `n` observations is the average of the loss for each observation.
 
-The formula for Log Loss for a single observation is:
-`Cost(ŷ, y) = -[ y * log(ŷ) + (1-y) * log(1-ŷ) ]`
+$$
+J(\theta) = - \frac{1}{n} \sum_{i=1}^{n} [y^{(i)} \log(\hat{p}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{p}^{(i)})]
+$$
 
-*   **If the actual class is 1 (`y=1`):** The cost is `-log(ŷ)`. If our prediction `ŷ` is close to 1 (correct), the cost is low. If `ŷ` is close to 0 (incorrect), the cost is very high.
-*   **If the actual class is 0 (`y=0`):** The cost is `-log(1-ŷ)`. If our prediction `ŷ` is close to 0 (correct), the cost is low. If `ŷ` is close to 1 (incorrect), the cost is very high.
+This function is designed to heavily penalize confident but wrong predictions. If the actual class `y` is 1, the cost is `-log(p_hat)`; if `y` is 0, the cost is `-log(1-p_hat)`. In both cases, the cost is low if the prediction is correct and high if it is incorrect.
 
 ### The Optimization Algorithm: Gradient Descent
-To adjust the parameters to minimize the Log Loss, we use **Gradient Descent**. Imagine the cost function as a hilly landscape; Gradient Descent's job is to find the lowest point.
+To adjust the parameters to minimize the Log Loss, we use **Gradient Descent**. It works by calculating the gradient (the direction of steepest *ascent*) of the cost function and taking a small step in the opposite direction (steepest *descent*).
 
-*   **Gradient:** At any point, the "gradient" points in the direction of the steepest **ascent** (uphill).
-*   **Descent:** To find the minimum, we take a step in the **opposite direction** of the gradient (downhill).
-*   **Learning Rate:** The size of our step is controlled by the learning rate. A small learning rate is slow but steady, while a large one is faster but risks overshooting the minimum.
+**Gradients (Partial Derivatives):**  
+The gradient of the cost function `J` with respect to a single parameter `θ_j` is calculated as:
+$$
+\frac{\partial J}{\partial \theta_j} = \frac{1}{n} \sum_{i=1}^{n} (\hat{p}^{(i)} - y^{(i)}) x_j^{(i)}
+$$
 
-**Stochastic Gradient Descent (SGD)** is a faster, more common variation that uses a small, random subset of data (a "mini-batch") for each step, making it much more efficient for large datasets.
+**The Update Rule:**  
+In each iteration of Gradient Descent, every parameter `θ_j` is updated simultaneously using the following rule, where `α` (alpha) is the learning rate:
+$$
+\theta_j := \theta_j - \alpha \frac{\partial J}{\partial \theta_j}
+$$
+
+**Vectorized Implementation:**  
+For a much faster implementation (e.g., in NumPy), we use the vectorized form, which processes all observations at once.
+
+*   **Predictions (`p_hat`):**
+    $$ \hat{p} = \sigma(X\theta) $$
+*   **Gradient (`dw`):**
+    $$ dw = \frac{1}{n} X^T (\hat{p} - y) $$
+*   **Update Rule:**
+    $$ \theta := \theta - \alpha \cdot dw $$
+
+...where `X` is the feature matrix, `y` is the vector of true labels, and `θ` is the vector of parameters.
 
 ## 5. Model-Specific Considerations
 
