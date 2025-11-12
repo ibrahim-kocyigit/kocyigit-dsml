@@ -20,10 +20,19 @@ class LogisticRegressor:
         self.weights = np.zeros(n_features)
         self.bias = 0
         for _ in range(self.max_iters):
-            y_hat = sigmoid(X @ self.weights + self.bias)
-            error = y - y_hat
-            dw = (-1 / n_observations) * X.T @ error
-            db = (-1 / n_observations) * np.sum(error)
+            p_hat = sigmoid(X @ self.weights + self.bias)
+            dw = (1 / n_observations) * X.T @ (p_hat - y)
+            db = (1 / n_observations) * np.sum(p_hat - y)
             self.weights = self.weights - self.learning_rate * dw
             self.bias = self.bias - self.learning_rate * db
         return self
+
+    def predict_proba(self, X: np.ndarray) -> np.ndarray:
+        if self.weights is None or self.bias is None:
+            raise ValueError("Model is not trained yet. Please call 'fit' first.")
+        return sigmoid(X @ self.weights + self.bias)
+
+    def predict(self, X: np.ndarray, threshold: float = 0.5) -> np.ndarray:
+        if self.weights is None or self.bias is None:
+            raise ValueError("Model is not trained yet. Please call 'fit' first.")
+        return (sigmoid(X @ self.weights + self.bias) >= threshold).astype(int)
