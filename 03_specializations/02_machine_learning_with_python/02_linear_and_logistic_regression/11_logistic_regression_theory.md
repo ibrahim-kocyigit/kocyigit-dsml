@@ -105,13 +105,22 @@ $$
 For a much faster implementation (e.g., in NumPy), we use the vectorized form, which processes all observations at once.
 
 *   **Predictions (`p_hat`):**  
+
     $$
     \hat{p} = \sigma(X\theta)
     $$
-*   **Gradient (`dw`):**
-    $$ dw = \frac{1}{n} X^T (\hat{p} - y) $$
+
+*   **Gradient (`dw`):**  
+
+    $$
+    dw = \frac{1}{n} X^T (\hat{p} - y)
+    $$
+
 *   **Update Rule:**
-    $$ \theta := \theta - \alpha \cdot dw $$
+    
+    $$
+    \theta := \theta - \alpha \cdot dw
+    $$
 
 ...where `X` is the feature matrix, `y` is the vector of true labels, and `θ` is the vector of parameters.
 
