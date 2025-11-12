@@ -88,13 +88,15 @@ This function is designed to heavily penalize confident but wrong predictions. I
 To adjust the parameters to minimize the Log Loss, we use **Gradient Descent**. It works by calculating the gradient (the direction of steepest *ascent*) of the cost function and taking a small step in the opposite direction (steepest *descent*).
 
 **Gradients (Partial Derivatives):**  
-The gradient of the cost function `J` with respect to a single parameter `θ_j` is calculated as:
+The gradient of the cost function `J` with respect to a single parameter `θ_j` is calculated as:  
+
 $$
 \frac{\partial J}{\partial \theta_j} = \frac{1}{n} \sum_{i=1}^{n} (\hat{p}^{(i)} - y^{(i)}) x_j^{(i)}
 $$
 
 **The Update Rule:**  
-In each iteration of Gradient Descent, every parameter `θ_j` is updated simultaneously using the following rule, where `α` (alpha) is the learning rate:
+In each iteration of Gradient Descent, every parameter `θ_j` is updated simultaneously using the following rule, where `α` (alpha) is the learning rate:  
+
 $$
 \theta_j := \theta_j - \alpha \frac{\partial J}{\partial \theta_j}
 $$
@@ -102,8 +104,10 @@ $$
 **Vectorized Implementation:**  
 For a much faster implementation (e.g., in NumPy), we use the vectorized form, which processes all observations at once.
 
-*   **Predictions (`p_hat`):**
-    $$ \hat{p} = \sigma(X\theta) $$
+*   **Predictions (`p_hat`):**  
+    $$
+    \hat{p} = \sigma(X\theta)
+    $$
 *   **Gradient (`dw`):**
     $$ dw = \frac{1}{n} X^T (\hat{p} - y) $$
 *   **Update Rule:**
