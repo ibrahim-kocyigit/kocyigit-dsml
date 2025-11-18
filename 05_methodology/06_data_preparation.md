@@ -75,8 +75,26 @@ Separate the clean, prepared data into the final feature matrix (`X`) and target
 * **Final Shapes:** `X_train: (rows, cols)`, `X_test: (rows, cols)`, `y_train: (rows,)`, `y_test: (rows,)`
 ```
 
-## Step 5: Final Review
-Conclude the data preparation stage. The output of this stage is the clean dataset that will be used for all subsequent modeling and evaluation.
+## Step 5: Feature Scaling and Transformation
+Apply preprocessing transformations to the numerical features. This crucial step is performed **after** the train-test split to prevent data leakage from the test set into the training process.
+
+*   **Action:** Apply scaling (e.g., standardization) and other transformations (e.g., power transforms for skew) to the numerical features.
+*   **Guiding Questions:**
+    *   Which features need to be scaled (as identified in the Data Understanding stage)?
+    *   Which type of scaling is appropriate (e.g., `StandardScaler` for normally distributed features, `MinMaxScaler`, or `RobustScaler` for data with outliers)?
+    *   Are there any heavily skewed features that might benefit from a power transformation (e.g., `PowerTransformer`)?
+*   **Toolkit Connection:** This step uses `sklearn.preprocessing` modules like `StandardScaler`, `MinMaxScaler`, and `PowerTransformer`.
+
+```Markdown
+### Preprocessing Log
+
+* **Scaling Method:** [Describe the scaler used. Example: "`StandardScaler` was applied to the `sepal_length`, `sepal_width`, `petal_length`, and `petal_width` columns."]
+* **Transformation Method:** [Describe any other transforms. Example: "No power transformations were applied at this stage, as feature skew was not considered extreme."]
+* **Data Leakage Prevention:** [Confirm the process. Example: "The scaler was `fit` **only** on the training data (`X_train`) and then used to `transform` both `X_train` and `X_test`."]
+```
+
+## Step 6: Final Review
+Conclude the data preparation stage. The output of this stage is the clean, preprocessed dataset that will be used for all subsequent modeling and evaluation.
 
 * **Action:** Prepare a brief summary report of all data preparation steps. This documentation is critical for reproducibility.
 * **Action:** Add a summary of this stage to the main project `README.md`.
@@ -84,7 +102,7 @@ Conclude the data preparation stage. The output of this stage is the clean datas
 ```Markdown
 ### Data Preparation Stage Summary
 * ***Status:*** [Completed]
-* ***Output:*** [Describe the final dataset. Example: "The final dataset contains 5,250 training samples and 2,250 test samples, with 15 features ready for modeling. The data is stored at `/data/processed/clean_data.csv`."]
+* ***Output:*** [Describe the final dataset. Example: "The final dataset contains 120 training samples and 30 test samples, with 4 features ready for modeling. The data is scaled and stored as NumPy arrays `X_train`, `X_test`, `y_train`, and `y_test`."]
 ```
 
 ---
