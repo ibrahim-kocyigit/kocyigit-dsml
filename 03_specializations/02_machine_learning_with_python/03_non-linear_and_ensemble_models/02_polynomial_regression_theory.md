@@ -70,7 +70,7 @@ Because we reframe the problem as a Multiple Linear Regression, we use the same 
 *   **Ordinary Least Squares (OLS):** For most cases, this direct mathematical approach is used. It finds the optimal coefficients in a single calculation using linear algebra.
 *   **Gradient Descent:** For extremely large datasets, an iterative optimization approach like Gradient Descent can be used to find the coefficients.
 
-**Note:** *Check the [Multiple Linear Regression Theory](./05_multiple_linear_regression_theory.md) to see how OLS and Gradient Descent are applied.*
+**Note:** *Check the [Multiple Linear Regression Theory](../02_linear_and_logistic_regression/05_multiple_linear_regression_theory.md) to see how OLS and Gradient Descent are applied.*
 
 ## 5. Model-Specific Considerations
 
