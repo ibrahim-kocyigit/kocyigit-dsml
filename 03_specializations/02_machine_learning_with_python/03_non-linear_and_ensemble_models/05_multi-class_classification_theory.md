@@ -1,6 +1,6 @@
 # Multi-Class Classification
 
-## 1. The Intuitive Idea: Choosing from a List of Options
+## 1. The Intuitive Idea: Choosing from a List of Options
 We've used [Logistic Regression](../02_linear_and_logistic_regression/08_logistic_regression_theory.md) to answer "yes" or "no" questions (**Binary Classification**). But what if the question has more than two possible answers?
 
 * Does this image contain a *cat*, a *dog*, or a *bird*?
