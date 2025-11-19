@@ -160,4 +160,4 @@ A common mistake is forgetting that the model's power comes from the sigmoid tra
 
 ---
 
-**Next:** [Logistic Regression Implementation](./12_logistic_regression_implementation.py)
+**Next:** [Logistic Regression Implementation](./09_logistic_regression_implementation.py)
