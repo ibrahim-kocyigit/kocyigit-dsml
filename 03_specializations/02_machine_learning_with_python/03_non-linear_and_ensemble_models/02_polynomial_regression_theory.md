@@ -4,7 +4,7 @@
 
 We've seen that Linear Regression is powerful, but it has a major limitation: it can only model a straight-line relationship. What happens when our data follows a curve?
 
-<img src="./images/0801.png" alt="Linear vs Non-linear fit" width="500"/>
+<img src="./images/0201.png" alt="Linear vs Non-linear fit" width="500"/>
 
 If we try to fit a linear model to data that is clearly curved, our model will be too simplistic and will make poor predictions. This is known as **underfitting**. 
 
@@ -24,7 +24,7 @@ $$
 * $x^2, x^3, \dots, x^n$ are the new polynomial features we create.
 * $n$ is the **degree** of the polynomial, which determines the complexity of the curve.
 
-<img src="./images/0802.png" alt="Polynomial degrees" width="800"/>
+<img src="./images/0202.png" alt="Polynomial degrees" width="800"/>
 
 ### The Trick: How It's Solved With Linear Regression
 
@@ -102,4 +102,4 @@ The biggest danger in Polynomial Regression is **overfitting**.
 
 ---
 
-**Next:** [Polynomial Regression Implementation](./09_polynomial_regression_implementation.py)
+**Next:** [Polynomial Regression Implementation](./03_polynomial_regression_implementation.py)
