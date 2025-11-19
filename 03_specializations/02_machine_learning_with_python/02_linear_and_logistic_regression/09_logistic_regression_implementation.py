@@ -36,3 +36,6 @@ class LogisticRegressor:
         if self.weights is None or self.bias is None:
             raise ValueError("Model is not trained yet. Please call 'fit' first.")
         return (sigmoid(X @ self.weights + self.bias) >= threshold).astype(int)
+
+
+# Next: 10_logistic_regression_lab.ipynb

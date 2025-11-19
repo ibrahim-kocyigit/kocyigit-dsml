@@ -15,7 +15,7 @@ Instead of predicting the class directly, logistic regression predicts the **pro
 
 If we try to fit a standard linear regression line to a binary (0/1) outcome, the line will predict values below 0 and above 1, which makes no sense for a probability.
 
-<img src="./images/1101.png" alt="Linear Regression on a classification problem" width="600"/>
+<img src="./images/0801.png" alt="Linear Regression on a classification problem" width="600"/>
 
 Logistic Regression solves this by taking the output of a linear equation and passing it through a special "squashing" function called the **Sigmoid function** (or logistic function).
 
@@ -33,7 +33,7 @@ $$
 
 The sigmoid function takes any real number `z` and maps it to a value between 0 and 1, which can be interpreted as a probability.
 
-<img src="./images/1102.png" alt="Sigmoid Function Curve" width="500"/>
+<img src="./images/0802.png" alt="Sigmoid Function Curve" width="500"/>
 
 The output, $\hat{p} = \sigma(z)$, is our predicted **probability**.  
 
