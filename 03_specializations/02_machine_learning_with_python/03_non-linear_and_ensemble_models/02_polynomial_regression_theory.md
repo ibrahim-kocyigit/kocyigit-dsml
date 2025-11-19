@@ -91,7 +91,7 @@ The biggest danger in Polynomial Regression is **overfitting**.
     -   Always evaluate your model on a separate test set to check for overfitting. If the training score is much better than the test score, your model is overfit.
     -   Use regularization techniques (like Ridge) to penalize large coefficients, which can help control overfitting in high-degree polynomial models.
 
-<img src="./images/0803.png" alt="Overfitting with a high-degree polynomial" width="500"/>
+<img src="./images/0203.png" alt="Overfitting with a high-degree polynomial" width="500"/>
 
 ## 7. Summary
 *   When the relationship between variables is not a straight line, we need a more flexible model.
