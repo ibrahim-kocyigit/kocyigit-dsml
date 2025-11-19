@@ -15,7 +15,7 @@ How do we predict one category out of many? There are two main approaches: adapt
 ### 2.1. Adapting Binary Classifiers (OvA and OvO)
 Many powerful algorithms (like Support Vector Machines) are inherently binary. We can cleverly adapt them using two primary strategies:
 
-#### One-vs-Res (OvR) a.k.a. One-vs-All (OvA)
+#### One-vs-Rest (OvR) a.k.a. One-vs-All (OvA)
 This is the most common strategy.
 
 * **The Idea:** For `k` classes, train `k` separate binary classifiers.
@@ -26,7 +26,7 @@ This is the most common strategy.
 * **Prediction:** For a new data point, get a prediction score (e.g., a probability) from all `k` classifiers. The final predicted class is the one whose classifier gives the highest score.
 
 $$
-\text{Prediction} = \underset{i \in \{1, ..., k\}}{\operatorname{argmax}} (\text{classifier}_i(x))
+\text{Prediction} = \underset{i \in \{1, ..., k\}}{\arg\max} (\text{classifier}_i(x))
 $$
 
 <img src="./images/0501.png" alt="One-vs-All Diagram" width="800"/>
@@ -43,7 +43,7 @@ $$
 ### 2.2. Native Multi-Class Algorithms (Softmax Regression)
 Some algorithms are naturally designed for multi-class problems. The most direct extension of Logistic Regression is **Softmax Regression** (also called Multinomial Logistic Regression).
 
-Instead of the Sigmoid function, which outputs one probability, Softmax takes a vector of scores and outputs a **probability districution** - a set of probabilities for each class that all sum to 1.
+Instead of the Sigmoid function, which outputs one probability, Softmax takes a vector of scores and outputs a **probability distribution** - a set of probabilities for each class that all sum to 1.
 
 $$
 \text{Softmax}(z_i) = \frac{e^{z_i}}{\sum_{j=1}^{k} e^{z_j}} \quad \text{for } i=1, ..., k
@@ -85,7 +85,7 @@ The model uses Gradient Descent to find the parameters ( $\theta$ ) that minimiz
 
 ### 5.1. Choosing a Strategy: OvA vs. OvO
 * **OvA (or OvR)** is simple and is the default in `scikit-learn`. It scales well as the number of classes grows, as it only requires `k` classifiers.
-* **OvO** requires training `k * (k-1) / 2` classifiers, which can be computatively expensive if `k` is large. However, it can be more efficient for algorithms (like kernelized SVMs) that don't scale well with the size of the dataset, because each classifier is trained on a smaller subset of the data (only two classes at a  time).
+* **OvO** requires training `k * (k-1) / 2` classifiers, which can be computationally expensive if `k` is large. However, it can be more efficient for algorithms (like kernelized SVMs) that don't scale well with the size of the dataset, because each classifier is trained on a smaller subset of the data (only two classes at a time).
 
 ### 5.2. Algorithms with Native Support
 Some algorithms are inherently multi-class and do not require OvA/OvO:
@@ -107,7 +107,7 @@ This is a major issue in multi-class problems, just as it is in binary ones. If 
 * Binary classifiers can be adapted using **One-vs-Rest (OvR)** or **One-vs-All (OvO)** strategies.
 * Some algorithms, like **Softmax Regression** and **Decision Trees**, are natively multi-class.
 * The assumptions depend on the underlying algorithm being used.
-* Native multi-class models are typically trained by minimizing **Cross-Entropy Logg**. 
+* Native multi-class models are typically trained by minimizing **Cross-Entropy Loss**. 
 * Beware of **unbalanced classes** and use appropriate evaluation metrics beyond simple accuracy.
 
 ---

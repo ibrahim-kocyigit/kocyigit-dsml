@@ -1,20 +1,38 @@
-# The implementation files in this course are aimed to provide clear and concise
-# implementations of the algorithms discussed in the lectures. They are designed for
-# educational purposes and may not include all optimizations or best practices for
-# production-level code.
-
-# ----- Implementation: Simple Linear Regression ----- #
-
 from __future__ import annotations
 import numpy as np
 
 
 class SimpleLinearRegression:
+    """
+    A simple implementation of Simple Linear Regression for educational purposes.
+
+    This class provides methods to fit a linear model to data and make predictions.
+    It uses the closed-form solution for ordinary least squares regression.
+
+    Attributes:
+        slope (float): The estimated slope (coefficient) of the regression line.
+        intercept (float): The estimated intercept of the regression line.
+
+    Methods:
+        fit(X, y): Fits the model to the input features X and target y.
+        predict(X): Predicts target values for given input features X.
+    """
+
     def __init__(self):
         self.slope = None
         self.intercept = None
 
     def fit(self, X: np.ndarray, y: np.ndarray) -> SimpleLinearRegression:
+        """
+        Fits the Simple Linear Regression model to the input features X and target y.
+
+        Args:
+            X (np.ndarray): 1D array of input features.
+            y (np.ndarray): 1D array of target values.
+
+        Returns:
+            SimpleLinearRegression: The fitted model instance.
+        """
         # Slope = cov(X, y) / var(X)
         self.slope = np.cov(X, y, bias=True)[0, 1] / np.var(X)
 
@@ -31,6 +49,15 @@ class SimpleLinearRegression:
         return self
 
     def predict(self, X: np.ndarray) -> np.ndarray:
+        """
+        Predicts target values for given input features X using the trained model.
+
+        Args:
+            X (np.ndarray): 1D array of input features.
+
+        Returns:
+            np.ndarray: Predicted target values.
+        """
         if self.slope is None or self.intercept is None:
             raise ValueError("Model is not trained yet. Please call 'fit' first.")
         return self.slope * X + self.intercept
