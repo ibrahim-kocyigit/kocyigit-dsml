@@ -6,8 +6,6 @@ We've established that Linear Regression is a powerful tool for modeling straigh
 
 **Non-linear Regression** is the broad category of techniques used to model these more complex, curved relationships between features and a target variable. Instead of fitting a single best-fit line, the goal is to fit a curve that accurately captures the nuances of the data.
 
-<img src="./images/0101.png" alt="A non-linear relationship" width="600"/>
-
 ## 2. Common Approaches to Non-linear Regression
 
 "Non-linear Regression" is not a single algorithm but a class of them. There are several distinct approaches to solving this problem:
