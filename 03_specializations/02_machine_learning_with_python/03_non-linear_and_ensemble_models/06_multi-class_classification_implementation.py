@@ -283,4 +283,10 @@ class SoftmaxClassifier:
         return y_one_hot
 
     def fit(self, X: np.ndarray, y: np.ndarray) -> SoftmaxClassifier:
+        self.classes = np.unique(y)
+        n_samples, n_features = X.shape
+        n_classes = len(self.classes)
+        self.weights = np.zeros((n_features, n_classes))
+        self.bias = np.zeros(n_classes)
+
         return self
