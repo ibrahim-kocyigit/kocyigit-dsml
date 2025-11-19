@@ -16,7 +16,6 @@ This is the simplest approach. We create new, non-linear features from our exist
 *   **How it Works:** Transforms the feature space.
 *   **Pros:** Easy to implement, leverages the simplicity of linear models.
 *   **Cons:** Prone to overfitting with high degrees, not suitable for all curve shapes.
-*   **See also:** [Polynomial Regression Theory](./08_polynomial_regression_theory.md)
 
 ### 2.2. Algorithmic Approaches: Decision Trees, SVMs, etc.
 These are models that are inherently capable of capturing non-linear patterns without requiring manual feature transformation.
