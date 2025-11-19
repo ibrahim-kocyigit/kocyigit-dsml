@@ -69,4 +69,4 @@ The single biggest risk with all non-linear models is **overfitting**. Because t
 
 ---
 
-**Next:** [Classification Theory](./02_polynomial_regression_theory.md)
+**Next:** [Polynomial Regression Theory](./02_polynomial_regression_theory.md)
