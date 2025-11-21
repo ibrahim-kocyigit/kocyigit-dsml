@@ -352,3 +352,6 @@ class SoftmaxClassifier:
             raise ValueError("The model is not trained yet. Please call 'fit' first.")
         scores = X @ self.weights + self.bias
         return self._softmax(scores)
+
+
+# Next: 07_multi_class_classification_lab.ipynb
