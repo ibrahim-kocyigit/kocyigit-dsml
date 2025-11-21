@@ -238,6 +238,22 @@ class OneVsOneClassifier:
 
 
 class SoftmaxClassifier:
+    """
+    Implements a multi-class classifier using the softmax regression (multinomial logistic regression) approach.
+
+    Attributes:
+        learning_rate (float): The step size for gradient descent.
+        max_iters (int): The number of iterations for training.
+        weights (np.ndarray): The learned weights after fitting, shape (n_features, n_classes).
+        bias (np.ndarray): The learned bias after fitting, shape (n_classes,).
+        classes (list): List of unique class labels.
+
+    Methods:
+        fit(X, y): Trains the classifier using input features X and multi-class labels y.
+        predict(X): Predicts class labels for input features X.
+        predict_proba(X): Predicts class probabilities for input features X.
+    """
+
     def __init__(self, learning_rate: float = 0.01, max_iters: int = 1000):
         self.learning_rate = learning_rate
         self.max_iters = max_iters
@@ -279,11 +295,60 @@ class SoftmaxClassifier:
         return y_one_hot
 
     def fit(self, X: np.ndarray, y: np.ndarray) -> SoftmaxClassifier:
+        """
+        Trains the softmax (multinomial logistic regression) classifier using gradient descent.
+
+        Args:
+            X (np.ndarray): Feature matrix of shape (n_samples, n_features).
+            y (np.ndarray): Target vector of shape (n_samples,).
+
+        Returns:
+            SoftmaxClassifier: The trained classifier instance.
+        """
         n_samples, n_features = X.shape
         self.classes = np.unique(y)
         n_classes = len(self.classes)
         self.weights = np.zeros((n_features, n_classes))
         self.bias = np.zeros(n_classes)
-
+        y_one_hot = self._onehot(y)
         for _ in range(self.max_iters):
-            p_hat = self._softmax(X @ self.weights + self.bias)
+            scores = X @ self.weights + self.bias
+            p_hat = self._softmax(scores)
+            error = p_hat - y_one_hot
+            dw = (1 / n_samples) * X.T @ error
+            db = (1 / n_samples) * np.sum(error, axis=0)
+            self.weights = self.weights - self.learning_rate * dw
+            self.bias = self.bias - self.learning_rate * db
+        return self
+
+    def predict(self, X: np.ndarray) -> np.ndarray:
+        """
+        Predicts class labels for input features X using the trained softmax classifier.
+
+        Args:
+            X (np.ndarray): Feature matrix of shape (n_samples, n_features).
+
+        Returns:
+            np.ndarray: Predicted class labels for each sample.
+        """
+        if self.weights is None or self.bias is None or len(self.classes) == 0:
+            raise ValueError("The model is not trained yet. Please call 'fit' first.")
+        scores = X @ self.weights + self.bias
+        proba_dists = self._softmax(scores)
+        preds_idx = np.argmax(proba_dists, axis=1)
+        return self.classes[preds_idx]
+
+    def predict_proba(self, X: np.ndarray) -> np.ndarray:
+        """
+        Predicts class probabilities for input features X using the trained softmax classifier.
+
+        Args:
+            X (np.ndarray): Feature matrix of shape (n_samples, n_features).
+
+        Returns:
+            np.ndarray: Predicted class probabilities for each sample (n_samples, n_classes).
+        """
+        if self.weights is None or self.bias is None or len(self.classes) == 0:
+            raise ValueError("The model is not trained yet. Please call 'fit' first.")
+        scores = X @ self.weights + self.bias
+        return self._softmax(scores)
