@@ -1,91 +1,84 @@
 # Stage 4: Data Collection
 
-*"In the initial data collection stage, data scientists identify and gather the available data resources... Typically, they can perform a mini-ETL process to get the data into a single location."* - John B. Rollins
+_"In the initial data collection stage, data scientists identify and gather the available data resources—structured, unstructured and semi-structured—relevant to the problem domain. Typically, they must choose whether to make additional investments to obtain less-accessible data elements. It may be best to defer the investment decision until more is known about the data and the model. If there are gaps in data collection, the data scientist may have to revise the data requirements accordingly and collect new and/or more data."_ - **John B. Rollins**
+
 
 ## Purpose
 
-The goal of this stage is to gather the data specified in the Stage 3 Data Requirements document. This involves writing and executing an initial **Extract, Transform, and Load (ETL)** process. The process begins by mirroring the source data into a `raw` storage layer and then producing a clean, standardized, and versionable `interim` dataset that will serve as the reliable starting point for all subsequent analysis.
+The goal of this stage is to gather the data specified in the Stage 3 Data Requirements by executing a foundational **Extract, Transform, and Load (ETL)** process. This involves pulling data from one or more sources, applying initial, lightweight transformations to standardize it, and loading the result into a clean, versionable "interim" dataset. This interim dataset serves as the reliable and consistent starting point for all subsequent analytical stages.
 
-## Step 1: Extract and Store Raw Data
-First, we **Extract** the data from its original source and store it in an untouched, "raw" format. This creates a perfect, versionable mirror of the source system at the time of collection.
+Our process uses a two-tiered staging area:
+1.  **Raw (`/data/raw/`)**: A "write-once" layer that holds an exact, untouched copy of the source data.
+2.  **Interim (`/data/interim/`)**: A layer that holds the cleaned and standardized data after the initial ETL, ready for analysis.
 
-* **Action:** Write scripts to pull data from all sources (databases, APIs, libraries).
-* **Action:** Save the output directly to a `/data/raw/` or `/data/external/` directory **without any modifications**. The schema and content should be identical to the source.
-* **Guiding Questions:**
-    * What SQL query, API call, or library function is needed to get the data?
-    * What is the native format of the source data (e.g., JSON, raw CSV, Parquet)?
-    * How are credentials and API keys managed securely?
+## Step 1: Extract
+The first phase involves extracting the data from the source system(s). The goal is to get the data out of its original location and into our project's first staging area (`/data/raw/`) with as little modification as possible to create a perfect mirror of the source.
+
+* **Action:** Write and execute scripts to pull data from all required sources (databases, APIs, libraries, etc.).
+* **Action:** Save the output directly to the `/data/raw/` directory. The schema, content, and format should be identical to the source to ensure a "source of truth" is maintained.
 
 ```markdown
-### Raw Data Storage Log
-* **Data Source:** [Example: `sklearn.datasets.load_iris()`]
-* **Raw Storage Location:** [Example: `/data/raw/2025-11-21_iris_raw.csv`]
-* **Notes:** [Example: "Saved the original iris data with its native column names like 'sepal length (cm)'."]
+### Raw Data Extraction Log
+* **Data Source:** `sklearn.datasets.load_iris()`
+* **Raw Storage Location:** `/data/raw/2025-11-21_iris_raw.csv`
+* **Author:** ibrahim-kocyigit
+* **Timestamp (UTC):** 2025-11-21 09:55:56
+* **Notes:** Saved the original iris data with its native column names like 'sepal length (cm)'.
 ```
 
-## Step 2: Perform Initial Transformation
-This is the **Transform** step. Here, we perform lightweight, essential transformations on the raw data to create a standardized and analysis-friendly version.
+## Step 2: Transform
+In the transform phase, a series of rules or functions are applied to the extracted data to prepare it for loading into the final target. For this initial ETL process, transformations are lightweight and focused on standardization.
 
-* **Action:** Load the raw data from `/data/raw/` or `/data/external/` and apply basic schema and type corrections.
-* **Guiding Questions:**
-    * Do column names need to be renamed to a consistent format (e.g., `snake_case`)?
-    * Do any data types need immediate, obvious correction (e.g., a date field stored as an object)?
-    * Are there any columns that are definitively out of scope and can be dropped?
+* **Action:** Load the raw data from `/data/raw/`.
+* **Action:** Apply basic schema and type corrections. This can include cleaning data, validating it, and ensuring it conforms to a standard project schema (e.g., snake_case for all columns).
 
 ```markdown
 ### Initial Transformation Log
-* **Columns Renamed:** [Example: "`sepal length (cm)` -> `sepal_length`"]
-* **Data Types Corrected:** [Example: "No type corrections were necessary at this stage."]
-* **Columns Dropped:** [Example: "No columns were dropped."]
+* **Columns Renamed:** `sepal length (cm)` -> `sepal_length`, `sepal width (cm)` -> `sepal_width`, etc.
+* **Data Types Corrected:** No type corrections were necessary at this stage.
+* **Validation:** Confirmed that the dataset contains 150 rows and the expected number of columns.
 ```
 
-## Step 3: Load Interim Data
-This is the **Load** step, where the transformed data is saved to an `interim` storage layer. This file becomes the clean, reliable starting point for all subsequent stages of the project.
+## Step 3: Load
+The final phase of the ETL process is to load the transformed data into its target destination. In our methodology, this target is the `/data/interim/` directory, which makes the clean data available for the Data Understanding stage.
 
-* **Action:** Save the transformed DataFrame to the `/data/interim/` directory.
-* **Guiding Questions:**
-    * What is the clear, versioned name for this interim dataset (e.g., `iris_multi_class_v1.csv`)?
-    * What is the most appropriate file format for analytical work (e.g., CSV, Parquet)?
+* **Action:** Save the transformed, clean DataFrame to the `/data/interim/` directory.
+* **Action:** Use a clear, versioned naming convention for the output file.
 
 ```markdown
 ### Interim Data Load Log
-* **Interim Data Location:** [Example: `/data/interim/iris_multi_class_v1.csv`]
+* **Interim Data Location:** `/data/interim/iris_multi_class_v1.csv`
 * **Author:** ibrahim-kocyigit
-* **Timestamp:** 2025-11-21 09:42:41
+* **Timestamp (UTC):** 2025-11-21 09:55:56
 ```
 
-## Step 4: Initial Data Ingestion and Verification
-Perform a quick, high-level check to ensure the final `interim` data is readable and appears correct. This is a sanity check, not a deep analysis.
+## Step 4: Verification
+After the ETL process is complete, we perform a final sanity check to verify that the data in the `interim` staging area is correct and ready for use.
 
-* **Action:** Load the `interim` data file into a new Pandas DataFrame and perform a quick verification.
-* **Guiding Questions:**
-    * Does the interim file load without errors?
-    * Do the number of rows and columns seem reasonable?
-    * By glancing at `.head()` and `.info()`, do the schema and data types match the transformations applied in Step 2?
+* **Action:** Load the `interim` data file into a Pandas DataFrame.
+* **Action:** Perform a quick verification using `.info()` and `.head()` to ensure the schema, data types, and content match the transformations applied in Step 2.
 
 ## Step 5: Document the Data Lineage
 Maintain a clear log of the datasets that have been created. This is crucial for reproducibility and understanding the data's journey.
 
-* **Action:** Fill out a log that tracks the data from its raw state to its interim state.
-
 ```markdown
 ### Data Lineage Log
-| Layer | Source Data | Destination File | ETL Script | Notes |
+| Layer | Source Data | Destination File | ETL Script Location | Notes |
 | :--- | :--- | :--- | :--- | :--- |
 | Raw | `sklearn.datasets.load_iris()` | `/data/raw/2025-11-21_iris_raw.csv` | `labs/07_multi_class_lab.ipynb` | Stores the untouched, original data. |
 | Interim | `/data/raw/2025-11-21_iris_raw.csv` | `/data/interim/iris_multi_class_v1.csv` | `labs/07_multi_class_lab.ipynb` | Standardized column names and types. |
 ```
 
 ## Step 6: Final Review
-Conclude the data collection phase. If significant data gaps were discovered, it may be necessary to revisit previous stages. The primary deliverable of this stage is the `interim` dataset.
+Conclude the data collection stage. The primary deliverable is the `interim` dataset, which is now the official starting point for all subsequent project stages.
 
 * **Action:** Prepare a brief summary report of the ETL process.
 * **Action:** Add a summary of this stage to the main project `README.md`.
 
 ```markdown
 ### Data Collection Review
-* **Status:** [Completed]
-* **Key Findings:** The ETL process was completed successfully. The original Iris data was extracted, its columns were renamed to snake_case, and the resulting clean dataset was saved to `/data/interim/`. The interim data has been verified and is ready for Stage 5.
+* **Status:** Completed
+* **Key Findings:** The ETL process was completed successfully. The original Iris data was extracted to `/data/raw/`, its columns were renamed to snake_case, and the resulting clean dataset was loaded to `/data/interim/`. The interim data has been verified and is ready for Stage 5.
 ```
 
 ---

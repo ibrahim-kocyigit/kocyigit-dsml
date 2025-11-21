@@ -1,5 +1,6 @@
 # Stage 3: Data Requirements
-_"The chosen analytic approach determines the data requirements. Specifically, the analytic methods to be used require certain data content, formats and representations, guided by domain knowledge."_ - **John B. Rollins**
+
+_"The chosen analytic approach determines the data requirements. Specifically, the analytic methods to be used require certain data content, formats and representations, guided by domain knowledge."_ 
 
 
 ## Purpose
