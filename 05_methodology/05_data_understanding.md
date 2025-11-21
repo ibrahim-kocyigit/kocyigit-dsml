@@ -1,79 +1,122 @@
-# Stage 4: Data Collection
+# Stage 5: Data Understanding
 
-*"In the initial data collection stage, data scientists identify and gather the available data resources—structured, unstructured and semi-structured—relevant to the problem domain. Typically, they can perform a mini-ETL process to get the data into a single location."* - John B. Rollins
+*"After the original data collection, data scientists typically use descriptive statistics and visualization techniques to understand the data content, assess data quality and discover initial insights about the data. Additional data collection may be necessary to fill gaps."* - **John B. Rollins**
+
 
 ## Purpose
 
-The goal of this stage is to gather the data specified in the Stage 3 Data Requirements document. This involves writing and executing an initial **Extract, Transform, and Load (ETL)** process to create a clean, versionable, and raw dataset that will serve as the starting point for the entire project.
+The goal of this stage is to conduct Exploratory Data Analysis (EDA) to develop a deep understanding of the data's content, quality, and structure. Through descriptive statistics and visualization, we aim to uncover initial patterns, spot anomalies or data quality issues, and validate (or challenge) the initial hypotheses formed during the business understanding phase.
 
-## Step 1: Develop Data Extraction Scripts
-Write the necessary scripts to **Extract** data from the sources identified in the previous stage.
 
-* **Action:** Write and version-control all scripts used for data extraction.
-* **Guiding Questions:**
-    * What SQL query is needed to pull customer transaction history?
-    * What Python script is required to access a necessary third-party API or a library like scikit-learn?
-    * How will credentials and API keys be managed securely?
+## Step 1: Initial Data Shaping
 
-## Step 2: Perform Initial Transformation
-Perform lightweight, essential transformations to standardize the extracted data. This is the **Transform** step. It is NOT the same as the deep data preparation that will happen in Stage 6.
+Before diving into analysis, it's crucial to perform a first pass of cleaning and shaping. This is not the exhaustive cleaning that will happen in Stage 6, but rather a set of preliminary steps to make the data usable for EDA. The goal is to handle obvious errors and inconsistencies that would otherwise break visualizations or skew summary statistics.
 
-* **Action:** Apply basic schema and type corrections.
-* **Guiding Questions:**
-    * Do column names need to be renamed to a consistent format (e.g., snake_case)?
-    * Do any data types need immediate, obvious correction (e.g., a date field that is clearly a string)?
-    * Is there any data that is completely outside the project scope and can be filtered out now?
+  * **Action:** Apply basic cleaning and formatting to the raw dataset.
+  * **Guiding Questions:**
+      * Are there any columns that we are **100% sure** are not needed for the project and can be dropped? (Any columns that *might* be useful - for example, that might help making sense of another feature - should be retained for now.)
+      * Are the column names consistent and easy to work with (e.g., convert to snake_case)?
+      * Are there any obvious data type errors that need correction (e.g., numbers stored as strings, dates as objects)?
+      * Are there any outliers that, upon inspection, are clearly the result of data entry errors or misdocumentation and can be confidently corrected or removed?
+      * Are there **fully** duplicated rows that can be safely removed?
+  * **Toolkit Connection:** This step uses basic Pandas functions like `.drop(columns=[])`, `.rename()`, `.astype()`, `.to_datetime()`, and `.drop_duplicates()`.
 
-## Step 3: Load and Store Raw Data
-**Load** the transformed data into a designated storage location. This file is the raw, versionable starting point for your analysis.
-
-* **Action:** Execute the collection and transformation scripts and save the output.
-* **Guiding Questions:**
-    * Where will the raw data be stored (e.g., a project folder like `/data/raw/` or `/data/interim/`)?
-    * What naming convention will be used for the raw files to ensure clarity and versioning (e.g., `YYYY-MM-DD_source_data.csv`)?
-
-## Step 4: Initial Data Ingestion and Verification
-Perform a quick, high-level check to ensure the collected and stored data is readable and appears correct. This is a sanity check, not a deep analysis.
-
-* **Action:** Load the final raw data file into a Pandas DataFrame and perform a quick verification.
-* **Guiding Questions:**
-    * Does the data load without errors?
-    * Do the number of rows and columns seem reasonable?
-    * By glancing at the first few rows (`.head()`) and the data types (`.info()`), does the data match expectations from the ETL process?
-
-```markdown
-### Initial Data Ingestion and Verification
-```[Paste the output of df.info() for the primary raw dataset here to provide a quick summary of columns, non-null counts, and data types.]```
-
-```[Paste the output of df.head() here.]```
+```Markdown
+### Initial Data Shaping Report
+* [List all cleaning actions taken here. Example: "Renamed columns to snake_case", "Converted `order_date` to datetime", "Removed 150 duplicate rows".]
 ```
 
-## Step 5: Document the Collected Data
-Maintain a clear log of the datasets that have been collected. This is crucial for reproducibility.
+## Step 2: Descriptive Statistics
 
-* **Action:** Fill out a log for each dataset acquired.
+Compute summary statistics to get a high-level quantitative overview of the dataset.
 
-```markdown
-### Data Collection Log
-| Source Name | Raw Data File | Date Collected | ETL Script Location | Notes |
-| :--- | :--- | :--- | :--- | :--- |
-| Scikit-learn | `/data/interim/iris_multi_class_v1.csv`| 2025-11-21 | `/labs/07_multi_class_lab.ipynb` | Contains all 150 samples with 3 classes. |
-| Sales Logs | `/data/raw/2025-06-20_transactions.parquet`| 2025-06-20 | `/scripts/get_transactions.py` | Transaction data for the last 24 months.|
+  * **Action:** Generate and analyze descriptive statistics for all numerical and categorical features.
+  * **Toolkit Connection:** This step primarily uses the `pandas.DataFrame.describe()` method.
+
+```Markdown
+### Descriptive Statistics
+
+#### Numerical Feature Summary (`df.describe()`)
+```[Paste the output of df.describe() for numerical columns here. Analyze the count, mean, std, min, max, and quartile values for initial insights into scale and spread.]```
+
+#### Categorical Feature Summary (`df.describe(include='object')`)
+```[Paste the output of df.describe(include='object') here. Analyze the count, unique values, top (most frequent) category, and frequency.]```
+```
+
+
+## Step 3: Univariate Analysis
+
+Analyze individual variables to understand their own distributions and characteristics.
+
+  * **Action:** Create visualizations for key individual variables.
+  * **Guiding Questions:**
+      * How is the target variable distributed?
+      * What is the distribution of key numerical features (e.g., normal, skewed, bimodal)?
+      * What are the frequency counts of key categorical features?
+  * **Toolkit Connection:** This step uses `seaborn.histplot`, `seaborn.kdeplot`, and `seaborn.countplot`.
+
+```Markdown
+### Univariate Analysis
+[Embed or link to key visualizations, e.g., `univariate_plots.png`]
+
+#### Key Observations from Univariate Analysis
+* Note any findings. [Example: "The `Price` feature is heavily right-skewed, suggesting the presence of a few high-value outliers. A log transformation may be necessary in the data preparation stage."]
+* [Example: "The target variable `churn_status` is imbalanced, with class '1' representing only 15% of the dataset. This will require special handling (e.g., stratified splitting, appropriate metrics)."]*
+```
+
+## Step 4: Bivariate Analysis
+
+Analyze pairs of variables to investigate relationships and correlations.
+
+  * **Action:** Create visualizations to explore the relationships between features, and between features and the target variable.
+  * **Guiding Questions:**
+      * How do numerical features correlate with each other? Is there multicollinearity?
+      * How does the target variable's distribution change across different categories of a feature?
+      * Is there a linear or non-linear relationship between key numerical features?
+  * **Toolkit Connection:** This step uses `seaborn.scatterplot`, `seaborn.boxplot`, and `seaborn.heatmap` on a correlation matrix (`df.corr()`).
+
+```Markdown
+### Bivariate Analysis
+[Embed or link to key visualizations, e.g., a correlation heatmap and several boxplots.]
+
+#### Key Observations from Bivariate Analysis
+* Note any findings. [Example: "There is a strong positive correlation (0.85) between `feature_A` and `feature_B`, suggesting potential multicollinearity."]
+* [Example: "The median `Price` for the 'Electronics' category is significantly higher than for 'Accessories', as shown in the box plot."]*
+```
+
+## Step 5: Initial Findings Summary
+
+Consolidate all observations from the EDA into a summary.
+
+  * **Action:** Create a bulleted list of the most important insights and data quality issues discovered.
+
+```Markdown
+### Exploratory Data Analysis (EDA) Summary
+
+#### Key Insights
+* [List 2-3 of the most interesting business-relevant patterns found.]
+
+#### Data Quality Issues
+* [List any issues found, e.g., "The `last_login_date` column has 30% missing values." or "Detected significant outliers in the `order_value` column."]
+
+#### Revised Assumptions
+* [Note any initial assumptions that were challenged or validated by the data.]
 ```
 
 ## Step 6: Final Review
-Conclude the data collection phase. If significant data gaps were discovered that cannot be filled, it may be necessary to revisit Stage 2 (Analytic Approach) or Stage 3 (Data Requirements).
 
-* **Action:** Prepare a brief summary report of the data collection process.
-* **Action:** Add a summary of this stage to the main project `README.md`.
+Conclude the data understanding phase. Based on the findings (especially data quality issues), it may be necessary to revisit Stage 3 (Data Requirements) or Stage 4 (Data Collection).
 
-```markdown
-### Data Collection Review
-* **Status:** *[Completed]*
-* **Key Findings:** 
-  * Summarize the results of the ETL process and initial data verification.
+  * **Action:** Prepare a brief summary report of the EDA findings for both technical and business stakeholders.
+  * **Action:** Add a summary of this stage to the main project `README.md`.
+
+```Markdown
+### Data Understanding Summary
+
+* **Status:** [Completed]
+* **Key Finding for Stakeholders:** [Translate one key insight into a simple business statement. Example: "Initial analysis shows that customers with a tenure of less than 6 months are significantly more likely to churn."]
+* **Next Steps:** [Outline next steps. Example: "Proceed to Data Preparation stage. The discovered data quality issues (missing values, outliers) will be addressed as the first priority."]
 ```
 
 ---
-
-**Next:** [Data Understanding](./05_data_understanding.md)
+**Next:** [Data Preparation](./06_data_preparation.md)
