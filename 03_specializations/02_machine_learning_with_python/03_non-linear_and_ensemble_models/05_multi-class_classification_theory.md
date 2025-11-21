@@ -79,7 +79,43 @@ $$
 ... where $y_j$ is 1 if the sample $i$ belongs to class $j$ and 0 otherwise, and $\hat{p}_j$ is the predicted probability for that class.
 
 #### Optimization Algorithm: Gradient Descent
-The model uses Gradient Descent to find the parameters ( $\theta$ ) that minimize the Cross-Entropy Loss, iteratively adjusting the weights to improve the predicted probabilities.
+The model uses Gradient Descent to find the parameters ($\theta$) that minimize the Cross-Entropy Loss. This involves iteratively calculating the gradient (the partial derivatives of the cost function) and updating the model's weights and bias.
+
+**Gradient Calculation:**
+
+The gradients for the weights matrix `W` and the bias vector `b` are calculated as follows:
+
+1. **Gradient of Weights (`W`):**  
+
+$$
+\nabla_W J = \frac{1}{n} X^T (\hat{P} - Y_{\text{one-hot}})
+$$
+
+2. **Gradient of Bias (`b`):**  
+
+$$
+\nabla_b J = \frac{1}{n} \sum (\hat{P} - Y_{\text{one-hot}})
+$$
+
+Where:
+*   `n` is the number of samples.
+*   `X` is the input features matrix (shape `n x d`).
+*   `X^T` is the transpose of `X` (shape `d x n`).
+*   $\hat{P}$ is the matrix of predicted probabilities from the softmax function (shape `n x k`).
+*   $Y_{\text{one-hot}}$ is the matrix of one-hot encoded true labels (shape `n x k`).
+*   The sum for the bias gradient is performed across the samples (i.e., `axis=0`), resulting in a vector of shape `k`.
+
+**Weight and Bias Update Rule**
+
+In each step of gradient descent, the parameters are updated by subtracting the gradient scaled by the learning rate ($\alpha$):
+
+$$
+W := W - \alpha \nabla_W J
+$$
+
+$$
+b := b - \alpha \nabla_b J
+$$
 
 ## 5. Model-Specific Considerations
 

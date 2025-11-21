@@ -243,7 +243,7 @@ class SoftmaxClassifier:
         self.max_iters = max_iters
         self.weights = None
         self.bias = None
-        self.classes = None
+        self.classes = []
 
     def _softmax(self, z: np.ndarray) -> np.ndarray:
         """
@@ -251,15 +251,14 @@ class SoftmaxClassifier:
         A numerical stability trick (subtracting the max) is used to prevent overflow.
 
         Args:
-            z (np.ndarray): The input scores matrix (n_observations, n_classes).
+            z (np.ndarray): The input scores matrix (n_samples, n_classes).
 
         Returns:
-            np.ndarray: The matrix of probabilities (n_observations, n_classes).
+            np.ndarray: The matrix of probabilities (n_samples, n_classes).
         """
-        # Subtract the max for numerical stability
-        exp_z = np.exp(z - np.max(z, axis=1, keepdims=True))
-        # Normalize to get probabilities
-        return exp_z / np.sum(exp_z, axis=1, keepdims=True)
+        z_shifted = z - np.max(z, axis=1, keepdims=True)
+        exp_z_shifted = np.exp(z_shifted)
+        return exp_z_shifted / np.sum(exp_z_shifted, axis=1, keepdims=True)
 
     def _onehot(self, y: np.ndarray) -> np.ndarray:
         """
@@ -272,21 +271,19 @@ class SoftmaxClassifier:
             np.ndarray: The one-hot encoded matrix.
         """
         n_classes = len(self.classes)
-        n_observations = len(y)
-        y_one_hot = np.zeros((n_observations, n_classes))
-        # Create a mapping from class label to index
+        n_samples = len(y)
+        y_one_hot = np.zeros((n_samples, n_classes))
         class_to_index = {cls: i for i, cls in enumerate(self.classes)}
-        # Convert y labels to indices
         y_indices = np.array([class_to_index[label] for label in y])
-        # Use numpy indexing to set the '1's
-        y_one_hot[np.arange(n_observations), y_indices] = 1
+        y_one_hot[np.arange(n_samples), y_indices] = 1
         return y_one_hot
 
     def fit(self, X: np.ndarray, y: np.ndarray) -> SoftmaxClassifier:
-        self.classes = np.unique(y)
         n_samples, n_features = X.shape
+        self.classes = np.unique(y)
         n_classes = len(self.classes)
         self.weights = np.zeros((n_features, n_classes))
         self.bias = np.zeros(n_classes)
 
-        return self
+        for _ in range(self.max_iters):
+            p_hat = self._softmax(X @ self.weights + self.bias)
