@@ -16,9 +16,8 @@ Thanks to the ETL process in Stage 4, we are starting with a clean, standardized
 * **Guiding Questions:**
     * Are there any columns that we are **100% sure** are not needed for the project and can be dropped? (Any columns that *might* be useful should be retained for now.)
     * Are there any obvious data type errors that need correction to ensure they are compatible with analytical and visualization libraries (e.g., converting strings to Pandas `category` type)?
-    * Are there any obvious outliers that, upon inspection, appear to be data entry errors that may have slipped through the initial ETL?
     * Are there **fully** duplicated rows that can be safely removed?
-* **Toolkit Connection:** This step uses basic Pandas functions like `.drop(columns=[])`, `.astype()`, `.to_datetime()`, and `.drop_duplicates()`. Column renaming (`.rename()`) should have already been handled in Stage 4.
+* **Toolkit Connection:** This step uses basic Pandas functions like `.drop(columns=[])`, `.astype()`, `.to_datetime()`, and `.drop_duplicates()`.
 
 
 ```Markdown
