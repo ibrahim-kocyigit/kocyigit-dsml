@@ -11,7 +11,7 @@ Our process uses a two-tiered staging area:
 1.  **Raw (`/data/raw/`)**: A "write-once" layer that holds an exact, untouched copy of the source data.
 2.  **Interim (`/data/interim/`)**: A layer that holds the cleaned and standardized data after the initial ETL, ready for analysis.
 
-## Step 1: Extract
+## Step 1: Extract: Collect and Store Raw Data
 The first phase involves extracting the data from the source system(s). The goal is to get the data out of its original location and into our project's first staging area (`/data/raw/`) with as little modification as possible to create a perfect mirror of the source.
 
 * **Action:** Write and execute scripts to pull data from all required sources (databases, APIs, libraries, etc.).
@@ -26,7 +26,7 @@ The first phase involves extracting the data from the source system(s). The goal
 * **Notes:** Saved the original iris data with its native column names like 'sepal length (cm)'.
 ```
 
-## Step 2: Transform
+## Step 2: Transform: Standardize the Raw Data
 In the transform phase, a series of rules or functions are applied to the extracted data to prepare it for loading into the final target. For this initial ETL process, transformations are lightweight and focused on standardization.
 
 * **Action:** Load the raw data from `/data/raw/`.
@@ -39,7 +39,7 @@ In the transform phase, a series of rules or functions are applied to the extrac
 * **Validation:** Confirmed that the dataset contains 150 rows and the expected number of columns.
 ```
 
-## Step 3: Load
+## Step 3: Load: Save the Interim Data
 The final phase of the ETL process is to load the transformed data into its target destination. In our methodology, this target is the `/data/interim/` directory, which makes the clean data available for the Data Understanding stage.
 
 * **Action:** Save the transformed, clean DataFrame to the `/data/interim/` directory.
@@ -47,7 +47,7 @@ The final phase of the ETL process is to load the transformed data into its targ
 
 ```markdown
 ### Interim Data Load Log
-* **Interim Data Location:** `/data/interim/iris_multi_class_v1.csv`
+* **Interim Data Location:** `/data/interim/iris_multi_class_interim_v1.parquet`
 * **Author:** ibrahim-kocyigit
 * **Timestamp (UTC):** 2025-11-21 09:55:56
 ```
@@ -66,7 +66,7 @@ Maintain a clear log of the datasets that have been created. This is crucial for
 | Layer | Source Data | Destination File | ETL Script Location | Notes |
 | :--- | :--- | :--- | :--- | :--- |
 | Raw | `sklearn.datasets.load_iris()` | `/data/raw/2025-11-21_iris_raw.csv` | `labs/07_multi_class_lab.ipynb` | Stores the untouched, original data. |
-| Interim | `/data/raw/2025-11-21_iris_raw.csv` | `/data/interim/iris_multi_class_v1.csv` | `labs/07_multi_class_lab.ipynb` | Standardized column names and types. |
+| Interim | `/data/raw/2025-11-21_iris_raw.csv` | `/data/interim/iris_multi_class_interim_v1.csv` | `labs/07_multi_class_lab.ipynb` | Standardized column names and types. |
 ```
 
 ## Step 6: Final Review
