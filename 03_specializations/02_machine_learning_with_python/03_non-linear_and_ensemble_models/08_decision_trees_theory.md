@@ -7,7 +7,7 @@ Visually and conceptually, a decision tree recursively partitions the feature sp
 
 <img src="./images/0801.png" alt="Decision Tree Example" width="600"/>
 
-## How a Decision Tree Learns: Recursive Partitioning
+## 2. How a Decision Tree Learns: Recursive Partitioning
 
 Decision trees are constructed using a greedy, top-down procedure called **recursive partitioning**:
 
@@ -20,3 +20,31 @@ Decision trees are constructed using a greedy, top-down procedure called **recur
 Because the algorithm selects the best local split at each step, it is computationally efficient but can produce sub-optimal global structures (greedy approach).
 
 ## 3. Splitting Criteria: Measuring Purity
+
+To choose the "best" split, the algorithm relies on mathematical functions to measure the purity of the resulting nodes.
+
+### 3.1. Gini Impurity
+**Gini impurity** is a measure of how often a randomly chosen element from the set would be incorrectly labeled if it were randomly labeled according to the distribution of labels in the subset. It is the default metric for scikit-learn.
+
+For a node with $K$ classes and class probabilities $p_k$:
+
+$$
+\text{Gini} = 1 - \sum_{k=1}^{K} p_k^2
+$$
+
+* **Low Gini (near 0):** The node is pure (mostly one class).
+* **High Gini (near 0.5 for binary):** The node is impure (classes are mixed evenly).
+
+### 3.2. Entropy (Information Gain)
+**Entropy** quantifies the disorder or uncertainty in the data.
+
+$$
+\text{Entropy} = -\sum_{k=1}^{K} p_k \log_2 p_k
+$$
+
+The algorithm chooses the split that maximizes **Information Gain**, which is simply the reduction in entropy:
+
+
+$$
+\text{Information Gain} = \text{Entropy}(\text{parent}) - \sum_{c \in \{\text{children}\}} \frac{N_c}{N_{\text{parent}}} \text{Entropy}(c)
+$$
