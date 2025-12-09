@@ -10,20 +10,7 @@ The goal of this stage is to conduct Exploratory Data Analysis (EDA) to develop 
 
 ## Step 1: Preparation for Exploratory Data Analysis (EDA)
 
-Thanks to the ETL process in Stage 4, we are starting with a clean, standardized `interim` dataset. This first step in Data Understanding is therefore not about initial shaping, but about performing final preparatory checks and minor adjustments to ensure the DataFrame is perfectly suited for the analysis ahead.
-
-* **Action:** Perform final checks and minor adjustments on the DataFrame.
-* **Guiding Questions:**
-    * Are there any columns that we are **100% sure** are not needed for the project and can be dropped? (Any columns that *might* be useful should be retained for now.)
-    * Are there any obvious data type errors that need correction to ensure they are compatible with analytical and visualization libraries (e.g., converting strings to Pandas `category` type)?
-    * Are there **fully** duplicated rows that can be safely removed?
-* **Toolkit Connection:** This step uses basic Pandas functions like `.drop(columns=[])`, `.astype()`, `.to_datetime()`, and `.drop_duplicates()`.
-
-
-```Markdown
-### EDA Preparation Report
-* [List all preparatory actions taken here. Example: "Converted `class_name` to a category type for more efficient memory usage", "Removed 2 fully duplicated rows", "No columns were dropped at this stage.".]
-```
+Perform final checks and minor adjustments on the DataFrame to ensure the DataFrame is perfectly suited for the analysis ahead (e.g., dropping columns that we are **100% sure** are not needed for the project and can be dropped, fixing any obvious data errors that need correction to ensure they are compatible with analytical and visualization libraries.).
 
 
 ## Step 2: Descriptive Statistics
