@@ -267,11 +267,5 @@ class DecisionTree:
 
         return self._traverse_tree(x, node.right)
 
-    def __repr__(self) -> str:
-        """String representation of the DecisionTree."""
-        if self.root is None:
-            return "DecisionTree(unfitted)"
-        return f"DecisionTree(max_depth={self.max_depth}, min_samples_split={self.min_samples_split})"
-
 
 # Next: 10_decision_trees_lab.ipynb
