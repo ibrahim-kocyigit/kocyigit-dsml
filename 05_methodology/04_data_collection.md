@@ -10,7 +10,7 @@ Our process uses a two-tiered staging area:
 1.  **Raw (`/data/raw/`)**: A "write-once" layer that holds an exact, untouched copy of the source data.
 2.  **Interim (`/data/interim/`)**: A layer that holds the cleaned and standardized data after the initial ETL, ready for analysis.
 
-## Step 1: Extract
+## Step 1: Extraction
 The first phase involves extracting the data from the source system(s). The goal is to get the data out of its original location and into our project's first staging area (`/data/raw/`) with as little modification as possible to create a perfect mirror of the source.
 
 * **Action:** Write and execute scripts to pull data from all required sources (databases, APIs, libraries, etc.).
@@ -25,7 +25,7 @@ The first phase involves extracting the data from the source system(s). The goal
 * **Notes:** Saved the original iris data with its native column names like 'sepal length (cm)'.
 ```
 
-## Step 2: Transform
+## Step 2: Transformation
 In the **Transform** phase, a series of rules or functions are applied to the extracted raw data to prepare it for loading into the `interim` layer. For this initial ETL process, transformations are lightweight and focused on two key areas: **data quality** and **standardization**.
 
 *   **Action:** Load the raw data from `/data/raw/`.
@@ -48,7 +48,7 @@ In the **Transform** phase, a series of rules or functions are applied to the ex
 * **Validation:** [Example: "Confirmed that the dataset contains 150 rows and the expected number of columns after transformations."]
 ```
 
-## Step 3: Load
+## Step 3: Loading
 The final phase of the ETL process is to load the transformed data into its target destination. In our methodology, this target is the `/data/interim/` directory, which makes the clean data available for the Data Understanding stage.
 
 * **Action:** Save the transformed, clean DataFrame to the `/data/interim/` directory.
