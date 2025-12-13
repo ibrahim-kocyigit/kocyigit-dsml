@@ -46,8 +46,9 @@ This is equivalent to the variance of the target values within the node. For a p
 
 $$
 \text{Weighted MSE} = 
-\frac{N_{\text{left}}}{N_{\text{parent}}} \cdot \text{MSE}_{\text{left}}
-\;+\;
+\frac{N_{\text{left}}}{N_{\text{parent}}} \cdot \text{MSE}_{\text{left}}\
++
+\
 \frac{N_{\text{right}}}{N_{\text{parent}}} \cdot \text{MSE}_{\text{right}}
 $$
 
