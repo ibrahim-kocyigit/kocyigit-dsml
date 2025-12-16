@@ -23,3 +23,18 @@ $$
 $$
 
 This enforces that all points are correctly classified and lie outside the margin. The geometric margin is $2 / \lVert w \rVert$.
+
+### 2.2. Soft-Margin SVM (Real Data with Overlap/Noise)
+Real-world data is rarely perfectly separable. Introduce slack variables $\xi_i \ge 0$ to allow margin violations:
+- Optimization:
+
+$$
+\min_{w,b,\xi} \ \frac{1}{2}\lVert w \rVert^2 + C \sum_{i=1}^n \xi_i
+\quad \text{s.t.} \quad
+y_i\,(w^\top x_i + b) \ge 1 - \xi_i,\ \ \xi_i \ge 0
+$$
+
+- **C (regularization parameter)** controls the trade-off:
+    - Larger C penalizes violations more → narrower margin, fits training data closely.
+    - Smaller C tolerates violations → wider margin, simpler boundary.
+
