@@ -87,9 +87,9 @@ $$
 
 #### Common Kernels:
 
-**Linear:** $K(x, x') = x^\top x'$  
+1. **Linear:** $K(x, x') = x^\top x'$  
 
-> Ordinary dop product - straight-line similarity; equivalent to no feature mapping.
+Ordinary dot product - straight-line similarity; equivalent to no feature mapping.
 
-**Polynomial:** $K(x, x') = (\gamma\, x^\top x' + r)^d$  
+2. **Polynomial:** $K(x, x') = (\gamma\, x^\top x' + r)^d$  
 
