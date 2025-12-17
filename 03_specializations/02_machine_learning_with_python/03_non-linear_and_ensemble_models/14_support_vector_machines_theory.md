@@ -57,3 +57,39 @@ What the slack $\xi_i$ means in practice:
 Role of $C$ (regularization):  
 - Larger $C$: fit training data closely → narrower margin, fewer violations (risk of overfitting).  
 - Smaller $C$: allow more violations → wider margin, simpler boundary (risk of underfitting).
+
+### 2.3. Hinge Loss View
+Soft-margin SVM can be expressed via the hinge loss. Hinge loss per example:
+
+$$
+\max\big(0,\ 1 - y_i f(x_i)\big)
+$$  
+
+Objective:
+
+$$
+\frac{1}{2}\lVert w\rVert^2\ +\ C \sum_i \max\big(0,\ 1 - y_i f(x_i)\big)
+$$
+
+> "Keep the model simple (small weights) and minimize the total margin violations across all points, with $C$ deciding how harshly to penalize those violations.
+
+## 3. Non-Linear Boundaries: The Kernel Trick
+
+When classes are not separable by a straight hyperplane, SVM uses the kernel trick to implicitly map inputs into a higher-dimensional space where a linear separator exists-without explicitly computing the mapping.
+
+#### Kernel Function:
+
+$$
+K(x, x') = \langle \phi(x), \phi(x') \rangle
+$$
+
+> The kernel returns a similarity score between two points as if they had been transformed into a higher-dimensonal feature space. You never compute $\phi(\cdot)$ directly; the kernel gives you the dot product there 'for free'.
+
+#### Common Kernels:
+
+**Linear:** $K(x, x') = x^\top x'$  
+
+> Ordinary dop product - straight-line similarity; equivalent to no feature mapping.
+
+**Polynomial:** $K(x, x') = (\gamma\, x^\top x' + r)^d$  
+
