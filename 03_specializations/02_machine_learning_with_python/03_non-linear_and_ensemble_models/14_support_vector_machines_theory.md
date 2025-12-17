@@ -87,14 +87,11 @@ $$
 
 #### Common Kernels:
 
-1. Linear: $K(x, x') = x^\top x'$  
+1. **Linear:** $K(x, x') = x^\top x'$  
     “Ordinary dot product” — straight-line similarity; equivalent to no feature mapping.
-
-2. Polynomial: $K(x, x') = (\gamma\, x^\top x' + r)^d$  
+2. **Polynomial:** $K(x, x') = (\gamma\, x^\top x' + r)^d$  
     “Dot product plus a shift, then raised to a power” — adds curved boundaries; $\gamma$ scales similarity, $r$ offsets it, $d$ controls curvature.
-
-3. RBF (Gaussian): $K(x, x') = \exp\big(-\gamma \lVert x - x' \rVert^2\big)$  
+3. **RBF (Gaussian):** $K(x, x') = \exp\big(-\gamma \lVert x - x' \rVert^2\big)$  
     “Exponentially decaying similarity based on squared distance” — nearby points have similarity near 1; far points near 0. $\gamma$ controls how quickly similarity decays with distance.
-
-4. Sigmoid: $K(x, x') = \tanh(\gamma\, x^\top x' + r)$  
+4. **Sigmoid:** $K(x, x') = \tanh(\gamma\, x^\top x' + r)$  
     “Apply a squashing tanh to a scaled dot product plus offset” — historically linked to neural nets; used less often than RBF/linear.
