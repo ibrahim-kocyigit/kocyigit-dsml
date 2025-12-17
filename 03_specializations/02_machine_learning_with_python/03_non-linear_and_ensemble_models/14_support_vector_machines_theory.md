@@ -55,7 +55,19 @@ To train the model, we need to find the optimal $w$ and $b$. This involves two c
 1. **Maximize the Margin:** In math terms, this is equivalent to minimizing the magnitude of the weights, $||w||^2$.
 2. **Minimize Errors:** Ensure points are on the correct side of the margin.
 
-### The Cost Function: Hinge Loss
+### 4.1. The Cost Function: Hinge Loss
 
 We combine these gloals into a single cost function using **Hinge Loss**.
+
+$$
+J(w, b) = \lambda ||w||^2 + \frac{1}{n} \sum_{i=1}^{n} \max(0, 1 - y_i(w \cdot x_i - b))
+$$
+
+**$\lambda ||w||^2$** is the regularization term. Minimizing $w$ maximizes the margin. $\lambda$ is a hyperparameter that controls how much we care about having a wide margin versus classifying points correctly. 
+
+**$\max(0, 1 - y_i(w \cdot x_i - b))$** is the Hinge Loss. 
+* If a point is correctly classified and outside the margin (score > 1), the value is negative, so the `max` takes **0**. There is no penalty.
+* If a point is inside the margin or misclassified (score < 1), the term is positive. The cost increases linearly the further "wrong" the point is.
+
+### 4.2. Optimization: Gradient Descent
 
