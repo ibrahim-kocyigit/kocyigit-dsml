@@ -114,7 +114,7 @@ Instead of transforming data into high dimensions manually (computationally expe
 - **Noise Sensitivity:** SVMs (especially with large C) try hard to classify outliers correctly, which can ruin the boundary for the rest of the data.
 - **Large Datasets:** Standard SVM implementations (like `SVC` in sklearn) solve a complex quadratic equation. They can be very slow if you have >100,000 samples. (For large datasets, `LinearSVC` or SGD is better).
 
-## 7. Summary
+## 7. Summary
 * **SVM** searches for a hyperplane that maximizes the **margin** between classes.
 * It solves an optimization problem balancing **width of the street** ($ ||w||^2 $) and **classification errors** (Hinge Loss).
 * **Support Vectors** are the only data points that matter; they "support" the boundary.
