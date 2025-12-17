@@ -22,7 +22,7 @@ $$
 f(x) = w^\top x + b
 $$  
 
-> *"Multiply each input feature by its learned weight, add them up, then add a bias. If the result is positive, predict the positive class; if negative, predict the negative class. The sign of $f(x)$ determines the class."*
+> *"Multiply each input feature by its learned weight, add them up, then add a bias. If the result is positive, predict the positive class; if negative, predict the negative class. The sign of $ f(x) $ determines the class."*
 
 #### Optimization:
 
@@ -36,7 +36,9 @@ $$
 
 #### Geometric Margin:
 
-$\displaystyle \frac{2}{\lVert w\rVert}$  
+$$
+\displaystyle \frac{2}{\lVert w\rVert}
+$$  
 
   Plain English: The width of the “street” between the classes is inversely proportional to the size of the weight vector. Smaller weights mean a wider street (bigger margin).
 
