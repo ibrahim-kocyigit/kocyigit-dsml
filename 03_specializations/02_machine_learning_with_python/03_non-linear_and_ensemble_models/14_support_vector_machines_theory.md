@@ -19,7 +19,7 @@ The goal of SVM is **Margin Maximization**: finding the hyperplane that creates 
 To implement SVM from scratch, we need to define the hyperplane mathematically.
 
 ### 2.1. The Linear Model
-Just like Linear Regression, the hyperplane is defined by a weight vector $w$ and a bias $b$. The prediction ruse for a data point $x$ is:
+Just like Linear Regression, the hyperplane is defined by a weight vector $w$ and a bias $b$. The prediction rule for a data point $x$ is:
 
 $$
 f(x) = w \cdot x - b
@@ -44,7 +44,7 @@ $$
 ## 3. Key Assumptions
 
 1. **Linear Separability (initially):** The standard SVM assumes the data can be separated by a linear boundary (though we can fix this with kernels later).
-2. **Feature Scaling is Critical:** Because SVM tries to maximize pyhsical distance (Euclidean distance), features with large scales will dominate the margin.
+2. **Feature Scaling is Critical:** Because SVM tries to maximize physical distance (Euclidean distance), features with large scales will dominate the margin.
 **You must normalize/standardize data** (e.g., `StandardScaler`) before training an SVM.
 3. **ID:** Independent and Identically Distributed data.
 
@@ -57,7 +57,7 @@ To train the model, we need to find the optimal $w$ and $b$. This involves two c
 
 ### 4.1. The Cost Function: Hinge Loss
 
-We combine these gloals into a single cost function using **Hinge Loss**.
+We combine these goals into a single cost function using **Hinge Loss**.
 
 $$
 J(w, b) = \lambda ||w||^2 + \frac{1}{n} \sum_{i=1}^{n} \max(0, 1 - y_i(w \cdot x_i - b))
@@ -73,14 +73,54 @@ $$
 
 To minimize this cost, we use Gradient Descent. We need the derivatives (gradients) with respect to $w$ and $b$.
 
-For each data point $x_i$, we check if the margin condition is met:
+For each data point $x_i$, we check if the margin condition is met: 
 
-**Condition:** Is $y_i(w \cdot x_i - b) \geq 1$?
+**Is $y_i(w \cdot x_i - b) \geq 1$?**  
 
-1. **Case 1: The point is correctly classfied and outside the margin (Cost is 0).**  
-    The gradient comes only from the regularization term.
+1. If the point is correctly classified and outside the margin (Cost is 0), the gradient comes only from the regularization term.
 
 $$ \frac{\partial J}{\partial w} = 2\lambda w $$
 $$ \frac{\partial J}{\partial b} = 0 $$
 
-2. 
+2. If the point is misclassified or inside the margin (Cost > 0), the gradient includes both the regularization term and the data point term.
+
+$$ \frac{\partial J}{\partial w} = 2\lambda w - y_i x_i $$
+$$ \frac{\partial J}{\partial b} = y_i $$
+
+> **Python Logic:** When iterating through your data, if the condition is met (Case 1), you update weights slightly towards zero (regularization). If the condition is NOT met (Case 2), you update weights to correct the error.
+
+## 5. Model-Specific Considerations
+
+### 5.1. The Hyperparameter C
+In Scikit-Learn, you will see a parameter `C`. This is inversely related to our $\lambda$.
+- **Large C (Small $\lambda$):** Strict. We punish errors heavily. Result: Narrow margin, fits training data perfectly, risk of overfitting. ("Hard Margin")
+- **Small C (Large $\lambda$):** Loose. We allow some errors to get a wider margin. Result: Simpler model, better generalization. ("Soft Margin")
+
+### 5.2. Non-Linearity: The Kernel Trick
+If data is not linearly separable (e.g., concentric circles), we use the **Kernel Trick**.
+
+Instead of transforming data into high dimensions manually (computationally expensive), we use a mathematical shortcut (kernel function) to calculate dot products as if the data were in higher dimensions.
+
+<img src="./images/1402.png" alt="SVM Kernel Trick" width="600"/>
+
+#### Common Kernels:
+- **Linear:** Standard dot product.
+- **RBF (Radial Basis Function):** Creates circular/complex boundaries.
+- **Polynomial:** Creates curved lines.
+
+## 6. Common Pitfalls
+
+- **Forgetting to Scale:** This is the #1 mistake with SVMs. If one feature ranges from 0-1 and another from 0-1000, the margin will be completely distorted.
+- **Noise Sensitivity:** SVMs (especially with large C) try hard to classify outliers correctly, which can ruin the boundary for the rest of the data.
+- **Large Datasets:** Standard SVM implementations (like `SVC` in sklearn) solve a complex quadratic equation. They can be very slow if you have >100,000 samples. (For large datasets, `LinearSVC` or SGD is better).
+
+## 7. Summary
+* **SVM** searches for a hyperplane that maximizes the **margin** between classes.
+* It solves an optimization problem balancing **width of the street** ($ ||w||^2 $) and **classification errors** (Hinge Loss).
+* **Support Vectors** are the only data points that matter; they "support" the boundary.
+* **Feature Scaling** is mandatory.
+* The **Kernel Trick** allows SVMs to solve non-linear problems efficiently.
+
+---
+
+**Next:** [Support Vector Machines Implementation](./15_support_vector_machines_implementation.py)
