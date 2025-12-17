@@ -22,7 +22,7 @@ $$
 f(x) = w^\top x + b
 $$  
 
-> "Multiply each input feature by its learned weight, add them up, then add a bias. If the result is positive, predict the positive class; if negative, predict the negative class. The sign of $f(x)$ determines the class."
+> "Multiply each input feature by its learned weight, add them up, then add a bias. If the result is positive, predict the positive class; if negative, predict the negative class." The sign of $f(x)$ determines the class.
 
 #### Optimization:
 
@@ -32,7 +32,7 @@ $$
 y_i\big(w^\top x_i + b\big)\ \ge\ 1\ \ \forall i
 $$
 
-> "Choose the weights and bias to make the weights as small as possible (which widens the margin), while forcing every training point to be on the correct side of the boundary and at least '1 unit' away from it. This enforces perfect separation with a safety buffer."
+> "Choose the weights and bias to make the weights as small as possible (which widens the margin), while forcing every training point to be on the correct side of the boundary and at least '1 unit' away from it." This enforces perfect separation with a safety buffer.
 
 ### 2.2. Soft-Margin SVM (Real Data with Overlap/Noise)
 
@@ -46,4 +46,9 @@ $$
 y_i\big(w^\top x_i + b\big)\ \ge\ 1 - \xi_i,\ \ \xi_i \ge 0
 $$
 
-> "Still try to keep the weights small (for a wide margin), but now also pay a penalty for any point that is inside the margin or misclassified. The term $C\sum \xi_i$ adds up how badly points violate the margin. A larger $C$ means we punish violations more; a smaller $C$ means we tolerate more violations for a simpler boundary."
+> "Still try to keep the weights small (for a wide margin), but now also pay a penalty for any point that is inside the margin or misclassified." The term $C\sum \xi_i$ adds up how badly points violate the margin. A larger $C$ means we punish violations more; a smaller $C$ means we tolerate more violations for a simpler boundary.
+
+What the slack $\xi_i$ means in practice:  
+- $\xi_i = 0$: correctly classified and outside the margin.  
+- $0 < \xi_i \le 1$: on the correct side but inside the margin (intruding into the “street”).  
+- $\xi_i > 1$: misclassified (on the wrong side of the boundary).
