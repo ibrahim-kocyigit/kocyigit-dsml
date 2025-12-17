@@ -71,3 +71,16 @@ $$
 
 ### 4.2. Optimization: Gradient Descent
 
+To minimize this cost, we use Gradient Descent. We need the derivatives (gradients) with respect to $w$ and $b$.
+
+For each data point $x_i$, we check if the margin condition is met:
+
+**Condition:** Is $y_i(w \cdot x_i - b) \geq 1$?
+
+1. **Case 1: The point is correctly classfied and outside the margin (Cost is 0).**  
+    The gradient comes only from the regularization term.
+
+$$ \frac{\partial J}{\partial w} = 2\lambda w $$
+$$ \frac{\partial J}{\partial b} = 0 $$
+
+2. 
