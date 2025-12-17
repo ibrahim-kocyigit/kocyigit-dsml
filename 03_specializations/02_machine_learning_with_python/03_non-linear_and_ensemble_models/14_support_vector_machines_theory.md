@@ -95,3 +95,5 @@ $$
     “Exponentially decaying similarity based on squared distance” — nearby points have similarity near 1; far points near 0. $\gamma$ controls how quickly similarity decays with distance.
 4. **Sigmoid:** $K(x, x') = \tanh(\gamma\, x^\top x' + r)$  
     “Apply a squashing tanh to a scaled dot product plus offset” — historically linked to neural nets; used less often than RBF/linear.
+
+<img src="./images/1402.png" alt="SVM Kernel Trick" width="600"/>
