@@ -49,6 +49,11 @@ $$
 > "Still try to keep the weights small (for a wide margin), but now also pay a penalty for any point that is inside the margin or misclassified." The term $C\sum \xi_i$ adds up how badly points violate the margin. A larger $C$ means we punish violations more; a smaller $C$ means we tolerate more violations for a simpler boundary.
 
 What the slack $\xi_i$ means in practice:  
+
 - $\xi_i = 0$: correctly classified and outside the margin.  
-- $0 < \xi_i \le 1$: on the correct side but inside the margin (intruding into the “street”).  
+- $0 < \xi_i \le 1$: on the correct side but inside the margin (intruding into the “street” between the classes).  
 - $\xi_i > 1$: misclassified (on the wrong side of the boundary).
+
+Role of $C$ (regularization):  
+- Larger $C$: fit training data closely → narrower margin, fewer violations (risk of overfitting).  
+- Smaller $C$: allow more violations → wider margin, simpler boundary (risk of underfitting).
