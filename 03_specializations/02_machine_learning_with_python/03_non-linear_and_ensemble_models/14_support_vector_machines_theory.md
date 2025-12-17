@@ -1,6 +1,6 @@
 # Support Vector Machines (SVM)
 
-## 1. The Intuitive IDea: The Widest Possible Street
+## 1. The Intuitive Idea: The Widest Possible Street
 
 **Support Vector Machines** are a powerful class of supervised learning algorithms used for classification and regression. While simple linear classifiers (like Logistic Regression) find *a* line that separates classes, SVM reaches for the *best* line.
 
@@ -18,7 +18,7 @@ The goal of SVM is **Margin Maximization**: finding the hyperplane that creates 
 
 To implement SVM from scratch, we need to define the hyperplane mathematically.
 
-### The Linear Model
+#### The Linear Model
 Just like Linear Regression, the hyperplane is defined by a weight vector $w$ and a bias $b$. The prediction ruse for a data point $x$ is:
 
 $$
@@ -29,3 +29,33 @@ $$
 *   If $w \cdot x - b < 0$, we predict **Class -1**.
 
 > **Note:** Unlike Logistic Regression which uses 0 and 1, SVMs typically use target labels $y \in \{-1, 1\}$.
+
+#### The Margin Condition
+We want our data points not just be on the correct side of the hyperplane, but to be *outside the street*. Mathematically, for a sample $i$ to be correctly classified and outside the margin, we enforce:
+
+$$
+y_i (w \cdot x_i - b) \geq 1
+$$
+
+* $w \cdot x_i - b$: This is the "score" or distance from the hyperplane.
+* $y_i$: This is the true label (-1 or 1).
+* If the multiplication is $\geq 1$, it means the point is correctly classified and safely outside the margin.
+
+## 3. Key Assumptions
+
+1. **Linear Separability (initially):** The standard SVM assumes the data can be separated by a linear boundary (though we can fix this with kernels later).
+2. **Feature Scaling is Critical:** Because SVM tries to maximize pyhsical distance (Euclidean distance), features with large scales will dominate the margin.
+**You must normalize/standardize data** (e.g., `StandardScaler`) before training an SVM.
+3. **ID:** Independent and Identically Distributed data.
+
+## 4. How the Model is Trained (Primal Form)
+
+To train the model, we need to find the optimal $w$ and $b$. This involves two competing goals:
+
+1. **Maximize the Margin:** In math terms, this is equivalent to minimizing the magnitude of the weights, $||w||^2$.
+2. **Minimize Errors:** Ensure points are on the correct side of the margin.
+
+### The Cost Function: Hinge Loss
+
+We combine these gloals into a single cost function using **Hinge Loss**.
+
