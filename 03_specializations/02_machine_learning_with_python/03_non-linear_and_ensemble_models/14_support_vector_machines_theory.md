@@ -97,3 +97,18 @@ $$
     “Apply a squashing tanh to a scaled dot product plus offset” — historically linked to neural nets; used less often than RBF/linear.
 
 <img src="./images/1402.png" alt="SVM Kernel Trick" width="600"/>
+
+Role of $\gamma$ (gamma) in RBF/polynomial kernels:  
+- Larger $\gamma$: each point influences only a tiny neighborhood → very wiggly, complex boundaries (risk of overfitting).  
+- Smaller $\gamma$: each point’s influence spreads farther → smoother boundaries (risk of underfitting).
+
+## 4. SVM for Regression (SVR)
+Support Vector Regression (SVR) applies SVM principles to predict continuous values.
+
+- $\epsilon$-insensitive tube: errors within $\epsilon$ are ignored.  
+
+> We allow a “tube” around the prediction line; any point inside the tube counts as “good enough” and does not incur loss. Only points outside the tube are penalized.
+
+- Objective (conceptually): balance model flatness and violations.  
+
+> Keep the weights small (a flat, simple function) while penalizing only those prediction errors that stick out beyond $\epsilon$. $C$ controls how strongly we penalize those outside-the-tube errors. With kernels (e.g., RBF), SVR can capture non-linear relationships.
