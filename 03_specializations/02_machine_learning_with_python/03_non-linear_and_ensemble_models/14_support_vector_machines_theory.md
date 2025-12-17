@@ -22,7 +22,7 @@ $$
 f(x) = w^\top x + b
 $$  
 
-"Multiply each input feature by its learned weight, add them up, then add a bias. If the result is positive, predict the positive class; if negative, predict the negative class. The sign of $f(x)$ determines the class."
+> "Multiply each input feature by its learned weight, add them up, then add a bias. If the result is positive, predict the positive class; if negative, predict the negative class. The sign of $f(x)$ determines the class."
 
 #### Optimization:
 
