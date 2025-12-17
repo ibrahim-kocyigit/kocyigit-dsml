@@ -116,7 +116,7 @@ Instead of transforming data into high dimensions manually (computationally expe
 
 ## 7. Summary
 * **SVM** searches for a hyperplane that maximizes the **margin** between classes.
-* It solves an optimization problem balancing **width of the street** ($ ||w||^2 $) and **classification errors** (Hinge Loss).
+* It solves an optimization problem balancing **width of the street** ( $||w||^2$ ) and **classification errors** (Hinge Loss).
 * **Support Vectors** are the only data points that matter; they "support" the boundary.
 * **Feature Scaling** is mandatory.
 * The **Kernel Trick** allows SVMs to solve non-linear problems efficiently.
