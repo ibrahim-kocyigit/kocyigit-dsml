@@ -12,7 +12,7 @@ It is most famous for its dominance in text classification, particularly for **s
 
 ## 2. The Mathematics: Bayes' Theorem
 
-The engine behing this model is **Bayes' Theorem**, a fundamental theorem in probability theory that describes the probability of an event, based on prior knowledge of conditions that might be related to the event.
+The engine behind this model is **Bayes' Theorem**, a fundamental theorem in probability theory that describes the probability of an event, based on prior knowledge of conditions that might be related to the event.
 
 $$
 P(y | X) = \frac{P(X | y) \cdot P(y)}{P(X)}
@@ -66,3 +66,43 @@ We calculate the frequency of every feature for every class.
 $$
 P(\text{"cash"} | \text{Spam}) = \frac{\text{Count("cash" in Spam)}}{\text{Total words in Spam}}
 $$
+
+#### The Zero-Frequency Problem (and Laplace Smoothing)
+What if a new email contains a word, say "Bitcoin", that we never saw in our Spam training data?
+*   $P(\text{"Bitcoin"} | \text{Spam}) = 0$
+*   Because we multiply probabilities, this single zero would turn the entire probability score to **0**.
+
+To fix this, we use **Laplace Smoothing (Additive Smoothing)**. We add a small number (usually $\alpha=1$) to the count of every word, ensuring no probability is ever truly zero.
+
+$$
+P(x_i | y) = \frac{\text{count}(x_i, y) + \alpha}{\text{count}(y) + \alpha \cdot d}
+$$
+
+*   $\alpha$: Smoothing parameter (usually 1).
+*   $d$: The number of distinct features (vocabulary size).
+
+## 5. Model-Specific Considerations (Variants)
+
+Different types of data require different versions of Naive Bayes:
+
+1. **Multinomial Naive Bayes:** Used for **discrete counts**. This is the standard for text classification (counting word frequencies).
+2. **Gaussian Naive Bayes:** Used for **continuous features** (e.g., height, weight). It assumes the features follow a normal (Gaussian) distribution. It calculates likelihoods using the Gaussian Probability Density Function (PDF) instead of simple counting.
+3. **Bernoulli Naive Bayes:** Used for **binary features** (e.g., the word is present/absent, rather than count).
+
+## 6. Common Pitfalls
+
+* **Correlated Features:** If you have two features that are identical (e.g., "price_in_dollars" and "price_in_euros"), Naive Bayes will "double count" their importance, which can skew the probability. Feature selection is important.
+* **Zero Probability:** Always remember to use smoothing (like Laplace smoothing) if calculating from scratch, otherwise unknown categories will break the model. 
+* **Numerical Underflow:** When implementing from scratch, multiplying many small probabilities (e.g., $0.001 \times 0.002 \dots$) results in tiny numbers that computers round to zero.
+    * **Solution:** Compute everything in **Log Space**. Instead of $A \cdot B$, calculate $\log(A) + \log(B)$
+
+## 7. Summary
+*   **Naive Bayes** is a probabilistic classifier based on **Bayes' Theorem**.
+*   It assumes **independence** between features to simplify the math (the "Naive" part).
+*   Training involves **counting frequencies** to estimate Prior and Likelihood probabilities.
+*   **Laplace Smoothing** is required to handle unseen features (zero probabilities).
+*   It is extremely fast, works well with high-dimensional data (like text), and is a strong baseline for classification tasks.
+
+---
+
+**Next:** [Naive Bayes Implementation](./21_naive_bayes_implementation.py)
