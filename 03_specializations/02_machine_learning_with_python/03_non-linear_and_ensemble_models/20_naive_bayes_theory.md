@@ -42,7 +42,7 @@ $$
 \hat{y} = \underset{y}{\arg\max} \left( P(y) \cdot \prod_{i=1}^{n} P(x_i | y) \right)
 $$
 
-## 3. Key Assumptions
+## 3. Key Assumptions
 
 1. **Feature Independence:** This is the big one. We assume that the presence of one feature (e.g., the word "President") is unrelated to the presence of another (e.g., the word "White House"), given the class. In reality, this is almost never true (words are correlated!), but the model performs surprisingly well despite this violation.
 2. **IID:** Independent and Identically Distributed samples.
@@ -54,3 +54,15 @@ Unlike SVM or Logistic Regression, Naive Bayes **does not use optimization algor
 Training is simply **counting**.  
 
 ### Step 1: Calculate Priors $P(y)$
+We calculate the frequency of each class in the training data.
+
+$$
+P(\text{Spam}) = \frac{\text{Count(Spam emails)}}{\text{Total emails}}
+$$
+
+### Step 2: Calculate Likelihoods $P(x_i | y)$
+We calculate the frequency of every feature for every class.
+
+$$
+P(\text{"cash"} | \text{Spam}) = \frac{\text{Count("cash" in Spam)}}{\text{Total words in Spam}}
+$$
