@@ -1,6 +1,6 @@
 from __future__ import annotations
 import numpy as np
-from collections import Counter, defaultdict
+from collections import Counter
 
 
 class MultinomialNB:
