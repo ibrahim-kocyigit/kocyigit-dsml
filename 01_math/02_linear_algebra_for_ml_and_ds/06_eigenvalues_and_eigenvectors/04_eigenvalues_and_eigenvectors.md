@@ -44,7 +44,7 @@ The resulting vector points in a completely different direction.
 
 This special relationship is captured by the core equation of eigenvectors and eigenvalues. For a given matrix `A`, a vector `v` is an eigenvector if it satisfies this equation for some scalar `λ` (lambda).
 
-> $ A v = \lambda v $  
+$$ A v = \lambda v $$  
 
 * **v:** The **eigenvector** (a non-zero vector).
 * **λ:** The **eigenvalue** (a scalar).
