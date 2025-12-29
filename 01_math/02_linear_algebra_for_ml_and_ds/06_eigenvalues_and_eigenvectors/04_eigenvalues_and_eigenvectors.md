@@ -13,30 +13,31 @@ Let's see how it acts on three different vectors:
 
 **Vector 1 (Eigenvector):**  
 
-$$
-v_1 = \begin{bmatrix} 1 \\ 
-0 \end{bmatrix}
-$$  
+```math
+A \cdot v_1 = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix} 2 \\ 0 \end{bmatrix}
+```
+<br>
 
-$ A \cdot v_1 = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix} 2 \\ 0 \end{bmatrix} $  
+The result is $2 \cdot v_1$. The vector stayed on the same line.
 
-   The result is $2 \cdot v_1$. The vector stayed on the same line.
+**Vector 2 (Eigenvector):**
 
-* **Vector 2 (Eigenvector):** $v_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}$  
+```math
+A \cdot v_2 = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} 3 \\ 3 \end{bmatrix}
+```
+<br>  
+The result is $3 \cdot v_2$. The vector stayed on the same line.
 
-   $ A \cdot v_2 = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} 3 \\ 3 \end{bmatrix} $  
+**Vector 3 (Not an Eigenvector):**
 
-   The result is $3 \cdot v_2$. The vector stayed on the same line.
+```math
+A \cdot v_3 = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} \begin{bmatrix} -1 \\ 2 \end{bmatrix} = \begin{bmatrix} 0 \\ 6 \end{bmatrix}
+```
+<br>
 
-* **Vector 3 (Not an Eigenvector):** $v_3 = \begin{bmatrix} -1 \\ 2 \end{bmatrix}$  
-
-   $ A \cdot v_3 = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} \begin{bmatrix} -1 \\ 2 \end{bmatrix} = \begin{bmatrix} 0 \\ 6 \end{bmatrix} $  
-
-   The resulting vector points in a completely different direction.
+The resulting vector points in a completely different direction.
 
 ![](./images/0401.png)
-
----
 
 ## The Formal Definition
 
