@@ -72,3 +72,7 @@ Let's solve this system.
     * $\alpha + (-2/3) = 3 \implies \alpha = 3 + 2/3 = 11/3$
 
 Since we found a solution ($\alpha = 11/3, \beta = -2/3$), it means that $v_3$ **is** a linear combination of $v_1$ and $v_2$. Therefore, the set of vectors is **linearly dependent**. If the system had no solution, the set would have been linearly independent.
+
+---
+
+**Next:** [Eigenbases](./03_eigenbases.md)
