@@ -53,8 +53,6 @@ When we use this special basis, the complex shearing transformation simplifies i
 
 ![](./images/0301.png)
 
----
-
 ## Eigenvectors and Eigenvalues
 
 This special relationship gives rise to two of the most important concepts in linear algebra.
@@ -66,3 +64,7 @@ This special relationship gives rise to two of the most important concepts in li
     * The eigenvalue corresponding to eigenvector `(1, 1)` is **3**.
 
 Finding the eigenvectors and eigenvalues of a matrix is tremendously useful because it allows us to understand the fundamental "stretching" action of a transformation, simplifying our calculations and providing deep insight into the matrix's properties.
+
+---
+
+**Next:** [Eigenvalues and Eigenvectors](./04_eigenvalues_and_eigenvectors.md)
