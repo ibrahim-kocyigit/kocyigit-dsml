@@ -47,7 +47,8 @@ Adding a linearly dependent vector to a set **does not increase its span**.
 
 We can check if a set of vectors is linearly dependent by setting up and solving a system of linear equations.
 
-**Problem:** Is the set of vectors {$v_1, v_2, v_3$} linearly dependent, where:
+**Problem:** Is the set of vectors $v_1, v_2, v_3$ linearly dependent, where:
+
 * $v_1 = (-1, 1)$
 * $v_2 = (2, 1)$
 * $v_3 = (-5, 3)$

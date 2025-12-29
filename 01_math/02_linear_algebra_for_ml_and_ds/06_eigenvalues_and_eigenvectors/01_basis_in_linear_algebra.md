@@ -20,4 +20,4 @@ If two vectors point in the same (or exact opposite) directions, you can only mo
 
 ---
 
-**Next:**[Span in Linear Algebra](./02_span_in_linear_algebra.md)
+**Next:** [Span in Linear Algebra](./02_span_in_linear_algebra.md)
