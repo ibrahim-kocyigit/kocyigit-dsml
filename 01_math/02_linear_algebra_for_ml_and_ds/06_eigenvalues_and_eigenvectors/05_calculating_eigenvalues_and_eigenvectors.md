@@ -11,21 +11,28 @@ A = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix}
 
 We are looking for special vectors `v` and scalars `λ` that satisfy the eigenvector equation:  
 
-$ Av = \lambda v $  
+$$
+Av = \lambda v 
+$$  
 
 We can rewrite this equation by bringing everything to one side:  
 
-$ Av - \lambda v = 0 $  
+$$ 
+Av - \lambda v = 0 
+$$  
 
 To factor out the vector `v`, we need to introduce the identity matrix `I`. We can rewrite `λv` as `λIv`:  
 
-$ Av - \lambda Iv = 0 $  
+$$
+Av - \lambda Iv = 0 
+$$  
 
-$ (A - \lambda I)v = 0 $  
+$$
+(A - \lambda I)v = 0 
+$$  
 
 This is the most important equation for finding eigenvalues. Let's analyze what it means.
 
----
 ## The Key Insight: Singularity
 
 The equation $(A - \lambda I)v = 0$ is a system of linear equations. We are looking for a **non-zero** vector `v` that solves this system.
