@@ -6,7 +6,10 @@ For example, the standard basis vectors $\hat{i}=(1,0)$ and $\hat{j}=(0,1)$ form
 
 Let's consider the transformation matrix:
 
-$ A = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} $  
+```math
+A = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix}  
+```
+<br>
 
 This matrix transforms the standard basis as follows:
 * $\hat{i} = \begin{bmatrix} 1 \\ 0 \end{bmatrix}$ is sent to $\begin{bmatrix} 2 \\ 0 \end{bmatrix}$.  
