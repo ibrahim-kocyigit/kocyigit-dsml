@@ -26,6 +26,7 @@ The result is $2 \cdot v_1$. The vector stayed on the same line.
 A \cdot v_2 = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} 3 \\ 3 \end{bmatrix}
 ```
 <br>  
+
 The result is $3 \cdot v_2$. The vector stayed on the same line.
 
 **Vector 3 (Not an Eigenvector):**
