@@ -17,3 +17,7 @@ Almost any two vectors in a 2D plane will form a basis. The only exception is wh
 If two vectors point in the same (or exact opposite) directions, you can only move back and forth along a single line. It's impossible to "walk" off this line to reach every other point in the plane. Therefore, these two vectors **do not form a basis** for the 2D plane. They only span a 1D subspace (a line).
 
 ![](./images/0102.png)
+
+---
+
+**Next:**[Span in Linear Algebra](./02_span_in_linear_algebra.md)

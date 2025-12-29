@@ -75,4 +75,4 @@ This simple proof confirms our rule.
 
 ---
 
-**Next:** [Basis in Linear Algebra](../06_eigenvalues_and_eigenvectors/01_basis_in_linear_algebra.ipynb)
+**Next:** [Basis in Linear Algebra](../06_eigenvalues_and_eigenvectors/01_basis_in_linear_algebra.md)
