@@ -13,9 +13,15 @@ A = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix}
 
 This matrix transforms the standard basis as follows:
 
-$\hat{i} = \begin{bmatrix} 1 \\ 0 \end{bmatrix}$ is sent to $\begin{bmatrix} 2 \\ 0 \end{bmatrix}$.  
+```math
+\hat{i} = \begin{bmatrix} 1 \\ 0 \end{bmatrix} \text{is sent to} \begin{bmatrix} 2 \\ 0 \end{bmatrix}  
+```
+<br>
 
-$\hat{j} = \begin{bmatrix} 0 \\ 1 \end{bmatrix}$ is sent to $\begin{bmatrix} 1 \\ 3 \end{bmatrix}$.
+```math
+\hat{j} = \begin{bmatrix} 0 \\ 1 \end{bmatrix} \text{is sent to} \begin{bmatrix} 1 \\ 3 \end{bmatrix}
+```
+<br>
 
 The unit square is transformed into a parallelogram. While this is a valid change of basis, the choice of the standard basis was arbitrary. Is there a more "natural" or "special" basis for this specific transformation?
 
