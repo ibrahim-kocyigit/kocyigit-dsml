@@ -11,9 +11,14 @@ A = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix}
 
 Let's see how it acts on three different vectors:  
 
-* **Vector 1 (Eigenvector):** $v_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}$  
+**Vector 1 (Eigenvector):**  
 
-   $ A \cdot v_1 = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix} 2 \\ 0 \end{bmatrix} $  
+$$
+v_1 = \begin{bmatrix} 1 \\ 
+0 \end{bmatrix}
+$$  
+
+$ A \cdot v_1 = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix} 2 \\ 0 \end{bmatrix} $  
 
    The result is $2 \cdot v_1$. The vector stayed on the same line.
 
