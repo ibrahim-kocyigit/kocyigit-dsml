@@ -25,17 +25,25 @@ This matrix transforms the standard basis as follows:
 
 The unit square is transformed into a parallelogram. While this is a valid change of basis, the choice of the standard basis was arbitrary. Is there a more "natural" or "special" basis for this specific transformation?
 
----
-
 ## Finding a Special Basis: The Eigenbasis
 
 Let's see what happens if we choose a different basis for our input space. Let's pick the basis formed by the vectors $v_1 = (1, 0)$ and $v_2 = (1, 1)$.
 
 Now, let's apply our transformation matrix `A` to these new basis vectors:
 
-* **Transforming $v_1$:** $ \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix} 2 \\ 0 \end{bmatrix} $
+* **Transforming $v_1$:** 
 
-* **Transforming $v_2$:** $ \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} 3 \\ 3 \end{bmatrix} $
+```math
+\begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix} 2 \\ 0 \end{bmatrix}
+```
+<br>
+
+* **Transforming $v_2$:** 
+
+```math
+\begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} 3 \\ 3 \end{bmatrix}
+```
+<br>
 
 Notice something remarkable:
 * The vector $(1, 0)$ was transformed to $(2, 0)$. It stayed on the same line and was simply **stretched by a factor of 2**.
