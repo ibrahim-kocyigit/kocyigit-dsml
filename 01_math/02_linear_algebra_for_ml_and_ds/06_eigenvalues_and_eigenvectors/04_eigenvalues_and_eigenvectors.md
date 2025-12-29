@@ -44,7 +44,9 @@ The resulting vector points in a completely different direction.
 
 This special relationship is captured by the core equation of eigenvectors and eigenvalues. For a given matrix `A`, a vector `v` is an eigenvector if it satisfies this equation for some scalar `λ` (lambda).
 
-$$ A v = \lambda v $$  
+$$
+A v = \lambda v
+$$  
 
 * **v:** The **eigenvector** (a non-zero vector).
 * **λ:** The **eigenvalue** (a scalar).
@@ -59,22 +61,40 @@ If we can express any vector as a linear combination of the eigenvectors (using 
 
 For example, our vector $v_3 = (-1, 2)$ can be written as a combination of the eigenbasis:  
 
-$ v_3 = -3v_1 + 2v_2 $  
+```math
+v_3 = -3v_1 + 2v_2
+```
+<br>
 
 To find its transformation, we can do:  
 
-$ A \cdot v_3 = A \cdot (-3v_1 + 2v_2) $  
+$$
+A \cdot v_3 = A \cdot (-3v_1 + 2v_2) 
+$$  
 
-$ = -3(A \cdot v_1) + 2(A \cdot v_2) $  
+$$
+= -3(A \cdot v_1) + 2(A \cdot v_2)
+$$  
 
 Now we use our shortcut, replacing $A \cdot v$ with $\lambda v$:  
 
-$ = -3(\lambda_1 v_1) + 2(\lambda_2 v_2) $  
+$$ 
+= -3(\lambda_1 v_1) + 2(\lambda_2 v_2) 
+$$  
 
-$ = -6\begin{bmatrix} 1 \\ 0 \end{bmatrix} + 6\begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} 0 \\ 6 \end{bmatrix} $  
+$$ 
+= -6\begin{bmatrix} 1 \\ 
+0 \end{bmatrix} + 6\begin{bmatrix} 1 \\ 
+1 \end{bmatrix} = \begin{bmatrix} 0 \\ 
+6 \end{bmatrix}
+$$  
 
 This gives us the correct answer using only scalar multiplication.
 
 **However, there is a crucial caveat.** Finding the coordinates of a vector with respect to a new basis (in this case, finding the numbers -3 and 2) is a significant calculation in itself. It requires finding the inverse of the eigenbasis matrix and multiplying it by our vector. This is often just as much work as the original matrix multiplication.
 
 The real advantage is not that eigenvectors remove all the work, but that they let you **decide when you want to do the work**. In some machine learning applications, it's worth paying the upfront cost to change all your data into the eigenbasis coordinate system, because you might need to apply the transformation many times later, and each of those subsequent transformations will be much faster.
+
+---
+
+**Next:** []()
