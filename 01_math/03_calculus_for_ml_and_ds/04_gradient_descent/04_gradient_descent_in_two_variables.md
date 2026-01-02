@@ -39,11 +39,14 @@ y_{old} \end{bmatrix} - \alpha \cdot \nabla T(x_{old}, y_{old}) $$
 
 Where:
 
-* $\begin{bmatrix} x \\ y \end{bmatrix}$ is our position vector.  
+* $(x, y)$ is our position vector.
 
 * $\alpha$ (alpha) is the **learning rate**.  
 
-* $\nabla T$ is the **gradient vector**: $ \begin{bmatrix} \frac{\partial T}{\partial x} \\ \frac{\partial T}{\partial y} \end{bmatrix} $
+* $\nabla T$ is the **gradient vector**: 
+
+$$ \begin{bmatrix} \frac{\partial T}{\partial x} \\ 
+\frac{\partial T}{\partial y} \end{bmatrix} $$
 
 ---
 
