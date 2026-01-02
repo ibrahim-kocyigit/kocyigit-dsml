@@ -34,6 +34,6 @@ This numerically confirms that the slope of the tangent line at `x=2` is indeed 
 
 This remarkable property holds true for any point `x`. The tangent at the point $(x, e^x)$ always has a slope of $e^x$.
 
-**Rule:** The derivative of $f(x) = e^x$ is **$f'(x) = e^x$**.
+**Rule:** The derivative of $f(x) = e^x$ is **$f'(x) = e^x$**
  
 $$ \frac{d}{dx}(e^x) = e^x $$
