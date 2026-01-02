@@ -39,10 +39,12 @@ The Hessian matrix, often denoted as `H` or `∇²f`, is the matrix that organiz
 
 For a function of two variables, the Hessian is a 2x2 matrix:
 
-$$ H = \begin{bmatrix} f_{xx} & f_{xy} \\ f_{yx} & f_{yy} \end{bmatrix} $$
+$$ H = \begin{bmatrix} f_{xx} & f_{xy} \\ 
+f_{yx} & f_{yy} \end{bmatrix} $$
 
 For our example function, $f(x, y) = 2x^2 + 3y^2 - xy$, the Hessian matrix is:
 
-$$ H = \begin{bmatrix} 4 & -1 \\ -1 & 6 \end{bmatrix} $$
+$$ H = \begin{bmatrix} 4 & -1 \\ 
+-1 & 6 \end{bmatrix} $$
 
 The Hessian matrix gives us a lot of information about the function's curvature at a given point and is very useful in advanced optimization methods, such as Newton's method for multiple variables.
