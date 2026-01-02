@@ -82,11 +82,8 @@ $$ 2(x-a) + 2(x-b) = 0 $$
 
 **3. Solve for x:**
 * Divide both sides by 2: $(x-a) + (x-b) = 0$
-* Combine terms:
-    $ 2x - a - b = 0 $
-* Isolate x:
-    $ 2x = a + b $
-    $ x = \frac{a+b}{2} $
+* Combine terms: $2x - a - b = 0$
+* Isolate x: $2x = a + b$ $\implies$ $x = \frac{a+b}{2}$
 
 The optimal solution is to place the house at the **average** or **midpoint** of the two power lines.
 
