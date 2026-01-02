@@ -48,7 +48,7 @@ But eigenvectors must be non-zero! Therefore, for a non-zero solution `v` to exi
 
 And what do we know about singular matrices? Their determinant is zero.
 
-**Rule:** To find the eigenvalues (`λ`) of a matrix `A`, we must solve the equation:
+**Rule:** To find the eigenvalues (`λ`) of a matrix `A`, we must solve the equation: 
 $ \det(A - \lambda I) = 0 $
 
 ## Step 1: Find the Eigenvalues
