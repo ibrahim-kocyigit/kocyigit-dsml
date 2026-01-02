@@ -49,3 +49,8 @@ As the plot shows, Newton's method converges to the solution with incredible spe
 * x₄ ≈ 0.567
 
 In only a few iterations, we have arrived at an excellent approximation of the true minimum (`x ≈ 0.567`), which is known as the Omega constant. This demonstrates the power and speed of Newton's method. Just like with Gradient Descent, we found the minimum without ever needing to solve the difficult equation $e^x - 1/x = 0$ analytically.
+
+
+---
+
+**Next:** [The Second Derivative](./03_the_second_derivative.md)

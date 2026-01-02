@@ -72,3 +72,7 @@ This table summarizes the test for finding local minima and maxima at a point `c
 | :--- | :--- | :--- | :--- |
 | **One Variable** | $f''(c) > 0$ | $f''(c) < 0$ | $f''(c) = 0$ |
 | **N-Variables** | All eigenvalues of the Hessian are **positive**. | All eigenvalues of the Hessian are **negative**. | Eigenvalues have mixed signs or some are zero. |
+
+---
+
+**Next:** [Newton's Method for Two Variables](./06_newtons_method_for_two_variables.md)

@@ -40,3 +40,9 @@ Let's say we have a point `c` where $f'(c) = 0$.
 3.  **If $f''(c) = 0$:** The test is inconclusive.
 
 This is a powerful tool because it allows us to distinguish between the peaks and valleys of a function by simply checking the sign of the second derivative at the points where the slope is flat.
+
+
+
+---
+
+**Next:** [The Hessian](./04_the_hessian.md)

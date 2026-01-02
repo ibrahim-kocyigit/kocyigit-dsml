@@ -48,3 +48,8 @@ $$ H = \begin{bmatrix} 4 & -1 \\
 -1 & 6 \end{bmatrix} $$
 
 The Hessian matrix gives us a lot of information about the function's curvature at a given point and is very useful in advanced optimization methods, such as Newton's method for multiple variables.
+
+
+---
+
+**Next:** [Hessians and Concavity](./05_hessians_and_concativity.md)

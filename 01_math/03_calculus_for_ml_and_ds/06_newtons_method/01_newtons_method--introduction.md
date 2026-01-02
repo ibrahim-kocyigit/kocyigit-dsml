@@ -49,3 +49,8 @@ This leads to a slightly different update rule for optimization. Let's compare t
 | **Newton's Method (Optimization)** | Find `x` such that `g'(x) = 0` | $x_{k+1} = x_k - \frac{g'(x_k)}{g''(x_k)}$ |
 
 Notice that for optimization, we need to calculate both the first and the **second derivative** (`g''`) of our original function.
+
+
+---
+
+**Next:** [Newton's Method: An Example](./02_newtons_method--an_example.md)
