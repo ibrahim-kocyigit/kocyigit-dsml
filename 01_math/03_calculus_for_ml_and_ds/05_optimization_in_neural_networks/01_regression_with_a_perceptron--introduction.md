@@ -45,3 +45,8 @@ $$ \hat{y} = w_1x_1 + w_2x_2 + b $$
 This equation describes a **plane** in 3D space, which is the higher-dimensional equivalent of our 2D line of best fit. The "learning" task for this model is to find the optimal values for the **parameters**—the weights ($w_1, w_2$) and the bias (`b`)—that make our predictions as close as possible to the actual prices for every house in our dataset.
 
 To do this, we first need a way to measure the total "error" of our model. This is the job of a **loss function**, which we will explore next.
+
+
+---
+
+**Next:** [Regression with a Perceptron: The Loss Function](./02_regression_with_a_perceptron--the_loss_function.md)

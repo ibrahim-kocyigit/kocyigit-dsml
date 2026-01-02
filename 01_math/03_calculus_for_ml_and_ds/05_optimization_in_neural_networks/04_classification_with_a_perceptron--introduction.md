@@ -71,3 +71,8 @@ The output $\hat{y}$ can be interpreted as the **probability** that the sentence
 
 In the next section, we will delve deeper into the properties of the sigmoid function. For now, understand that it's the critical component that transforms the continuous output of the linear combination into a probability for classification.
 
+
+
+---
+
+**Next:** [Classification with a Perceptron: The Sigmoid Function](./05_classification_with_a_perceptron--sigmoid_function.md)

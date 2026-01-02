@@ -29,3 +29,8 @@ $$ L(y, \hat{y}) = \frac{1}{2}(y - \hat{y})^2 $$
 Our ultimate goal is to find the weights `w` and bias `b` that **minimize** the sum of this loss function across all the data points in our dataset. We will achieve this using **Gradient Descent**.
 
 ![](./images/0202.png)
+
+
+---
+
+**Next:** [Regression with a Perceptron: Gradient Descent](./03_regression_with_a_perceptron--gradient_descent.md)

@@ -53,3 +53,8 @@ We will do this using **Gradient Descent**. The process is conceptually the same
 
 ![](./images/0802.png)
 
+
+
+---
+
+**Next:** [Classification with a Neural Network: Minimizing Log-Loss](./09_classification_with_a_neural_network--minimizing_log-loss.md)

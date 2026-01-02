@@ -55,3 +55,6 @@ This step-by-step backward flow is much more efficient than calculating the enti
 
 The good news for a machine learning practitioner is that modern libraries like TensorFlow and Keras perform this entire backpropagation process for you automatically. However, understanding that it's just a clever and recursive application of the chain rule is fundamental to knowing how neural networks truly learn.
 
+---
+
+**Next:** [Newton's Method: Introduction](../06_newtons_method/01_newtons_method--introduction.md)

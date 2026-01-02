@@ -61,3 +61,7 @@ $$ \sigma'(z) = \sigma(z) \cdot (1 - \sigma(z)) $$
 
 This beautiful result means that the derivative of the sigmoid at a point `z` can be calculated directly from its **output value**, without needing to refer back to `z` or calculate any more exponentials. This makes the backpropagation algorithm in neural networks much faster.
 
+
+---
+
+**Next:** [Classification with a Perceptron: Gradient Descent](./06_classification_with_a_perceptron--gradient_descent.md)

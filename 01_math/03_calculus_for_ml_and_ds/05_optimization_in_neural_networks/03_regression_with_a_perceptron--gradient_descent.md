@@ -82,3 +82,8 @@ We can now write out the complete update rules for a single step of gradient des
 
 By repeating these update steps many times for all the points in our dataset, the algorithm will find the optimal weights `w₁`, `w₂`, and bias `b` that result in the smallest possible error and therefore the best possible model.
 
+
+
+---
+
+**Next:** [Classification with a Perceptron: Introduction](./04_classification_with_a_perceptron--introduction.md)

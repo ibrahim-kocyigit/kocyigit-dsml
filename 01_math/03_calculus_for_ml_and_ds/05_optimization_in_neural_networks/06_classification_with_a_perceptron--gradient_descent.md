@@ -45,3 +45,7 @@ The algorithm is as follows:
 
 In the next lesson, we will dive into the calculus and use the chain rule to find these partial derivatives. You will see that the sigmoid and log-loss functions work together beautifully to produce a very simple and elegant result.
 
+
+---
+
+**Next:** [Classification with a Perceptron: Calculating Derivatives](./07_classification_with_a_perceptron--calculating_derivatives.md)

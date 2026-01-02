@@ -93,3 +93,8 @@ After all the calculus and cancellations, we are left with surprisingly elegant 
 *(Similar rules apply for the Green Node's parameters)*
 
 By iterating these update steps many times, we can train our neural network to find the optimal set of weights and biases that best fits our data.
+
+
+---
+
+**Next:** [Gradient Descent and Backpropagation](./10_gradient_descent_and_backpropagation.md)

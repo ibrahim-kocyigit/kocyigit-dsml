@@ -84,3 +84,8 @@ We can now write out the complete update rules for a single step of gradient des
 
 By repeating these simple update steps, the algorithm will find the optimal weights and bias for our classification problem.
 
+
+
+---
+
+**Next:** [Classification with a Neural Network: Introduction](./08_classification_with_a_neural_network--introduction.md)
