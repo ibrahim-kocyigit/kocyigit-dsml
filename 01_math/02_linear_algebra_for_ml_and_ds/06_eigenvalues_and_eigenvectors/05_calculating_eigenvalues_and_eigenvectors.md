@@ -37,14 +37,19 @@ This is the most important equation for finding eigenvalues. Let's analyze what 
 
 The equation $(A - \lambda I)v = 0$ is a system of linear equations. We are looking for a **non-zero** vector `v` that solves this system.
 
-* If the matrix $(A - \lambda I)$ were non-singular, the only solution to this equation would be the trivial one: $v = \begin{bmatrix} 0 \\ 0 \end{bmatrix}$.
+* If the matrix $(A - \lambda I)$ were non-singular, the only solution to this equation would be the trivial one: 
+
+$$
+v = \begin{bmatrix} 0 \\ 
+0 \end{bmatrix}
+$$
+
 * But eigenvectors must be non-zero! Therefore, for a non-zero solution `v` to exist, the matrix $(A - \lambda I)$ **must be singular**.
 
 And what do we know about singular matrices? Their determinant is zero.
 
-> **Rule:** To find the eigenvalues (`λ`) of a matrix `A`, we must solve the equation:
->
-> $ \det(A - \lambda I) = 0 $
+**Rule:** To find the eigenvalues (`λ`) of a matrix `A`, we must solve the equation:
+$ \det(A - \lambda I) = 0 $
 
 ---
 ## Step 1: Find the Eigenvalues
