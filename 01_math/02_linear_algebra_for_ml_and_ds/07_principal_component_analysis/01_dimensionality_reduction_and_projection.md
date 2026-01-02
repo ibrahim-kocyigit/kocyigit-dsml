@@ -1,6 +1,8 @@
 # Dimensionality Reduction and Projection
 
-The final major topic of this course is **Principal Component Analysis (PCA)**. The goal of PCA is to reduce the number of columns (the dimensions) of a dataset while preserving as much of the original information as possible. In short, PCA makes a dataset "skinnier" by intelligently combining features.
+> ⚠️ The final major topic of this course is **Principal Component Analysis (PCA)**. PCA relies on a few core statistical concepts. If you've not studied statistics before, you can skip the rest of this course for now and come back once you finish the [Probability and Statistics](../../04_probability_and_statistics_for_ml_and_ds/) course.
+
+The goal of PCA is to reduce the number of columns (the dimensions) of a dataset while preserving as much of the original information as possible. In short, PCA makes a dataset "skinnier" by intelligently combining features.
 
 ### Why Reduce Dimensions?
 1.  **Manageability:** Real-world datasets can have hundreds or thousands of features. Reducing the number of columns makes the data easier to work with, store, and model.
