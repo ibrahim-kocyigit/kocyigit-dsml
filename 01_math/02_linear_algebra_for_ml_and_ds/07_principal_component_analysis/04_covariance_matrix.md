@@ -65,8 +65,6 @@ $$
 \end{bmatrix}
 $$
 
----
-
 ## A Worked Example
 
 Let's walk through this with a real example.
@@ -84,6 +82,8 @@ Let's walk through this with a real example.
 
 The result of this calculation is the final 2x2 covariance matrix for our dataset. 
 
-
-
 This process extends to any number of features; a dataset with 3 features would produce a 3x3 covariance matrix, and so on. This matrix operation is a fundamental building block for PCA.
+
+---
+
+**Next:** [Principal Component Analysis - An Overview](./05_pca--overview.md)
