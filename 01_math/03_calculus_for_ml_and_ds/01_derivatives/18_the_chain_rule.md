@@ -44,4 +44,4 @@ The chain rule shows how these small changes are connected in the limit.
 
 ---
 
-**Next:** []()
+**Next:** [Introduction to Optimization](../02_optimization/01_introduction_to_optimization.md)
