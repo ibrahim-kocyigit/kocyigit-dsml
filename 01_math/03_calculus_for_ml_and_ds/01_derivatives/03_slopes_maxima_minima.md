@@ -16,8 +16,6 @@ A slope of zero corresponds to a **horizontal line**.
 
 ![](./images/04.png)
 
----
-
 ## Maxima and Minima
 
 The fact that a zero slope corresponds to a horizontal tangent line is incredibly important. Consider a more complex trajectory where a car moves forward, stops, moves backward, etc.
@@ -30,4 +28,4 @@ Notice something interesting: the point where the car was **farthest** from its 
 
 This gives us a fundamental rule of calculus:
 
-> To find the maximum or minimum value of a function, you must look for the points where its **derivative is equal to zero**.
+**To find the maximum or minimum value of a function, you must look for the points where its derivative is equal to zero**.
