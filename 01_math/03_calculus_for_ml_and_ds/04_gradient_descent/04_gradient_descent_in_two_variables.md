@@ -93,8 +93,6 @@ We would then repeat this process from our new point, calculating the new gradie
 
 ![](./images/0403.png)
 
----
-
 ## The Gradient Descent Algorithm in Summary
 
 **Goal:** Find the minimum of a function `f(x, y)`.
