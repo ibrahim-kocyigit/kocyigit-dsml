@@ -48,11 +48,26 @@ Let's perform the first few iterations by hand to see the process in detail.
 * **Starting Point:** Let's choose `(x₀, y₀) = (4, 4)`.
 
 ### Iteration 1 (Finding x₁, y₁):
-1.  **Calculate the Gradient at (4, 4):** $\nabla f(4, 4) = \begin{bmatrix} 277.6 \\ 213.6 \end{bmatrix}$  
+1.  **Calculate the Gradient at (4, 4):** 
 
-2.  **Calculate the Hessian at (4, 4):** $H(4, 4) = \begin{bmatrix} 198.4 & -2.6 \\ -2.6 & 157.6 \end{bmatrix}$  
+$$
+\nabla f(4, 4) = \begin{bmatrix} 277.6 \\ 
+213.6 \end{bmatrix}
+$$  
 
-3.  **Calculate the Inverse of the Hessian:** $[H(4, 4)]^{-1} \approx \begin{bmatrix} 0.00504 & 0.00008 \\ 0.00008 & 0.00634 \end{bmatrix}$  
+2.  **Calculate the Hessian at (4, 4):** 
+
+$$
+H(4, 4) = \begin{bmatrix} 198.4 & -2.6 \\ 
+-2.6 & 157.6 \end{bmatrix}
+$$  
+
+3.  **Calculate the Inverse of the Hessian:** 
+
+$$
+[H(4, 4)]^{-1} \approx \begin{bmatrix} 0.00504 & 0.00008 \\ 
+0.00008 & 0.00634 \end{bmatrix}
+$$  
 
 4.  **Apply the update rule:**
 
