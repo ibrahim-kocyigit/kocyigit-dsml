@@ -30,3 +30,8 @@ Eventually, we will reach a point where taking a step in either direction result
 ![](./images/0102.png)
 
 This method is not bad, but it's inefficient. We have to check two directions at every step. There is a much more powerful way to know the best direction to move in, which we will explore in the next lesson.
+
+
+---
+
+**Next:** [The Gradient Descent Algorithm](./02_gradient_descent_algorithm.md)

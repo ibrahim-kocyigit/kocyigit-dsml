@@ -103,3 +103,8 @@ We would then repeat this process from our new point, calculating the new gradie
 4.  **Repeat** step 2 and 3 until you are close enough to the minimum (i.e., until the steps become very small).
 
 Just as with one variable, this algorithm has the same drawbacks. It is not guaranteed to find the **global minimum** if the function has multiple **local minima**, and its success is highly dependent on choosing a good **learning rate**. The strategy to overcome this remains the same: run the algorithm multiple times from different random starting points.
+
+
+---
+
+**Next:** [Gradient Descent on a 2D Cost Function](./05_gradient_descent_on_a_2d_cost_function.md)

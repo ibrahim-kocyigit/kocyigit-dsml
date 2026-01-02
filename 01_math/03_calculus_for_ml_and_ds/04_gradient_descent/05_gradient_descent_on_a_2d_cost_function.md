@@ -39,3 +39,8 @@ $$ \begin{bmatrix} m_{new} \\ b_{new} \end{bmatrix} = \begin{bmatrix} m_{old} \\
 As you can see in the plot, the algorithm iteratively "walks" down the hill of the cost surface and converges to the same optimal solution we found analytically: `m = 0.5` and `b ≈ 2.33`.
 
 This iterative approach is far more scalable and is the standard method used to train most machine learning models, including very complex ones like neural networks.
+
+
+---
+
+**Next:** [Gradient Descent for Multiple Observations](./06_gradient_descent_for_multiple_observations.md)

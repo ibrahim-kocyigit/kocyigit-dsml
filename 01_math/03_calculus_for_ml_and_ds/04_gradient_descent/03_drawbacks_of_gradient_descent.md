@@ -26,3 +26,8 @@ If we start our algorithm in the wrong place, it might confidently walk to the b
 There is no guaranteed way to find the global minimum. However, a common and effective strategy is to **run the gradient descent algorithm multiple times from many different random starting points.** The hope is that at least one of these starting points will be in the "valley" that contains the global minimum.
 
 ![](./images/0302.png)
+
+
+---
+
+**Next:** [Optimization using Gradient Descent in Two Variables](./04_gradient_descent_in_two_variables.md)

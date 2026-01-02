@@ -50,3 +50,8 @@ A great feature of this formula is that it naturally takes smaller steps as it g
 4.  **Repeat** step 2 and 3 for a fixed number of iterations, or until your position stops changing significantly.
 
 The most powerful advantage of this method is that we **never had to solve the equation $f'(x)=0$**. We only need to be able to *calculate* the value of the derivative at any given point. This makes it possible to optimize incredibly complex functions where finding an analytical solution would be impossible.
+
+
+---
+
+**Next:** [Drawbacks of Gradient Descent](./03_drawbacks_of_gradient_descent.md)

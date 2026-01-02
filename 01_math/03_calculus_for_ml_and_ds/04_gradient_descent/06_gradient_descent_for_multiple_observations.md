@@ -44,3 +44,7 @@ $$ L(m, b) = \frac{1}{n}\sum_{i=1}^{n} (y_i - (mx_i + b))^2 $$
     * Update `m` and `b` by taking a small step in the opposite direction of the gradient.
     * This update results in a new, slightly better line.
 3.  **Repeat** for many iterations until the line converges to the best possible fit.
+
+---
+
+**Next:** [Regression with a Perceptron: Introduction](../05_optimization_in_neural_networks/01_regression_with_a_perceptron--introduction.md)
