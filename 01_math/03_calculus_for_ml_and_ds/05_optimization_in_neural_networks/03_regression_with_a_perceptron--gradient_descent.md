@@ -6,7 +6,7 @@ To do this, we will use **Gradient Descent**. The algorithm starts with random v
 
 The update rules for our three parameters are:
 
-* $ w_{1, new} = w_{1, old} - \alpha \cdot \frac{\partial L}{\partial w_1} $  
+* $w_{1, new} = w_{1, old} - \alpha \cdot \frac{\partial L}{\partial w_1}$  
 
 * $ w_{2, new} = w_{2, old} - \alpha \cdot \frac{\partial L}{\partial w_2} $  
 
