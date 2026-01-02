@@ -24,9 +24,9 @@ We can do the same analysis for $f(x) = \cos(x)$.
 
 If we compare these slopes to the values of $\sin(x)$, we see they are the exact opposites.
 
-> **Rule:** The derivative of $\cos(x)$ is **$-\sin(x)$**.
-> >
-> $ \frac{d}{dx}(\cos x) = -\sin x $
+**Rule:** The derivative of $\cos(x)$ is **$-\sin(x)$**.
+
+$$ \frac{d}{dx}(\cos x) = -\sin x $$
 
 ![](./images/15.png)
 
