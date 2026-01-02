@@ -56,7 +56,7 @@ This is a much better estimate for the instantaneous velocity at `t = 12.5s`.
 
 This process reveals the core idea of a derivative. To find the *exact* instantaneous rate of change at a point, we just keep making the interval smaller and smaller, getting closer and closer to zero.
 
-❗️ The **derivative** of a function at a point is the **limit** of the average rate of change as the length of the interval around that point approaches zero.
+**The derivative of a function at a point is the limit of the average rate of change as the length of the interval around that point approaches zero.**
 
 Geometrically, as the interval shrinks, the **secant line** connecting the two endpoints gets closer and closer to the **tangent line** at that single point. The derivative is the slope of this tangent line.
 
