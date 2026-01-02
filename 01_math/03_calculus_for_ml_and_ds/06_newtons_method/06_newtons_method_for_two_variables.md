@@ -82,21 +82,56 @@ $$
 In one step, we've moved significantly closer to the true minimum at `(0, 0)`.
 
 ### Iteration 2 (Finding x₂, y₂):
+
 Now, we repeat the entire process from our new point, `(x₁, y₁) ≈ (2.582, 2.623)`.
-1.  **Calculate the Gradient at (2.582, 2.623):** $ \nabla f \approx \begin{bmatrix} 84.2 \\ 64.3 \end{bmatrix} $  
 
-2.  **Calculate the Hessian at (2.582, 2.623):** $ H \approx \begin{bmatrix} 87.0 & -2.03 \\ -2.03 & 70.0 \end{bmatrix} $  
+1.  **Calculate the Gradient at (2.582, 2.623):** 
 
-3.  **Calculate the Inverse of the Hessian:** $ [H]^{-1} \approx \begin{bmatrix} 0.0115 & 0.0003 \\ 0.0003 & 0.0143 \end{bmatrix} $  
+$$
+\nabla f \approx \begin{bmatrix} 84.2 \\ 
+64.3 \end{bmatrix} 
+$$  
+
+2.  **Calculate the Hessian at (2.582, 2.623):** 
+
+$$
+H \approx \begin{bmatrix} 87.0 & -2.03 \\ 
+-2.03 & 70.0 \end{bmatrix} 
+$$  
+
+3.  **Calculate the Inverse of the Hessian:** 
+
+$$
+[H]^{-1} \approx \begin{bmatrix} 0.0115 & 0.0003 \\ 
+0.0003 & 0.0143 \end{bmatrix}
+$$  
 
 4.  **Apply the update rule:**
-    $$ \begin{bmatrix} x_2 \\ y_2 \end{bmatrix} = \begin{bmatrix} 2.582 \\ 2.623 \end{bmatrix} - [H]^{-1} \begin{bmatrix} 84.2 \\ 64.3 \end{bmatrix} \approx \begin{bmatrix} 1.590 \\ 1.669 \end{bmatrix} $$
+
+$$
+\begin{bmatrix} x_2 \\ 
+y_2 \end{bmatrix} = \begin{bmatrix} 2.582 \\ 
+2.623 \end{bmatrix} - [H]^{-1} \begin{bmatrix} 84.2 \\ 
+64.3 \end{bmatrix} \approx \begin{bmatrix} 1.590 \\ 
+1.669 \end{bmatrix}
+$$
 
 ### Iteration 3 (Finding x₃, y₃):
 Repeating the process again from `(x₂, y₂) ≈ (1.590, 1.669)` yields:
-$$ \begin{bmatrix} x_3 \\ y_3 \end{bmatrix} \approx \begin{bmatrix} 0.916 \\ 0.998 \end{bmatrix} $$
+
+$$
+\begin{bmatrix} x_3 \\ 
+y_3 \end{bmatrix} \approx \begin{bmatrix} 0.916 \\ 
+0.998 \end{bmatrix}
+$$
 
 ### Final Convergence:
 As we continue this process, the steps get smaller and smaller, rapidly converging on the solution. After 8 iterations, the position is:
-$$ \begin{bmatrix} x_8 \\ y_8 \end{bmatrix} \approx \begin{bmatrix} 4.15 \times 10^{-17} \\ -2.05 \times 10^{-17} \end{bmatrix} $$
+
+$$ 
+\begin{bmatrix} x_8 \\ 
+y_8 \end{bmatrix} \approx \begin{bmatrix} 4.15 \times 10^{-17} \\ 
+-2.05 \times 10^{-17} \end{bmatrix}
+$$
+
 This is an exceptionally small number, practically equal to the true minimum at **(0, 0)**.
