@@ -30,10 +30,15 @@ To find the minimum of $f(x, y) = x^2 + y^2$, we set its **gradient** to the zer
     * $\frac{\partial f}{\partial y} = 2y$
 
 2.  **Form the gradient vector:**
-    $$ \nabla f = \begin{bmatrix} 2x \\ 2y \end{bmatrix} $$
+
+$$ \nabla f = \begin{bmatrix} 2x \\ 
+2y \end{bmatrix} $$
 
 3.  **Set the gradient to the zero vector:**
-    $$ \begin{bmatrix} 2x \\ 2y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} $$
+
+$$ \begin{bmatrix} 2x \\ 
+2y \end{bmatrix} = \begin{bmatrix} 0 \\ 
+0 \end{bmatrix} $$
 
 4.  **Solve the resulting system of equations:**
     * $2x = 0 \implies x = 0$
