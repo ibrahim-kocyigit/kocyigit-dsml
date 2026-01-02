@@ -31,3 +31,7 @@ Because we only stretched the graph vertically, the "rise" of any secant line is
 As we take the limit and these secant lines become tangent lines, the same relationship holds. The slope of the tangent for the scaled function will be `c` times the slope of the tangent for the original function.
 
 ![](./images/25.png)
+
+---
+
+**Next:** [Properties of the Derivative: The Sum Rule](./16_the_sum_rule.md)

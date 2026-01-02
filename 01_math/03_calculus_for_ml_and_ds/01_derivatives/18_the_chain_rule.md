@@ -41,3 +41,7 @@ We can visualize this relationship in 3D. A small change in time (`Δt`) causes 
 The chain rule shows how these small changes are connected in the limit.
 
 ![](./images/29.png)
+
+---
+
+**Next:** []()

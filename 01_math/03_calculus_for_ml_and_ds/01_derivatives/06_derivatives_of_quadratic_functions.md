@@ -65,3 +65,7 @@ $$ \lim_{\Delta x \to 0} (2x + \Delta x) = 2x $$
 **Rule (The Power Rule for x²):** The derivative of $f(x) = x^2$ is **$f'(x) = 2x$**.  
 
 This confirms our numerical finding. At `x=1`, the derivative is $2(1) = 2$.
+
+---
+
+**Next:** [Some Common Derivatives - Higher Degree Polynomials](./07_derivatives_of_higher_degree_polynomials.md)

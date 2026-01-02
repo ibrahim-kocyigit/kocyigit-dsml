@@ -76,3 +76,7 @@ The pattern is clear and it works for any power function.
 **Examples:**
 * If $f(x) = x^{100}$, then $f'(x) = 100x^{99}$.
 * If $f(x) = x^{-100}$, then $f'(x) = -100x^{-101}$.
+
+---
+
+**Next:** [The Inverse Function and Its Derivative](./09_derivatives_of_inverse_functions.md)

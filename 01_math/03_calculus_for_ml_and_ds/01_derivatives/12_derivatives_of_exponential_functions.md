@@ -37,3 +37,7 @@ This remarkable property holds true for any point `x`. The tangent at the point 
 **Rule:** The derivative of $f(x) = e^x$ is **$f'(x) = e^x$**
  
 $$ \frac{d}{dx}(e^x) = e^x $$
+
+---
+
+**Next:** [The Derivative of the Natural Logarithm](./13_derivative_of_natural_logarithm.md)

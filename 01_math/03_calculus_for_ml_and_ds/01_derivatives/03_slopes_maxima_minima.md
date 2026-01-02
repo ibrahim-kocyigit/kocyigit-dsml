@@ -29,3 +29,7 @@ Notice something interesting: the point where the car was **farthest** from its 
 This gives us a fundamental rule of calculus:
 
 **To find the maximum or minimum value of a function, you must look for the points where its derivative is equal to zero**.
+
+---
+
+**Next:** [Derivatives and Their Notation](./04_derivative_notations.md)

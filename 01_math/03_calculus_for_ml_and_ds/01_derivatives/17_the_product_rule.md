@@ -48,3 +48,7 @@ What about the last term, $\frac{\Delta g \cdot \Delta h}{\Delta t}$? As `Δt` g
 This leaves us with the final product rule:
 
 $$ f'(t) = g'(t) \cdot h(t) + g(t) \cdot h'(t) $$
+
+---
+
+**Next:** [Properties of the Derivative: The Chain Rule](./18_the_chain_rule.md)

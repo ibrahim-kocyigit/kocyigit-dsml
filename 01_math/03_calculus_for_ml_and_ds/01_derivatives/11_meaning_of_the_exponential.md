@@ -47,3 +47,7 @@ The formula for this is the limit we saw before:
 $$ \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = e $$
 
 So, **e** represents the maximum possible growth from a process that grows at a continuous rate of 100%. If you start with 1 dollar and earn 100% interest compounded continuously for one year, you will end up with exactly *e* dollars, approximately $2.718.
+
+---
+
+**Next:** [The Derivative of eˣ](./12_derivatives_of_exponential_functions.md)

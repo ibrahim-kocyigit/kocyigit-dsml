@@ -59,3 +59,7 @@ $$ \lim_{\Delta x \to 0} (3x^2 + 3x\Delta x + (\Delta x)^2) = 3x^2 $$
 **Rule (The Power Rule for x³):** The derivative of $f(x) = x^3$ is **$f'(x) = 3x^2$**.
 
 This confirms our numerical finding. At `x=0.5`, the derivative is $3(0.5)^2 = 3(0.25) = 0.75$.
+
+---
+
+**Next:** [Some Common Derivatives - Other Power Functions](./08_derivatives_of_other_power_functions.md)

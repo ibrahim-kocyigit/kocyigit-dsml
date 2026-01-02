@@ -39,3 +39,7 @@ Let's explore this with our example functions, $f(x) = x^2$ and its inverse $g(y
 * Therefore, the slope of the tangent to $g(y)$ at the corresponding point ($y=4$) must be the reciprocal: $g'(4) = \frac{1}{f'(2)} = \frac{1}{4}$.
 
 ![](./images/13.png)
+
+---
+
+**Next:** [Some Common Derivatives - Trigonometric Functions](./10_derivatives_of_trigonometric_functions.md)

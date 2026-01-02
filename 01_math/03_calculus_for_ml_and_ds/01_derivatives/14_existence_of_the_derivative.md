@@ -29,3 +29,7 @@ The third case is when the tangent line at a point is perfectly **vertical**.
 A vertical line has an **undefined** slope (its "run" is zero, leading to division by zero). Since the derivative is the slope of the tangent line, the derivative is also undefined at that point. An example of this is the function $f(x) = x^{1/3}$ (the cube root of x).
 
 ![](./images/24.png)
+
+---
+
+**Next:** [Properties of the Derivative: Multiplication by Scalars](./15_constant_multiple_rule.md)

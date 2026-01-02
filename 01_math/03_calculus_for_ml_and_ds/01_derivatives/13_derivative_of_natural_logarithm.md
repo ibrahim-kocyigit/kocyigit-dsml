@@ -64,3 +64,7 @@ This matches our formula, since the derivative is $1/y$, and at this point, $y=e
 $$ \frac{d}{dx}(\ln x) = \frac{1}{x} $$
 
 ![](./images/21.png)
+
+---
+
+**Next:** [Existence of the Derivative](./14_existence_of_the_derivative.md)

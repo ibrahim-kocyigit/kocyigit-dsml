@@ -44,3 +44,7 @@ We can prove this algebraically. Let's find the slope between two points on the 
 Since the slope is always `a` no matter how small `Δx` is, the derivative is `a`.
 
 ![](./images/07.png)
+
+---
+
+**Next:** [Some Common Derivatives - Quadratics](./06_derivatives_of_quadratic_functions.md)

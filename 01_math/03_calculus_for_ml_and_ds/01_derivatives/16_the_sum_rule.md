@@ -45,3 +45,7 @@ When we take the limit as `Δx` approaches zero, this equation becomes:
 $$ f'(x) = g'(x) + h'(x) $$
 
 This confirms that the derivative of the sum is the sum of the derivatives.
+
+---
+
+**Next:** [Properties of the Derivative: The Product Rule](./17_the_product_rule.md)

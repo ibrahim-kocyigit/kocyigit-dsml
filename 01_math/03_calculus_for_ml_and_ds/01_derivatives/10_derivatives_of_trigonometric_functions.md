@@ -51,3 +51,7 @@ As `Δx` approaches zero, `Δsin(x) / Δx` becomes the derivative of sine, and `
 * The derivative of `cos(x)` is `-sin(x)`.
 
 ![](./images/17.png)
+
+---
+
+**Next:** [The Meaning of the Exponential (e)](./11_meaning_of_the_exponential.md)

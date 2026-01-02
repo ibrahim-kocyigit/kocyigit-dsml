@@ -40,3 +40,7 @@ $$ f'(x) $$
 This is read as "f prime of x" and it means "the derivative of the function f at the point x."
 
 Both notations mean the exact same thing. We will use them interchangeably in this course, typically choosing the one that is most convenient for the context.
+
+---
+
+**Next:** [Some Common Derivatives - Lines](./05_derivatives_of_lines.md)
