@@ -37,28 +37,30 @@ This is the most important equation for finding eigenvalues. Let's analyze what 
 
 The equation $(A - \lambda I)v = 0$ is a system of linear equations. We are looking for a **non-zero** vector `v` that solves this system.
 
-* If the matrix $(A - \lambda I)$ were non-singular, the only solution to this equation would be the trivial one: 
+If the matrix $(A - \lambda I)$ were non-singular, the only solution to this equation would be the trivial one: 
 
 $$
 v = \begin{bmatrix} 0 \\ 
 0 \end{bmatrix}
 $$
 
-* But eigenvectors must be non-zero! Therefore, for a non-zero solution `v` to exist, the matrix $(A - \lambda I)$ **must be singular**.
+But eigenvectors must be non-zero! Therefore, for a non-zero solution `v` to exist, the matrix $(A - \lambda I)$ **must be singular**.
 
 And what do we know about singular matrices? Their determinant is zero.
 
 **Rule:** To find the eigenvalues (`λ`) of a matrix `A`, we must solve the equation:
 $ \det(A - \lambda I) = 0 $
 
----
 ## Step 1: Find the Eigenvalues
 
 Let's apply this rule to our matrix `A`.
 
 1.  **First, calculate the matrix $(A - \lambda I)$:**  
 
-    $ (A - \lambda I) = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} - \lambda \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} = \begin{bmatrix} 2-\lambda & 1 \\ 0 & 3-\lambda \end{bmatrix} $
+```math
+(A - \lambda I) = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} - \lambda \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} = \begin{bmatrix} 2-\lambda & 1 \\ 0 & 3-\lambda \end{bmatrix}
+```
+<br>
 
 2.  **Next, calculate its determinant:**
 
