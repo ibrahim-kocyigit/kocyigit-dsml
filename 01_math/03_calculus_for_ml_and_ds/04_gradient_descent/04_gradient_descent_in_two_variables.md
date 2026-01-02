@@ -48,16 +48,16 @@ Where:
 $$ \begin{bmatrix} \frac{\partial T}{\partial x} \\ 
 \frac{\partial T}{\partial y} \end{bmatrix} $$
 
----
-
 ## A Step-by-Step Numerical Example
 
 Let's run the first few steps of the algorithm by hand to see how it works.
 
 **The Temperature Function:**
+
 $$ T(x, y) = 85 - \frac{1}{90}(x^3 - 6x^2)(y^3 - 6y^2) $$
 
 **The Gradient Vector (from the previous lesson):**
+
 $$ \nabla T = \begin{bmatrix} -\frac{1}{90} (3x^2 - 12x)(y^3 - 6y^2) \\ -\frac{1}{90} (x^3 - 6x^2)(3y^2 - 12y) \end{bmatrix} $$
 
 **Parameters:**
@@ -70,7 +70,9 @@ $$ \nabla T = \begin{bmatrix} -\frac{1}{90} (3x^2 - 12x)(y^3 - 6y^2) \\ -\frac{1
 
     * $\frac{\partial T}{\partial y} \approx -0.095$  
 
-    * $\nabla T(0.5, 0.6) = \begin{bmatrix} -0.114 \\ -0.095 \end{bmatrix}$
+    * $\nabla T(0.5, 0.6) =$ 
+    
+$$\begin{bmatrix} -0.114 \\ -0.095 \end{bmatrix}$$
 
 2.  **Update our position:**
     $$ \begin{bmatrix} x_1 \\ y_1 \end{bmatrix} = \begin{bmatrix} 0.5 \\ 0.6 \end{bmatrix} - 0.05 \cdot \begin{bmatrix} -0.114 \\ -0.095 \end{bmatrix} $$
