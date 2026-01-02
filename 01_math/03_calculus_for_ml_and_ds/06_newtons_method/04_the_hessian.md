@@ -9,7 +9,7 @@ Let's compare the progression from one to two variables:
 | Concept | One Variable | Two Variables |
 | :--- | :--- | :--- |
 | **Function** | $f(x)$ | $f(x, y)$ |
-| **1st Derivative**| $f'(x)$ (a scalar) | $\nabla f = \begin{bmatrix} f_x \\ f_y \end{bmatrix}$ (a vector) |
+| **1st Derivative**| $f'(x)$ (a scalar) | $\nabla (f_x, f_y)$ (a vector) |
 | **2nd Derivative**| $f''(x)$ (a scalar) | **The Hessian** (a matrix) |
 
 ## Calculating Second-Order Partial Derivatives
