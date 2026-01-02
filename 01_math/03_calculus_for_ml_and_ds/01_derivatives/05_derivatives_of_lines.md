@@ -16,24 +16,31 @@ $$ \frac{d}{dx}(c) = 0 $$
 
 ![](./images/06.png)
 
-
 ### Case 2: The General Linear Function
 
 Now let's consider any line that is not horizontal. Its equation is $f(x) = ax + b$, where `a` is the slope and `b` is the y-intercept.
 
 Just like with the constant function, the tangent line to a straight line at any point is the line itself. Therefore, the slope of the tangent line is always the slope of the original line, which is `a`.
 
-> **Rule:** The derivative of a linear function $ax+b$ is its slope, **a**.
-> > 
-> $ \frac{d}{dx}(ax+b) = a $
+**Rule:** The derivative of a linear function $ax+b$ is its slope, **a**.
+
+$$ \frac{d}{dx}(ax+b) = a $$
 
 We can prove this algebraically. Let's find the slope between two points on the line: `x` and `x + Δx`.
 
 * **Point 1:** $(x, ax+b)$
 * **Point 2:** $(x+\Delta x, a(x+\Delta x)+b)$
 
-$$ \text{Slope} = \frac{\Delta y}{\Delta x} = \frac{(a(x+\Delta x)+b) - (ax+b)}{\Delta x} $$
-$$ = \frac{ax + a\Delta x + b - ax - b}{\Delta x} = \frac{a\Delta x}{\Delta x} = a $$
+```math
+\text{Slope} = \frac{\Delta y}{\Delta x} = \frac{(a(x+\Delta x)+b) - (ax+b)}{\Delta x}
+```
+<br>
+
+```math
+= \frac{ax + a\Delta x + b - ax - b}{\Delta x} = \frac{a\Delta x}{\Delta x} = a 
+```
+<br>
+
 Since the slope is always `a` no matter how small `Δx` is, the derivative is `a`.
 
 ![](./images/07.png)
