@@ -22,13 +22,15 @@ We will start with a large interval, `Δx = 1`, and calculate the slope of the s
     * The interval is from `x=1` to `x=1.5`.
     * $\Delta y = f(1.5) - f(1) = 1.5^2 - 1^2 = 2.25 - 1 = 1.25$
     * **Slope** = $\frac{\Delta y}{\Delta x} = \frac{1.25}{0.5} = 2.5$  
-` `
+
+
 * **For Δx = 0.25:**
     * The interval is from `x=1` to `x=1.25`.
     * $\Delta y = f(1.25) - f(1) = 1.25^2 - 1^2 \approx 1.5625 - 1 = 0.5625$
     * **Slope** = $\frac{\Delta y}{\Delta x} = \frac{0.5625}{0.25} = 2.25$  
-` `
+
 As we make the interval smaller and smaller, the slope seems to be approaching **2**.
+
 * `Δx = 0.001` ➔ **Slope = 2.001**
 
 It seems the exact slope of the tangent line at `x=1` is **2**.
