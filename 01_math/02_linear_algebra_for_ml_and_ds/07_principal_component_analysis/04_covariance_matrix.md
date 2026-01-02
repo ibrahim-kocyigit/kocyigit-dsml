@@ -23,12 +23,12 @@ For a dataset with two variables, `x` and `y`, the covariance matrix `C` is a 2x
 
 2.  **Build the matrix:**  
 
-    $
-    C = \begin{bmatrix}
-    \text{Var}(x) & \text{Cov}(x, y) \\
-    \text{Cov}(y, x) & \text{Var}(y)
-    \end{bmatrix}
-    $
+$$
+C = \begin{bmatrix}
+\text{Var}(x) & \text{Cov}(x, y) \\
+\text{Cov}(y, x) & \text{Var}(y)
+\end{bmatrix}
+$$
 
 A key property is that the matrix is **symmetric**, meaning $\text{Cov}(x, y) = \text{Cov}(y, x)$.
 
