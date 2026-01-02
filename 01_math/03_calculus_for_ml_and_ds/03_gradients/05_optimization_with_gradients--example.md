@@ -26,9 +26,13 @@ $$ T(x, y) = 85 - \frac{1}{90}(x^3 - 6x^2)(y^3 - 6y^2) $$
 ### Step 1: Find the Partial Derivatives
 After applying the product rule and simplifying, we get the partial derivatives:
 
-* $ \frac{\partial T}{\partial x} = -\frac{1}{90} (3x^2 - 12x)(y^3 - 6y^2) = -\frac{1}{90} (3x(x-4))(y^2(y-6)) $  
+$$ 
+\frac{\partial T}{\partial x} = -\frac{1}{90} (3x^2 - 12x)(y^3 - 6y^2) = -\frac{1}{90} (3x(x-4))(y^2(y-6)) 
+$$  
 
-* $ \frac{\partial T}{\partial y} = -\frac{1}{90} (x^3 - 6x^2)(3y^2 - 12y) = -\frac{1}{90} (x^2(x-6))(3y(y-4)) $
+$$ 
+\frac{\partial T}{\partial y} = -\frac{1}{90} (x^3 - 6x^2)(3y^2 - 12y) = -\frac{1}{90} (x^2(x-6))(3y(y-4)) 
+$$
 
 ### Step 2: Set Both Derivatives to Zero
 We need to find the `(x, y)` pairs that solve this system of equations:
