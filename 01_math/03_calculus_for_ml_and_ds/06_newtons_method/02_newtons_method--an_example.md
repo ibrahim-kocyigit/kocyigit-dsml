@@ -42,10 +42,10 @@ In just two steps, we have already moved from `x=2.0` to `x=0.553`, which is ver
 
 As the plot shows, Newton's method converges to the solution with incredible speed.
 
-* **x₀ = 2.0**
-* **x₁ ≈ 0.97**
-* **x₂ ≈ 0.63**
-* **x₃ ≈ 0.570**
-* **x₄ ≈ 0.567**
+* x₀ = 2.0
+* x₁ ≈ 0.97
+* x₂ ≈ 0.63
+* x₃ ≈ 0.570
+* x₄ ≈ 0.567
 
 In only a few iterations, we have arrived at an excellent approximation of the true minimum (`x ≈ 0.567`), which is known as the Omega constant. This demonstrates the power and speed of Newton's method. Just like with Gradient Descent, we found the minimum without ever needing to solve the difficult equation $e^x - 1/x = 0$ analytically.
