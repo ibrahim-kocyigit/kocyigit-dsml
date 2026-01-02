@@ -8,9 +8,9 @@ The update rules for our three parameters are:
 
 * $w_{1, new} = w_{1, old} - \alpha \cdot \frac{\partial L}{\partial w_1}$  
 
-* $ w_{2, new} = w_{2, old} - \alpha \cdot \frac{\partial L}{\partial w_2} $  
+* $w_{2, new} = w_{2, old} - \alpha \cdot \frac{\partial L}{\partial w_2}$  
 
-* $ b_{new} = b_{old} - \alpha \cdot \frac{\partial L}{\partial b} $
+* $b_{new} = b_{old} - \alpha \cdot \frac{\partial L}{\partial b}$
 
 To use these formulas, we first need to calculate the three partial derivatives of the loss function.
 
@@ -24,7 +24,7 @@ $$ w_1, w_2, b \quad \longrightarrow \quad \hat{y} \quad \longrightarrow \quad L
 
 We can use the chain rule to find the derivatives we need:
 
-* $ \frac{\partial L}{\partial w_1} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial w_1} $  
+* $\frac{\partial L}{\partial w_1} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial w_1}$  
 
 * $ \frac{\partial L}{\partial w_2} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial w_2} $  
 
