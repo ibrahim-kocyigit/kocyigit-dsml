@@ -36,7 +36,7 @@ Now, our problem is much simpler. We just need to calculate the four individual 
 
 **Reference Formulas:**
 * **Loss Function:** $L(y, \hat{y}) = \frac{1}{2}(y - \hat{y})^2$
-* **Prediction Function:** $ \hat{y} = w_1x_1 + w_2x_2 + b $
+* **Prediction Function:** $\hat{y} = w_1x_1 + w_2x_2 + b$
 
 **1. Derivative of Loss with respect to Prediction ($\frac{\partial L}{\partial \hat{y}}$):**
 Using the chain rule, the derivative of $\frac{1}{2}(\text{something})^2$ is just the "something," multiplied by the derivative of the inside with respect to `ŷ`.
@@ -45,39 +45,40 @@ $$ \frac{\partial L}{\partial \hat{y}} = \frac{1}{2} \cdot 2(y - \hat{y}) \cdot 
 
 **2. Derivative of Prediction with respect to Bias ($\frac{\partial \hat{y}}{\partial b}$):**
 When differentiating with respect to `b`, the terms `w₁x₁` and `w₂x₂` are treated as constants, so their derivative is zero.
+
 $$ \frac{\partial \hat{y}}{\partial b} = 0 + 0 + 1 = 1 $$
 
 **3. Derivative of Prediction with respect to Weight 1 ($\frac{\partial \hat{y}}{\partial w_1}$):**
 When differentiating with respect to `w₁`, the term `w₂x₂ + b` is a constant. The derivative of `w₁x₁` with respect to `w₁` is just `x₁`.
+
 $$ \frac{\partial \hat{y}}{\partial w_1} = x_1 $$
 
 **4. Derivative of Prediction with respect to Weight 2 ($\frac{\partial \hat{y}}{\partial w_2}$):**
 Similarly, the derivative with respect to `w₂` is `x₂`.
+
 $$ \frac{\partial \hat{y}}{\partial w_2} = x_2 $$
 
----
 ## Assembling the Final Gradient
 
 Now we can plug these simple components back into our chain rule formulas.
 
-* $ \frac{\partial L}{\partial b} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial b} = -(y - \hat{y}) \cdot 1 = -(y - \hat{y}) $  
+* $\frac{\partial L}{\partial b} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial b} = -(y - \hat{y}) \cdot 1 = -(y - \hat{y})$  
 
-* $ \frac{\partial L}{\partial w_1} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial w_1} = -(y - \hat{y}) \cdot x_1 $  
+* $\frac{\partial L}{\partial w_1} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial w_1} = -(y - \hat{y}) \cdot x_1$  
 
-* $ \frac{\partial L}{\partial w_2} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial w_2} = -(y - \hat{y}) \cdot x_2 $
+* $\frac{\partial L}{\partial w_2} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial w_2} = -(y - \hat{y}) \cdot x_2$
 
 These are the three partial derivatives that form our gradient.
 
----
 ## The Final Gradient Descent Step
 
 We can now write out the complete update rules for a single step of gradient descent for linear regression.
 
-* $ w_1 \leftarrow w_1 - \alpha \cdot (-(y - \hat{y}) \cdot x_1) = w_1 + \alpha (y - \hat{y}) x_1 $  
+* $w_1 \leftarrow w_1 - \alpha \cdot (-(y - \hat{y}) \cdot x_1) = w_1 + \alpha (y - \hat{y}) x_1$  
 
-* $ w_2 \leftarrow w_2 - \alpha \cdot (-(y - \hat{y}) \cdot x_2) = w_2 + \alpha (y - \hat{y}) x_2 $  
+* $w_2 \leftarrow w_2 - \alpha \cdot (-(y - \hat{y}) \cdot x_2) = w_2 + \alpha (y - \hat{y}) x_2$  
 
-* $ b \leftarrow b - \alpha \cdot (-(y - \hat{y})) = b + \alpha (y - \hat{y}) $
+* $b \leftarrow b - \alpha \cdot (-(y - \hat{y})) = b + \alpha (y - \hat{y})$
 
 By repeating these update steps many times for all the points in our dataset, the algorithm will find the optimal weights `w₁`, `w₂`, and bias `b` that result in the smallest possible error and therefore the best possible model.
 
