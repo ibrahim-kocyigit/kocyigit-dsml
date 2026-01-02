@@ -15,15 +15,13 @@ Geometrically, a function and its inverse are **reflections of each other across
 
 ![](./images/11.png)
 
----
-
 ## The Derivative of an Inverse Function
 
 There is a beautiful and simple relationship between the derivative of a function and the derivative of its inverse.
 
-> **Rule:** The derivative of an inverse function is the **reciprocal** of the derivative of the original function, evaluated at the corresponding point.
-> > 
-> $ (f^{-1})'(y) = \frac{1}{f'(x)} $
+**Rule:** The derivative of an inverse function is the **reciprocal** of the derivative of the original function, evaluated at the corresponding point.
+
+$$ (f^{-1})'(y) = \frac{1}{f'(x)} $$
 
 Let's explore this with our example functions, $f(x) = x^2$ and its inverse $g(y) = \sqrt{y}$. We already know that $f'(x) = 2x$.
 
