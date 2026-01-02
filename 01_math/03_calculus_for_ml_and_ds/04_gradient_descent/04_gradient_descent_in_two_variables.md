@@ -72,11 +72,20 @@ $$ \nabla T = \begin{bmatrix} -\frac{1}{90} (3x^2 - 12x)(y^3 - 6y^2) \\ -\frac{1
 
     * $\nabla T(0.5, 0.6) =$ 
     
-$$\begin{bmatrix} -0.114 \\ -0.095 \end{bmatrix}$$
+$$\begin{bmatrix} -0.114 \\ 
+-0.095 \end{bmatrix}$$
 
 2.  **Update our position:**
-    $$ \begin{bmatrix} x_1 \\ y_1 \end{bmatrix} = \begin{bmatrix} 0.5 \\ 0.6 \end{bmatrix} - 0.05 \cdot \begin{bmatrix} -0.114 \\ -0.095 \end{bmatrix} $$
-    $$ = \begin{bmatrix} 0.5 \\ 0.6 \end{bmatrix} - \begin{bmatrix} -0.0057 \\ -0.00475 \end{bmatrix} = \begin{bmatrix} 0.5057 \\ 0.60475 \end{bmatrix} $$  
+
+$$ \begin{bmatrix} x_1 \\ 
+y_1 \end{bmatrix} = \begin{bmatrix} 0.5 \\ 
+0.6 \end{bmatrix} - 0.05 \cdot \begin{bmatrix} -0.114 \\ 
+-0.095 \end{bmatrix} $$
+
+$$ = \begin{bmatrix} 0.5 \\ 
+0.6 \end{bmatrix} - \begin{bmatrix} -0.0057 \\ 
+-0.00475 \end{bmatrix} = \begin{bmatrix} 0.5057 \\ 
+0.60475 \end{bmatrix} $$  
 
 After one step, we have moved from `(0.5, 0.6)` to approximately `(0.506, 0.605)`, which is a small step closer to the minimum.
 
