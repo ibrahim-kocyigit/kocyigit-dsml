@@ -60,20 +60,23 @@ Let's apply this rule to our matrix `A`.
 ```math
 (A - \lambda I) = \begin{bmatrix} 2 & 1 \\ 0 & 3 \end{bmatrix} - \lambda \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} = \begin{bmatrix} 2-\lambda & 1 \\ 0 & 3-\lambda \end{bmatrix}
 ```
-<br>
 
 2.  **Next, calculate its determinant:**
 
-    $ \det(A - \lambda I) = (2-\lambda)(3-\lambda) - (1)(0) = (2-\lambda)(3-\lambda) $
+```math
+\det(A - \lambda I) = (2-\lambda)(3-\lambda) - (1)(0) = (2-\lambda)(3-\lambda)
+```
 
 3.  **Finally, set the determinant to zero and solve for `λ`:**
 
-    $ (2-\lambda)(3-\lambda) = 0 $  
+```math
+(2-\lambda)(3-\lambda) = 0
+```
 
-    This equation is true if either `2 - λ = 0` or `3 - λ = 0`.
+This equation is true if either `2 - λ = 0` or `3 - λ = 0`.
 
     
-    The solutions are $\boldsymbol{\lambda_1 = 2}$ and $\boldsymbol{\lambda_2 = 3}$.
+The solutions are $\boldsymbol{\lambda_1 = 2}$ and $\boldsymbol{\lambda_2 = 3}$.
 
 These are the two **eigenvalues** of our matrix `A`. The equation we solved is called the **characteristic polynomial**.
 
