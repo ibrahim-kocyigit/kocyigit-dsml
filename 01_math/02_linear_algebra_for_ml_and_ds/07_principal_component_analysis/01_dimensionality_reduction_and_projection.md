@@ -28,10 +28,12 @@ A_{proj} = A \cdot \frac{v}{||v||_2}
 <br>
 
 Let's break this down:
-1.  **Normalize the Direction Vector:** We first divide the vector `v` by its L2-norm (`||v||_2`). This creates a **unit vector** that points in the same direction but has a length of 1. This is crucial because it ensures our projection only changes the position of the points, not their scale.
-2.  **Take the Dot Product:** We then take the dot product of our data matrix `A` with this new unit vector. This calculates the new, 1-dimensional coordinates for each of our data points along the projection line.
 
-For our 2D data and the projection line `y=x` (defined by the vector `v = [1, 1]`), we have successfully reduced our dataset from a table with **two columns** (x and y coordinates) to a single vector with **one column** (the distance along the line).
+1.  **Normalize the Direction Vector:** We first divide the vector $v$ by its L2-norm $||v||_2$. This creates a **unit vector** that points in the same direction but has a length of 1. This is crucial because it ensures our projection only changes the position of the points, not their scale.
+
+2.  **Take the Dot Product:** We then take the dot product of our data matrix $A$ with this new unit vector. This calculates the new, 1-dimensional coordinates for each of our data points along the projection line.
+
+For our 2D data and the projection line $y=x$ (defined by the vector $v = [1, 1]$), we have successfully reduced our dataset from a table with **two columns** (x and y coordinates) to a single vector with **one column** (the distance along the line).
 
 ## Generalizing the Projection
 
