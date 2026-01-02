@@ -26,18 +26,24 @@ We sort these pairs in descending order based on the value of the eigenvalues.
 ### Step 4: Select Principal Components
 Since our goal is to reduce the data to 2 dimensions, we select the **two eigenvectors** that correspond to the **two largest eigenvalues**. These are our principal components.
 
-$ \text{Principal Components} = \{v_1, v_2\} $
+$$
+\text{Principal Components} = \{v_1, v_2\} 
+$$
 
 ### Step 5: Create the Projection Matrix
 We create our projection matrix, `V`, by first **normalizing** our chosen eigenvectors to have a length of 1, and then combining them into a single matrix where each normalized vector is a column.
 
 Let $\hat{v}_1 = \frac{v_1}{||v_1||_2}$ and $\hat{v}_2 = \frac{v_2}{||v_2||_2}$ be the normalized eigenvectors.
 
-$ V = \begin{bmatrix} \hat{v}_1 & \hat{v}_2 \end{bmatrix} $
+$$
+V = \begin{bmatrix} \hat{v}_1 & \hat{v}_2 \end{bmatrix}
+$$
 
 ### Step 6: Project the Data
 Finally, we project our original centered data onto the new space defined by our principal components. This is done with a final matrix multiplication:
 
-$ X_{PCA} = X_{centered} \cdot V $
+$$
+X_{PCA} = X_{centered} \cdot V
+$$
 
-The resulting matrix, `X_PCA`, will have *n* rows but now only **2 columns**. We have successfully reduced the dimensionality of our data from 5 to 2 while preserving the maximum possible variance.
+The resulting matrix, $X_{PCA}$, will have *n* rows but now only **2 columns**. We have successfully reduced the dimensionality of our data from 5 to 2 while preserving the maximum possible variance.
