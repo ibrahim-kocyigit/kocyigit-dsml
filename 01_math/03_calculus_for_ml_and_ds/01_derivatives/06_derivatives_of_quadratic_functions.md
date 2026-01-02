@@ -35,7 +35,6 @@ It seems the exact slope of the tangent line at `x=1` is **2**.
 
 ![](./images/08.png)
 
----
 
 ## The Formal Proof
 
@@ -44,21 +43,25 @@ We can prove this result for any point `x` using algebra. We want to find the li
 $$ \text{Slope} = \frac{\Delta f}{\Delta x} = \frac{f(x+\Delta x) - f(x)}{\Delta x} $$
 
 Since our function is $f(x) = x^2$:
+
 $$ = \frac{(x+\Delta x)^2 - x^2}{\Delta x} $$
 
 Now, we expand the squared term:
+
 $$ = \frac{(x^2 + 2x\Delta x + (\Delta x)^2) - x^2}{\Delta x} $$
 
 The $x^2$ terms cancel out:
+
 $$ = \frac{2x\Delta x + (\Delta x)^2}{\Delta x} $$
 
 We can now divide the numerator by `Δx`:
+
 $$ = 2x + \Delta x $$
 
 Finally, we take the limit as `Δx` goes to zero. The term `Δx` becomes zero, and we are left with:
+
 $$ \lim_{\Delta x \to 0} (2x + \Delta x) = 2x $$
 
-> **Rule (The Power Rule for x²):** The derivative of $f(x) = x^2$ is **$f'(x) = 2x$**.  
-
+**Rule (The Power Rule for x²):** The derivative of $f(x) = x^2$ is **$f'(x) = 2x$**.  
 
 This confirms our numerical finding. At `x=1`, the derivative is $2(1) = 2$.
