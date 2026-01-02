@@ -33,11 +33,17 @@ A function is **concave down** if its graph looks like a dome opening downwards.
 **The Test:** A function is concave down if **all** the eigenvalues of its Hessian matrix are **negative**. This is called a **negative-definite** matrix.
 
 **Example:** $f(x, y) = -2x^2 - 3y^2 - xy + 15$
-* **Hessian:** $H = \begin{bmatrix} -4 & -1 \\ -1 & -6 \end{bmatrix}$
+
+* **Hessian:** 
+
+$$
+H = \begin{bmatrix} -4 & -1 \\ 
+-1 & -6 \end{bmatrix}
+$$
+
 * **Eigenvalues:** $\lambda_1 \approx -6.41$ and $\lambda_2 \approx -3.59$.
 * **Conclusion:** Since both eigenvalues are negative, the function is concave down, and the point `(0, 0)` is a local maximum.
 
----
 ## Case 3: Saddle Point
 
 What if the eigenvalues have mixed signs? This occurs at a **saddle point**, which is neither a minimum nor a maximum. From one direction it looks like a minimum, and from another, it looks like a maximum.
@@ -45,13 +51,18 @@ What if the eigenvalues have mixed signs? This occurs at a **saddle point**, whi
 **The Test:** If the Hessian has both **positive and negative eigenvalues**, the critical point is a **saddle point**.
 
 **Example:** $f(x, y) = 2x^2 - 2y^2$
-* **Hessian:** $H = \begin{bmatrix} 4 & 0 \\ 0 & -4 \end{bmatrix}$
+
+* **Hessian:** 
+
+$$
+H = \begin{bmatrix} 4 & 0 \\ 
+0 & -4 \end{bmatrix}
+$$
+
 * **Eigenvalues:** $\lambda_1 = 4$ and $\lambda_2 = -4$.
 * **Conclusion:** Since the eigenvalues have mixed signs, the point `(0, 0)` is a saddle point.
 
 ![](./images/0501.png)
-
----
 
 ## Summary: The Second Derivative Test
 
