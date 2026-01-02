@@ -71,3 +71,8 @@ The optimal line that minimizes the sum of squared errors has a slope of **0.5**
 Solving this system of equations was manageable for two variables (`m` and `b`). But what if our model had hundreds or thousands of features? We would have to solve a system with hundreds or thousands of variables, which is computationally very expensive and complex.
 
 This motivates the need for an alternative, iterative method to find the minimum of the cost function. This method is called **Gradient Descent**.
+
+---
+
+**Next:** [The Need for Gradient Descent](../04_gradient_descent/01_need_for_gradient_descent.md)
+

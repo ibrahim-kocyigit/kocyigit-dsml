@@ -44,3 +44,8 @@ $$ \nabla f(2, 3) = \begin{bmatrix} 2(2) \\
 6 \end{bmatrix} $$
 
 The gradient of the function at the point (2, 3) is the vector **(4, 6)**.
+
+
+---
+
+**Next:** [Gradients and Maxima/Minima](./04_gradients_and_maxima_minima.md)

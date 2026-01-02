@@ -99,3 +99,8 @@ $$ = 3x^2 \cdot (3y^2) $$
 Simplifying the expression gives us the second partial derivative:
 
 $$ \frac{\partial f}{\partial y} = 9x^2y^2 $$
+
+
+---
+
+**Next:** [Gradients](./03_gradients.md)

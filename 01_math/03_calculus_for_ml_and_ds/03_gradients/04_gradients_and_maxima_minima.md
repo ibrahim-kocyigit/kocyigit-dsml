@@ -47,3 +47,8 @@ $$ \begin{bmatrix} 2x \\
 The solution is the point `(x, y) = (0, 0)`, which is the minimum of the function.
 
 **For any differentiable function of multiple variables, the candidates for its minima and maxima are the points where all of its partial derivatives are simultaneously zero.**
+
+
+---
+
+**Next:** [Optimization with Gradients: An Example](./05_optimization_with_gradients--example.md)

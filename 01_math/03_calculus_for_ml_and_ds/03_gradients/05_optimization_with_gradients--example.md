@@ -65,3 +65,8 @@ Finally, we evaluate the temperature function at each of these candidate points 
 * **T(4, 4) = 73.6°C** (Minimum)
 
 The calculus confirms that the coolest spot in the sauna is at the coordinates **(4, 4)**.
+
+
+---
+
+**Next:** [Optimization using Gradients: The Analytical Method](./06_optimization_with_gradients--analytical_method.md)

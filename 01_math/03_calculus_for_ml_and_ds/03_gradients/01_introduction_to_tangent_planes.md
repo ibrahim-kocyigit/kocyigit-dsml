@@ -35,3 +35,8 @@ To find the tangent plane at a point, like `(2, 4)`, we can find two different t
 Since we have two distinct tangent lines that cross at our point of interest, they uniquely define the **tangent plane** to the surface at that point.
 
 This process of finding the derivative by fixing all other variables is the core idea behind **partial derivatives**, which we will explore next.
+
+
+---
+
+**Next:** [Partial Derivatives](./02_partial_derivatives.md)
