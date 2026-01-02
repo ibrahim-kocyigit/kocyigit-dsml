@@ -21,11 +21,11 @@ We can look at the variance along each axis separately. In the plot below, you c
 
 The formula for the variance of a variable `x` is:  
 
-$ \text{Var}(x) = \sigma^2 = \frac{1}{n-1}\sum_{i=1}^{n} (x_i - \mu_x)^2 $
+$$
+\text{Var}(x) = \sigma^2 = \frac{1}{n-1}\sum_{i=1}^{n} (x_i - \mu_x)^2 
+$$
 
 This is the **average squared distance** of each point from the mean. The key takeaway is that as your data becomes more spread out, the variance increases.
-
----
 
 ## Covariance: A Measure of Joint Variance
 
@@ -38,7 +38,9 @@ Variance alone isn't enough to describe a dataset. Two datasets could have the e
 
 The formula for covariance is similar to variance:  
 
-$ \text{Cov}(x, y) = \frac{1}{n-1}\sum_{i=1}^{n} (x_i - \mu_x)(y_i - \mu_y) $
+$$
+\text{Cov}(x, y) = \frac{1}{n-1}\sum_{i=1}^{n} (x_i - \mu_x)(y_i - \mu_y) 
+$$
 
 We can understand this formula by dividing our data into four quadrants centered on the mean point $(\mu_x, \mu_y)$.
 
@@ -53,3 +55,7 @@ Covariance is essentially the average of these products.
 * If most points are in the **positive quadrants** (1 and 3), the covariance will be **positive**.
 * If most points are in the **negative quadrants** (2 and 4), the covariance will be **negative**.
 * If points are spread evenly, the terms cancel out, and the covariance is near **zero**.
+
+---
+
+**Next:** [Covariance Matrix](./04_covariance_matrix.md)
