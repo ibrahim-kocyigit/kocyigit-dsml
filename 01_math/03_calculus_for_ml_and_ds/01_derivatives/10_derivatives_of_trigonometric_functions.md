@@ -30,8 +30,6 @@ $$ \frac{d}{dx}(\cos x) = -\sin x $$
 
 ![](./images/15.png)
 
----
-
 ## Geometric Intuition from the Unit Circle
 
 We can understand why these rules are true by looking at the **unit circle**.
