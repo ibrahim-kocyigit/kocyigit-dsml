@@ -61,39 +61,52 @@ $$
 
 **Conclusion for Example 1:** Even though the eigenvalue `2` was repeated, we were still able to find **three** distinct, linearly independent eigenvectors. This set of vectors can form an **eigenbasis** for the 3D space.
 
----
-
 ## Example 2: Repeated Eigenvalue, Fewer Eigenvectors
 
 Now let's change just one value in the matrix and see what happens.  
 
-$
+```math
 B = \begin{bmatrix}
 2 & 0 & 0 \\
 -1 & 4 & -0.5 \\
 4 & 0 & 2
 \end{bmatrix}
-$
+```
+<br>
 
 ### Step 1: Find the Eigenvalues
 The characteristic polynomial is the same as before, so the eigenvalues are also the same: $\lambda_1 = 4$, $\lambda_2 = 2$, $\lambda_3 = 2$.
 
 ### Step 2: Find the Eigenvectors
 
-* **For λ₁ = 4:**
-    The process is similar to before, and we find the same eigenvector:    $ v_1 = \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix} $
+**For λ₁ = 4:** The process is similar to before, and we find the same eigenvector:    
 
-* **For the repeated λ = 2:**
-    We solve the system $(B - 2I)v = 0$. This leads to a different set of equations, which simplify to two constraints: $x_1=0$ and $x_3=4x_2$. Now, we only have **one free variable**. Once we choose a value for $x_2$, the other variables are fixed.
-    * If we choose $x_2=1$, then $x_1=0$ and $x_3=4$. This gives the eigenvector $ v_2 = \begin{bmatrix} 0 \\ 1 \\ 4 \end{bmatrix} $.
-    * Any other choice for $x_2$ will just give us a scaled version of this same vector (e.g., if $x_2=0.5$, we get `(0, 0.5, 2)`). We cannot find a second, linearly independent eigenvector for this eigenvalue.
+$$
+v_1 = \begin{bmatrix} 0 \\ 
+1 \\ 
+0 \end{bmatrix} 
+$$
 
-**Conclusion for Example 2:**
-For this matrix, we only found **two** distinct eigenvectors. Since we need three linearly independent vectors to span 3D space, this set of eigenvectors **cannot** form an eigenbasis.
+* **For the repeated λ = 2:** We solve the system $(B - 2I)v = 0$. This leads to a different set of equations, which simplify to two constraints: $x_1=0$ and $x_3=4x_2$. Now, we only have **one free variable**. Once we choose a value for $x_2$, the other variables are fixed.
 
----
+* If we choose $x_2=1$, then $x_1=0$ and $x_3=4$. This gives the eigenvector 
+
+$$
+v_2 = \begin{bmatrix} 0 \\ 
+1 \\ 
+4 \end{bmatrix}
+$$
+
+* Any other choice for $x_2$ will just give us a scaled version of this same vector (e.g., if $x_2=0.5$, we get (0, 0.5, 2)). We cannot find a second, linearly independent eigenvector for this eigenvalue.
+
+> ⚠️ **Conclusion for Example 2:** For this matrix, we only found **two** distinct eigenvectors. Since we need three linearly independent vectors to span 3D space, this set of eigenvectors **cannot** form an eigenbasis.
+
 ## Summary of Rules
 
 The number of distinct eigenvectors you can find depends on the eigenvalues. For an *n* x *n* matrix:
 * If all *n* eigenvalues are **different**, you are guaranteed to find *n* linearly independent eigenvectors.
 * If an eigenvalue is **repeated *k* times**, you may find anywhere from 1 to *k* linearly independent eigenvectors for that eigenvalue. You are not guaranteed to find *k* of them.
+
+---
+
+**Next:** [Dimensionality Reduction and Projection](../07_principal_component_analysis/01_dimensionality_reduction_and_projection.md)
