@@ -143,3 +143,8 @@ The optimal location `x` that minimizes this cost will be the **mean** of all th
 $$ x = \frac{1}{n}\sum_{i=1}^{n} a_i $$
 
 This "sum of squared errors" is one of the most important cost functions in machine learning. When we train a linear regression model, this is exactly the function the model is trying to minimize.
+
+
+---
+
+**Next:** [Optimization of Log-Loss](./03_optimization_of_log_loss.md)

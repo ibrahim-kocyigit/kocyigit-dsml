@@ -150,3 +150,7 @@ Logarithms solve this problem elegantly. The logarithm of a very small number is
 By converting our probabilities to the log domain, we turn a multiplication of tiny numbers into a sum of manageable negative numbers, which prevents numerical errors.
 
 **Key Takeaway:** Any time you encounter a problem in machine learning that involves a very complicated product (especially with probabilities), your first instinct should be to take the logarithm. It simplifies the math and improves numerical stability.
+
+---
+
+**Next:** [Introduction to Tangent Planes](../03_gradients/01_introduction_to_tangent_planes.md)

@@ -40,3 +40,8 @@ Each of these points is a **local minimum**—it's the lowest point in its immed
 When optimizing, finding a local minimum is often good, but the ultimate goal is to find the global minimum. For now, the key takeaway is that our search for the best solution can be narrowed down to just the points where the slope is zero.
 
 ![](./images/03.png)
+
+
+---
+
+**Next:** [Optimization of Squared Loss](./02_optimization_of_squared_loss.md)
