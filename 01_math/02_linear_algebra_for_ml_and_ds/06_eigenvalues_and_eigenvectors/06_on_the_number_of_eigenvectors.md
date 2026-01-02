@@ -33,17 +33,33 @@ Notice that the eigenvalue `2` is repeated.
 
 ### Step 2: Find the Eigenvectors
 
-* **For λ₁ = 4:**
-    We solve the system $(A - 4I)v = 0$. This leads to the equations $x_1=0$ and $x_3=0$, while $x_2$ can be any number. We can choose the simplest eigenvector:    $ v_1 = \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix} $
+**For λ₁ = 4:** We solve the system $(A - 4I)v = 0$. This leads to the equations $x_1=0$ and $x_3=0$, while $x_2$ can be any number. We can choose the simplest eigenvector:    
 
-* **For the repeated λ = 2:**
-    We solve the system $(A - 2I)v = 0$. This leads to the single equation $-x_1 + 2x_2 - 0.5x_3 = 0$. This equation has two "free variables," meaning we can choose two variables and the third will be determined. This allows us to find **two linearly independent eigenvectors** that satisfy this equation. For example:
-    * If we choose $x_2=1, x_3=0$, then $x_1=2$. This gives us $ v_2 = \begin{bmatrix} 2 \\ 1 \\ 0 \end{bmatrix} $.  
+$$
+v_1 = \begin{bmatrix} 0 \\ 
+1 \\ 
+0 \end{bmatrix} 
+$$
 
-    * If we choose $x_2=1, x_3=2$, then $x_1=1$. This gives us $ v_3 = \begin{bmatrix} 1 \\ 1 \\ 2 \end{bmatrix} $.
+**For the repeated λ = 2:** We solve the system $(A - 2I)v = 0$. This leads to the single equation $-x_1 + 2x_2 - 0.5x_3 = 0$. This equation has two "free variables," meaning we can choose two variables and the third will be determined. This allows us to find **two linearly independent eigenvectors** that satisfy this equation. For example:
 
-**Conclusion for Example 1:**
-Even though the eigenvalue `2` was repeated, we were still able to find **three** distinct, linearly independent eigenvectors. This set of vectors can form an **eigenbasis** for the 3D space.
+* If we choose $x_2=1, x_3=0$, then $x_1=2$. This gives us 
+
+$$
+v_2 = \begin{bmatrix} 2 \\ 
+1 \\ 
+0 \end{bmatrix} 
+$$  
+
+* If we choose $x_2=1, x_3=2$, then $x_1=1$. This gives us 
+
+$$
+v_3 = \begin{bmatrix} 1 \\ 
+1 \\ 
+2 \end{bmatrix} 
+$$
+
+**Conclusion for Example 1:** Even though the eigenvalue `2` was repeated, we were still able to find **three** distinct, linearly independent eigenvectors. This set of vectors can form an **eigenbasis** for the 3D space.
 
 ---
 
