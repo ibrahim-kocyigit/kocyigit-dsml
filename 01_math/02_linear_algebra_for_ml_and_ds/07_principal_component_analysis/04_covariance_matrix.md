@@ -32,16 +32,14 @@ $$
 
 A key property is that the matrix is **symmetric**, meaning $\text{Cov}(x, y) = \text{Cov}(y, x)$.
 
-Furthermore, the variance of a variable with itself is just its variance ($\text{Var}(x) = \text{Cov}(x, x)$). This means we can think of the covariance matrix as a generalized grid of covariances:  
+Furthermore, the variance of a variable with itself is just its variance: $\text{Var}(x) = \text{Cov}(x, x)$. This means we can think of the covariance matrix as a generalized grid of covariances:  
 
-$
+$$
 C = \begin{bmatrix}
 \text{Cov}(x, x) & \text{Cov}(x, y) \\
 \text{Cov}(y, x) & \text{Cov}(y, y)
 \end{bmatrix}
-$
-
----
+$$
 
 ## The Matrix Notation Formula
 
@@ -52,16 +50,20 @@ Given a data matrix `A` with `n` rows (observations) and `c` columns (features):
 1.  **Center the data:** Calculate the mean of each column and subtract it from every element in that column. Let's call this centered matrix `A_centered`.
 2.  **Calculate the product:** The covariance matrix `C` is then given by the formula:  
 
-    $ C = \frac{1}{n-1} A_{centered}^T \cdot A_{centered} $
+$$
+C = \frac{1}{n-1} A_{centered}^T \cdot A_{centered}
+$$
 
 ![Covariance Matrix](./images/0402.png)
 
-Note that this matrix multiplication gives us the values of the 2x2 covariance matrix, because the dot products of the rows of the first matrix and the columns of the second matrix are the actual formulas of the 4 values of the matrix $
-    \begin{bmatrix}
-    \text{Var}(x) & \text{Cov}(x, y) \\
-    \text{Cov}(y, x) & \text{Var}(y)
-    \end{bmatrix}
-    $
+Note that this matrix multiplication gives us the values of the 2x2 covariance matrix, because the dot products of the rows of the first matrix and the columns of the second matrix are the actual formulas of the 4 values of the matrix 
+
+$$
+\begin{bmatrix}
+\text{Var}(x) & \text{Cov}(x, y) \\
+\text{Cov}(y, x) & \text{Var}(y)
+\end{bmatrix}
+$$
 
 ---
 
