@@ -131,7 +131,8 @@ The only constraint is that `x` must equal `y`. So, any vector of the form `(k, 
 * The eigenvector for $\lambda_2 = 3$ is 
 
 $$
-\boldsymbol{v_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}}
+\boldsymbol{v_2 = \begin{bmatrix} 1 \\ 
+1 \end{bmatrix}}
 $$
 
 These are the same eigenvectors we identified geometrically in the last lesson.
