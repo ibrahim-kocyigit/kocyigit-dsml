@@ -44,7 +44,11 @@ Now we can calculate the average velocity over a much smaller interval that stil
 * **Distance at 12s:** 155 m
 * **Change in distance:** 15 m
 * **Change in time:** 1 s
-* **New Average Velocity:** $ \frac{15 \text{ m}}{1 \text{ s}} = 15 \text{ m/s} $
+* **New Average Velocity:** 
+
+$$
+\frac{15 \text{ m}}{1 \text{ s}} = 15 \text{ m/s} 
+$$
 
 This is a much better estimate for the instantaneous velocity at `t = 12.5s`.
 
@@ -52,7 +56,7 @@ This is a much better estimate for the instantaneous velocity at `t = 12.5s`.
 
 This process reveals the core idea of a derivative. To find the *exact* instantaneous rate of change at a point, we just keep making the interval smaller and smaller, getting closer and closer to zero.
 
-> The **derivative** of a function at a point is the **limit** of the average rate of change as the length of the interval around that point approaches zero.
+❗️ The **derivative** of a function at a point is the **limit** of the average rate of change as the length of the interval around that point approaches zero.
 
 Geometrically, as the interval shrinks, the **secant line** connecting the two endpoints gets closer and closer to the **tangent line** at that single point. The derivative is the slope of this tangent line.
 
