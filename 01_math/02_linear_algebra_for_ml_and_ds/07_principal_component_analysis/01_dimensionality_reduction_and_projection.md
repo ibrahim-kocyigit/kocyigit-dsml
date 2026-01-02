@@ -41,12 +41,19 @@ We can project our data onto multiple vectors at once. Projecting onto two vecto
 
 To do this, we simply create a matrix `V` where each column is one of our (normalized) direction vectors. The final projection formula is an elegant matrix multiplication:
 
-> $ A_p = A \cdot V $
+```math
+A_p = A \cdot V
+```
+<br>
 
-* If `A` is an `r x c` matrix (r rows, c columns)
-* And `V` is a `c x k` matrix (c rows, k new dimensions)
-* The resulting projected matrix `A_p` will be `r x k`.
+* If $A$ is an $r x c$ matrix (r rows, c columns)
+* And $V$ is a $c x k$ matrix (c rows, k new dimensions)
+* The resulting projected matrix $A_p$ will be $r x k$.
 
-The data now has the same number of rows but has been reduced from `c` dimensions to `k` dimensions.
+The data now has the same number of rows but has been reduced from $c$ dimensions to $k$ dimensions.
 
 The key question now is: how do we pick the best vectors or the best line to project onto? That is what PCA will help us determine.
+
+---
+
+**Next:** [Motivating Principal Component Analysis (PCA)](./02_motivating_pca.md)
