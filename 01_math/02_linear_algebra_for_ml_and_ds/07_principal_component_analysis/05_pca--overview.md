@@ -52,7 +52,11 @@ This process works for datasets of any size. Imagine you have a dataset with 9 f
 2.  **Find the 9 Eigenvalues and their corresponding Eigenvectors.**
 3.  **Sort the eigenvectors** by their eigenvalues, from largest to smallest.
 4.  **Choose the top *k* eigenvectors.** If you want to reduce your dataset to 2 dimensions, you keep the two eigenvectors with the two largest eigenvalues and discard the rest.
-5.  **Project the data.** Create a new matrix `V` where the columns are your chosen eigenvectors (normalized to have a length of 1). The final, reduced dataset is calculated as $ A_{projected} = A_{original} \cdot V$
+5.  **Project the data.** Create a new matrix `V` where the columns are your chosen eigenvectors (normalized to have a length of 1). The final, reduced dataset is calculated as:
+
+$$
+A_{projected} = A_{original} \cdot V
+$$
 
 The result is a new dataset with the same number of rows but only *k* columns, having lost as little information as possible.
 
