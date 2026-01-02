@@ -28,9 +28,8 @@ $$
 
 For our covariance matrix `C`, we would find:
 
-* **Eigenvector 1:** $v_1 = \begin{bmatrix} 2 \\ 1 \end{bmatrix}$ with **Eigenvalue 1:** $\lambda_1 = 11$
-
-* **Eigenvector 2:** $v_2 = \begin{bmatrix} -1 \\ 2 \end{bmatrix}$ with **Eigenvalue 2:** $\lambda_2 = 1$
+* **Eigenvector 1:** $v_1 = (2, 1)$ with **Eigenvalue 1:** $\lambda_1 = 11$
+* **Eigenvector 2:** $v_2 = (-1, 2)$ with **Eigenvalue 2:** $\lambda_2 = 1$
 
 ### Step 4: Select the Principal Component
 The eigenvector with the **largest eigenvalue** is the direction that captures the most variance. This is our **first principal component**.
