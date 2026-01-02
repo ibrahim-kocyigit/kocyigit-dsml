@@ -26,16 +26,16 @@ We can use the chain rule to find the derivatives we need:
 
 * $\frac{\partial L}{\partial w_1} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial w_1}$  
 
-* $ \frac{\partial L}{\partial w_2} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial w_2} $  
+* $\frac{\partial L}{\partial w_2} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial w_2}$  
 
-* $ \frac{\partial L}{\partial b} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial b} $
+* $\frac{\partial L}{\partial b} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial b}$
 
 Now, our problem is much simpler. We just need to calculate the four individual component derivatives.
 
 ## Calculating the Component Derivatives
 
 **Reference Formulas:**
-* **Loss Function:** $ L(y, \hat{y}) = \frac{1}{2}(y - \hat{y})^2 $
+* **Loss Function:** $L(y, \hat{y}) = \frac{1}{2}(y - \hat{y})^2$
 * **Prediction Function:** $ \hat{y} = w_1x_1 + w_2x_2 + b $
 
 **1. Derivative of Loss with respect to Prediction ($\frac{\partial L}{\partial \hat{y}}$):**
