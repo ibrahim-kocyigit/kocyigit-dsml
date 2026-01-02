@@ -48,14 +48,22 @@ Let's perform the first few iterations by hand to see the process in detail.
 * **Starting Point:** Let's choose `(x₀, y₀) = (4, 4)`.
 
 ### Iteration 1 (Finding x₁, y₁):
-1.  **Calculate the Gradient at (4, 4):** $ \nabla f(4, 4) = \begin{bmatrix} 277.6 \\ 213.6 \end{bmatrix} $  
+1.  **Calculate the Gradient at (4, 4):** $\nabla f(4, 4) = \begin{bmatrix} 277.6 \\ 213.6 \end{bmatrix}$  
 
-2.  **Calculate the Hessian at (4, 4):** $ H(4, 4) = \begin{bmatrix} 198.4 & -2.6 \\ -2.6 & 157.6 \end{bmatrix} $  
+2.  **Calculate the Hessian at (4, 4):** $H(4, 4) = \begin{bmatrix} 198.4 & -2.6 \\ -2.6 & 157.6 \end{bmatrix}$  
 
-3.  **Calculate the Inverse of the Hessian:** $ [H(4, 4)]^{-1} \approx \begin{bmatrix} 0.00504 & 0.00008 \\ 0.00008 & 0.00634 \end{bmatrix} $  
+3.  **Calculate the Inverse of the Hessian:** $[H(4, 4)]^{-1} \approx \begin{bmatrix} 0.00504 & 0.00008 \\ 0.00008 & 0.00634 \end{bmatrix}$  
 
 4.  **Apply the update rule:**
-    $$ \begin{bmatrix} x_1 \\ y_1 \end{bmatrix} = \begin{bmatrix} 4 \\ 4 \end{bmatrix} - [H]^{-1} \begin{bmatrix} 277.6 \\ 213.6 \end{bmatrix} \approx \begin{bmatrix} 2.582 \\ 2.623 \end{bmatrix} $$
+
+$$
+\begin{bmatrix} x_1 \\ 
+y_1 \end{bmatrix} = \begin{bmatrix} 4 \\ 
+4 \end{bmatrix} - [H]^{-1} \begin{bmatrix} 277.6 \\ 
+213.6 \end{bmatrix} \approx \begin{bmatrix} 2.582 \\ 
+2.623 \end{bmatrix}
+$$
+
 In one step, we've moved significantly closer to the true minimum at `(0, 0)`.
 
 ### Iteration 2 (Finding x₂, y₂):
