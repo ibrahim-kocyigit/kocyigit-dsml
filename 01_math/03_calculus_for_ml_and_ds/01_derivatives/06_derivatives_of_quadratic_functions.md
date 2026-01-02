@@ -17,12 +17,10 @@ We will start with a large interval, `Δx = 1`, and calculate the slope of the s
     * $\Delta y = f(2) - f(1) = 2^2 - 1^2 = 4 - 1 = 3$
     * **Slope** = $\frac{\Delta y}{\Delta x} = \frac{3}{1} = 3$  
 
-
 * **For Δx = 0.5:**
     * The interval is from `x=1` to `x=1.5`.
     * $\Delta y = f(1.5) - f(1) = 1.5^2 - 1^2 = 2.25 - 1 = 1.25$
     * **Slope** = $\frac{\Delta y}{\Delta x} = \frac{1.25}{0.5} = 2.5$  
-
 
 * **For Δx = 0.25:**
     * The interval is from `x=1` to `x=1.25`.
