@@ -126,13 +126,9 @@ $$ C'(x) = 2(x-a) + 2(x-b) + 2(x-c) $$
 $$ 2(x-a) + 2(x-b) + 2(x-c) = 0 $$
 
 **3. Solve for x:**
-* Divide both sides by 2:
-    $ (x-a) + (x-b) + (x-c) = 0 $
-* Combine terms:
-    $ 3x - a - b - c = 0 $
-* Isolate x:
-    $ 3x = a + b + c $
-    $ x = \frac{a+b+c}{3} $
+* Divide both sides by 2: $(x-a) + (x-b) + (x-c) = 0$
+* Combine terms: $3x - a - b - c = 0$
+* Isolate x: $3x = a + b + c$ $\implies$ $x = \frac{a+b+c}{3}$
 
 The optimal solution is indeed the **average (mean)** of the locations of the three power lines.
 
