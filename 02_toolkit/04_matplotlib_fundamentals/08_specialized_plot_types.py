@@ -4,7 +4,7 @@ import numpy as np
 # =======================================
 # TABLE OF CONTENTS
 # =======================================
-# 1. Introduction
+#
 # 2. Box Plots (`ax.boxplot`)
 # 3. Plots with Error Bars (`ax.errorbar`)
 # 4. Heatmaps (`ax.imshow`)
@@ -13,12 +13,7 @@ import numpy as np
 # =======================================
 # 1. INTRODUCTION
 # =======================================
-# - Beyond the basics, Matplotlib supports a wide variety of specialized plots
-#   that are crucial for statistical analysis and representing complex data.
-# - We will cover three important types using the Object-Oriented interface:
-#   1. Box Plots: For visualizing data distribution and outliers.
-#   2. Error Bars: For showing uncertainty in measurements.
-#   3. Heatmaps: For visualizing 2D data as a grid of colors.
+
 
 # --- Setup a figure with 3 subplots side-by-side ---
 fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(18, 6))

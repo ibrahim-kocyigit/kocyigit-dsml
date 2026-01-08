@@ -1,0 +1,7 @@
+OrderID,Product,Category,Price,Quantity,OrderDate
+101,Laptop,Electronics,1200.0,1,2025-01-15
+102,Mouse,Electronics,25.5,2,2025-01-15
+103,Keyboard,Electronics,75.0,1,2025-01-16
+104,Monitor,Electronics,300.0,2,2025-01-17
+105,Mouse,Accessories,27.0,3,2025-01-18
+106,Webcam,Accessories,50.0,1,2025-01-18
