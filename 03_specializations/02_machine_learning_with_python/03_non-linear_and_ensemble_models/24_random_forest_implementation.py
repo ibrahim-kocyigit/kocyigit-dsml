@@ -411,3 +411,6 @@ class DecisionTree:
             return self._traverse_tree(x, node.left)
 
         return self._traverse_tree(x, node.right)
+
+
+# Next: 25_adaboost_implementation.py

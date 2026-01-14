@@ -102,3 +102,6 @@ class KNN:
             y_pred.append(c.most_common(1)[0][0])
 
         return np.array(y_pred)
+
+
+# Next: 19_knn_lab.ipynb

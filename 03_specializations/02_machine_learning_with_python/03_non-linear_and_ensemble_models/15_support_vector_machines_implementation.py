@@ -136,3 +136,6 @@ class SVM:
         # Convert from {-1, 1} back to {0, 1}
         predictions = np.sign(score)
         return np.where(predictions == -1, 0, 1)
+
+
+# Next: 16_support_vector_machines_lab.ipynb

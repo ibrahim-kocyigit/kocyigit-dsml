@@ -90,3 +90,6 @@ class MultinomialNB:
         jll = self._joint_log_likelihood(X)
         pred_indices = np.argmax(jll, axis=1)
         return self.classes_[pred_indices]
+
+
+# Next: 22_naive_bayes_lab.ipynb

@@ -207,4 +207,7 @@ if __name__ == "__main__":
     y_pred = model.predict(X_test)
 
     accuracy = accuracy_score(y_test, y_pred)
-    print(f"AdaBoost Test Accuracy: {accuracy * 100:.2f}%")
+    print(f"AdaBoost Test Accuracy: {accuracy * 100:.2f}%")  # 90%
+
+
+# Next: 26_random_forest_and_xgboost_lab.ipynb

@@ -284,3 +284,6 @@ class RegressionTree:
             return self._traverse_tree(x, node.left)
 
         return self._traverse_tree(x, node.right)
+
+
+# Next: 13_regression_trees_lab.ipynb
