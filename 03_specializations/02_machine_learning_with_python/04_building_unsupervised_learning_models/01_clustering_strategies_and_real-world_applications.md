@@ -1,4 +1,4 @@
-# Clustering Strategies and Real-World Applications
+# Clustering Strategies and Real-World Applications
 
 ## 1. The Core Idea: What is Clustering?
 
@@ -28,4 +28,4 @@ Clustering is often used as a first step in data analysis (EDA) or feature engin
 While there are dozens of clustering algorithms, most fall into three primary categories based on how they define a "cluster".
 
 ### 3.1. Partition-based Clustering (e.g., K-Means)
-**The Intuition:** These algorithms break the dataset into a pre-defined number ( $k$ )
+**The Intuition:** These algorithms break the dataset into a pre-defined number ($k$)
