@@ -43,10 +43,10 @@ While there are dozens of clustering algorithms, most fall into three primary ca
 
 
 ### 3.2. Density-based Clustering (e.g., DBSCAN)
-**The Intutition:** Clusters are defined as dense regions of data points separated by regions of low density. It's like finding islands of data in an empty ocean.
+**The Intuition:** Clusters are defined as dense regions of data points separated by regions of low density. It's like finding islands of data in an empty ocean.
 
 #### Strengths:
-* Can discover clusters of **arbitrary shapes** (cruscents, rings, etc.).
+* Can discover clusters of **arbitrary shapes** (crescents, rings, etc.).
 * Automatically handles **outliers** (noise points are left unassigned).
 * No need to specify the number of clusters beforehand.
 
@@ -59,7 +59,7 @@ While there are dozens of clustering algorithms, most fall into three primary ca
 *In the image above, Density-based clustering (right) correctly identifies the two interlocking half-moons, while Partition-based clustering (left) splits them incorrectly.*
 
 ### 3.3. Hierarchical Clustering
-**The Intuition:** Instead of a single partitioning, these algorithms build a hierarchy of clusters. This is often visualized as a tree diagram called **Dendgrogram**.
+**The Intuition:** Instead of a single partitioning, these algorithms build a hierarchy of clusters. This is often visualized as a tree diagram called **Dendrogram**.
 
 #### Strengths:
 * Provides a rich visualization of data relationships (the dendrogram).
@@ -69,3 +69,32 @@ While there are dozens of clustering algorithms, most fall into three primary ca
 * It is computationally expensive. $O(n^2)$ or $O(n^3)$, making it unsuitable for large datasets.
 
 <img src="./images/0103.png" alt="Hierarchical Clustering Dendrogram" width="500"/>
+
+## 4. Hierarchical Clustering Strategies
+
+There are two approaches to building the hierarchy:
+
+### 4.1. Agglomerative (Bottom-Up)
+This is the most standard approach.
+
+1. **Start:** Treat every single data point as its own cluster.
+2. **Merge:** Find the two "closest" clusters and merge them into one.
+3. **Repeat:** Keep merging until all points are clustered together into a single root cluster.
+
+**Example:** Grouping Canadian cities based on distance:
+
+<img src="./images/0104.png" width="800">
+<img src="./images/0105.png" width="800">
+<img src="./images/0106.png" width="800">
+<img src="./images/0107.png" width="800">
+
+### 4.2. Divisive (Top-Down)
+This is the reverse of agglomerative and is less common in practice.
+
+1. **Start:** Treat the entire dataset as one giant cluster.
+2. **Split:** Recursively split the cluster into smaller, dissimilar groups.
+3. **Repeat:** Continue until every data point is its own cluster.
+
+---
+
+**Next:** [K-Means Theory](./02_k-means_theory.md)
