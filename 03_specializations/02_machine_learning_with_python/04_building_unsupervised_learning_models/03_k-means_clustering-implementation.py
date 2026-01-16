@@ -1,76 +1,126 @@
+from __future__ import annotations
+
 import numpy as np
 
 
 class KMeans:
-    """
-    K-Means Clustering Algorithm
+    def __init__(
+        self,
+        k: int = 3,
+        max_iters: int = 100,
+        tol: float = 1e-4,
+        random_state: int | None = None,
+    ) -> None:
+        self.k = k
+        self.max_iters = max_iters
+        self.tol = tol
+        self.random_state = random_state
 
-    Parameters:
-    -----------
-    k : int
-        Number of clusters
-    max_iters : int
-        Maximum number of iterations
-    tol : float
-        Tolerance for convergence (minimum centroid movement)
-    random_state : int
-        Seed for reproducibility
-    """
+        # Initialize RNG for reproducibility
+        self.rng = np.random.default_rng(random_state)
 
-    def __init__(self, k=3, max_iters=100, tol=1e-4, random_state=None):
-        # TODO: Store hyperparameters as instance attributes
-        pass
+        # Attributes to be set during fitting
+        self.centroids: np.ndarray | None = None
+        self.labels_: np.ndarray | None = None
+        self.inertia_: float | None = None
+        self.n_iter_: int | None = None
 
-    def _initialize_centroids(self, X):
+    def _initialize_centroids(self, X: np.ndarray) -> np.ndarray:
         """
-        Randomly select k data points as initial centroids.
+        Randomly select k unique data points from X as initial centroids.
 
-        Hint: Use np.random.choice to select k indices without replacement
+        Parameters:
+        -----------
+        X : np.ndarray
+            Data points, shape (n_samples, n_features)
+
+        Returns:
+        --------
+        initial_centroids : np.ndarray
+            Initial centroids, shape (k, n_features)
         """
-        # TODO: Implement centroid initialization
-        pass
+        n_samples = X.shape[0]
+        idx = self.rng.choice(n_samples, self.k, replace=False)
+        initial_centroids = X[idx]
+        return initial_centroids
 
-    def _compute_distances(self, X):
+    def _compute_distances(self, X: np.ndarray) -> np.ndarray:
         """
-        Compute Euclidean distance from each point to each centroid.
+        Compute squared Euclidean distances from each point in X to each centroid.
 
-        Returns: Array of shape (n_samples, k)
+        Parameters:
+        -----------
+        X : np.ndarray
+            Data points, shape (n_samples, n_features)
 
-        Hint: ||x - mu||^2 = sum((x - mu)^2) for each centroid
+        Returns:
+        --------
+        squared_distances : np.ndarray
+            Squared distances, shape (n_samples, k)
         """
-        # TODO: Implement distance calculation
-        pass
+        assert self.centroids is not None, (
+            "Centroids must be initialized before computing distances"
+        )
+        squared_distances = np.sum((X[:, np.newaxis, :] - self.centroids) ** 2, axis=2)
+        return squared_distances
 
-    def _assign_clusters(self, X):
+    def _assign_clusters(self, X: np.ndarray) -> np.ndarray:
         """
         Assign each data point to the nearest centroid.
 
-        Returns: Array of cluster labels, shape (n_samples,)
+        Parameters:
+        -----------
+        X : np.ndarray
+            Data points, shape (n_samples, n_features)
 
-        Hint: Use np.argmin on the distances
+        Returns:
+        --------
+        labels : np.ndarray
+            Cluster assignment for each point, shape (n_samples,)
         """
-        # TODO: Implement cluster assignment
-        pass
+        distances = self._compute_distances(X)
+        return np.argmin(distances, axis=1)
 
-    def _update_centroids(self, X):
+    def _update_centroids(self, X: np.ndarray, labels: np.ndarray) -> np.ndarray:
         """
-        Recalculate centroids as the mean of assigned points.
+        Update centroids as the mean of assigned points for each cluster.
 
-        Hint: For each cluster i, new centroid = mean of all points where label == i
+        Parameters:
+        -----------
+        X : np.ndarray
+            Data points, shape (n_samples, n_features)
+        labels : np.ndarray
+            Cluster assignment for each point, shape (n_samples,)
+
+        Returns:
+        --------
+        new_centroids : np.ndarray
+            Updated centroids, shape (k, n_features)
         """
-        # TODO: Implement centroid update
-        pass
+        assert self.centroids is not None, (
+            "Centroids must be initialized before updating"
+        )
+        new_centroids = self.centroids.copy()
 
-    def _has_converged(self, old_centroids):
+        for cluster_index in range(self.k):
+            mask = labels == cluster_index
+            cluster_points = X[mask]
+            if cluster_points.shape[0] > 0:
+                new_centroids[cluster_index] = np.mean(cluster_points, axis=0)
+
+        self.centroids = new_centroids
+        return new_centroids
+
+    def _has_converged(self, old_centroids: np.ndarray) -> bool:
         """
         Check if centroids have stopped moving (within tolerance).
 
-        Hint: Compare distance between old and new centroids
+        Hint: Compare distance between old and new centroids using np.linalg.norm
         """
         # TODO: Implement convergence check
         pass
 
-    def _compute_inertia(self, X):
+    def _compute_inertia(self, X: np.ndarray, labels: np.ndarray) -> float:
         """
         Compute Within-Cluster Sum of Squares (WCSS).
 
@@ -81,32 +131,54 @@ class KMeans:
         # TODO: Implement inertia calculation
         pass
 
-    def fit(self, X):
+    def _validate_data(self, X: np.ndarray) -> None:
+        """
+        Validate input data.
+
+        Checks:
+        - X is 2D array
+        - k <= n_samples
+        - No NaN or Inf values
+        """
+        # TODO: Implement validation
+        pass
+
+    def fit(self, X: np.ndarray) -> "KMeans":
         """
         Fit the K-Means model to data X.
 
         Steps:
-        1. Initialize centroids randomly
-        2. Loop until convergence or max_iters:
+        1. Validate input data
+        2. Initialize centroids randomly
+        3. Loop until convergence or max_iters:
            a. Assign each point to nearest centroid
            b. Save old centroids
            c. Update centroids to cluster means
            d. Check for convergence
-        3. Compute final inertia
+        4. Compute final inertia and store results
+
+        Returns:
+        --------
+        self : KMeans
+            Fitted estimator
         """
         # TODO: Implement the main K-Means algorithm
         pass
 
-    def predict(self, X):
+    def predict(self, X: np.ndarray) -> np.ndarray:
         """
         Predict cluster labels for new data points.
 
         Hint: Use the learned centroids to assign clusters
+
+        Raises:
+        -------
+        ValueError: If model hasn't been fitted yet
         """
         # TODO: Implement prediction for new data
         pass
 
-    def fit_predict(self, X):
+    def fit_predict(self, X: np.ndarray) -> np.ndarray:
         """
         Fit the model and return cluster labels.
         """
@@ -119,13 +191,18 @@ class KMeans:
 # =============================================================================
 
 if __name__ == "__main__":
-    # TODO: Generate sample data using np.random or sklearn.datasets.make_blobs
+    from sklearn.datasets import make_blobs
+    import matplotlib.pyplot as plt
+
+    # TODO: Generate sample data using make_blobs
 
     # TODO: Create KMeans instance and fit to data
 
-    # TODO: Print results (labels, centroids, inertia)
+    # TODO: Print results (labels, centroids, inertia, n_iter)
 
     # TODO: (Optional) Visualize clusters using matplotlib
+
+    # TODO: (Optional) Implement Elbow Method
 
     # TODO: (Optional) Compare with sklearn.cluster.KMeans
     pass
