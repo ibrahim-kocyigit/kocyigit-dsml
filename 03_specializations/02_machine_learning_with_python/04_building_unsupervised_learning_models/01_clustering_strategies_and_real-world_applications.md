@@ -38,4 +38,8 @@ While there are dozens of clustering algorithms, most fall into three primary ca
 * You must specify the number of clusters ($k$) in advance. 
 * Assumes clusters are spherical (blob-like). It fails with complex geometric shapes.
 
+<p align="center">
 <img src="./images/0101.png" alt="Partition-based Clustering Example" width="600"/>
+</p>
+<br>
+
