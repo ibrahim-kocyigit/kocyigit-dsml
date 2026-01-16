@@ -30,3 +30,39 @@ The algorithm tries to minimize the **Within-Cluster Sum of Squares (WCSS)**, al
 $$
 J = \sum_{i=1}^{k} \sum_{x \in C_i} ||x - \mu_i||^2
 $$
+
+* $k$: The number of clusters.
+* $C_i$: The set of points belonging to cluster $i$.
+* $\mu_i$: The centroid (mean) of cluster $i$.
+* $||x - \mu_i||^2$: The squared distance (usually Euclidean) between a point $x$ and its centroid.
+
+By minimizing this objective function, K-Means tightens the clusters, ensuring points are as close to their assigned centroid as possible.
+
+## 4. Key Assumptions and Limitations
+
+While K-Means is efficient and scales well to big data, it relies on specific assumptions about the data geometry.
+
+1. **Convex Clusters:** K-Means assumes clusters are spherical or convex (blob-like). It fails to identify complex shapes like rings, moons, or interlocking spirals because it relies strictly on distance from a center point.
+2. **Balanced Cluster Sizes:** The algorithm works best when clusters contain roughly the same number of points. In imbalanced datasets (e.g., one cluster has 200 points, another has 10), the centroid of the smaller cluster may drift or be consumed by the larger cluster.
+3. **Sensitivity to Noise:** Since the centroid is a mean, it is highly sensitive to outliers. A few extreme values can pull the centroid away from the true center of the cluster.
+
+## 5. Choosing the Right $k$
+
+One of the biggest challenges is that $k$ is a hyperparameter you must choose *before* running the algorithm. If $k$ is wrong, the results will be meaningless. So, how do we find the optimal $k$?
+
+- **Visual Inspection:** For low-dimensional data, scatter plots can hint at natural groupings.
+- **The Elbow Method:** Plot the Inertia (WCSS) against different values of $k$. Look for the "elbow" point where the reduction in variance slows down significantly. 
+- **Silhouette Analysis:** Measures how similar a point is to its own cluster (cohesion) compared to other clusters (separation).
+- **Davies-Bouldin Index:** Measures the average similarity ratio of each cluster with its most similar cluster. Lower scores are better.
+
+## 6. Summary
+
+- **K-Means** is an iterative algorithm that partitions data into $k$ clusters based on centroid distance.
+- It consists of two main steps: **Assigning** points to the nearest centroid, and **Updating** centroids to the mean of the assigned points.
+- The goal is to **minimize within-cluster variance**.
+- It assumes clusters are **convex** and roughly **balanced**. It struggles with complex shapes and outliers.
+- Finding the right $k$ often requires heuristic methods like the **Elbow Method** or **Silhouette Analysis**.
+
+---
+
+**Next:** [K-Means Clustering Implementation](./03_k-means_clustering-implementation.py)
