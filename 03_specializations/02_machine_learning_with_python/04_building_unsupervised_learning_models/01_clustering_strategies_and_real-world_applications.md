@@ -28,4 +28,14 @@ Clustering is often used as a first step in data analysis (EDA) or feature engin
 While there are dozens of clustering algorithms, most fall into three primary categories based on how they define a "cluster".
 
 ### 3.1. Partition-based Clustering (e.g., K-Means)
-**The Intuition:** These algorithms break the dataset into a pre-defined number ($k$)
+**The Intuition:** These algorithms break the dataset into a pre-defined number ($k$) of non-overlapping distinct groups. They typically work by defining a "center" (centroid) for each cluster and assigning every data point to the closest center.
+
+#### Strengths:
+* Simple and easy to implement.
+* Computationally efficient; scales well to large datasets.
+
+#### Weaknesses:
+* You must specify the number of clusters ($k$) in advance. 
+* Assumes clusters are spherical (blob-like). It fails with complex geometric shapes.
+
+<img src="./images/0101.png" alt="Partition-based Clustering Example" width="600"/>
