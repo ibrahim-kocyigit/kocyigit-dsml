@@ -38,8 +38,34 @@ While there are dozens of clustering algorithms, most fall into three primary ca
 * You must specify the number of clusters ($k$) in advance. 
 * Assumes clusters are spherical (blob-like). It fails with complex geometric shapes.
 
-<p align="center">
-<img src="./images/0101.png" alt="Partition-based Clustering Example" width="600"/>
-</p>
 <br>
+<img src="./images/0101.png" alt="Partition-based Clustering Example" width="600"/>
 
+
+### 3.2. Density-based Clustering (e.g., DBSCAN)
+**The Intutition:** Clusters are defined as dense regions of data points separated by regions of low density. It's like finding islands of data in an empty ocean.
+
+#### Strengths:
+* Can discover clusters of **arbitrary shapes** (cruscents, rings, etc.).
+* Automatically handles **outliers** (noise points are left unassigned).
+* No need to specify the number of clusters beforehand.
+
+#### Weaknesses:
+* Struggles if the density of clusters varies significantly across the dataset.
+* Can be slower than K-Means on very large datasets.
+
+<img src="./images/0102.png" alt="Density vs Partition-based Clustering" width="800"/>
+
+*In the image above, Density-based clustering (right) correctly identifies the two interlocking half-moons, while Partition-based clustering (left) splits them incorrectly.*
+
+### 3.3. Hierarchical Clustering
+**The Intuition:** Instead of a single partitioning, these algorithms build a hierarchy of clusters. This is often visualized as a tree diagram called **Dendgrogram**.
+
+#### Strengths:
+* Provides a rich visualization of data relationships (the dendrogram).
+* No need to pre-specify the number of clusters; you can "cut" the tree at any level to get the desired number of groups.
+
+#### Weaknesses:
+* It is computationally expensive. $O(n^2)$ or $O(n^3)$, making it unsuitable for large datasets.
+
+<img src="./images/0103.png" alt="Hierarchical Clustering Dendrogram" width="500"/>
