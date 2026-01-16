@@ -97,4 +97,4 @@ This is the reverse of agglomerative and is less common in practice.
 
 ---
 
-**Next:** [K-Means Theory](./02_k-means_theory.md)
+**Next:** [K-Means Clustering Theory](./02_k-means_clustering_theory.md)
