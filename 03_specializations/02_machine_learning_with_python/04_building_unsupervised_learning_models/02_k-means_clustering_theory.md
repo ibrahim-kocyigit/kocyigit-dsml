@@ -65,4 +65,4 @@ One of the biggest challenges is that $k$ is a hyperparameter you must choose *b
 
 ---
 
-**Next:** [K-Means Clustering Implementation](./03_k-means_clustering-implementation.py)
+**Next:** [K-Means Clustering Implementation](./03_k-means_clustering_implementation.py)
