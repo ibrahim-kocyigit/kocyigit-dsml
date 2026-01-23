@@ -281,3 +281,6 @@ class KMeans:
         self.fit(X)
         assert self.labels_ is not None, "Labels should be set after fit()"
         return self.labels_
+
+
+# Next: 04_k-means_clustering_lab.ipynb
