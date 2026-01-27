@@ -8,11 +8,17 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "contextily>=1.7.0",
+    "geodatasets>=2026.1.0",
+    "geopandas>=1.1.2",
+    "hdbscan>=0.8.41",
     "jupyter>=1.1.1",
     "matplotlib>=3.10.7",
     "numpy>=2.3.4",
     "pandas>=2.3.3",
+    "plotly>=6.5.2",
     "pyarrow>=22.0.0",
+    "rasterio>=1.5.0",
     "scikit-learn>=1.7.2",
     "seaborn>=0.13.2",
     "statsmodels>=0.14.5",
