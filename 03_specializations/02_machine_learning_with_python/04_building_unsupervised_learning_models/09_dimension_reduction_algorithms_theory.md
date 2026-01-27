@@ -107,7 +107,7 @@ Imagine 4 blobs of data in 3d space: 2 distinct, and 2 slighly overlapping.
 | :--- | :--- | :--- | :--- |
 | **Type** | Linear | Non-Linear | Non-Linear |
 | **Focus** | Variance (Global) | Local Similarity | Local & Global Structure |
-| **Speed** | Very Fast | Slow ($O(N^2)$) | Fast |
+| **Speed** | Very Fast | Slow - O(N²) | Fast |
 | **Use Case** | Pre-processing, Noise Reduction | Visualization | Visualization, General Dim. Reduction |
 
 ---
