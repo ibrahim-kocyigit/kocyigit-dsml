@@ -104,3 +104,6 @@ class PCA:
         """
         self.fit(X)
         return self.transform(X)
+
+
+# Next: 11_pca_lab.ipynb
