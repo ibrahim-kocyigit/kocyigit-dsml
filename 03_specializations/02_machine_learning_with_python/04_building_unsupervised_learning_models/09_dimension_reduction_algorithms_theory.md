@@ -7,7 +7,7 @@
 *   **Strengths:** Fast, deterministic, and preserves global structure.
 *   **Weaknesses:** Only captures linear relationships.
 
-### How it Works
+### The Mathematics of PCA
 PCA works by identifying the "principal components", new axes that maximize the variance (information) in the data. These components are orthogonal (uncorrelated) to each other.
 
 1. **First Component:** Captures the direction of maximum variance.
