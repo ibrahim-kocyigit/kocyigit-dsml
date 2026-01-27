@@ -110,6 +110,11 @@ Imagine 4 blobs of data in 3d space: 2 distinct, and 2 slighly overlapping.
 | **Speed** | Very Fast | Slow - O(N²) | Fast |
 | **Use Case** | Pre-processing, Noise Reduction | Visualization | Visualization, General Dim. Reduction |
 
+> ⚠️ **Note:** In the next section, we'll implement a basic version of **PCA from scratch** to understand its mathematical foundations (~30 lines of code). However, we will **skip implementing t-SNE and UMAP** from scratch, as even basic versions require 200-500+ lines of complex code involving advanced optimization techniques. At this stage, it is more valuable to:
+> 1. **Understand the mathematical intuition** behind each algorithm (covered above)
+> 2. **Distinguish their use cases** (PCA for linear relationships, t-SNE for visualization, UMAP for balanced local/global structure)
+> 3. **Use scikit-learn's implementations** (`sklearn.decomposition.PCA`, `sklearn.manifold.TSNE`, and `umap-learn` library) for practical applications
+
 ---
 
 **Next:** [PCA Implementation](./10_pca_implementation.py)
