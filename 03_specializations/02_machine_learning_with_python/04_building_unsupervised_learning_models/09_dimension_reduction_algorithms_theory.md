@@ -47,6 +47,7 @@ $$
 **Why t-distribution?**  
 The "Heavy Tail" of the [t-distribution](../../../01_math/04_probability_and_statistics_for_ml_and_ds/08_hypothesis_testing/08_t-distribution.md) solves the **Crowding Problem**. In high dimensions, there is more space. When we squash data into 2D, points get crowded. The heavy tail allows moderately distant points to be placed further apart in the low-dimensional map without crushing the local clusters.
 
+
 #### Step 3: Optimization (KL Divergence)
 We want the low-dimensional probabilities ($Q$) to match the high-dimensional probabilities ($P$). We minimize the **Kullback-Leibler (KL) Divergence** using Gradient Descent:
 
@@ -99,3 +100,16 @@ Imagine 4 blobs of data in 3d space: 2 distinct, and 2 slighly overlapping.
 3.  **UMAP:** Separates the clusters but tends to preserve the relative positions better. If two clusters overlap in 3D, UMAP is more likely to show that overlap in 2D compared to t-SNE, providing a truer representation of the topology.
 
 <img src="./images/0904.png" alt="" width="700"/>
+
+## 5. Summary
+
+| Feature | PCA | t-SNE | UMAP |
+| :--- | :--- | :--- | :--- |
+| **Type** | Linear | Non-Linear | Non-Linear |
+| **Focus** | Variance (Global) | Local Similarity | Local & Global Structure |
+| **Speed** | Very Fast | Slow ($O(N^2)$) | Fast |
+| **Use Case** | Pre-processing, Noise Reduction | Visualization | Visualization, General Dim. Reduction |
+
+---
+
+**Next:** []()
