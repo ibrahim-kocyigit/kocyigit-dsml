@@ -56,6 +56,11 @@ class PCA:
         eigenvalues = eigenvalues[sorted_idx]
         eigenvectors = eigenvectors[:, sorted_idx]
 
+        # Calculate explained variance and explained variance ratio
+        total_variance = np.sum(eigenvalues)
+        self.explained_variance_ = eigenvalues[: self.n_components]
+        self.explained_variance_ratio_ = self.explained_variance_ / total_variance
+
         # Save the top n_components
         self.components_ = eigenvectors[:, : self.n_components]
 
