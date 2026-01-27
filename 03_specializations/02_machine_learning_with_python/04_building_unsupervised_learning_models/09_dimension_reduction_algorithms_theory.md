@@ -112,4 +112,4 @@ Imagine 4 blobs of data in 3d space: 2 distinct, and 2 slighly overlapping.
 
 ---
 
-**Next:** []()
+**Next:** [PCA Implementation](./10_pca_implementation.py)
