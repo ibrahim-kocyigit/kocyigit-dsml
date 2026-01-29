@@ -8,6 +8,8 @@ In a simple train-test split, we use the training set to learn and the test set 
 
 If we try different hyperparameters and check the results on the **test set** each time to pick the best one, we are **cheating**. We are effectively using the test set to train the model (by selecting the best settings for *that specific* test data). This is called **data snooping** (or data leakage). The result is a model that is overfit to the test set and will likely fail on real-world data.
 
+
+
 ### The Solution: The Validation Set
 To fix this, we need to decouple model tuning from the final evaluation. We split the data into **three** parts:
 
