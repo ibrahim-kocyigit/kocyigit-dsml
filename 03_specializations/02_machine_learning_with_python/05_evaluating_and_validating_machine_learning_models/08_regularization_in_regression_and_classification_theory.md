@@ -4,7 +4,7 @@
 
 Standard Linear Regression aims to find the line (or hyperplane) that minimizes the error between predictions and actual values (usually Mean Squared Error, MSE).
 
-However, in the presence of **nosei** (outliers) or when the number of features is large, standard Linear Regression can be too flexible. It tries to fit *every* data point, including the noise. This leads to:
+However, in the presence of **noise** (outliers) or when the number of features is large, standard Linear Regression can be too flexible. It tries to fit *every* data point, including the noise. This leads to:
 
 1. **Overfitting:** The model works great on training data but fails on new data.
 2. **Large Coefficients:** The model assigns massive positive or negative weights to features to twist the line to hit noisy points.
