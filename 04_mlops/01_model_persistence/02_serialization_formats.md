@@ -22,3 +22,33 @@ This is Python's native serialization format.
 
 **Best for:** Quick experiments and internal workflows where artifacts are trusted.
 
+## 3. Joblib (`.joblib`)
+Joblib is optimized for large NumPy arrays.
+
+#### Pros:
+- Faster than pickle for large models
+- Efficient compression
+- Common in scikit-learn
+
+#### Cons:
+- Same security risks as pickle
+- Python only
+
+**Best for:** Scikit-learn pipelines and models with large numeric arrays.
+
+## 4. ONNX (`.onnx`)
+Short for Open Neural Network Exchange format.
+
+#### Pros:
+- Cross-platform, cross-language
+- Supported by many runtimes (C++, Java, JS, .NET)
+- Good for deployment at scale
+
+#### Cons:
+- Requires conversion
+- Not all models are supported
+- Pipeline conversions can be tricky
+
+**Best for:** Production deployment where language/runtime flexibility matters.
+
+## 5. PMML (`.pmml`)
