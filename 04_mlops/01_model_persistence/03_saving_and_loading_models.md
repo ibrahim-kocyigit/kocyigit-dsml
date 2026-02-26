@@ -33,3 +33,59 @@ loaded_model = joblib.load('models/random_forest_model.joblib')
 predictions = loaded_model.predict(X[:5])
 print(predictions)
 ```
+
+
+## 3. Saving Models with Pickle
+
+**Pickle** works similarly but is less efficient for large models.
+
+```python
+import pickle
+
+# Save the model
+with open('models/random_forest_model.pkl', 'wb') as file:
+    pickle.dump(model, file)
+
+# Load the model
+with open('models/random_forest_model.pkl', 'rb') as file:
+    loaded_model = pickle.load(file)
+
+# Make predictions
+predictions = loaded_model.predict(X[:5])
+print(predictions)
+```
+
+## 4. Saving Pipelines
+
+**This is the recommended approach for production systems.**
+
+Pipelines bundle preprocessing and modeling together, ensuring consistency between training and inference.
+
+```python
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.ensemble import RandomForestClassifier
+
+# Create a pipeline
+pipeline = Pipeline([
+    ('scaler', StandardScaler()),
+    ('pca', PCA(n_components=2)),
+    ('classifier', RandomForestClassifier(n_estimators=100, random_state=42))
+])
+
+# Train the pipeline
+pipeline.fit(X, y)
+
+# Save the entire pipeline
+joblib.dump(pipeline, 'models/pipeline_model.joblib')
+
+# Load the pipeline
+loaded_pipeline = joblib.load('models/pipeline_model.joblib')
+
+# The pipeline handles all preprocessing automatically
+predictions = loaded_pipeline.predict(X[:5])
+print(predictions)
+```
+
+> ❗️ **Key Advantage**: All preprocessing steps (scaling, PCA) are applied automatically when you call `predict()`. No manual preprocessing needed!
