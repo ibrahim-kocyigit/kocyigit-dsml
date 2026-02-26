@@ -57,9 +57,7 @@ print(predictions)
 
 ## 4. Saving Pipelines
 
-**This is the recommended approach for production systems.**
-
-Pipelines bundle preprocessing and modeling together, ensuring consistency between training and inference.
+Pipelines bundle preprocessing and modeling together, ensuring consistency between training and inference. **This is the recommended approach for production systems.**
 
 ```python
 from sklearn.pipeline import Pipeline
