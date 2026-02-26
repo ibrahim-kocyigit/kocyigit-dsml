@@ -52,3 +52,40 @@ Short for Open Neural Network Exchange format.
 **Best for:** Production deployment where language/runtime flexibility matters.
 
 ## 5. PMML (`.pmml`)
+Short for Predictive Model Markup Language (XML-based).
+
+#### Pros:
+- Language-agnostic
+- Human-readable
+- Used in enterprise settings
+
+#### Cons:
+- Limited support for modern models
+- Complex pipelines can be hard to represent
+
+**Best for:** Traditional ML models in enterprise systems.
+
+## 6. TensorFlow / PyTorch Formats
+
+- **TensorFlow:** `.h5` or SavedModel
+- **PyTorch:** `.pt` or `pth`
+
+**Best for**: Deep learning models trained in these frameworks.
+
+## 7. Choosing the Right Format
+
+| Use Case | Recommended Format |
+|---------|--------------------|
+| scikit-learn prototype | `joblib` |
+| Python-only deployment | `joblib` or `pickle` |
+| Cross-language deployment | `onnx` |
+| Enterprise legacy systems | `pmml` |
+| Deep learning models | framework-native format |
+
+### ⚠️ Security Reminders
+- Never load serialized model files from untrusted sources.  
+- Formats like **pickle** and **joblib** can execute arbitrary code during loading.
+
+---
+
+**Next**: [03_saving_and_loading_models.md](./03_saving_and_loading_models.md)
