@@ -9,6 +9,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "contextily>=1.7.0",
+    "fastapi>=0.133.1",
     "geodatasets>=2026.1.0",
     "geopandas>=1.1.2",
     "hdbscan>=0.8.41",
@@ -25,5 +26,6 @@ dependencies = [
     "seaborn>=0.13.2",
     "skl2onnx>=1.20.0",
     "statsmodels>=0.14.5",
+    "uvicorn>=0.41.0",
     "xgboost>=3.1.1",
 ]
