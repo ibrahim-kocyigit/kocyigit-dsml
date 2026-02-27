@@ -36,9 +36,9 @@ This project consolidates my curated learning resources, organized into five pil
 1.  🟠 [Model Persistence](./04_mlops/01_model_persistence/)
 2.  🔴 API Development
 3.  🔴 Containerization
-4.  🔴 Interactive Dashboards
-5.  🔴 Model Interpretability (XAI)
-6.  🔴 ML Monitoring Concepts
+4.  🔴 Cloud Deployment
+5.  🔴 Interactive Dashboards
+6.  🔴 Monitoring and Maintenance
 
 ### 5. Methodology
 1. 🟢 [Business Understanding](./05_methodology/01_business_understanding.md)
