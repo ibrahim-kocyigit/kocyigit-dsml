@@ -1,3 +1,5 @@
+```
+
 04_mlops/
 ├── README.md
 │
@@ -40,3 +42,5 @@
     ├── 01_logging_and_error_handling.ipynb
     ├── 02_data_and_model_drift_concepts.ipynb
     └── 03_model_retraining_strategies.ipynb
+
+```
