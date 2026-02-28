@@ -35,5 +35,5 @@ class IrisPrediction(BaseModel):
     """Output schema: The prediction the API returns."""
 
     prediction: str
-    prediction_id = int
+    prediction_id: int
     probabilities: dict[str, float]
