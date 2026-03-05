@@ -10,7 +10,7 @@ The answer is **Docker**, a tool that packages your application, its dependencie
 
 | **Problem Without Docker** | **Solution With Docker** |
 | :--- | :--- |
-| *"It workds on my machine.*" - The client can't reproduce your Python environment | The container **is** the environment. It runs identically everywhere. |
+| *"It works on my machine.*" - The client can't reproduce your Python environment | The container **is** the environment. It runs identically everywhere. |
 | Client has Python 3.10 but you built on 3.13 | The container ships with the exact Python version. |
 | `pip install` installs different versions on different machines | Dependencies are frozen inside the container. 
 | Client doesnt' know how to install scikit-learn, uvicorn, etc. | The client runs **one command**: `docker run`. |
@@ -43,7 +43,7 @@ CMD["uvicorn", "main:app"]              # Define what runs when the container st
 
 Each line creates a **layer**. Docker caches layers, so if you change your code but not your dependencies, only the changed layers are rebuilt, making subsequent builds fast.
 
-### Docker Compose
+### Docker Compose
 
 When your application has multiple services (e.g., an API + a database), **Docker Compose** lets you define and run them together using a single `docker-compose.yml` file. For our Iris API it's optional but a noce convenience, it saves you from typing long `docker run` commands.
 
