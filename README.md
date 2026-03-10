@@ -35,8 +35,8 @@ This project consolidates my curated learning resources, organized into five pil
 ### 4. MLOps 
 1.  🟢 [Model Persistence](./04_mlops/01_model_persistence/)
 2.  🟢 [API Development](./04_mlops/02_api_development/)
-3.  🟠 [Containerization](./04_mlops/03_containerization/)
-4.  🔴 Cloud Deployment
+3.  🟢 [Containerization](./04_mlops/03_containerization/)
+4.  🟠 [Cloud Deployment](./04_mlops/04_cloud_deployment/)
 5.  🔴 Interactive Dashboards
 6.  🔴 Monitoring and Maintenance
 
