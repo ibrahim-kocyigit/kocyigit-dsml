@@ -25,7 +25,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r 04_mlops/03_containerization/app/requirements.txt
+          pip install -r 04_mlops/03_containerization/requirements.txt
           pip install httpx pytest
 
       - name: Generate model artifact
