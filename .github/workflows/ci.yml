@@ -1,4 +1,4 @@
-name: CI - Test Iris API
+name: CI — Test Iris API
 
 on:
   push:
@@ -15,19 +15,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out code
+      # 1. Check out the repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
+      # 2. Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
 
+      # 3. Install only the API dependencies
       - name: Install dependencies
         run: |
           pip install -r 04_mlops/03_containerization/requirements.txt
           pip install httpx pytest
 
+      # 4. Train a fresh model (so the test doesn't depend on a checked-in artifact)
       - name: Generate model artifact
         run: |
           python -c "
@@ -48,13 +52,15 @@ jobs:
           print('Model saved.')
           "
 
+      # 5. Run tests
       - name: Run API tests
         env:
           MODEL_PATH: 04_mlops/03_containerization/models/iris_pipeline.joblib
         run: |
           cd 04_mlops/03_containerization
-          python -m pytest tests/ -v || echo "No tests directory yet - skipping."
+          python -m pytest tests/ -v || echo "No tests directory yet — skipping."
 
+      # 6. Verify the Docker build succeeds
       - name: Build Docker image
         run: |
           cd 04_mlops/03_containerization
