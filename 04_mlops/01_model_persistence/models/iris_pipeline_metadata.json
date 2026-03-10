@@ -1,0 +1,32 @@
+{
+  "model_name": "iris_pipeline",
+  "model_version": "1.0",
+  "description": "Random Forest classifier for Iris species prediction with StandardScaler preprocessing.",
+  "training_date": "2026-02-27T14:31:45.857721+00:00",
+  "dataset": "sklearn.datasets.load_iris",
+  "features": [
+    "sepal length (cm)",
+    "sepal width (cm)",
+    "petal length (cm)",
+    "petal width (cm)"
+  ],
+  "target_classes": [
+    "setosa",
+    "versicolor",
+    "virginica"
+  ],
+  "test_accuracy": 1.0,
+  "pipeline_steps": [
+    "scaler",
+    "classifier"
+  ],
+  "hyperparameters": {
+    "n_estimators": 100,
+    "random_state": 42
+  },
+  "library_versions": {
+    "scikit-learn": "1.7.2",
+    "joblib": "1.5.2",
+    "numpy": "2.3.4"
+  }
+}
