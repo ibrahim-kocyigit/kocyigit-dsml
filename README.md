@@ -75,7 +75,7 @@ Every section contains detailed lecture notes, Jupyter Notebooks, from-scratch P
 ## Highlights
 
 - 📐 **From-scratch implementations** of core ML algorithms (AdaBoost, PCA, KNN, Naive Bayes, and more) in pure NumPy — theory notes paired with code.
-- 🧪 **End-to-end ML labs** following a consistent methodology: business understanding → data prep → modeling → evaluation, applied across Logistic Regression, Decision Trees, SVMs, KNN, Random Forests, XGBoost, and clustering algorithms.
+- 🧪 **Hands-on ML labs** using scikit-learn and other industry libraries to explore real-world implementations of models including Logistic Regression, Decision Trees, SVMs, KNN, Random Forests, XGBoost, and clustering algorithms.
 - 🚀 **Full MLOps pipeline**: a single Iris classification model carried from a Jupyter Notebook through a FastAPI service, Docker container, cloud deployment (Railway + GitHub Actions CI/CD), Streamlit dashboard, and monitoring setup.
 - 📘 **10-stage project methodology** with reusable templates, checklists, and decision frameworks for freelance data science work.
 - 📄 **Cheat sheet** included — a quick-reference PDF for key concepts: [`cheatsheet.pdf`](./cheatsheet.pdf).
