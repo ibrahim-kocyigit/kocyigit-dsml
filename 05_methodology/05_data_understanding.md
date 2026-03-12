@@ -111,7 +111,7 @@ Compute summary statistics to get a quantitative overview of every column.
 * **Numerical Features:** [Paste or summarize df.describe() output]
 * **Categorical Features:** [Paste or summarize df.describe(include='object') output]
 
-## Key Observations
+### Key Observations
 * [List 3–5 notable findings from the statistics]
   Example: "monthly_spend ranges from $0 to $12,450 — the max is likely an outlier."
   Example: "plan_type has 3 categories: Basic (60%), Premium (30%), Enterprise (10%)."
@@ -143,12 +143,12 @@ Examine each variable **individually** to understand its distribution.
 ```markdown
 ## Univariate Analysis
 
-## Target Variable
+### Target Variable
 * **Distribution:** [Balanced / Imbalanced / Skewed / Normal]
   Example (classification): "churned: 85% No, 15% Yes — moderately imbalanced."
   Example (regression): "sale_price is right-skewed with a long tail above $500k."
 
-## Feature Distributions
+### Feature Distributions
 * [List 3–5 key findings per feature type]
   Example: "monthly_spend is right-skewed — consider log-transform."
   Example: "plan_type: Basic dominates at 60%, Enterprise is only 10%."
@@ -226,7 +226,7 @@ Consolidate everything from Steps 1–5 into a structured summary. This becomes 
 | Multicollinearity | monthly_spend ↔ total_transactions | Medium | Drop total_transactions |
 | High cardinality | city (342 unique values) | Medium | Group into top 20 + "Other" |
 
-## Revised Assumptions
+### Revised Assumptions
 * [Any initial assumptions from Stage 1 or Stage 2 that were challenged or confirmed]
   Example: "Stage 1 assumed customer tenure would be a strong predictor. EDA confirms this —
   churned customers have a median tenure of 4 months vs. 18 months for retained."
