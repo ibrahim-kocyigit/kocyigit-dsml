@@ -1,87 +1,197 @@
 # Stage 3: Data Requirements
 
-_"The chosen analytic approach determines the data requirements. Specifically, the analytic methods to be used require certain data content, formats and representations, guided by domain knowledge."_ 
+_"The chosen analytic approach determines the data requirements. Specifically, the analytic methods to be used require certain data content, formats and representations, guided by domain knowledge."_ — **John B. Rollins**
 
+---
 
 ## Purpose
-The goal of this stage is to create a detailed specification of all the data needed to execute the analytic approach defined in Stage 2. This involves translating the proposed models and features into a concrete list of required data fields, formats, sources, and entities. This plan ensures that the data collection process is targeted and efficient.
 
+In [Stage 2](./02_analytic_approach.md), you defined *what type of problem* you're solving and *which algorithms* you'll try. Now you need to define **what data those algorithms need** — before anyone touches a database or opens a CSV.
 
-## Step 1: Identify Data Sources
-List all potential internal and external sources where the required data might reside.
+This stage produces a **data shopping list**: the specific fields, sources, formats, and timeframes required to build the features and target variable for your model. It's the blueprint that makes [Stage 4: Data Collection](./04_data_collection.md) targeted and efficient instead of a wild goose chase.
 
-* **Action:** Brainstorm and document all potential data sources.
-* **Guiding Questions:**
-    * Which internal databases (e.g., CRM, ERP, transactional databases) hold the necessary information?
-    * Is relevant data available in flat files (CSVs, Excel spreadsheets) or data warehouses?
-    * Are there third-party APIs that can provide valuable external data?
-    * Who are the owners or subject matter experts for each data source?
+> 💡 **Freelancer's note:** This stage is especially important when working with clients. They often say *"We have lots of data."* Your job is to translate that into *"I need these specific fields, from these specific sources, covering this specific time period."* The more precise you are now, the less back-and-forth later.
+
+---
+
+## Step 1: Identify the Target Variable
+
+For supervised problems, the target variable was named in [Stage 2](./02_analytic_approach.md). Now define it precisely: where it comes from, how it's calculated, and what its values mean.
+
+For unsupervised problems, there is no target — skip to Step 2.
+
+**Actions:**
+- Define the exact target variable name, type, and business definition.
+- Clarify how the target is derived if it doesn't exist as a raw column (e.g., "churned" may need to be calculated from the last activity date).
+- Confirm the target definition with the domain expert.
 
 ```markdown
-### Potential Data Sources
-| Source System | Description | Owner / Contact |
-| :--- | :--- | :--- |
-| [Example: `PostgreSQL CRM_DB`] | [Customer relationship management database containing user profiles.] | [Sales Team Lead] |
-| [Example: `S3 Bucket: /sales_logs`] | [CSV files with daily transaction records.] | [Engineering Team] |
-| [Example: `External Weather API`] | [API for historical weather data by region.] | [External Vendor] |
+## Target Variable Definition
+* **Name:** [Column name]
+* **Type:** [Binary (0/1), Multi-class (A/B/C), Continuous, etc.]
+* **Definition:** [Precise business definition of this variable]
+
+  Example (classification): "churn — 1 if the customer had zero activity in the 30 days
+  following the observation date, 0 otherwise."
+
+  Example (regression): "sale_price — the final transaction price of the property in USD,
+  as recorded in the county assessor's database."
+
+* **Known Issues:** [Any ambiguity, edge cases, or labeling concerns]
+  Example: "Customers who downgraded to the free tier are counted as churned per the
+  business sponsor's definition, even though they technically still have an account."
 ```
 
-## Step 2: Define Required Data Fields
-This is the core of the data requirements document. List every specific piece of information needed to create the features and the target variable for the model.
+> ⚠️ **Common pitfall:** A vague target definition leads to a model that predicts the wrong thing. *"Churned"* means different things in different companies — define it precisely and get stakeholder confirmation.
 
-* **Action:** Create a detailed table of all required data fields.
+---
+
+## Step 2: Identify Data Sources
+
+List every internal and external source where the required data might live.
+
+**Actions:**
+- Inventory all relevant systems (databases, data warehouses, flat files, APIs).
+- For each source, identify the owner or point of contact.
+- Note access requirements (credentials, VPN, NDA, data sharing agreements).
 
 ```markdown
-### Data Field Specifications
-| Data Entity | Field Name | Expected Data Type | Description & Business Rule | Example | Relevance to Objective |
+## Data Sources
+| Source | Type | Description | Owner / Contact | Access |
+| :--- | :--- | :--- | :--- | :--- |
+| [Example: `PostgreSQL — crm_db`] | Internal DB | Customer profiles, subscription history | [Sales Team Lead] | [DB credentials via IT] |
+| [Example: `S3: /data/transactions/`] | Internal Files | Daily transaction CSVs | [Engineering Team] | [AWS IAM role] |
+| [Example: `Open Weather API`] | External API | Historical weather by region | [Public API] | [Free tier, API key] |
+| [Example: `client_export.xlsx`] | Client-provided | Manual export from client's internal tool | [Client PM] | [Email delivery] |
+```
+
+> 💡 For freelance projects, the most common scenario is: the client gives you a CSV or Excel export. Still document it here — it forces you to confirm the source, the freshness, and who to ask when you have questions.
+
+---
+
+## Step 3: Define Required Data Fields
+
+This is the core of the data requirements document. List every field you need to build your features and target variable. Think through what the [candidate models from Stage 2](./02_analytic_approach.md) actually need as input.
+
+**Actions:**
+- List each required field with its source, type, description, and relevance.
+- Mark the target variable explicitly.
+- Include fields needed for **joining** tables (keys) and for **filtering** (e.g., date ranges).
+- Think about what raw data is needed to **derive** your features (e.g., you need `signup_date` and `observation_date` to calculate `tenure_months`).
+
+```markdown
+## Data Field Specifications
+| Source | Field Name | Data Type | Description | Example | Role |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Customer | `customer_id` | String | Unique identifier for each customer. | `CUST-8472` | Primary key for joining. |
-| Customer | `signup_date` | Date | The date the customer first subscribed. | `2023-01-15` | Needed to calculate customer tenure. |
-| Subscription| `plan_type` | String | The customer's current subscription tier ('Basic', 'Premium'). | `Premium` | A key feature for the churn model.|
-| Usage | `monthly_logins` | Integer | Average number of logins per month over the last 6 months. | `25` | Hypothesized to correlate with engagement.|
-| Churn | `churn_status` | Boolean (0/1) | **(Target Variable)** Whether the customer churned in the last 30 days.* | `1` | The outcome we are predicting. |
+| crm_db | `customer_id` | String | Unique customer identifier | `CUST-8472` | Primary key |
+| crm_db | `signup_date` | Date | Date of first subscription | `2023-01-15` | Derive tenure |
+| crm_db | `plan_type` | Categorical | Subscription tier (Basic/Premium/Enterprise) | `Premium` | Feature |
+| transactions | `monthly_spend` | Float | Average monthly spend over last 6 months | `149.99` | Feature |
+| activity_log | `monthly_logins` | Integer | Average monthly logins over last 6 months | `25` | Feature |
+| activity_log | `last_activity_date` | Date | Date of most recent platform activity | `2025-12-20` | Derive target |
+| — | `churned` | Binary (0/1) | **TARGET** — No activity in 30 days post-observation | `1` | Target variable |
 ```
 
-## Step 3: Specify Data Formats and Granularity
-Define the scope and technical format of the required data.
+> 💡 **Regression example:** For a property valuation project, the fields might include `lot_size_sqft`, `bedrooms`, `year_built`, `zip_code`, `last_renovation_year`, and the target `sale_price`.
 
-* **Action:** Detail the necessary level of detail, time frame, and format.
+> 💡 **Clustering example:** For customer segmentation, the fields might include `total_spend`, `purchase_frequency`, `avg_basket_size`, `days_since_last_purchase` — with no target column.
 
-```markdown
-### Format and Granularity
-* **Granularity:** [Specify the level of detail. Example: "Data should be at the individual customer-month level."]
-* **Timeframe:** [Specify the historical depth needed. Example: "We require the last 24 months of customer activity data."]
-* **Format:** [Specify the expected format for data delivery. Example: "Data should be delivered as a single CSV file with comma delimiters and UTF-8 encoding."]
-```
+---
 
-## Step 4: Outline Data Privacy and Ethical Considerations
-Identify any sensitive information and the rules governing its use. This is a critical step for responsible data science.
+## Step 4: Specify Format, Granularity & Timeframe
 
-* **Action:** Document any Personally Identifiable Information (PII) or other sensitive data fields.
-* **Guiding Questions:**
-    * Does the data contain PII (e.g., names, email addresses, phone numbers)?
-    * What are the legal or ethical constraints on using this data (e.g., GDPR, CCPA)?
-    * Are there any data anonymization or aggregation requirements before use?
+Define the technical shape of the data you need.
+
+**Actions:**
+- Specify the **granularity** (one row per what?).
+- Specify the **timeframe** (how far back?).
+- Specify the **delivery format** (CSV, database query, API, etc.).
+- Specify the **expected volume** (approximate number of rows).
 
 ```markdown
-### Privacy & Ethics Review
-* **Sensitive Data Identified:** [List any PII fields.]
-* **Constraints & Requirements:** [Describe the handling protocol. Example: "All PII must be removed from the dataset before analysis. Customer IDs will be replaced with a non-reversible hash."]
-```
+## Format & Granularity
+* **Granularity:** [One row per ___]
+  Example: "One row per customer, with aggregated features over the last 6 months."
+  Example: "One row per property sale transaction."
 
-## Step 5: Documentation and Validation
-Finalize the data requirements and get approval from data owners and stakeholders.
+* **Timeframe:** [How much historical data is needed]
+  Example: "All customer activity from 2023-01-01 to 2025-12-31."
+  Example: "Property sales from the last 5 years in the Greater Munich area."
 
-* **Action:** Prepare the final draft of this "Data Requirements" document.
-* **Action:** Distribute for review by data engineers, database administrators, and relevant domain experts.
-* **Action:** Add a summary of this stage to the main project `README.md`.
+* **Format:** [How the data should be delivered]
+  Example: "Single CSV file, comma-delimited, UTF-8 encoded."
+  Example: "Direct read access to the PostgreSQL database via provided credentials."
 
-```markdown
-### Validation Summary
-* **Date Approved:** [Insert Date]
-* **Approved By:** [List Data Owners/SMEs]
+* **Expected Volume:** [Approximate size]
+  Example: "~50,000 customer records with 15–20 columns."
 ```
 
 ---
 
-**Next:** [Data Collection](./04_data_collection.md)
+## Step 5: Data Privacy & Ethical Considerations
+
+Identify sensitive data and document how it will be handled. This is non-negotiable — even for small freelance projects.
+
+**Actions:**
+- Flag any Personally Identifiable Information (PII) in the required fields.
+- Document legal constraints (GDPR, CCPA, HIPAA, industry-specific regulations).
+- Define the handling protocol (anonymization, pseudonymization, access restrictions).
+- Confirm with the client that you're authorized to use this data for this purpose.
+
+```markdown
+## Privacy & Ethics Review
+* **PII Fields Identified:** [List any fields that contain or could identify individuals]
+  Example: "customer_name, email_address, phone_number"
+
+* **Handling Protocol:**
+  Example: "All PII will be removed before analysis. customer_id will be pseudonymized
+  with a non-reversible hash. Raw data will be stored only locally and deleted after
+  project completion."
+
+* **Legal Constraints:**
+  Example: "Client confirmed GDPR compliance. Data Processing Agreement (DPA) signed on
+  [date]. Data may not be shared with third parties."
+
+* **Authorization:**
+  Example: "Client authorized use of this data for this project via email on [date]."
+```
+
+> ⚠️ **Freelancer's note:** Always get written confirmation (even an email) that you're authorized to use the data. This protects both you and the client.
+
+---
+
+## Step 6: Documentation & Stakeholder Approval
+
+Package Steps 1–5 into a single data requirements document and get it approved before proceeding to collection.
+
+**Actions:**
+- Compile this document with all fields filled in.
+- Send to the client / data owner for review — they need to confirm that the data you're requesting actually exists and can be provided.
+- Resolve any gaps (missing fields, unavailable sources, access blockers).
+- Secure approval.
+
+```markdown
+## Approval
+* **Date:** [YYYY-MM-DD]
+* **Reviewed By:** [Name — Role]
+* **Data Gaps Identified:** [Any fields that were requested but don't exist or can't be provided]
+* **Status:** [Approved / Pending Data Access]
+```
+
+---
+
+## Checklist
+
+Before moving to [Stage 4: Data Collection](./04_data_collection.md), confirm:
+
+- [ ] The target variable is precisely defined (for supervised problems).
+- [ ] All data sources are identified with owners and access requirements.
+- [ ] Every required field is listed with type, description, and relevance.
+- [ ] The granularity, timeframe, format, and expected volume are specified.
+- [ ] PII is identified and a handling protocol is documented.
+- [ ] Written authorization to use the data is obtained.
+- [ ] The client / data owner has confirmed the data exists and can be delivered.
+
+---
+
+**Next:** [Data Collection](./04_data_collection.md) — Acquiring the data defined in this stage.
