@@ -16,7 +16,7 @@ This stage follows an **ELT (Extract, Load, Transform)** process — the natural
 
 ### Why ELT (not ETL)?
 
-The original file used an ETL order (transform *before* loading). For a freelancer working in Pandas, **ELT is the better pattern**:
+For a freelancer working in Pandas, **ELT is the better pattern**:
 
 | | ETL (Extract → Transform → Load) | ELT (Extract → Load → Transform) |
 | :--- | :--- | :--- |
