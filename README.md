@@ -12,42 +12,41 @@ This project consolidates my curated learning resources, organized into five pil
 
 
 ## Table of Contents
-(🟢 _Complete_ | 🟠 _In Progress_ | 🔴 _Not Started_)
 
 ### 1. Math
-1. 🟢 [High School Math](./01_math/01_high_school_math/) 
-2. 🟢 [Linear Algebra](./01_math/02_linear_algebra_for_ml_and_ds/)
-2. 🟢 [Calculus](./01_math/03_calculus_for_ml_and_ds/)
-3. 🟢 [Probability and Statistics](./01_math/04_probability_and_statistics_for_ml_and_ds/)
+1. [High School Math](./01_math/01_high_school_math/) 
+2. [Linear Algebra](./01_math/02_linear_algebra_for_ml_and_ds/)
+2. [Calculus](./01_math/03_calculus_for_ml_and_ds/)
+3. [Probability and Statistics](./01_math/04_probability_and_statistics_for_ml_and_ds/)
 
 ### 2. Toolkit  
-1. 🟢 [Python for Data Science](./02_toolkit/01_python_for_data_science/)
-2. 🟢 [Numpy Fundamentals](./02_toolkit/02_numpy_fundamentals/)
-3. 🟢 [Pandas Fundamentals](./02_toolkit/03_pandas_fundamentals/)
-4. 🟢 [Matplotlib Fundamentals](./02_toolkit/04_matplotlib_fundamentals/)
-5. 🟢 [Seaborn Fundamentals](./02_toolkit/05_seaborn_fundamentals/)
+1. [Python for Data Science](./02_toolkit/01_python_for_data_science/)
+2. [Numpy Fundamentals](./02_toolkit/02_numpy_fundamentals/)
+3. [Pandas Fundamentals](./02_toolkit/03_pandas_fundamentals/)
+4. [Matplotlib Fundamentals](./02_toolkit/04_matplotlib_fundamentals/)
+5. [Seaborn Fundamentals](./02_toolkit/05_seaborn_fundamentals/)
 
 ### 3. Specializations
-1.  🟢 [Fitting Statistical Models to Data with Python](./03_specializations/01_fitting_statistical_models_to_data_with_python/)
-2.  🟢 [Machine Learning with Python](./03_specializations/02_machine_learning_with_python/)
-3.  🔴 Deep Learning Specialization
+1. [Fitting Statistical Models to Data with Python](./03_specializations/01_fitting_statistical_models_to_data_with_python/)
+2. [Machine Learning with Python](./03_specializations/02_machine_learning_with_python/)
+3. Deep Learning Specialization (*Scheduled for Q3, 2006*)
 
 ### 4. MLOps 
-1.  🟢 [Model Persistence](./04_mlops/01_model_persistence/)
-2.  🟢 [API Development](./04_mlops/02_api_development/)
-3.  🟢 [Containerization](./04_mlops/03_containerization/)
-4.  🟢 [Cloud Deployment](./04_mlops/04_cloud_deployment/)
-5.  🟢 [Interactive Dashboards](./04_mlops/05_interactive_dashboards/)
-6.  🟠 [Monitoring and Maintenance](./04_mlops/06_monitoring_and_maintenance/)
+1. [Model Persistence](./04_mlops/01_model_persistence/)
+2. [API Development](./04_mlops/02_api_development/)
+3. [Containerization](./04_mlops/03_containerization/)
+4. [Cloud Deployment](./04_mlops/04_cloud_deployment/)
+5. [Interactive Dashboards](./04_mlops/05_interactive_dashboards/)
+6. [Monitoring and Maintenance](./04_mlops/06_monitoring_and_maintenance/)
 
 ### 5. Methodology
-1. 🟢 [Business Understanding](./05_methodology/01_business_understanding.md)
-2. 🟢 [Analytic Approach](./05_methodology/02_analytic_approach.md)
-3. 🟢 [Data Requirements](./05_methodology/03_data_requirements.md)
-4. 🟢 [Data Collection](./05_methodology/04_data_collection.md)
-5. 🟢 [Data Understanding](./05_methodology/05_data_understanding.md)
-6. 🟢 [Data Preparation](./05_methodology/06_data_preparation.md)
-7. 🟢 [Modeling](./05_methodology/07_modeling.md)
-8. 🟢 [Evaluation](./05_methodology/08_evaluation.md)
-9. 🟢 [Deployment](./05_methodology/09_deployment.md)
-10. 🟢 [Feedback](./05_methodology/10_feedback.md)
+1. [Business Understanding](./05_methodology/01_business_understanding.md)
+2. [Analytic Approach](./05_methodology/02_analytic_approach.md)
+3. [Data Requirements](./05_methodology/03_data_requirements.md)
+4. [Data Collection](./05_methodology/04_data_collection.md)
+5. [Data Understanding](./05_methodology/05_data_understanding.md)
+6. [Data Preparation](./05_methodology/06_data_preparation.md)
+7. [Modeling](./05_methodology/07_modeling.md)
+8. [Evaluation](./05_methodology/08_evaluation.md)
+9. [Deployment](./05_methodology/09_deployment.md)
+10. [Feedback](./05_methodology/10_feedback.md)
