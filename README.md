@@ -37,8 +37,8 @@ This project consolidates my curated learning resources, organized into five pil
 2.  🟢 [API Development](./04_mlops/02_api_development/)
 3.  🟢 [Containerization](./04_mlops/03_containerization/)
 4.  🟢 [Cloud Deployment](./04_mlops/04_cloud_deployment/)
-5.  🟠 [Interactive Dashboards](./04_mlops/05_interactive_dashboards/)
-6.  🔴 Monitoring and Maintenance
+5.  🟢 [Interactive Dashboards](./04_mlops/05_interactive_dashboards/)
+6.  🟠 [Monitoring and Maintenance](./04_mlops/06_monitoring_and_maintenance/)
 
 ### 5. Methodology
 1. 🟢 [Business Understanding](./05_methodology/01_business_understanding.md)
