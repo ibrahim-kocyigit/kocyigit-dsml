@@ -195,3 +195,4 @@ Before moving to [Stage 4: Data Collection](./04_data_collection.md), confirm:
 ---
 
 **Next:** [Data Collection](./04_data_collection.md) — Acquiring the data defined in this stage.
+
