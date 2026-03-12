@@ -82,26 +82,6 @@ Every section contains detailed lecture notes, Jupyter Notebooks, from-scratch P
 
 ---
 
-## Tech Stack
-
-| Category | Tools |
-| :--- | :--- |
-| **Language** | Python 3.13+ |
-| **Package Management** | [uv](https://docs.astral.sh/uv/) |
-| **Data & Numerical** | NumPy, Pandas, PyArrow |
-| **Visualization** | Matplotlib, Seaborn, Plotly |
-| **Machine Learning** | scikit-learn, XGBoost, statsmodels |
-| **Deep Learning (upcoming)** | — |
-| **Model Export** | joblib, pickle, ONNX (skl2onnx, onnxruntime) |
-| **API** | FastAPI, Uvicorn, Pydantic |
-| **Containerization** | Docker, Docker Compose |
-| **Dashboards** | Streamlit |
-| **Geospatial** | GeoPandas, contextily, rasterio, geodatasets |
-| **CI/CD** | GitHub Actions |
-| **Notebooks** | Jupyter |
-
----
-
 ## Getting Started
 
 ```bash
