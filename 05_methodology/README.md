@@ -22,9 +22,9 @@ Each stage is documented in its own file within this folder. These files serve a
 │   1. Business Understanding ──► 2. Analytic Approach ──► 3. Data Requirements│
 │                                                                     │        │
 │                                                                     ▼        │
-│   6. Data Preparation ◄── 5. Data Understanding ◄── 4. Data Collection      │
-│          │                                                                    │
-│          ▼                                                                    │
+│   6. Data Preparation ◄── 5. Data Understanding ◄── 4. Data Collection       │
+│          │                                                                   │
+│          ▼                                                                   │
 │   7. Modeling ──► 8. Evaluation ──► 9. Deployment ──► 10. Feedback ──►(loop) │
 │                                                                              │
 └──────────────────────────────────────────────────────────────────────────────┘
