@@ -12,7 +12,7 @@ Each stage is documented in its own file within this folder. These files serve a
 
 2. **For reference:** Each stage opens with John B. Rollins' own description of that stage, followed by concrete steps, decision frameworks, and documentation templates. When in doubt during a project, come back to the relevant stage.
 
-3. **For learning:** The stage files cross-link to the [Math Foundations](../01_math_and_statistics/), [Toolkit](../02_toolkit/), [Specializations](../03_specializations/), and [MLOps](../04_mlops/) pillars wherever a concept is covered in depth.
+3. **For learning:** The stage files cross-link to the [Math Foundations](../01_math/), [Toolkit](../02_toolkit/), [Specializations](../03_specializations/), and [MLOps](../04_mlops/) pillars wherever a concept is covered in depth.
 
 ## The 10 Stages
 
