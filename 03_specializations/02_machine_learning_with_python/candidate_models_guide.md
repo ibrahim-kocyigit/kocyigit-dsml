@@ -1,4 +1,6 @@
-# ML Models — Assumptions Table
+# Candidate Models Guide
+
+You can use the following table as a quick reference to help you decide which machine learning model(s) to try first based on your problem type, dataset characteristics, and project goals. Each model has its own assumptions and ideal use cases, so this guide will help you narrow down your options before diving into implementation and experimentation.
 
 | **Model** | **Best For** | **Assumes** |
 | :--- |:---|:---|
