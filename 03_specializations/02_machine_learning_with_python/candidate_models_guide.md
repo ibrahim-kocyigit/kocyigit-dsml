@@ -27,17 +27,17 @@
 A good candidate for establishing a **quick baseline** on regression problems with a **single feature**. Extremely fast, computationally cheap, and highly interpretable — ideal when you need to explain the relationship between one predictor and a continuous target to non-technical stakeholders. 
 
 **Assumptions:**
-1. **Linear relationship** between the predictor and the target *(Can still be used with feature transformations like `log(x)`, `sqrt(x)`, or by switching to Polynomial Regression)*
-2. **Independence of residuals** — errors are not correlated with each other *(**Cannot** remain a candidate model if the data is sequential/time-series — use ARIMA instead)*
-3. **Homoscedasticity** — constant variance of residuals across all values of `x` *(Can still be used with target variable transformations like `log(y)` or `sqrt(y)` to stabilize variance)*
-4. **Normality of residuals** *(Can still be used with large datasets thanks to the Central Limit Theorem, or by removing outliers)* 
-5. **Not too many outliers** — OLS minimizes squared errors, so outliers have outsized influence *(Can still be used with outlier removal, or by switching to a robust regression model)*
+1. Linear relationship between the predictor and the target *(Can still be used with feature transformations like `log(x)`, `sqrt(x)`, or by switching to Polynomial Regression)*
+2. **Independence of residuals** — errors are not correlated with each other *(Cannot remain a candidate model if the data is sequential/time-series — use ARIMA instead)*
+3. Homoscedasticity — constant variance of residuals across all values of `x` *(Can still be used with target variable transformations like `log(y)` or `sqrt(y)` to stabilize variance)*
+4. Normality of residuals *(Can still be used with large datasets thanks to the Central Limit Theorem, or by removing outliers)* 
+5. Not too many outliers — OLS minimizes squared errors, so outliers have outsized influence *(Can still be used with outlier removal, or by switching to a robust regression model)*
 
 ### [Multiple Linear Regression](./02_linear_and_logistic_regression/05_multiple_linear_regression_theory.md)
 A good candidate to use as a **baseline regression model** when you have **multiple features** and need a fast, interpretable starting point. It establishes a reliable first threshold that more complex models should beat. Excellent when stakeholders need to understand **how much each feature independently contributes** to the prediction (coefficients are directly interpretable).
 
 **Assumptions:**
-1. **Linear relationship** between features and target *(Can still be used with feature transformations like `log`, `sqrt`, or polynomial terms like $x^2$)* 
+1. Linear relationship between features and target *(Can still be used with feature transformations like `log`, `sqrt`, or polynomial terms like $ x^2 $ )* 
 2. **Independence of residuals** *(**Cannot** remain a candidate model if the data is sequential/time-series — use ARIMA, SARIMA, or RNNs instead)*
 3. **Homoscedasticity** *(Can still be used with target transformations, Weighted Least Squares (WLS), or Robust Standard Errors)* 
 4. **Normality of residuals** *(Can still be used with large datasets (thanks to Central Limit Theorem), outlier removal, or transformations)*
