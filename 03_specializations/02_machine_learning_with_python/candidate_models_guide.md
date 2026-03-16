@@ -56,7 +56,7 @@ A good candidate for regression problems where the scatter plot reveals a **clea
 
 
 ### [Logistic Regression](../02_machine_learning_with_python/02_linear_and_logistic_regression/08_logistic_regression_theory.md)
-A good candidate for use as the **baseline model for binary classification** problems. Fast, computationally cheap, and highly interpretable — the coefficients directly reveal the direction and strength of each feature's influence on the predicted class. Ideal when you need a **reliable first threshold** before trying more complex classifiers, or when **model explainability** is a requirement (e.g., healthcare, finance). *(For 3+ classes, see Softmax Regression below, which is the multinomial generalization.)*
+A good candidate to use as the **baseline model for binary classification** problems. Fast, computationally cheap, and highly interpretable — the coefficients directly reveal the direction and strength of each feature's influence on the predicted class. Ideal when you need a **reliable first threshold** before trying more complex classifiers, or when **model explainability** is a requirement (e.g., healthcare, finance). *(For 3+ classes, see Softmax Regression below, which is the multinomial generalization.)*
 
 **Assumptions:**
 1. **Binary outcome** — target variable has exactly 2 classes *(Cannot remain a candidate model if more than 2 classes — use Softmax/Multinomial Logistic Regression, Decision Trees, etc.)*
@@ -135,7 +135,7 @@ A good candidate for **general-purpose classification and regression** when you 
 ⚠️ Trees individually assume sufficient data per split, but the ensemble **mitigates** overfitting through averaging/voting.
 
 ### [AdaBoost / Gradient Boosting (XGBoost)](./03_non-linear_and_ensemble_models/23_bias_variance_and_ensemble_models_theory.md)
-**Best for** **competition-winning accuracy** on structured/tabular data when you want to **squeeze out every last bit of performance**. XGBoost is the go-to model for Kaggle competitions and real-world production systems on tabular data. Ideal when you are willing to invest time in **hyperparameter tuning** (learning rate, number of estimators, max depth) and interpretability is secondary to predictive power. Also strong when the initial models underfit (high bias) — boosting is specifically designed to **reduce bias**.
+A good candidate for **competition-winning accuracy** on structured/tabular data when you want to **squeeze out every last bit of performance**. XGBoost is the go-to model for Kaggle competitions and real-world production systems on tabular data. Ideal when you are willing to invest time in **hyperparameter tuning** (learning rate, number of estimators, max depth) and interpretability is secondary to predictive power. Also strong when the initial models underfit (high bias) — boosting is specifically designed to **reduce bias**.
 
 **Assumptions:**
 1. **No strong assumptions** about data distribution, linearity, or feature scaling — ensemble of weak learners ✅
@@ -144,7 +144,7 @@ A good candidate for **general-purpose classification and regression** when you 
 ⚠️ **Main risk:** Can overfit if too many boosting rounds or learning rate too high *(Can still be used if/with early stopping, learning rate reduction, or regularization parameters)*
 
 ### [K-Means Clustering](./04_building_unsupervised_learning_models/02_k-means_clustering_theory.md)
-**Best for** **unsupervised partitioning** when you expect the data to form **roughly spherical, evenly-sized groups** and need a **fast, scalable** algorithm. Ideal as the **first clustering method to try** — it's simple, intuitive, and scales well to large datasets. Common use cases: customer segmentation, image compression (color quantization), and market segmentation.
+A good candidate for **unsupervised partitioning** when you expect the data to form **roughly spherical, evenly-sized groups** and need a **fast, scalable** algorithm. Ideal as the **first clustering method to try** — it's simple, intuitive, and scales well to large datasets. Common use cases: customer segmentation, image compression (color quantization), and market segmentation.
 
 **Assumptions:**
 1. **Clusters are convex (spherical/blob-shaped)** *(Cannot remain a candidate model if clusters have arbitrary shapes like crescents, spirals, or rings — use DBSCAN/HDBSCAN instead)*
@@ -154,7 +154,7 @@ A good candidate for **general-purpose classification and regression** when you 
 5. **Uses Euclidean distance** — features must be numerical and on the same scale *(Can still be used with `StandardScaler` before clustering; cannot remain a candidate model for categorical features — use K-Modes or K-Prototypes instead)*
 
 ### [DBSCAN](./04_building_unsupervised_learning_models/05_dbscan_and_hdbscan_clustering_theory.md)
-**Best for** clustering problems where clusters have **arbitrary, non-spherical shapes** (crescents, spirals, elongated blobs) and you **don't know the number of clusters** in advance. Excellent when the data contains **noise/outliers** that should be explicitly excluded rather than forced into a cluster. Common use cases: geospatial data (finding dense regions on a map), anomaly detection, and any data where cluster geometry is complex.
+A good candidate for clustering problems where clusters have **arbitrary, non-spherical shapes** (crescents, spirals, elongated blobs) and you **don't know the number of clusters** in advance. Excellent when the data contains **noise/outliers** that should be explicitly excluded rather than forced into a cluster. Common use cases: geospatial data (finding dense regions on a map), anomaly detection, and any data where cluster geometry is complex.
 
 **Assumptions:**
 1. **Clusters have approximately uniform density** *(Cannot remain a candidate model if clusters have varying densities — use HDBSCAN instead)*
@@ -163,14 +163,14 @@ A good candidate for **general-purpose classification and regression** when you 
 ✅ Does **not** assume convex shapes, does **not** need `k` pre-specified, and handles outliers natively.
 
 ### [HDBSCAN](./04_building_unsupervised_learning_models/05_dbscan_and_hdbscan_clustering_theory.md)
-**Best for** **complex, real-world clustering** where clusters have **varying densities**, arbitrary shapes, and the data contains noise. The most **robust, general-purpose density-based** clustering algorithm — essentially a "set it and forget it" upgrade over DBSCAN. Ideal when you have **no prior knowledge** about the number, shape, or density of clusters and want the algorithm to figure it out.
+A good candidate for **complex, real-world clustering** where clusters have **varying densities**, arbitrary shapes, and the data contains noise. The most **robust, general-purpose density-based** clustering algorithm — essentially a "set it and forget it" upgrade over DBSCAN. Ideal when you have **no prior knowledge** about the number, shape, or density of clusters and want the algorithm to figure it out.
 
 **Assumptions:**
 1. **Minimal assumptions** — handles varying densities, arbitrary shapes, and outliers ✅
 2. **`min_cluster_size` must be specified** *(Can still be used if/with experimenting on a range of values for this single hyperparameter)*
 
 ### [PCA](./04_building_unsupervised_learning_models/09_dimension_reduction_algorithms_theory.md)
-**Best for** **dimensionality reduction as a preprocessing step** before feeding data into another model (e.g., to combat the Curse of Dimensionality for KNN or to speed up training). Also excellent for **data visualization** (projecting high-dimensional data to 2D/3D) when relationships are linear, and for **noise reduction** by discarding low-variance components. Fast, deterministic, and well-understood.
+A good candidate for **dimensionality reduction as a preprocessing step** before feeding data into another model (e.g., to combat the Curse of Dimensionality for KNN or to speed up training). Also excellent for **data visualization** (projecting high-dimensional data to 2D/3D) when relationships are linear, and for **noise reduction** by discarding low-variance components. Fast, deterministic, and well-understood.
 
 **Assumptions:**
 1. **Features are linearly correlated** — captures only linear relationships *(Cannot remain a candidate model if the data has complex non-linear structure — use t-SNE or UMAP for visualization)*
@@ -179,7 +179,7 @@ A good candidate for **general-purpose classification and regression** when you 
 4. **Features should be numerical and continuous** — PCA on categorical or binary features is not meaningful *(Cannot remain a candidate model for categorical data — use MCA (Multiple Correspondence Analysis) instead)*
 
 ### [t-SNE](./04_building_unsupervised_learning_models/09_dimension_reduction_algorithms_theory.md)
-**Best for** **visualizing high-dimensional data in 2D/3D** when you want to reveal **local cluster structure** — e.g., seeing whether classes form distinct groups in image embeddings, word embeddings, or genomic data. Ideal for **exploratory analysis and presentations** where you need a striking, cluster-separated plot. **Not suitable** as a general-purpose dimensionality reduction step before another model (results are stochastic, slow, and don't preserve global distances).
+A good candidate for **visualizing high-dimensional data in 2D/3D** when you want to reveal **local cluster structure** — e.g., seeing whether classes form distinct groups in image embeddings, word embeddings, or genomic data. Ideal for **exploratory analysis and presentations** where you need a striking, cluster-separated plot. **Not suitable** as a general-purpose dimensionality reduction step before another model (results are stochastic, slow, and don't preserve global distances).
 
 **Assumptions:**
 1. **Local structure is more important than global structure** — inter-cluster distances in the output are often meaningless *(Cannot remain a candidate model if you need to preserve or interpret the relative distances/positions between clusters — use UMAP or PCA instead)*
@@ -188,7 +188,7 @@ A good candidate for **general-purpose classification and regression** when you 
 4. **Results are stochastic** — different runs produce different layouts *(Can still be used if/with setting a fixed `random_state` seed for reproducibility)*
 
 ### [UMAP](./04_building_unsupervised_learning_models/09_dimension_reduction_algorithms_theory.md)
-**Best for** **general-purpose non-linear dimensionality reduction** that balances **local and global structure** preservation. Superior to t-SNE in most practical scenarios: faster, more scalable, and produces layouts where the relative positions between clusters are more meaningful. Ideal for both **visualization** (2D/3D plots) and as a **preprocessing/feature-extraction step** before feeding data into a downstream model (e.g., clustering, classification). The modern default choice for non-linear dimensionality reduction.
+A good candidate for **general-purpose non-linear dimensionality reduction** that balances **local and global structure** preservation. Superior to t-SNE in most practical scenarios: faster, more scalable, and produces layouts where the relative positions between clusters are more meaningful. Ideal for both **visualization** (2D/3D plots) and as a **preprocessing/feature-extraction step** before feeding data into a downstream model (e.g., clustering, classification). The modern default choice for non-linear dimensionality reduction.
 
 **Assumptions:**
 1. **Data lies on a low-dimensional manifold** embedded in high-dimensional space *(Cannot remain a candidate model if the data has no meaningful lower-dimensional structure — the projection will be arbitrary)*
