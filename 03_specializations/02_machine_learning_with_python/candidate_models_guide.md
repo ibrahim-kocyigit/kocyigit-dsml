@@ -173,7 +173,7 @@ A good candidate for **dimensionality reduction as a preprocessing step** before
 
 **Assumptions:**
 1. **Features are linearly correlated** — captures only linear relationships. Cannot remain a candidate model if the data has complex non-linear structure — use t-SNE or UMAP for visualization.
-2. Features have the same scale** — variance-based method is dominated by large-scale features. Can still be used if/with `StandardScaler` before applying PCA.
+2. Features have the same scale — variance-based method is dominated by large-scale features. Can still be used if/with `StandardScaler` before applying PCA.
 3. **High variance = high information** — PCA equates maximum variance with most important directions. Cannot remain a candidate model if the most informative directions are not the highest-variance ones.
 4. **Features should be numerical and continuous** — PCA on categorical or binary features is not meaningful. Cannot remain a candidate model for categorical data — use MCA (Multiple Correspondence Analysis) instead.
 
