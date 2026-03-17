@@ -2,10 +2,6 @@
 
 ### A structured, end-to-end learning repository for Data Science and Machine Learning - from mathematical foundations to production deployment.
 
----
-
-## About
-
 This repository is the result of a year-long, self-directed curriculum consolidating curated Data Science and Machine Learning resources into a single, structured knowledge base. It is organized into **five pillars** that cover the full spectrum - from the math that powers the algorithms to deploying and monitoring models in production.
 
 The repository contains detailed lecture notes, Jupyter Notebooks, from-scratch Python implementations of core algorithms, hands-on labs, and reusable project templates.
@@ -17,8 +13,6 @@ The repository contains detailed lecture notes, Jupyter Notebooks, from-scratch 
 | **[Specializations](./03_specializations/)** | Statistical Modeling, Machine Learning (classical) - from inference to prediction. |
 | **[MLOps](./04_mlops/)** | Model persistence, FastAPI, Docker, cloud deployment, Streamlit dashboards, monitoring - targeted at freelance data science projects. |
 | **[Methodology](./05_methodology/)** | A 10-stage project lifecycle framework based on the Foundational Methodology for Data Science by **John B. Rollins**. |
-
----
 
 ## Table of Contents
 
@@ -60,8 +54,6 @@ The repository contains detailed lecture notes, Jupyter Notebooks, from-scratch 
 9. [Deployment](./05_methodology/09_deployment.md)
 10. [Feedback](./05_methodology/10_feedback.md)
 
----
-
 ## Highlights
 
 - 📐 **From-scratch implementations** of core ML algorithms (AdaBoost, PCA, KNN, Naive Bayes, and more) in pure NumPy - theory notes paired with code.
@@ -69,8 +61,6 @@ The repository contains detailed lecture notes, Jupyter Notebooks, from-scratch 
 - 🚀 **Full MLOps pipeline**: a single Iris classification model carried from a Jupyter Notebook through a FastAPI service, Docker container, cloud deployment (Railway + GitHub Actions CI/CD), Streamlit dashboard, and monitoring setup.
 - 📘 **10-stage project methodology** with reusable templates, checklists, and decision frameworks for freelance data science work.
 - 📄 **Cheat sheets** included — quick-reference PDFs for key concepts for each pillar.
-
----
 
 ## Getting Started
 
@@ -83,13 +73,9 @@ cd kocyigit-dsml
 uv sync
 ```
 
----
-
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
-
----
 
 ## What's Next?
 - **In Progress:** I've started applying the consolidated knowledge from this repository to [YouTube tutorials](https://www.youtube.com/@ibrahim-kocyigit). Feel free to check my channel!
