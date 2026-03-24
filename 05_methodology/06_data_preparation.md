@@ -1,8 +1,8 @@
 # Stage 6: Data Preparation
 
-_"This stage encompasses all activities to construct the data set that will be used in the subsequent modeling stage. Data preparation activities include data cleaning (dealing with missing or invalid values, eliminating duplicates, formatting properly), combining data from multiple sources (files, tables, platforms) and transforming data into more useful variables._
+_"This stage encompasses all activities to construct the data set that will be used in the subsequent modeling stage. Data preparation activities include data cleaning (dealing with missing or invalid data) and combining data from multiple data sources."_ — John B. Rollins
 
-_"In a process called feature engineering, data scientists can create additional explanatory variables, also referred to as predictors or features, through a combination of domain knowledge and existing structured variables... Data preparation is usually the most time-consuming step in a data science project."_ — **John B. Rollins**
+_"In a process called feature engineering, data scientists can create additional explanatory variables, also referred to as predictors or features, through a combination of domain knowledge and existing variables."_ — John B. Rollins
 
 ---
 
@@ -10,82 +10,80 @@ _"In a process called feature engineering, data scientists can create additional
 
 This is the bridge between *understanding* data and *modeling* it. Every data quality issue and pattern discovered in [Stage 5](./05_data_understanding.md) is now acted upon.
 
-The output of this stage is a **model-ready dataset** — clean, engineered, encoded, split, and scaled — saved to `/data/processed/` and ready to be fed directly into the [candidate models from Stage 2](./02_analytic_approach.md).
+The output of this stage is a **split, cleaned, and feature-engineered dataset** — saved to `/data/processed/` as `train_df` and `test_df`. These DataFrames contain all columns (features + target) so that [Stage 7: Modeling](./07_modeling.md) has full flexibility to select features, encode, and scale differently per model using scikit-learn Pipelines.
 
-> 💡 **Freelancer's note:** Rollins is right — this is usually the most time-consuming stage. In a typical freelance project, data preparation takes 60–80% of the total effort. Don't rush it. The quality of your model is bounded by the quality of the data you feed it.
+**What belongs in this stage (safe before the split or applied using domain rules only):**
+
+- Removing impossible values (domain-rule-based)
+- Handling missing values via domain logic (not statistical imputation)
+- Feature engineering (creating new columns from existing ones)
+- Dropping useless columns (constants, IDs, leaky features)
+- Train/test split
+- Flagging statistical imputation, encoding, and scaling decisions — but **not executing them**
+
+**What does NOT belong in this stage (moves to [Stage 7](./07_modeling.md) inside Pipelines):**
+
+- Statistical imputation (mean, median, mode) — uses data-derived statistics
+- Outlier capping/winsorization (percentile-based) — uses data-derived thresholds
+- Encoding categorical variables (one-hot, ordinal, target) — different models need different encodings
+- Feature scaling (standard, minmax, robust) — different models need different scaling
+- X/y separation — different models may use different feature subsets
+
+> 💡 **Why this separation?** Different candidate models have different preprocessing requirements. Tree-based models (Random Forest, XGBoost) don't need scaling but work well with ordinal encoding. Linear models (Logistic Regression, Ridge) need scaling and one-hot encoding. By deferring these steps to Stage 7, each model gets a tailored Pipeline — and there's zero risk of data leakage from fitting statistics on the test set.
+
+> 💡 **Freelancer's note:** Rollins is right — data preparation is usually the most time-consuming stage. In a typical freelance project, it takes 60–80% of the total effort. Don't rush it. The quality of your preparation directly determines the quality of your models.
 
 ---
 
-## Step 1: Handle Missing Values
+## Step 1: Handle Impossible Values & Domain-Rule Cleaning
 
-Address the missing value issues identified in [Stage 5, Step 2](./05_data_understanding.md). The strategy depends on *why* data is missing and *how much* is missing.
+Address data quality issues that can be resolved using **domain knowledge alone** — no data-derived statistics needed. These are safe to apply before the train/test split because the rules come from business logic, not from the data itself.
 
 **Actions:**
-- For each column with missing values, apply the strategy you planned in Stage 5.
+- Remove or nullify values that are impossible according to domain rules.
+- Handle missing values where a clear business rule exists.
 - Document every decision and its justification.
 
-**Common Strategies:**
+**What's safe here (domain-rule-based):**
 
-| Strategy | When to Use | Example |
+| Action | Example | Why It's Safe |
 | :--- | :--- | :--- |
-| **Drop rows** | Very few missing values (< 1%), random | `df.dropna(subset=['monthly_spend'])` |
-| **Drop column** | > 50% missing, no good imputation strategy | `df.drop(columns=['rarely_tracked_field'])` |
-| **Impute with median** | Numerical, skewed distribution | `df['income'].fillna(df['income'].median())` |
-| **Impute with mean** | Numerical, roughly normal distribution | `df['age'].fillna(df['age'].mean())` |
-| **Impute with mode** | Categorical | `df['plan_type'].fillna(df['plan_type'].mode()[0])` |
-| **Impute with domain logic** | Business rule applies | `last_login` → fill with `signup_date` for pre-2024 users |
-| **Flag + impute** | Missingness itself is informative | Create `has_login_date` (0/1), then impute the column |
+| **Nullify impossible values** | `age = -5` → `NaN`, `rating = 11` (scale 1–10) → `NaN` | Uses domain knowledge, not data statistics |
+| **Impute with domain logic** | `last_login` → fill with `signup_date` for pre-2024 users | Business rule, not statistical |
+| **Fill known defaults** | `country` is `NaN` for a dataset that's all German customers → `"DE"` | Domain knowledge |
+| **Flag + nullify** | Create `has_login_date` (0/1), then set original to `NaN` if missing | The flag is a domain-based binary indicator |
+| **Drop clearly useless rows** | Rows where the target variable is `NaN` and cannot be derived | Can't train on these regardless |
 
-> ⚠️ **Data leakage warning:** If you impute with mean/median, compute the statistic on the **training set only** and apply it to both train and test. Best handled inside a scikit-learn Pipeline (see Step 5).
+**What is NOT safe here (defer to Stage 7 Pipelines):**
+
+| Action | Example | Why It Must Wait |
+| :--- | :--- | :--- |
+| **Impute with mean/median/mode** | `monthly_spend` → fill with median | Median is a data-derived statistic — must be computed on training set only |
+| **Cap outliers at percentiles** | Cap at 1st/99th percentile | Percentiles are data-derived — must be computed on training set only |
+| **Replace outliers with mean** | `monthly_spend` outliers → replace with mean | Mean is data-derived |
 
 ```markdown
-## Missing Value Handling
-| Column | Missing % | Strategy | Justification |
+## Domain-Rule Cleaning
+| Column | Issue | Action | Justification |
 | :--- | :--- | :--- | :--- |
-| [column] | [%] | [Strategy] | [Why this strategy was chosen] |
+| [column] | [What was wrong] | [What you did] | [Why — domain rule used] |
 
 Example:
-| monthly_spend | 0.4% | Drop rows | Very few missing, random pattern |
-| last_login_date | 30% | Flag + impute with signup_date | Systematic — pre-2024 users lack tracking |
-| city | 2% | Impute with mode ("Munich") | Most common value, low missingness |
+| age | 3 values < 0 | Set to NaN | Age cannot be negative — data entry error |
+| last_login_date | 30% missing (pre-2024 users) | Filled with signup_date | Business rule: pre-2024 users lack tracking, signup_date is the best proxy |
+| monthly_spend | 0.4% missing, random | Left as NaN | No domain rule applies — will be imputed statistically in Stage 7 Pipeline |
+| rating | 5 values > 10 | Set to NaN | Scale is 1–10, values above are entry errors |
 ```
+
+> ⚠️ **Key principle:** If the fix requires computing a statistic from the data (mean, median, percentile, mode, frequency), it does **not** belong here. It belongs inside a scikit-learn Pipeline in [Stage 7](./07_modeling.md), where it will be fit on the training set only.
 
 ---
 
-## Step 2: Handle Outliers
-
-Address the outlier issues identified in [Stage 5](./05_data_understanding.md). Not all outliers need to be removed — some are legitimate data points.
-
-**Actions:**
-- For each column with flagged outliers, decide: keep, cap, or remove.
-- Document the decision and its business justification.
-
-**Common Strategies:**
-
-| Strategy | When to Use | Example |
-| :--- | :--- | :--- |
-| **Keep** | Outliers are real and informative | High-value customers — they're just wealthy |
-| **Cap (winsorize)** | Extreme values distort the model but the direction matters | Cap at 1st/99th percentile |
-| **Remove** | Clear data entry errors | `age = 200`, `price = -50` |
-| **Log-transform** | Right-skewed distribution with a long tail | `df['income'] = np.log1p(df['income'])` |
-
-```markdown
-## Outlier Handling
-| Column | Outlier Description | Strategy | Justification |
-| :--- | :--- | :--- | :--- |
-| [column] | [What was flagged] | [Strategy] | [Why] |
-
-Example:
-| monthly_spend | 12 values > $10,000 | Keep | Legitimate high-value Enterprise customers |
-| age | 3 values > 120 | Remove | Clear data entry errors |
-| sale_price | Heavy right skew | Log-transform | Normalizes the distribution for regression |
-```
-
----
-
-## Step 3: Feature Engineering
+## Step 2: Feature Engineering
 
 Create new features that capture information the raw columns don't directly express. This is where domain knowledge meets data — and where the best models are often won.
+
+Feature engineering is safe before the split because you're creating **deterministic transformations** — each row's new value depends only on that row's own data, not on aggregate statistics from other rows.
 
 **Actions:**
 - Create new features based on patterns discovered in [Stage 5](./05_data_understanding.md).
@@ -113,148 +111,174 @@ Example:
 | tenure_months | (observation_date - signup_date).days / 30 | EDA showed strong correlation with churn |
 | ticket_rate | support_tickets / tenure_months | Normalizes ticket count by customer age |
 | is_weekend | order_day_of_week in (Sat, Sun) | EDA showed higher churn for weekend signups |
-| log_income | np.log1p(income) | Normalizes the heavy right skew |
 ```
+
+> ⚠️ **Note on log-transforms:** A simple `np.log1p(income)` applied row-by-row is safe before the split — it doesn't use any aggregate statistics. However, if you're applying a `PowerTransformer` (which fits parameters from data), that must go inside a Stage 7 Pipeline.
 
 ---
 
-## Step 4: Encode Categorical Variables
+## Step 3: Drop Useless Columns
 
-Machine learning models require numerical input. Convert all categorical columns to numbers.
+Remove columns that provide no predictive value or would cause problems in modeling.
 
 **Actions:**
-- Choose the right encoding strategy per column.
-- Be aware of the cardinality and ordinality of each categorical feature.
+- Drop columns identified as useless in [Stage 5](./05_data_understanding.md).
+- Drop ID columns, constant columns, and any columns that leak the target.
 
-**Encoding Reference:**
+**What to drop:**
 
-| Encoding | When to Use | Method | Notes |
-| :--- | :--- | :--- | :--- |
-| **Label Encoding** | Ordinal categories (natural order) | `OrdinalEncoder` | e.g., Low < Medium < High |
-| **One-Hot Encoding** | Nominal categories, low cardinality | `OneHotEncoder` / `pd.get_dummies()` | e.g., plan_type: Basic, Premium, Enterprise |
-| **Target Encoding** | High cardinality (many unique values) | `TargetEncoder` | e.g., city (342 unique values) — encode as mean target per city |
-| **Binary Encoding** | Binary categories | Map to 0/1 | e.g., is_active: Yes → 1, No → 0 |
-| **Frequency Encoding** | When frequency itself is informative | `value_counts()` mapping | e.g., rare categories get low values |
+| Reason | Example | How to Identify |
+| :--- | :--- | :--- |
+| **ID columns** | `customer_id`, `row_index` | Unique per row, no predictive value |
+| **Constant columns** | `country` = "DE" for all rows | `df.nunique() == 1` |
+| **Near-constant columns** | A column where 99.9% of values are the same | `df[col].value_counts(normalize=True).iloc[0] > 0.999` |
+| **Target leakage** | `cancellation_date` when predicting churn | Directly reveals the target — would not exist at prediction time |
+| **High missing (no fix)** | Column with 80% missing and no imputation strategy | Discussed in Stage 5 |
+| **Redundant after engineering** | `signup_date` after creating `tenure_months` | Original no longer needed |
 
 ```markdown
-## Categorical Encoding
-| Column | Cardinality | Encoding | Notes |
-| :--- | :--- | :--- | :--- |
-| [column] | [unique values] | [Method] | [Any notes] |
+## Dropped Columns
+| Column | Reason |
+| :--- | :--- |
+| [column] | [Why it was dropped] |
 
 Example:
-| plan_type | 3 | One-Hot | Basic, Premium, Enterprise |
-| city | 342 | Target Encoding | Too many categories for one-hot |
-| risk_level | 3 (ordered) | Ordinal | Low=0, Medium=1, High=2 |
-| is_active | 2 | Binary | Yes=1, No=0 |
+| customer_id | ID column — no predictive value (saved separately for joining results) |
+| country | Constant — all values are "DE" |
+| cancellation_date | Target leakage — directly reveals churn status |
+| signup_date | Redundant — replaced by tenure_months |
 ```
 
-> 📚 **Reference:** See [Machine Learning with Python — Introduction](../03_specializations/02_machine_learning_with_python/01_introduction_to_machine_learning/) for encoding strategies in the scikit-learn workflow.
+> 💡 **Tip:** If you need `customer_id` later (e.g., to join predictions back to customer records), save it separately before dropping it from the modeling dataset.
 
 ---
 
-## Step 5: Train/Test Split
+## Step 4: Train/Test Split
 
-Separate the data into training and testing sets **before** any scaling or transformation that could leak test-set information into the training process.
+Separate the data into training and testing sets. This is done **before** any statistical preprocessing (imputation, encoding, scaling) to prevent data leakage.
 
 **Actions:**
-- Define `X` (feature matrix) and `y` (target vector).
 - Apply the split strategy defined in [Stage 2](./02_analytic_approach.md).
+- Keep both splits as **complete DataFrames** (`train_df`, `test_df`) — do not separate into X/y yet.
 - Verify the split is correct (shapes, class proportions if stratified).
+
+**Why `train_df` / `test_df` instead of `X_train` / `X_test` / `y_train` / `y_test`?**
+
+In [Stage 7](./07_modeling.md), different candidate models may use:
+- Different feature subsets
+- Different encoding strategies (one-hot for linear models, ordinal for trees)
+- Different scaling (StandardScaler for Logistic Regression, none for XGBoost)
+
+Keeping complete DataFrames gives Stage 7 full flexibility to define X and y per model.
 
 ```markdown
 ## Train/Test Split
-* **Features (X):** [List final columns]
-  Example: "tenure_months, monthly_spend, plan_type_Premium, plan_type_Enterprise,
-  ticket_rate, is_weekend"
-
-* **Target (y):** [Column name]
-  Example: "churned"
-
 * **Split Strategy:** [From Stage 2]
   Example: "80/20 stratified split (random_state=42)"
+  Example: "Time-based split — train on data before 2025-01, test on 2025-01 onward."
 
 * **Shapes:**
-  - X_train: [rows, cols]
-  - X_test:  [rows, cols]
-  - y_train: [rows]
-  - y_test:  [rows]
+  - train_df: [rows × cols]
+  - test_df:  [rows × cols]
 
 * **Class Distribution (if classification):**
   - Train: [class 0: X%, class 1: Y%]
   - Test:  [class 0: X%, class 1: Y%]
+
+* **Target Column:** [Name — still present in both DataFrames]
+  Example: "churned"
 ```
 
-> ⚠️ **Critical rule:** Everything after this step — scaling, encoding fit, imputation fit — is computed on `X_train` only and applied to both `X_train` and `X_test`. This prevents data leakage.
+> ⚠️ **Critical rule:** Everything after this step — statistical imputation, outlier capping, encoding, scaling — must be computed on `train_df` only and applied to both `train_df` and `test_df`. This is handled inside scikit-learn Pipelines in [Stage 7](./07_modeling.md).
 
 ---
 
-## Step 6: Feature Scaling & Final Preprocessing
+## Step 5: Plan Preprocessing for Stage 7
 
-Apply scaling and transformations to the numerical features. Fit on training data only.
+You won't execute these steps here, but documenting the plan now — based on your [Stage 5 EDA findings](./05_data_understanding.md) — ensures a smooth transition to modeling.
 
 **Actions:**
-- Choose the scaler based on EDA findings from [Stage 5](./05_data_understanding.md).
-- Fit on `X_train`, transform both `X_train` and `X_test`.
-- Consider building a **scikit-learn Pipeline** to bundle all preprocessing steps for reproducibility and deployment.
+- For each column that still needs statistical preprocessing, document the planned strategy.
+- Note which strategies differ by model type.
 
-**Scaler Selection Guide:**
+### Missing Values (Statistical Imputation)
 
-| Scaler | When to Use | Behavior |
+| Column | Missing % | Planned Strategy | Notes |
+| :--- | :--- | :--- | :--- |
+| [column] | [%] | [mean / median / mode / KNN / etc.] | [Will be inside Pipeline] |
+| monthly_spend | 0.4% (after domain cleaning) | Median imputation | Skewed distribution — median is more robust |
+| city | 2% | Mode imputation | Most common value |
+
+### Outlier Handling (Data-Derived)
+
+| Column | Outlier Description | Planned Strategy | Notes |
+| :--- | :--- | :--- | :--- |
+| [column] | [What was flagged] | [Cap / Winsorize / Log-transform via PowerTransformer] | [Will be inside Pipeline] |
+| monthly_spend | 12 values > $10,000 | Keep for tree models, cap at 99th percentile for linear models | Strategy differs by model type |
+| sale_price | Heavy right skew | PowerTransformer (Yeo-Johnson) for linear models | Trees handle skew naturally |
+
+> ⚠️ **Note on outlier handling:** Capping at a percentile, replacing with mean/median, or fitting a PowerTransformer all use data-derived statistics. These **must** be fit on the training set only, inside a Pipeline. Removing obvious errors (e.g., `age = -5` → NaN) was already handled in Step 1 using domain rules.
+
+### Encoding
+
+| Column | Cardinality | Planned Encoding | Notes |
+| :--- | :--- | :--- | :--- |
+| [column] | [unique values] | [One-Hot / Ordinal / Target / Binary] | [May differ by model] |
+| plan_type | 3 | One-Hot for linear models, Ordinal for trees | Different models, different encodings |
+| city | 342 | Target Encoding for all models | Too many categories for one-hot |
+| risk_level | 3 (ordered) | Ordinal for all models | Natural order: Low=0, Medium=1, High=2 |
+
+### Scaling
+
+| Scaler | When to Use | Planned For |
 | :--- | :--- | :--- |
-| `StandardScaler` | Features are roughly normal | Centers to mean=0, std=1 |
-| `MinMaxScaler` | Need bounded range [0, 1] | Scales to min=0, max=1 |
-| `RobustScaler` | Features have significant outliers | Uses median and IQR — robust to outliers |
-| `PowerTransformer` | Heavily skewed features | Maps to approximately normal distribution |
+| `StandardScaler` | Features roughly normal | Logistic Regression, SVM, KNN |
+| `RobustScaler` | Features have outliers | Linear models when outliers are kept |
+| None | Tree-based models | Random Forest, XGBoost |
 
-> 📚 **Reference:** See [Model Persistence — Pickle and Joblib](../04_mlops/01_model_persistence/) for why saving the full Pipeline (preprocessing + model) is critical for deployment.
+> 📚 **Reference:** All of these preprocessing steps will be implemented inside scikit-learn Pipelines in [Stage 7: Modeling](./07_modeling.md). See [Machine Learning with Python — Introduction](../03_specializations/02_machine_learning_with_python/01_introduction_to_machine_learning/) for Pipeline construction.
 
 ```markdown
-## Preprocessing Log
-* **Scaler:** [Which scaler and why]
-  Example: "StandardScaler — features are roughly normal, no extreme outliers after
-  handling in Step 2."
-
-* **Pipeline:** [Whether a scikit-learn Pipeline was used]
-  Example: "Built a Pipeline: OrdinalEncoder → StandardScaler → LogisticRegression.
-  This ensures all preprocessing is reproducible and portable."
-
-* **Data Leakage Check:**
-  - [ ] Scaler was fit on X_train only
-  - [ ] Encoder was fit on X_train only
-  - [ ] Imputer was fit on X_train only (if applicable)
-  - [ ] X_test was only transformed, never fit
+## Preprocessing Plan for Stage 7
+* **Statistical Imputation Needed:** [List columns and strategies]
+* **Outlier Capping Needed:** [List columns and strategies — note model-specific differences]
+* **Encoding Needed:** [List columns and strategies — note model-specific differences]
+* **Scaling Needed:** [Which scaler for which model type]
+* **All above will be implemented inside scikit-learn Pipelines in Stage 7.**
 ```
 
 ---
 
-## Step 7: Save Processed Data & Document
+## Step 6: Save Processed Data & Document
 
-Save the final model-ready datasets and document every transformation for reproducibility.
+Save the train and test DataFrames and document every transformation for reproducibility.
 
 **Actions:**
-- Save `X_train`, `X_test`, `y_train`, `y_test` to `/data/processed/`.
-- If using a Pipeline, save the fitted Pipeline object (for later use in [Deployment](./09_deployment.md)).
-- Document the full transformation chain.
+- Save `train_df` and `test_df` to `/data/processed/`.
+- Document the full transformation chain from this stage.
 
 ```markdown
 ## Final Output
 * **Processed Data Location:** /data/processed/
 * **Files:**
-  - X_train: /data/processed/X_train.parquet
-  - X_test:  /data/processed/X_test.parquet
-  - y_train: /data/processed/y_train.parquet
-  - y_test:  /data/processed/y_test.parquet
+  - train_df: /data/processed/train.parquet
+  - test_df:  /data/processed/test.parquet
 
-* **Final Shape:** X_train [rows × cols], X_test [rows × cols]
+* **Final Shape:** train_df [rows × cols], test_df [rows × cols]
+* **Target Column:** [Name — present in both files]
 
-* **Transformation Summary:**
-  1. Missing values: [handled per Step 1 log]
-  2. Outliers: [handled per Step 2 log]
-  3. Engineered features: [list from Step 3]
-  4. Encoding: [per Step 4 log]
-  5. Split: [per Step 5]
-  6. Scaling: [per Step 6]
+* **Transformation Summary (this stage only):**
+  1. Domain-rule cleaning: [per Step 1 log]
+  2. Engineered features: [list from Step 2]
+  3. Dropped columns: [list from Step 3]
+  4. Train/test split: [per Step 4]
+
+* **Deferred to Stage 7 (inside Pipelines):**
+  - Statistical imputation (mean/median/mode)
+  - Outlier capping (percentile-based)
+  - Categorical encoding (one-hot, ordinal, target)
+  - Feature scaling (standard, minmax, robust)
+  - X/y separation (per model's feature set)
 ```
 
 ---
@@ -263,16 +287,16 @@ Save the final model-ready datasets and document every transformation for reprod
 
 Before moving to [Stage 7: Modeling](./07_modeling.md), confirm:
 
-- [ ] All missing values are handled with documented justification.
-- [ ] Outliers are addressed (kept, capped, removed, or transformed).
+- [ ] Impossible values are removed using domain rules (not data-derived statistics).
+- [ ] Missing values with clear domain-rule fixes are handled.
 - [ ] Engineered features are created and justified.
-- [ ] All categorical variables are encoded numerically.
-- [ ] Train/test split is performed before any scaling.
-- [ ] Scaling is fit on X_train only and applied to both X_train and X_test.
-- [ ] No data leakage exists in the preprocessing pipeline.
-- [ ] Processed data is saved to `/data/processed/`.
+- [ ] Useless columns are dropped (IDs, constants, leaky features).
+- [ ] Train/test split is performed — both saved as complete DataFrames.
+- [ ] Statistical preprocessing (imputation, capping, encoding, scaling) is **planned but not executed** — deferred to Stage 7 Pipelines.
+- [ ] No data leakage exists in any transformation applied before the split.
+- [ ] Processed data is saved to `/data/processed/` as `train.parquet` and `test.parquet`.
 - [ ] Every transformation is documented and reproducible.
 
 ---
 
-**Next:** [Modeling](./07_modeling.md) — Training the candidate models on the prepared data.
+**Next:** [Modeling](./07_modeling.md) — Building per-model Pipelines and training the candidate models on the prepared data.
