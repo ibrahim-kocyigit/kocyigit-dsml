@@ -32,7 +32,7 @@ Each stage is documented in its own file within this folder. These files serve a
 | **[3. Data Requirements](./03_data_requirements.md)** | Specify exactly what data is needed — target variable, fields, sources, formats, privacy constraints. | Data shopping list, target variable definition, privacy review |
 | **[4. Data Collection](./04_data_collection.md)** | Acquire the data using an ELT process: Extract → Load (raw) → Transform → Load (interim). | `/data/raw/` (untouched), `/data/interim/` (standardized), gap assessment |
 | **[5. Data Understanding](./05_data_understanding.md)** | Explore the data through EDA — descriptive statistics, distributions, correlations, missing values, outliers. | EDA summary with data quality issues and planned actions for Stage 6 |
-| **[6. Data Preparation](./06_data_preparation.md)** | Clean, engineer, encode, split, and scale the data into a model-ready format. | `/data/processed/` (X_train, X_test, y_train, y_test), full transformation log |
+| **[6. Data Preparation](./06_data_preparation.md)** | Clean, engineer, and split the data into a pipeline-ready format. | `/data/processed/` (train_df, test_df), full transformation log |
 
 ### Stages 7–8: Build and Evaluate the Model
 
