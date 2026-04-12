@@ -353,6 +353,4 @@ src/
 * **`in_memory_prediction_repository.py` lives in `adapters/outbound/`, not in `tests/`:**
 It's a legitimate adapter, a full implementation of the port contract. It happens to be useful for testing, but it could also serve as the persistence mechanism during early development or in a demo environment. Its placement in `adapters/` reflects this: it's a real component, not a test-only artifact.
 
----
 
-**Previous:** [Domain — The Inside of the Hexagon](./01_domain.md)
