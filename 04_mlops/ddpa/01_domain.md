@@ -1,5 +1,4 @@
-# The Domain Layer
-## Inside of the Hexagon
+# The Domain Layer: Inside of the Hexagon
 
 In Ports & Adapters (P&A) - also known as **Hexagonal Architecture** - the domain is **the entire inside of the hexagon:** the core application logic that the architecture exists to protect. The domain defines its own **ports** (interfaces it needs or offers), and everything outside (databases, web frameworks, Machine Learning serving infrastructure) connects through **adapters** that plug into those ports.
 
