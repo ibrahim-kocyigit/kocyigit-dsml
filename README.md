@@ -11,7 +11,7 @@ The repository contains detailed lecture notes, Jupyter Notebooks, from-scratch 
 | **[Math](./01_math/)** | High School Math, Linear Algebra, Calculus, Probability & Statistics - the mathematical foundations of DS and ML. |
 | **[Toolkit](./02_toolkit/)** | Python for Data Science, NumPy, Pandas, Matplotlib, Seaborn - the hands-on libraries for data work. |
 | **[Specializations](./03_specializations/)** | Statistical Modeling, Machine Learning (classical) - from inference to prediction. |
-| **[MLOps](./04_mlops/)** | Model persistence, FastAPI, Docker, cloud deployment, Streamlit dashboards, monitoring - targeted at freelance data science projects. |
+| **[MLOps](./04_mlops/)** | Model persistence, FastAPI, Docker, cloud deployment, Streamlit dashboards, monitoring, and architecture - targeted at freelance data science projects. |
 | **[Methodology](./05_methodology/)** | A 10-stage project lifecycle framework based on the Foundational Methodology for Data Science by **John B. Rollins**. |
 
 ## Table of Contents
@@ -41,6 +41,7 @@ The repository contains detailed lecture notes, Jupyter Notebooks, from-scratch 
 4. [Cloud Deployment](./04_mlops/04_cloud_deployment/) 
 5. [Interactive Dashboards](./04_mlops/05_interactive_dashboards/) 
 6. [Monitoring & Maintenance](./04_mlops/06_monitoring_and_maintenance/) 
+7. [Architecture](./04_mlops/07_architecture/)
 
 ### 5. Methodology
 1. [Business Understanding](./05_methodology/01_business_understanding.md) 
