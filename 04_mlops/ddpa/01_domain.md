@@ -11,7 +11,7 @@ Based on business understanding and solution requirements, we identify the core 
 * **Entities:** Objects defined by their identity, which persists even as their attributes change.
 * **Value Objects:** Immutable objects defined entirely by their attributes. They require no unique identification, and two value objects with identical attributes are considered the same. They increase domain expressiveness while reducing complexity.
 * **Domain Services:** Stateless operations that don't naturally belong to a single entity or value object. They handle domain logic that spans multiple objects. Not every domain needs them, but they become essential when business rules involve the coordination of several domain objects.
-* **Application Services:** Orchestrators that coordinate domain objects and ports to fulfill user-facing tasks. They contain no business logic themselves, they sequence operations. In P&A, they live inside the hexagon alongside domain objects, rather than in a separate arhitectural layer.
+* **Application Services:** Orchestrators that coordinate domain objects and ports to fulfill user-facing tasks. They contain no business logic themselves, they sequence operations. In P&A, they live inside the hexagon alongside domain objects, rather than in a separate architectural layer.
 * **Ports:** Abstract interfaces that define the hexagon's boundary: what the domain *needs* from the outside world (domain ports) and what it *offers* to the outside world (driving ports). Ports are owned by the domain; adapters implement them.
 
 > 📌 **Bounded Context** is another key concept of the Domain layer. Bounded contexts are self-contained areas of the model with clear boundaries. Each bounded context has its own ubiquitous language and model, allowing for better modularity and separation of concerns.
@@ -100,14 +100,14 @@ class Prediction(Entity):
         self.expert_correction = correction
 
     @property
-    was_correct(self) -> bool | None:
+    def was_correct(self) -> bool | None:
     if not self.reviewed:
         return None
     return self.expert_correction is None
 
     @property 
     def final_classification(self) -> SpeciesClassification:
-        is self.expert_correction is not None:
+        if self.expert_correction is not None:
             return self.expert_correction
         return self.classification
 ```
@@ -241,7 +241,7 @@ class SpeciesClassification:
 
 Many domain rules can be encapsulated within entities and value objects, but some rules span multiple entities or don't naturally fit within a single one. These are implemented as **Domain Services**, stateless operations that contain business logic involving multiple domain objects.
 
-In our system, the quality monitoring requirement from the business is a natural Domain Service: *"NovaCure wants the ability to periodically review prediction accuracy"* and *"it is far worse to send non-versicolor flowers into the drug pipeline tha to lose some versicolor flowers."*
+In our system, the quality monitoring requirement from the business is a natural Domain Service: *"NovaCure wants the ability to periodically review prediction accuracy"* and *"it is far worse to send non-versicolor flowers into the drug pipeline than to lose some versicolor flowers."*
 
 ```python
 # --- domain/services/quality_service.py
@@ -258,15 +258,15 @@ class QualityService:
     """
 
     @staticmethod
-    def compute_versicolor_presicion(predictions: list[Prediction]) -> float | None:
+    def compute_versicolor_precision(predictions: list[Prediction]) -> float | None:
         reviewed = [p for p in predictions if p.reviewed]
         predicted_versicolors = [
             p for p in reviewed if p.classification.is_versicolor
         ]
-        if not predicted_versicolor:
+        if not predicted_versicolors:
             return None
-        correct = sum(1 for p in predicted_versicolor if p.was_correct)
-        return correct / len(predicted_versicolor)
+        correct = sum(1 for p in predicted_versicolors if p.was_correct)
+        return correct / len(predicted_versicolors)
     
     @staticmethod
     def has_acceptable_quality(
@@ -296,7 +296,7 @@ Think of an Application Service as a director: it knows what needs to happen and
 
 Ports are **abstract interfaces defined by the domain** that declare capabilities the domain needs but does not implement. They are the mechanisms that keeps the domain independent of all external concerns (databases, ML frameworks, APIs, file systems).
 
-In P&A, there are two kings of ports:
+In P&A, there are two kinds of ports:
 
 * **Driven ports** (also called **outbound ports** or **secondary ports**): interfaces for capabilities the domain *needs from* the outside world. "I need to persist a prediction." "I need to classify a flower." The domain defines the contract; an adapter outside the hexagon fulfills it.
 * **Driving ports** (also called **inbound ports** or **primary ports**): interfaces that the outside world uses *to interact with* the domain. "I want to submit a classification request." "I want to review a prediction." In practice, in Python, the Application Services themselves often serve as the driving port - they are the public API of the hexagon. An explicit driving port interface is optional but can be useful for documentation or when multiple adapters (REST API, CLI, message queue) need a shared contract.
@@ -352,7 +352,7 @@ class PredictionRepository(ABC):
         pass
 
     @abstractmethod
-    def get_prediction_since(self, since: datetime) -> list[Prediction]:
+    def get_predictions_since(self, since: datetime) -> list[Prediction]:
         """Retrieve predictions created after the given timestamp.
 
         Used by the equality review process to pull recent predictions 
@@ -471,7 +471,7 @@ class ReviewService:
         }
 ```
 
-* **`review_prediction` delegates all logic to the entity:** The service fetches, tells the entity to do its thing, and saves. The invariant enforcement (can't review twice) is `Predicion`'s responsibility, not the service's.
+* **`review_prediction` delegates all logic to the entity:** The service fetches, tells the entity to do its thing, and saves. The invariant enforcement (can't review twice) is `Prediction`'s responsibility, not the service's.
 * **`get_quality_report` composes domain objects and domain services:** It uses `PredictionRepository` (a port) to fetch data, then delegates the business-rule evaluation to `QualityService` (a domain service). The Application Service itself just assembles the pieces - it doesn't contain the precision formula or the quality threshold.
 
 > #### ⚠️ Application Services vs. Domain Services
@@ -479,7 +479,7 @@ class ReviewService:
 > * **Domain Services** contain *business rules* that span multiple domain objects. `QualityService` encodes what "acceptable versicolor precision" means - that's a business rule.
 > * **Application Services** contain *workflow orchestration*. They sequence calls to domain objects and ports to fulfill a user-facing task. `ClassificationService.classify_flower` doesn't devide *how* to classify or *what* a valid classification is - it just coordinates the objects that do.
 >
-> If you're unsure where a piece of logic belongs, ask: "Would this logic exist even if we had no users, no API, no interface at all?" If yes, it's domain logib. If no - if it only makes sense as a response to a user action - it's application orchestraion.
+> If you're unsure where a piece of logic belongs, ask: "Would this logic exist even if we had no users, no API, no interface at all?" If yes, it's domain logic. If no - if it only makes sense as a response to a user action - it's application orchestration.
 
 ## Ensuring Domain Independence
 
