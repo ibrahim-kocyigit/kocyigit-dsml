@@ -1,6 +1,6 @@
 # Monitoring and Maintenance
 
-## Keeping Your Model Healthy
+## Keeping Your Model Healthy
 
 Deploying a model is not the end of the story, it's the beginning. A model that worked perfectly on day one can silently degrade over weeks and months. The real world changes: user behavior shifts, data distributions evolve, and the patterns the model learned become stale.
 
