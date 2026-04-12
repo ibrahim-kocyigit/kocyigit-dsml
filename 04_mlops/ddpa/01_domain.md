@@ -738,7 +738,7 @@ domain/
 │                                  # PredictionAlreadyReviewedError, InvalidMeasurementError
 │
 ├── objects/
-���   ├── entity.py                  # Base Entity class
+│   ├── entity.py                  # Base Entity class
 │   ├── prediction.py              # Prediction (Entity)
 │   ├── flower_measurement.py      # FlowerMeasurement (Value Object)
 │   └── species_classification.py  # SpeciesClassification, IrisSpecies (Value Object, Enum)
