@@ -7,31 +7,22 @@ The hexagon never reaches outward. It declares what it needs (ports), and adapte
 * The domain has **zero knowledge** of which adapters are connected. It doesn't know whether predictions are stored in PostgreSQL or a CSV file, whether classifications come from scikit-learn or a remote model server, whether requests arrive over HTTP or from a CLI.
 
 * Adapters can be **swapped, added, or removed** without touching domain code. Migrating from SQLite to PostgreSQL, or adding a CLI alongside the REST API, is an adapter-level change only.
+
 * Each adapter has **exactly one job**: translate between the outside world's language and the domain's language. A REST adapter translates JSON into domain objects and domain objects back into JSON. A database adapter translates domain entities into rows and rows back into entities. An ML adapter translates domain value objects into numpy arrays and model outputs back into domain value objects.
+
+> ⚠️ **Note on the terminology:** In practice, not every actor needs an adapter to fit the interface. Sometimes no "translation" will be necessary. For example, if the domain defines a port that matches the interface of an external library, you could technically use that library directly without writing an adapter. But to avoid saying (adapter or actor) every time, we'll use "adapter" as a catch-all term for any external-facing component that interacts with the hexagon, whether it does translation or not.
 
 ## Inbound vs. Outbound Adapters
 
 Adapters come in two flavors, mirroring the two kinds of ports:
 
-* **Inbound adapters** (also called **driving adapters** or **primary adapters**) are the entry points to the system. They receive external input (e.g. an HTTP request, a CLI command, a message from a queue) and translate it into a call on an Application Service inside the hexagon. They *drive* the application.
+* **Inbound adapters** (also called **driving adapters** or **primary adapters**) are the entry points to the system. They receive external input (e.g. an HTTP request, a CLI command, a message from a queue) and translate it into a call on an Application Service inside the hexagon. They *drive* the application:
 
 * **Outbound adapters** (also called **driven adapters** or **secondary adapters**) are the exit points. They implement the driven ports that the domain defines (e.g., persisting data, calling external services, loading ML models). The application *drives* them through the port interfaces.
 
-
-```
-                    ┌─────────────────────────────────────┐
-                    │          THE HEXAGON (Domain)       │
-  ┌───────────┐     │                                     │     ┌───────────────┐
-  │  REST API │────▶│  Application    Domain    Ports     │────▶│  SQLite       │
-  │ (inbound) │     │  Services       Objects  (driven)   │     │  (outbound)   │
-  └───────────┘     │                                     │     └───────────────┘
-  ┌───────────┐     │                                     │     ┌───────────────┐
-  │    CLI    │────▶│                                     │────▶│  scikit-learn │
-  │ (inbound) │     │                                     │     │  (outbound)   │
-  └───────────┘     └─────────────────────────────────────┘     └───────────────┘
-```
-
-The arrows always point **inward**: inbound adapters depend on Application Services, outbound adapters implement domain ports. The hexagon depends on nothing outside itself.
+> #### 📌 Architectural Rule Simplified:
+> * A driving adapter **USES** the interface that the hexagon has **IMPLEMENTED**.
+> * A driven adapter **IMPLEMENTS** the interface that the hexagon has **DEFINED**. 
 
 ## Outbound Adapters
 
