@@ -44,25 +44,29 @@ The code snippets in these notes are **educational, not a working codebase**. Th
 
 The `domain/` and `adapters/` structure presented here is designed as a **healthy starting point** for freelance and small-to-medium ML projects. For larger and/or more complex systems (e.g., multiple bounded contexts, event-driven communication between services, complex multi-step orchestration) the structures can be expanded, and a more layered architecture (such as **Clean Architecture**) may be more appropriate. Start simple, and let the complexity of the architecture grow with the complexity of the problem.
 
-For example, when the orchestration logic in your application service grows complex enough to warrant its own folder, and inbound/outbound adapters serve very different concerns, the next step would be to split into four layers:
+For example, a logical next step from the two-folder structure might be like this:
 
 ```
 package_name/
-├── domain/
-│   ├── objects/          # DataSchemas, PredictionObjects
-│   ├── ports/            # ForLoadingModels, ForSavingPredictions
-│   └── services/         # Normalizers, FeatureEng (Math only)
+├── domain/            # BUSINESS LOGIC & PORTS
+│   ├── objects.py     # Iris objects, Feature schemas
+│   ├── ports.py       # Driven AND Driver: ForLoadingModel, ForExportingLogs
+│   └── logic.py       # Pure math: Normalization, Scoring logic
 │
-├── application/
-│   └── predictor.py      # Orchestrates the prediction pipeline
+├── application/       # ORCHESTRATORS (Sequential Jobs Without Business Logic)
+│   ├── predictor.py   # Job: Load model -> Normalize -> Predict -> Save Log
+│   └── exporter.py    # Job: Fetch Logs -> Format CSV -> Upload to S3
 │
-├── presentation/         # FastApi (Inference API) or Batch Script
+├── interface/         # DRIVEN ADAPTERS (External implementations)
+│   ├── s3_storage.py  # Real S3 code
+│   └── model_file.py  # Real file-loading code
 │
-├── infrastructure/
-│   ├── persistence/      # Result database (SQL/NoSQL)
-│   └── clients/          # Model Storage (S3/Local disk loader)
+├── presentation/      # DRIVER ADAPTERS (How users trigger jobs)
+│   ├── api.py         # Web routes
+│   └── cli.py         # Command line tools
 │
-└── main.py               # Wires a specific model file to the predictor
+└── main.py            # THE CONFIGURATOR (Glue)
+
 ```
 
 * If the application has only one entry-point you can use its name (`api/` instead of `presentation/` in this case).
