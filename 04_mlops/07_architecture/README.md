@@ -66,7 +66,7 @@ package_name/
 ```
 
 * If the application has only one entry-point you can use its name (`api/` instead of `presentation/` in this case).
-
+* In simpler projects, one script per service the application provides to user (e.g., PredictionService) is often enough. In more complex applications, you can introduce subfolders for `use_cases`, `dtos`, and dedicated `errors`; patterns like CQRS (`commands` & `queries`) or Unit of Work come from enterprise DDD if you need to explore further.
 * If your ML system needs a new bounded context (e.g., scheduled experiments and retraining), you can expand your folder structure to:
 
 ```
@@ -89,10 +89,6 @@ package_name/
 └── main.py                      # Wires and starts the chosen module
 
 ```
-
-* In simpler projects, one script per service the application provides to user (e.g., PredictionService) is often enough. In more complex applications, you can introduce subfolders for `use_cases`, `dtos`, and dedicated `errors`; patterns like CQRS (`commands` & `queries`) or Unit of Work come from enterprise DDD if you need to explore further.
-
-For a working implementation of the simpler `domain/` + `adapters/` starting structure applied to the Iris classification problem, see the [**iris-fmds**](https://github.com/ibrahim-kocyigit/iris-fmds) repository.
 
 ---
 
