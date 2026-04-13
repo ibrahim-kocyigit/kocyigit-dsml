@@ -42,7 +42,57 @@ The code snippets in these notes are **educational, not a working codebase**. Th
 
 ## A Starting Point, Not a Ceiling
 
-The folder structures and patterns presented here are designed as a **healthy starting point** for freelance and small-to-medium ML projects. For larger and/or more complex systems (e.g., multiple bounded contexts, event-driven communication between services, complex multi-step orchestration) the structures can be expanded, and a more layered architecture (such as **Clean Architecture**) may be more appropriate. Start simple, and let the complexity of the architecture grow with the complexity of the problem.
+The `domain/` and `adapters/` structure presented here is designed as a **healthy starting point** for freelance and small-to-medium ML projects. For larger and/or more complex systems (e.g., multiple bounded contexts, event-driven communication between services, complex multi-step orchestration) the structures can be expanded, and a more layered architecture (such as **Clean Architecture**) may be more appropriate. Start simple, and let the complexity of the architecture grow with the complexity of the problem.
+
+For example, when the orchestration logic in your application service grows complex enough to warrant its own folder, and inbound/outbound adapters serve very different concerns, the next step would be to split into four layers:
+
+```
+package_name/
+├── domain/
+│   ├── objects/          # DataSchemas, PredictionObjects
+│   ├── ports/            # ForLoadingModels, ForSavingPredictions
+│   └── services/         # Normalizers, FeatureEng (Math only)
+│
+├── application/
+│   └── predictor.py      # Orchestrates the prediction pipeline
+│
+├── presentation/         # FastApi (Inference API) or Batch Script
+│
+├── infrastructure/
+│   ├── persistence/      # Result database (SQL/NoSQL)
+│   └── clients/          # Model Storage (S3/Local disk loader)
+│
+└── main.py               # Wires a specific model file to the predictor
+```
+
+* If the application has only one entry-point you can use its name (`api/` instead of `presentation/` in this case).
+
+* If your ML system needs a new bounded context (e.g., scheduled experiments and retraining), you can expand your folder structure to:
+
+```
+package_name/
+├── training/                    # DOMAIN A: MODEL GENERATION
+│   ├── domain/                  # Rules for accuracy, validation, & ports
+│   ├── application/             # Service: TrainingPipeline
+│   ├── presentation/            # DRIVING: Airflow Task / CLI / Cron Job
+│   └── infrastructure/          # DRIVEN: Data Lake / GPU Cluster
+│
+├── inference/                   # DOMAIN B: SERVING PREDICTIONS
+│   ├── domain/                  # Rules for features & prediction ports
+│   ├── application/             # Service: PredictionService
+│   ├── presentation/            # DRIVING: FastAPI / REST Endpoint
+│   └── infrastructure/          # DRIVEN: S3 Model Loader / Redis Cache
+│
+├── shared_kernel/               # SHARED: Schemas & Feature Logic
+│   └── schemas.py               # Ensuring Training & Inference speak the same "language"
+│
+└── main.py                      # Wires and starts the chosen module
+
+```
+
+* In simpler projects, one script per service the application provides to user (e.g., PredictionService) is often enough. In more complex applications, you can introduce subfolders for `use_cases`, `dtos`, and dedicated `errors`; patterns like CQRS (`commands` & `queries`) or Unit of Work come from enterprise DDD if you need to explore further.
+
+For a working implementation of the simpler `domain/` + `adapters/` starting structure applied to the Iris classification problem, see the [**iris-fmds**](https://github.com/ibrahim-kocyigit/iris-fmds) repository.
 
 ---
 
