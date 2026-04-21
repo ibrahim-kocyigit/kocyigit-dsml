@@ -4,7 +4,7 @@
 
 After learning the individual building blocks of MLOps, the next step is learning how to **assemble them into a well-designed system**. Knowing *what* the blocks are is not enough; you need to know *how* they fit together so that the result is maintainable, testable, and adaptable to change. That's what software architecture is about.
 
-This module covers **Ports & Adapters** (also known as **Hexagonal Architecture**) combined with **Domain-Driven Design (DDD)**, a pragmatic architecture that provides the bare minimum structure needed to design ML systems that still follow the **SOLID principles**:
+This module covers **Ports & Adapters** (aka **Hexagonal Architecture**) combined with **Domain-Driven Design (DDD)**, a pragmatic architecture that provides the bare minimum structure needed to design ML systems that still follow the **SOLID principles**:
 
 1. **Single Responsibility Principle (SRP):** Each module should have exactly one reason to change.
     * If you can identify more than one reason a class might change, consider splitting it.
@@ -72,6 +72,7 @@ package_name/
 * If the application has only one entry-point you can use its name (`api/` instead of `presentation/` in this case).
 * In simpler projects, one script per service the application provides to user (e.g., PredictionService) is often enough. In more complex applications, you can introduce subfolders for `use_cases`, `dtos`, and dedicated `errors`; patterns like CQRS (`commands` & `queries`) or Unit of Work come from enterprise DDD if you need to explore further.
 * If your ML system needs a new bounded context (e.g., scheduled experiments and retraining), you can expand your folder structure to:
+
 
 ```
 package_name/
