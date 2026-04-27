@@ -1,0 +1,62 @@
+{
+	"Read in File as Pandas DataFrame": {
+		"prefix": "pdr",
+		"body": ["${1:df} = pd.read_${2:csv}('${3:file_name}.${2:csv}')", "${1:df}.info()$0"],
+		"description": "Read in a flat file as pandas dataframe."
+	},
+	"Read in from Clipboard as Pandas DataFrame": {
+		"prefix": "pdrc",
+		"body": ["${1:df} = pd.read_clipboard()", "${1:df}.info()$0"],
+		"description": "Read in copied tabular data on clipboard as pandas dataframe."
+	},
+	"Pandas DataFrame Profiling": {
+		"prefix": "pdprofiling",
+		"body": ["pandas_profiling.ProfileReport(${1:df})$0"],
+		"description": "Visualize pandas dataframe using pandas-profiling."
+	},
+	"Save Pandas DataFrame to File": {
+		"prefix": "dfsave",
+		"body": ["${1:df}.to_${2:csv}('${3:file_name}.${2:csv}', index=${3|False, True|})$0"],
+		"description": "Save dataframe to a flat file."
+	},
+	"Save Pandas DataFrame to Compressed File": {
+		"prefix": "dfsavezip",
+		"body": ["${1:df}.to_csv('${2:file_name}.csv.zip', index=${3|False, True|}, compression='zip')$0"],
+		"description": "Compress and save dataframe to a zipped flat file (.csv.zip)."
+	},
+	"Modify Pandas DataFrame Column Name": {
+		"prefix": "dfmc",
+		"body": ["${1:df}['${2:column}'] = ${1:df}['${2:column}']$0"],
+		"description": "Modify a pandas column name."
+	},
+	"if __name__ == \"__main__\"": {
+		"prefix": "ifmain",
+		"body": ["if __name__ == \"__main__\":", "\t$0"],
+		"description": "if __name__ == \"__main__\" structurre (Python Language Basics)."
+	},
+	"If Statement": {
+		"prefix": "if",
+		"body": ["if ${1:condition}:", "\t${2:pass}$0"],
+		"description" : "If statement structure (Python Language Basics)."
+	},
+	"For Loop": {
+		"prefix": "for",
+		"body": ["for ${1:value} in ${2:iterable}:", "\t${3:pass}$0"],
+		"description" : "For loop structure (Python Language Basics)."
+	},
+	"While Loop": {
+		"prefix": "while",
+		"body": ["while ${1:condition}:", "\t${2:pass}$0"],
+		"description" : "While loop structure (Python Language Basics)."
+	},
+	"New Function": {
+		"prefix": "def",
+		"body": ["def ${1:function_name}(${2:args}):", "\t$0"],
+		"description" : "Function structure (Python Language Basics)."
+	},
+	"New Method": {
+		"prefix": "defs",
+		"body": ["def ${1:method_name}(self, ${2:args}):", "\t$0"],
+		"description" : "Method structure (Python Language Basics)."
+	}
+}

@@ -1,0 +1,37 @@
+working-directory = "~/para"
+
+# --- Window and Tabs --- #
+window-width = 72
+window-height = 36
+window-save-state = never
+macos-titlebar-style = tabs
+# title = " "
+
+
+# --- Theme & Colors --- #
+theme = Atom One Dark
+background-opacity = 0.96
+background-blur-radius = 25
+# split-divider-color = #ff0000
+
+
+# --- Fonts --- #
+font-family = "JetBrains Mono"
+font-size = 16
+
+
+# --- Keyboard & Mouse --- #
+keybind = opt+j=goto_split:left
+keybind = opt+k=goto_split:down
+keybind = opt+ı=goto_split:up
+keybind = opt+l=goto_split:right
+
+mouse-hide-while-typing = true
+macos-option-as-alt = left
+
+
+
+# --- Cursor --- # 
+shell-integration-features = no-title,no-cursor
+cursor-style = block
+cursor-style-blink = false
