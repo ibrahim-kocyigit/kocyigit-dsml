@@ -4,14 +4,14 @@
     "editor.minimap.enabled": false,
     "editor.formatOnSave": true,
     "editor.cursorSurroundingLines": 10,
-    "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": true,
     // Workbench - UI & Layout
     "workbench.colorTheme": "One Dark Pro Darker",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f",
+        "statusBar.background": "#5f00af",
+        "statusBar.noFolderBackground": "#5f00af",
+        "statusBar.debuggingBackground": "#5f00af",
         "statusBar.foreground": "#ffffff",
         "statusBar.debuggingForeground": "#ffffff"
     },
@@ -30,7 +30,7 @@
     "vim.hlsearch": true,
     "vim.handleKeys": {
         "<C-f>": false,
-        "<C-d>": true,
+        "<C-d>": true
     },
     "vim.normalModeKeyBindingsNonRecursive": [
         {
@@ -48,7 +48,7 @@
             "commands": [
                 ":bnext"
             ]
-        },
+        }
     ],
     "vim.visualModeKeyBindings": [
         // Stay in visual mode while indenting
@@ -170,7 +170,7 @@
                     "name": "close [o]ther buffers",
                     "type": "command",
                     "command": "workbench.action.closeOtherEditors"
-                },
+                }
             ]
         },
         {
@@ -287,6 +287,12 @@
                     "name": "[m]aximize toggle",
                     "type": "command",
                     "command": "workbench.action.toggleEditorWidths"
+                },
+                {
+                    "key": "p",
+                    "name": "[p]review markdown",
+                    "type": "command",
+                    "command": "markdown.showPreviewToSide"
                 }
             ]
         },
@@ -317,26 +323,37 @@
                 "settings": {
                     "foreground": "#8a8a8a"
                 }
+            },
+            {
+                "scope": [
+                    "entity.name.function",
+                    "keyword",
+                    "storage",
+                    "variable.language"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
             }
         ]
     },
-    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.typeCheckingMode": "standard",
     "python.linting.enabled": true,
     "python.linting.ruffEnabled": true,
     "notebook.markdown.lineHeight": 24,
     "explorer.confirmPasteNative": false,
     "github.copilot.enable": {
-        "*": false,
+        "*": true,
         "plaintext": false,
         "markdown": false,
         "scminput": false,
-        "python": false,
+        "python": true,
         "ignore": true,
         "r": false,
         "dockercompose": false,
         "yaml": false
     },
-    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
     "editor.defaultFormatter": "charliermarsh.ruff",
     "notebook.defaultFormatter": "charliermarsh.ruff",
     "terminal.integrated.fontWeight": "normal",
@@ -403,9 +420,11 @@
     "python.analysis.generateWithTypeAnnotation": true,
     "python.analysis.inlayHints.functionReturnTypes": true,
     "python.analysis.inlayHints.pytestParameters": true,
-    "python.analysis.inlayHints.variableTypes": true,
+    // "python.analysis.inlayHints.variableTypes": true,
     "python.analysis.typeEvaluation.deprecateTypingAliases": true,
     "python.analysis.typeEvaluation.strictDictionaryInference": true,
     "python.analysis.typeEvaluation.strictListInference": true,
-    "python.analysis.typeEvaluation.strictSetInference": true
+    "python.analysis.typeEvaluation.strictSetInference": true,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1"
 }

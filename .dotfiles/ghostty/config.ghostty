@@ -1,11 +1,11 @@
-working-directory = "~/para"
+working-directory = ~/github
 
 # --- Window and Tabs --- #
-window-width = 72
-window-height = 36
+window-width = 160
+window-height = 40
 window-save-state = never
 macos-titlebar-style = tabs
-# title = " "
+title = " "
 
 
 # --- Theme & Colors --- #
@@ -21,10 +21,10 @@ font-size = 16
 
 
 # --- Keyboard & Mouse --- #
-keybind = opt+j=goto_split:left
-keybind = opt+k=goto_split:down
-keybind = opt+ı=goto_split:up
-keybind = opt+l=goto_split:right
+keybind = alt+h=unbind
+keybind = alt+j=unbind
+keybind = alt+k=unbind
+keybind = alt+l=unbind
 
 mouse-hide-while-typing = true
 macos-option-as-alt = left

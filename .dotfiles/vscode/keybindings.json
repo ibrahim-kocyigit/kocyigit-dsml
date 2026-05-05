@@ -2,7 +2,7 @@
     {
         "key": "space",
         "command": "whichkey.show",
-        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || !editorTextFocus) && !terminalFocus"
+        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || !editorTextFocus) && !terminalFocus && !chatInputHasFocus"
     },
     // Navigating Splits
     {
@@ -77,13 +77,8 @@
         "when": "explorerViewletFocus"
     },
     {
-        "key": "shift+n",
-        "command": "workbench.action.newWindow",
-        "when": "!explorerViewletFocus"
-    },
-    {
         "command": "deleteFile",
         "key": "d",
         "when": "filesExplorerFocus && !inputFocus"
-    },
+    }
 ]
