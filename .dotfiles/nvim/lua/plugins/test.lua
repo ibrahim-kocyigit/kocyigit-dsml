@@ -2,7 +2,6 @@ return {
   "vim-test/vim-test",
   dependencies = { "preservim/vimux" },
   keys = {
-    -- Descriptions here will show up once you press <leader>t
     { "<leader>tn", ":TestNearest<CR>", desc = "Nearest" },
     { "<leader>tf", ":TestFile<CR>", desc = "File" },
     { "<leader>ts", ":TestSuite<CR>", desc = "Suite" },
