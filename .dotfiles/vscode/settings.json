@@ -9,9 +9,9 @@
     "workbench.colorTheme": "One Dark Pro Darker",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
-        "statusBar.background": "#5f00af",
-        "statusBar.noFolderBackground": "#5f00af",
-        "statusBar.debuggingBackground": "#5f00af",
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f",
         "statusBar.foreground": "#ffffff",
         "statusBar.debuggingForeground": "#ffffff"
     },
@@ -211,6 +211,12 @@
             ]
         },
         {
+            "key": "e",
+            "name": "[e]xplorer focus",
+            "type": "command",
+            "command": "workbench.view.explorer"
+        },
+        {
             "key": "f",
             "name": "[f]ile +",
             "type": "bindings",
@@ -298,16 +304,34 @@
         },
         {
             "key": "t",
-            "name": "[t]oggle +",
+            "name": "[t]est +",
             "type": "bindings",
             "bindings": [
                 {
-                    "key": "e",
-                    "name": "[e]xplorer focus",
+                    "key": "a",
+                    "name": "[a]ll tests",
                     "type": "command",
-                    "command": "workbench.view.explorer"
+                    "command": "testing.runAll"
                 },
-            ],
+                {
+                    "key": "c",
+                    "name": "[c]urrent cursor",
+                    "type": "command",
+                    "command": "testing.runAtCursor"
+                },
+                {
+                    "key": "f",
+                    "name": "[f]ile",
+                    "type": "command",
+                    "command": "testing.runCurrentFile"
+                },
+                {
+                    "key": "h",
+                    "name": "[h]ide/show panel",
+                    "type": "command",
+                    "command": "workbench.action.togglePanel"
+                },
+            ]
         },
     ],
     // 

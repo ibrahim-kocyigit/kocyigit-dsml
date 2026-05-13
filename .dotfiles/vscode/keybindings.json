@@ -80,5 +80,21 @@
         "command": "deleteFile",
         "key": "d",
         "when": "filesExplorerFocus && !inputFocus"
+    },
+    // Save with Ctrl+S in Vim Normal Mode
+    {
+        "key": "ctrl+s",
+        "command": "workbench.action.files.save",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+o",
+        "command": "editor.action.organizeImports",
+        "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+    },
+    {
+        "key": "shift+alt+o",
+        "command": "-editor.action.organizeImports",
+        "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
     }
 ]

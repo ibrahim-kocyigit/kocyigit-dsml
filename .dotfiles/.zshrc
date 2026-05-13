@@ -39,7 +39,10 @@ if [[ -z "$SSH_AUTH_SOCK" ]] || ! ssh-add -l &>/dev/null; then
   ssh-add --apple-use-keychain ~/.ssh/id_ed25519 > /dev/null 2>&1
 fi
 
-
+# Load local/secret environment variables if they exist
+if [ -f "$HOME/.zshrc.local" ]; then
+    source "$HOME/.zshrc.local"
+fi
 # ============================================================
 # ALIASES
 # ============================================================
