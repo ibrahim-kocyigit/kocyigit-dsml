@@ -77,7 +77,3 @@ uv sync
 
 This project is licensed under the [MIT License](./LICENSE).
 
-## What's Next?
-- **In Progress:** I've started applying the consolidated knowledge from this repository to [YouTube tutorials](https://www.youtube.com/@ibrahim-kocyigit). Feel free to check my channel!
-- **In Search Of:** I'm actively looking for freelance data science projects to apply the skills and methodologies outlined in this repository.
-- **In the Future:** Deep Learning Specialization - scheduled for Q3 2026. Will cover neural networks, CNNs, RNNs, and modern architectures.
