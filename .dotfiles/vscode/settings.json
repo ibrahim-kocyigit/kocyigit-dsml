@@ -1,362 +1,16 @@
-{ // Editor
-    "editor.fontFamily": "JetBrains Mono Nerd Font",
+{
     "editor.fontSize": 15,
-    "editor.minimap.enabled": false,
-    "editor.formatOnSave": true,
-    "editor.cursorSurroundingLines": 10,
-    "breadcrumbs.enabled": true,
-    // Workbench - UI & Layout
-    "workbench.colorTheme": "One Dark Pro Darker",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f",
-        "statusBar.foreground": "#ffffff",
-        "statusBar.debuggingForeground": "#ffffff"
-    },
-    "workbench.tips.enabled": false,
-    "workbench.startupEditor": "none",
-    "workbench.editor.empty.hint": "hidden",
-    "workbench.editor.showTabs": "multiple",
-    "workbench.editor.closeEmptyGroups": true,
-    // Window - Title & Sizing
-    "window.titleBarStyle": "custom",
-    "window.commandCenter": false,
-    "window.density.editorTabHeight": "compact",
-    "window.restoreWindows": "none",
-    // Vim Functionality
-    "vim.useSystemClipboard": true,
-    "vim.hlsearch": true,
-    "vim.handleKeys": {
-        "<C-f>": false,
-        "<C-d>": true
-    },
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<S-h>"
-            ],
-            "commands": [
-                ":bprevious"
-            ]
-        },
-        {
-            "before": [
-                "<S-l>"
-            ],
-            "commands": [
-                ":bnext"
-            ]
-        }
-    ],
-    "vim.visualModeKeyBindings": [
-        // Stay in visual mode while indenting
-        {
-            "before": [
-                "<"
-            ],
-            "commands": [
-                "editor.action.outdentLines"
-            ]
-        },
-        {
-            "before": [
-                ">"
-            ],
-            "commands": [
-                "editor.action.indentLines"
-            ]
-        },
-        // Move selected lines while staying in visual mode
-        {
-            "before": [
-                "J"
-            ],
-            "commands": [
-                "editor.action.moveLinesDownAction"
-            ]
-        },
-        {
-            "before": [
-                "K"
-            ],
-            "commands": [
-                "editor.action.moveLinesUpAction"
-            ]
-        },
-        // toggle comment selection
-        {
-            "before": [
-                "<C-c>"
-            ],
-            "commands": [
-                "editor.action.commentLine"
-            ]
-        }
-    ],
-    // Vim Appearance
-    "vim.smartRelativeLine": true,
-    "vim.highlightedyank.enable": true,
-    "vim.highlightedyank.color": "#83a598",
-    "vim.highlightedyank.textColor": "#202020",
-    "vim.highlightedyank.duration": 150,
-    "vim.statusBarColorControl": true,
-    // which-key Settings
-    "whichkey.useFullWidthCharacters": true,
-    "whichkey.bindingOverrides": [],
-    "whichkey.bindings": [
-        {
-            "key": ":",
-            "name": "Command palette",
-            "type": "command",
-            "command": "workbench.action.showCommands"
-        },
-        {
-            "key": "/",
-            "name": "Fuzzy search in current editor",
-            "type": "command",
-            "command": "fuzzySearch.activeTextEditor"
-        },
-        {
-            "key": "b",
-            "name": "[b]uffer +",
-            "type": "bindings",
-            "bindings": [
-                {
-                    "key": "b",
-                    "name": "[b]uffers",
-                    "type": "command",
-                    "command": "workbench.action.showAllEditors"
-                },
-                {
-                    "key": "p",
-                    "name": "[p]revious buffer",
-                    "type": "command",
-                    "command": "workbench.action.previousEditor"
-                },
-                {
-                    "key": "n",
-                    "name": "[n]ext buffer",
-                    "type": "command",
-                    "command": "workbench.action.nextEditor"
-                },
-                {
-                    "key": "c",
-                    "name": "[c]reate empty buffer",
-                    "type": "command",
-                    "command": "workbench.action.files.newUntitledFile"
-                },
-                {
-                    "key": "s",
-                    "name": "[s]ave buffer",
-                    "type": "command",
-                    "command": "workbench.action.files.save"
-                },
-                {
-                    "key": "S",
-                    "name": "[S]ave all buffers",
-                    "type": "command",
-                    "command": "workbench.action.files.saveAll"
-                },
-                {
-                    "key": "d",
-                    "name": "[d]elete (close) buffer",
-                    "type": "command",
-                    "command": "workbench.action.closeActiveEditor"
-                },
-                {
-                    "key": "o",
-                    "name": "close [o]ther buffers",
-                    "type": "command",
-                    "command": "workbench.action.closeOtherEditors"
-                }
-            ]
-        },
-        {
-            "key": "c",
-            "name": "[c]ode +",
-            "type": "bindings",
-            "bindings": [
-                {
-                    "key": "a",
-                    "name": "[a]ctions (quick fix)",
-                    "type": "command",
-                    "command": "editor.action.quickFix"
-                },
-                {
-                    "key": "r",
-                    "name": "[r]efactor code",
-                    "type": "command",
-                    "command": "editor.action.refactor"
-                },
-                {
-                    "key": "n",
-                    "name": "re[n]ame symbol",
-                    "type": "command",
-                    "command": "editor.action.rename"
-                },
-                {
-                    "key": "d",
-                    "name": "run with [d]ebug",
-                    "type": "command",
-                    "command": "workbench.action.debug.start"
-                },
-                {
-                    "key": "R",
-                    "name": "[R]un (no debug)",
-                    "type": "command",
-                    "command": "workbench.action.debug.run"
-                }
-            ]
-        },
-        {
-            "key": "e",
-            "name": "[e]xplorer focus",
-            "type": "command",
-            "command": "workbench.view.explorer"
-        },
-        {
-            "key": "f",
-            "name": "[f]ile +",
-            "type": "bindings",
-            "bindings": [
-                {
-                    "key": "f",
-                    "name": "[f]ind file",
-                    "type": "command",
-                    "command": "workbench.action.quickOpen"
-                },
-                {
-                    "key": "e",
-                    "name": "reveal in [e]xplorer",
-                    "type": "command",
-                    "command": "workbench.files.action.showActiveFileInExplorer"
-                },
-                {
-                    "key": "r",
-                    "name": "[r]ecent files",
-                    "type": "command",
-                    "command": "workbench.action.openRecent"
-                },
-                {
-                    "key": "s",
-                    "name": "[s]ave file",
-                    "type": "command",
-                    "command": "workbench.action.files.save"
-                },
-                {
-                    "key": "y",
-                    "name": "[y]ank (copy) path",
-                    "type": "command",
-                    "command": "copyFilePath"
-                },
-                {
-                    "key": "Y",
-                    "name": "[Y]ank relative path",
-                    "type": "command",
-                    "command": "copyRelativeFilePath"
-                }
-            ]
-        },
-        {
-            "key": "p",
-            "name": "[p]ane +",
-            "type": "bindings",
-            "bindings": [
-                {
-                    "key": "v",
-                    "name": "split [v]ertical",
-                    "type": "command",
-                    "command": "workbench.action.splitEditor"
-                },
-                {
-                    "key": "h",
-                    "name": "split [h]orizontal",
-                    "type": "command",
-                    "command": "workbench.action.splitEditorOrthogonal"
-                },
-                {
-                    "key": "d",
-                    "name": "[d]elete split",
-                    "type": "command",
-                    "command": "workbench.action.closeEditorsInGroup"
-                },
-                {
-                    "key": "o",
-                    "name": "close [o]thers",
-                    "type": "command",
-                    "command": "workbench.action.closeEditorsInOtherGroups"
-                },
-                {
-                    "key": "m",
-                    "name": "[m]aximize toggle",
-                    "type": "command",
-                    "command": "workbench.action.toggleEditorWidths"
-                },
-                {
-                    "key": "p",
-                    "name": "[p]review markdown",
-                    "type": "command",
-                    "command": "markdown.showPreviewToSide"
-                }
-            ]
-        },
-        {
-            "key": "t",
-            "name": "[t]est +",
-            "type": "bindings",
-            "bindings": [
-                {
-                    "key": "a",
-                    "name": "[a]ll tests",
-                    "type": "command",
-                    "command": "testing.runAll"
-                },
-                {
-                    "key": "c",
-                    "name": "[c]urrent cursor",
-                    "type": "command",
-                    "command": "testing.runAtCursor"
-                },
-                {
-                    "key": "f",
-                    "name": "[f]ile",
-                    "type": "command",
-                    "command": "testing.runCurrentFile"
-                },
-                {
-                    "key": "h",
-                    "name": "[h]ide/show panel",
-                    "type": "command",
-                    "command": "workbench.action.togglePanel"
-                },
-            ]
-        },
-    ],
-    // 
-    //
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
     "terminal.integrated.fontSize": 15,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
+    "editor.formatOnSave": true,
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
                 "scope": "string.quoted.docstring.multi.python",
                 "settings": {
                     "foreground": "#8a8a8a"
-                }
-            },
-            {
-                "scope": [
-                    "entity.name.function",
-                    "keyword",
-                    "storage",
-                    "variable.language"
-                ],
-                "settings": {
-                    "fontStyle": ""
                 }
             }
         ]
@@ -369,7 +23,7 @@
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
-        "markdown": false,
+        "markdown": true,
         "scminput": false,
         "python": true,
         "ignore": true,
@@ -377,7 +31,7 @@
         "dockercompose": false,
         "yaml": false
     },
-    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.nextEditSuggestions.enabled": false,
     "editor.defaultFormatter": "charliermarsh.ruff",
     "notebook.defaultFormatter": "charliermarsh.ruff",
     "terminal.integrated.fontWeight": "normal",
@@ -388,10 +42,12 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "python.defaultInterpreterPath": "./venv/bin/python",
     "notebook.markup.fontSize": 15,
+    "workbench.startupEditor": "none",
     "python.terminal.activateEnvironment": true,
     "chat.tips.enabled": false,
+    "workbench.colorTheme": "One Dark Pro",
+    "chat.viewSessions.orientation": "stacked",
     "explorer.fileNesting.patterns": {
         "*.ts": "${capture}.js",
         "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
@@ -436,19 +92,4 @@
         }
     },
     "terminal.integrated.fontFamily": "MesloLGS NF",
-    "window.newWindowProfile": "Default",
-    "chat.viewSessions.orientation": "stacked",
-    "workbench.activityBar.location": "top",
-    "python.analysis.autoFormatStrings": true,
-    "python.analysis.autoImportCompletions": true,
-    "python.analysis.generateWithTypeAnnotation": true,
-    "python.analysis.inlayHints.functionReturnTypes": true,
-    "python.analysis.inlayHints.pytestParameters": true,
-    // "python.analysis.inlayHints.variableTypes": true,
-    "python.analysis.typeEvaluation.deprecateTypingAliases": true,
-    "python.analysis.typeEvaluation.strictDictionaryInference": true,
-    "python.analysis.typeEvaluation.strictListInference": true,
-    "python.analysis.typeEvaluation.strictSetInference": true,
-    "gitlens.ai.model": "vscode",
-    "gitlens.ai.vscode.model": "copilot:gpt-4.1"
 }

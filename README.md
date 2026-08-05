@@ -41,7 +41,6 @@ The repository contains detailed lecture notes, Jupyter Notebooks, from-scratch 
 4. [Cloud Deployment](./04_mlops/04_cloud_deployment/) 
 5. [Interactive Dashboards](./04_mlops/05_interactive_dashboards/) 
 6. [Monitoring & Maintenance](./04_mlops/06_monitoring_and_maintenance/) 
-7. [Architecture](./04_mlops/07_architecture/)
 
 ### 5. Methodology
 1. [Business Understanding](./05_methodology/01_business_understanding.md) 

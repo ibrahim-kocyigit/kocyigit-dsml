@@ -1,100 +1,45 @@
+// Place your key bindings in this file to override the defaults
 [
     {
-        "key": "space",
-        "command": "whichkey.show",
-        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || !editorTextFocus) && !terminalFocus && !chatInputHasFocus"
+        "key": "cmd+[BracketRight]",
+        "command": "workbench.action.terminal.toggleTerminal"
     },
-    // Navigating Splits
     {
-        "key": "ctrl+h",
-        "command": "workbench.action.focusLeftGroup"
+        "key": "tab",
+        "command": "editor.action.inlineSuggest.commit",
+        "when": "inlineEditIsVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "tab",
+        "command": "-editor.action.inlineSuggest.commit",
+        "when": "inlineEditIsVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "tab",
+        "command": "editor.action.inlineSuggest.commit",
+        "when": "inInlineEditsPreviewEditor"
+    },
+    {
+        "key": "tab",
+        "command": "-editor.action.inlineSuggest.commit",
+        "when": "inInlineEditsPreviewEditor"
+    },
+    {
+        "key": "ctrl+alt+cmd+i",
+        "command": "ruff.executeOrganizeImports"
+    },
+    {
+        "key": "shift+cmd+[BracketRight]",
+        "command": "workbench.action.createTerminalEditor",
+        "when": "terminalProcessSupported"
     },
     {
         "key": "ctrl+j",
-        "command": "workbench.action.focusBelowGroup"
+        "command": "-editor.action.joinLines",
+        "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+k",
-        "command": "workbench.action.focusAboveGroup"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.focusRightGroup"
-    },
-    // Terminals
-    {
-        "key": "ctrl+shift+n",
-        "command": "workbench.action.terminal.new",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+shift+j",
-        "command": "workbench.action.terminal.focusNext",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+shift+k",
-        "command": "workbench.action.terminal.focusPrevious",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+shift+p",
-        "command": "workbench.action.togglePanel"
-    },
-    {
-        "key": "ctrl+shift+c",
-        "command": "workbench.action.terminal.kill",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+shift+r",
-        "command": "workbench.action.terminal.rename",
-        "when": "terminalFocus"
-    },
-    // FILE TREE
-    {
-        "command": "workbench.action.toggleSidebarVisibility",
-        "key": "ctrl+e"
-    },
-    {
-        "command": "workbench.files.action.focusFilesExplorer",
-        "key": "ctrl+e",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "n",
-        "command": "explorer.newFile",
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-    {
-        "command": "renameFile",
-        "key": "r",
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-    {
-        "key": "shift+n",
-        "command": "explorer.newFolder",
-        "when": "explorerViewletFocus"
-    },
-    {
-        "command": "deleteFile",
-        "key": "d",
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-    // Save with Ctrl+S in Vim Normal Mode
-    {
-        "key": "ctrl+s",
-        "command": "workbench.action.files.save",
-        "when": "vim.mode == 'Normal' && editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+o",
-        "command": "editor.action.organizeImports",
-        "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
-    },
-    {
-        "key": "shift+alt+o",
-        "command": "-editor.action.organizeImports",
-        "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+        "key": "ctrl+j",
+        "command": "editor.action.joinLines"
     }
 ]

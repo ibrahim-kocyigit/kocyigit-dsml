@@ -18,11 +18,11 @@ Everything in this stage is expressed in **business language** — no algorithms
 
 Meet with all relevant stakeholders — business sponsors, domain experts, and end-users — to gather the information you need to define the problem.
 
-**Actions:**
-- Schedule and attend initial meeting(s).
-- Identify who the **decision-maker** is (the person who defines "done").
-- Identify **domain experts** you can consult throughout the project.
-- Take detailed notes.
+**Actions:**  
+- Schedule and attend initial meeting(s).  
+- Identify who the **decision-maker** is (the person who defines "done").  
+- Identify **domain experts** you can consult throughout the project.  
+- Take detailed notes.  
 
 **Guiding Questions:**
 
