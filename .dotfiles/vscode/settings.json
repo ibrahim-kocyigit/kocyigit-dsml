@@ -92,4 +92,5 @@
         }
     },
     "terminal.integrated.fontFamily": "MesloLGS NF",
+    "claudeCode.preferredLocation": "panel",
 }
